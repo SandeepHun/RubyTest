@@ -1,0 +1,1 @@
+Run config BTRIS: =bundle exe cucumber -c --tag @Radiology_With_Image test_env=test08 browser=chrome
