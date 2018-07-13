@@ -13,7 +13,6 @@ Scenario Outline: 9.0 Imports sample feature test.
   And the user clicks on "btris: login to dashboard button" element on "Btris/Portal" page
   And the user must see "Conditions of Use and Code of Conduct" text in "btris: accept page" field on "Btris/Portal" page
   And the user clicks on "btris: accept button" element on "Btris/Portal" page
-  And the user enters "<string>" into "<string>" on "<string>" page
 
   #And the user click on accept on the warning message if applicable
 
