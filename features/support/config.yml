@@ -13,10 +13,10 @@
 #
 
 test05:
-  :host: https://qphisweb05.usda.net/FSISDashBoard/Shared/Login.aspx
+  :host: https://cc0dbtristeve.cc.nih.gov
 
 test06:
-  :host: https://qphisweb06.usda.net/FSISDashBoard/Shared
+  :host: https://btristestportal.cc.nih.gov
 train01:
   :host: https://phistrn01.fsis.usda.gov/FSISDashBoard/Shared
 train02:
