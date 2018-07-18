@@ -1357,6 +1357,14 @@ And(/^the user click on the radiology record to verify the image$/) do
   end
 end
 
+And(/^the user enters "([^"]*)" and "([^"]*)" to login to btris$/) do |value1, value2,|
+  step "the user clicks on \"btris home: login button\" element on \"Btris/Portal\" page"
+  step "the user enters \"#{value1}\" into \"btris: user name\" on \"Btris/Portal\" page"
+  step "the user enters \"#{value2}\" into \"btris: password\" on \"Btris/Portal\" page"
+  step "the user clicks on \"btris: login to dashboard button\" element on \"Btris/Portal\" page"
+end
+
+
 
 
 
