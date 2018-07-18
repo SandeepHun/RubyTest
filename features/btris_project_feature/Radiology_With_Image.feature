@@ -7,37 +7,48 @@ Feature: BTRIS Radiology
   #Login to the system.
     Given the user navigates to / on browser
     And the user must see "Login to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
-    And the user clicks on "btris home: login button" element on "Btris/Portal" page
-    And the user enters "<Test User>" into "btris: user name" on "Btris/Portal" page
-    And the user enters "<Password>" into "btris: password" on "Btris/Portal" page
-    And the user clicks on "btris: login to dashboard button" element on "Btris/Portal" page
+    #Login to the BTRIS system.
+    And the user enters "<Test User Name>" and "<Password>" to login to btris
+    #Verify the condition page to accespt it.
     And the user must see "Conditions of Use and Code of Conduct" text in "btris: accept page" field on "Btris/Portal" page
+    #Click on the accept button.
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
+    #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
+    #click on the radiology test.
     And the user clicks on "btris: radiology test" element on "Btris/Portal" page
+    #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
+    #verify the select report page.
     And the user must see "Radiology Report" text in "btris: radiology filter report page" field on "Btris/Portal" page
+    #Clcik on the select report button.
     And the user clicks on "btris: select subject button" element on "Btris/Portal" page
+    #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
     And the user clicks on "check all button" element on "Btris/Portal" page
     And the user clicks on "check all button" element on "Btris/Portal" page
     And the user waits for 2 seconds
     And the user clicks on "protocol check button" element on "Btris/Portal" page
+    #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     And the user waits for 2 minutes
+    #Verify report page.
     And the user must see "Radiology Results Preview - Standard" text in "radiology report page" field on "Btris/Portal" page
+    #Click on the download report button.
     And the user clicks on "download full report button" element on "Btris/Portal" page
+    #Verify and validate the report display and click on the the image to view.
     And the user click on the radiology record to verify the image
     And the switch to new tab page
+    #Verify and validate the image.
     And the user must see "AABEL BRAD COLLETT" text in "radiology image display" field on "Btris/Portal" page
     And the return to main page
     #Sign out.
     And the user logged out of the system
 
     Examples:
-      | Test User   | Password        | Subject    | Filtered Subject |
-      | btris_test2 | Nomorecognos11$ | 00-AR-0222 | ADAMS            |
+      | Test User Name | Password        | Subject    | Filtered Subject |
+      | btris_test2    | Nomorecognos11$ | 00-AR-0222 | ADAMS            |
 
   @RWI2
 
@@ -45,14 +56,17 @@ Feature: BTRIS Radiology
   #Login to the system.
     Given the user navigates to / on browser
     And the user must see "Login to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
-    And the user clicks on "btris home: login button" element on "Btris/Portal" page
-    And the user enters "<Test User>" into "btris: user name" on "Btris/Portal" page
-    And the user enters "<Password>" into "btris: password" on "Btris/Portal" page
-    And the user clicks on "btris: login to dashboard button" element on "Btris/Portal" page
+    #Login to the BTRIS system.
+    And the user enters "<Test User Name>" and "<Password>" to login to btris
+    #Verify the condition page to accespt it.
     And the user must see "Conditions of Use and Code of Conduct" text in "btris: accept page" field on "Btris/Portal" page
+    #Click on the accept button.
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
+    #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
+    #click on the radiology test.
     And the user clicks on "btris: radiology test" element on "Btris/Portal" page
+    #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     And the user must see "Radiology Report" text in "btris: radiology filter report page" field on "Btris/Portal" page
     #Uncheck the demographic data.
@@ -82,7 +96,5 @@ Feature: BTRIS Radiology
     And the user logged out of the system
 
     Examples:
-      | Test User   | Password        | Subject    | Filtered Subject |
-      | btris_test2 | Nomorecognos11$ | 00-AR-0222 | ADAMS            |
-
-
+      | Test User Name | Password        | Subject    | Filtered Subject |
+      | btris_test2    | Nomorecognos11$ | 00-AR-0222 | ADAMS            |
