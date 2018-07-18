@@ -29,7 +29,11 @@ def map_btris_portal
           'demographic data check box'                       =>"xpath^^.//*[contains(@for, 'includeDemographics-checkbox')]",
           'open results in new tab button'                   =>"xpath^^.//*[@id='app']/div/div[1]/div[2]/div[2]/div/div/div/div[1]/div/div[2]/div/div/div[4]/button",
           'protocol check button'                            =>"xpath^^.//*[contains(@data-test, 'protocol-checkbox')]",
-
+          #Laboratory Test.
+          'laboratory test'                                  =>"xpath^^.//*[@id='generalRpts']/div/div[8]/label",
+          'btris: laboratory filter report page'             =>"xpath^^.//*[contains(text(), 'Laboratory Report')]",
+          'btris: laboratory select button'                  =>"xpath^^.//*[@id='app']/div/div[1]/div[2]/div[2]/div/div/div/div/form/div[1]/div[2]/div/div[2]/button",
+          'laboratory report page'                            =>"xpath^^.//*[contains(text(), 'Laboratory Results Preview -')]",
 
 
 
