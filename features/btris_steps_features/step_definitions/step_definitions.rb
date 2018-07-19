@@ -1344,7 +1344,7 @@ And(/^the user click on the radiology record to verify the image$/) do
     (1..table_rows).each do |rows|
       delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[8]"
       puts 'the row number is ' +delete_icons_row
-      new_document = "MR5000245907"
+      new_document = "DX1115913"
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_obj 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[8]/a"

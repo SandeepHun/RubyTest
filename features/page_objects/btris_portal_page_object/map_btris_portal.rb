@@ -33,7 +33,7 @@ def map_btris_portal
           'laboratory test'                                  =>"xpath^^.//*[@id='generalRpts']/div/div[8]/label",
           'btris: laboratory filter report page'             =>"xpath^^.//*[contains(text(), 'Laboratory Report')]",
           'btris: laboratory select button'                  =>"xpath^^.//*[@id='app']/div/div[1]/div[2]/div[2]/div/div/div/div/form/div[1]/div[2]/div/div[2]/button",
-          'laboratory report page'                            =>"xpath^^.//*[contains(text(), 'Laboratory Results Preview -')]",
+          'laboratory report page'                           =>"xpath^^.//*[contains(text(), 'Laboratory Results Preview -')]",
 
 
 

@@ -29,12 +29,19 @@ Feature: Laboratory Feature
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
+    And the user waits for 10 seconds
     #Verify report page.
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory report page" field on "Btris/Portal" page
     #Click on the download report button.
+    And the user waits for 5 seconds
     And the user clicks on "download full report button" element on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
     And the user verify the laboratory report on the table
+    #click on the open report in another tab button.
+    And the user clicks on "open results in new tab button" element on "Btris/Portal" page
+    And the switch to new tab page
+    And the user must see "Laboratory Results Preview - Standard" text in "laboratory report page" field on "Btris/Portal" page
+    And the return to main page
     #Sign out.
     And the user logged out of the system
 
