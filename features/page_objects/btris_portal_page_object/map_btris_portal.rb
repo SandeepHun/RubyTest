@@ -34,6 +34,29 @@ def map_btris_portal
           'btris: laboratory filter report page'             =>"xpath^^.//*[contains(text(), 'Laboratory Report')]",
           'btris: laboratory select button'                  =>"xpath^^.//*[@id='app']/div/div[1]/div[2]/div[2]/div/div/div/div/form/div[1]/div[2]/div/div[2]/button",
           'laboratory report page'                           =>"xpath^^.//*[contains(text(), 'Laboratory Results Preview -')]",
+          #Dianostic and procedure.
+          'diagnosis and procedure test'                      =>"xpath^^.//*[contains(@data-test, '19-radio-value')]",
+          'diagnosis and procedure report page'               =>"xpath^^.//*[contains(text(), 'Diagnosis & Procedure Results Preview -')]",
+          'btris: diagnosis and procedure filter report page' =>"xpath^^.//*[contains(text(), 'Diagnosis & Procedure Report')]",
+          'btris: diagnosis and procedure select button'      =>"xpath^^.//*[@id='app']/div/div[1]/div[2]/div[2]/div/div/div/div/form/div[1]/div[2]/div/div[2]/button",
+          'observation type: select all'                      =>"xpath^^.//*[@id='observationTypes-red-quick-pick-select-all']",
+          'observation type: admit diagnosis'                 =>"xpath^^.//*[contains(text(), 'Admit Diagnosis')]",
+          'observation type: chief complaint'                 =>"xpath^^.//*[contains(text(), 'Chief Complaint')]",
+          'observation type: discharge diagnosis'             =>"xpath^^.//*[contains(text(), 'Discharge Diagnosis')]",
+          'observation type: niaid problem'                   =>"xpath^^.//*[contains(text(), 'NIAID Problem')]",
+          'observation type: procedure'                       =>"xpath^^.//*[contains(text(), 'Procedure')]",
+          'observation type: rare disease'                    =>"xpath^^.//*[contains(text(), 'Rare Disease')]",
+          'observation type: volunteer diagnosis'             =>"xpath^^.//*[contains(text(), 'Volunteer Diagnosis')]",
+          'bottom button: select subject'                      =>"xpath^^.//*[@id='app']/div/div[1]/div[2]/div[2]/div/div/div/div/form/div[2]/div/div[5]/div[2]/button",
+          #Red Search.
+          'top nav: select report'                            =>"xpath^^.//*[contains(text(), 'Select Subjects')]",
+          'top nav: enter report criteria'                    =>"xpath^^.//*[contains(text(), 'Enter Report Criteria')]",
+          'labs: add labs button'                             =>"xpath^^.//*[contains(@data-test, 'add-red-terms-button')]",
+          'red search: keyword text box'                      =>"xpath^^.//*[contains(@data-test, 'red-search-keywords-input')]",
+          'red search: search type drop down'                 =>"xpath^^.//*[@id='labs-red-term-search-type']",
+          'red search: search button'                         =>"xpath^^.//*[contains(@data-test, 'red-search-search-button')]",
+          'red search: done button'                           =>"xpath^^.//*[contains(@data-test, 'red-search-lower-done-button')]",
+          'run report'                                        =>"xpath^^.//*[@id='app']/div/div[1]/div[2]/div[2]/div/div/div[2]/div/div/div[1]/div/div/div/div[2]/button",
 
 
 
