@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="067897a2-c785-43cd-92be-f80118e50adc" name="Default" comment="" />
+    <list default="true" id="067897a2-c785-43cd-92be-f80118e50adc" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/features/phis-apm" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +33,7 @@
         <entry file="file://$PROJECT_DIR$/features/btris_project_feature/Laboratory_Test.feature">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="191">
-              <caret line="147" column="81" lean-forward="true" selection-start-line="144" selection-start-column="4" selection-end-line="147" selection-end-column="81" />
+              <caret line="147" column="81" selection-start-line="144" selection-start-column="4" selection-end-line="147" selection-end-column="81" />
             </state>
           </provider>
         </entry>
@@ -76,7 +78,7 @@
         <entry file="file://$PROJECT_DIR$/features/page_objects/btris_portal_page_object/map_btris_portal.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="227">
-              <caret line="58" column="13" lean-forward="true" selection-start-line="58" selection-start-column="11" selection-end-line="58" selection-end-column="21" />
+              <caret line="58" column="13" selection-start-line="58" selection-start-column="11" selection-end-line="58" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -237,12 +239,6 @@
               <item name="features" type="462c0819:PsiDirectoryNode" />
               <item name="step_definitions" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="btris_automation_regression_suite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="btris_automation_regression_suite" type="462c0819:PsiDirectoryNode" />
-              <item name="features" type="462c0819:PsiDirectoryNode" />
-              <item name="support" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -302,7 +298,7 @@
       <workItem from="1531747095338" duration="6674000" />
       <workItem from="1531791452959" duration="37203000" />
       <workItem from="1531958291898" duration="152000" />
-      <workItem from="1531958457109" duration="16611000" />
+      <workItem from="1531958457109" duration="16710000" />
     </task>
     <servers />
   </component>
@@ -339,12 +335,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="241994000" />
+    <option name="totallyTimeSpent" value="242093000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1380" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22575757" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22575757" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
@@ -353,7 +349,7 @@
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.37397036" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.17298187" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.17298187" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -614,14 +610,14 @@
     <entry file="file://$PROJECT_DIR$/features/btris_project_feature/Laboratory_Test.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="191">
-          <caret line="147" column="81" lean-forward="true" selection-start-line="144" selection-start-column="4" selection-end-line="147" selection-end-column="81" />
+          <caret line="147" column="81" selection-start-line="144" selection-start-column="4" selection-end-line="147" selection-end-column="81" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/features/page_objects/btris_portal_page_object/map_btris_portal.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="227">
-          <caret line="58" column="13" lean-forward="true" selection-start-line="58" selection-start-column="11" selection-end-line="58" selection-end-column="21" />
+          <caret line="58" column="13" selection-start-line="58" selection-start-column="11" selection-end-line="58" selection-end-column="21" />
         </state>
       </provider>
     </entry>
