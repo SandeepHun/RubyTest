@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="067897a2-c785-43cd-92be-f80118e50adc" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/features/btris_project_feature/Diagnosis_&amp;_Procedure.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/btris_project_feature/Laboratory_Test.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/btris_project_feature/Laboratory_Test.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/btris_project_feature/Radiology_With_Image.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/btris_project_feature/Radiology_With_Image.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/btris_steps_features/step_definitions/step_definitions.rb" beforeDir="false" afterPath="$PROJECT_DIR$/features/btris_steps_features/step_definitions/step_definitions.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/page_objects/btris_portal_page_object/map_btris_portal.rb" beforeDir="false" afterPath="$PROJECT_DIR$/features/page_objects/btris_portal_page_object/map_btris_portal.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/support/env.rb" beforeDir="false" afterPath="$PROJECT_DIR$/features/support/env.rb" afterDir="false" />
-    </list>
+    <list default="true" id="067897a2-c785-43cd-92be-f80118e50adc" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -310,7 +302,7 @@
       <workItem from="1531747095338" duration="6674000" />
       <workItem from="1531791452959" duration="37203000" />
       <workItem from="1531958291898" duration="152000" />
-      <workItem from="1531958457109" duration="16012000" />
+      <workItem from="1531958457109" duration="16611000" />
     </task>
     <servers />
   </component>
@@ -347,7 +339,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="241395000" />
+    <option name="totallyTimeSpent" value="241994000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1380" height="744" extended-state="6" />
