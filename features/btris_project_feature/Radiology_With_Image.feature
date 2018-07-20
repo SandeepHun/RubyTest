@@ -51,7 +51,7 @@ Feature: BTRIS Radiology
 
   @RWI2
 
-  Scenario Outline: 1.2 Radiology without image including demographic data.
+  Scenario Outline: 1.2 Radiology without image without demographic data.
   #Login to the system.
     Given the user navigates to / on browser
     And the user must see "Login to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page

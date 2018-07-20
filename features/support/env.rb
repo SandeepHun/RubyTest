@@ -52,7 +52,6 @@ def wait_for_element(obj)
   obj.present?
   obj.enabled?
 
-
 end
 
 # AJAX or JAVASCRIPT Wait fo Element to Present and enable on page
