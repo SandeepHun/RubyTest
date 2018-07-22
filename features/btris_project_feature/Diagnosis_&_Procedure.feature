@@ -29,11 +29,11 @@ Feature: Diagnosis & Procedure Feature
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
-    And the user waits for 10 seconds
+    #Verify the diagnosis report table.
+    And the user must see "Subject Name" text in "diagnosis report table: subject name column" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "Diagnosis & Procedure Results Preview - Standard" text in "diagnosis and procedure report page" field on "Btris/Portal" page
     #Click on the download report button.
-    And the user waits for 5 seconds
     And the user clicks on "download full report button" element on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
     And the user verify the diagnosis and procedure report on the table
@@ -77,11 +77,11 @@ Feature: Diagnosis & Procedure Feature
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
-    And the user waits for 10 seconds
+    #Verify the diagnosis report table.
+    And the user must see "Subject Name" text in "diagnosis report table: subject name column" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "Diagnosis & Procedure Results Preview - Standard" text in "diagnosis and procedure report page" field on "Btris/Portal" page
     #Click on the download report button.
-    And the user waits for 5 seconds
     And the user clicks on "download full report button" element on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
     And the user verify the diagnosis and procedure report on the table
@@ -92,9 +92,6 @@ Feature: Diagnosis & Procedure Feature
     And the return to main page
     #Click on Enter Report Criteria.
     And the user clicks on "top nav: enter report criteria" element on "Btris/Portal" page
-    #Click on Select All Observation Type.Scenario:
-    #And the user clicks the "observation type: admit diagnosis" button on "Btris/Portal" page
-    #And the user clicks on "observation type: select all" element on "Btris/Portal" page
     #click on select report.
     And the user clicks on "bottom button: select subject" element on "Btris/Portal" page
     #Enter and filter subject.
@@ -104,11 +101,11 @@ Feature: Diagnosis & Procedure Feature
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     #click on run report button.
     And the user clicks on "run report" element on "Btris/Portal" page
-    And the user waits for 10 seconds
+    #Verify the diagnosis report table.
+    And the user must see "Subject Name" text in "diagnosis report table: subject name column" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "Diagnosis & Procedure Results Preview - Standard" text in "diagnosis and procedure report page" field on "Btris/Portal" page
     #Click on the download report button.
-    And the user waits for 9 seconds
     And the user clicks on "download full report button" element on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
     And the user verify the diagnosis and procedure report on the table 2

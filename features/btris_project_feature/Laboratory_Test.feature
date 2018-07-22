@@ -29,14 +29,14 @@ Feature: Laboratory Feature
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
-    And the user waits for 10 seconds
+    #Verify the laboratory report table.
+    And the user must see "Collected Date Time" text in "laboratory report table: subject name column" field on "Btris/Portal" page
     #Verify report page.
-    And the user must see "Laboratory Results Preview - Standard" text in "laboratory report page" field on "Btris/Portal" page
-    #Click on the download report button.
-    And the user waits for 8 seconds
-    And the user clicks on "download full report button" element on "Btris/Portal" page
+    And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
     And the user verify the laboratory report on the table
+    #Click on the download report button.
+    And the user clicks on "download full report button" element on "Btris/Portal" page
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
@@ -47,7 +47,7 @@ Feature: Laboratory Feature
 
     Examples:
       | Test User Name | Password        | Subject   | Filtered Subject |
-      | btris_test2    | Nomorecognos11$ | 03-M-0211 | ABIERA           |
+      | btris_test2    | Nomorecognos11$ | 00-C-0018 | BOWEN            |
 
 
   @Laboratory2
@@ -80,14 +80,14 @@ Feature: Laboratory Feature
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
-    And the user waits for 10 seconds
+    #Verify the laboratory report table.
+    And the user must see "Collected Date Time" text in "laboratory report table: subject name column" field on "Btris/Portal" page
     #Verify report page.
-    And the user must see "Laboratory Results Preview - Standard" text in "laboratory report page" field on "Btris/Portal" page
-    #Click on the download report button.
-    And the user waits for 8 seconds
-    And the user clicks on "download full report button" element on "Btris/Portal" page
+    And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
     And the user verify the laboratory report on the table
+    #Click on the download report button.
+    And the user clicks on "download full report button" element on "Btris/Portal" page
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
@@ -98,7 +98,7 @@ Feature: Laboratory Feature
 
     Examples:
       | Test User Name | Password        | Subject   | Filtered Subject |
-      | btris_test2    | Nomorecognos11$ | 03-M-0211 | ABIERA           |
+      | btris_test2    | Nomorecognos11$ | 00-C-0018 | BOWEN            |
 
 
   @Laboratory3
@@ -129,14 +129,14 @@ Feature: Laboratory Feature
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
-    And the user waits for 10 seconds
+    #Verify the laboratory report table.
+    And the user must see "Collected Date Time" text in "laboratory report table: subject name column" field on "Btris/Portal" page
     #Verify report page.
-    And the user must see "Laboratory Results Preview - Standard" text in "laboratory report page" field on "Btris/Portal" page
-    #Click on the download report button.
-    And the user waits for 8 seconds
-    And the user clicks on "download full report button" element on "Btris/Portal" page
+    And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
     And the user verify the laboratory report on the table
+    #Click on the download report button.
+    And the user clicks on "download full report button" element on "Btris/Portal" page
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
@@ -152,8 +152,8 @@ Feature: Laboratory Feature
     And the user selects "<Search Type>" from "red search: search type drop down" drop down on "Btris/Portal" page
     #Click the search button.
     And the user clicks on "red search: search button" element on "Btris/Portal" page
-    #Verify se data.
-
+    #Verify search data.
+    And the user must see "Laboratory Procedure" text in "red search data" field on "Btris/Portal" page
     #Click on the done button.
     And the user clicks on "red search: done button" element on "Btris/Portal" page
     #Sign out.
@@ -161,4 +161,4 @@ Feature: Laboratory Feature
 
     Examples:
       | Test User Name | Password        | Subject   | Filtered Subject | Red Search Data | Search Type                    |
-      | btris_test2    | Nomorecognos11$ | 03-M-0211 | ABIERA           | Potassium Test  | Contains any of these keywords |
+      | btris_test2    | Nomorecognos11$ | 00-C-0018 | BOWEN            | Potassium Test  | Contains any of these keywords |
