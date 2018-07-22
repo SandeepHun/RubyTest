@@ -30,7 +30,7 @@ def map_btris_portal
           'open results in new tab button'                   =>"xpath^^.//*[@id='app']/div/div[1]/div[2]/div[2]/div/div/div/div[1]/div/div[2]/div/div/div[4]/button",
           'protocol check button'                            =>"xpath^^.//*[contains(@data-test, 'protocol-checkbox')]",
           #Laboratory Test.
-          'laboratory test'                                  =>"xpath^^.//*[@id='generalRpts']/div/div[8]/label",
+          'laboratory test'                                  =>"xpath^^.//*[@id='generalRpts']/div/ul/li[8]/div/label",
           'btris: laboratory filter report page'             =>"xpath^^.//*[contains(text(), 'Laboratory Report')]",
           'btris: laboratory select button'                  =>"xpath^^.//*[@id='app']/div/div[1]/div[2]/div[2]/div/div/div/div/form/div[1]/div[2]/div/div[2]/button",
           'laboratory report page'                           =>"xpath^^.//*[contains(text(), 'Laboratory Results Preview -')]",
@@ -56,7 +56,16 @@ def map_btris_portal
           'red search: search type drop down'                 =>"xpath^^.//*[@id='labs-red-term-search-type']",
           'red search: search button'                         =>"xpath^^.//*[contains(@data-test, 'red-search-search-button')]",
           'red search: done button'                           =>"xpath^^.//*[contains(@data-test, 'red-search-lower-done-button')]",
+          'red search data'                                   =>"xpath^^.//*[@id='C90150_anchor'][contains(@data-test, 'red-node red-node-C90150')]",
           'run report'                                        =>"xpath^^.//*[@id='app']/div/div[1]/div[2]/div[2]/div/div/div[2]/div/div/div[1]/div/div/div/div[2]/button",
+          #Demographics report.
+          'demographics test report'                          =>"xpath^^.//*[@id='generalRpts']/div/ul/li[3]/div/label",
+          'demographics report page'                          =>"xpath^^.//*[contains(text(), 'Demographics Results Preview -')]",
+          'demographics report table: subject name column'    =>"xpath^^.//*/div[1]/div/div/div/table/thead/tr/th[3]/div/span",
+          'diagnosis report table: subject name column'       =>"xpath^^.//*/div[1]/div/div/div/table/thead/tr/th[3]/div/span",
+          'laboratory report table: subject name column'      =>"xpath^^.//*/div[1]/div/div/div/table/thead/tr/th[3]/div/span",
+          'laboratory and procedure report page'              =>"xpath^^.//*[contains(text(), 'Laboratory Results Preview -')]",
+          'radiology report results table'                    =>"xpath^^.//*[contains(text(), 'Laboratory Results Preview -')]",
 
 
 

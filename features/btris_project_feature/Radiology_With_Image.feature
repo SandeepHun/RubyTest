@@ -1,7 +1,7 @@
 @Radiology_With_Image
-Feature: BTRIS Radiology
+  Feature: BTRIS Radiology
 
-  @RWI1
+  @Radiology1
 
   Scenario Outline: 1.0 Radiology with image including demographic data.
   #Login to the system.
@@ -27,13 +27,12 @@ Feature: BTRIS Radiology
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
-    And the user waits for 2 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
-    And the user waits for 10 seconds
+    #Verify radiology report results.
+    And the user must see "Subject Name" text in "laboratory report table: subject name column" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "Radiology Results Preview - Standard" text in "radiology report page" field on "Btris/Portal" page
-    And the user waits for 5 seconds
     #Click on the download report button.
     And the user clicks on "download full report button" element on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
@@ -49,7 +48,7 @@ Feature: BTRIS Radiology
       | Test User Name | Password        | Subject    | Filtered Subject |
       | btris_test2    | Nomorecognos11$ | 00-AR-0222 | ADAMS            |
 
-  @RWI2
+  @Radiology2
 
   Scenario Outline: 1.2 Radiology without image without demographic data.
   #Login to the system.
@@ -75,12 +74,14 @@ Feature: BTRIS Radiology
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
-    And the user waits for 2 seconds
     And the user clicks on "run report button" element on "Btris/Portal" page
-    And the user waits for 10 seconds
+    #Verify radiology report results.
+    And the user must see "Subject Name" text in "laboratory report table: subject name column" field on "Btris/Portal" page
+    #Verify report page.
     And the user must see "Radiology Results Preview - Standard" text in "radiology report page" field on "Btris/Portal" page
-    And the user waits for 5 seconds
+    #Click on the download report button.
     And the user clicks on "download full report button" element on "Btris/Portal" page
+    #Verify and validate the report display and click on the the image to view.
     And the user click on the radiology record to verify the image
     And the switch to new tab page
     And the user must see "ADAMS MARI ELIZABETH" text in "radiology image display" field on "Btris/Portal" page
