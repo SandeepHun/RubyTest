@@ -66,6 +66,14 @@ def map_btris_portal
           'laboratory report table: subject name column'      =>"xpath^^.//*/div[1]/div/div/div/table/thead/tr/th[3]/div/span",
           'laboratory and procedure report page'              =>"xpath^^.//*[contains(text(), 'Laboratory Results Preview -')]",
           'radiology report results table'                    =>"xpath^^.//*[contains(text(), 'Laboratory Results Preview -')]",
+          #Assessment Report
+          'btris: assessment report test'                     =>"xpath^^.//*[@id='generalRpts']/div/ul/li[11]/div/label",
+          'btris: assessment filter report page'              =>"xpath^^.//*[@id='app']/div/div[1]/div[2]/div[2]/div/div/div/div/form/div[1]/div[1]/h2",
+          'assessment report table: subject name column'      =>"xpath^^.//*/div[1]/div/div/div/table/thead/tr/th[3]/div/span",
+          'assessment report page'                            =>"xpath^^.//*[contains(text(), 'NIAAA Assessment Report Results Preview -')]",
+          'btris: assessment select subject button'           =>"xpath^^.//*[@id='app']/div/div[1]/div[2]/div[2]/div/div/div/div/form/div[1]/div[2]/div/div[2]/button",
+          'select all assessment button'                      =>"xpath^^.//*[@id='app']/div/div[1]/div[2]/div[2]/div/div/div/div/form/div[2]/div/div[4]/div[2]/button",
+          'assessment protocol subject'                       =>"xpath^^.//*[@id='app']/div/div[1]/div[2]/div[2]/div/div/div[1]/div/div/div[2]/div[2]/table/tbody/tr[1]/td[1]/div/labelb",
 
 
 

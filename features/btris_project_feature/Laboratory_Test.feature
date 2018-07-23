@@ -1,4 +1,4 @@
-@Laboratory
+@BTRIS_Quick_Test
 Feature: Laboratory Feature
 
   @Laboratory1

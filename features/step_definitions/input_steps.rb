@@ -20,7 +20,6 @@ Then(/^the user enters "(.*)" into "(.*)" on "(.*)" page$/) do |value, field_nam
   else
     value = value
   end
-
   # Enter value in text box
   type_value_in_element selector, element_path, value
 end

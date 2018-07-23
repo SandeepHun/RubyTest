@@ -1,4 +1,4 @@
-@Diagnosis
+@BTRIS_Quick_Test
 Feature: Diagnosis & Procedure Feature
 
   @Diagnosis1
@@ -97,8 +97,8 @@ Feature: Diagnosis & Procedure Feature
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
     And the user clicks on "protocol check button" element on "Btris/Portal" page
-    And the user enters "<Filtered Subject 2>" into "fine filter subject search box" on "Btris/Portal" page
-    And the user clicks on "protocol check button" element on "Btris/Portal" page
+    #And the user enters "<Filtered Subject 2>" into "fine filter subject search box" on "Btris/Portal" page
+    #And the user clicks on "protocol check button" element on "Btris/Portal" page
     #click on run report button.
     And the user clicks on "run report" element on "Btris/Portal" page
     #Verify the diagnosis report table.
@@ -119,4 +119,4 @@ Feature: Diagnosis & Procedure Feature
 
     Examples:
       | Test User Name | Password        | Subject   | Filtered Subject | Filtered Subject 2 |
-      | btris_test2    | Nomorecognos11$ | 00-C-0133 | ANDERSON         | AABERG           |
+      | btris_test2    | Nomorecognos11$ | 00-C-0133 | ANDERSON         | AABERG             |

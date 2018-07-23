@@ -61,9 +61,17 @@ def get_browser
   @browser
 end
 
-Before do
+# Before do
+#   @browser = get_browser
+#   @browser.driver.manage.window.maximize
+# end
+Before ('@linux') do
   @browser = get_browser
-  @browser.driver.manage.window.maximize
+	if DRIVER == "chrome"
+    @browser.window.resize_to(1366, 768)
+  else
+    @browser.window.maximize
+  end
  end
 
 After do
