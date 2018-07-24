@@ -94,11 +94,6 @@ Feature: Diagnosis & Procedure Feature
     And the user clicks on "top nav: enter report criteria" element on "Btris/Portal" page
     #click on select report.
     And the user clicks on "bottom button: select subject" element on "Btris/Portal" page
-    #Enter and filter subject.
-    And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
-    And the user clicks on "protocol check button" element on "Btris/Portal" page
-    #And the user enters "<Filtered Subject 2>" into "fine filter subject search box" on "Btris/Portal" page
-    #And the user clicks on "protocol check button" element on "Btris/Portal" page
     #click on run report button.
     And the user clicks on "run report" element on "Btris/Portal" page
     #Verify the diagnosis report table.

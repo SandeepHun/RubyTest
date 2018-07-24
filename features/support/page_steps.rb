@@ -240,10 +240,10 @@ Then(/^the user clicks the "([^"]*)" button on "([^"]*)" page if opens$/) do |bt
 
 end
 
-Then(/^the user sign out from the score application and if pop up opens click discard button$/) do
-  step "the user clicks on \"Logout\" element on \"Score/home\" page"
-  btn_name = 'Discard'
-  page_name = 'Score/Dialog'
+Then(/^the user sign out from the btris application and if pop up opens click discard button$/) do
+  step "the user clicks on \"btris: logout drop down\" element on \"Btris/Portal\" page"
+  btn_name = 'btris: logou'
+  page_name = 'Btris/Portal'
   # get the XPATH or CSS from page object file, Raises Error if not found
   begin
     selector, element_path = get_element_target(btn_name, page_name).split('^^')
@@ -263,9 +263,9 @@ Then(/^the user sign out from the score application and if pop up opens click di
   step "the user can see text \"Select a User to Login:\""
 end
 
-Then(/^the user sign out from the score application$/) do
-  step "the user clicks on \"Logout\" element on \"Score/home\" page"
-  step "the user can see text \"Select a User to Login:\""
+Then(/^the user sign out from the btris application$/) do
+  step "the user clicks on \"btris: logout drop down\" element on \"Btris/Portal\" page"
+  step "the user clicks on \"btris: logout\" element on \"Btris/Portal\" page"
 end
 
 Then(/^the user waits till "(.*)" bar disappears on "(.*)" page$/) do |field_name, page_name|
