@@ -1474,6 +1474,29 @@ And(/^the user verify the assessment report report on the table$/) do
   end
 end
 
+And(/^the user click on the accept button if present$/) do
+  record_found = false
+  table_path = ".//*[@id='app']/div/div[1]/section[1]/div/div/div[1]/div/div/div[3]/div/button"
+  check_record_present = get_elements_size 'xpath', "#{table_path}"
+  if check_record_present > 2
+    #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
+    table_rows = get_elements_size 'xpath', "#{table_path}"
+    puts 'the button is ' +table_rows
+    (1..table_rows).each do |rows|
+      delete_icons_row = get_element_text 'xpath', "#{table_path}"
+      puts 'the button text is is ' +delete_icons_row
+      new_document = "Accept"
+      if delete_icons_row.downcase.eql? new_document.downcase
+        record_found = true
+        del_obj = get_element_obj 'xpath', "#{table_path}"
+        click_web_element del_obj
+        # sleep 4r7y,o
+      end
+    end
+    checkpoint (record_found.eql? true), "The Accept button or condition section is not enabled, all good"
+  end
+end
+
 
 
 

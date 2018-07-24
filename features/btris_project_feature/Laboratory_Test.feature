@@ -152,6 +152,7 @@ Feature: Laboratory Feature
     And the user selects "<Search Type>" from "red search: search type drop down" drop down on "Btris/Portal" page
     #Click the search button.
     And the user clicks on "red search: search button" element on "Btris/Portal" page
+    And the user waits for 6 seconds
     #Verify search data.
     And the user must see "Laboratory Procedure" text in "red search data" field on "Btris/Portal" page
     #Click on the done button.
