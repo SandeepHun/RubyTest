@@ -9,11 +9,11 @@ RESULTS_DIR = "#{Dir.pwd}/features/results/#{EXEC_ID}"
 if ENV['TEST_ENV'].downcase.eql? 'anet_dev'
   TIMEOUT = 20
 else
-  TIMEOUT = 30
+  TIMEOUT = 35
   if ENV['TEST_ENV'].downcase.eql? 'anet_local'
     TIMEOUT = 20
   else
-    TIMEOUT = 30
+    TIMEOUT = 35
   end
 end
 
@@ -37,7 +37,7 @@ selenium_driver.open_timeout = TIMEOUT
 
 @@browser = Watir::Browser.new BROWSER_NAME.to_sym, :http_client => selenium_driver
 
-@@browser.driver.manage.timeouts.implicit_wait=30
+@@browser.driver.manage.timeouts.implicit_wait=35
 # @browser = get_browser
 @@browser.driver.manage.window.maximize
 
@@ -54,7 +54,7 @@ def get_browser
   # client.timeout = TIMEOUT # seconds – default is 30
   @browser = Watir::Browser.new BROWSER_NAME.to_sym, :http_client => http_driver
   # @browser.driver.manage.window.maximize
-  @browser.driver.manage.timeouts.implicit_wait=20
+  @browser.driver.manage.timeouts.implicit_wait=30
   # screen_width = @browser.execute_script("return screen.width;")
   # screen_height = @browser.execute_script("return screen.height;")
   # @browser.driver.manage.window.resize_to(screen_width,screen_height)
@@ -64,6 +64,8 @@ end
 Before do
   @browser = get_browser
   @browser.window.resize_to(1366, 768)
+  puts @browser.html
+  puts @browser.browser
  end
 
 After do

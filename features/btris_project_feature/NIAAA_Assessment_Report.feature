@@ -1,4 +1,5 @@
 @NIAAA_Assessment_Report
+  @NIAAA_Assessment
 Feature: NIAAA Assessment
 
   @NIAAA1
