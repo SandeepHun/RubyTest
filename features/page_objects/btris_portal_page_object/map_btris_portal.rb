@@ -87,6 +87,9 @@ def map_btris_portal
           'red search: serial research'                                   =>"xpath^^.//*[@id='C2166735_anchor'][contains(@data-test, 'red-node red-node-C2166735')]",
           'red search: start with research'                               =>"xpath^^.//*[@id='C2159770_anchor']",
           'red search: exact phrase research'                             =>"xpath^^.//*[@id='C2166966_anchor']",
+          'labs: add observation button'                                 =>"xpath^^.//*[contains(@data-test, 'add-red-terms-button')][contains(text(), 'Add Observations')]",
+          'labs: search type drop down'                                  =>"xpath^^.//*[@id='clinicalDocumentDiscreteValues-red-term-search-type']",
+          'red search clinical: contains phrase research'                =>"xpath^^.//*[@id='C2101945_anchor']",
 
 
       }

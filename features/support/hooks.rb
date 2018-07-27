@@ -66,7 +66,7 @@ Before do
   @browser.window.resize_to(1366, 768)
   puts @browser.html
   puts @browser.browser
- end
+end
 
 After do
   @browser.close
