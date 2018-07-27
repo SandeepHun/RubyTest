@@ -1,4 +1,5 @@
 @BTRIS_Quick_Test
+  @Radiology_With_Image
   Feature: BTRIS Radiology
 
   @Radiology1
@@ -8,7 +9,7 @@
     Given the user navigates to / on browser
     And the user must see "Login to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
     #Login to the BTRIS system.
-    And the user enters "<Test User Name>" and "<Password>" to login to btris
+    And the user enters "<Test User Name>" and "Nomorecognos11|" to login to btris
     #Verify the condition page to accespt it.
     And the user must see "Conditions of Use and Code of Conduct" text in "btris: accept page" field on "Btris/Portal" page
     #Click on the accept button.
@@ -45,8 +46,8 @@
     And the user logged out of the system
 
     Examples:
-      | Test User Name | Password        | Subject    | Filtered Subject |
-      | btris_test2    | Nomorecognos11$ | 00-AR-0222 | ADAMS            |
+      | Test User Name | Password       | Subject    | Filtered Subject |
+      | btris_test2    | Nomorecognos11 | 00-AR-0222 | ADAMS            |
 
   @Radiology2
 
@@ -55,7 +56,7 @@
     Given the user navigates to / on browser
     And the user must see "Login to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
     #Login to the BTRIS system.
-    And the user enters "<Test User Name>" and "<Password>" to login to btris
+    And the user enters "<Test User Name>" and "Nomorecognos11|" to login to btris
     #Verify the condition page to accespt it.
     And the user must see "Conditions of Use and Code of Conduct" text in "btris: accept page" field on "Btris/Portal" page
     #Click on the accept button.
@@ -95,5 +96,5 @@
     And the user logged out of the system
 
     Examples:
-      | Test User Name | Password        | Subject    | Filtered Subject |
-      | btris_test2    | Nomorecognos11$ | 00-AR-0222 | ADAMS            |
+      | Test User Name | Password       | Subject    | Filtered Subject |
+      | btris_test2    | Nomorecognos11 | 00-AR-0222 | ADAMS            |

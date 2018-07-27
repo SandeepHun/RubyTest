@@ -1,4 +1,5 @@
 @BTRIS_Quick_Test
+  @Laboratory_Test
 Feature: Laboratory Feature
 
   @Laboratory1
@@ -8,7 +9,7 @@ Feature: Laboratory Feature
     Given the user navigates to / on browser
     And the user must see "Login to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
     #Login to the BTRIS system.
-    And the user enters "<Test User Name>" and "<Password>" to login to btris
+    And the user enters "<Test User Name>" and "Nomorecognos11|" to login to btris
     #Verify the condition page to accespt it.
     And the user must see "Conditions of Use and Code of Conduct" text in "btris: accept page" field on "Btris/Portal" page
     #Click on the accept button.
@@ -46,8 +47,8 @@ Feature: Laboratory Feature
     And the user logged out of the system
 
     Examples:
-      | Test User Name | Password        | Subject   | Filtered Subject |
-      | btris_test2    | Nomorecognos11$ | 00-C-0018 | BOWEN            |
+      | Test User Name | Password       | Subject   | Filtered Subject |
+      | btris_test2    | Nomorecognos11 | 00-C-0018 | BOWEN            |
 
 
   @Laboratory2
@@ -57,7 +58,7 @@ Feature: Laboratory Feature
     Given the user navigates to / on browser
     And the user must see "Login to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
     #Login to the BTRIS system.
-    And the user enters "<Test User Name>" and "<Password>" to login to btris
+    And the user enters "<Test User Name>" and "Nomorecognos11|" to login to btris
     #Verify the condition page to accespt it.
     And the user must see "Conditions of Use and Code of Conduct" text in "btris: accept page" field on "Btris/Portal" page
     #Click on the accept button.
@@ -97,8 +98,8 @@ Feature: Laboratory Feature
     And the user logged out of the system
 
     Examples:
-      | Test User Name | Password        | Subject   | Filtered Subject |
-      | btris_test2    | Nomorecognos11$ | 00-C-0018 | BOWEN            |
+      | Test User Name | Password       | Subject   | Filtered Subject |
+      | btris_test2    | Nomorecognos11 | 00-C-0018 | BOWEN            |
 
 
   @Laboratory3
@@ -108,7 +109,7 @@ Feature: Laboratory Feature
     Given the user navigates to / on browser
     And the user must see "Login to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
     #Login to the BTRIS system.
-    And the user enters "<Test User Name>" and "<Password>" to login to btris
+    And the user enters "<Test User Name>" and "Nomorecognos11|" to login to btris
     #Verify the condition page to accespt it.
     And the user must see "Conditions of Use and Code of Conduct" text in "btris: accept page" field on "Btris/Portal" page
     #Click on the accept button.
@@ -152,6 +153,7 @@ Feature: Laboratory Feature
     And the user selects "<Search Type>" from "red search: search type drop down" drop down on "Btris/Portal" page
     #Click the search button.
     And the user clicks on "red search: search button" element on "Btris/Portal" page
+    And the user waits for 6 seconds
     #Verify search data.
     And the user must see "Laboratory Procedure" text in "red search data" field on "Btris/Portal" page
     #Click on the done button.
@@ -160,5 +162,5 @@ Feature: Laboratory Feature
     And the user logged out of the system
 
     Examples:
-      | Test User Name | Password        | Subject   | Filtered Subject | Red Search Data | Search Type                    |
-      | btris_test2    | Nomorecognos11$ | 00-C-0018 | BOWEN            | Potassium Test  | Contains any of these keywords |
+      | Test User Name | Password       | Subject   | Filtered Subject | Red Search Data | Search Type                    |
+      | btris_test2    | Nomorecognos11 | 00-C-0018 | BOWEN            | Potassium Test  | Contains any of these keywords |

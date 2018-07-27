@@ -74,9 +74,22 @@ def map_btris_portal
           'btris: assessment select subject button'           =>"xpath^^.//*[@id='app']/div/div[1]/div[2]/div[2]/div/div/div/div/form/div[1]/div[2]/div/div[2]/button",
           'select all assessment button'                      =>"xpath^^.//*[@id='app']/div/div[1]/div[2]/div[2]/div/div/div/div/form/div[2]/div/div[4]/div[2]/button",
           'assessment protocol subject'                       =>"xpath^^.//*[@id='app']/div/div[1]/div[2]/div[2]/div/div/div[1]/div/div/div[2]/div[2]/table/tbody/tr[1]/td[1]/div/labelb",
-
-
-
+          #Clinical Documents - Discrete Values
+          'clinical documents: discrete values'              =>"xpath^^.//*[@id='generalRpts']/div/ul/li[1]/div/label",
+          'btris: clinical documents: discrete values filter report page' =>"xpath^^.//*[contains(text(), 'Clinical Documents - Discrete Values Report')]",
+          'btris: clinical documents: discrete values select button'      =>"xpath^^.//*[@id='app']/div[2]/div[1]/div[2]/div[2]/div/div/div/div/form/div[1]/div[2]/div/div[2]/button",
+          'clinical documents: discrete report page'                      =>"xpath^^.//*[contains(text(), 'Clinical Documents - Discrete Values Results Preview -')]",
+          'labs: add clinical doc button'                                 =>"xpath^^.//*[contains(@data-test, 'add-red-terms-button')]",
+          'red search for clinical doc'                                   =>"xpath^^.//*[@id='C114092_anchor'][contains(@data-test, 'red-node red-node-C114092')]",
+          'red search: clinical doc search type drop down'                =>"xpath^^.//*[@id='clinicalDocuments-red-term-search-type']",
+          'red search: clinical doc done button'                          =>"xpath^^.//*[contains(@data-test, 'red-search-upper-done-button')]",
+          'red search: clinical doc done search button'                   =>"xpath^^.//*[contains(@data-test, 'red-search-search-button')]",
+          'red search: serial research'                                   =>"xpath^^.//*[@id='C2166735_anchor'][contains(@data-test, 'red-node red-node-C2166735')]",
+          'red search: start with research'                               =>"xpath^^.//*[@id='C2159770_anchor']",
+          'red search: exact phrase research'                             =>"xpath^^.//*[@id='C2166966_anchor']",
+          'labs: add observation button'                                 =>"xpath^^.//*[contains(@data-test, 'add-red-terms-button')][contains(text(), 'Add Observations')]",
+          'labs: search type drop down'                                  =>"xpath^^.//*[@id='clinicalDocumentDiscreteValues-red-term-search-type']",
+          'red search clinical: contains phrase research'                =>"xpath^^.//*[@id='C2101945_anchor']",
 
 
       }

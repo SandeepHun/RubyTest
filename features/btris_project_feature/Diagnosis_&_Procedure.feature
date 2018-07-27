@@ -1,4 +1,5 @@
 @BTRIS_Quick_Test
+  @Diagnosis_And_Procedure
 Feature: Diagnosis & Procedure Feature
 
   @Diagnosis1
@@ -8,7 +9,7 @@ Feature: Diagnosis & Procedure Feature
     Given the user navigates to / on browser
     And the user must see "Login to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
     #Login to the BTRIS system.
-    And the user enters "<Test User Name>" and "<Password>" to login to btris
+    And the user enters "<Test User Name>" and "Nomorecognos11|" to login to btris
     #Verify the condition page to accespt it.
     And the user must see "Conditions of Use and Code of Conduct" text in "btris: accept page" field on "Btris/Portal" page
     #Click on the accept button.
@@ -46,8 +47,8 @@ Feature: Diagnosis & Procedure Feature
     And the user logged out of the system
 
     Examples:
-      | Test User Name | Password        | Subject   | Filtered Subject |
-      | btris_test2    | Nomorecognos11$ | 00-C-0133 | BEATON           |
+      | Test User Name | Password       | Subject   | Filtered Subject |
+      | btris_test2    | Nomorecognos11 | 00-C-0133 | BEATON           |
 
   @Diagnosis2
 
@@ -56,7 +57,7 @@ Feature: Diagnosis & Procedure Feature
     Given the user navigates to / on browser
     And the user must see "Login to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
     #Login to the BTRIS system.
-    And the user enters "<Test User Name>" and "<Password>" to login to btris
+    And the user enters "<Test User Name>" and "Nomorecognos11|" to login to btris
     #Verify the condition page to accespt it.
     And the user must see "Conditions of Use and Code of Conduct" text in "btris: accept page" field on "Btris/Portal" page
     #Click on the accept button.
@@ -94,11 +95,6 @@ Feature: Diagnosis & Procedure Feature
     And the user clicks on "top nav: enter report criteria" element on "Btris/Portal" page
     #click on select report.
     And the user clicks on "bottom button: select subject" element on "Btris/Portal" page
-    #Enter and filter subject.
-    And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
-    And the user clicks on "protocol check button" element on "Btris/Portal" page
-    #And the user enters "<Filtered Subject 2>" into "fine filter subject search box" on "Btris/Portal" page
-    #And the user clicks on "protocol check button" element on "Btris/Portal" page
     #click on run report button.
     And the user clicks on "run report" element on "Btris/Portal" page
     #Verify the diagnosis report table.
@@ -118,5 +114,5 @@ Feature: Diagnosis & Procedure Feature
     And the user logged out of the system
 
     Examples:
-      | Test User Name | Password        | Subject   | Filtered Subject | Filtered Subject 2 |
-      | btris_test2    | Nomorecognos11$ | 00-C-0133 | ANDERSON         | AABERG             |
+      | Test User Name | Password       | Subject   | Filtered Subject | Filtered Subject 2 |
+      | btris_test2    | Nomorecognos11 | 00-C-0133 | ANDERSON         | AABERG             |

@@ -9,9 +9,10 @@ Before do |scenario|
     #Do something if scenario fails.
     if Configuration.host.downcase.include? 'score'
       step 'the user navigates to /score on browser'
-      step "the user clicks the link with text \"Logout\""
+      step "the user clicks on \"btris: logout\" element on \"Btris/Portal\" page"
     else
-      step "the user clicks on \"sign out button\" element on \"DispositionReporting/EstablishmentReporting\" page"
+      step "the user clicks on \"btris: logout drop down\" element on \"Btris/Portal\" page"
+      step "the user clicks on \"btris: logout\" element on \"Btris/Portal\" page"
       @browser.close
     end
 
@@ -37,11 +38,11 @@ After do |scenario|
     # result_dir= "C:/test_results/"+"#{scenario_id[0]}"+"#{get_timestamp.to_s}"+".png"
     # @driver.save_screenshot(result_dir)
     #Do something if scenario fails.
-    if Configuration.host.downcase.include? 'score'
-      step 'the user navigates to /score on browser'
-      step "the user clicks the link with text \"Logout\""
+    if Configuration.host.downcase.include? 'in-progress'
+      step "the user clicks on \"btris: logout drop down\" element on \"Btris/Portal\" page"
+      step "the user clicks on \"btris: logout\" element on \"Btris/Portal\" page"
     else
-      step "the user clicks on \"sign out button\" element on \"DispositionReporting/EstablishmentReporting\" page"
+      puts 'test will continue if there are more scenarios to execute'
       #@browser.close
     end
   end

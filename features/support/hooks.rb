@@ -7,13 +7,13 @@ require 'selenium-webdriver'
 EXEC_ID = Time.now.strftime('%m%d%Y%H%M%S')
 RESULTS_DIR = "#{Dir.pwd}/features/results/#{EXEC_ID}"
 if ENV['TEST_ENV'].downcase.eql? 'anet_dev'
-  TIMEOUT = 30
+  TIMEOUT = 20
 else
-  TIMEOUT = 30
+  TIMEOUT = 35
   if ENV['TEST_ENV'].downcase.eql? 'anet_local'
-    TIMEOUT = 50
+    TIMEOUT = 20
   else
-    TIMEOUT = 30
+    TIMEOUT = 35
   end
 end
 
@@ -37,7 +37,7 @@ selenium_driver.open_timeout = TIMEOUT
 
 @@browser = Watir::Browser.new BROWSER_NAME.to_sym, :http_client => selenium_driver
 
-@@browser.driver.manage.timeouts.implicit_wait=50
+@@browser.driver.manage.timeouts.implicit_wait=35
 # @browser = get_browser
 @@browser.driver.manage.window.maximize
 
@@ -61,18 +61,12 @@ def get_browser
   @browser
 end
 
-# Before do
-#   @browser = get_browser
-#   @browser.driver.manage.window.maximize
-# end
-Before ('@linux') do
+Before do
   @browser = get_browser
-	if DRIVER == "chrome"
-    @browser.window.resize_to(1366, 768)
-  else
-    @browser.window.maximize
-  end
- end
+  @browser.window.resize_to(1366, 768)
+  puts @browser.html
+  puts @browser.browser
+end
 
 After do
   @browser.close

@@ -202,6 +202,31 @@ end
 
   end
 
+Then(/^the user clicks on "(.*)" accept button on "(.*)" page$/) do |field_name, page_name|
+  # get the XPATH or CSS from page object file , Raises Error if not found
+  begin
+    selector, element_path = get_element_target(field_name, page_name).split('^^')
+  rescue
+    fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
+  end
+  if selector.nil? || element_path.nil?
+    puts ("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
+  else
+    puts 'element'
+  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+
+  # Create the Element object
+  element_obj = @browser.element(selector, element_path)
+
+  # Wait for element to be present
+  wait_for_element(element_obj)
+
+  # Focus on element to make it visible
+  focus_on_element(element_obj)
+
+  element_obj.click
+end
+end
 # Check element is enable or disable
 Then(/^the user can see "(.*)" element is "(.*)" on "(.*)" page$/) do |field_name, obj_state, page_name|
 
