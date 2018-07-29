@@ -63,3 +63,120 @@
 [0727/112444.639:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
 [0727/112450.767:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
 [0727/112537.813:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
+[0727/163717.278:ERROR:process_reader_win.cc(242)] ReadMemory at 0x77bb0000 of 64 bytes failed: Error (0x3AFC) while retrieving error. (0x12B)
+[0727/163717.334:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\SYSTEM32\ntdll.dll
+[0727/163717.334:ERROR:process_reader_win.cc(242)] ReadMemory at 0x77990000 of 64 bytes failed: Error (0x3B01) while retrieving error. (0x12B)
+[0727/163717.365:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\system32\kernel32.dll
+[0727/163717.365:ERROR:process_reader_win.cc(242)] ReadMemory at 0x7fefd930000 of 64 bytes failed: Error (0x3B01) while retrieving error. (0x12B)
+[0727/163717.382:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\system32\KERNELBASE.dll
+[0727/163717.383:ERROR:process_reader_win.cc(242)] ReadMemory at 0x7fefdf90000 of 64 bytes failed: Error (0x3B01) while retrieving error. (0x12B)
+[0727/163717.400:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\system32\msvcrt.dll
+[0727/163717.403:ERROR:process_reader_win.cc(242)] ReadMemory at 0x77ab0000 of 64 bytes failed: Error (0x3B01) while retrieving error. (0x12B)
+[0727/163717.419:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\system32\USER32.dll
+[0727/163717.430:ERROR:process_reader_win.cc(242)] ReadMemory at 0x7feefbf0000 of 64 bytes failed: Error (0x3B01) while retrieving error. (0x12B)
+[0727/163717.447:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\system32\MSVCR120.dll
+[0727/163717.462:ERROR:process_reader_win.cc(242)] ReadMemory at 0x77bb0000 of 64 bytes failed: Error (0x3B01) while retrieving error. (0x12B)
+[0727/163717.478:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\SYSTEM32\ntdll.dll
+[0727/163717.479:ERROR:process_reader_win.cc(242)] ReadMemory at 0x77990000 of 64 bytes failed: Error (0x3B01) while retrieving error. (0x12B)
+[0727/163717.495:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\system32\kernel32.dll
+[0727/163717.495:ERROR:process_reader_win.cc(242)] ReadMemory at 0x7fefd930000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0727/163717.518:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\system32\KERNELBASE.dll
+[0727/163717.518:ERROR:process_reader_win.cc(242)] ReadMemory at 0x7fefdf90000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0727/163717.519:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\system32\msvcrt.dll
+[0727/163717.519:ERROR:process_reader_win.cc(242)] ReadMemory at 0x77ab0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0727/163717.519:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\system32\USER32.dll
+[0727/163717.519:ERROR:process_reader_win.cc(242)] ReadMemory at 0x7feefbf0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0727/163717.519:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\system32\MSVCR120.dll
+[0727/163717.520:ERROR:process_reader_win.cc(242)] ReadMemory at 0x77bb0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0727/163717.520:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\SYSTEM32\ntdll.dll
+[0727/163717.520:ERROR:process_reader_win.cc(242)] ReadMemory at 0x77990000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0727/163717.521:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\system32\kernel32.dll
+[0727/163717.521:ERROR:process_reader_win.cc(242)] ReadMemory at 0x7fefd930000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0727/163717.521:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\system32\KERNELBASE.dll
+[0727/163717.521:ERROR:process_reader_win.cc(242)] ReadMemory at 0x7fefdf90000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0727/163717.521:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\system32\msvcrt.dll
+[0727/163717.521:ERROR:process_reader_win.cc(242)] ReadMemory at 0x77ab0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0727/163717.522:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\system32\USER32.dll
+[0727/163717.522:ERROR:process_reader_win.cc(242)] ReadMemory at 0x7feefbf0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0727/163717.522:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\system32\MSVCR120.dll
+[0727/163717.524:ERROR:file_io_win.cc(161)] CreateFile C:\Users\ngunida\AppData\Local\Temp\2\scoped_dir9352_15389\Crashpad\settings.dat: The system cannot find the path specified. (0x3)
+[0727/163717.526:ERROR:file_io_win.cc(170)] CreateFile C:\Users\ngunida\AppData\Local\Temp\2\scoped_dir9352_15389\Crashpad\reports\53f96f69-f214-4f0b-aa94-332e7c292ecb.dmp: The system cannot find the path specified. (0x3)
+[0727/163717.526:ERROR:crash_report_exception_handler.cc(97)] PrepareNewCrashReport failed
+[0727/170720.129:ERROR:process_reader_win.cc(242)] ReadMemory at 0x77bb0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0727/170720.149:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\SYSTEM32\ntdll.dll
+[0727/170720.149:ERROR:process_reader_win.cc(242)] ReadMemory at 0x77990000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0727/170720.150:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\system32\kernel32.dll
+[0727/170720.150:ERROR:process_reader_win.cc(242)] ReadMemory at 0x7fefd930000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0727/170720.150:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\system32\KERNELBASE.dll
+[0727/170720.150:ERROR:process_reader_win.cc(242)] ReadMemory at 0x7fefdf90000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0727/170720.151:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\system32\msvcrt.dll
+[0727/170720.152:ERROR:process_reader_win.cc(242)] ReadMemory at 0x77ab0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0727/170720.152:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\system32\USER32.dll
+[0727/170720.165:ERROR:process_reader_win.cc(242)] ReadMemory at 0x7feefbf0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0727/170720.165:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\system32\MSVCR120.dll
+[0727/170720.165:ERROR:process_reader_win.cc(242)] ReadMemory at 0x77bb0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0727/170720.166:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\SYSTEM32\ntdll.dll
+[0727/170720.166:ERROR:process_reader_win.cc(242)] ReadMemory at 0x77990000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0727/170720.166:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\system32\kernel32.dll
+[0727/170720.166:ERROR:process_reader_win.cc(242)] ReadMemory at 0x7fefd930000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0727/170720.166:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\system32\KERNELBASE.dll
+[0727/170720.167:ERROR:process_reader_win.cc(242)] ReadMemory at 0x7fefdf90000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0727/170720.167:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\system32\msvcrt.dll
+[0727/170720.167:ERROR:process_reader_win.cc(242)] ReadMemory at 0x77ab0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0727/170720.167:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\system32\USER32.dll
+[0727/170720.168:ERROR:process_reader_win.cc(242)] ReadMemory at 0x7feefbf0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0727/170720.168:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\system32\MSVCR120.dll
+[0727/170720.168:ERROR:process_reader_win.cc(242)] ReadMemory at 0x77bb0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0727/170720.168:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\SYSTEM32\ntdll.dll
+[0727/170720.168:ERROR:process_reader_win.cc(242)] ReadMemory at 0x77990000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0727/170720.168:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\system32\kernel32.dll
+[0727/170720.168:ERROR:process_reader_win.cc(242)] ReadMemory at 0x7fefd930000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0727/170720.169:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\system32\KERNELBASE.dll
+[0727/170720.169:ERROR:process_reader_win.cc(242)] ReadMemory at 0x7fefdf90000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0727/170720.169:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\system32\msvcrt.dll
+[0727/170720.169:ERROR:process_reader_win.cc(242)] ReadMemory at 0x77ab0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0727/170720.169:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\system32\USER32.dll
+[0727/170720.169:ERROR:process_reader_win.cc(242)] ReadMemory at 0x7feefbf0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0727/170720.170:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\system32\MSVCR120.dll
+[0727/170720.171:ERROR:file_io_win.cc(161)] CreateFile C:\Users\ngunida\AppData\Local\Temp\2\scoped_dir6308_16518\Crashpad\settings.dat: The system cannot find the path specified. (0x3)
+[0727/170720.171:ERROR:file_io_win.cc(170)] CreateFile C:\Users\ngunida\AppData\Local\Temp\2\scoped_dir6308_16518\Crashpad\reports\fef6f7c6-7430-440c-90aa-5974523694b1.dmp: The system cannot find the path specified. (0x3)
+[0727/170720.171:ERROR:crash_report_exception_handler.cc(97)] PrepareNewCrashReport failed
+[0727/172753.377:ERROR:process_reader_win.cc(242)] ReadMemory at 0x77bb0000 of 64 bytes failed: Error (0x3AFC) while retrieving error. (0x12B)
+[0727/172753.395:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\SYSTEM32\ntdll.dll
+[0727/172753.396:ERROR:process_reader_win.cc(242)] ReadMemory at 0x77990000 of 64 bytes failed: Error (0x3B01) while retrieving error. (0x12B)
+[0727/172753.400:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\system32\kernel32.dll
+[0727/172753.400:ERROR:process_reader_win.cc(242)] ReadMemory at 0x7fefd930000 of 64 bytes failed: Error (0x3B01) while retrieving error. (0x12B)
+[0727/172753.405:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\system32\KERNELBASE.dll
+[0727/172753.405:ERROR:process_reader_win.cc(242)] ReadMemory at 0x7fefdf90000 of 64 bytes failed: Error (0x3B01) while retrieving error. (0x12B)
+[0727/172753.410:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\system32\msvcrt.dll
+[0727/172753.411:ERROR:process_reader_win.cc(242)] ReadMemory at 0x77ab0000 of 64 bytes failed: Error (0x3B01) while retrieving error. (0x12B)
+[0727/172753.415:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\system32\USER32.dll
+[0727/172753.423:ERROR:process_reader_win.cc(242)] ReadMemory at 0x7feefbf0000 of 64 bytes failed: Error (0x3B01) while retrieving error. (0x12B)
+[0727/172753.428:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\system32\MSVCR120.dll
+[0727/172753.429:ERROR:process_reader_win.cc(242)] ReadMemory at 0x77bb0000 of 64 bytes failed: Error (0x3B01) while retrieving error. (0x12B)
+[0727/172753.433:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\SYSTEM32\ntdll.dll
+[0727/172753.433:ERROR:process_reader_win.cc(242)] ReadMemory at 0x77990000 of 64 bytes failed: Error (0x3B01) while retrieving error. (0x12B)
+[0727/172753.438:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\system32\kernel32.dll
+[0727/172753.438:ERROR:process_reader_win.cc(242)] ReadMemory at 0x7fefd930000 of 64 bytes failed: Error (0x3B01) while retrieving error. (0x12B)
+[0727/172753.442:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\system32\KERNELBASE.dll
+[0727/172753.442:ERROR:process_reader_win.cc(242)] ReadMemory at 0x7fefdf90000 of 64 bytes failed: Error (0x3B01) while retrieving error. (0x12B)
+[0727/172753.447:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\system32\msvcrt.dll
+[0727/172753.447:ERROR:process_reader_win.cc(242)] ReadMemory at 0x77ab0000 of 64 bytes failed: Error (0x3B01) while retrieving error. (0x12B)
+[0727/172753.451:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\system32\USER32.dll
+[0727/172753.451:ERROR:process_reader_win.cc(242)] ReadMemory at 0x7feefbf0000 of 64 bytes failed: Error (0x3B01) while retrieving error. (0x12B)
+[0727/172753.455:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\system32\MSVCR120.dll
+[0727/172753.456:ERROR:process_reader_win.cc(242)] ReadMemory at 0x77bb0000 of 64 bytes failed: Error (0x3B01) while retrieving error. (0x12B)
+[0727/172753.460:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\SYSTEM32\ntdll.dll
+[0727/172753.460:ERROR:process_reader_win.cc(242)] ReadMemory at 0x77990000 of 64 bytes failed: Error (0x3B01) while retrieving error. (0x12B)
+[0727/172753.464:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\system32\kernel32.dll
+[0727/172753.464:ERROR:process_reader_win.cc(242)] ReadMemory at 0x7fefd930000 of 64 bytes failed: Error (0x3B01) while retrieving error. (0x12B)
+[0727/172753.468:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\system32\KERNELBASE.dll
+[0727/172753.468:ERROR:process_reader_win.cc(242)] ReadMemory at 0x7fefdf90000 of 64 bytes failed: Error (0x3B01) while retrieving error. (0x12B)
+[0727/172753.475:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\system32\msvcrt.dll
+[0727/172753.475:ERROR:process_reader_win.cc(242)] ReadMemory at 0x77ab0000 of 64 bytes failed: Error (0x3B01) while retrieving error. (0x12B)
+[0727/172753.479:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\system32\USER32.dll
+[0727/172753.479:ERROR:process_reader_win.cc(242)] ReadMemory at 0x7feefbf0000 of 64 bytes failed: Error (0x3B01) while retrieving error. (0x12B)
+[0727/172753.484:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\system32\MSVCR120.dll
+[0727/172753.485:ERROR:file_io_win.cc(161)] CreateFile C:\Users\ngunida\AppData\Local\Temp\2\scoped_dir10760_22997\Crashpad\settings.dat: Error (0x3B01) while retrieving error. (0x3)
+[0727/172753.490:ERROR:file_io_win.cc(170)] CreateFile C:\Users\ngunida\AppData\Local\Temp\2\scoped_dir10760_22997\Crashpad\reports\6d99ba62-dbb2-4d91-a223-3d6f55f5a1bc.dmp: Error (0x3B01) while retrieving error. (0x3)
+[0727/172753.494:ERROR:crash_report_exception_handler.cc(97)] PrepareNewCrashReport failed

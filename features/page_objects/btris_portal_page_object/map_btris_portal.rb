@@ -90,6 +90,14 @@ def map_btris_portal
           'labs: add observation button'                                 =>"xpath^^.//*[contains(@data-test, 'add-red-terms-button')][contains(text(), 'Add Observations')]",
           'labs: search type drop down'                                  =>"xpath^^.//*[@id='clinicalDocumentDiscreteValues-red-term-search-type']",
           'red search clinical: contains phrase research'                =>"xpath^^.//*[@id='C2101945_anchor']",
+          'red search clinical: contains any search for add observation' =>"xpath^^.//*[contains(@data-test, 'red-node red-node-C2256100')]",
+          'red search clinical: start with search for add observation'   =>"xpath^^.//*[@id='C118703_anchor']",
+          #NICHD/CTDB Forms
+          'nichd ctdb forms'                                            =>"xpath^^.//*[contains(@data-test, '1020-radio-value')]",
+          'btris: nichd ctdb forms page'                                =>"xpath^^.//*[@id='app']/div/div[1]/div[2]/div[2]/div/div/div/div/form/div[1]/div[1]/h2",
+          'nichd ctdb select button'                                    =>"xpath^^.//*[@id='app']/div/div[1]/div[2]/div[2]/div/div/div/div/form/div[1]/div[2]/div/div[2]/button",
+          'nichd ctdb forms report page'                                =>"xpath^^.//*[contains(text(), 'NICHD/CTDB Forms Results Preview -')]",
+
 
 
       }
