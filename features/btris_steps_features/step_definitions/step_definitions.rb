@@ -1470,7 +1470,7 @@ And(/^the user verify the assessment report report on the table$/) do
         puts 'the MRN for the Laboratory results are ' +del_obj
       end
     end
-    checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
+    checkpoint (record_found.eql? true), "No data found in table that matches the search"
   end
 end
 
@@ -1516,6 +1516,57 @@ And(/^the user verify the clinical documents discrete values report on the table
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
+  end
+end
+
+Then(/^the user login to the btris application/) do
+  step "the user clicks on \"btris home: login button\" element on \"Btris/Portal\" page"
+  step "the user enters \"btris_test2\" into \"btris: user name\" on \"Btris/Portal\" page"
+  step "the user enters \"Nomorecognos11|\" into \"btris: password\" on \"Btris/Portal\" page"
+  step "the user clicks on \"btris: login to dashboard button\" element on \"Btris/Portal\" page"
+end
+
+And(/^the user verify the nichd ctdb forms report on the table$/) do
+  record_found = false
+  table_path = ".//*/div[1]/div/div/div/table"
+  check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
+  if check_record_present > 2
+    #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
+    table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
+    puts table_rows
+    (1..table_rows).each do |rows|
+      delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[1]"
+      puts 'the row number is ' +delete_icons_row
+      new_document = "00-CH-0127"
+      if delete_icons_row.downcase.eql? new_document.downcase
+        record_found = true
+        del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
+        puts 'the MRN for the diagnosis results are ' +del_obj
+      end
+    end
+    checkpoint (record_found.eql? true), "No data found in table that matches the NICHD/CTDB Forms search"
+  end
+end
+
+And(/^the user verify the nichd ctdb forms report on the table with all protocol$/) do
+  record_found = false
+  table_path = ".//*/div[1]/div/div/div/table"
+  check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
+  if check_record_present > 2
+    #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
+    table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
+    puts table_rows
+    (1..table_rows).each do |rows|
+      delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[1]"
+      puts 'the row number is ' +delete_icons_row
+      new_document = "02-CH-0287"
+      if delete_icons_row.downcase.eql? new_document.downcase
+        record_found = true
+        del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
+        puts 'the MRN for the diagnosis results are ' +del_obj
+      end
+    end
+    checkpoint (record_found.eql? true), "No data found in table that matches the NICHD/CTDB Forms search"
   end
 end
 

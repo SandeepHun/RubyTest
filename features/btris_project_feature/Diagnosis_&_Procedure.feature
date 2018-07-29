@@ -9,7 +9,7 @@ Feature: Diagnosis & Procedure Feature
     Given the user navigates to / on browser
     And the user must see "Login to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
     #Login to the BTRIS system.
-    And the user enters "<Test User Name>" and "Nomorecognos11|" to login to btris
+    And the user login to the btris application
     #Verify the condition page to accespt it.
     And the user must see "Conditions of Use and Code of Conduct" text in "btris: accept page" field on "Btris/Portal" page
     #Click on the accept button.
@@ -47,8 +47,8 @@ Feature: Diagnosis & Procedure Feature
     And the user logged out of the system
 
     Examples:
-      | Test User Name | Password       | Subject   | Filtered Subject |
-      | btris_test2    | Nomorecognos11 | 00-C-0133 | BEATON           |
+      | Subject   | Filtered Subject |
+      | 00-C-0133 | BEATON           |
 
   @Diagnosis2
 
@@ -57,7 +57,7 @@ Feature: Diagnosis & Procedure Feature
     Given the user navigates to / on browser
     And the user must see "Login to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
     #Login to the BTRIS system.
-    And the user enters "<Test User Name>" and "Nomorecognos11|" to login to btris
+    And the user login to the btris application
     #Verify the condition page to accespt it.
     And the user must see "Conditions of Use and Code of Conduct" text in "btris: accept page" field on "Btris/Portal" page
     #Click on the accept button.
@@ -114,5 +114,5 @@ Feature: Diagnosis & Procedure Feature
     And the user logged out of the system
 
     Examples:
-      | Test User Name | Password       | Subject   | Filtered Subject | Filtered Subject 2 |
-      | btris_test2    | Nomorecognos11 | 00-C-0133 | ANDERSON         | AABERG             |
+      | Subject   | Filtered Subject | Filtered Subject 2 |
+      | 00-C-0133 | ANDERSON         | AABERG             |
