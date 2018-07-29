@@ -97,7 +97,13 @@ def map_btris_portal
           'btris: nichd ctdb forms page'                                =>"xpath^^.//*[@id='app']/div/div[1]/div[2]/div[2]/div/div/div/div/form/div[1]/div[1]/h2",
           'nichd ctdb select button'                                    =>"xpath^^.//*[@id='app']/div/div[1]/div[2]/div[2]/div/div/div/div/form/div[1]/div[2]/div/div[2]/button",
           'nichd ctdb forms report page'                                =>"xpath^^.//*[contains(text(), 'NICHD/CTDB Forms Results Preview -')]",
-
+          # PDF Documents
+          'pdf documents'                                               =>"xpath^^.//*[@id='generalRpts']/div/ul/li[14]/div/label",
+          'btris: pdf documents page'                                   =>"xpath^^.//*[@id='app']/div[2]/div[1]/div[2]/div[2]/div/div/div/div/form/div[1]/div[1]/h2",
+          'pdf documents select all button'                             =>"xpath^^.//*[@id='app']/div[2]/div[1]/div[2]/div[2]/div/div/div/div/form/div[2]/div/div[2]/div[2]/div[1]/div/label",
+          'pdf documents select button'                                 =>"xpath^^.//*[@id='app']/div[2]/div[1]/div[2]/div[2]/div/div/div/div/form/div[1]/div[2]/div/div[2]/button",
+          'pdf documents result page'                                   =>"xpath^^.//*[contains(text(), 'PDF Documents Results Preview -')]",
+          'pdf documents buttom select button'                          =>"xpath^^.//*[@id='app']/div[2]/div[1]/div[2]/div[2]/div/div/div/div/form/div[2]/div/div[4]/div[2]/button",
 
 
       }
