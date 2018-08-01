@@ -1592,6 +1592,28 @@ And(/^the user verify the pdf documents report on the table$/) do
   end
 end
 
+And(/^the user verify the vital signs report on the table$/) do
+  record_found = false
+  table_path = ".//*/div[1]/div/div/div/table"
+  check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
+  if check_record_present > 2
+    #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
+    table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
+    puts table_rows
+    (1..table_rows).each do |rows|
+      delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
+      puts 'the row number is ' +delete_icons_row
+      new_document = "ABBOTT, RUSSELL JOSEPH"
+      if delete_icons_row.downcase.eql? new_document.downcase
+        record_found = true
+        del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[1]"
+        puts 'the MRN for the Laboratory results are ' +del_obj
+      end
+    end
+    checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
+  end
+end
+
 
 
 

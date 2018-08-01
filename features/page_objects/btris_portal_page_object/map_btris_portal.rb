@@ -104,6 +104,14 @@ def map_btris_portal
           'pdf documents select button'                                 =>"xpath^^.//*[@id='app']/div[2]/div[1]/div[2]/div[2]/div/div/div/div/form/div[1]/div[2]/div/div[2]/button",
           'pdf documents result page'                                   =>"xpath^^.//*[contains(text(), 'PDF Documents Results Preview -')]",
           'pdf documents buttom select button'                          =>"xpath^^.//*[@id='app']/div[2]/div[1]/div[2]/div[2]/div/div/div/div/form/div[2]/div/div[4]/div[2]/button",
+          #Vital signs
+          'btris: vital signs test'                                     =>"xpath^^.//*[@id='generalRpts']/div/ul/li[17]/div/label",
+          'btris: vital signs test page'                                =>"xpath^^.//*[@id='app']//*[contains(text(), 'Vital Signs Report')]",
+          'vital signs test select button'                              =>"xpath^^.//*[@id='app']/div/div[1]/div[2]/div[2]/div/div/div/div/form/div[1]/div[2]/div/div[2]/button",
+          'vital signs test result page'                                =>"xpath^^.//*[contains(text(), 'Vital Signs Results Preview -')]",
+          'vital signs test table: subject name column'                 =>"xpath^^.//*/div[2]/div/div/div/table/thead/tr/th[3]/div/span",
+          'include demographic report radio button'                     =>"xpath^^.//*[@id='app']/div/div[1]/div[2]/div[2]/div/div/div/div/form/div[2]/div/div[3]/div/div/div/label",
+          'vital sign bottom select button'                             =>"xpath^^.//*[@id='app']/div/div[1]/div[2]/div[2]/div/div/div/div/form/div[2]/div/div[5]/div[2]/button",
 
 
       }
