@@ -56,7 +56,7 @@ def map_btris_portal
           'red search: search type drop down'                 =>"xpath^^.//*[@id='labs-red-term-search-type']",
           'red search: search button'                         =>"xpath^^.//*[contains(@data-test, 'red-search-search-button')]",
           'red search: done button'                           =>"xpath^^.//*[contains(@data-test, 'red-search-lower-done-button')]",
-          'red search data'                                   =>"xpath^^.//*[@id='C90150_anchor'][contains(@data-test, 'red-node red-node-C90150')]",
+          'red search data'                                   =>"xpath^^.//*[@id='C2113492_anchor'][contains(@data-test, 'red-node red-node-C2113492')]",
           'run report'                                        =>"xpath^^.//*[@id='app']/div/div[1]/div[2]/div[2]/div/div/div[2]/div/div/div[1]/div/div/div/div[2]/button",
           #Demographics report.
           'demographics test report'                          =>"xpath^^.//*[@id='generalRpts']/div/ul/li[3]/div/label",
