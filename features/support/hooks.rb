@@ -59,15 +59,33 @@ def get_browser
   # screen_height = @browser.execute_script("return screen.height;")
   # @browser.driver.manage.window.resize_to(screen_width,screen_height)
   @browser
+
 end
 
 Before do
+  if RUBY_PLATFORM.downcase.include?("linux")
+    @browser.driver.manage.timeouts.implicit_wait=30
+    @browser.driver.manage.window.resize_to(1600, 900)
+    @browser.goto "https://btristestportal.cc.nih.gov"
+    #@browser.driver.manage.window.maximize
+    @browser.driver.manage.timeouts.implicit_wait=15
+    puts("inspect: #{@browser.inspect}")
+    puts("status : #{@browser.status}")
+    puts("text   : #{@browser.text}")
+    puts("html   : #{@browser.html}")
+    @browser = get_browser
+    @browser.window.resize_to(1366, 768)
+    puts @browser.html
+    puts @browser
+    puts RUBY_PLATFORM
+    else
   @browser = get_browser
   @browser.window.resize_to(1366, 768)
   puts @browser.html
   puts @browser.browser
+  puts 'The OS is  ' +RUBY_PLATFORM
 end
-
+end
 After do
   @browser.close
 end
