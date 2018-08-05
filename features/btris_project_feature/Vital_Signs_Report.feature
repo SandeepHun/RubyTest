@@ -26,6 +26,7 @@ Feature: Vital Signs Report
     And the user clicks on "vital signs test select button" element on "Btris/Portal" page
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
+    And the user waits for 2 seconds
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
     #click on run report button.
@@ -78,6 +79,7 @@ Feature: Vital Signs Report
     And the user clicks on "vital sign bottom select button" element on "Btris/Portal" page
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
+    And the user waits for 2 seconds
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
     #click on run report button.

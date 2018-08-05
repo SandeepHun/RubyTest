@@ -24,6 +24,7 @@ Feature: Clinical Documents - Discrete Values Feature
     And the user must see "Clinical Documents - Discrete Values Report" text in "btris: clinical documents: discrete values filter report page" field on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "btris: clinical documents: discrete values select button" element on "Btris/Portal" page
+    And the user waits for 4 seconds
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
     And the user clicks on "protocol check button" element on "Btris/Portal" page
@@ -72,6 +73,7 @@ Feature: Clinical Documents - Discrete Values Feature
     And the user must see "Clinical Documents - Discrete Values Report" text in "btris: clinical documents: discrete values filter report page" field on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "btris: clinical documents: discrete values select button" element on "Btris/Portal" page
+    And the user waits for 4 seconds
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
     And the user clicks on "protocol check button" element on "Btris/Portal" page

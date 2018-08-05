@@ -112,6 +112,7 @@ def map_btris_portal
           'vital signs test table: subject name column'                 =>"xpath^^.//*/div[2]/div/div/div/table/thead/tr/th[3]/div/span",
           'include demographic report radio button'                     =>"xpath^^.//*[@id='app']/div/div[1]/div[2]/div[2]/div/div/div/div/form/div[2]/div/div[3]/div/div/div/label",
           'vital sign bottom select button'                             =>"xpath^^.//*[@id='app']/div/div[1]/div[2]/div[2]/div/div/div/div/form/div[2]/div/div[5]/div[2]/button",
+          'report creation date'                                        =>"xpath^^.//*[@id='mainTab-0-SV_reportDate']",
 
 
       }

@@ -6,14 +6,17 @@ require 'selenium-webdriver'
 
 EXEC_ID = Time.now.strftime('%m%d%Y%H%M%S')
 RESULTS_DIR = "#{Dir.pwd}/features/results/#{EXEC_ID}"
-if ENV['TEST_ENV'].downcase.eql? 'anet_dev'
-  TIMEOUT = 20
+if ENV['TEST_ENV'].downcase.eql? 'test08'
+  TIMEOUT = 30
 else
   TIMEOUT = 35
-  if ENV['TEST_ENV'].downcase.eql? 'anet_local'
-    TIMEOUT = 20
+  if ENV['TEST_ENV'].downcase.eql? 'test06'
+    TIMEOUT = 35
+    puts 'this is the wait we are using'
+
   else
     TIMEOUT = 35
+    puts 'this is the wait we are using'
   end
 end
 
@@ -42,7 +45,7 @@ selenium_driver.open_timeout = TIMEOUT
 #@@browser.driver.manage.window.maximize
 
 Before do
-  @browser = @@browser
+  #@browser = @@browser
 end
 
 
@@ -77,13 +80,15 @@ Before do
     @browser.window.resize_to(1366, 768)
     puts @browser.html
     puts @browser
-    puts RUBY_PLATFORM
+    puts 'The OS Platform is ' +RUBY_PLATFORM
     else
   @browser = get_browser
   @browser.window.resize_to(1366, 768)
+  @browser.driver.manage.window.maximize
   puts @browser.html
   puts @browser.browser
-  puts 'The OS is  ' +RUBY_PLATFORM
+  @browser.driver.manage.timeouts.implicit_wait=15
+  puts 'The OS platform is ' +RUBY_PLATFORM
 end
 end
 After do
