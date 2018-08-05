@@ -2,17 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="067897a2-c785-43cd-92be-f80118e50adc" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/btris_project_feature/Clinical_Documents_Discrete_Values.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/btris_project_feature/Clinical_Documents_Discrete_Values.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/btris_project_feature/Demographic_Report.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/btris_project_feature/Demographic_Report.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/btris_project_feature/Diagnosis_&amp;_Procedure.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/btris_project_feature/Diagnosis_&amp;_Procedure.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/btris_project_feature/Laboratory_Test.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/btris_project_feature/Laboratory_Test.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/btris_project_feature/NIAAA_Assessment_Report.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/btris_project_feature/NIAAA_Assessment_Report.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/btris_project_feature/NICHD_CTDB_ Report.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/btris_project_feature/NICHD_CTDB_ Report.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/btris_project_feature/PDF_Documents_Report.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/btris_project_feature/PDF_Documents_Report.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/btris_project_feature/Radiology_With_Image.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/btris_project_feature/Radiology_With_Image.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/btris_project_feature/Vital_Signs_Report.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/btris_project_feature/Vital_Signs_Report.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/page_objects/btris_portal_page_object/map_btris_portal.rb" beforeDir="false" afterPath="$PROJECT_DIR$/features/page_objects/btris_portal_page_object/map_btris_portal.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/features/support/hooks.rb" beforeDir="false" afterPath="$PROJECT_DIR$/features/support/hooks.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="hooks.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="hooks.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/features/support/hooks.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+            <state relative-caret-position="-323">
+              <caret line="47" column="2" selection-start-line="47" selection-start-column="2" selection-end-line="47" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -116,7 +105,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="step_definitions.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="step_definitions.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/features/step_definitions/step_definitions.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="297">
@@ -505,7 +494,7 @@
       <workItem from="1532885119363" duration="9355000" />
       <workItem from="1532977240858" duration="10674000" />
       <workItem from="1533133280113" duration="14045000" />
-      <workItem from="1533433263790" duration="4127000" />
+      <workItem from="1533433263790" duration="4153000" />
     </task>
     <servers />
   </component>
@@ -542,19 +531,20 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="349354000" />
+    <option name="totallyTimeSpent" value="349380000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1380" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.225" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.225" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37397036" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.37397036" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.17133443" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -839,13 +829,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/support/hooks.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/features/btris_project_feature/Radiology_With_Image.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -857,6 +840,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="1346" column="31" selection-start-line="1346" selection-start-column="22" selection-end-line="1346" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/support/hooks.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-323">
+          <caret line="47" column="2" selection-start-line="47" selection-start-column="2" selection-end-line="47" selection-end-column="2" />
         </state>
       </provider>
     </entry>
