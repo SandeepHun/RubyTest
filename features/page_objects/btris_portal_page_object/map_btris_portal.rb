@@ -89,7 +89,7 @@ def map_btris_portal
           'red search: exact phrase research'                             =>"xpath^^.//*[@id='C2166966_anchor']",
           'labs: add observation button'                                 =>"xpath^^.//*[contains(@data-test, 'add-red-terms-button')][contains(text(), 'Add Observations')]",
           'labs: search type drop down'                                  =>"xpath^^.//*[@id='clinicalDocumentDiscreteValues-red-term-search-type']",
-          'red search clinical: contains phrase research'                =>"xpath^^.//*[@id='C2101945_anchor']",
+          'red search clinical: contains phrase research'                =>"xpath^^.//*[@id='C2256100_anchor']",
           'red search clinical: contains any search for add observation' =>"xpath^^.//*[contains(@data-test, 'red-node red-node-C2256100')]",
           'red search clinical: start with search for add observation'   =>"xpath^^.//*[@id='C118703_anchor']",
           #NICHD/CTDB Forms
@@ -103,6 +103,7 @@ def map_btris_portal
           'pdf documents select all button'                             =>"xpath^^.//*[@id='app']/div[2]/div[1]/div[2]/div[2]/div/div/div/div/form/div[2]/div/div[2]/div[2]/div[1]/div/label",
           'pdf documents select button'                                 =>"xpath^^.//*[@id='app']/div[2]/div[1]/div[2]/div[2]/div/div/div/div/form/div[1]/div[2]/div/div[2]/button",
           'pdf documents result page'                                   =>"xpath^^.//*[contains(text(), 'PDF Documents Results Preview -')]",
+          'pdf documents search subject'                                =>"xpath^^.//*/div[1]/div/div/div/table//*[contains(text(), 'AABERG, ANNE MARIE')]",
           'pdf documents buttom select button'                          =>"xpath^^.//*[@id='app']/div[2]/div[1]/div[2]/div[2]/div/div/div/div/form/div[2]/div/div[4]/div[2]/button",
           #Vital signs
           'btris: vital signs test'                                     =>"xpath^^.//*[@id='generalRpts']/div/ul/li[17]/div/label",
