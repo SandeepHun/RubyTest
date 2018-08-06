@@ -1344,7 +1344,7 @@ And(/^the user click on the radiology record to verify the image$/) do
     (1..table_rows).each do |rows|
       delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[8]"
       puts 'the row number is ' +delete_icons_row
-      new_document = "DX1115913"
+      new_document = "CT0807941"
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_obj 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[8]/a"
@@ -1579,13 +1579,14 @@ And(/^the user verify the pdf documents report on the table$/) do
     table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
     puts table_rows
     (1..table_rows).each do |rows|
-      delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[1]"
+      delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
       puts 'the row number is ' +delete_icons_row
-      new_document = "00-C-0069"
+      new_document = "AABERG, ANNE MARIE"
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
-        del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
-        puts 'the MRN for the diagnosis results are ' +del_obj
+        puts 'The PDF Documents report test subject record is available'
+        # del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
+        # puts 'the MRN for the diagnosis results are ' +del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the NICHD/CTDB Forms search"

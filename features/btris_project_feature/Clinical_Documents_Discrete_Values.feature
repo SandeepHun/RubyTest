@@ -53,7 +53,7 @@ Feature: Clinical Documents - Discrete Values Feature
 
   @ClinicalDocuments2
 
-  Scenario Outline: 4.1 Clinical Documents - Discrete Values with red search for Clinical documentsi.
+  Scenario Outline: 4.2 Clinical Documents - Discrete Values with red search for Clinical documentsi.
   #Login to the system.
     Given the user navigates to / on browser
     And the user must see "Login to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
@@ -148,11 +148,11 @@ Feature: Clinical Documents - Discrete Values Feature
     #Enter search criteria in the red search keyword text box.
     And the user enters "<Red Search Data 4>" into "red search: keyword text box" on "Btris/Portal" page
     #Seect contains all of these keywords from the drop down.
-    And the user selects "<Search Type>" from "labs: search type drop down" drop down on "Btris/Portal" page
+    And the user selects "<Search Type 3>" from "labs: search type drop down" drop down on "Btris/Portal" page
     #Click the search button.
     And the user clicks on "red search: clinical doc done search button" element on "Btris/Portal" page
     #Verify search data.
-    And the user must see "NIH Observation, NIH Clinical Center" text in "red search clinical: contains phrase research" field on "Btris/Portal" page
+    And the user must see "Glasgow Coma Scale Observation" text in "red search clinical: contains phrase research" field on "Btris/Portal" page
     #Click on the done button.
     And the user clicks on "red search: clinical doc done button" element on "Btris/Portal" page
     #Click on Add Observation button:
@@ -184,7 +184,7 @@ Feature: Clinical Documents - Discrete Values Feature
     And the user logged out of the system
 
     Examples:
-      | Test User Name | Password       | Subject   | Filtered Subject | Red Search Data | Search Type                    | Red Search Data 1                  | Search Type 1                  | Search Type 2                     | Red Search Data 2 | Search Type 3 | Red Search Data 3                                  | Red Search Data 4           | Red Search Data 5              | Red Search Data 6 |
-      | btris_test2    | Nomorecognos11 | 00-C-0018 | BOWEN            | Potassium Test  | Contains any of these keywords | Serial Research Testing (CC, CRIS) | Contains all of these keywords | Starts with any of these keywords | Serial (CC, CRIS) | Exact Phrase  | Serial Testing or Serial/Research Testing Document | Heart Rate/Pulse (CC, CRIS) | Glasgow Coma Scale Observation | Body  DTM         |
+      | Test User Name | Password       | Subject   | Filtered Subject | Red Search Data | Search Type                    | Red Search Data 1                  | Search Type 1                  | Search Type 2                     | Red Search Data 2 | Search Type 3 | Red Search Data 3                                  | Red Search Data 4              | Red Search Data 5              | Red Search Data 6 |
+      | btris_test2    | Nomorecognos11 | 00-C-0018 | BOWEN            | Potassium Test  | Contains any of these keywords | Serial Research Testing (CC, CRIS) | Contains all of these keywords | Starts with any of these keywords | Serial (CC, CRIS) | Exact Phrase  | Serial Testing or Serial/Research Testing Document | Glasgow Coma Scale Observation | Glasgow Coma Scale Observation | Body  DTM         |
 
 

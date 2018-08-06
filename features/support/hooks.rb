@@ -7,15 +7,15 @@ require 'selenium-webdriver'
 EXEC_ID = Time.now.strftime('%m%d%Y%H%M%S')
 RESULTS_DIR = "#{Dir.pwd}/features/results/#{EXEC_ID}"
 if ENV['TEST_ENV'].downcase.eql? 'test08'
-  TIMEOUT = 30
+  TIMEOUT = 40
 else
-  TIMEOUT = 35
+  TIMEOUT = 45
   if ENV['TEST_ENV'].downcase.eql? 'test06'
-    TIMEOUT = 35
+    TIMEOUT = 45
     puts 'this is the wait we are using'
 
   else
-    TIMEOUT = 35
+    TIMEOUT = 45
     puts 'this is the wait we are using'
   end
 end
