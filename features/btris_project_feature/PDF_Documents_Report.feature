@@ -31,12 +31,11 @@ Feature: PDF Documents Report Feature
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
-    #Verify the document report table.
-    And the user must see "Subject Name" text in "diagnosis report table: subject name column" field on "Btris/Portal" page
+    And the user waits for 5 seconds
+#    #Verify the document report table.
+#    And the user must see "Subject Name" text in "diagnosis report table: subject name column" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "PDF Documents Results Preview - Standard" text in "pdf documents result page" field on "Btris/Portal" page
-    #Verify and validate the report display and click on the the image to view.
-    And the user must see "AABERG, ANNE MARIE" text in "pdf documents search subject" field on "Btris/Portal" page
     #And the user verify the pdf documents report on the table
     #Click on the download report button.
     And the user clicks on "download full report button" element on "Btris/Portal" page
@@ -49,12 +48,12 @@ Feature: PDF Documents Report Feature
     And the user logged out of the system
 
     Examples:
-      | Subject    | Filtered Subject |
-      | 00-C-0069  | AABERG           |
+      | Subject   | Filtered Subject |
+      | 00-C-0018 | ABOU-ANTOUN      |
 
   @PDF_Documents_Repor2
 
-  Scenario Outline: 5.1 NICHD/CTDB Report Test with All PDF/Scanned Documents.
+  Scenario Outline: 5.2 NICHD/CTDB Report Test with All PDF/Scanned Documents.
   #Login to the system.
     Given the user navigates to / on browser
     And the user must see "Login to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
@@ -84,12 +83,13 @@ Feature: PDF Documents Report Feature
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
+    And the user waits for 7 seconds
     #Verify the document report table.
     And the user must see "Subject Name" text in "diagnosis report table: subject name column" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "PDF Documents Results Preview - Standard" text in "pdf documents result page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
-    And the user must see "AABERG, ANNE MARIE" text in "pdf documents search subject" field on "Btris/Portal" page
+    And the user must see "CAHILL, PATRICIA ANN MARIE" text in "search subject s2" field on "Btris/Portal" page
     #And the user verify the pdf documents report on the table
     #Click on the download report button.
     And the user clicks on "download full report button" element on "Btris/Portal" page
@@ -102,5 +102,5 @@ Feature: PDF Documents Report Feature
     And the user logged out of the system
 
     Examples:
-      | Subject    | Filtered Subject |
-      | 00-C-0069  | AABERG           |
+      | Subject   | Filtered Subject |
+      | 00-C-0018 | ABOU-ANTOUN      |

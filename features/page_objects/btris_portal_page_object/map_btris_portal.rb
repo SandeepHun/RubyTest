@@ -62,7 +62,7 @@ def map_btris_portal
           'demographics test report'                          =>"xpath^^.//*[@id='generalRpts']/div/ul/li[3]/div/label",
           'demographics report page'                          =>"xpath^^.//*[contains(text(), 'Demographics Results Preview -')]",
           'demographics report table: subject name column'    =>"xpath^^.//*/div[1]/div/div/div/table/thead/tr/th[3]/div/span",
-          'diagnosis report table: subject name column'       =>"xpath^^.//*/div[1]/div/div/div/table/thead/tr/th[3]/div/span",
+          'diagnosis report table: subject name column'       =>"xpath^^.//*[contains(text(), 'Subject Name')]",
           'laboratory report table: subject name column'      =>"xpath^^.//*/div[1]/div/div/div/table/thead/tr/th[3]/div/span",
           'laboratory and procedure report page'              =>"xpath^^.//*[contains(text(), 'Laboratory Results Preview -')]",
           'radiology report results table'                    =>"xpath^^.//*[contains(text(), 'Laboratory Results Preview -')]",
@@ -103,7 +103,9 @@ def map_btris_portal
           'pdf documents select all button'                             =>"xpath^^.//*[@id='app']/div[2]/div[1]/div[2]/div[2]/div/div/div/div/form/div[2]/div/div[2]/div[2]/div[1]/div/label",
           'pdf documents select button'                                 =>"xpath^^.//*[@id='app']/div[2]/div[1]/div[2]/div[2]/div/div/div/div/form/div[1]/div[2]/div/div[2]/button",
           'pdf documents result page'                                   =>"xpath^^.//*[contains(text(), 'PDF Documents Results Preview -')]",
-          'pdf documents search subject'                                =>"xpath^^.//*/div[1]/div/div/div/table//*[contains(text(), 'AABERG, ANNE MARIE')]",
+          'pdf documents search subject'                                =>"xpath^^.//*[contains(text(), 'ABOU-ANTOUN, SAMI NASSR')]",
+          'search subject s2'                                           =>"xpath^^.//*[contains(text(), 'CAHILL, PATRICIA ANN MARIE')]",
+
           'pdf documents buttom select button'                          =>"xpath^^.//*[@id='app']/div[2]/div[1]/div[2]/div[2]/div/div/div/div/form/div[2]/div/div[4]/div[2]/button",
           #Vital signs
           'btris: vital signs test'                                     =>"xpath^^.//*[@id='generalRpts']/div/ul/li[17]/div/label",
