@@ -23,7 +23,7 @@ Feature: Laboratory Feature
     #verify the select report page.
     And the user must see "Laboratory Report" text in "btris: laboratory filter report page" field on "Btris/Portal" page
     #Clcik on the select report button.
-    And the user clicks on "btris: laboratory select button" element on "Btris/Portal" page
+    And the user clicks on "btris: top select button" element on "Btris/Portal" page
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
     And the user waits for 2 seconds
@@ -32,7 +32,7 @@ Feature: Laboratory Feature
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify the laboratory report table.
-    And the user must see "Collected Date Time" text in "laboratory report table: subject name column" field on "Btris/Portal" page
+    And the user must see "Subject Name" text in "laboratory report table: subject name" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
@@ -75,7 +75,7 @@ Feature: Laboratory Feature
     #Uncheck the demographic data.
     And the user clicks on "demographic data check box" element on "Btris/Portal" page
     #Clcik on the select report button.
-    And the user clicks on "btris: laboratory select button" element on "Btris/Portal" page
+    And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
     And the user waits for 2 seconds
@@ -84,7 +84,7 @@ Feature: Laboratory Feature
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify the laboratory report table.
-    And the user must see "Collected Date Time" text in "laboratory report table: subject name column" field on "Btris/Portal" page
+    And the user must see "Subject Name" text in "laboratory report table: subject name" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
@@ -125,7 +125,7 @@ Feature: Laboratory Feature
     #verify the select report page.
     And the user must see "Laboratory Report" text in "btris: laboratory filter report page" field on "Btris/Portal" page
     #Clcik on the select report button.
-    And the user clicks on "btris: laboratory select button" element on "Btris/Portal" page
+    And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
     And the user waits for 2 seconds
@@ -134,7 +134,7 @@ Feature: Laboratory Feature
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify the laboratory report table.
-    And the user must see "Collected Date Time" text in "laboratory report table: subject name column" field on "Btris/Portal" page
+    And the user must see "Subject Name" text in "laboratory report table: subject name" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
@@ -156,6 +156,7 @@ Feature: Laboratory Feature
     And the user selects "<Search Type>" from "red search: search type drop down" drop down on "Btris/Portal" page
     #Click the search button.
     And the user clicks on "red search: search button" element on "Btris/Portal" page
+    And the user waits for 5 seconds
     #Verify search data.
     And the user must see "Home Labs NIAID Panel, (NIAID, CRIMSON, HMLABS)" text in "red search data" field on "Btris/Portal" page
     #Click on the done button.

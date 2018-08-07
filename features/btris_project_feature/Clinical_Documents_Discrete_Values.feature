@@ -23,7 +23,7 @@ Feature: Clinical Documents - Discrete Values Feature
     #verify the select report page.
     And the user must see "Clinical Documents - Discrete Values Report" text in "btris: clinical documents: discrete values filter report page" field on "Btris/Portal" page
     #Clcik on the select report button.
-    And the user clicks on "btris: clinical documents: discrete values select button" element on "Btris/Portal" page
+    And the user clicks on "btris: top select button" element on "Btris/Portal" page
     And the user waits for 4 seconds
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
@@ -72,7 +72,7 @@ Feature: Clinical Documents - Discrete Values Feature
     #verify the select report page.
     And the user must see "Clinical Documents - Discrete Values Report" text in "btris: clinical documents: discrete values filter report page" field on "Btris/Portal" page
     #Clcik on the select report button.
-    And the user clicks on "btris: clinical documents: discrete values select button" element on "Btris/Portal" page
+    And the user clicks on "btris: top select button" element on "Btris/Portal" page
     And the user waits for 4 seconds
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
@@ -80,7 +80,7 @@ Feature: Clinical Documents - Discrete Values Feature
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
-     #Verify the document report table.
+    #Verify the document report table.
     And the user must see "Subject Name" text in "diagnosis report table: subject name column" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "Clinical Documents - Discrete Values Results Preview - Standard" text in "clinical documents: discrete report page" field on "Btris/Portal" page
@@ -103,6 +103,7 @@ Feature: Clinical Documents - Discrete Values Feature
     And the user selects "<Search Type>" from "red search: clinical doc search type drop down" drop down on "Btris/Portal" page
     #Click the search button.
     And the user clicks on "red search: clinical doc done search button" element on "Btris/Portal" page
+    And the user waits for 7 seconds
     #Verify search data.
     And the user must see "Point of Care Testing Document (CC, CRIS)" text in "red search for clinical doc" field on "Btris/Portal" page
     #Click on the done button.

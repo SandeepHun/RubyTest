@@ -23,7 +23,7 @@ Feature: Vital Signs Report
     #verify the select report page.
     And the user must see "Vital Signs Report" text in "btris: vital signs test page" field on "Btris/Portal" page
     #Clcik on the select report button.
-    And the user clicks on "vital signs test select button" element on "Btris/Portal" page
+    And the user clicks on "btris: top select button" element on "Btris/Portal" page
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
     And the user waits for 2 seconds
@@ -76,7 +76,7 @@ Feature: Vital Signs Report
     #Uncheck the include demographic report radio button.
     And the user clicks on "include demographic report radio button" element on "Btris/Portal" page
     #Clcik on the select report button.
-    And the user clicks on "vital sign bottom select button" element on "Btris/Portal" page
+    And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
     And the user waits for 2 seconds

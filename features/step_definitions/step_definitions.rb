@@ -1335,7 +1335,7 @@ end
 
 And(/^the user click on the radiology record to verify the image$/) do
   record_found = false
-  table_path = ".//*/div[1]/div/div/div/table"
+  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
@@ -1366,7 +1366,7 @@ end
 
 And(/^the user verify the laboratory report on the table$/) do
   record_found = false
-  table_path = ".//*/div[1]/div/div/div/table"
+  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
@@ -1388,7 +1388,7 @@ end
 
 And(/^the user verify the diagnosis and procedure report on the table$/) do
   record_found = false
-  table_path = ".//*/div[1]/div/div/div/table"
+  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
@@ -1432,7 +1432,7 @@ end
 
 And(/^the user verify the demographics report on the table$/) do
   record_found = false
-  table_path = ".//*/div[1]/div/div/div/table"
+  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
@@ -1499,7 +1499,7 @@ end
 
 And(/^the user verify the clinical documents discrete values report on the table$/) do
   record_found = false
-  table_path = ".//*/div[1]/div/div/div/table"
+  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
@@ -1528,7 +1528,7 @@ end
 
 And(/^the user verify the nichd ctdb forms report on the table$/) do
   record_found = false
-  table_path = ".//*/div[1]/div/div/div/table"
+  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
@@ -1550,7 +1550,7 @@ end
 
 And(/^the user verify the nichd ctdb forms report on the table with all protocol$/) do
   record_found = false
-  table_path = ".//*/div[1]/div/div/div/table"
+  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
@@ -1572,7 +1572,7 @@ end
 
 And(/^the user verify the pdf documents report on the table$/) do
   record_found = false
-  table_path = ".//*/div[1]/div/div/div/table"
+  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
@@ -1581,7 +1581,7 @@ And(/^the user verify the pdf documents report on the table$/) do
     (1..table_rows).each do |rows|
       delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
       puts 'the row number is ' +delete_icons_row
-      new_document = "AABERG, ANNE MARIE"
+      new_document = "BOWEN, JEANNE DOLORES"
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         puts 'The PDF Documents report test subject record is available'
@@ -1595,7 +1595,7 @@ end
 
 And(/^the user verify the vital signs report on the table$/) do
   record_found = false
-  table_path = ".//*/div[1]/div/div/div/table"
+  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
@@ -1614,10 +1614,5 @@ And(/^the user verify the vital signs report on the table$/) do
     checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
   end
 end
-
-
-
-
-
 
 

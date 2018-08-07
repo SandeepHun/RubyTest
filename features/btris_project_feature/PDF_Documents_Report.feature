@@ -23,7 +23,7 @@ Feature: PDF Documents Report Feature
     #verify the select report page.
     And the user must see "PDF/Scanned Documents" text in "btris: pdf documents page" field on "Btris/Portal" page
     #Clcik on the select report button.
-    And the user clicks on "pdf documents select button" element on "Btris/Portal" page
+    And the user clicks on "btris: top select button" element on "Btris/Portal" page
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
     And the user waits for 2 seconds
@@ -31,12 +31,11 @@ Feature: PDF Documents Report Feature
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
-    And the user waits for 5 seconds
 #    #Verify the document report table.
-#    And the user must see "Subject Name" text in "diagnosis report table: subject name column" field on "Btris/Portal" page
+    And the user must see "Subject Name" text in "diagnosis report table: subject name column" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "PDF Documents Results Preview - Standard" text in "pdf documents result page" field on "Btris/Portal" page
-    #And the user verify the pdf documents report on the table
+    And the user verify the pdf documents report on the table
     #Click on the download report button.
     And the user clicks on "download full report button" element on "Btris/Portal" page
     #click on the open report in another tab button.
@@ -75,7 +74,7 @@ Feature: PDF Documents Report Feature
     #Click on Select All for PDF/Scanned Documents.
     And the user clicks on "pdf documents select all button" element on "Btris/Portal" page
     #Clcik on the select report button.
-    And the user clicks on "pdf documents buttom select button" element on "Btris/Portal" page
+    And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
     And the user waits for 2 seconds
@@ -90,7 +89,7 @@ Feature: PDF Documents Report Feature
     And the user must see "PDF Documents Results Preview - Standard" text in "pdf documents result page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
     And the user must see "CAHILL, PATRICIA ANN MARIE" text in "search subject s2" field on "Btris/Portal" page
-    #And the user verify the pdf documents report on the table
+    And the user verify the pdf documents report on the table
     #Click on the download report button.
     And the user clicks on "download full report button" element on "Btris/Portal" page
     #click on the open report in another tab button.

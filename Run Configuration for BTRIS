@@ -1,1 +1,2 @@
-Run config BTRIS: =bundle exe cucumber -c --tag @Radiology_With_Image test_env=test08 browser=chrome
+Run config BTRIS: =bundle exe cucumber -c --tag @BTRIS_Quick_Test test_env=test08 browser=chrome
+Run Config with HTML Report: bundle exec cucumber -c --tags @BTRIS_Quick_Test test_env=test06 browser=chrome --format progress --format html --out=C:\NewRubyFramework\btris_automation_regression_suite\features\support\Downloads\Smoke_test_Report<DDMMYYY>.html
