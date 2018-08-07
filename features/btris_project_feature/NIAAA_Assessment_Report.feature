@@ -4,7 +4,7 @@ Feature: NIAAA Assessment
 
   @NIAAA1
 
-  Scenario Outline: 1.0 NIAAA Assessment Report testing.
+  Scenario Outline: 1.1 NIAAA Assessment Report testing.
   #Login to the system.
     Given the user navigates to / on browser
     And the user must see "Login to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
@@ -23,7 +23,7 @@ Feature: NIAAA Assessment
     #verify the select report page.
     And the user must see "NIAAA Assessment Report" text in "btris: assessment filter report page" field on "Btris/Portal" page
     #Clcik on the select report button.
-    And the user clicks on "btris: assessment select subject button" element on "Btris/Portal" page
+    And the user clicks on "btris: top select button" element on "Btris/Portal" page
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
     And the user waits for 2 seconds
@@ -48,7 +48,7 @@ Feature: NIAAA Assessment
 
   @NIAAA2
 
-  Scenario Outline: 1.0 NIAAA Assessment Report testing with ALL assessment.
+  Scenario Outline: 1.2 NIAAA Assessment Report testing with ALL assessment.
   #Login to the system.
     Given the user navigates to / on browser
     And the user must see "Login to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
@@ -70,12 +70,12 @@ Feature: NIAAA Assessment
     #click on the select all check box.
     And the user clicks on "select all assessment button" element on "Btris/Portal" page
     #Clcik on the select report button.
-    And the user clicks on "btris: assessment select subject button" element on "Btris/Portal" page
-    And the user waits for 5 seconds
+    #And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
     #Enter and filter subject.
-    #And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
-    And the user clicks on "assessment protocol subject" element on "Btris/Portal" page
-    #And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
+    And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
+    And the user waits for 2 seconds
+    And the user clicks on "protocol check button" element on "Btris/Portal" page
+    And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify assessment report results.
@@ -92,4 +92,3 @@ Feature: NIAAA Assessment
     Examples:
       | Test User Name | Password       | Subject    | Filtered Subject |
       | btris_test2    | Nomorecognos11 | 08-AA-0137 | ADEBISI          |
-

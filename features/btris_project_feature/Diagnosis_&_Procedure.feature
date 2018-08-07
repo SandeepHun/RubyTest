@@ -23,7 +23,7 @@ Feature: Diagnosis & Procedure Feature
     #verify the select report page.
     And the user must see "Diagnosis & Procedure Report" text in "btris: diagnosis and procedure filter report page" field on "Btris/Portal" page
     #Clcik on the select report button.
-    And the user clicks on "btris: diagnosis and procedure select button" element on "Btris/Portal" page
+    And the user clicks on "btris: top select button" element on "Btris/Portal" page
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
     And the user waits for 2 seconds
@@ -72,7 +72,7 @@ Feature: Diagnosis & Procedure Feature
     #verify the select report page.
     And the user must see "Diagnosis & Procedure Report" text in "btris: diagnosis and procedure filter report page" field on "Btris/Portal" page
     #Clcik on the select report button.
-    And the user clicks on "btris: diagnosis and procedure select button" element on "Btris/Portal" page
+    And the user clicks on "btris: top select button" element on "Btris/Portal" page
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
     And the user waits for 2 seconds
