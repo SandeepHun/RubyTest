@@ -93,6 +93,7 @@ Feature: Vital Signs Report
     #Click on the download report button.
     And the user clicks on "download full report button" element on "Btris/Portal" page
     #click on the open report in another tab button.
+    #And the user clicks button with text "Open in New Window" on "Btris/Portal" page
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
     And the user must see "Vital Signs Results Preview - Standard" text in "vital signs test result page" field on "Btris/Portal" page
