@@ -42,7 +42,6 @@ Then(/^the user can see text "(.*)"$/) do |text_value|
 
   # get the whole page text
   page_text = @browser.html
-
   # Soft Fail the steps and continues to next step
   checkpoint((page_text.include? text_value),"The user didn't see #{text_value} text on page")
 
