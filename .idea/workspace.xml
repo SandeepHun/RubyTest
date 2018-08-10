@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="067897a2-c785-43cd-92be-f80118e50adc" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/features/support/hooks.rb" beforeDir="false" afterPath="$PROJECT_DIR$/features/support/hooks.rb" afterDir="false" />
-    </list>
+    <list default="true" id="067897a2-c785-43cd-92be-f80118e50adc" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,7 +12,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/btris_automation_regression_suite@PDF_Documents_Report_feature.rcov" NAME="PDF_Documents_Report.feature Coverage Results" MODIFIED="1533574033540" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="phis_automation_regression_suite" />
     <SUITE FILE_PATH="coverage/btris_automation_regression_suite@RadiologyWithImage_feature__1_.rcov" NAME="RadiologyWithImage.feature (1) Coverage Results" MODIFIED="1531792619249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="phis_automation_regression_suite" />
-    <SUITE FILE_PATH="coverage/btris_automation_regression_suite@Vital_Signs_Report_feature.rcov" NAME="Vital_Signs_Report.feature Coverage Results" MODIFIED="1533922906052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="phis_automation_regression_suite" />
+    <SUITE FILE_PATH="coverage/btris_automation_regression_suite@Vital_Signs_Report_feature.rcov" NAME="Vital_Signs_Report.feature Coverage Results" MODIFIED="1533924616935" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="phis_automation_regression_suite" />
     <SUITE FILE_PATH="coverage/btris_automation_regression_suite@Clinical_Documents_Discrete_Values_feature.rcov" NAME="Clinical_Documents_Discrete_Values.feature Coverage Results" MODIFIED="1533434477024" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="phis_automation_regression_suite" />
     <SUITE FILE_PATH="coverage/phis_automation_regression_suite@Export_Librarian_HQ_feature.rcov" NAME="Export_Librarian_HQ.feature Coverage Results" MODIFIED="1531141300915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="phis_automation_regression_suite" />
     <SUITE FILE_PATH="coverage/btris_automation_regression_suite@Clinical_Documents_Discrete_Values_feature__1_.rcov" NAME="Clinical_Documents_Discrete_Values.feature (1) Coverage Results" MODIFIED="1533844289912" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="phis_automation_regression_suite" />
@@ -22,7 +20,7 @@
     <SUITE FILE_PATH="coverage/btris_automation_regression_suite@Radiology_With_Image_feature.rcov" NAME="Radiology_With_Image.feature Coverage Results" MODIFIED="1533505573474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="phis_automation_regression_suite" />
     <SUITE FILE_PATH="coverage/phis_automation_regression_suite@apm_sample_feature.rcov" NAME="apm_sample.feature Coverage Results" MODIFIED="1531170221143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="phis_automation_regression_suite" />
     <SUITE FILE_PATH="coverage/phis_automation_regression_suite@Role_Management_feature.rcov" NAME="Role_Management.feature Coverage Results" MODIFIED="1531243869818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="phis_automation_regression_suite" />
-    <SUITE FILE_PATH="coverage/btris_automation_regression_suite@Laboratory_Test_feature.rcov" NAME="Laboratory_Test.feature Coverage Results" MODIFIED="1533835197418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="phis_automation_regression_suite" />
+    <SUITE FILE_PATH="coverage/btris_automation_regression_suite@Laboratory_Test_feature.rcov" NAME="Laboratory_Test.feature Coverage Results" MODIFIED="1533943217507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="phis_automation_regression_suite" />
     <SUITE FILE_PATH="coverage/btris_automation_regression_suite@NICHD_CTDB__Report_feature.rcov" NAME="NICHD_CTDB_ Report.feature Coverage Results" MODIFIED="1533434679252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="phis_automation_regression_suite" />
   </component>
   <component name="FileEditorManager">
@@ -30,7 +28,7 @@
       <file leaf-file-name="hooks.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/features/support/hooks.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1207">
+            <state relative-caret-position="391">
               <caret line="71" column="4" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="4" />
             </state>
           </provider>
@@ -96,8 +94,8 @@
       <file leaf-file-name="env.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/features/support/env.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+            <state relative-caret-position="-38">
+              <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -105,8 +103,8 @@
       <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/features/support/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="41" />
+            <state relative-caret-position="143">
+              <caret line="119" column="18" selection-start-line="119" selection-start-column="12" selection-end-line="119" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -115,8 +113,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Clinical Documents: Discrete Values</find>
-      <find>red search: search type drop down</find>
       <find>red search for clinical doc</find>
       <find>red search: exact phrase research</find>
       <find>clinical documents: discrete values</find>
@@ -145,6 +141,8 @@
       <find>And the user must see &quot;Home Labs NIAID Panel, (NIAID, CRIMSON, HMLABS)&quot; text in &quot;red search data&quot; field on &quot;Btris/Port</find>
       <find>default_</find>
       <find>btris: top select button</find>
+      <find>chrome</find>
+      <find>firefox</find>
     </findStrings>
     <replaceStrings>
       <replace>@page_objects_hash</replace>
@@ -338,7 +336,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber.Vital_Signs_Report.feature">
+  <component name="RunManager" selected="Cucumber.Laboratory_Test.feature">
     <configuration name="Clinical_Documents_Discrete_Values.feature (1)" type="CucumberRunConfigurationType" factoryName="Cucumber" temporary="true">
       <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
       <module name="phis_automation_regression_suite" />
@@ -504,9 +502,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber.Laboratory_Test.feature" />
         <item itemvalue="Cucumber.Vital_Signs_Report.feature" />
         <item itemvalue="Cucumber.Clinical_Documents_Discrete_Values.feature (1)" />
-        <item itemvalue="Cucumber.Laboratory_Test.feature" />
         <item itemvalue="Cucumber.PDF_Documents_Report.feature" />
         <item itemvalue="Cucumber.Radiology_With_Image.feature" />
       </list>
@@ -550,18 +548,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Clinical_Documents_Discrete_Values_feature_(1) - 2018.08.09 at 15h 28m 53s.xml">
-      <configuration name="Clinical_Documents_Discrete_Values.feature (1)" configurationId="CucumberRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Clinical_Documents_Discrete_Values_feature_(1) - 2018.08.09 at 15h 32m 23s.xml">
-      <configuration name="Clinical_Documents_Discrete_Values.feature (1)" configurationId="CucumberRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Clinical_Documents_Discrete_Values_feature_(1) - 2018.08.09 at 15h 37m 58s.xml">
-      <configuration name="Clinical_Documents_Discrete_Values.feature (1)" configurationId="CucumberRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Clinical_Documents_Discrete_Values_feature_(1) - 2018.08.09 at 15h 42m 58s.xml">
-      <configuration name="Clinical_Documents_Discrete_Values.feature (1)" configurationId="CucumberRunConfigurationType" />
-    </history-entry>
     <history-entry file="Clinical_Documents_Discrete_Values_feature_(1) - 2018.08.09 at 15h 47m 02s.xml">
       <configuration name="Clinical_Documents_Discrete_Values.feature (1)" configurationId="CucumberRunConfigurationType" />
     </history-entry>
@@ -580,9 +566,21 @@
     <history-entry file="Vital_Signs_Report_feature - 2018.08.10 at 13h 37m 04s.xml">
       <configuration name="Vital_Signs_Report.feature" configurationId="CucumberRunConfigurationType" />
     </history-entry>
+    <history-entry file="Vital_Signs_Report_feature - 2018.08.10 at 14h 11m 21s.xml">
+      <configuration name="Vital_Signs_Report.feature" configurationId="CucumberRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Laboratory_Test_feature - 2018.08.10 at 14h 31m 09s.xml">
+      <configuration name="Laboratory_Test.feature" configurationId="CucumberRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Laboratory_Test_feature - 2018.08.10 at 19h 19m 59s.xml">
+      <configuration name="Laboratory_Test.feature" configurationId="CucumberRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Laboratory_Test_feature - 2018.08.10 at 19h 26m 03s.xml">
+      <configuration name="Laboratory_Test.feature" configurationId="CucumberRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="415105000" />
+    <option name="totallyTimeSpent" value="418261000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1380" height="744" extended-state="6" />
@@ -592,9 +590,9 @@
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.34925866" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34925866" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.3196046" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23560606" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23560606" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3294893" />
@@ -871,13 +869,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/support/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/features/support/configuration.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -885,19 +876,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/support/env.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/features/support/Reusable_gherkins_list.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/features/support/env.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-38">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/support/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="119" column="18" selection-start-line="119" selection-start-column="12" selection-end-line="119" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/features/support/hooks.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1207">
+        <state relative-caret-position="391">
           <caret line="71" column="4" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="4" />
         </state>
       </provider>
