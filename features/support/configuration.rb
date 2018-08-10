@@ -11,7 +11,7 @@ module Configuration
     envs  = Hashie::Mash.load("#{Dir.pwd}/features/support/config.yml")
     # @config = envs[:test31].merge(envs[ENV['TEST_ENV'].to_sym]).merge(envs[ENV['
     # BROWSER'].to_sym]).merge(envs[ENV['EXEC_SPEED'].to_sym])
-    @config = envs[:test05].merge(envs[ENV['TEST_ENV'].to_sym]).merge(envs[ENV['BROWSER'].to_sym])
+    @config = envs[:test06].merge(envs[ENV['TEST_ENV'].to_sym]).merge(envs[ENV['BROWSER'].to_sym])
   end
 
   private
