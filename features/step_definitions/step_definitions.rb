@@ -1616,9 +1616,13 @@ And(/^the user verify the vital signs report on the table$/) do
 end
 
 Then(/^the user fines the page HTML/) do
+  puts("inspect: #{@browser.inspect}")
+  puts("status : #{@browser.status}")
+  puts("text   : #{@browser.text}")
   puts("html   : #{@browser.html}")
   @browser = get_browser
   puts @browser.html
+  puts @browser
 end
 
 
