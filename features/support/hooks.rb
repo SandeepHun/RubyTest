@@ -8,15 +8,15 @@ EXEC_ID = Time.now.strftime('%m%d%Y%H%M%S')
 RESULTS_DIR = "#{Dir.pwd}/features/results/#{EXEC_ID}"
 if ENV['TEST_ENV'].downcase.eql? 'test08'
   TIMEOUT = 40
+  puts 'this is the wait(40s) we are using for Prod'
 else
   TIMEOUT = 45
   if ENV['TEST_ENV'].downcase.eql? 'test06'
     TIMEOUT = 45
-    puts 'this is the wait we are using'
-
+    puts 'this is the wait(45s) we are using for Test'
   else
     TIMEOUT = 45
-    puts 'this is the wait we are using'
+    puts 'this is the wait we are using for Others'
   end
 end
 
@@ -61,7 +61,7 @@ def get_browser
   # screen_width = @browser.execute_script("return screen.width;")
   # screen_height = @browser.execute_script("return screen.height;")
   # @browser.driver.manage.window.resize_to(screen_width,screen_height)
-  @browser
+  #@browser
 
 end
 
