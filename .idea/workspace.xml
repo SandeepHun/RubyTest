@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="067897a2-c785-43cd-92be-f80118e50adc" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Run Configuration for BTRIS" beforeDir="false" afterPath="$PROJECT_DIR$/Run Configuration for BTRIS" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/btris_project_feature/Clinical_Documents_Discrete_Values.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/btris_project_feature/Clinical_Documents_Discrete_Values.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/step_definitions/step_definitions.rb" beforeDir="false" afterPath="$PROJECT_DIR$/features/step_definitions/step_definitions.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/support/BTRIS_Test_Reports/BTRIS_Quick_Test_Report.html" beforeDir="false" afterPath="$PROJECT_DIR$/features/support/BTRIS_Test_Reports/BTRIS_Quick_Test_Report.html" afterDir="false" />
-    </list>
+    <list default="true" id="067897a2-c785-43cd-92be-f80118e50adc" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,20 +25,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="hooks.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="hooks.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/features/support/hooks.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="79" column="23" lean-forward="true" selection-start-line="76" selection-start-column="37" selection-end-line="80" selection-end-column="22" />
+            <state relative-caret-position="153">
+              <caret line="81" column="17" lean-forward="true" selection-start-line="73" selection-start-column="3" selection-end-line="81" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Clinical_Documents_Discrete_Values.feature" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Clinical_Documents_Discrete_Values.feature" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/features/btris_project_feature/Clinical_Documents_Discrete_Values.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="19" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="30" />
+            <state relative-caret-position="153">
+              <caret line="9" column="106" lean-forward="true" selection-start-line="9" selection-start-column="106" selection-end-line="9" selection-end-column="106" />
             </state>
           </provider>
         </entry>
@@ -125,36 +119,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find />
-      <find />
-      <find />
-      <find />
-      <find />
-      <find />
-      <find />
-      <find />
-      <find />
-      <find />
+      <find>labs: add labs button</find>
+      <find>Laboratory Procedure</find>
+      <find>Clinical Documents: Discrete Values</find>
+      <find>red search: search type drop down</find>
+      <find>red search for clinical doc</find>
+      <find>red search: exact phrase research</find>
+      <find>clinical documents: discrete values</find>
+      <find>btris: clinical documents: discrete values filter report</find>
+      <find>clinical documents: discrete report page</find>
+      <find>fine protocol and subject search box</find>
       <find>anet_dev</find>
-      <find />
-      <find />
-      <find />
-      <find />
+      <find>And the user must see &quot;NIH Observation, NIH Clinical Center&quot; text in &quot;red search clinical: contains phrase research&quot; field on &quot;Btris/Portal&quot; page</find>
+      <find>red search clinical: contains phrase research</find>
+      <find>And the user must see &quot;Glasgow Coma Scale Observation&quot; text in</find>
+      <find>pdf documents search subject</find>
       <find>.//*/div[1]/div/div/div/table/thead/tr/th[3]/div/span</find>
-      <find />
-      <find />
-      <find />
-      <find />
-      <find />
-      <find />
-      <find />
-      <find />
-      <find />
-      <find />
-      <find />
-      <find />
-      <find />
-      <find />
+      <find>btris: select subject button</find>
+      <find>btris: clinical documents: discrete values select button</find>
+      <find>demographics report table: subject name column</find>
+      <find>laboratory report table: subject name column</find>
+      <find>btris: laboratory select button</find>
+      <find>laboratory report table: collected date time</find>
+      <find>assessment report table: subject name column</find>
+      <find>btris: bottom select button</find>
+      <find>And the user clicks on &quot;btris: bottom select button&quot; element on &quot;Btris/Portal&quot; page</find>
+      <find>diagnosis report table: subject name column</find>
+      <find>vital signs test table: subject name column</find>
+      <find>laboratory report table: subject name</find>
+      <find>red search data</find>
+      <find>And the user must see &quot;Home Labs NIAID Panel, (NIAID, CRIMSON, HMLABS)&quot; text in &quot;red search data&quot; field on &quot;Btris/Port</find>
     </findStrings>
     <replaceStrings>
       <replace>@page_objects_hash</replace>
@@ -163,7 +157,7 @@
       <dir>C:\phis_automation_regression_suite</dir>
       <dir>C:\phis_automation_regression_suite\features\page_objects</dir>
       <dir>C:\TFS\Tests\phis_automation_regression_suite</dir>
-      <dir />
+      <dir>C:\TFS\Tests\phis_automation_regression_suite\features\score_features\3076_Complaint Type\step_definitions</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -230,7 +224,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1380" />
@@ -553,7 +547,7 @@
       <workItem from="1533433263790" duration="4153000" />
       <workItem from="1533466821698" duration="15886000" />
       <workItem from="1533646404775" duration="29360000" />
-      <workItem from="1533824268782" duration="16319000" />
+      <workItem from="1533824268782" duration="17091000" />
     </task>
     <servers />
   </component>
@@ -590,10 +584,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="410945000" />
+    <option name="totallyTimeSpent" value="411717000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1380" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23560606" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -875,13 +870,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/support/hooks.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="79" column="23" lean-forward="true" selection-start-line="76" selection-start-column="37" selection-end-line="80" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/features/step_definitions/step_definitions.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
@@ -891,8 +879,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/features/btris_project_feature/Clinical_Documents_Discrete_Values.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="19" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="30" />
+        <state relative-caret-position="153">
+          <caret line="9" column="106" lean-forward="true" selection-start-line="9" selection-start-column="106" selection-end-line="9" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/support/hooks.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="81" column="17" lean-forward="true" selection-start-line="73" selection-start-column="3" selection-end-line="81" selection-end-column="17" />
         </state>
       </provider>
     </entry>
