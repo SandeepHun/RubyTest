@@ -69,7 +69,7 @@ Before do
   if RUBY_PLATFORM.downcase.include?("linux")
     @browser.driver.manage.timeouts.implicit_wait=30
     @browser.driver.manage.window.resize_to(1600, 900)
-    @browser.goto "https://btristestportal.cc.nih.gov"
+    #@browser.goto "https://btristestportal.cc.nih.gov"
     #@browser.driver.manage.window.maximize
     @browser.driver.manage.timeouts.implicit_wait=15
     puts("inspect: #{@browser.inspect}")
@@ -85,6 +85,7 @@ Before do
   @browser = get_browser
   @browser.window.resize_to(1366, 768)
   @browser.driver.manage.window.maximize
+  #@browser.goto "https://btristestportal.cc.nih.gov"
   puts @browser.html
   puts @browser.browser
   @browser.driver.manage.timeouts.implicit_wait=15
