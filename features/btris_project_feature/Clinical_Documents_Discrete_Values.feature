@@ -23,6 +23,7 @@ Feature: Clinical Documents - Discrete Values Feature
     #verify the select report page.
     And the user must see "Clinical Documents - Discrete Values Report" text in "btris: clinical documents: discrete values filter report page" field on "Btris/Portal" page
     #Clcik on the select report button.
+    And the user fines the page HTML
     And the user clicks on "btris: top select button" element on "Btris/Portal" page
     And the user waits for 4 seconds
     #Enter and filter subject.
@@ -72,6 +73,7 @@ Feature: Clinical Documents - Discrete Values Feature
     #verify the select report page.
     And the user must see "Clinical Documents - Discrete Values Report" text in "btris: clinical documents: discrete values filter report page" field on "Btris/Portal" page
     #Clcik on the select report button.
+    And the user fines the page HTML
     And the user clicks on "btris: top select button" element on "Btris/Portal" page
     And the user waits for 4 seconds
     #Enter and filter subject.
@@ -187,7 +189,6 @@ Feature: Clinical Documents - Discrete Values Feature
     #And the user must see "Body Site Associated With Heart Rate and/or Blood Pressure" text in "red search clinical: start with search for add observation" field on "Btris/Portal" page
     #Click on the done button.
     And the user clicks on "red search: clinical doc done button" element on "Btris/Portal" page
-
     #Sign out.
     And the user logged out of the system
 
