@@ -4,3 +4,5 @@ bundle exec cucumber features/3158_Create New Case/create_new_case.feature --for
 bundle exec cucumber -c --tags @SMOKE test_env=test06 browser=chrome --format progress --format html --out=C:\Users\bkrishna\Desktop\Smoke_test.html
 
 bundle exec cucumber -c --tags @BTRIS_Quick_Test test_env=test06 browser=chrome --format progress --format html --out=\btris_automation_regression_suite\features\support\BTRIS_Test_Reports\BTRIS_Quick_Test_Report.html
+#Run on gitbash.
+bundle exec cucumber -c --tags @BTRIS_Quick_Test test_env=test06 browser=chrome --format progress --format html --out=C:/NewRubyFramework/btris_automation_regression_suite/features/support/BTRIS_Test_Reports/BTRIS_Quick_Test_Report.html

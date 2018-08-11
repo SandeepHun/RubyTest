@@ -76,13 +76,13 @@ Before do
     puts("status : #{@browser.status}")
     puts("text   : #{@browser.text}")
     puts("html   : #{@browser.html}")
-    @browser = get_browser
+    #@browser = get_browser
     @browser.window.resize_to(1366, 768)
     puts @browser.html
     puts @browser
     puts 'The OS Platform is ' +RUBY_PLATFORM
     else
-  @browser = get_browser
+  #@browser = get_browser
   @browser.window.resize_to(1366, 768)
   @browser.driver.manage.window.maximize
   puts @browser.html
