@@ -1,8 +1,10 @@
 Run config BTRIS: =bundle exe cucumber -c --tag @BTRIS_Quick_Test test_env=test08 browser=chrome
 Run Config with HTML Report: bundle exec cucumber -c --tags @BTRIS_Quick_Test test_env=test06 browser=chrome --format progress --format html --out=C:\NewRubyFramework\btris_automation_regression_suite\features\support\BTRIS_Test_Reports\BTRIS_Test_Report.html
 bundle exec cucumber features/3158_Create New Case/create_new_case.feature --format progress --format html --out=C:\Users\bkrishna\Desktop\create_new_case_testresults<DDMMYYYY>.html
-bundle exec cucumber -c --tags @SMOKE test_env=test06 browser=chrome --format progress --format html --out=C:\Users\bkrishna\Desktop\Smoke_test.html
+bundle exec cucumber -c --tags @BTRIS_Quick_Test test_env=test06 browser=chrome --format progress --format html --out=C:\Users\bkrishna\Desktop\Smoke_test.html
 
 bundle exec cucumber -c --tags @BTRIS_Quick_Test test_env=test06 browser=chrome --format progress --format html --out=\btris_automation_regression_suite\features\support\BTRIS_Test_Reports\BTRIS_Quick_Test_Report.html
 #Run on gitbash.
 bundle exec cucumber -c --tags @BTRIS_Quick_Test test_env=test06 browser=chrome --format progress --format html --out=C:/NewRubyFramework/btris_automation_regression_suite/features/support/BTRIS_Test_Reports/BTRIS_Quick_Test_Report.html
+#Run on Linux.
+bundle exec cucumber -c --tags @BTRIS_Quick_Test test_env=test06 browser=chrome --format progress --format html --out=/btris_automation_regression_suite/features/support/BTRIS_Test_Reports/BTRIS_Quick_Test_Report.html

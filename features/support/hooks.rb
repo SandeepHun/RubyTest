@@ -8,15 +8,15 @@ EXEC_ID = Time.now.strftime('%m%d%Y%H%M%S')
 RESULTS_DIR = "#{Dir.pwd}/features/results/#{EXEC_ID}"
 if ENV['TEST_ENV'].downcase.eql? 'test08'
   TIMEOUT = 40
-  puts 'this is the wait(40s) we are using for Prod'
+  puts 'this is the wait(40s) we are using for Prod ENV'
 else
   TIMEOUT = 45
   if ENV['TEST_ENV'].downcase.eql? 'test06'
     TIMEOUT = 45
-    puts 'this is the wait(45s) we are using for Test'
+    puts 'this is the wait(45s) we are using for Test ENV'
   else
     TIMEOUT = 45
-    puts 'this is the wait we are using for Others'
+    puts 'this is the wait we are using for none test nor prod ENV'
   end
 end
 
@@ -44,9 +44,9 @@ selenium_driver.open_timeout = TIMEOUT
 # @browser = get_browser
 #@@browser.driver.manage.window.maximize
 
-Before do
-  @browser = @@browser
-end
+# Before do
+#   @browser = @@browser
+# end
 
 
 # == Open browser on each scenario and then close browser
@@ -67,6 +67,7 @@ end
 
 Before do
   if RUBY_PLATFORM.downcase.include?("linux")
+    @browser = @@browser
     @browser.driver.manage.timeouts.implicit_wait=30
     @browser.driver.manage.window.resize_to(1600, 900)
     @browser.goto "https://btristestportal.cc.nih.gov"
@@ -83,6 +84,7 @@ Before do
     puts 'The OS Platform is ' +RUBY_PLATFORM
     else
   #@browser = get_browser
+  @browser = @@browser
   @browser.window.resize_to(1366, 768)
   @browser.driver.manage.window.maximize
   puts @browser.html
@@ -91,6 +93,7 @@ Before do
   puts 'The OS platform is ' +RUBY_PLATFORM
 end
 end
+
 After do
   @browser.close
 end
