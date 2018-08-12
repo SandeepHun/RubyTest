@@ -108,7 +108,6 @@ def map_btris_portal
           'pdf documents result page'                                   =>"xpath^^.//*[contains(text(), 'PDF Documents Results Preview -')]",
           'pdf documents search subject'                                =>"xpath^^.//*[contains(text(), 'ABOU-ANTOUN, SAMI NASSR')]",
           'search subject s2'                                           =>"xpath^^.//*[contains(text(), 'CAHILL, PATRICIA ANN MARIE')]",
-
           'pdf documents buttom select button'                          =>"xpath^^.//*[@id='app']/div[2]/div[1]/div[2]/div[2]/div/div/div/div/form/div[2]/div/div[4]/div[2]/button",
           #Vital signs
           'btris: vital signs test'                                     =>"xpath^^.//*[@id='generalRpts']/div/ul/li[17]/div/label",
@@ -119,6 +118,13 @@ def map_btris_portal
           'include demographic report radio button'                     =>"xpath^^.//*[@id='app']/div/div[1]/div[2]/div[2]/div/div/div/div/form/div[2]/div/div[3]/div/div/div/label",
           'vital sign bottom select button'                             =>"xpath^^.//*[@id='app']/div/div[1]/div[2]/div[2]/div/div/div/div/form/div[2]/div/div[5]/div[2]/button",
           'report creation date'                                        =>"xpath^^.//*[@id='mainTab-0-SV_reportDate']",
+          #Medication Test
+          'btris: medication test'                                      =>"xpath^^.//*[@id='generalRpts']/div/ul/li[9]/div/label",
+          'btris: medication report page'                               =>"xpath^^.//*[@id='app']/div/div[1]/div[2]/div[2]/div/div/div/div/form/div[1]/div[1]/h2",
+          'medication report page'                                      =>"xpath^^.//*[contains(text(), 'Medication Report Results Preview -')]",
+          'medication admin drop down'                                  =>"xpath^^.//*[@id='report-output-format-select']",
+
+
 
 
       }
