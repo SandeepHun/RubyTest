@@ -45,7 +45,7 @@ selenium_driver.open_timeout = TIMEOUT
 #@@browser.driver.manage.window.maximize
 
 Before do
-  #@browser = @@browser
+  @browser = @@browser
 end
 
 
