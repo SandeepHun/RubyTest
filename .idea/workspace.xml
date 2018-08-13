@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="067897a2-c785-43cd-92be-f80118e50adc" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/features/btris_project_feature/Medication_Report.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Run Configuration for BTRIS" beforeDir="false" afterPath="$PROJECT_DIR$/Run Configuration for BTRIS" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/page_objects/btris_portal_page_object/map_btris_portal.rb" beforeDir="false" afterPath="$PROJECT_DIR$/features/page_objects/btris_portal_page_object/map_btris_portal.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/step_definitions/step_definitions.rb" beforeDir="false" afterPath="$PROJECT_DIR$/features/step_definitions/step_definitions.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/support/Downloads/Smoke_test_Report.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/features/support/hooks.rb" beforeDir="false" afterPath="$PROJECT_DIR$/features/support/hooks.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,7 +23,7 @@
     <SUITE FILE_PATH="coverage/phis_automation_regression_suite@Role_Management_feature.rcov" NAME="Role_Management.feature Coverage Results" MODIFIED="1531243869818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="phis_automation_regression_suite" />
     <SUITE FILE_PATH="coverage/btris_automation_regression_suite@NICHD_CTDB__Report_feature.rcov" NAME="NICHD_CTDB_ Report.feature Coverage Results" MODIFIED="1533434679252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="phis_automation_regression_suite" />
     <SUITE FILE_PATH="coverage/btris_automation_regression_suite@RadiologyWithImage_feature__1_.rcov" NAME="RadiologyWithImage.feature (1) Coverage Results" MODIFIED="1531792619249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="phis_automation_regression_suite" />
-    <SUITE FILE_PATH="coverage/btris_automation_regression_suite@Clinical_Documents_Discrete_Values_feature__1_.rcov" NAME="Clinical_Documents_Discrete_Values.feature (1) Coverage Results" MODIFIED="1534110649792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="phis_automation_regression_suite" />
+    <SUITE FILE_PATH="coverage/btris_automation_regression_suite@Clinical_Documents_Discrete_Values_feature__1_.rcov" NAME="Clinical_Documents_Discrete_Values.feature (1) Coverage Results" MODIFIED="1534172184128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="phis_automation_regression_suite" />
     <SUITE FILE_PATH="coverage/phis_automation_regression_suite@apm_sample_feature.rcov" NAME="apm_sample.feature Coverage Results" MODIFIED="1531170221143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="phis_automation_regression_suite" />
     <SUITE FILE_PATH="coverage/btris_automation_regression_suite@Laboratory_Test_feature.rcov" NAME="Laboratory_Test.feature Coverage Results" MODIFIED="1533943217507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="phis_automation_regression_suite" />
   </component>
@@ -38,8 +32,8 @@
       <file leaf-file-name="hooks.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/features/support/hooks.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="986">
-              <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+            <state relative-caret-position="136">
+              <caret line="47" column="3" selection-start-line="47" selection-start-column="3" selection-end-line="47" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -536,29 +530,11 @@
       <workItem from="1533466821698" duration="15886000" />
       <workItem from="1533646404775" duration="29360000" />
       <workItem from="1533824268782" duration="20456000" />
-      <workItem from="1534106769633" duration="4103000" />
+      <workItem from="1534106769633" duration="9207000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Vital_Signs_Report_feature - 2018.08.10 at 13h 25m 06s.xml">
-      <configuration name="Vital_Signs_Report.feature" configurationId="CucumberRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Vital_Signs_Report_feature - 2018.08.10 at 13h 35m 52s.xml">
-      <configuration name="Vital_Signs_Report.feature" configurationId="CucumberRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Vital_Signs_Report_feature - 2018.08.10 at 13h 37m 04s.xml">
-      <configuration name="Vital_Signs_Report.feature" configurationId="CucumberRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Vital_Signs_Report_feature - 2018.08.10 at 14h 11m 21s.xml">
-      <configuration name="Vital_Signs_Report.feature" configurationId="CucumberRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Laboratory_Test_feature - 2018.08.10 at 14h 31m 09s.xml">
-      <configuration name="Laboratory_Test.feature" configurationId="CucumberRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Laboratory_Test_feature - 2018.08.10 at 19h 19m 59s.xml">
-      <configuration name="Laboratory_Test.feature" configurationId="CucumberRunConfigurationType" />
-    </history-entry>
     <history-entry file="Laboratory_Test_feature - 2018.08.10 at 19h 26m 03s.xml">
       <configuration name="Laboratory_Test.feature" configurationId="CucumberRunConfigurationType" />
     </history-entry>
@@ -571,9 +547,27 @@
     <history-entry file="Clinical_Documents_Discrete_Values_feature_(1) - 2018.08.12 at 17h 49m 56s.xml">
       <configuration name="Clinical_Documents_Discrete_Values.feature (1)" configurationId="CucumberRunConfigurationType" />
     </history-entry>
+    <history-entry file="Clinical_Documents_Discrete_Values_feature_(1) - 2018.08.12 at 17h 52m 16s.xml">
+      <configuration name="Clinical_Documents_Discrete_Values.feature (1)" configurationId="CucumberRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Clinical_Documents_Discrete_Values_feature_(1) - 2018.08.12 at 18h 32m 57s.xml">
+      <configuration name="Clinical_Documents_Discrete_Values.feature (1)" configurationId="CucumberRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Clinical_Documents_Discrete_Values_feature_(1) - 2018.08.13 at 09h 41m 20s.xml">
+      <configuration name="Clinical_Documents_Discrete_Values.feature (1)" configurationId="CucumberRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Clinical_Documents_Discrete_Values_feature_(1) - 2018.08.13 at 09h 51m 04s.xml">
+      <configuration name="Clinical_Documents_Discrete_Values.feature (1)" configurationId="CucumberRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Clinical_Documents_Discrete_Values_feature_(1) - 2018.08.13 at 10h 34m 45s.xml">
+      <configuration name="Clinical_Documents_Discrete_Values.feature (1)" configurationId="CucumberRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Clinical_Documents_Discrete_Values_feature_(1) - 2018.08.13 at 10h 59m 28s.xml">
+      <configuration name="Clinical_Documents_Discrete_Values.feature (1)" configurationId="CucumberRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="426774000" />
+    <option name="totallyTimeSpent" value="431878000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1380" height="744" extended-state="6" />
@@ -879,8 +873,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/features/support/hooks.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+        <state relative-caret-position="136">
+          <caret line="47" column="3" selection-start-line="47" selection-start-column="3" selection-end-line="47" selection-end-column="3" />
         </state>
       </provider>
     </entry>

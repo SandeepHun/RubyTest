@@ -44,9 +44,9 @@ selenium_driver.open_timeout = TIMEOUT
 # @browser = get_browser
 #@@browser.driver.manage.window.maximize
 
-# Before do
-#   @browser = @@browser
-# end
+Before do
+  #@browser = @@browser
+end
 
 
 # == Open browser on each scenario and then close browser
@@ -67,7 +67,6 @@ end
 
 Before do
   if RUBY_PLATFORM.downcase.include?("linux")
-    @browser = @@browser
     @browser.driver.manage.timeouts.implicit_wait=30
     @browser.driver.manage.window.resize_to(1600, 900)
     @browser.goto "https://btristestportal.cc.nih.gov"
@@ -77,14 +76,13 @@ Before do
     puts("status : #{@browser.status}")
     puts("text   : #{@browser.text}")
     puts("html   : #{@browser.html}")
-    #@browser = get_browser
+    @browser = get_browser
     @browser.window.resize_to(1366, 768)
     puts @browser.html
     puts @browser
     puts 'The OS Platform is ' +RUBY_PLATFORM
     else
-  #@browser = get_browser
-  @browser = @@browser
+  @browser = get_browser
   @browser.window.resize_to(1366, 768)
   @browser.driver.manage.window.maximize
   puts @browser.html
@@ -93,7 +91,6 @@ Before do
   puts 'The OS platform is ' +RUBY_PLATFORM
 end
 end
-
 After do
   @browser.close
 end
