@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="067897a2-c785-43cd-92be-f80118e50adc" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/features/btris_project_feature/Pulmonary_Function_Test.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/features/page_objects/btris_portal_page_object/map_btris_portal.rb" beforeDir="false" afterPath="$PROJECT_DIR$/features/page_objects/btris_portal_page_object/map_btris_portal.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/support/BTRIS_Test_Reports/BTRIS_Quick_Test_Report.html" beforeDir="false" afterPath="$PROJECT_DIR$/features/support/BTRIS_Test_Reports/BTRIS_Quick_Test_Report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/step_definitions/step_definitions.rb" beforeDir="false" afterPath="$PROJECT_DIR$/features/step_definitions/step_definitions.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,38 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="hooks.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/support/hooks.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="3" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Run Configuration for BTRIS" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Run Configuration for BTRIS">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="1" selection-start-line="9" selection-end-line="9" selection-end-column="217" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Clinical_Documents_Discrete_Values.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/btris_project_feature/Clinical_Documents_Discrete_Values.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1258">
-              <caret line="74" selection-start-line="74" selection-end-line="74" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Medication_Report.feature" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/features/btris_project_feature/Medication_Report.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-end-line="1" selection-end-column="18" />
+            <state relative-caret-position="119">
+              <caret line="7" column="13" selection-end-line="105" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -78,17 +53,8 @@
       <file leaf-file-name="Vital_Signs_Report.feature" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/features/btris_project_feature/Vital_Signs_Report.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="76" column="29" lean-forward="true" selection-start-line="76" selection-start-column="28" selection-end-line="76" selection-end-column="67" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PDF_Documents_Report.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/btris_project_feature/PDF_Documents_Report.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="76" column="46" selection-start-line="76" selection-end-line="77" />
+            <state relative-caret-position="1292">
+              <caret line="76" column="29" selection-start-line="76" selection-start-column="28" selection-end-line="76" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -96,26 +62,44 @@
       <file leaf-file-name="NICHD_CTDB_ Report.feature" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/features/btris_project_feature/NICHD_CTDB_ Report.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-510">
-              <caret line="24" column="39" lean-forward="true" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+            <state relative-caret-position="17">
+              <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NIAAA_Assessment_Report.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/btris_project_feature/NIAAA_Assessment_Report.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="85" column="31" selection-start-line="85" selection-start-column="31" selection-end-line="85" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="map_btris_portal.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="map_btris_portal.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/features/page_objects/btris_portal_page_object/map_btris_portal.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="117" column="160" selection-start-line="117" selection-start-column="160" selection-end-line="117" selection-end-column="160" />
+            <state relative-caret-position="187">
+              <caret line="132" column="157" selection-start-line="132" selection-start-column="104" selection-end-line="132" selection-end-column="159" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Pulmonary_Function_Test.feature" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/features/btris_project_feature/Pulmonary_Function_Test.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="84" column="65" selection-start-line="84" selection-start-column="65" selection-end-line="84" selection-end-column="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Demographic_Report.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/features/btris_project_feature/Demographic_Report.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="step_definitions.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/features/step_definitions/step_definitions.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="657">
+              <caret line="1694" lean-forward="true" selection-start-line="1694" selection-end-line="1694" />
             </state>
           </provider>
         </entry>
@@ -124,7 +108,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>clinical documents: discrete report page</find>
       <find>fine protocol and subject search box</find>
       <find>anet_dev</find>
       <find>And the user must see &quot;NIH Observation, NIH Clinical Center&quot; text in &quot;red search clinical: contains phrase research&quot; field on &quot;Btris/Portal&quot; page</find>
@@ -154,6 +137,7 @@
       <find>btris: laboratory filter report page</find>
       <find>laboratory and procedure report page</find>
       <find>And the user clicks on &quot;include demographic report radio button&quot; element on &quot;Btris/Portal&quot; page</find>
+      <find>include demographic report radio button</find>
     </findStrings>
     <replaceStrings>
       <replace>@page_objects_hash</replace>
@@ -172,7 +156,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/features/phis-support_services/9060_Applications/9060_Appliocations.feature" />
         <option value="$PROJECT_DIR$/features/page_objects/Home_Page_Objects.rb" />
         <option value="$PROJECT_DIR$/features/page_objects/Establishment_Profile_Page_Objects.rb" />
         <option value="$PROJECT_DIR$/features/page_objects/9060_Applications_Page.rb" />
@@ -219,10 +202,11 @@
         <option value="$PROJECT_DIR$/features/support/env.rb" />
         <option value="$PROJECT_DIR$/features/btris_project_feature/Clinical_Documents_Discrete_Values.feature" />
         <option value="$PROJECT_DIR$/Run Configuration for BTRIS" />
-        <option value="$PROJECT_DIR$/features/step_definitions/step_definitions.rb" />
         <option value="$PROJECT_DIR$/features/btris_project_feature/Medication_Report.feature" />
         <option value="$PROJECT_DIR$/features/support/hooks.rb" />
+        <option value="$PROJECT_DIR$/features/step_definitions/step_definitions.rb" />
         <option value="$PROJECT_DIR$/features/page_objects/btris_portal_page_object/map_btris_portal.rb" />
+        <option value="$PROJECT_DIR$/features/btris_project_feature/Pulmonary_Function_Test.feature" />
       </list>
     </option>
   </component>
@@ -531,7 +515,8 @@
       <workItem from="1533466821698" duration="15886000" />
       <workItem from="1533646404775" duration="29360000" />
       <workItem from="1533824268782" duration="20456000" />
-      <workItem from="1534106769633" duration="13494000" />
+      <workItem from="1534106769633" duration="18265000" />
+      <workItem from="1534338330491" duration="3754000" />
     </task>
     <servers />
   </component>
@@ -568,13 +553,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="436165000" />
+    <option name="totallyTimeSpent" value="444690000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1380" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23939393" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24318182" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
@@ -602,13 +587,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Run Configuration for BTRIS">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-end-line="9" selection-end-column="217" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/features/page_objects/btris_portal_page_object/map_btris_portal.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="106">
@@ -690,13 +668,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/btris_project_feature/Demographic_Report.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-238">
-          <caret line="1" column="7" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/features/btris_project_feature/Diagnosis_&amp;_Procedure.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -767,13 +738,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/step_definitions/global_elements_steps.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3315">
-          <caret line="195" column="12" selection-start-line="195" selection-start-column="12" selection-end-line="195" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/features/support/env.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
@@ -802,13 +766,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/step_definitions/step_definitions.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="1627" column="8" selection-start-line="1627" selection-start-column="6" selection-end-line="1627" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/features/support/hooks.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -832,29 +789,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/features/btris_project_feature/PDF_Documents_Report.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
+        <state relative-caret-position="1292">
           <caret line="76" column="46" selection-start-line="76" selection-end-line="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/btris_project_feature/NICHD_CTDB_ Report.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-510">
-          <caret line="24" column="39" lean-forward="true" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/btris_project_feature/NIAAA_Assessment_Report.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="85" column="31" selection-start-line="85" selection-start-column="31" selection-end-line="85" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/btris_project_feature/Medication_Report.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-end-line="1" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -867,15 +803,64 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/features/btris_project_feature/Vital_Signs_Report.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="76" column="29" lean-forward="true" selection-start-line="76" selection-start-column="28" selection-end-line="76" selection-end-column="67" />
+        <state relative-caret-position="1292">
+          <caret line="76" column="29" selection-start-line="76" selection-start-column="28" selection-end-line="76" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/btris_project_feature/Medication_Report.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="13" selection-end-line="105" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/btris_project_feature/Demographic_Report.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/step_definitions/global_elements_steps.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="202" column="5" lean-forward="true" selection-start-line="202" selection-start-column="5" selection-end-line="202" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/btris_project_feature/NIAAA_Assessment_Report.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="85" column="31" selection-start-line="85" selection-start-column="31" selection-end-line="85" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/btris_project_feature/NICHD_CTDB_ Report.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/step_definitions/step_definitions.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="657">
+          <caret line="1694" lean-forward="true" selection-start-line="1694" selection-end-line="1694" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/features/page_objects/btris_portal_page_object/map_btris_portal.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="117" column="160" selection-start-line="117" selection-start-column="160" selection-end-line="117" selection-end-column="160" />
+        <state relative-caret-position="187">
+          <caret line="132" column="157" selection-start-line="132" selection-start-column="104" selection-end-line="132" selection-end-column="159" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/btris_project_feature/Pulmonary_Function_Test.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="84" column="65" selection-start-line="84" selection-start-column="65" selection-end-line="84" selection-end-column="65" />
         </state>
       </provider>
     </entry>

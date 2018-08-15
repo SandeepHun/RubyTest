@@ -123,7 +123,14 @@ def map_btris_portal
           'btris: medication report page'                               =>"xpath^^.//*[@id='app']/div/div[1]/div[2]/div[2]/div/div/div/div/form/div[1]/div[1]/h2",
           'medication report page'                                      =>"xpath^^.//*[contains(text(), 'Medication Report Results Preview -')]",
           'medication admin drop down'                                  =>"xpath^^.//*[@id='report-output-format-select']",
-
+          #Pulmonary Function Test Lab Report
+          'btris: pulmonary test'                                      =>"xpath^^.//*[contains(@data-test, '13-radio-value')]",
+          'btris: pulmonary report page'                               =>"xpath^^.//*[@id='app']/div/div[1]/div[2]/div[2]/div/div/div/div/form/div[1]/div[1]/h2",
+          'pulmonary result report page'                               =>"xpath^^.//*[contains(text(), 'Pulmonary Function Test Lab Report Results Preview -')]",
+          'pulmonary: add pft test button'                             =>"xpath^^.//*[contains(@data-test, 'add-red-terms-button')]",
+          'pulmonary top nav: report criteria'                         =>"xpath^^.//*[@class='btris-progress-bar-item__link router-link-exact-active router-link-active']",
+          'pulmonary: add pft done button'                             =>"xpath^^.//*[@data-test='red-search-lower-done-button']",
+          'pft tests data'                                             =>'xpath^^.//*[contains(text(), "Pulmonary Function Test (PFT) Panel and Panel Component")]',
 
 
 
