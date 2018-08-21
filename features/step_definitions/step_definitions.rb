@@ -1692,3 +1692,26 @@ And(/^the user verify the PFT Tests on "(.*)" data on "(.*)" page$/) do |field_n
   puts 'The The PFT Tests data is successfully display'
 
 end
+
+And(/^the user verify the clinical documents full text report on the table$/) do
+  record_found = false
+  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
+  if check_record_present > 2
+    #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
+    table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
+    puts table_rows
+    (1..table_rows).each do |rows|
+      delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[1]"
+      puts 'the row number is ' +delete_icons_row
+      new_document = "00-C-0018"
+      if delete_icons_row.downcase.eql? new_document.downcase
+        record_found = true
+        del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[1]"
+        puts 'the MRN for the diagnosis results are ' +del_obj
+      end
+    end
+    checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
+  end
+end
+
