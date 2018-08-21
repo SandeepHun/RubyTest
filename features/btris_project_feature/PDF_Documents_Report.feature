@@ -23,6 +23,10 @@ Feature: PDF Documents Report Feature
     #verify the select report page.
     And the user must see "PDF/Scanned Documents" text in "btris: pdf documents page" field on "Btris/Portal" page
     #Clcik on the select report button.
+    #And the user clicks on "btris: top select button" element on "Btris/Portal" page
+    And the user waits for 2 seconds
+    #Click on Select All for PDF/Scanned Documents.
+    And the user clicks on "pdf documents select all button" element on "Btris/Portal" page
     And the user clicks on "btris: top select button" element on "Btris/Portal" page
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
@@ -31,7 +35,8 @@ Feature: PDF Documents Report Feature
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
-#    #Verify the document report table.
+    And the user waits for 8 seconds
+   #Verify the document report table.
     And the user must see "Subject Name" text in "diagnosis report table: subject name column" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "PDF Documents Results Preview - Standard" text in "pdf documents result page" field on "Btris/Portal" page
@@ -70,7 +75,7 @@ Feature: PDF Documents Report Feature
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
     And the user must see "PDF/Scanned Documents" text in "btris: pdf documents page" field on "Btris/Portal" page
-    And the user waits for 4 seconds
+    And the user waits for 2 seconds
     #Click on Select All for PDF/Scanned Documents.
     And the user clicks on "pdf documents select all button" element on "Btris/Portal" page
     #Clcik on the select report button.
@@ -82,7 +87,7 @@ Feature: PDF Documents Report Feature
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
-    And the user waits for 7 seconds
+    And the user waits for 8 seconds
     #Verify the document report table.
     And the user must see "Subject Name" text in "diagnosis report table: subject name column" field on "Btris/Portal" page
     #Verify report page.

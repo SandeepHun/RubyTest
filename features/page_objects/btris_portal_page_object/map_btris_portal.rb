@@ -131,7 +131,10 @@ def map_btris_portal
           'pulmonary top nav: report criteria'                         =>"xpath^^.//*[@class='btris-progress-bar-item__link router-link-exact-active router-link-active']",
           'pulmonary: add pft done button'                             =>"xpath^^.//*[@data-test='red-search-lower-done-button']",
           'pft tests data'                                             =>'xpath^^.//*[contains(text(), "Pulmonary Function Test (PFT) Panel and Panel Component")]',
-
+          #Clinical Documents - Full Text
+          'btris: clinical documents full tex test'                    =>"xpath^^.//*[contains(@data-test, '7-radio-value')]",
+          'btris: clinical documents full tex report page'             =>"xpath^^.//*[contains(text(), 'Clinical Documents - Full Text Report')]",
+          'clinical documents full tex result page'                    =>"xpath^^.//*[contains(text(), 'Clinical Documents - Full Text Results Preview -')]",
 
 
       }
