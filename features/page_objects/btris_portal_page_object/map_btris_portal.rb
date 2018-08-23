@@ -135,6 +135,11 @@ def map_btris_portal
           'btris: clinical documents full tex test'                    =>"xpath^^.//*[contains(@data-test, '7-radio-value')]",
           'btris: clinical documents full tex report page'             =>"xpath^^.//*[contains(text(), 'Clinical Documents - Full Text Report')]",
           'clinical documents full tex result page'                    =>"xpath^^.//*[contains(text(), 'Clinical Documents - Full Text Results Preview -')]",
+          #Pathology report
+          'btris: pathology test'                                      =>"xpath^^.//*[contains(@data-test, '11-radio-value')]",
+          'btris: pathology report page'                               =>"xpath^^.//*[contains(text(), 'Pathology Report')]",
+          'pathology result page'                                      =>"xpath^^.//*[contains(text(), 'Pathology Results Preview -')]",
+          'select all pathology test'                                  =>"xpath^^.//*[@for='pathologyTests-red-quick-pick-select-all']",
 
 
       }
