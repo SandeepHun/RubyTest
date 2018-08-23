@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="067897a2-c785-43cd-92be-f80118e50adc" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/features/btris_project_feature/Pathology_Test.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/btris_project_feature/Clinical_Documents_Discrete_Values.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/btris_project_feature/Clinical_Documents_Discrete_Values.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/page_objects/btris_portal_page_object/map_btris_portal.rb" beforeDir="false" afterPath="$PROJECT_DIR$/features/page_objects/btris_portal_page_object/map_btris_portal.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/step_definitions/step_definitions.rb" beforeDir="false" afterPath="$PROJECT_DIR$/features/step_definitions/step_definitions.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/support/BTRIS_Test_Reports/BTRIS_Quick_Test_Report.html" beforeDir="false" afterPath="$PROJECT_DIR$/features/support/BTRIS_Test_Reports/BTRIS_Quick_Test_Report.html" afterDir="false" />
-    </list>
+    <list default="true" id="067897a2-c785-43cd-92be-f80118e50adc" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Pulmonary_Function_Test.feature" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Pulmonary_Function_Test.feature" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/features/btris_project_feature/Pulmonary_Function_Test.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+            <state relative-caret-position="85">
+              <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -56,8 +49,8 @@
       <file leaf-file-name="Laboratory_Test.feature" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/features/btris_project_feature/Laboratory_Test.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="306">
+              <caret line="81" column="31" lean-forward="true" selection-start-line="81" selection-end-line="82" />
             </state>
           </provider>
         </entry>
@@ -116,11 +109,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Clinical_Documents_Discrete_Values.feature" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Clinical_Documents_Discrete_Values.feature" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/features/btris_project_feature/Clinical_Documents_Discrete_Values.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-357">
-              <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+            <state relative-caret-position="238">
+              <caret line="86" column="24" lean-forward="true" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -215,19 +208,19 @@
         <option value="C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/watir-webdriver-0.9.9/lib/watir-webdriver.rb" />
         <option value="$PROJECT_DIR$/features/step_definitions/text_steps.rb" />
         <option value="$PROJECT_DIR$/features/btris_project_feature/Vital_Signs_Report.feature" />
-        <option value="$PROJECT_DIR$/features/btris_project_feature/Laboratory_Test.feature" />
         <option value="$PROJECT_DIR$/features/support/configuration.rb" />
         <option value="$PROJECT_DIR$/Run Configuration for BTRIS" />
         <option value="$PROJECT_DIR$/features/btris_project_feature/Medication_Report.feature" />
         <option value="$PROJECT_DIR$/features/support/hooks.rb" />
-        <option value="$PROJECT_DIR$/features/btris_project_feature/Pulmonary_Function_Test.feature" />
         <option value="$PROJECT_DIR$/features/support/env.rb" />
         <option value="$PROJECT_DIR$/features/btris_project_feature/Clinical_Documents_Full_Text.feature" />
         <option value="$PROJECT_DIR$/features/btris_project_feature/PDF_Documents_Report.feature" />
-        <option value="$PROJECT_DIR$/features/btris_project_feature/Clinical_Documents_Discrete_Values.feature" />
         <option value="$PROJECT_DIR$/features/page_objects/btris_portal_page_object/map_btris_portal.rb" />
         <option value="$PROJECT_DIR$/features/step_definitions/step_definitions.rb" />
         <option value="$PROJECT_DIR$/features/btris_project_feature/Pathology_Test.feature" />
+        <option value="$PROJECT_DIR$/features/btris_project_feature/Laboratory_Test.feature" />
+        <option value="$PROJECT_DIR$/features/btris_project_feature/Pulmonary_Function_Test.feature" />
+        <option value="$PROJECT_DIR$/features/btris_project_feature/Clinical_Documents_Discrete_Values.feature" />
       </list>
     </option>
   </component>
@@ -540,7 +533,7 @@
       <workItem from="1534338330491" duration="3754000" />
       <workItem from="1534771840653" duration="32000" />
       <workItem from="1534771890212" duration="13913000" />
-      <workItem from="1534970203857" duration="3213000" />
+      <workItem from="1534970203857" duration="3988000" />
     </task>
     <servers />
   </component>
@@ -577,7 +570,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="461848000" />
+    <option name="totallyTimeSpent" value="462623000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1380" height="744" extended-state="6" />
@@ -845,24 +838,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/btris_project_feature/Clinical_Documents_Discrete_Values.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-357">
-          <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/features/btris_project_feature/Clinical_Documents_Full_Text.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/btris_project_feature/Laboratory_Test.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
@@ -887,10 +866,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/features/btris_project_feature/Laboratory_Test.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="81" column="31" lean-forward="true" selection-start-line="81" selection-end-line="82" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/features/btris_project_feature/Pulmonary_Function_Test.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        <state relative-caret-position="85">
+          <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/btris_project_feature/Clinical_Documents_Discrete_Values.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="86" column="24" lean-forward="true" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
         </state>
       </provider>
     </entry>
