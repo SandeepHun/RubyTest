@@ -180,3 +180,4 @@
 [0727/172753.485:ERROR:file_io_win.cc(161)] CreateFile C:\Users\ngunida\AppData\Local\Temp\2\scoped_dir10760_22997\Crashpad\settings.dat: Error (0x3B01) while retrieving error. (0x3)
 [0727/172753.490:ERROR:file_io_win.cc(170)] CreateFile C:\Users\ngunida\AppData\Local\Temp\2\scoped_dir10760_22997\Crashpad\reports\6d99ba62-dbb2-4d91-a223-3d6f55f5a1bc.dmp: Error (0x3B01) while retrieving error. (0x3)
 [0727/172753.494:ERROR:crash_report_exception_handler.cc(97)] PrepareNewCrashReport failed
+[0827/093533.821:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
