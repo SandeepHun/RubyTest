@@ -33,6 +33,7 @@ Feature: NICHD - CTDB Report Feature
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify the document report table.
+    And the user waits for 10 seconds
     And the user must see "Subject Name" text in "diagnosis report table: subject name column" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "NICHD/CTDB Forms Results Preview - Standard" text in "nichd ctdb forms report page" field on "Btris/Portal" page
@@ -83,6 +84,7 @@ Feature: NICHD - CTDB Report Feature
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify the document report table.
+    And the user waits for 10 seconds
     And the user must see "Subject Name" text in "diagnosis report table: subject name column" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "NICHD/CTDB Forms Results Preview - Standard" text in "nichd ctdb forms report page" field on "Btris/Portal" page
