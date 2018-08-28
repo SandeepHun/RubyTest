@@ -33,6 +33,7 @@ Feature: Pathology Test Feature
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify the laboratory report table.
+    And the user waits for 10 seconds
     And the user must see "Subject Name" text in "laboratory report table: subject name" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "Pathology Results Preview - Standard" text in "pathology result page" field on "Btris/Portal" page
@@ -86,6 +87,7 @@ Feature: Pathology Test Feature
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify the laboratory report table.
+    And the user waits for 10 seconds
     And the user must see "Subject Name" text in "laboratory report table: subject name" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "Pathology Results Preview - Standard" text in "pathology result page" field on "Btris/Portal" page
