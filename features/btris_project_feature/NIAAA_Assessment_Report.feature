@@ -1,4 +1,4 @@
-@NIAAA_Assessment_Report
+@BTRIS_Quick_Test
   @NIAAA_Assessment
 Feature: NIAAA Assessment
 
