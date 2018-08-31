@@ -1,4 +1,4 @@
-@BTRIS_Quick_Test
+@BTRIS_Stable_Test
   @Radiology_With_Image
   Feature: BTRIS Radiology
 
@@ -33,7 +33,7 @@
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify radiology report results.
-    And the user waits for 10 seconds
+    And the user waits for 20 seconds
     And the user must see "Subject Name" text in "laboratory report table: subject name column" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "Radiology Results Preview - Standard" text in "radiology report page" field on "Btris/Portal" page
@@ -85,7 +85,7 @@
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify radiology report results.
-    And the user waits for 10 seconds
+    And the user waits for 20 seconds
     And the user must see "Subject Name" text in "laboratory report table: subject name column" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "Radiology Results Preview - Standard" text in "radiology report page" field on "Btris/Portal" page
