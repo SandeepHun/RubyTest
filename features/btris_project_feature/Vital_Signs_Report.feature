@@ -1,4 +1,4 @@
-@BTRIS_Quick_Test
+@BTRIS_Stable_Test
 @Vital_Signs_Report
 Feature: Vital Signs Report
 
@@ -32,7 +32,7 @@ Feature: Vital Signs Report
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify the laboratory report table.
-    And the user waits for 10 seconds
+    And the user waits for 20 seconds
     And the user must see "Subject Name" text in "vital signs test table: subject name column" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "Vital Signs Results Preview - Standard" text in "vital signs test result page" field on "Btris/Portal" page
