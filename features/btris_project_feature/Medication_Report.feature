@@ -1,4 +1,4 @@
-@BTRIS_Quick_Test
+@BTRIS_Stable_Test
 @Medication_Report
 Feature: Medication Report
 
@@ -33,6 +33,7 @@ Feature: Medication Report
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify the laboratory report table.
+    And the user waits for 20 seconds
     And the user must see "Subject Name" text in "laboratory report table: subject name" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "Medication Report Results Preview - Medication Orders" text in "medication report page" field on "Btris/Portal" page

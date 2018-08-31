@@ -32,7 +32,7 @@ Feature: NIAAA Assessment
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify assessment report results.
-    And the user waits for 10 seconds
+    And the user waits for 20 seconds
     And the user must see "Subject Name" text in "assessment report table: subject name column" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "NIAAA Assessment Report Results Preview - Standard" text in "assessment report page" field on "Btris/Portal" page
