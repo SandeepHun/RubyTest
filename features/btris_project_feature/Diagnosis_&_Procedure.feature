@@ -1,5 +1,5 @@
-@BTRIS_Stable_Test
-  @Diagnosis_And_Procedure
+@BTRIS_Quick_Test
+ @Diagnosis_And_Procedure
 Feature: Diagnosis & Procedure Feature
 
   @Diagnosis1

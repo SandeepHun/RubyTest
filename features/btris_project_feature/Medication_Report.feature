@@ -1,5 +1,5 @@
-@BTRIS_Stable_Test
-@Medication_Report
+@BTRIS_Quick_Test
+ @Medication_Report
 Feature: Medication Report
 
   @MedicationR1

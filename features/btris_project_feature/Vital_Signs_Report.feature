@@ -1,4 +1,4 @@
-@BTRIS_Stable_Test
+@BTRIS_Quick_Test
 @Vital_Signs_Report
 Feature: Vital Signs Report
 
