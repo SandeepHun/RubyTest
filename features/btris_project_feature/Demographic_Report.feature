@@ -1,5 +1,5 @@
-@BTRIS_Stable_Test
-  @Demographic_Report
+@BTRIS_Quick_Test
+   @Demographic_Report
 Feature: BTRIS Demographic Test
 
   @Demographic1

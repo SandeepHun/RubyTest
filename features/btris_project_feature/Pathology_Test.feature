@@ -1,4 +1,4 @@
-@BTRIS_Stable_Test
+@BTRIS_Quick_Test
   @Pathology_Test
 Feature: Pathology Test Feature
 

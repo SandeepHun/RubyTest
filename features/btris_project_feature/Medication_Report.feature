@@ -1,4 +1,4 @@
-@BTRIS_Stable_Test
+@BTRIS_Quick_Test
 @Medication_Report
 Feature: Medication Report
 

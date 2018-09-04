@@ -1,4 +1,4 @@
-@BTRIS_Stable_Test
+@BTRIS_Quick_Test
 @NICHD_CTDB_Report_Test
 Feature: NICHD - CTDB Report Feature
 

@@ -1,4 +1,4 @@
-@BTRIS_Stable_Test
+@BTRIS_Quick_Test
   @Radiology_With_Image
   Feature: BTRIS Radiology
 
