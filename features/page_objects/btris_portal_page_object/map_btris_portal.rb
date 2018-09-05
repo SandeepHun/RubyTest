@@ -149,9 +149,14 @@ def map_btris_portal
           'irb inclusion select protocol'                                             =>"xpath^^.//*[@data-test='select-pcsl-9780-protocol-radio-value']",
           'irb inclusion open report in new tab'                                      =>"xpath^^.//*[@data-test='open-in-new-window-button']",
           'irb inclusion search protocol2'                                  =>"xpath^^.//*[@data-test='select-pcsl-9787-protocol-radio-value']",
-
-
-
+          # IRB Inclusion Enrollment
+          'btris: ekg test'                                                           =>"xpath^^.//*[@data-test='10-radio-value']",
+          'btris: ekg report page'                                                    =>"xpath^^.//*[contains(text(), 'EKG Report')]",
+          'select all ekg observation checkbox'                                       =>"xpath^^.//*[@for='ekgObservations-red-quick-pick-select-all']",
+          'select ekg subject top button'                                             =>"xpath^^.//*[@data-test='criteria-next-button-top']",
+          'select ekg subject bottom button'                                          =>"xpath^^.//*[@data-test='criteria-next-button-bottom']",
+          'ekg result page'                                                           =>"xpath^^.//*[contains(text(), 'EKG Results Preview -')]",
+          'report table: subject name'                                                =>"xpath^^.//*[contains(text(), 'Subject Name')]",
 
 
 
