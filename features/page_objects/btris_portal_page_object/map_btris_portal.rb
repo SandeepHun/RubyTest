@@ -148,7 +148,7 @@ def map_btris_portal
           'irb inclusion enrollment search protocol'                                  =>"xpath^^.//*[@id='protocolSection']/div[2]/span",
           'irb inclusion select protocol'                                             =>"xpath^^.//*[@data-test='select-pcsl-9780-protocol-radio-value']",
           'irb inclusion open report in new tab'                                      =>"xpath^^.//*[@data-test='open-in-new-window-button']",
-          'irb inclusion search protocol2'                                  =>"xpath^^.//*[@data-test='select-pcsl-9787-protocol-radio-value']",
+          'irb inclusion search protocol2'                                            =>"xpath^^.//*[@data-test='select-pcsl-9787-protocol-radio-value']",
           # IRB Inclusion Enrollment
           'btris: ekg test'                                                           =>"xpath^^.//*[@data-test='10-radio-value']",
           'btris: ekg report page'                                                    =>"xpath^^.//*[contains(text(), 'EKG Report')]",
@@ -157,8 +157,21 @@ def map_btris_portal
           'select ekg subject bottom button'                                          =>"xpath^^.//*[@data-test='criteria-next-button-bottom']",
           'ekg result page'                                                           =>"xpath^^.//*[contains(text(), 'EKG Results Preview -')]",
           'report table: subject name'                                                =>"xpath^^.//*[contains(text(), 'Subject Name')]",
-
-
+          #Microbiology Test
+          'btris: microbiology test'                                                           =>"xpath^^.//*[@data-test='14-radio-value']",
+          'btris: microbiology report page'                                                    =>"xpath^^.//*[contains(text(), 'Microbiology Report')]",
+          'select all microbiology observation checkbox'                                       =>"xpath^^.//*[@for='ekgObservations-red-quick-pick-select-all']",
+          'select microbiology subject top button'                                             =>"xpath^^.//*[@data-test='criteria-next-button-top']",
+          'unchecked subject button'                                                           =>"xpath^^.//*[@data-test='select-all-subjects-button']",
+          'subject checkbox'                                                                   =>"xpath^^.//*[@data-test='subject-checkbox']",
+          'microbiology result page'                                                           =>"xpath^^.//*[contains(text(), 'Microbiology Results Preview -')]",
+          'blinded results drop down'                                                          =>"xpath^^.//*[@id='blindedResults-select']",
+          #Echocardiogram Test
+          'btris: echocardiogram test'                                                           =>"xpath^^.//*[@data-test='12-radio-value']",
+          'btris: echocardiogram report page'                                                    =>"xpath^^.//*[contains(text(), 'Echocardiogram Report')]",
+          'select all echocardiogram tests checkbox'                                             =>"xpath^^.//*[@for='echocardiogramTests-red-quick-pick-select-all']",
+          'select echocardiogram subject top button'                                             =>"xpath^^.//*[@data-test='criteria-next-button-top']",
+          'echocardiogram result page'                                                           =>"xpath^^.//*[contains(text(), 'Echocardiogram Results Preview -')]",
 
 
 
