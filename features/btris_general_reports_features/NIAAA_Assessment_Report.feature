@@ -67,10 +67,9 @@ Feature: NIAAA Assessment
     And the user clicks on "btris: assessment report test" element on "Btris/Portal" page
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
-    And the user waits for 5 seconds
+    And the user waits for 13 seconds
     #verify the select report page.
     And the user must see "NIAAA Assessment Report" text in "btris: assessment filter report page" field on "Btris/Portal" page
-    And the user waits for 8 seconds
     #click on the select all check box.
     And the user clicks on "select all assessment button" element on "Btris/Portal" page
     #Clcik on the select report button.
