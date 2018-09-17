@@ -31,22 +31,22 @@ BROWSER_NAME = Configuration.browser.downcase
 
 #********************To open Browser at one time and run all scenario*********************
 
-# selenium_driver = Selenium::WebDriver::Remote::Http::Default.new
-#
-# selenium_driver.read_timeout = TIMEOUT
-# selenium_driver.open_timeout = TIMEOUT
-# # statement Depreciated
-# # selenium_driver.timeout = TIMEOUT # seconds – default is 30
-#
-# @@browser = Watir::Browser.new BROWSER_NAME.to_sym, :http_client => selenium_driver
-#
-# @@browser.driver.manage.timeouts.implicit_wait=35
-# # @browser = get_browser
-# #@@browser.driver.manage.window.maximize
-#
-# Before do
-#   @browser = @@browser
-# end
+selenium_driver = Selenium::WebDriver::Remote::Http::Default.new
+
+selenium_driver.read_timeout = TIMEOUT
+selenium_driver.open_timeout = TIMEOUT
+# statement Depreciated
+# selenium_driver.timeout = TIMEOUT # seconds – default is 30
+
+@@browser = Watir::Browser.new BROWSER_NAME.to_sym, :http_client => selenium_driver
+
+@@browser.driver.manage.timeouts.implicit_wait=35
+# @browser = get_browser
+#@@browser.driver.manage.window.maximize
+
+Before do
+  @browser = @@browser
+end
 
 
 # == Open browser on each scenario and then close browser
@@ -114,21 +114,21 @@ end
 #   end
 # end
 
-Before do |scenario|
-  # puts "Executing Test on #{Configuration.host}"
-  SCENARIO_ID = (scenario.name).delete('^0-9')
-  if SCENARIO_ID.empty?
-    SCENARIO_ID = scenario.name[0, 15]
-  end
-  SCREENSHOT_NAME = "/#{scenario.__id__}"
-end
-
-After do |scenario|
-  if scenario.failed?
-    clear_alert
-    capture_screenshot
-  end
-end
+# Before do |scenario|
+#   # puts "Executing Test on #{Configuration.host}"
+#   SCENARIO_ID = (scenario.name).delete('^0-9')
+#   if SCENARIO_ID.empty?
+#     SCENARIO_ID = scenario.name[0, 15]
+#   end
+#   SCREENSHOT_NAME = "/#{scenario.__id__}"
+# end
+#
+# After do |scenario|
+#   if scenario.failed?
+#     clear_alert
+#     capture_screenshot
+#   end
+# end
 
 def clear_alert
   if @browser.alert.exists?
