@@ -128,6 +128,7 @@ Feature: Clinical Documents - Full Text Feature
     And the user enters "<Red Search Data 2>" into "red search: keyword text box" on "Btris/Portal" page
     #Seect contains all of these keywords from the drop down.
     And the user selects "<Search Type 2>" from "red search: clinical doc search type drop down" drop down on "Btris/Portal" page
+    And the user waits for 5 seconds
     #Click the search button.
     And the user clicks on "red search: clinical doc done search button" element on "Btris/Portal" page
     #Verify search data.
