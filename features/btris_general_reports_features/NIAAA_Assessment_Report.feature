@@ -34,7 +34,7 @@ Feature: NIAAA Assessment
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify assessment report results.
-    And the user waits for 20 seconds
+    #And the user waits for 20 seconds
     And the user must see "Subject Name" text in "assessment report table: subject name column" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "NIAAA Assessment Report Results Preview - Standard" text in "assessment report page" field on "Btris/Portal" page
@@ -67,7 +67,7 @@ Feature: NIAAA Assessment
     And the user clicks on "btris: assessment report test" element on "Btris/Portal" page
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
-    And the user waits for 13 seconds
+    And the user waits for 5 seconds
     #verify the select report page.
     And the user must see "NIAAA Assessment Report" text in "btris: assessment filter report page" field on "Btris/Portal" page
     #click on the select all check box.
@@ -84,7 +84,7 @@ Feature: NIAAA Assessment
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify assessment report results.
-    And the user waits for 20 seconds
+    #And the user waits for 20 seconds
     And the user must see "Subject Name" text in "assessment report table: subject name column" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "NIAAA Assessment Report Results Preview - Standard" text in "assessment report page" field on "Btris/Portal" page
