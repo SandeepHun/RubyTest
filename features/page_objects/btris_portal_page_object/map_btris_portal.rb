@@ -208,6 +208,10 @@ def map_btris_portal
           'labs drop down'                                                                    =>"xpath^^.//*[@id='selectLabList-reference-list-select-search-terms']",
           'reference list blinded results drop down'                                          =>"xpath^^.//*[@id='blindedResults-select']",
           'enter required criteria button'                                                    =>"xpath^^.//*[@data-test='criteria-next-button-bottom']",
+          'reference document with negative mrn number'                                       =>"xpath^^.//*[@class='form-control-feedback'][contains(text(), 'There was 1 error with your submission:')]",
+
+
+
 
 
       }
