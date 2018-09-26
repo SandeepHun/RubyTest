@@ -34,7 +34,7 @@ Feature: EKG Test Feature
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify assessment report results.
-    #And the user waits for 20 seconds
+    And the user waits for 20 seconds
     And the user must see "Subject Name" text in "report table: subject name" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "EKG Results Preview - Standard" text in "ekg result page" field on "Btris/Portal" page
@@ -87,11 +87,11 @@ Feature: EKG Test Feature
     And the user waits for 5 seconds
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
-    And the user waits for 4 seconds
+    And the user waits for 8 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify assessment report results.
-    #And the user waits for 20 seconds
+    And the user waits for 20 seconds
     And the user must see "Subject Name" text in "report table: subject name" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "EKG Results Preview - Standard" text in "ekg result page" field on "Btris/Portal" page
