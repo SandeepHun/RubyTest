@@ -34,7 +34,7 @@ Feature: Laboratory Feature
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify the laboratory report table.
-    #And the user waits for 20 seconds
+    And the user waits for 20 seconds
     And the user must see "Subject Name" text in "laboratory report table: subject name" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
@@ -88,7 +88,7 @@ Feature: Laboratory Feature
     And the user waits for 8 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
-    #And the user waits for 10 seconds
+    And the user waits for 10 seconds
     #Verify the laboratory report table.
     And the user must see "Collected Date Time" text in "report table: collected data time column" field on "Btris/Portal" page
     #Verify report page.
@@ -141,7 +141,7 @@ Feature: Laboratory Feature
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify the laboratory report table.
-    #And the user waits for 10 seconds
+    And the user waits for 10 seconds
     And the user must see "Collected Date Time" text in "report table: collected data time column" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
@@ -164,9 +164,9 @@ Feature: Laboratory Feature
     And the user selects "<Search Type>" from "red search: search type drop down" drop down on "Btris/Portal" page
     #Click the search button.
     And the user clicks on "red search: search button" element on "Btris/Portal" page
-    #And the user waits for 15 seconds
+    And the user waits for 15 seconds
     #Verify search data.
-    And the user must see "Home Labs NIAID Panel, (NIAID, CRIMSON, HMLABS)" text in "red search data" field on "Btris/Portal" page
+    #And the user must see "Home Labs NIAID Panel, (NIAID, CRIMSON, HMLABS)" text in "red search data" field on "Btris/Portal" page
     #Click on the done button.
     And the user clicks on "red search: done button" element on "Btris/Portal" page
     #Sign out.

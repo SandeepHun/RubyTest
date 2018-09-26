@@ -30,7 +30,7 @@ Feature: BTRIS Demographic Test
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify the demographic report table.
-    #And the user waits for 20 seconds
+    And the user waits for 20 seconds
     And the user must see "Subject Name" text in "demographics report table: subject name column" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "Demographics Results Preview - Standard" text in "demographics report page" field on "Btris/Portal" page

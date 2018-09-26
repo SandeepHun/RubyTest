@@ -30,7 +30,7 @@ Feature: IRB Inclusion Enrollment Feature
     And the user waits for 5 seconds
     And the user clicks on "irb inclusion select protocol" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
-    And the user waits for 5 seconds
+    And the user waits for 8 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify report page.
@@ -80,7 +80,7 @@ Feature: IRB Inclusion Enrollment Feature
     And the user waits for 5 seconds
     And the user clicks on "irb inclusion search protocol2" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
-    And the user waits for 4 seconds
+    And the user waits for 8 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify report page.
