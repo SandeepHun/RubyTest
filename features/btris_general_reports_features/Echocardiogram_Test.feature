@@ -27,7 +27,7 @@ Feature: Echocardiogram
     And the user clicks on "btris: top select button" element on "Btris/Portal" page
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
-    And the user waits for 2 seconds
+    And the user waits for 4 seconds
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user waits for 2 seconds
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
@@ -78,7 +78,7 @@ Feature: Echocardiogram
     And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
-    And the user waits for 2 seconds
+    And the user waits for 4 seconds
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user waits for 2 seconds
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
