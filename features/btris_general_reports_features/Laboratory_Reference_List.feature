@@ -111,8 +111,6 @@ Feature: Laboratory Feature Reference List
       | Labs              | Number of Values | Number of Days Before | Reference Name    | Number of Days After |
       | Term Test Data DN | 10               | 90                    | Reference List DN | 80                   |
 
-
-
   @ReferenceListLaboratory3
 
   Scenario Outline: 1.3 Running Reports Search for Search Term List Document and Reference List Documents Reports, 15 days.
@@ -159,8 +157,6 @@ Feature: Laboratory Feature Reference List
     Examples:
       | Labs              | Number of Values | Number of Days Before | Reference Name    | Number of Days After |
       | Term Test Data DN | 15               | 60                    | Reference List DN | 40                   |
-
-
 
   @ReferenceListLaboratory4
 

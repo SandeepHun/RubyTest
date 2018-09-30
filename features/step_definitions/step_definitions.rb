@@ -1842,7 +1842,7 @@ And(/^the user verify the reference list laboratory report on the table$/) do
       new_document = "CAHILL, PATRICIA ANN MARIE"
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
-        del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[1]"
+        del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[6]"
         puts 'the Subject for the Reference Laboratory results are ' +del_obj
       end
     end
