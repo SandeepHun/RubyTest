@@ -96,5 +96,5 @@ Feature: NIAAA Assessment
     And the user logged out of the system
 
     Examples:
-      | Test User Name | Password       | Subject    | Filtered Subject |
-      | btris_test2    | Nomorecognos11 | 08-AA-0137 | ADEBISI          |
+      | Subject    | Filtered Subject |
+      | 08-AA-0137 | ADEBISI          |

@@ -43,6 +43,7 @@
     #Verify and validate the report display and click on the the image to view.
     And the user click on the radiology record to verify the image
     And the switch to new tab page
+    And the user waits for 8 seconds
     #Verify and validate the image.
     And the user must see "BOWEN JEANNE DOLORES" text in "radiology image display" field on "Btris/Portal" page
     #Verify image date
