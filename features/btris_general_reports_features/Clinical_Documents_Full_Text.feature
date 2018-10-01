@@ -132,7 +132,7 @@ Feature: Clinical Documents - Full Text Feature
     #Click the search button.
     And the user clicks on "red search: clinical doc done search button" element on "Btris/Portal" page
     #Verify search data.
-    And the user waits for 15 seconds
+    And the user waits for 8 seconds
     And the user must see "CRIS PDF Web Service Document (Document Image)" text in "red search: start with research" field on "Btris/Portal" page
     #Click on the done button.
     And the user clicks on "red search: clinical doc done button" element on "Btris/Portal" page
