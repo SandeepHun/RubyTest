@@ -11,6 +11,7 @@ Feature: Echocardiogram
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.
+    And the user waits for 4 seconds
     And the user must see "Conditions of Use and Code of Conduct" text in "btris: accept page" field on "Btris/Portal" page
     #Click on the accept button.
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
@@ -59,6 +60,7 @@ Feature: Echocardiogram
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.
+    And the user waits for 4 seconds
     And the user must see "Conditions of Use and Code of Conduct" text in "btris: accept page" field on "Btris/Portal" page
     #Click on the accept button.
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
@@ -93,7 +95,7 @@ Feature: Echocardiogram
     #Verify and validate the report display.
     And the user verify the echocardiogram report on the table
     #Click on the download report button.
-    And the user clicks on "download full report button" element on "Btris/Portal" page
+    #And the user clicks on "download full report button" element on "Btris/Portal" page
     #Sign out.
     And the user logged out of the system
 

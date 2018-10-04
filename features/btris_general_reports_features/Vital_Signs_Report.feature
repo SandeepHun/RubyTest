@@ -11,6 +11,7 @@ Feature: Vital Signs Report
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.
+    And the user waits for 4 seconds
     And the user must see "Conditions of Use and Code of Conduct" text in "btris: accept page" field on "Btris/Portal" page
     #Click on the accept button.
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
@@ -63,6 +64,7 @@ Feature: Vital Signs Report
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.
+    And the user waits for 4 seconds
     And the user must see "Conditions of Use and Code of Conduct" text in "btris: accept page" field on "Btris/Portal" page
     #Click on the accept button.
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
@@ -96,7 +98,7 @@ Feature: Vital Signs Report
     #Verify and validate the report display and click on the the image to view.
     And the user verify the vital signs report on the table
     #Click on the download report button.
-    And the user clicks on "download full report button" element on "Btris/Portal" page
+    #And the user clicks on "download full report button" element on "Btris/Portal" page
     #click on the open report in another tab button.
     #And the user clicks button with text "Open in New Window" on "Btris/Portal" page
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
