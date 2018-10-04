@@ -11,6 +11,7 @@ Feature: NICHD - CTDB Report Feature
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.
+    And the user waits for 4 seconds
     And the user must see "Conditions of Use and Code of Conduct" text in "btris: accept page" field on "Btris/Portal" page
     #Click on the accept button.
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
@@ -63,6 +64,7 @@ Feature: NICHD - CTDB Report Feature
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.
+    And the user waits for 4 seconds
     And the user must see "Conditions of Use and Code of Conduct" text in "btris: accept page" field on "Btris/Portal" page
     #Click on the accept button.
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
@@ -93,7 +95,7 @@ Feature: NICHD - CTDB Report Feature
     #Verify and validate the report display and click on the the image to view.
     And the user verify the nichd ctdb forms report on the table with all protocol
     #Click on the download report button.
-    And the user clicks on "download full report button" element on "Btris/Portal" page
+    #And the user clicks on "download full report button" element on "Btris/Portal" page
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
