@@ -37,6 +37,7 @@ Feature: IRB Inclusion Enrollment Feature
     #Verify report page.
     And the user must see "Cumulative Inclusion Enrollment Report" text in "irb inclusion enrollment result page" field on "Btris/Portal" page
     #Verify searched protocol
+    And the user waits for 20 seconds
     And the user must see "<Subject>" text in "irb inclusion enrollment search protocol" field on "Btris/Portal" page
     #Click on the download report button.
     #And the user clicks on "download pd report button" element on "Btris/Portal" page
@@ -88,6 +89,7 @@ Feature: IRB Inclusion Enrollment Feature
     #Verify report page.
     And the user must see "Cumulative Inclusion Enrollment Report" text in "irb inclusion enrollment result page" field on "Btris/Portal" page
     #Verify searched protocol
+    And the user waits for 20 seconds
     And the user must see "<Subject>" text in "irb inclusion enrollment search protocol" field on "Btris/Portal" page
     #Click on the download report button.
     #And the user clicks on "download pd report button" element on "Btris/Portal" page

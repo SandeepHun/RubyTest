@@ -336,6 +336,7 @@ Feature: Laboratory Feature Reference List
     And the user enters "<Number of Values>" into "number of values text box" on "Btris/Portal" page
     And the user selects "<Labs>" from "labs drop down" drop down on "Btris/Portal" page
     And the user clicks on "enter required criteria button" element on "Btris/Portal" page
+    And the user waits for 20 seconds
     And the user must see "Subject Name" text in "laboratory report table: subject name" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page

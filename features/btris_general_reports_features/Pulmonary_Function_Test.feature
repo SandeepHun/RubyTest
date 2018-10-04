@@ -79,7 +79,7 @@ Feature: Pulmonary Function Test
     And the user must see "Pulmonary Function Test Report" text in "btris: pulmonary report page" field on "Btris/Portal" page
     #Click on add PFT Tests and verify the data
     And the user clicks on "pulmonary: add pft test button" element on "Btris/Portal" page
-    And the user waits for 37 seconds
+    And the user waits for 20 seconds
     And the user can see text "<PFT Test Data>"
     And the user clicks on "pulmonary: add pft done button" element on "Btris/Portal" page
     #Sign out.
