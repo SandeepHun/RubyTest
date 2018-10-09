@@ -1375,7 +1375,7 @@ And(/^the user verify the laboratory report on the table$/) do
     (1..table_rows).each do |rows|
       delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
       puts 'the row number is ' +delete_icons_row
-      new_document = "BOWEN, JEANNE DOLORES"
+      new_document = "BRACH, PHILIP LOUIS"
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[1]"

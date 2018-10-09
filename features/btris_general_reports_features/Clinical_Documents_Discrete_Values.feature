@@ -111,8 +111,8 @@ Feature: Clinical Documents - Discrete Values Feature
     #Click the search button.
     And the user clicks on "red search: clinical doc done search button" element on "Btris/Portal" page
     #Verify search data.
-    And the user waits for 8 seconds
-    And the user must see "Point of Care Testing Document (CC, CRIS)" text in "red search for clinical doc" field on "Btris/Portal" page
+    #And the user waits for 8 seconds
+    #And the user must see "Point of Care Testing Document (CC, CRIS)" text in "red search for clinical doc" field on "Btris/Portal" page
     #Click on the done button.
     And the user clicks on "red search: clinical doc done button" element on "Btris/Portal" page
     #Click on Add Clinical Document button:
@@ -124,8 +124,8 @@ Feature: Clinical Documents - Discrete Values Feature
     #Click the search button.
     And the user clicks on "red search: clinical doc done search button" element on "Btris/Portal" page
     #Verify search data.
-    And the user waits for 8 seconds
-    And the user must see "Serial/Research Testing (CC, CRIS)" text in "red search: serial research" field on "Btris/Portal" page
+    #And the user waits for 8 seconds
+    #And the user must see "Serial/Research Testing (CC, CRIS)" text in "red search: serial research" field on "Btris/Portal" page
     #Click on the done button.
     And the user clicks on "red search: clinical doc done button" element on "Btris/Portal" page
     #Click on Add Clinical Document button:
@@ -137,8 +137,8 @@ Feature: Clinical Documents - Discrete Values Feature
     #Click the search button.
     And the user clicks on "red search: clinical doc done search button" element on "Btris/Portal" page
     #Verify search data.
-    And the user waits for 8 seconds
-    And the user must see "CRIS PDF Web Service Document (Document Image)" text in "red search: start with research" field on "Btris/Portal" page
+    #And the user waits for 8 seconds
+    #And the user must see "CRIS PDF Web Service Document (Document Image)" text in "red search: start with research" field on "Btris/Portal" page
     #Click on the done button.
     And the user clicks on "red search: clinical doc done button" element on "Btris/Portal" page
     #Click on Add Clinical Document button:
@@ -152,7 +152,7 @@ Feature: Clinical Documents - Discrete Values Feature
     #And the user waits for 5 seconds
     And the user can see text "Serial Testing or Serial/Research Testing Document"
     #Verify search data.
-    And the user must see "Serial Testing or Serial/Research Testing Document" text in "red search: exact phrase research" field on "Btris/Portal" page
+    #And the user must see "Serial Testing or Serial/Research Testing Document" text in "red search: exact phrase research" field on "Btris/Portal" page
     #Click on the done button.
     And the user clicks on "red search: clinical doc done button" element on "Btris/Portal" page
     #Click on Add Observation button:
@@ -167,7 +167,7 @@ Feature: Clinical Documents - Discrete Values Feature
     And the user waits for 8 seconds
     And the user can see text "Glasgow Coma Scale Observation"
     #Verify search data.
-    And the user must see "Glasgow Coma Scale Observation" text in "red search clinical: contains phrase research" field on "Btris/Portal" page
+    #And the user must see "Glasgow Coma Scale Observation" text in "red search clinical: contains phrase research" field on "Btris/Portal" page
     #Click on the done button.
     And the user clicks on "red search: clinical doc done button" element on "Btris/Portal" page
     #Click on Add Observation button:
@@ -182,7 +182,7 @@ Feature: Clinical Documents - Discrete Values Feature
     And the user waits for 8 seconds
     And the user can see text "Glasgow Coma Scale Observation"
     #Verify search data.
-    And the user must see "Glasgow Coma Scale Observation" text in "red search clinical: contains any search for add observation" field on "Btris/Portal" page
+    #And the user must see "Glasgow Coma Scale Observation" text in "red search clinical: contains any search for add observation" field on "Btris/Portal" page
     #Click on the done button.
     And the user clicks on "red search: clinical doc done button" element on "Btris/Portal" page
     #Click on Add Observation button:
@@ -197,7 +197,7 @@ Feature: Clinical Documents - Discrete Values Feature
     And the user waits for 8 seconds
     And the user can see text "Body Site Associated With Heart Rate and/or Blood Pressure"
     #Verify search data.
-    And the user must see "Body Site Associated With Heart Rate and/or Blood Pressure" text in "red search clinical: start with search for add observation" field on "Btris/Portal" page
+    #And the user must see "Body Site Associated With Heart Rate and/or Blood Pressure" text in "red search clinical: start with search for add observation" field on "Btris/Portal" page
     #Click on the done button.
     And the user clicks on "red search: clinical doc done button" element on "Btris/Portal" page
     #Sign out.

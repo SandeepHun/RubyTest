@@ -175,5 +175,5 @@ Feature: Laboratory Feature
     And the user logged out of the system
 
     Examples:
-      | Subject   | Filtered Subject | Red Search Data  | Search Type                    |
-      | 00-C-0018 | BOWEN            | Labs             | Contains all of these keywords |
+      | Subject   | Filtered Subject | Red Search Data | Search Type                    |
+      | 00-C-0154 | COLEMAN          | Labs            | Contains all of these keywords |
