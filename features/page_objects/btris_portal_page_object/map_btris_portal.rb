@@ -5,8 +5,8 @@ def map_btris_portal
       {
           #Export librarian, adding a country.
           'btris home: landing page'                         =>"xpath^^.//*[contains(@class, 'login-to-btris__heading')]",
-          'btris home: login button'                         =>"xpath^^.//*[contains(@class, 'btn round btn-lg my-1 mx-1 learn-more-button')]",
-          'btris: login button'                              =>"xpath^^.//*[contains(@class, 'btn round btn-lg my-1 mx-1 learn-more-button')]",
+          #'btris home: login button'                         =>"xpath^^.//*[contains(@class, 'btn round btn-lg my-1 mx-1 learn-more-button')]",
+          'btris: login button'                              =>"xpath^^.//*[@class='btn round btn-lg btn-secondary'][contains(text(), 'Login')]",
           'btris: user name'                                 =>"xpath^^.//*[@id='USER']",
           'btris: password'                                  =>"xpath^^.//*[@id='PASSWORD']",
           'btris: login to dashboard button'                 =>"xpath^^.//*[@id='Image2']",
@@ -209,6 +209,19 @@ def map_btris_portal
           'reference list blinded results drop down'                                          =>"xpath^^.//*[@id='blindedResults-select']",
           'enter required criteria button'                                                    =>"xpath^^.//*[@data-test='criteria-next-button-bottom']",
           'reference document with negative mrn number'                                       =>"xpath^^.//*[@class='form-control-feedback'][contains(text(), 'There was 1 error with your submission:')]",
+          #Admin Report
+          'navigation: admin report'                                                          =>"xpath^^.//*[@data-test='launch-admin-reports-button']",
+          'report: radiology administration'                                                  =>"xpath^^.//*[@data-test='1021-radio-value']",
+          'btris: radiology administrative report filter page'                                =>"xpath^^.//*[contains(text(), 'Radiology Administrative Report')]",
+          'radiology administrative report page'                                              =>"xpath^^.//*[contains(text(), 'Radiology Administration Results Preview -')]",
+          'admin: open results in new tab button'                                             =>"xpath^^.//*[@data-test='open-in-new-window-button']",
+          'admin: administrative report image'                                                =>"xpath^^.//*[contains(@data-test, 'results-preview-table')]/tbody/tr/td[6]/a[contains(text(), 'NM5000574218')]",
+          'admin: administrative report image report'                                         =>"xpath^^.//*[@id='mainTab-0-tabCaptionPlace']",
+          'admin: add radiology report tests button'                                          =>"xpath^^.//*[@data-test='add-red-terms-button']",
+          'admin: radiology search text box'                                                  =>"xpath^^.//*[@id='radiologyTests-red-term-keywords']",
+          'admin: radiology search button'                                                    =>"xpath^^.//*[@data-test='red-search-search-button']",
+          'admin: radiology search red search result'                                         =>"xpath^^.//*[@id='C3147738_anchor']",
+          'admin: radiology red search done button'                                           =>"xpath^^.//*[@data-test='red-search-upper-done-button']",
 
 
 
