@@ -27,7 +27,7 @@ def map_btris_portal
           'check all button'                                 =>"xpath^^.//*[contains(@data-test, 'select-all-subject-lists-button')]",
           'radiology image display'                          =>"xpath^^.//*[@id='mainTab-0-tabCaptionPlace']",
           'demographic data check box'                       =>"xpath^^.//*[contains(@for, 'includeDemographics-checkbox')]",
-          'open results in new tab button'                   =>"xpath^^.//*[@id='app']/div/div[1]/div[2]/div[2]/div/div/div/div[1]/div/div[2]/div/div/div[4]/button",
+          'open results in new tab button'                   =>"xpath^^.//*[@data-test='open-in-new-window-button']",
           'protocol check button'                            =>"xpath^^.//*[contains(@data-test, 'protocol-checkbox')]",
           #Laboratory Test.
           'laboratory test'                                  =>"xpath^^.//*[@id='generalRpts']/div/ul/li[8]/div/label",
