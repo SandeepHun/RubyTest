@@ -217,3 +217,4 @@
 [1015/214759.455:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\system32\msvcrt.dll
 [1015/214759.455:ERROR:process_reader_win.cc(242)] ReadMemory at 0x776f0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
 [1015/214759.456:WARNING:pe_image_reader.cc(302)] could not read dos header from C:\windows\system32\USER32.dll
+[1016/115541.046:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
