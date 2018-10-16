@@ -49,7 +49,7 @@ Feature: Echocardiogram
 
     Examples:
       | Subject   | Filtered Subject |
-      | 00-C-0078 | BOSTON           |
+      | 00-C-0154 | BRACH            |
 
   @Echocardiogram2
 

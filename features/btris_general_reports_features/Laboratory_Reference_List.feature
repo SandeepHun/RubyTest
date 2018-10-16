@@ -11,7 +11,6 @@ Feature: Laboratory Feature Reference List
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.
-    And the user waits for 4 seconds
     And the user must see "Conditions of Use and Code of Conduct" text in "btris: accept page" field on "Btris/Portal" page
     #Click on the accept button.
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
@@ -33,12 +32,17 @@ Feature: Laboratory Feature Reference List
     And the user enters "<Search Term data>" into "custom list search term box" on "Btris/Portal" page
     And the verify if existing search term data exist and remove it
     And the user clicks on "custom search term list upload button" element on "Btris/Portal" page
+    And the user waits for 6 seconds
     And the user enters "<User>" into "custom search term list: user field" on "Btris/Portal" page
+    And the user waits for 6 seconds
     And the user clicks on "custom search term list: user" element on "Btris/Portal" page
+    And the user waits for 4 seconds
     And the user clicks on "custom search term overwrite checkbox" element on "Btris/Portal" page
+    And the user waits for 4 seconds
     And the user enters "<List Name>" into "custom search term list: list name field" on "Btris/Portal" page
     And the user enters "Automation Description Test Text" into "custom search term list: description" text area box on "Btris/Portal" page
     And the user selects "<Domain>" from "custom search term list: domain drop down" drop down on "Btris/Portal" page
+    And the user waits for 4 seconds
     And user attached "<Search Term Document>" file into "custom search term list: brows upload" on "Btris/Portal" page
     And the user clicks on "custom search term list: upload button" element on "Btris/Portal" page
     And the user waits for 7 seconds
@@ -62,7 +66,7 @@ Feature: Laboratory Feature Reference List
 
     Examples:
       | Search Term data  | List Name         | User                     | Domain          | Search Term Document        | Reference Name    | Reference Date Type | Reference Term Document      |
-      | Term Test Data DN | Term Test Data DN | BTRIS_TEST2 - TEST2 null | Lab Observation | Search Tearm List Data.xlsx | Reference List DN | MM/DD/YYYY          | Reference_List_Template.xlsx |
+      | Term Test Data DN | Term Test Data DN | BTRIS_TEST2 - TEST2 null | Lab Observation | Search_Tearm_List_Data.xlsx | Reference List DN | MM/DD/YYYY          | Reference_List_Template.xlsx |
 
 
   @ReferenceListLaboratory2
@@ -74,7 +78,6 @@ Feature: Laboratory Feature Reference List
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.
-    And the user waits for 4 seconds
     And the user must see "Conditions of Use and Code of Conduct" text in "btris: accept page" field on "Btris/Portal" page
     #Click on the accept button.
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
@@ -94,6 +97,7 @@ Feature: Laboratory Feature Reference List
     And the user enters "<Number of Values>" into "number of values text box" on "Btris/Portal" page
     And the user selects "<Labs>" from "labs drop down" drop down on "Btris/Portal" page
     And the user clicks on "enter required criteria button" element on "Btris/Portal" page
+    And the user clicks on "run report button" element on "Btris/Portal" page
     And the user must see "Subject Name" text in "laboratory report table: subject name" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
@@ -113,6 +117,8 @@ Feature: Laboratory Feature Reference List
       | Labs              | Number of Values | Number of Days Before | Reference Name    | Number of Days After |
       | Term Test Data DN | 10               | 90                    | Reference List DN | 80                   |
 
+
+
   @ReferenceListLaboratory3
 
   Scenario Outline: 1.3 Running Reports Search for Search Term List Document and Reference List Documents Reports, 15 days.
@@ -122,7 +128,6 @@ Feature: Laboratory Feature Reference List
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.
-    And the user waits for 4 seconds
     And the user must see "Conditions of Use and Code of Conduct" text in "btris: accept page" field on "Btris/Portal" page
     #Click on the accept button.
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
@@ -142,6 +147,7 @@ Feature: Laboratory Feature Reference List
     And the user enters "<Number of Values>" into "number of values text box" on "Btris/Portal" page
     And the user selects "<Labs>" from "labs drop down" drop down on "Btris/Portal" page
     And the user clicks on "enter required criteria button" element on "Btris/Portal" page
+    And the user clicks on "run report button" element on "Btris/Portal" page
     And the user must see "Subject Name" text in "laboratory report table: subject name" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
@@ -161,6 +167,8 @@ Feature: Laboratory Feature Reference List
       | Labs              | Number of Values | Number of Days Before | Reference Name    | Number of Days After |
       | Term Test Data DN | 15               | 60                    | Reference List DN | 40                   |
 
+
+
   @ReferenceListLaboratory4
 
   Scenario Outline: 1.4 Running Reports Search for Search Term List Document and Reference List Documents Reports, 5 days.
@@ -170,7 +178,6 @@ Feature: Laboratory Feature Reference List
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.
-    And the user waits for 4 seconds
     And the user must see "Conditions of Use and Code of Conduct" text in "btris: accept page" field on "Btris/Portal" page
     #Click on the accept button.
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
@@ -190,6 +197,7 @@ Feature: Laboratory Feature Reference List
     And the user enters "<Number of Values>" into "number of values text box" on "Btris/Portal" page
     And the user selects "<Labs>" from "labs drop down" drop down on "Btris/Portal" page
     And the user clicks on "enter required criteria button" element on "Btris/Portal" page
+    And the user clicks on "run report button" element on "Btris/Portal" page
     And the user must see "Subject Name" text in "laboratory report table: subject name" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
@@ -219,7 +227,6 @@ Feature: Laboratory Feature Reference List
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.
-    And the user waits for 4 seconds
     And the user must see "Conditions of Use and Code of Conduct" text in "btris: accept page" field on "Btris/Portal" page
     #Click on the accept button.
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
@@ -239,6 +246,7 @@ Feature: Laboratory Feature Reference List
     And the user enters "<Number of Values>" into "number of values text box" on "Btris/Portal" page
     And the user selects "<Labs>" from "labs drop down" drop down on "Btris/Portal" page
     And the user clicks on "enter required criteria button" element on "Btris/Portal" page
+    And the user clicks on "run report button" element on "Btris/Portal" page
     And the user must see "Subject Name" text in "laboratory report table: subject name" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
@@ -268,7 +276,6 @@ Feature: Laboratory Feature Reference List
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.
-    And the user waits for 4 seconds
     And the user must see "Conditions of Use and Code of Conduct" text in "btris: accept page" field on "Btris/Portal" page
     #Click on the accept button.
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
@@ -288,6 +295,7 @@ Feature: Laboratory Feature Reference List
     And the user enters "<Number of Values>" into "number of values text box" on "Btris/Portal" page
     And the user selects "<Labs>" from "labs drop down" drop down on "Btris/Portal" page
     And the user clicks on "enter required criteria button" element on "Btris/Portal" page
+    And the user clicks on "run report button" element on "Btris/Portal" page
     And the user must see "Subject Name" text in "laboratory report table: subject name" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
@@ -316,7 +324,6 @@ Feature: Laboratory Feature Reference List
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.
-    And the user waits for 4 seconds
     And the user must see "Conditions of Use and Code of Conduct" text in "btris: accept page" field on "Btris/Portal" page
     #Click on the accept button.
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
@@ -336,7 +343,7 @@ Feature: Laboratory Feature Reference List
     And the user enters "<Number of Values>" into "number of values text box" on "Btris/Portal" page
     And the user selects "<Labs>" from "labs drop down" drop down on "Btris/Portal" page
     And the user clicks on "enter required criteria button" element on "Btris/Portal" page
-    And the user waits for 20 seconds
+    And the user clicks on "run report button" element on "Btris/Portal" page
     And the user must see "Subject Name" text in "laboratory report table: subject name" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
@@ -364,7 +371,6 @@ Feature: Laboratory Feature Reference List
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.
-    And the user waits for 4 seconds
     And the user must see "Conditions of Use and Code of Conduct" text in "btris: accept page" field on "Btris/Portal" page
     #Click on the accept button.
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
@@ -384,6 +390,7 @@ Feature: Laboratory Feature Reference List
     And the user enters "<Number of Values>" into "number of values text box" on "Btris/Portal" page
     And the user selects "<Labs>" from "labs drop down" drop down on "Btris/Portal" page
     And the user clicks on "enter required criteria button" element on "Btris/Portal" page
+    And the user clicks on "run report button" element on "Btris/Portal" page
     And the user must see "Subject Name" text in "laboratory report table: subject name" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
@@ -413,7 +420,6 @@ Feature: Laboratory Feature Reference List
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.
-    And the user waits for 4 seconds
     And the user must see "Conditions of Use and Code of Conduct" text in "btris: accept page" field on "Btris/Portal" page
     #Click on the accept button.
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
@@ -436,14 +442,18 @@ Feature: Laboratory Feature Reference List
     And the verify if existing search term data exist and remove it
     And the user clicks on "custom search term list upload button" element on "Btris/Portal" page
     And the user enters "<User>" into "custom search term list: user field" on "Btris/Portal" page
+    And the user waits for 6 seconds
     And the user clicks on "custom search term list: user" element on "Btris/Portal" page
+    And the user waits for 4 seconds
     And the user clicks on "custom search term overwrite checkbox" element on "Btris/Portal" page
+    And the user waits for 4 seconds
     And the user enters "<List Name>" into "custom search term list: list name field" on "Btris/Portal" page
     And the user enters "Automation Description Test Text" into "custom search term list: description" text area box on "Btris/Portal" page
     And the user selects "<Domain>" from "custom search term list: domain drop down" drop down on "Btris/Portal" page
+    And the user waits for 4 seconds
     And user attached "<Search Term Document>" file into "custom search term list: brows upload" on "Btris/Portal" page
     And the user clicks on "custom search term list: upload button" element on "Btris/Portal" page
-    And the user waits for 7 seconds
+    And the user waits for 9 seconds
     And the user clicks on "reference list" element on "Btris/Portal" page
     #Filter and remove Reference list added by the test.
     And the user enters "<Reference Name>" into "reference list: search box" on "Btris/Portal" page
@@ -468,4 +478,4 @@ Feature: Laboratory Feature Reference List
 
     Examples:
       | Search Term data  | List Name         | User                     | Domain          | Search Term Document        | Reference Name    | Reference Date Type | Reference Term Document      | Reference Term Document Negative      |
-      | Term Test Data DN | Term Test Data DN | BTRIS_TEST2 - TEST2 null | Lab Observation | Search Tearm List Data.xlsx | Reference List DN | MM/DD/YYYY          | Reference_List_Template.xlsx | Reference_List_Negative_Template.xlsx |
+      | Term Test Data DN | Term Test Data DN | BTRIS_TEST2 - TEST2 null | Lab Observation | Search_Tearm_List_Data.xlsx | Reference List DN | MM/DD/YYYY          | Reference_List_Template.xlsx | Reference_List_Negative_Template.xlsx |
