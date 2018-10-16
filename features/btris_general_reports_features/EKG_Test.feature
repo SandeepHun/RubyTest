@@ -26,6 +26,7 @@ Feature: EKG Test Feature
     And the user must see "EKG Report" text in "btris: ekg report page" field on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "select ekg subject top button" element on "Btris/Portal" page
+    And the user waits for 6 seconds
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
     And the user waits for 2 seconds
@@ -84,7 +85,7 @@ Feature: EKG Test Feature
     #Clcik on the select report button.
     And the user clicks on "select ekg subject bottom button" element on "Btris/Portal" page
     #Enter and filter subject.
-    And the user waits for 3 seconds
+    And the user waits for 4 seconds
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
     And the user waits for 5 seconds
     And the user clicks on "protocol check button" element on "Btris/Portal" page

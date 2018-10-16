@@ -26,7 +26,7 @@ Feature: IRB Inclusion Enrollment Feature
     #Clcik on the select report button.
     And the user clicks on "btris: top select button" element on "Btris/Portal" page
     #Enter and filter subject.
-    And the user waits for 2 seconds
+    And the user waits for 4 seconds
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
     And the user waits for 5 seconds
     And the user clicks on "irb inclusion select protocol" element on "Btris/Portal" page
@@ -78,7 +78,7 @@ Feature: IRB Inclusion Enrollment Feature
     #Clcik on the select report button.
     And the user clicks on "btris: top select button" element on "Btris/Portal" page
     #Enter and filter subject.
-    And the user waits for 2 seconds
+    And the user waits for 4 seconds
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
     And the user waits for 5 seconds
     And the user clicks on "irb inclusion search protocol2" element on "Btris/Portal" page
