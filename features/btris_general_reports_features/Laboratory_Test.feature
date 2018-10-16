@@ -26,7 +26,7 @@ Feature: Laboratory Feature
     #Clcik on the select report button.
     And the user clicks on "btris: top select button" element on "Btris/Portal" page
     #Enter and filter subject.
-    And the user waits for 2 seconds
+    And the user waits for 4 seconds
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
     And the user waits for 5 seconds
     And the user clicks on "protocol check button" element on "Btris/Portal" page
@@ -82,7 +82,7 @@ Feature: Laboratory Feature
     #Clcik on the select report button.
     And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
     #Enter and filter subject.
-    And the user waits for 2 seconds
+    And the user waits for 4 seconds
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
     And the user waits for 5 seconds
     And the user clicks on "protocol check button" element on "Btris/Portal" page
@@ -134,6 +134,7 @@ Feature: Laboratory Feature
     And the user must see "Laboratory Report" text in "btris: laboratory filter report page" field on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
+    And the user waits for 6 seconds
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
     And the user waits for 2 seconds
@@ -148,7 +149,7 @@ Feature: Laboratory Feature
     #Verify report page.
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
-    And the user verify the laboratory report on the table
+    And the user verify the new laboratory report on the table
     #Click on the download report button.
     And the user clicks on "download full report button" element on "Btris/Portal" page
     #click on the open report in another tab button.
@@ -174,6 +175,6 @@ Feature: Laboratory Feature
     #Sign out.
     And the user logged out of the system
 
-    Examples:
+       Examples:
       | Subject   | Filtered Subject | Red Search Data | Search Type                    |
-      | 00-C-0154 | COLEMAN          | Labs            | Contains all of these keywords |
+      | 00-C-0133 | BOYCE            | Labs            | Contains all of these keywords |
