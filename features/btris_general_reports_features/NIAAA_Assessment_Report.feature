@@ -75,7 +75,7 @@ Feature: NIAAA Assessment
     #click on the select all check box.
     And the user clicks on "select all assessment button" element on "Btris/Portal" page
     #Clcik on the select report button.
-    #And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
+    And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
     #Enter and filter subject.
     And the user waits for 3 seconds
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
