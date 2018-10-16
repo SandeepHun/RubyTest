@@ -26,7 +26,7 @@ Feature: Diagnosis & Procedure Feature
     #Clcik on the select report button.
     And the user clicks on "btris: top select button" element on "Btris/Portal" page
     #Enter and filter subject.
-    And the user waits for 3 seconds
+    And the user waits for 5 seconds
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
     And the user waits for 5 seconds
     And the user clicks on "protocol check button" element on "Btris/Portal" page
@@ -78,6 +78,7 @@ Feature: Diagnosis & Procedure Feature
     And the user must see "Diagnosis & Procedure Report" text in "btris: diagnosis and procedure filter report page" field on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "btris: top select button" element on "Btris/Portal" page
+    And the user waits for 6 seconds
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
     And the user waits for 2 seconds

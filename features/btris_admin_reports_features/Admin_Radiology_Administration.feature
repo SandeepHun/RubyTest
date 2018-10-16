@@ -131,6 +131,7 @@ Feature: Radiology Administration Feature
     And the user must see "Radiology Administration Results Preview - Standard" text in "radiology administrative report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
     And the user clicks on "admin: administrative report image" element on "Btris/Portal" page
+    And the user waits for 8 seconds
     #And the user verify the radiology administration report with image
     And the switch to new tab page
     And the user waits for 5 seconds
