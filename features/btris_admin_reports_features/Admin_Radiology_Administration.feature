@@ -25,7 +25,7 @@ Feature: Radiology Administration Feature
     And the user must see "Radiology Administrative Report" text in "btris: radiology administrative report filter page" field on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "btris: top select button" element on "Btris/Portal" page
-    And the user waits for 20 seconds
+    And the user waits for 25 seconds
     #Verify the document report table.
     And the user must see "Subject Name" text in "diagnosis report table: subject name column" field on "Btris/Portal" page
     #Verify report page.
@@ -124,7 +124,7 @@ Feature: Radiology Administration Feature
     And the user waits for 2 seconds
     #Clcik on the select report button.
     And the user clicks on "btris: top select button" element on "Btris/Portal" page
-    And the user waits for 20 seconds
+    And the user waits for 25 seconds
     #Verify the document report table.
     And the user must see "Subject Name" text in "diagnosis report table: subject name column" field on "Btris/Portal" page
     #Verify report page.

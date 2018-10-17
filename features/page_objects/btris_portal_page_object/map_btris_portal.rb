@@ -62,7 +62,7 @@ def map_btris_portal
           'demographics test report'                          =>"xpath^^.//*[@data-test='6-radio-value'][contains(@class, 'custom-control custom-radio')]",
           'demographics report page'                          =>"xpath^^.//*[contains(text(), 'Demographics Results Preview -')]",
           'demographics report table: subject name column'    =>"xpath^^.//*[contains(@data-test, 'results-preview-table')]//*[contains(text(), 'Subject Name')]",
-          'diagnosis report table: subject name column'       =>"xpath^^.//*[contains(@data-test, 'results-preview-table')]//*[contains(text(), 'Subject Name')]",
+          'diagnosis report table: subject name column'       =>"xpath^^.//*[contains(@data-test, 'results-preview-table')]//*[contains(@class, 'colHeader')][contains(text(), 'Subject Name')]",
           'laboratory report table: subject name column'      =>"xpath^^.//*[contains(@data-test, 'results-preview-table')]//*[contains(text(), 'Subject Name')]",
           'laboratory report table: subject name'             =>"xpath^^.//*[contains(@data-test, 'results-preview-table')]//*[contains(text(), 'Subject Name')]",
           'laboratory and procedure report page'              =>"xpath^^.//*[contains(text(), 'Laboratory Results Preview -')]",
