@@ -49,8 +49,8 @@ Feature: Echocardiogram
     And the user logged out of the system
 
     Examples:
-      | Subject   | Filtered Subject |
-      | 00-C-0154 | BRACH            |
+      | Subject       | Filtered Subject |
+      | BTRIS-TEST-01 | NIHCCTEST        |
 
   @Echocardiogram2
 
@@ -102,5 +102,5 @@ Feature: Echocardiogram
     And the user logged out of the system
 
     Examples:
-      | Subject   | Filtered Subject |
-      | 00-C-0078 | BOSTON           |
+      | Subject       | Filtered Subject |
+      | BTRIS-TEST-01 | NIHCCTEST        |

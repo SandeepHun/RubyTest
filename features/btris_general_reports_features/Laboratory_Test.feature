@@ -52,8 +52,8 @@ Feature: Laboratory Feature
     And the user logged out of the system
 
     Examples:
-      | Subject   | Filtered Subject |
-      | 00-C-0018 | BOWEN            |
+      | Subject       | Filtered Subject |
+      | BTRIS-TEST-03 | NIHCCTEST        |
 
 
   @Laboratory2
@@ -108,8 +108,8 @@ Feature: Laboratory Feature
     And the user logged out of the system
 
     Examples:
-      | Subject   | Filtered Subject |
-      | 00-C-0018 | BOWEN            |
+      | Subject       | Filtered Subject |
+      | BTRIS-TEST-03 | NIHCCTEST        |
 
 
   @Laboratory3
@@ -175,6 +175,6 @@ Feature: Laboratory Feature
     #Sign out.
     And the user logged out of the system
 
-       Examples:
-      | Subject   | Filtered Subject | Red Search Data | Search Type                    |
-      | 00-C-0133 | BOYCE            | Labs            | Contains all of these keywords |
+    Examples:
+      | Subject       | Filtered Subject | Red Search Data | Search Type                    |
+      | BTRIS-TEST-03 | NIHCCTEST        | Labs            | Contains all of these keywords |

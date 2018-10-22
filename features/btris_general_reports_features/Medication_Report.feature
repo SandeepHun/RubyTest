@@ -52,8 +52,8 @@ Feature: Medication Report
     And the user logged out of the system
 
     Examples:
-      | Subject   | Filtered Subject |
-      | 00-C-0133 | BEATON           |
+      | Subject       | Filtered Subject |
+      | BTRIS-TEST-02 | NIHCCTEST        |
 
 
   @MedicationR2
@@ -96,6 +96,7 @@ Feature: Medication Report
     #Verify and validate the report display and click on the the image to view.
     And the user verify the medication report on the table
     #Verify Medication Administration report.
+    And the user selects "Medications Administration" from "medication admin drop down" drop down on "Btris/Portal" page
     And the user sees "Medications Administration" selected in "medication admin drop down" drop down on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
     And the user verify the medication report on the table
@@ -104,11 +105,12 @@ Feature: Medication Report
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
-    And the user must see "Medication Report Results Preview - Medication Orders" text in "medication report page" field on "Btris/Portal" page
+    And the user must see "Medication Report Results Preview - Medications Administration" text in "medication report page" field on "Btris/Portal" page
     And the return to main page
     #Sign out.
     And the user logged out of the system
 
     Examples:
-      | Subject   | Filtered Subject |
-      | 00-C-0133 | BEATON           |
+      | Subject       | Filtered Subject |
+      | BTRIS-TEST-02 | NIHCCTEST        |
+
