@@ -26,17 +26,17 @@ Feature: Radiology Administration Feature
     #Clcik on the select report button.
     And the user clicks on "btris: top select button" element on "Btris/Portal" page
     And the user waits for 25 seconds
-    #Verify the document report table.
-    And the user must see "Subject Name" text in "diagnosis report table: subject name column" field on "Btris/Portal" page
-    #Verify report page.
-    And the user must see "Radiology Administration Results Preview - Standard" text in "radiology administrative report page" field on "Btris/Portal" page
-    #Verify and validate the report display and click on the the image to view.
-    And the user verify the radiology administration report on the table
-    #Click on the download report button.
-    And the user clicks on "download full report button" element on "Btris/Portal" page
-    #click on the open report in another tab button.
-    And the user clicks on "admin: open results in new tab button" element on "Btris/Portal" page
-    And the switch to new tab page
+#    #Verify the document report table.
+#    And the user must see "Subject Name" text in "admin report table: subject name column" field on "Btris/Portal" page
+#    #Verify report page.
+#    And the user must see "Radiology Administration Results Preview - Standard" text in "radiology administrative report page" field on "Btris/Portal" page
+#    #Verify and validate the report display and click on the the image to view.
+#    And the user verify the radiology administration report on the table
+#    #Click on the download report button.
+#    And the user clicks on "download full report button" element on "Btris/Portal" page
+#    #click on the open report in another tab button.
+#    And the user clicks on "admin: open results in new tab button" element on "Btris/Portal" page
+#    And the switch to new tab page
     And the user must see "Radiology Administration Results Preview - Standard" text in "radiology administrative report page" field on "Btris/Portal" page
     And the return to main page
     #Sign out.
@@ -70,10 +70,10 @@ Feature: Radiology Administration Feature
     And the user must see "Radiology Administrative Report" text in "btris: radiology administrative report filter page" field on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "btris: top select button" element on "Btris/Portal" page
-    And the user waits for 20 seconds
-    #Verify the document report table.
-    And the user must see "Subject Name" text in "diagnosis report table: subject name column" field on "Btris/Portal" page
-    #Verify report page.
+#    And the user waits for 20 seconds
+#    #Verify the document report table.
+#    And the user must see "Subject Name" text in "admin report table: subject name column" field on "Btris/Portal" page
+#    #Verify report page.
     And the user must see "Radiology Administration Results Preview - Standard" text in "radiology administrative report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
 #    And the user clicks on "admin: administrative report image" element on "Btris/Portal" page
@@ -126,7 +126,7 @@ Feature: Radiology Administration Feature
     And the user clicks on "btris: top select button" element on "Btris/Portal" page
     And the user waits for 25 seconds
     #Verify the document report table.
-    And the user must see "Subject Name" text in "diagnosis report table: subject name column" field on "Btris/Portal" page
+#    And the user must see "Subject Name" text in "diagnosis report table: subject name column" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "Radiology Administration Results Preview - Standard" text in "radiology administrative report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
