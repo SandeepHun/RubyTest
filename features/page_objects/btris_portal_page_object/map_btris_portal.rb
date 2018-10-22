@@ -107,7 +107,7 @@ def map_btris_portal
           'pdf documents select button'                                 =>"xpath^^.//*[@id='app']/div[2]/div[1]/div[2]/div[2]/div/div/div/div/form/div[1]/div[2]/div/div[2]/button",
           'pdf documents result page'                                   =>"xpath^^.//*[contains(text(), 'PDF Documents Results Preview -')]",
           'pdf documents search subject'                                =>"xpath^^.//*[contains(text(), 'ABOU-ANTOUN, SAMI NASSR')]",
-          'search subject s2'                                           =>"xpath^^.//*[contains(text(), 'CAHILL, PATRICIA ANN MARIE')]",
+          'search subject s2'                                           =>"xpath^^.//*[contains(@data-test, 'results-preview-table')]//*[contains(text(), 'NIHCCTEST, INNA NMN')]",
           'pdf documents buttom select button'                          =>"xpath^^.//*[@id='app']/div[2]/div[1]/div[2]/div[2]/div/div/div/div/form/div[2]/div/div[4]/div[2]/button",
           #Vital signs
           'btris: vital signs test'                                     =>"xpath^^.//*[@id='generalRpts']/div/ul/li[17]/div/label",
@@ -146,9 +146,9 @@ def map_btris_portal
           'irb inclusion enrollment result page'                                      =>"xpath^^.//*[contains(text(), 'Cumulative Inclusion Enrollment Report')]",
           'download pd report button'                                                 =>"xpath^^.//*[@data-test='download-results-button']",
           'irb inclusion enrollment search protocol'                                  =>"xpath^^.//*[@id='protocolSection']/div[2]/span",
-          'irb inclusion select protocol'                                             =>"xpath^^.//*[@data-test='select-pcsl-9780-protocol-radio-value']",
+          'irb inclusion select protocol'                                             =>"xpath^^.//*[@data-test='select-pcsl-18785-protocol-radio-value'][contains(@class, 'custom-control custom-radio')]",
           'irb inclusion open report in new tab'                                      =>"xpath^^.//*[@data-test='open-in-new-window-button']",
-          'irb inclusion search protocol2'                                            =>"xpath^^.//*[@data-test='select-pcsl-9787-protocol-radio-value']",
+          'irb inclusion search protocol2'                                            =>"xpath^^.//*[@data-test='select-pcsl-18789-protocol-radio-value'][contains(@class, 'custom-control custom-radio')]",
           # IRB Inclusion Enrollment
           'btris: ekg test'                                                           =>"xpath^^.//*[@data-test='10-radio-value'][contains(@class, 'custom-control custom-radio')]",
           'btris: ekg report page'                                                    =>"xpath^^.//*[contains(text(), 'EKG Report')]",

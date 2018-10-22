@@ -50,8 +50,8 @@ Feature: IRB Inclusion Enrollment Feature
     And the user logged out of the system
 
     Examples:
-      | Subject   | Filtered Subject |
-      | 00-C-0069 | CASCIOLE         |
+      | Subject       | Filtered Subject |
+      | BTRIS-TEST-01 | NIHCCTEST        |
 
 
   @IRBInclusionEnrollment2
@@ -102,5 +102,5 @@ Feature: IRB Inclusion Enrollment Feature
     And the user logged out of the system
 
     Examples:
-      | Subject   | Filtered Subject |
-      | 00-C-0133 | AABERG           |
+      | Subject       | Filtered Subject |
+      | BTRIS-TEST-05 | NIHCCTEST        |

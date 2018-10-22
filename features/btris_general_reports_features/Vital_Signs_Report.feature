@@ -52,8 +52,8 @@ Feature: Vital Signs Report
     And the user logged out of the system
 
     Examples:
-      | Subject   | Filtered Subject |
-      | 00-C-0074 | ALFARO           |
+      | Subject       | Filtered Subject |
+      | BTRIS-TEST-04 | NIHCCTEST        |
 
 
   @VitalSign2
@@ -110,5 +110,5 @@ Feature: Vital Signs Report
     And the user logged out of the system
 
     Examples:
-      | Subject   | Filtered Subject |
-      | 00-C-0074 | ALFARO           |
+      | Subject       | Filtered Subject |
+      | BTRIS-TEST-04 | NIHCCTEST        |

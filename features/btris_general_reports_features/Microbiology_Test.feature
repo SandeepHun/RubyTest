@@ -49,8 +49,8 @@
     And the user logged out of the system
 
     Examples:
-      | Subject    | Filtered Subject |
-      | 00-CH-0136 | CASHIOLA         |
+      | Subject       | Filtered Subject |
+      | BTRIS-TEST-02 | NIHCCTEST        |
 
   @Microbiology2
 
@@ -101,5 +101,5 @@
     And the user logged out of the system
 
     Examples:
-      | Subject    | Filtered Subject | Blinded Results |
-      | 00-CH-0136 | CASHIOLA         | Show            |
+      | Subject       | Filtered Subject | Blinded Results |
+      | BTRIS-TEST-02 | NIHCCTEST        | Show            |

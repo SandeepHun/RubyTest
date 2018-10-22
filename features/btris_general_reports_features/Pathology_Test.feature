@@ -52,8 +52,8 @@ Feature: Pathology Test Feature
     And the user logged out of the system
 
     Examples:
-      | Subject   | Filtered Subject |
-      | 00-C-0133 | AGUILAR          |
+      | Subject       | Filtered Subject |
+      | BTRIS-TEST-00 | NIHCCTEST        |
 
 
   @Pathology2
@@ -108,5 +108,5 @@ Feature: Pathology Test Feature
     And the user logged out of the system
 
     Examples:
-      | Subject   | Filtered Subject |
-      | 00-C-0133 | AGUILAR          |
+      | Subject       | Filtered Subject |
+      | BTRIS-TEST-00 | NIHCCTEST        |

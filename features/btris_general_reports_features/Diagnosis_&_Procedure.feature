@@ -52,8 +52,8 @@ Feature: Diagnosis & Procedure Feature
     And the user logged out of the system
 
     Examples:
-      | Subject   | Filtered Subject |
-      | 00-C-0133 | BEATON           |
+      | Subject       | Filtered Subject |
+      | BTRIS-TEST-00 | NIHCCTEST        |
 
   @Diagnosis2
 
@@ -124,5 +124,5 @@ Feature: Diagnosis & Procedure Feature
     And the user logged out of the system
 
     Examples:
-      | Subject   | Filtered Subject | Filtered Subject 2 |
-      | 00-C-0133 | ANDERSON         | AABERG             |
+      | Subject       | Filtered Subject |
+      | BTRIS-TEST-00 | NIHCCTEST        |

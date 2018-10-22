@@ -1340,15 +1340,15 @@ And(/^the user click on the radiology record to verify the image$/) do
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
     table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
-    #puts table_rows
+    puts table_rows
     (1..table_rows).each do |rows|
-      delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[8]"
+      delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
       #puts 'the row number is ' +delete_icons_row
-      new_document = "CT0807941"
+      new_document = "NIHCCTEST, INNA NMN"
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
-        del_obj = get_element_obj 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[8]/a"
-        click_web_element del_obj
+        del_obj = get_element_obj 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]/a"
+        puts 'Note! these are test data not actual data, the pulmonary results are ' +del_obj
         step "user accept browser pop-ups"
         # sleep 4r7y,o
       end
@@ -1364,7 +1364,7 @@ And(/^the user enters "([^"]*)" and "([^"]*)" to login to btris$/) do |value1, v
   step "the user clicks on \"btris: login to dashboard button\" element on \"Btris/Portal\" page"
 end
 
-And(/^the user verify the laboratory report on the table$/) do
+And(/^the user verify the NIAAA report on the table$/) do
   record_found = false
   table_path = ".//*[contains(@data-test, 'results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
@@ -1373,13 +1373,36 @@ And(/^the user verify the laboratory report on the table$/) do
     table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
     #puts table_rows
     (1..table_rows).each do |rows|
-      delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
+      delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
       #puts 'the row number is ' +delete_icons_row
-      new_document = "BRACH, PHILIP LOUIS"
+      new_document = "ADEBISI, BALARAMA OLUFEMI"
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
-        #del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[1]"
-       # puts 'the MRN for the Laboratory results are ' +del_obj
+        #del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
+        #puts 'Note! These are test data and not actual data, the Laboratory results are ' +del_obj
+      end
+    end
+    checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
+  end
+end
+
+
+And(/^the user verify the laboratory report on the table$/) do
+  record_found = false
+  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
+  if check_record_present > 2
+    #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
+    table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
+    puts table_rows
+    (1..table_rows).each do |rows|
+      delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
+      #puts 'the row number is ' +delete_icons_row
+      new_document = "NIHCCTEST, INNA NMN"
+      if delete_icons_row.downcase.eql? new_document.downcase
+        record_found = true
+        del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
+        puts 'Note! These are test data and not actual data, the Laboratory results are ' +del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
@@ -1393,15 +1416,15 @@ And(/^the user verify the new laboratory report on the table$/) do
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
     table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
-    #puts table_rows
+    puts table_rows
     (1..table_rows).each do |rows|
       delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
       #puts 'the row number is ' +delete_icons_row
-      new_document = "BOYCE, JAMES RANDOLPH"
+      new_document = "NIHCCTEST, INNA NMN"
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
-        #del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[1]"
-        # puts 'the MRN for the Laboratory results are ' +del_obj
+        del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
+         puts 'Note! These are test data and not actual data, the the Laboratory results are ' +del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
@@ -1416,40 +1439,40 @@ And(/^the user verify the diagnosis and procedure report on the table$/) do
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
     table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
-    #puts table_rows
+    puts table_rows
     (1..table_rows).each do |rows|
       delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
       #puts 'the row number is ' +delete_icons_row
-      new_document = "ANDERSON, STEPHEN FOSTER"
+      new_document = "NIHCCTEST, PATIENT MIS PREADMIT"
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
-        #del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
-       # puts 'the MRN for the diagnosis results are ' +del_obj
+        del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
+        puts 'Note! this is a test data and not actual data, the diagnosis results are ' +del_obj
       end
     end
-    checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
+    checkpoint (record_found.eql? true), "No data found in table that matches the Diagnosis and Procedure search"
   end
 end
 
 And(/^the user verify the diagnosis and procedure report on the table 2$/) do
   record_found = false
-  table_path = ".//*/div[1]/div/div/div/table"
+  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
     table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
-    #puts table_rows
+    puts table_rows
     (1..table_rows).each do |rows|
       delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
       #puts 'the row number is ' +delete_icons_row
-      new_document = "AABERG, ANNE MARIE"
+      new_document = "NIHCCTEST, PATIENT MIS PREADMIT"
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
-        #del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
-       # puts 'the MRN for the diagnosis results are ' +del_obj
+        del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
+        puts 'Note! this is a test data and not actual data, the diagnosis results are ' +del_obj
       end
     end
-    checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
+    checkpoint (record_found.eql? true), "No data found in table that matches the diagnosis search"
   end
 end
 
@@ -1460,18 +1483,18 @@ And(/^the user verify the demographics report on the table$/) do
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
     table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
-    #puts table_rows
+    puts table_rows
     (1..table_rows).each do |rows|
       delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
       #puts 'the row number is ' +delete_icons_row
-      new_document = "HUSTON, PERDITA CONSTANCE"
+      new_document = "NIHCCTEST, INNA NMN"
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
-        #del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
-        #puts 'the MRN for the diagnosis results are ' +del_obj
+        del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
+        puts 'Note! this is a test data and not actual data, the Demographics results are ' +del_obj
       end
     end
-    checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
+    checkpoint (record_found.eql? true), "No data found in table that matches the Demographics search"
   end
 end
 
@@ -1527,15 +1550,15 @@ And(/^the user verify the clinical documents discrete values report on the table
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
     table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
-    #puts table_rows
+    puts table_rows
     (1..table_rows).each do |rows|
       delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
       #puts 'the row number is ' +delete_icons_row
-      new_document = "BOWEN, JEANNE DOLORES"
+      new_document = "NIHCCTEST, PATIENT MIS PREADMIT"
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
-       # del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
-        #puts 'the MRN for the diagnosis results are ' +del_obj
+        del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
+        puts 'Note! these are test data not actual data, the validated diagnosis results are ' +del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
@@ -1558,9 +1581,9 @@ And(/^the user verify the nichd ctdb forms report on the table$/) do
     table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
     #puts table_rows
     (1..table_rows).each do |rows|
-      delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[1]"
+      delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[4]"
       #puts 'the row number is ' +delete_icons_row
-      new_document = "00-CH-0127"
+      new_document = "ACHUKO, MAUREEN NGOZI"
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         #del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
@@ -1604,7 +1627,7 @@ And(/^the user verify the pdf documents report on the table$/) do
     (1..table_rows).each do |rows|
       delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
       #puts 'the row number is ' +delete_icons_row
-      new_document = "BOWEN, JEANNE DOLORES"
+      new_document = "NIHCCTEST, PATIENT EIGHT INPAT"
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         puts 'The PDF Documents report test subject record is available'
@@ -1623,15 +1646,15 @@ And(/^the user verify the vital signs report on the table$/) do
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
     table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
-    #puts table_rows
+    puts table_rows
     (1..table_rows).each do |rows|
       delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
       #puts 'the row number is ' +delete_icons_row
-      new_document = "ABBOTT, RUSSELL JOSEPH"
+      new_document = "NIHCCTEST, PATIENT EIGHT INPAT"
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
-        #del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[1]"
-       # puts 'the MRN for the Laboratory results are ' +del_obj
+        del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
+        puts 'Note! these are test data and not actual data, the vital signs results are ' +del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
@@ -1655,15 +1678,15 @@ And(/^the user verify the medication report on the table$/) do
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
     table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
-    #puts table_rows
+    puts table_rows
     (1..table_rows).each do |rows|
-      delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
+      delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
       #puts 'the row number is ' +delete_icons_row
-      new_document = "ANDERSON, STEPHEN FOSTER"
+      new_document = "NIHCCTEST, PATIENT LAB INPATIENT 1"
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
-        #del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[1]"
-       # puts 'the MRN for the Laboratory results are ' +del_obj
+        del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[1]"
+        puts 'Note! these are test data and not actual data, the test results validated are ' +del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the medication search record"
@@ -1682,11 +1705,11 @@ And(/^the user verify the pulmonary report on the table$/) do
     (1..table_rows).each do |rows|
       delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
       #puts 'the row number is ' +delete_icons_row
-      new_document = "ALTMAN, GARY LEWIS"
+      new_document = "NIHCCTEST, PHARMD ADULT"
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
-        #del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[1]"
-        #puts 'the MRN for the Laboratory results are ' +del_obj
+        del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
+        puts 'Note! these are test data not actual data, the pulmonary results are ' +del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the pulmonary search record"
@@ -1748,9 +1771,9 @@ And(/^the user verify the pathology report on the table$/) do
     table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
    # puts table_rows
     (1..table_rows).each do |rows|
-      delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
+      delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
       #puts 'the row number is ' +delete_icons_row
-      new_document = "ANDERSON, CHRISTINE NMN"
+      new_document = "NIHCCTEST, PATIENTBO MIS"
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         #del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[1]"
@@ -1768,18 +1791,18 @@ And(/^the user verify the ekg report on the table$/) do
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
     table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
-    #puts table_rows
+    puts table_rows
     (1..table_rows).each do |rows|
-      delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
+      delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
       #puts 'the row number is ' +delete_icons_row
-      new_document = "BRACH, PHILIP LOUIS"
+      new_document = "NIHCCTEST, INNA NMN"
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
-        del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[1]"
-        #puts 'the results table data are ' +del_obj
+        del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
+        puts 'Note! these are test data and not actual data, the results table data are ' +del_obj
       end
     end
-    checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
+    checkpoint (record_found.eql? true), "No data found in table that matches the EKG search"
   end
 end
 
@@ -1790,15 +1813,15 @@ And(/^the user verify the microbiology report on the table$/) do
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
     table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
-   # puts table_rows
+    puts table_rows
     (1..table_rows).each do |rows|
       delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
       #puts 'the row number is ' +delete_icons_row
-      new_document = "BENASSI, ANGELA NMN"
+      new_document = "NIHCCTEST, PATIENT LAB INPATIENT 1"
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
-        #del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
-       # puts 'the MRN for the Microbiology results are ' +del_obj
+        del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
+        puts 'Note! these are test data and not actual data, the Microbiology results are ' +del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
@@ -1812,18 +1835,18 @@ And(/^the user verify the echocardiogram report on the table$/) do
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
     table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
-   # puts table_rows
+    puts table_rows
     (1..table_rows).each do |rows|
       delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
       #puts 'the row number is ' +delete_icons_row
-      new_document = "CRUZ, FELIPE ADOLFO"
+      new_document = "NIHCCTEST, PATIENTLLAA LLA"
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
-        #del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
-       # puts 'the MRN for the Echocardiogram  results are ' +del_obj
+        del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
+        puts 'Note! these are test data and not actual data, the Echocardiogram  results are ' +del_obj
       end
     end
-    checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
+    checkpoint (record_found.eql? true), "No data found in table that matches the Echocardiogram search"
   end
 end
 
