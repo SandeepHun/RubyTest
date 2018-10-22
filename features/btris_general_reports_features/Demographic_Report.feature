@@ -48,5 +48,5 @@ Feature: BTRIS Demographic Test
     And the user logged out of the system
 
     Examples:
-      | Subject   | Filtered Subject |
-      | 00-C-0018 | CRAMER           |
+      | Subject       | Filtered Subject |
+      | BTRIS-TEST-05 | NIHCCTEST        |

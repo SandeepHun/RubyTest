@@ -11,7 +11,7 @@ Feature: EKG Test Feature
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.
-    And the user waits for 4 seconds
+    And the user waits for 2 seconds
     And the user must see "Conditions of Use and Code of Conduct" text in "btris: accept page" field on "Btris/Portal" page
     #Click on the accept button.
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
@@ -53,8 +53,8 @@ Feature: EKG Test Feature
     And the user logged out of the system
 
     Examples:
-      | Subject   | Filtered Subject |
-      | 00-C-0154 | BERTRAND         |
+      | Subject       | Filtered Subject |
+      | BTRIS-TEST-05 | NIHCCTEST        |
 
   @EKG_Test2
 
@@ -111,5 +111,5 @@ Feature: EKG Test Feature
     And the user logged out of the system
 
     Examples:
-      | Subject   | Filtered Subject |
-      | 00-C-0154 | BERTRAND         |
+      | Subject       | Filtered Subject |
+      | BTRIS-TEST-05 | NIHCCTEST        |

@@ -52,8 +52,8 @@ Feature: Pulmonary Function Test
     And the user logged out of the system
 
     Examples:
-      | Subject    | Filtered Subject |
-      | 00-AR-0222 | AFSHAR           |
+      | Subject       | Filtered Subject |
+      | BTRIS-TEST-02 | NIHCCTEST        |
 
 
   @PulmonaryFT2
@@ -80,7 +80,7 @@ Feature: Pulmonary Function Test
     #Click on add PFT Tests and verify the data
     And the user clicks on "pulmonary: add pft test button" element on "Btris/Portal" page
     And the user waits for 6 seconds
-    And the user can see text "<PFT Test Data>"
+    And the user can see text "Pulmonary Function Test (PFT) Panel and Panel Component"
     And the user clicks on "pulmonary: add pft done button" element on "Btris/Portal" page
     #Sign out.
     And the user logged out of the system

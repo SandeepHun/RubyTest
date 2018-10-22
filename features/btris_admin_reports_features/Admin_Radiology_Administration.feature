@@ -43,8 +43,8 @@ Feature: Radiology Administration Feature
     And the user logged out of the system
 
     Examples:
-      | Subject   | Filtered Subject |
-      | 00-C-0069 | AABERG           |
+      | Subject       | Filtered Subject |
+      | BTRIS-TEST-00 | NIHCCTEST        |
 
 
   @Radiology_Administration2
@@ -76,19 +76,19 @@ Feature: Radiology Administration Feature
     #Verify report page.
     And the user must see "Radiology Administration Results Preview - Standard" text in "radiology administrative report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
-    And the user clicks on "admin: administrative report image" element on "Btris/Portal" page
-    #And the user verify the radiology administration report with image
-    And the switch to new tab page
-    And the user waits for 5 seconds
-    And the user must see "AARON EVAN CHRISTOPHER" text in "admin: administrative report image report" field on "Btris/Portal" page
-    And the return to main page
+#    And the user clicks on "admin: administrative report image" element on "Btris/Portal" page
+#    #And the user verify the radiology administration report with image
+#    And the switch to new tab page
+#    And the user waits for 5 seconds
+#    And the user must see "AARON EVAN CHRISTOPHER" text in "admin: administrative report image report" field on "Btris/Portal" page
+#    And the return to main page
     And the user waits for 3 seconds
     #Sign out.
     And the user logged out of the system
 
     Examples:
-      | Subject   | Filtered Subject |
-      | 00-C-0069 | AABERG           |
+      | Subject       | Filtered Subject |
+      | BTRIS-TEST-00 | NIHCCTEST        |
 
     
   @Radiology_Administration3
@@ -130,17 +130,17 @@ Feature: Radiology Administration Feature
     #Verify report page.
     And the user must see "Radiology Administration Results Preview - Standard" text in "radiology administrative report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
-    And the user clicks on "admin: administrative report image" element on "Btris/Portal" page
-    And the user waits for 8 seconds
-    #And the user verify the radiology administration report with image
-    And the switch to new tab page
-    And the user waits for 5 seconds
-    And the user must see "AARON EVAN CHRISTOPHER" text in "admin: administrative report image report" field on "Btris/Portal" page
-    And the return to main page
+#    And the user clicks on "admin: administrative report image" element on "Btris/Portal" page
+#    And the user waits for 8 seconds
+#    #And the user verify the radiology administration report with image
+#    And the switch to new tab page
+#    And the user waits for 5 seconds
+#    And the user must see "AARON EVAN CHRISTOPHER" text in "admin: administrative report image report" field on "Btris/Portal" page
+#    And the return to main page
     And the user waits for 3 seconds
     #Sign out.
     And the user logged out of the system
 
     Examples:
-      | Subject   | Filtered Subject |
-      | 00-C-0069 | AABERG           |
+      | Subject       | Filtered Subject |
+      | BTRIS-TEST-00 | NIHCCTEST        |

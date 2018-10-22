@@ -35,7 +35,7 @@ Feature: Clinical Documents - Full Text Feature
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify the document report table.
-    And the user waits for 10 seconds
+    And the user waits for 15 seconds
     And the user must see "Subject Name" text in "diagnosis report table: subject name column" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "Clinical Documents - Full Text Results Preview - Standard" text in "clinical documents full tex result page" field on "Btris/Portal" page
@@ -50,8 +50,8 @@ Feature: Clinical Documents - Full Text Feature
     And the user logged out of the system
 
     Examples:
-      | Subject   | Filtered Subject |
-      | 00-C-0018 | DIAMONDIDIS      |
+      | Subject       | Filtered Subject |
+      | BTRIS-TEST-04 | NIHCCTEST        |
 
   @ClinicalDocumentsFull2
 
@@ -110,6 +110,7 @@ Feature: Clinical Documents - Full Text Feature
     And the user clicks on "red search: clinical doc done search button" element on "Btris/Portal" page
     #Verify search data.
     And the user waits for 5 seconds
+    And the user can see text "Point of Care Testing Document (CC, CRIS)"
     #And the user must see "Point of Care Testing Document (CC, CRIS)" text in "red search for clinical doc" field on "Btris/Portal" page
     #Click on the done button.
     And the user clicks on "red search: clinical doc done button" element on "Btris/Portal" page
@@ -123,6 +124,7 @@ Feature: Clinical Documents - Full Text Feature
     And the user clicks on "red search: clinical doc done search button" element on "Btris/Portal" page
     #Verify search data.
     And the user waits for 5 seconds
+    And the user can see text "Serial/Research Testing (CC, CRIS)"
     #And the user must see "Serial/Research Testing (CC, CRIS)" text in "red search: serial research" field on "Btris/Portal" page
     #Click on the done button.
     And the user clicks on "red search: clinical doc done button" element on "Btris/Portal" page
@@ -137,6 +139,7 @@ Feature: Clinical Documents - Full Text Feature
     And the user clicks on "red search: clinical doc done search button" element on "Btris/Portal" page
     #Verify search data.
     And the user waits for 5 seconds
+    And the user can see text "Document Format (as indicated in CRIS)"
     #And the user must see "CRIS PDF Web Service Document (Document Image)" text in "red search: start with research" field on "Btris/Portal" page
     #Click on the done button.
     And the user clicks on "red search: clinical doc done button" element on "Btris/Portal" page
@@ -150,7 +153,8 @@ Feature: Clinical Documents - Full Text Feature
     And the user clicks on "red search: clinical doc done search button" element on "Btris/Portal" page
     #And the user can see text "Serial Testing or Serial/Research Testing Document"
     #Verify search data.
-    #And the user waits for 8 seconds
+    And the user waits for 8 seconds
+    And the user can see text "Serial Testing or Serial/Research Testing Document"
     #And the user must see "Serial Testing or Serial/Research Testing Document" text in "red search: exact phrase research" field on "Btris/Portal" page
     #Click on the done button.
     And the user clicks on "red search: clinical doc done button" element on "Btris/Portal" page
@@ -158,5 +162,5 @@ Feature: Clinical Documents - Full Text Feature
     And the user logged out of the system
 
     Examples:
-      | Subject   | Filtered Subject | Red Search Data | Search Type                    | Red Search Data 1                  | Search Type 1                  | Search Type 2                     | Red Search Data 2 | Search Type 3 | Red Search Data 3                                  |
-      | 00-C-0018 | DIAMONDIDIS      | Potassium Test  | Contains any of these keywords | Serial Research Testing (CC, CRIS) | Contains all of these keywords | Starts with any of these keywords | Serial (CC, CRIS) | Exact Phrase  | Serial Testing or Serial/Research Testing Document |
+      | Subject       | Filtered Subject | Red Search Data | Search Type                    | Red Search Data 1                  | Search Type 1                  | Search Type 2                     | Red Search Data 2 | Search Type 3 | Red Search Data 3                                  |
+      | BTRIS-TEST-04 | NIHCCTEST        | Potassium Test  | Contains any of these keywords | Serial Research Testing (CC, CRIS) | Contains all of these keywords | Starts with any of these keywords | Serial (CC, CRIS) | Exact Phrase  | Serial Testing or Serial/Research Testing Document |

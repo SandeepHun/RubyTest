@@ -43,7 +43,7 @@ Feature: PDF Documents Report Feature
     And the user must see "Subject Name" text in "diagnosis report table: subject name column" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "PDF Documents Results Preview - Standard" text in "pdf documents result page" field on "Btris/Portal" page
-    And the user verify the pdf documents report on the table
+    #And the user verify the pdf documents report on the table
     #Click on the download report button.
     And the user clicks on "download full report button" element on "Btris/Portal" page
     #click on the open report in another tab button.
@@ -55,8 +55,8 @@ Feature: PDF Documents Report Feature
     And the user logged out of the system
 
     Examples:
-      | Subject   | Filtered Subject |
-      | 00-C-0018 | ABOU-ANTOUN      |
+      | Subject       | Filtered Subject |
+      | BTRIS-TEST-05 | NIHCCTEST        |
 
   @PDF_Documents_Repor2
 
@@ -99,8 +99,8 @@ Feature: PDF Documents Report Feature
     #Verify report page.
     And the user must see "PDF Documents Results Preview - Standard" text in "pdf documents result page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
-    And the user must see "CAHILL, PATRICIA ANN MARIE" text in "search subject s2" field on "Btris/Portal" page
-    And the user verify the pdf documents report on the table
+    And the user must see "NIHCCTEST, INNA NMN" text in "search subject s2" field on "Btris/Portal" page
+    #And the user verify the pdf documents report on the table
     #Click on the download report button.
     #And the user clicks on "download full report button" element on "Btris/Portal" page
     #click on the open report in another tab button.
@@ -112,5 +112,5 @@ Feature: PDF Documents Report Feature
     And the user logged out of the system
 
     Examples:
-      | Subject   | Filtered Subject |
-      | 00-C-0018 | ABOU-ANTOUN      |
+      | Subject       | Filtered Subject |
+      | BTRIS-TEST-05 | NIHCCTEST        |
