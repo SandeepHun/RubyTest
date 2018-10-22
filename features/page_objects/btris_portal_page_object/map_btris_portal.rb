@@ -67,6 +67,7 @@ def map_btris_portal
           'laboratory report table: subject name'             =>"xpath^^.//*[contains(@data-test, 'results-preview-table')]//*[contains(text(), 'Subject Name')]",
           'laboratory and procedure report page'              =>"xpath^^.//*[contains(text(), 'Laboratory Results Preview -')]",
           'report table: collected data time column'          =>"xpath^^.//*[contains(@data-test, 'results-preview-table')]//*[contains(text(), 'Collected Date Time')]",
+          'admin report table: subject name column'           =>"xpath^^.//*[contains(@data-test, 'results-preview-table')]//*[contains(@class, 'colHeader')][contains(text(), 'Subject Name')]",
 
           'radiology report results table'                    =>"xpath^^.//*[contains(text(), 'Laboratory Results Preview -')]",
           #Assessment Report
