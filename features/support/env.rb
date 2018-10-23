@@ -211,7 +211,7 @@ end
 
 def is_windows?
 
-  RUBY_PLATFORM.downcase.include?("mswin")
+  RUBY_PLATFORM.downcase.include?("x64-mingw32")
 
 end
 
