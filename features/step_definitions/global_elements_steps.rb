@@ -311,6 +311,7 @@ And(/^the user reviews document for "([^"]*)" seconds before closing tab$/) do |
 end
 
 When(/^user attached "(.*)" file into "(.*)" on "(.*)" page$/) do |attached_file_location, field_name, page_name|
+  if RUBY_PLATFORM.downcase.include?("x64-mingw32")
   suite_dir_path="#{Dir.pwd}"+'/features/support/documents/'+attached_file_location
 
   suite_dir_path = suite_dir_path.gsub! '/', '\\'
@@ -329,7 +330,26 @@ When(/^user attached "(.*)" file into "(.*)" on "(.*)" page$/) do |attached_file
   @browser.element(selector, element_path).send_keys suite_dir_path
   sleep 1
   # @browser.element(selector,".//*[@id='ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_signature_lincPassSignatureSubmit']").click
+  else
+    suite_dir_path="#{Dir.pwd}"+'/var/lib/jenkins/workspace/BTRIS-Automation-Test/features/support/documents/'+attached_file_location
 
-end
+    suite_dir_path = suite_dir_path.gsub! '/', '\\'
+
+    # get the XPATH or CSS from page object file , Raises Error if not found
+    begin
+      selector, element_path = get_element_target(field_name, page_name).split('^^')
+    rescue
+      fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
+    end
+    if selector.nil? || element_path.nil?
+      fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
+    end
+    selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+
+    @browser.element(selector, element_path).send_keys suite_dir_path
+    sleep 1
+  # @browser.element(selector,".//*[@id='ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_signature_lincPassSignatureSubmit']").click
+  end
+  end
 
 World(MiniTest::Assertions)
