@@ -22,7 +22,7 @@ Feature: Medication Report
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
-    And the user must see "Medication Report" text in "btris: medication report page" field on "Btris/Portal" page
+    And the user must see "Medication Report Criteria" text in "btris: medication report page" field on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "btris: top select button" element on "Btris/Portal" page
     #Enter and filter subject.
@@ -76,7 +76,7 @@ Feature: Medication Report
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
-    And the user must see "Medication Report" text in "btris: medication report page" field on "Btris/Portal" page
+    And the user must see "Medication Report Criteria" text in "btris: medication report page" field on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "btris: top select button" element on "Btris/Portal" page
     #Enter and filter subject.

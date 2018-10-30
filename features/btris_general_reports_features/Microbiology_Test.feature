@@ -23,7 +23,7 @@
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     And the user waits for 5 seconds
     #verify the select report page.
-    And the user must see "Microbiology Report" text in "btris: microbiology report page" field on "Btris/Portal" page
+    And the user must see "Microbiology Criteria" text in "btris: microbiology report page" field on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "btris: top select button" element on "Btris/Portal" page
     And the user waits for 5 seconds
@@ -73,7 +73,7 @@
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     And the user waits for 5 seconds
     #verify the select report page.
-    And the user must see "Microbiology Report" text in "btris: microbiology report page" field on "Btris/Portal" page
+    And the user must see "Microbiology Criteria" text in "btris: microbiology report page" field on "Btris/Portal" page
     And the user selects "<Blinded Results>" from "blinded results drop down" drop down on "Btris/Portal" page
     And the user waits for 2 seconds
     #Clcik on the select report button.

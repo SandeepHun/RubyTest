@@ -22,7 +22,7 @@
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
-    And the user must see "Radiology Report" text in "btris: radiology filter report page" field on "Btris/Portal" page
+    And the user must see "Radiology Criteria" text in "btris: radiology filter report page" field on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "btris: top select button" element on "Btris/Portal" page
     #Enter and filter subject.
@@ -77,7 +77,7 @@
     And the user clicks on "btris: radiology test" element on "Btris/Portal" page
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
-    And the user must see "Radiology Report" text in "btris: radiology filter report page" field on "Btris/Portal" page
+    And the user must see "Radiology Criteria" text in "btris: radiology filter report page" field on "Btris/Portal" page
     And the user waits for 2 seconds
     #Uncheck the demographic data.
     And the user clicks on "demographic data check box" element on "Btris/Portal" page

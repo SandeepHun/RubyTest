@@ -1,0 +1,35 @@
+
+[36m<html xmlns="http://www.w3.org/1999/xhtml"><head></head><body></body></html>[0m
+
+[36m#<Watir::Browser:0x00000000057f6228>[0m
+
+[36mThe OS platform is x64-mingw32[0m
+
+[36mStarted executing Scenario : 1.1 Radiology  Administration Report Without Radiology Tests., Examples (#1)[0m
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m
+[36mFinished executing Scenario : 1.1 Radiology  Administration Report Without Radiology Tests., Examples (#1)[0m
+
+[36m<html xmlns="http://www.w3.org/1999/xhtml"><head></head><body></body></html>[0m
+
+[36m#<Watir::Browser:0x0000000005636140>[0m
+
+[36mThe OS platform is x64-mingw32[0m
+
+[36mStarted executing Scenario : 1.2 Radiology  Administration Report With Radiology Image., Examples (#1)[0m
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m
+[36mFinished executing Scenario : 1.2 Radiology  Administration Report With Radiology Image., Examples (#1)[0m
+
+[36m<html xmlns="http://www.w3.org/1999/xhtml"><head></head><body></body></html>[0m
+
+[36m#<Watir::Browser:0x0000000004d2b500>[0m
+
+[36mThe OS platform is x64-mingw32[0m
+
+[36mStarted executing Scenario : 1.3 Radiology  Administration Report With Red Search., Examples (#1)[0m
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m
+[36mFinished executing Scenario : 1.3 Radiology  Administration Report With Red Search., Examples (#1)[0m
+
+
+3 scenarios ([32m3 passed[0m)
+51 steps ([32m51 passed[0m)
+1m51.700s

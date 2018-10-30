@@ -22,7 +22,7 @@ Feature: Pulmonary Function Test
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
-    And the user must see "Pulmonary Function Test Report" text in "btris: pulmonary report page" field on "Btris/Portal" page
+    And the user must see "Pulmonary Function Test Lab Report Criteria" text in "btris: pulmonary report page" field on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "btris: top select button" element on "Btris/Portal" page
     #Enter and filter subject.
@@ -76,7 +76,7 @@ Feature: Pulmonary Function Test
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
-    And the user must see "Pulmonary Function Test Report" text in "btris: pulmonary report page" field on "Btris/Portal" page
+    And the user must see "Pulmonary Function Test Lab Report Criteria" text in "btris: pulmonary report page" field on "Btris/Portal" page
     #Click on add PFT Tests and verify the data
     And the user clicks on "pulmonary: add pft test button" element on "Btris/Portal" page
     And the user waits for 6 seconds

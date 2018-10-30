@@ -23,7 +23,7 @@ Feature: EKG Test Feature
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     And the user waits for 5 seconds
     #verify the select report page.
-    And the user must see "EKG Report" text in "btris: ekg report page" field on "Btris/Portal" page
+    And the user must see "EKG Criteria" text in "btris: ekg report page" field on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "select ekg subject top button" element on "Btris/Portal" page
     And the user waits for 6 seconds
@@ -77,7 +77,7 @@ Feature: EKG Test Feature
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     And the user waits for 5 seconds
     #verify the select report page.
-    And the user must see "EKG Report" text in "btris: ekg report page" field on "Btris/Portal" page
+    And the user must see "EKG Criteria" text in "btris: ekg report page" field on "Btris/Portal" page
     And the user waits for 5 seconds
     #click on the select all check box.
     And the user clicks on "select all ekg observation checkbox" element on "Btris/Portal" page

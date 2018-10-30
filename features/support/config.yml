@@ -41,8 +41,8 @@ test31:
 #  :fsis_db_name: FSISSecurity_QA31
 #  :browser: chrome
 #  :step_delay: false
-#test05:
-#  :host: https://www.smartrecruiters.com
+DEV:
+  :host: https://cc0dbtristeve.cc.nih
 #  :dmzhost: http://qphisweb05.usda.net/EnrollmentDMZ
 #  :server_name: QPHISSQL01
 #  :db_username: phis_app

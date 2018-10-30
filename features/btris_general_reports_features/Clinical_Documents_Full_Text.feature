@@ -23,7 +23,7 @@ Feature: Clinical Documents - Full Text Feature
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     And the user waits for 2 seconds
     #verify the select report page.
-    And the user must see "Clinical Documents - Full Text Report" text in "btris: clinical documents full tex report page" field on "Btris/Portal" page
+    And the user must see "Clinical Documents - Full Text Criteria" text in "btris: clinical documents full tex report page" field on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "btris: top select button" element on "Btris/Portal" page
     And the user waits for 4 seconds
@@ -74,7 +74,7 @@ Feature: Clinical Documents - Full Text Feature
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     And the user waits for 2 seconds
     #verify the select report page.
-    And the user must see "Clinical Documents - Full Text Report" text in "btris: clinical documents full tex report page" field on "Btris/Portal" page
+    And the user must see "Clinical Documents - Full Text Criteria" text in "btris: clinical documents full tex report page" field on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "btris: top select button" element on "Btris/Portal" page
     And the user waits for 4 seconds

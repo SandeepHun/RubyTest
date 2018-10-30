@@ -22,7 +22,7 @@ Feature: Diagnosis & Procedure Feature
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
-    And the user must see "Diagnosis & Procedure Report" text in "btris: diagnosis and procedure filter report page" field on "Btris/Portal" page
+    And the user must see "Diagnosis & Procedure Criteria" text in "btris: diagnosis and procedure filter report page" field on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "btris: top select button" element on "Btris/Portal" page
     #Enter and filter subject.
@@ -75,7 +75,7 @@ Feature: Diagnosis & Procedure Feature
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
-    And the user must see "Diagnosis & Procedure Report" text in "btris: diagnosis and procedure filter report page" field on "Btris/Portal" page
+    And the user must see "Diagnosis & Procedure Criteria" text in "btris: diagnosis and procedure filter report page" field on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "btris: top select button" element on "Btris/Portal" page
     And the user waits for 6 seconds
