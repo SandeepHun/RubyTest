@@ -22,7 +22,7 @@ Feature: Clinical Documents - Discrete Values Feature
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
-    And the user must see "Clinical Documents - Discrete Values Report" text in "btris: clinical documents: discrete values filter report page" field on "Btris/Portal" page
+    And the user must see "Clinical Documents - Discrete Values Criteria" text in "btris: clinical documents: discrete values filter report page" field on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "btris: top select button" element on "Btris/Portal" page
     And the user waits for 5 seconds
@@ -74,7 +74,7 @@ Feature: Clinical Documents - Discrete Values Feature
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
-    And the user must see "Clinical Documents - Discrete Values Report" text in "btris: clinical documents: discrete values filter report page" field on "Btris/Portal" page
+    And the user must see "Clinical Documents - Discrete Values Criteria" text in "btris: clinical documents: discrete values filter report page" field on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "btris: top select button" element on "Btris/Portal" page
     And the user waits for 4 seconds

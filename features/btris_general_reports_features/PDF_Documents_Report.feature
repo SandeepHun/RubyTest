@@ -22,7 +22,7 @@ Feature: PDF Documents Report Feature
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
-    And the user must see "PDF/Scanned Documents" text in "btris: pdf documents page" field on "Btris/Portal" page
+    And the user must see "PDF Documents Criteria" text in "btris: pdf documents page" field on "Btris/Portal" page
     #Clcik on the select report button.
     #And the user clicks on "btris: top select button" element on "Btris/Portal" page
     And the user waits for 2 seconds
@@ -78,7 +78,7 @@ Feature: PDF Documents Report Feature
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
-    And the user must see "PDF/Scanned Documents" text in "btris: pdf documents page" field on "Btris/Portal" page
+    And the user must see "PDF Documents Criteria" text in "btris: pdf documents page" field on "Btris/Portal" page
     And the user waits for 3 seconds
     #Click on Select All for PDF/Scanned Documents.
     And the user clicks on "pdf documents select all button" element on "Btris/Portal" page

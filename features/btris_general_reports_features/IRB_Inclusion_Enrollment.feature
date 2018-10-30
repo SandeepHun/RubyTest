@@ -22,7 +22,7 @@ Feature: IRB Inclusion Enrollment Feature
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
-    And the user must see "IRB Inclusion Enrollment Report" text in "btris: irb inclusion enrollment report page" field on "Btris/Portal" page
+    And the user must see "IRB Inclusion Enrollment Criteria" text in "btris: irb inclusion enrollment report page" field on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "btris: top select button" element on "Btris/Portal" page
     #Enter and filter subject.
@@ -74,7 +74,7 @@ Feature: IRB Inclusion Enrollment Feature
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
-    And the user must see "IRB Inclusion Enrollment Report" text in "btris: irb inclusion enrollment report page" field on "Btris/Portal" page
+    And the user must see "IRB Inclusion Enrollment Criteria" text in "btris: irb inclusion enrollment report page" field on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "btris: top select button" element on "Btris/Portal" page
     #Enter and filter subject.

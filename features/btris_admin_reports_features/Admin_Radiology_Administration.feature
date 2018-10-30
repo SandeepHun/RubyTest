@@ -22,7 +22,7 @@ Feature: Radiology Administration Feature
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
-    And the user must see "Radiology Administrative Report" text in "btris: radiology administrative report filter page" field on "Btris/Portal" page
+    And the user must see "Radiology Administration Criteria" text in "btris: radiology administrative report filter page" field on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "btris: top select button" element on "Btris/Portal" page
     And the user waits for 25 seconds
@@ -67,7 +67,7 @@ Feature: Radiology Administration Feature
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
-    And the user must see "Radiology Administrative Report" text in "btris: radiology administrative report filter page" field on "Btris/Portal" page
+    And the user must see "Radiology Administration Criteria" text in "btris: radiology administrative report filter page" field on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "btris: top select button" element on "Btris/Portal" page
 #    And the user waits for 20 seconds
@@ -111,7 +111,7 @@ Feature: Radiology Administration Feature
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
-    And the user must see "Radiology Administrative Report" text in "btris: radiology administrative report filter page" field on "Btris/Portal" page
+    And the user must see "Radiology Administration Criteria" text in "btris: radiology administrative report filter page" field on "Btris/Portal" page
     #Clcik on the Add Radiology Test button.
     And the user clicks on "admin: add radiology report tests button" element on "Btris/Portal" page
     And the user enters "Imaging by Procedure Type" into "admin: radiology search text box" on "Btris/Portal" page
