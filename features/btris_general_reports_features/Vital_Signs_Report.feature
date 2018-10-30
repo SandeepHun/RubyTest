@@ -22,7 +22,7 @@ Feature: Vital Signs Report
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
-    And the user must see "Vital Signs Report" text in "btris: vital signs test page" field on "Btris/Portal" page
+    And the user must see "Vital Signs Criteria" text in "btris: vital signs test page" field on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "btris: top select button" element on "Btris/Portal" page
     And the user waits for 5 seconds
@@ -76,7 +76,7 @@ Feature: Vital Signs Report
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
-    And the user must see "Vital Signs Report" text in "btris: vital signs test page" field on "Btris/Portal" page
+    And the user must see "Vital Signs Criteria" text in "btris: vital signs test page" field on "Btris/Portal" page
     And the user waits for 4 seconds
     #Uncheck the include demographic report radio button.
     And the user clicks on "include demographic report radio button" element on "Btris/Portal" page

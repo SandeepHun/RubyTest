@@ -14,6 +14,7 @@ gem 'watir-webdriver-performance'
 gem 'page-object'
 gem 'hashie'
 gem 'minitest'
+gem 'constantize'
 
 # gem 'watir-dom-wait'
 # gem 'win32ole'

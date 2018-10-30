@@ -22,7 +22,7 @@ Feature: Laboratory Feature
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
-    And the user must see "Laboratory Report" text in "btris: laboratory filter report page" field on "Btris/Portal" page
+    And the user must see "Laboratory Criteria" text in "btris: laboratory filter report page" field on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "btris: top select button" element on "Btris/Portal" page
     #Enter and filter subject.
@@ -76,7 +76,7 @@ Feature: Laboratory Feature
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
-    And the user must see "Laboratory Report" text in "btris: laboratory filter report page" field on "Btris/Portal" page
+    And the user must see "Laboratory Criteria" text in "btris: laboratory filter report page" field on "Btris/Portal" page
     #Uncheck the demographic data.
     And the user clicks on "demographic data check box" element on "Btris/Portal" page
     #Clcik on the select report button.
@@ -131,7 +131,7 @@ Feature: Laboratory Feature
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
-    And the user must see "Laboratory Report" text in "btris: laboratory filter report page" field on "Btris/Portal" page
+    And the user must see "Laboratory Criteria" text in "btris: laboratory filter report page" field on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
     And the user waits for 6 seconds
