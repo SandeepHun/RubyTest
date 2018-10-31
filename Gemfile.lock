@@ -1,26 +1,12 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activemodel (5.2.1)
-      activesupport (= 5.2.1)
-    activerecord (5.2.1)
-      activemodel (= 5.2.1)
-      activesupport (= 5.2.1)
-      arel (>= 9.0)
-    activesupport (5.2.1)
-      concurrent-ruby (~> 1.0, >= 1.0.2)
-      i18n (>= 0.7, < 2)
-      minitest (~> 5.1)
-      tzinfo (~> 1.1)
-    arel (9.0.0)
     backports (3.11.2)
     builder (3.2.3)
     childprocess (0.9.0)
       ffi (~> 1.0, >= 1.0.11)
     chronic (0.10.2)
     concurrent-ruby (1.0.5)
-    constantize (0.1.7)
-      activerecord
     cucumber (3.1.0)
       builder (>= 2.1.2)
       cucumber-core (~> 3.1.0)
@@ -67,9 +53,6 @@ GEM
       childprocess (~> 0.5)
       rubyzip (~> 1.2)
     syntax (1.2.2)
-    thread_safe (0.3.6)
-    tzinfo (1.2.5)
-      thread_safe (~> 0.1)
     watir (6.10.3)
       selenium-webdriver (~> 3.4, >= 3.4.1)
     watir-webdriver (0.9.9)
@@ -84,7 +67,6 @@ PLATFORMS
 DEPENDENCIES
   bundler
   chronic
-  constantize
   cucumber
   hashie
   headless
