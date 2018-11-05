@@ -1,5 +1,5 @@
 @BTRIS_Quick_Test
-@Vital_Signs_Report
+  @Vital_Signs_Report
 Feature: Vital Signs Report
 
   @VitalSign1
