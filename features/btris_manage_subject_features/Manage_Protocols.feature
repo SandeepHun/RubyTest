@@ -24,10 +24,11 @@ Feature: Manage Protocol Feature
     #Verify search result for the searched protocol.
     And the user must see "<Searched protocol result>" text in "searched protocol count" field on "Manage/Subjects" page
     And the user clicks on "searched protocol" element on "Manage/Subjects" page
-    And the user must see "<Protocol>" text in "searched protocol page" field on "Manage/Subjects" page
+    And the user waits for 3 seconds
+    And the user must see "<Filtered MRN>" text in "searched protocol page" field on "Manage/Subjects" page
 
     #Sign out.
     And the user logged out of the system
-     Examples:
-      | Protocol      | Searched protocol result | Protocol |
-      | BTRIS-TEST-04 | 1 Protocol               | 4122252  |
+    Examples:
+      | Protocol      | Searched protocol result | Filtered MRN |
+      | BTRIS-TEST-00 | 1 Protocol               | 4122252      |

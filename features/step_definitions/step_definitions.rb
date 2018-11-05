@@ -1443,7 +1443,7 @@ And(/^the user verify the diagnosis and procedure report on the table$/) do
     (1..table_rows).each do |rows|
       delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
       #puts 'the row number is ' +delete_icons_row
-      new_document = "NIHCCTEST, PATIENT MIS PREADMIT"
+      new_document = "NIHCCTEST, INNA NMN"
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
@@ -1465,16 +1465,17 @@ And(/^the user verify the diagnosis and procedure report on the table 2$/) do
     (1..table_rows).each do |rows|
       delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
       #puts 'the row number is ' +delete_icons_row
-      new_document = "NIHCCTEST, PATIENT MIS PREADMIT"
+      new_document = "NIHCCTEST, INNA NMN"
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
-        puts 'Note! this is a test data and not actual data, the diagnosis results are ' +del_obj
+        puts 'Note! this is a test data and not actual data, the Demographics results are ' +del_obj
       end
     end
-    checkpoint (record_found.eql? true), "No data found in table that matches the diagnosis search"
+    checkpoint (record_found.eql? true), "No data found in table that matches the Demographics search"
   end
 end
+
 
 And(/^the user verify the demographics report on the table$/) do
   record_found = false
