@@ -82,7 +82,7 @@ def map_btris_portal
           'clinical documents: discrete values'                           =>"xpath^^.//*[@data-test='9-radio-value'][contains(@class, 'custom-control custom-radio')]",
           'btris: clinical documents: discrete values filter report page' =>"xpath^^.//*[contains(text(), 'Clinical Documents - Discrete Values Criteria')]",
           'btris: top select button'                                      =>"xpath^^.//*[contains(@data-test, 'criteria-next-button-top')]",
-          'clinical documents: discrete report page'                      =>"xpath^^.//*[contains(text(), 'Clinical Documents - Discrete Values Results Preview -')]",
+          'clinical documents: discrete report page'                      =>"xpath^^.//*[contains(text(), 'Clinical Documents - Discrete Values Results Preview - ')]",
           'labs: add clinical doc button'                                 =>"xpath^^.//*[contains(@data-test, 'add-red-terms-button')]",
           'red search for clinical doc'                                   =>"xpath^^.//*[@id='C114092_anchor'][contains(@data-test, 'red-node red-node-C114092')]",
           'red search: clinical doc search type drop down'                =>"xpath^^.//*[@id='clinicalDocuments-red-term-search-type']",
