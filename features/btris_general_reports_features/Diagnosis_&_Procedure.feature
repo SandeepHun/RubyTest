@@ -11,7 +11,7 @@ Feature: Diagnosis & Procedure Feature
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.
-    And the user waits for 4 seconds
+    And the user waits for 7 seconds
     And the user must see "Conditions of Use and Code of Conduct" text in "btris: accept page" field on "Btris/Portal" page
     #Click on the accept button.
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
@@ -53,7 +53,7 @@ Feature: Diagnosis & Procedure Feature
 
     Examples:
       | Subject       | Filtered Subject |
-      | BTRIS-TEST-00 | NIHCCTEST        |
+      | BTRIS-TEST-03 | NIHCCTEST        |
 
   @Diagnosis2
 
@@ -125,4 +125,4 @@ Feature: Diagnosis & Procedure Feature
 
     Examples:
       | Subject       | Filtered Subject |
-      | BTRIS-TEST-00 | NIHCCTEST        |
+      | BTRIS-TEST-03 | NIHCCTEST        |
