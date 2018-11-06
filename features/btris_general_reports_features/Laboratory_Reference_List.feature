@@ -22,8 +22,9 @@ Feature: Laboratory Feature Reference List
     And the user clicks on "reference list laboratory" element on "Btris/Portal" page
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
+    And the user waits for 3 seconds
     #verify the select report page.
-    And the user must see "Laboratory Report" text in "reference list laboratory report filter page" field on "Btris/Portal" page
+    And the user must see "Laboratory Criteria" text in "reference list laboratory report filter page" field on "Btris/Portal" page
     #Clcik on the user drop down.
     And the user clicks on "custom user drop down" element on "Btris/Portal" page
     #Clcik on custom list.
@@ -34,14 +35,14 @@ Feature: Laboratory Feature Reference List
     And the user clicks on "custom search term list upload button" element on "Btris/Portal" page
     And the user waits for 6 seconds
     And the user enters "<User>" into "custom search term list: user field" on "Btris/Portal" page
-    And the user waits for 6 seconds
-    And the user clicks on "custom search term list: user" element on "Btris/Portal" page
     And the user waits for 4 seconds
+    And the user clicks on "custom search term list: user" element on "Btris/Portal" page
+    And the user waits for 6 seconds
     And the user clicks on "custom search term overwrite checkbox" element on "Btris/Portal" page
     And the user waits for 4 seconds
     And the user enters "<List Name>" into "custom search term list: list name field" on "Btris/Portal" page
     And the user enters "Automation Description Test Text" into "custom search term list: description" text area box on "Btris/Portal" page
-    And the user selects "<Domain>" from "custom search term list: domain drop down" drop down on "Btris/Portal" page
+    #And the user selects "<Domain>" from "custom search term list: domain drop down" drop down on "Btris/Portal" page
     And the user waits for 4 seconds
     And user attached "<Search Term Document>" file into "custom search term list: brows upload" on "Btris/Portal" page
     And the user clicks on "custom search term list: upload button" element on "Btris/Portal" page

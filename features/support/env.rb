@@ -10,7 +10,7 @@ require 'watir-webdriver/attribute_helper'
 # require 'minitest/autorun'
 # require 'minitest/unit'
 
-ENV['TEST_ENV'] ||= 'test06'
+ENV['TEST_ENV'] ||= 'test08'
 ENV['BROWSER']  ||= 'chrome'
 
 
