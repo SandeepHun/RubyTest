@@ -16,7 +16,7 @@ test02:
   :host: https://cc0dbtristeve.cc.nih.gov
 test01:
   :host: https://btristestportal.cc.nih.gov
-prod:
+test03:
   :host: https://btrisportal.cc.nih.gov
 
 
