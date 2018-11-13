@@ -12,16 +12,11 @@
 #  $ bundle exec cucumber TEST_ENV=test
 #
 
-test05:
+test02:
   :host: https://cc0dbtristeve.cc.nih.gov
-
-test06:
+test01:
   :host: https://btristestportal.cc.nih.gov
-train01:
-  :host: https://phistrn01.fsis.usda.gov/FSISDashBoard/Shared
-train02:
-  :host: https://phistrn02.fsis.usda.gov/FSISDashBoard/Shared
-test08:
+Prod:
   :host: https://btrisportal.cc.nih.gov
 
 
@@ -41,8 +36,8 @@ test31:
 #  :fsis_db_name: FSISSecurity_QA31
 #  :browser: chrome
 #  :step_delay: false
-DEV:
-  :host: https://cc0dbtristeve.cc.nih
+Dev:
+  :host: https://cc0dbtristeve.cc.nih.gov
 #  :dmzhost: http://qphisweb05.usda.net/EnrollmentDMZ
 #  :server_name: QPHISSQL01
 #  :db_username: phis_app
