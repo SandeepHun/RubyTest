@@ -29,6 +29,7 @@ Feature: Laboratory Feature Reference List
     And the user clicks on "custom user drop down" element on "Btris/Portal" page
     #Clcik on custom list.
     And the user clicks on "custom list" element on "Btris/Portal" page
+    And the user clicks on "left nav: search term list" element on "Btris/Portal" page
     #Filter and remove search term list added by the test.
     And the user enters "<Search Term data>" into "custom list search term box" on "Btris/Portal" page
     And the verify if existing search term data exist and remove it
@@ -42,11 +43,11 @@ Feature: Laboratory Feature Reference List
     And the user waits for 4 seconds
     And the user enters "<List Name>" into "custom search term list: list name field" on "Btris/Portal" page
     And the user enters "Automation Description Test Text" into "custom search term list: description" text area box on "Btris/Portal" page
-    #And the user selects "<Domain>" from "custom search term list: domain drop down" drop down on "Btris/Portal" page
+    And the user selects "<Domain>" from "custom search term list: domain drop down" drop down on "Btris/Portal" page
     And the user waits for 4 seconds
     And user attached "<Search Term Document>" file into "custom search term list: brows upload" on "Btris/Portal" page
     And the user clicks on "custom search term list: upload button" element on "Btris/Portal" page
-    And the user waits for 7 seconds
+    And the user waits for 13 seconds
     And the user clicks on "reference list" element on "Btris/Portal" page
     #Filter and remove Reference list added by the test.
     And the user enters "<Reference Name>" into "reference list: search box" on "Btris/Portal" page
@@ -66,8 +67,8 @@ Feature: Laboratory Feature Reference List
     And the user logged out of the system
 
     Examples:
-      | Search Term data  | List Name         | User                     | Domain          | Search Term Document        | Reference Name    | Reference Date Type | Reference Term Document      |
-      | Term Test Data DN | Term Test Data DN | BTRIS_TEST2 - TEST2 null | Lab Observation | Search_Tearm_List_Data.xlsx | Reference List DN | MM/DD/YYYY          | Reference_List_Template.xlsx |
+      | Search Term data  | List Name         | User                     | Domain          | Search Term Document         | Reference Name    | Reference Date Type | Reference Term Document      |
+      | Term Test Data DN | Term Test Data DN | BTRIS_TEST2 - TEST2 null | Lab Observation | Search_Tearm_List_Data1.xlsx | Reference List DN | MM/DD/YYYY          | Reference_List_Template.xlsx |
 
 
   @ReferenceListLaboratory2
@@ -91,7 +92,7 @@ Feature: Laboratory Feature Reference List
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
-    And the user must see "Laboratory Report" text in "reference list laboratory report filter page" field on "Btris/Portal" page
+    And the user must see "Laboratory Criteria" text in "reference list laboratory report filter page" field on "Btris/Portal" page
     And the user selects "<Reference Name>" from "reference list drop down" drop down on "Btris/Portal" page
     And the user enters "<Number of Days Before>" into "reference list day range text box" on "Btris/Portal" page
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
@@ -141,7 +142,7 @@ Feature: Laboratory Feature Reference List
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
-    And the user must see "Laboratory Report" text in "reference list laboratory report filter page" field on "Btris/Portal" page
+    And the user must see "Laboratory Criteria" text in "reference list laboratory report filter page" field on "Btris/Portal" page
     And the user selects "<Reference Name>" from "reference list drop down" drop down on "Btris/Portal" page
     And the user enters "<Number of Days Before>" into "reference list day range text box" on "Btris/Portal" page
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
@@ -191,7 +192,7 @@ Feature: Laboratory Feature Reference List
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
-    And the user must see "Laboratory Report" text in "reference list laboratory report filter page" field on "Btris/Portal" page
+    And the user must see "Laboratory Criteria" text in "reference list laboratory report filter page" field on "Btris/Portal" page
     And the user selects "<Reference Name>" from "reference list drop down" drop down on "Btris/Portal" page
     And the user enters "<Number of Days Before>" into "reference list day range text box" on "Btris/Portal" page
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
@@ -240,7 +241,7 @@ Feature: Laboratory Feature Reference List
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
-    And the user must see "Laboratory Report" text in "reference list laboratory report filter page" field on "Btris/Portal" page
+    And the user must see "Laboratory Criteria" text in "reference list laboratory report filter page" field on "Btris/Portal" page
     And the user selects "<Reference Name>" from "reference list drop down" drop down on "Btris/Portal" page
     And the user enters "<Number of Days Before>" into "reference list day range text box" on "Btris/Portal" page
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
@@ -289,7 +290,7 @@ Feature: Laboratory Feature Reference List
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
-    And the user must see "Laboratory Report" text in "reference list laboratory report filter page" field on "Btris/Portal" page
+    And the user must see "Laboratory Criteria" text in "reference list laboratory report filter page" field on "Btris/Portal" page
     And the user selects "<Reference Name>" from "reference list drop down" drop down on "Btris/Portal" page
     And the user enters "<Number of Days Before>" into "reference list day range text box" on "Btris/Portal" page
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
@@ -337,7 +338,7 @@ Feature: Laboratory Feature Reference List
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
-    And the user must see "Laboratory Report" text in "reference list laboratory report filter page" field on "Btris/Portal" page
+    And the user must see "Laboratory Criteria" text in "reference list laboratory report filter page" field on "Btris/Portal" page
     And the user selects "<Reference Name>" from "reference list drop down" drop down on "Btris/Portal" page
     And the user enters "<Number of Days Before>" into "reference list day range text box" on "Btris/Portal" page
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
@@ -384,7 +385,7 @@ Feature: Laboratory Feature Reference List
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
-    And the user must see "Laboratory Report" text in "reference list laboratory report filter page" field on "Btris/Portal" page
+    And the user must see "Laboratory Criteria" text in "reference list laboratory report filter page" field on "Btris/Portal" page
     And the user selects "<Reference Name>" from "reference list drop down" drop down on "Btris/Portal" page
     And the user enters "<Number of Days Before>" into "reference list day range text box" on "Btris/Portal" page
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
@@ -433,7 +434,7 @@ Feature: Laboratory Feature Reference List
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
-    And the user must see "Laboratory Report" text in "reference list laboratory report filter page" field on "Btris/Portal" page
+    And the user must see "Laboratory Criteria" text in "reference list laboratory report filter page" field on "Btris/Portal" page
     #Clcik on the user drop down.
     And the user clicks on "custom user drop down" element on "Btris/Portal" page
     #Clcik on custom list.
