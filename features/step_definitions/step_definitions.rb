@@ -1943,3 +1943,15 @@ And(/^the user verify the radiology administration report with image$/) do
     checkpoint (record_found.eql? true), "No data found in table that matches the searched test search"
   end
 end
+
+And(/^the verify if existing subject list data exist and remove it$/) do
+  if @browser.element(:xpath, ".//*[@id='app']//*[contains(text(), 'Subject List Test Data DN')]").present?
+    #Click on the check box for the search term.
+    step "the user clicks on \"subject list search check box\" element on \"Btris/Portal\" page"
+    #Click on the remove button.Scenario:
+    step "the user clicks on \"subject list remove button\" element on \"Btris/Portal\" page"
+    step "the user clicks on \"subject list confirm remove\" element on \"Btris/Portal\" page"
+  else
+    puts 'No existing search term data added by the test exist'
+  end
+end
