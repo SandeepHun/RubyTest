@@ -222,12 +222,26 @@ def map_btris_portal
           'admin: add radiology report tests button'                                          =>"xpath^^.//*[@data-test='add-red-terms-button']",
           'admin: radiology search text box'                                                  =>"xpath^^.//*[@id='radiologyTests-red-term-keywords']",
           'admin: radiology search button'                                                    =>"xpath^^.//*[@data-test='red-search-search-button']",
-          'admin: radiology search red search result'                                         =>"xpath^^.//*[@id='C3147738_anchor']",
+          'admin: radiology search red search result'                                         =>"xpath^^.//*[@data-test='red-node red-node-C3147738'][contains(text(), 'Imaging by Procedure Type')]",
           'admin: radiology red search done button'                                           =>"xpath^^.//*[@data-test='red-search-upper-done-button']",
+          #Subject List
+          'left nav: subject list'                                                            =>"xpath^^.//*[@class='clm-nav__link router-link-exact-active router-link-active'][contains(text(), 'Subject Lists')]",
 
-
-
-
+          'find subject list search box'                                                      =>"xpath^^.//*[@id='subject-lists-search-field']",
+          'subject list search check box'                                                     =>"xpath^^.//*[@data-test='search-term-list-checkbox']",
+          'subject list remove button'                                                        =>"xpath^^.//*[@id='app']/div/div/div[1]/div[2]/div/div[2]/div/div/div/div[1]/div/div[1]/a/span",
+          'subject list upload button'                                                        =>"xpath^^.//*[@data-test='upload-list-button']",
+          'subject list confirm remove'                                                       =>"xpath^^.//*[@class='btn round btn-lg btn-danger']",
+          'subject list: user field'                                                          =>"xpath^^.//*[@id='subject-list-upload-user-field']",
+          'subject list: list name field'                                                     =>"xpath^^.//*[@id='subject-list-upload-name-field']",
+          'subject list: description'                                                         =>"xpath^^.//*[@id='subject-list-upload-description-field']",
+          'subject list: brows upload'                                                        =>"xpath^^.//*[@id='subject-list-upload-file-field']",
+          'subject list: upload doc button'                                                   =>"xpath^^.//*[@class='btn round btn-lg btn-primary']",
+          'subject list: user'                                                                =>"xpath^^.//*[@id='subject-list-upload-user-field-listbox-BTRIS_TEST2']",
+          'subject list overwrite checkbox'                                                   =>"xpath^^.//*[@class='custom-control custom-checkbox'][@for='subject-list-upload-overwrite-checkbox']",
+          'reference list radiology'                                                          =>"xpath^^.//*[@data-test='81-radio-value'][contains(@class, 'custom-control custom-radio')]",
+          'reference list radiology report filter page'                                       =>"xpath^^.//*[contains(text(), 'Radiology Criteria')]",
+          'reference list: radiology report page'                                             =>"xpath^^.//*[contains(text(), 'Radiology Results Preview -')]",
 
       }
 end
