@@ -67,8 +67,8 @@ Feature: Laboratory Feature Reference List
     And the user logged out of the system
 
     Examples:
-      | Search Term data  | List Name         | User                     | Domain          | Search Term Document         | Reference Name    | Reference Date Type | Reference Term Document      |
-      | Term Test Data DN | Term Test Data DN | BTRIS_TEST2 - TEST2 null | Lab Observation | Search_Tearm_List_Data1.xlsx | Reference List DN | MM/DD/YYYY          | Reference_List_Template.xlsx |
+      | Search Term data   | List Name          | User                     | Domain          | Search Term Document        | Reference Name    | Reference Date Type | Reference Term Document      |
+      | Term1 Test Data DN | Term1 Test Data DN | BTRIS_TEST2 - TEST2 null | Lab Observation | Search_Tearm_List_Data.xlsx | Reference List DN | MM/DD/YYYY          | Reference_List_Template.xlsx |
 
 
   @ReferenceListLaboratory2
@@ -98,8 +98,8 @@ Feature: Laboratory Feature Reference List
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
     And the user enters "<Number of Values>" into "number of values text box" on "Btris/Portal" page
     And the user selects "<Labs>" from "labs drop down" drop down on "Btris/Portal" page
-    And the user clicks on "enter required criteria button" element on "Btris/Portal" page
-    And the user clicks on "run report button" element on "Btris/Portal" page
+    And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
+    And the user waits for 10 seconds
     And the user must see "Subject Name" text in "laboratory report table: subject name" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
@@ -117,7 +117,7 @@ Feature: Laboratory Feature Reference List
 
     Examples:
       | Labs              | Number of Values | Number of Days Before | Reference Name    | Number of Days After |
-      | Term Test Data DN | 10               | 90                    | Reference List DN | 80                   |
+      | Term1 Test Data DN | 10               | 90                    | Reference List DN | 80                   |
 
 
 
@@ -148,8 +148,8 @@ Feature: Laboratory Feature Reference List
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
     And the user enters "<Number of Values>" into "number of values text box" on "Btris/Portal" page
     And the user selects "<Labs>" from "labs drop down" drop down on "Btris/Portal" page
-    And the user clicks on "enter required criteria button" element on "Btris/Portal" page
-    And the user clicks on "run report button" element on "Btris/Portal" page
+    And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
+    And the user waits for 10 seconds
     And the user must see "Subject Name" text in "laboratory report table: subject name" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
@@ -167,7 +167,7 @@ Feature: Laboratory Feature Reference List
 
     Examples:
       | Labs              | Number of Values | Number of Days Before | Reference Name    | Number of Days After |
-      | Term Test Data DN | 15               | 60                    | Reference List DN | 40                   |
+      | Term1 Test Data DN | 15               | 60                    | Reference List DN | 40                   |
 
 
 
@@ -198,8 +198,8 @@ Feature: Laboratory Feature Reference List
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
     And the user enters "<Number of Values>" into "number of values text box" on "Btris/Portal" page
     And the user selects "<Labs>" from "labs drop down" drop down on "Btris/Portal" page
-    And the user clicks on "enter required criteria button" element on "Btris/Portal" page
-    And the user clicks on "run report button" element on "Btris/Portal" page
+    And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
+    And the user waits for 10 seconds
     And the user must see "Subject Name" text in "laboratory report table: subject name" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
@@ -217,7 +217,7 @@ Feature: Laboratory Feature Reference List
 
     Examples:
       | Labs              | Number of Values | Number of Days Before | Reference Name    | Number of Days After |
-      | Term Test Data DN | 5                | 30                    | Reference List DN | 30                   |
+      | Term1 Test Data DN | 5                | 30                    | Reference List DN | 30                   |
 
 
   @ReferenceListLaboratory4
@@ -247,8 +247,8 @@ Feature: Laboratory Feature Reference List
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
     And the user enters "<Number of Values>" into "number of values text box" on "Btris/Portal" page
     And the user selects "<Labs>" from "labs drop down" drop down on "Btris/Portal" page
-    And the user clicks on "enter required criteria button" element on "Btris/Portal" page
-    And the user clicks on "run report button" element on "Btris/Portal" page
+    And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
+    And the user waits for 10 seconds
     And the user must see "Subject Name" text in "laboratory report table: subject name" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
@@ -266,7 +266,7 @@ Feature: Laboratory Feature Reference List
 
     Examples:
       | Labs              | Number of Values | Number of Days Before | Reference Name    | Number of Days After |
-      | Term Test Data DN | 1                | 15                    | Reference List DN | 15                   |
+      | Term1 Test Data DN | 1                | 15                    | Reference List DN | 15                   |
 
 
   @ReferenceListLaboratory5
@@ -296,8 +296,8 @@ Feature: Laboratory Feature Reference List
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
     And the user enters "<Number of Values>" into "number of values text box" on "Btris/Portal" page
     And the user selects "<Labs>" from "labs drop down" drop down on "Btris/Portal" page
-    And the user clicks on "enter required criteria button" element on "Btris/Portal" page
-    And the user clicks on "run report button" element on "Btris/Portal" page
+    And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
+    And the user waits for 10 seconds
     And the user must see "Subject Name" text in "laboratory report table: subject name" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
@@ -315,7 +315,7 @@ Feature: Laboratory Feature Reference List
 
     Examples:
       | Labs              | Number of Values | Number of Days Before | Reference Name    | Number of Days After |
-      | Term Test Data DN | 7                | 365                   | Reference List DN | 365                  |
+      | Term1 Test Data DN | 7                | 365                   | Reference List DN | 365                  |
 
   @ReferenceListLaboratory6
 
@@ -344,8 +344,8 @@ Feature: Laboratory Feature Reference List
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
     And the user enters "<Number of Values>" into "number of values text box" on "Btris/Portal" page
     And the user selects "<Labs>" from "labs drop down" drop down on "Btris/Portal" page
-    And the user clicks on "enter required criteria button" element on "Btris/Portal" page
-    And the user clicks on "run report button" element on "Btris/Portal" page
+    And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
+    And the user waits for 10 seconds
     And the user must see "Subject Name" text in "laboratory report table: subject name" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
@@ -363,7 +363,7 @@ Feature: Laboratory Feature Reference List
 
     Examples:
       | Labs              | Number of Values | Number of Days Before | Reference Name    | Number of Days After |
-      | Term Test Data DN | 13               | 200                   | Reference List DN | 150                  |
+      | Term1 Test Data DN | 13               | 200                   | Reference List DN | 150                  |
 
 
   Scenario Outline: 1.8 Running Reports Search for Search Term List Document and Reference List Documents Reports, 8 day.
@@ -391,8 +391,8 @@ Feature: Laboratory Feature Reference List
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
     And the user enters "<Number of Values>" into "number of values text box" on "Btris/Portal" page
     And the user selects "<Labs>" from "labs drop down" drop down on "Btris/Portal" page
-    And the user clicks on "enter required criteria button" element on "Btris/Portal" page
-    And the user clicks on "run report button" element on "Btris/Portal" page
+    And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
+    And the user waits for 10 seconds
     And the user must see "Subject Name" text in "laboratory report table: subject name" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
@@ -410,10 +410,10 @@ Feature: Laboratory Feature Reference List
 
     Examples:
       | Labs              | Number of Values | Number of Days Before | Reference Name    | Number of Days After |
-      | Term Test Data DN | 8                | 200                   | Reference List DN | 150                  |
+      | Term1 Test Data DN | 8                | 200                   | Reference List DN | 150                  |
 
 
-  @ReferenceListLaboratory9
+  @ReferenceListLaboratory9.1
 
   Scenario Outline: 1.8 Adding Search Term List Document and Reference List Documents with negative MRN Number.
   #Login to the system.
@@ -438,7 +438,9 @@ Feature: Laboratory Feature Reference List
     #Clcik on the user drop down.
     And the user clicks on "custom user drop down" element on "Btris/Portal" page
     #Clcik on custom list.
+    #Clcik on custom list.
     And the user clicks on "custom list" element on "Btris/Portal" page
+    And the user clicks on "left nav: search term list" element on "Btris/Portal" page
     #Filter and remove search term list added by the test.
     And the user enters "<Search Term data>" into "custom list search term box" on "Btris/Portal" page
     And the verify if existing search term data exist and remove it
@@ -455,7 +457,10 @@ Feature: Laboratory Feature Reference List
     And the user waits for 4 seconds
     And user attached "<Search Term Document>" file into "custom search term list: brows upload" on "Btris/Portal" page
     And the user clicks on "custom search term list: upload button" element on "Btris/Portal" page
-    And the user waits for 9 seconds
+    And the user waits for 4 seconds
+    And the user must see "Line 1 - MRI Brain (CC, RADNET) is not in domain Laboratory" text in "laboratory error message line 1" field on "Btris/Portal" page
+    And the user must see "Line 2 - CT Abdomen (CC, MIS) is not in domain Laboratory" text in "laboratory error message line 2" field on "Btris/Portal" page
+    And the user clicks on "upload cancel button" element on "Btris/Portal" page
     And the user clicks on "reference list" element on "Btris/Portal" page
     #Filter and remove Reference list added by the test.
     And the user enters "<Reference Name>" into "reference list: search box" on "Btris/Portal" page
@@ -479,5 +484,5 @@ Feature: Laboratory Feature Reference List
     And the user logged out of the system
 
     Examples:
-      | Search Term data  | List Name         | User                     | Domain          | Search Term Document        | Reference Name    | Reference Date Type | Reference Term Document      | Reference Term Document Negative      |
-      | Term Test Data DN | Term Test Data DN | BTRIS_TEST2 - TEST2 null | Lab Observation | Search_Tearm_List_Data.xlsx | Reference List DN | MM/DD/YYYY          | Reference_List_Template.xlsx | Reference_List_Negative_Template.xlsx |
+      | Search Term data   | List Name          | User                     | Domain          | Search Term Document         | Reference Name    | Reference Date Type | Reference Term Document      | Reference Term Document Negative      |
+      | Term1 Test Data DN | Term1 Test Data DN | BTRIS_TEST2 - TEST2 null | Lab Observation | Search_Tearm_List_Data1.xlsx | Reference List DN | MM/DD/YYYY          | Reference_List_Template.xlsx | Reference_List_Negative_Template.xlsx |
