@@ -1854,7 +1854,7 @@ And(/^the user verify the echocardiogram report on the table$/) do
 end
 
 And(/^the verify if existing search term data exist and remove it$/) do
-  if @browser.element(:xpath, ".//*[@id='app']//*[contains(text(), 'Term Test Data DN')]").present?
+  if @browser.element(:xpath, ".//*[@id='app']//*[contains(text(), 'Term1 Test Data DN')]").present?
     #Click on the check box for the search term.
     step "the user clicks on \"custom search term check box\" element on \"Btris/Portal\" page"
     #Click on the remove button.Scenario:
@@ -1888,11 +1888,33 @@ And(/^the user verify the reference list laboratory report on the table$/) do
     (1..table_rows).each do |rows|
       delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
      # puts 'the row number is ' +delete_icons_row
-      new_document = "CAHILL, PATRICIA ANN MARIE"
+      new_document = "ACEVEDO, KARLA LIZBETH"
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
-        del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[6]"
+        del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
         #puts 'the Subject for the Reference Laboratory results are ' +del_obj
+      end
+    end
+    checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
+  end
+end
+
+And(/^the user verify the reference list laboratory report on the table for S6$/) do
+  record_found = false
+  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
+  if check_record_present > 2
+    #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
+    table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
+    #puts table_rows
+    (1..table_rows).each do |rows|
+      delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
+      # puts 'the row number is ' +delete_icons_row
+      new_document = "60"
+      if delete_icons_row.downcase.eql? new_document.downcase
+        record_found = true
+        del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
+        puts 'Reference List Radiology Report Validated '
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
