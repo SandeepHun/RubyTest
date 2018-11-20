@@ -57,39 +57,6 @@ Feature: Laboratory Feature Reference List
       | Subject List Test Data DN | Subject List Test Data DN | BTRIS_TEST2 - TEST2 null | Lab Observation | Search_Tearm_List_Data1.xlsx | Reference List DN | MM/DD/YYYY          | Reference_List_Template.xlsx |
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   @ReferenceListLaboratory2
 
   Scenario Outline: 1.2 Running Reports Search for Search Term List Document and Reference List Documents Reports, 10days.

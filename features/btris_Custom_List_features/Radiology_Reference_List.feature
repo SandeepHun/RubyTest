@@ -67,8 +67,8 @@ Feature: Radiology Feature Reference List
     And the user logged out of the system
 
     Examples:
-      | Search Term data  | List Name         | User                     | Domain                                      | Search Term Document         | Reference Name    | Reference Date Type | Reference Term Document      |
-      | Term Test Data DN | Term Test Data DN | BTRIS_TEST2 - TEST2 null | Radiology and Imaging Procedure Observation | Search_Tearm_List_Data1.xlsx | Reference List DN | MM/DD/YYYY          | Reference_List_Template.xlsx |
+      | Search Term data   | List Name          | User                     | Domain                                      | Search Term Document                | Reference Name    | Reference Date Type | Reference Term Document           |
+      | Term1 Test Data DN | Term1 Test Data DN | BTRIS_TEST2 - TEST2 null | Radiology and Imaging Procedure Observation | Radiology_New_Search_Term_List.xlsx | Reference List DN | MM/DD/YYYY          | Radiology_New_Reference_List.xlsx |
 
 
   @ReferenceListRadiology2
@@ -98,11 +98,11 @@ Feature: Radiology Feature Reference List
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
     And the user enters "<Number of Values>" into "number of values text box" on "Btris/Portal" page
     And the user selects "<Labs>" from "labs drop down" drop down on "Btris/Portal" page
-    And the user clicks on "enter required criteria button" element on "Btris/Portal" page
-    And the user clicks on "run report button" element on "Btris/Portal" page
+    And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
+    And the user waits for 10 seconds
     And the user must see "Subject Name" text in "laboratory report table: subject name" field on "Btris/Portal" page
     #Verify report page.
-    And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
+    And the user must see "Radiology Results Preview - Standard" text in "reference list: radiology report results table" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
     And the user verify the reference list laboratory report on the table
     #Click on the download report button.
@@ -110,16 +110,14 @@ Feature: Radiology Feature Reference List
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
-    And the user must see "Laboratory Results Preview - Standard" text in "laboratory report page" field on "Btris/Portal" page
+    And the user must see "Radiology Results Preview - Standard" text in "reference list: radiology report results table" field on "Btris/Portal" page
     And the return to main page
     #Sign out.
     And the user logged out of the system
 
     Examples:
-      | Labs              | Number of Values | Number of Days Before | Reference Name    | Number of Days After |
-      | Term Test Data DN | 10               | 90                    | Reference List DN | 80                   |
-
-
+      | Labs               | Number of Values | Number of Days Before | Reference Name    | Number of Days After |
+      | Term1 Test Data DN | 10               | 90                    | Reference List DN | 80                   |
 
   @ReferenceListRadiology3
 
@@ -148,11 +146,11 @@ Feature: Radiology Feature Reference List
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
     And the user enters "<Number of Values>" into "number of values text box" on "Btris/Portal" page
     And the user selects "<Labs>" from "labs drop down" drop down on "Btris/Portal" page
-    And the user clicks on "enter required criteria button" element on "Btris/Portal" page
-    And the user clicks on "run report button" element on "Btris/Portal" page
+    And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
+    And the user waits for 10 seconds
     And the user must see "Subject Name" text in "laboratory report table: subject name" field on "Btris/Portal" page
     #Verify report page.
-    And the user must see "Laboratory Results Preview - Standard" text in "reference list: radiology report page" field on "Btris/Portal" page
+    And the user must see "Radiology Results Preview - Standard" text in "reference list: radiology report results table" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
     And the user verify the reference list laboratory report on the table
     #Click on the download report button.
@@ -160,16 +158,14 @@ Feature: Radiology Feature Reference List
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
-    And the user must see "Laboratory Results Preview - Standard" text in "reference list: radiology report page" field on "Btris/Portal" page
+    And the user must see "Radiology Results Preview - Standard" text in "reference list: radiology report results table" field on "Btris/Portal" page
     And the return to main page
     #Sign out.
     And the user logged out of the system
 
     Examples:
-      | Labs              | Number of Values | Number of Days Before | Reference Name    | Number of Days After |
-      | Term Test Data DN | 15               | 60                    | Reference List DN | 40                   |
-
-
+      | Labs               | Number of Values | Number of Days Before | Reference Name    | Number of Days After |
+      | Term1 Test Data DN | 15               | 60                    | Reference List DN | 40                   |
 
   @ReferenceListRadiology4
 
@@ -198,11 +194,11 @@ Feature: Radiology Feature Reference List
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
     And the user enters "<Number of Values>" into "number of values text box" on "Btris/Portal" page
     And the user selects "<Labs>" from "labs drop down" drop down on "Btris/Portal" page
-    And the user clicks on "enter required criteria button" element on "Btris/Portal" page
-    And the user clicks on "run report button" element on "Btris/Portal" page
+    And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
+    And the user waits for 10 seconds
     And the user must see "Subject Name" text in "laboratory report table: subject name" field on "Btris/Portal" page
     #Verify report page.
-    And the user must see "Laboratory Results Preview - Standard" text in "reference list: radiology report page" field on "Btris/Portal" page
+    And the user must see "Radiology Results Preview - Standard" text in "reference list: radiology report results table" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
     And the user verify the reference list laboratory report on the table
     #Click on the download report button.
@@ -210,17 +206,17 @@ Feature: Radiology Feature Reference List
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
-    And the user must see "Laboratory Results Preview - Standard" text in "reference list: radiology report page" field on "Btris/Portal" page
+    And the user must see "Radiology Results Preview - Standard" text in "reference list: radiology report results table" field on "Btris/Portal" page
     And the return to main page
     #Sign out.
     And the user logged out of the system
 
     Examples:
-      | Labs              | Number of Values | Number of Days Before | Reference Name    | Number of Days After |
-      | Term Test Data DN | 5                | 30                    | Reference List DN | 30                   |
+      | Labs               | Number of Values | Number of Days Before | Reference Name    | Number of Days After |
+      | Term1 Test Data DN | 5                | 30                    | Reference List DN | 30                   |
 
 
-  @ReferenceListRadiology4
+  @ReferenceListRadiology5
 
   Scenario Outline: 1.5 Running Reports Search for Radiology and Reference List Documents Reports, 1 day.
   #Login to the system.
@@ -247,11 +243,11 @@ Feature: Radiology Feature Reference List
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
     And the user enters "<Number of Values>" into "number of values text box" on "Btris/Portal" page
     And the user selects "<Labs>" from "labs drop down" drop down on "Btris/Portal" page
-    And the user clicks on "enter required criteria button" element on "Btris/Portal" page
-    And the user clicks on "run report button" element on "Btris/Portal" page
+    And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
+    And the user waits for 10 seconds
     And the user must see "Subject Name" text in "laboratory report table: subject name" field on "Btris/Portal" page
     #Verify report page.
-    And the user must see "Laboratory Results Preview - Standard" text in "reference list: radiology report page" field on "Btris/Portal" page
+    And the user must see "Radiology Results Preview - Standard" text in "reference list: radiology report results table" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
     And the user verify the reference list laboratory report on the table
     #Click on the download report button.
@@ -259,17 +255,17 @@ Feature: Radiology Feature Reference List
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
-    And the user must see "Laboratory Results Preview - Standard" text in "reference list: radiology report page" field on "Btris/Portal" page
+    And the user must see "Radiology Results Preview - Standard" text in "reference list: radiology report results table" field on "Btris/Portal" page
     And the return to main page
     #Sign out.
     And the user logged out of the system
 
     Examples:
-      | Labs              | Number of Values | Number of Days Before | Reference Name    | Number of Days After |
-      | Term Test Data DN | 1                | 15                    | Reference List DN | 15                   |
+      | Labs               | Number of Values | Number of Days Before | Reference Name    | Number of Days After |
+      | Term1 Test Data DN | 1                | 15                    | Reference List DN | 15                   |
 
 
-  @ReferenceListRadiology5
+  @ReferenceListRadiology6
 
   Scenario Outline: 1.6 Running Reports Search for Radiology and Reference List Documents Reports, 7 day.
   #Login to the system.
@@ -296,28 +292,28 @@ Feature: Radiology Feature Reference List
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
     And the user enters "<Number of Values>" into "number of values text box" on "Btris/Portal" page
     And the user selects "<Labs>" from "labs drop down" drop down on "Btris/Portal" page
-    And the user clicks on "enter required criteria button" element on "Btris/Portal" page
-    And the user clicks on "run report button" element on "Btris/Portal" page
+    And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
+    And the user waits for 10 seconds
     And the user must see "Subject Name" text in "laboratory report table: subject name" field on "Btris/Portal" page
     #Verify report page.
-    And the user must see "Laboratory Results Preview - Standard" text in "reference list: radiology report page" field on "Btris/Portal" page
+    And the user must see "Radiology Results Preview - Standard" text in "reference list: radiology report results table" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
-    And the user verify the reference list laboratory report on the table
+    And the user must see "60" text in "radiology age ref1" field on "Btris/Portal" page
     #Click on the download report button.
     And the user clicks on "download full report button" element on "Btris/Portal" page
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
-    And the user must see "Laboratory Results Preview - Standard" text in "reference list: radiology report page" field on "Btris/Portal" page
+    And the user must see "Radiology Results Preview - Standard" text in "reference list: radiology report results table" field on "Btris/Portal" page
     And the return to main page
     #Sign out.
     And the user logged out of the system
 
     Examples:
-      | Labs              | Number of Values | Number of Days Before | Reference Name    | Number of Days After |
-      | Term Test Data DN | 7                | 365                   | Reference List DN | 365                  |
+      | Labs               | Number of Values | Number of Days Before | Reference Name    | Number of Days After |
+      | Term1 Test Data DN | 7                | 365                   | Reference List DN | 365                  |
 
-  @ReferenceListRadiology6
+  @ReferenceListRadiology7
 
   Scenario Outline: 1.7 Running Reports Search for Radiology and Reference List Documents Reports, 13 day.
   #Login to the system.
@@ -344,29 +340,29 @@ Feature: Radiology Feature Reference List
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
     And the user enters "<Number of Values>" into "number of values text box" on "Btris/Portal" page
     And the user selects "<Labs>" from "labs drop down" drop down on "Btris/Portal" page
-    And the user clicks on "enter required criteria button" element on "Btris/Portal" page
-    And the user clicks on "run report button" element on "Btris/Portal" page
+    And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
+    And the user waits for 10 seconds
     And the user must see "Subject Name" text in "laboratory report table: subject name" field on "Btris/Portal" page
     #Verify report page.
-    And the user must see "Laboratory Results Preview - Standard" text in "reference list: radiology report page" field on "Btris/Portal" page
+    And the user must see "Radiology Results Preview - Standard" text in "reference list: radiology report results table" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
-    And the user verify the reference list laboratory report on the table
+    And the user must see "60" text in "radiology age ref1" field on "Btris/Portal" page
     #Click on the download report button.
     And the user clicks on "download full report button" element on "Btris/Portal" page
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
-    And the user must see "Laboratory Results Preview - Standard" text in "reference list: radiology report page" field on "Btris/Portal" page
+    And the user must see "Radiology Results Preview - Standard" text in "reference list: radiology report results table" field on "Btris/Portal" page
     And the return to main page
     #Sign out.
     And the user logged out of the system
 
     Examples:
-      | Labs              | Number of Values | Number of Days Before | Reference Name    | Number of Days After |
-      | Term Test Data DN | 13               | 200                   | Reference List DN | 150                  |
+      | Labs               | Number of Values | Number of Days Before | Reference Name    | Number of Days After |
+      | Term1 Test Data DN | 13               | 200                   | Reference List DN | 150                  |
 
 
-  @ReferenceListRadiology7
+  @ReferenceListRadiology8
 
   Scenario Outline: 1.8 Running Reports Search for Radiology and Reference List Documents Reports, 8 day.
   #Login to the system.
@@ -393,26 +389,26 @@ Feature: Radiology Feature Reference List
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
     And the user enters "<Number of Values>" into "number of values text box" on "Btris/Portal" page
     And the user selects "<Labs>" from "labs drop down" drop down on "Btris/Portal" page
-    And the user clicks on "enter required criteria button" element on "Btris/Portal" page
-    And the user clicks on "run report button" element on "Btris/Portal" page
+    And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
+    And the user waits for 10 seconds
     And the user must see "Subject Name" text in "laboratory report table: subject name" field on "Btris/Portal" page
     #Verify report page.
-    And the user must see "Laboratory Results Preview - Standard" text in "reference list: radiology report page" field on "Btris/Portal" page
+    And the user must see "Radiology Results Preview - Standard" text in "reference list: radiology report results table" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
-    And the user verify the reference list laboratory report on the table
+    And the user must see "60" text in "radiology age ref1" field on "Btris/Portal" page
     #Click on the download report button.
     And the user clicks on "download full report button" element on "Btris/Portal" page
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
-    And the user must see "Laboratory Results Preview - Standard" text in "reference list: radiology report page" field on "Btris/Portal" page
+    And the user must see "Radiology Results Preview - Standard" text in "reference list: radiology report results table" field on "Btris/Portal" page
     And the return to main page
     #Sign out.
     And the user logged out of the system
 
     Examples:
-      | Labs              | Number of Values | Number of Days Before | Reference Name    | Number of Days After |
-      | Term Test Data DN | 8                | 200                   | Reference List DN | 150                  |
+      | Labs               | Number of Values | Number of Days Before | Reference Name    | Number of Days After |
+      | Term1 Test Data DN | 8                | 200                   | Reference List DN | 150                  |
 
 
   @ReferenceListRadiology9
@@ -441,6 +437,7 @@ Feature: Radiology Feature Reference List
     And the user clicks on "custom user drop down" element on "Btris/Portal" page
     #Clcik on custom list.
     And the user clicks on "custom list" element on "Btris/Portal" page
+    And the user clicks on "left nav: search term list" element on "Btris/Portal" page
     #Filter and remove search term list added by the test.
     And the user enters "<Search Term data>" into "custom list search term box" on "Btris/Portal" page
     And the verify if existing search term data exist and remove it
@@ -457,7 +454,10 @@ Feature: Radiology Feature Reference List
     And the user waits for 4 seconds
     And user attached "<Search Term Document>" file into "custom search term list: brows upload" on "Btris/Portal" page
     And the user clicks on "custom search term list: upload button" element on "Btris/Portal" page
-    And the user waits for 9 seconds
+    And the user waits for 4 seconds
+    And the user must see "Line 1 - Hemoglobin (Hgb) Whole Blood Test, (CC, SOFTLAB, HGB2) is not in domain" text in "radiology error message line 1" field on "Btris/Portal" page
+    And the user must see "Line 1 - Hemoglobin (Hgb) Whole Blood Test, (CC, SOFTLAB, HGB2) is not in domain" text in "radiology error message line 1" field on "Btris/Portal" page
+    And the user clicks on "upload cancel button" element on "Btris/Portal" page
     And the user clicks on "reference list" element on "Btris/Portal" page
     #Filter and remove Reference list added by the test.
     And the user enters "<Reference Name>" into "reference list: search box" on "Btris/Portal" page
@@ -481,5 +481,5 @@ Feature: Radiology Feature Reference List
     And the user logged out of the system
 
     Examples:
-      | Search Term data  | List Name         | User                     | Domain          | Search Term Document        | Reference Name    | Reference Date Type | Reference Term Document      | Reference Term Document Negative      |
-      | Term Test Data DN | Term Test Data DN | BTRIS_TEST2 - TEST2 null | Lab Observation | Search_Tearm_List_Data.xlsx | Reference List DN | MM/DD/YYYY          | Reference_List_Template.xlsx | Reference_List_Negative_Template.xlsx |
+      | Search Term data   | List Name          | User                     | Domain                                      | Search Term Document         | Reference Name    | Reference Date Type | Reference Term Document           | Reference Term Document Negative      |
+      | Term1 Test Data DN | Term1 Test Data DN | BTRIS_TEST2 - TEST2 null | Radiology and Imaging Procedure Observation | Search_Tearm_List_Data1.xlsx | Reference List DN | MM/DD/YYYY          | Radiology_New_Reference_List.xlsx | Reference_List_Negative_Template.xlsx |
