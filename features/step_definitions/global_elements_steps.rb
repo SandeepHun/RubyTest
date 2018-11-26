@@ -312,7 +312,7 @@ end
 
 When(/^user attached "(.*)" file into "(.*)" on "(.*)" page$/) do |attached_file_location, field_name, page_name|
   if RUBY_PLATFORM.downcase.include?("linux")
-  suite_dir_path="#{Dir.pwd}"+'/features/support/Documents'+attached_file_location
+  suite_dir_path="#{Dir.pwd}"+'/features/support/Documents/'+attached_file_location
 
   suite_dir_path = suite_dir_path.gsub! '/', '\\'
 
@@ -331,7 +331,7 @@ When(/^user attached "(.*)" file into "(.*)" on "(.*)" page$/) do |attached_file
   sleep 1
   # @browser.element(selector,".//*[@id='ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_signature_lincPassSignatureSubmit']").click
   else
-    suite_dir_path="#{Dir.pwd}"+'/features/support/Documents'+attached_file_location
+    suite_dir_path="#{Dir.pwd}"+'/features/support/Documents/'+attached_file_location
 
     suite_dir_path = suite_dir_path.gsub! '/', '\\'
 
