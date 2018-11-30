@@ -1,10 +1,10 @@
 @BTRIS_Unstable_Test
-@ReferenceList_Radiology_Test
-Feature: Radiology Feature Reference List
+@ReferenceList_Vital_Signs_Test
+Feature: Vital Signs Feature Reference List
 
-  @ReferenceListRadiology1
+  @Vital_Signs1
 
-  Scenario Outline: 1.1 Adding Search Term List Document for Radiology and Reference List Documents.
+  Scenario Outline: 1.1 Adding Search Term List Document for Vital Signs and Reference List Documents.
   #Login to the system.
     Given the user navigates to / on browser
     And the user must see "Login to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
@@ -18,13 +18,13 @@ Feature: Radiology Feature Reference List
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
-    #click on the Radiology Test.
-    And the user clicks on "reference list radiology" element on "Btris/Portal" page
+    #click on the Vital Sign Test.
+    And the user clicks on "reference list vital sign" element on "Btris/Portal" page
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     And the user waits for 3 seconds
     #verify the select report page.
-    And the user must see "Radiology Criteria" text in "reference list radiology report filter page" field on "Btris/Portal" page
+    And the user must see "Vital Signs Criteria" text in "reference list vital signs report filter page" field on "Btris/Portal" page
     #Clcik on the user drop down.
     And the user clicks on "custom user drop down" element on "Btris/Portal" page
     #Clcik on custom list.
@@ -67,13 +67,13 @@ Feature: Radiology Feature Reference List
     And the user logged out of the system
 
     Examples:
-      | Search Term data   | List Name          | User                     | Domain                                      | Search Term Document                | Reference Name    | Reference Date Type | Reference Term Document           |
-      | Term1 Test Data DN | Term1 Test Data DN | BTRIS_TEST2 - TEST2 null | Radiology and Imaging Procedure Observation | Radiology_New_Search_Term_List.xlsx | Reference List DN | MM/DD/YYYY          | Radiology_New_Reference_List.xlsx |
+      | Search Term data   | List Name          | User                     | Domain      | Search Term Document         | Reference Name    | Reference Date Type | Reference Term Document           |
+      | Term1 Test Data DN | Term1 Test Data DN | BTRIS_TEST2 - TEST2 null | Vital Signs | Vital_Signs_Search_Term.xlsx | Reference List DN | MM/DD/YYYY          | Radiology_New_Reference_List.xlsx |
 
 
-  @ReferenceListRadiology2
+  @Vital_Signs2
 
-  Scenario Outline: 1.2 Running Reports Search for Radiology and Reference List Documents Reports, 10days.
+  Scenario Outline: 1.2 Running Reports Search for Vital Signs and Reference List Documents Reports, 10days.
   #Login to the system.
     Given the user navigates to / on browser
     And the user must see "Login to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
@@ -87,12 +87,12 @@ Feature: Radiology Feature Reference List
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
-    #click on the Radiology Test.
-    And the user clicks on "reference list radiology" element on "Btris/Portal" page
+    #click on the Vital Sign Test.
+    And the user clicks on "reference list vital sign" element on "Btris/Portal" page
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
-    And the user must see "Radiology Criteria" text in "reference list radiology report filter page" field on "Btris/Portal" page
+    And the user must see "Vital Signs Criteria" text in "reference list vital signs report filter page" field on "Btris/Portal" page
     And the user selects "<Reference Name>" from "reference list drop down" drop down on "Btris/Portal" page
     And the user enters "<Number of Days Before>" into "reference list day range text box" on "Btris/Portal" page
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
@@ -102,15 +102,15 @@ Feature: Radiology Feature Reference List
     And the user waits for 10 seconds
     And the user must see "Subject Name" text in "laboratory report table: subject name" field on "Btris/Portal" page
     #Verify report page.
-    And the user must see "Radiology Results Preview - Standard" text in "reference list: radiology report results table" field on "Btris/Portal" page
-    #Verify and validate the report display and click on the the image to view.
-    And the user verify the reference list laboratory report on the table
+    And the user must see "Vital Signs Results Preview - Standard" text in "reference list: vital signs report results table" field on "Btris/Portal" page
+    #Verify and validate the Results.
+    And the user verify the reference list vital signs report on the table
     #Click on the download report button.
     And the user clicks on "download full report button" element on "Btris/Portal" page
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
-    And the user must see "Radiology Results Preview - Standard" text in "reference list: radiology report results table" field on "Btris/Portal" page
+    And the user must see "Vital Signs Results Preview - Standard" text in "reference list: vital signs report results table" field on "Btris/Portal" page
     And the return to main page
     #Sign out.
     And the user logged out of the system
@@ -119,9 +119,9 @@ Feature: Radiology Feature Reference List
       | Labs               | Number of Values | Number of Days Before | Reference Name    | Number of Days After |
       | Term1 Test Data DN | 10               | 90                    | Reference List DN | 80                   |
 
-  @ReferenceListRadiology3
+  @Vital_Signs3
 
-  Scenario Outline: 1.3 Running Reports Search for Radiology and Reference List Documents Reports, 15 days.
+  Scenario Outline: 1.3 Running Reports Search for Vital Signs and Reference List Documents Reports, 15 days.
   #Login to the system.
     Given the user navigates to / on browser
     And the user must see "Login to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
@@ -135,12 +135,12 @@ Feature: Radiology Feature Reference List
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
-    #click on the Radiology Test.
-    And the user clicks on "reference list radiology" element on "Btris/Portal" page
+    #click on the Vital Sign Test.
+    And the user clicks on "reference list vital sign" element on "Btris/Portal" page
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
-    And the user must see "Radiology Criteria" text in "reference list radiology report filter page" field on "Btris/Portal" page
+    And the user must see "Vital Signs Criteria" text in "reference list vital signs report filter page" field on "Btris/Portal" page
     And the user selects "<Reference Name>" from "reference list drop down" drop down on "Btris/Portal" page
     And the user enters "<Number of Days Before>" into "reference list day range text box" on "Btris/Portal" page
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
@@ -150,15 +150,15 @@ Feature: Radiology Feature Reference List
     And the user waits for 10 seconds
     And the user must see "Subject Name" text in "laboratory report table: subject name" field on "Btris/Portal" page
     #Verify report page.
-    And the user must see "Radiology Results Preview - Standard" text in "reference list: radiology report results table" field on "Btris/Portal" page
-    #Verify and validate the report display and click on the the image to view.
-    And the user verify the reference list laboratory report on the table
+    And the user must see "Vital Signs Results Preview - Standard" text in "reference list: vital signs report results table" field on "Btris/Portal" page
+    #Verify and validate the Results.
+    And the user verify the reference list vital signs report on the table
     #Click on the download report button.
     And the user clicks on "download full report button" element on "Btris/Portal" page
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
-    And the user must see "Radiology Results Preview - Standard" text in "reference list: radiology report results table" field on "Btris/Portal" page
+    And the user must see "Vital Signs Results Preview - Standard" text in "reference list: vital signs report results table" field on "Btris/Portal" page
     And the return to main page
     #Sign out.
     And the user logged out of the system
@@ -167,9 +167,9 @@ Feature: Radiology Feature Reference List
       | Labs               | Number of Values | Number of Days Before | Reference Name    | Number of Days After |
       | Term1 Test Data DN | 15               | 60                    | Reference List DN | 40                   |
 
-  @ReferenceListRadiology4
+  @Vital_Signs4
 
-  Scenario Outline: 1.4 Running Reports Search for Radiology and Reference List Documents Reports, 5 days.
+  Scenario Outline: 1.4 Running Reports Search for Vital Signs and Reference List Documents Reports, 5 days.
   #Login to the system.
     Given the user navigates to / on browser
     And the user must see "Login to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
@@ -183,12 +183,12 @@ Feature: Radiology Feature Reference List
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
-    #click on the Radiology Test.
-    And the user clicks on "reference list radiology" element on "Btris/Portal" page
+    #click on the Vital Sign Test.
+    And the user clicks on "reference list vital sign" element on "Btris/Portal" page
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
-    And the user must see "Radiology Criteria" text in "reference list radiology report filter page" field on "Btris/Portal" page
+    And the user must see "Vital Signs Criteria" text in "reference list vital signs report filter page" field on "Btris/Portal" page
     And the user selects "<Reference Name>" from "reference list drop down" drop down on "Btris/Portal" page
     And the user enters "<Number of Days Before>" into "reference list day range text box" on "Btris/Portal" page
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
@@ -198,15 +198,15 @@ Feature: Radiology Feature Reference List
     And the user waits for 10 seconds
     And the user must see "Subject Name" text in "laboratory report table: subject name" field on "Btris/Portal" page
     #Verify report page.
-    And the user must see "Radiology Results Preview - Standard" text in "reference list: radiology report results table" field on "Btris/Portal" page
-    #Verify and validate the report display and click on the the image to view.
-    And the user verify the reference list laboratory report on the table
+    And the user must see "Vital Signs Results Preview - Standard" text in "reference list: vital signs report results table" field on "Btris/Portal" page
+    #Verify and validate the Results.
+    And the user verify the reference list vital signs report on the table
     #Click on the download report button.
     And the user clicks on "download full report button" element on "Btris/Portal" page
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
-    And the user must see "Radiology Results Preview - Standard" text in "reference list: radiology report results table" field on "Btris/Portal" page
+    And the user must see "Vital Signs Results Preview - Standard" text in "reference list: vital signs report results table" field on "Btris/Portal" page
     And the return to main page
     #Sign out.
     And the user logged out of the system
@@ -216,9 +216,9 @@ Feature: Radiology Feature Reference List
       | Term1 Test Data DN | 5                | 30                    | Reference List DN | 30                   |
 
 
-  @ReferenceListRadiology5
+  @Vital_Signs5
 
-  Scenario Outline: 1.5 Running Reports Search for Radiology and Reference List Documents Reports, 1 day.
+  Scenario Outline: 1.5 Running Reports Search for Vital Signs and Reference List Documents Reports, 1 day.
   #Login to the system.
     Given the user navigates to / on browser
     And the user must see "Login to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
@@ -232,12 +232,12 @@ Feature: Radiology Feature Reference List
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
-    #click on the Radiology Test.
-    And the user clicks on "reference list radiology" element on "Btris/Portal" page
+    #click on the Vital Sign Test.
+    And the user clicks on "reference list vital sign" element on "Btris/Portal" page
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
-    And the user must see "Radiology Criteria" text in "reference list radiology report filter page" field on "Btris/Portal" page
+    And the user must see "Vital Signs Criteria" text in "reference list vital signs report filter page" field on "Btris/Portal" page
     And the user selects "<Reference Name>" from "reference list drop down" drop down on "Btris/Portal" page
     And the user enters "<Number of Days Before>" into "reference list day range text box" on "Btris/Portal" page
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
@@ -247,15 +247,15 @@ Feature: Radiology Feature Reference List
     And the user waits for 10 seconds
     And the user must see "Subject Name" text in "laboratory report table: subject name" field on "Btris/Portal" page
     #Verify report page.
-    And the user must see "Radiology Results Preview - Standard" text in "reference list: radiology report results table" field on "Btris/Portal" page
-    #Verify and validate the report display and click on the the image to view.
-    And the user verify the reference list laboratory report on the table
+    And the user must see "Vital Signs Results Preview - Standard" text in "reference list: vital signs report results table" field on "Btris/Portal" page
+    #Verify and validate the Results.
+    And the user verify the reference list vital signs report on the table
     #Click on the download report button.
     And the user clicks on "download full report button" element on "Btris/Portal" page
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
-    And the user must see "Radiology Results Preview - Standard" text in "reference list: radiology report results table" field on "Btris/Portal" page
+    And the user must see "Vital Signs Results Preview - Standard" text in "reference list: vital signs report results table" field on "Btris/Portal" page
     And the return to main page
     #Sign out.
     And the user logged out of the system
@@ -265,9 +265,9 @@ Feature: Radiology Feature Reference List
       | Term1 Test Data DN | 1                | 15                    | Reference List DN | 15                   |
 
 
-  @ReferenceListRadiology6
+  @Vital_Signs6
 
-  Scenario Outline: 1.6 Running Reports Search for Radiology and Reference List Documents Reports, 7 day.
+  Scenario Outline: 1.6 Running Reports Search for Vital Signs and Reference List Documents Reports, 7 day.
   #Login to the system.
     Given the user navigates to / on browser
     And the user must see "Login to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
@@ -281,12 +281,12 @@ Feature: Radiology Feature Reference List
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
-    #click on the Radiology Test.
-    And the user clicks on "reference list radiology" element on "Btris/Portal" page
+    #click on the Vital Sign Test.
+    And the user clicks on "reference list vital sign" element on "Btris/Portal" page
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
-    And the user must see "Radiology Criteria" text in "reference list radiology report filter page" field on "Btris/Portal" page
+    And the user must see "Vital Signs Criteria" text in "reference list vital signs report filter page" field on "Btris/Portal" page
     And the user selects "<Reference Name>" from "reference list drop down" drop down on "Btris/Portal" page
     And the user enters "<Number of Days Before>" into "reference list day range text box" on "Btris/Portal" page
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
@@ -296,15 +296,17 @@ Feature: Radiology Feature Reference List
     And the user waits for 10 seconds
     And the user must see "Subject Name" text in "laboratory report table: subject name" field on "Btris/Portal" page
     #Verify report page.
-    And the user must see "Radiology Results Preview - Standard" text in "reference list: radiology report results table" field on "Btris/Portal" page
+    And the user must see "Vital Signs Results Preview - Standard" text in "reference list: vital signs report results table" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
+    #Verify and validate the Results.
+    And the user verify the reference list vital signs report on the table
     And the user must see "60" text in "radiology age ref1" field on "Btris/Portal" page
     #Click on the download report button.
     And the user clicks on "download full report button" element on "Btris/Portal" page
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
-    And the user must see "Radiology Results Preview - Standard" text in "reference list: radiology report results table" field on "Btris/Portal" page
+    And the user must see "Vital Signs Results Preview - Standard" text in "reference list: vital signs report results table" field on "Btris/Portal" page
     And the return to main page
     #Sign out.
     And the user logged out of the system
@@ -313,9 +315,9 @@ Feature: Radiology Feature Reference List
       | Labs               | Number of Values | Number of Days Before | Reference Name    | Number of Days After |
       | Term1 Test Data DN | 7                | 365                   | Reference List DN | 365                  |
 
-  @ReferenceListRadiology7
+  @Vital_Signs7
 
-  Scenario Outline: 1.7 Running Reports Search for Radiology and Reference List Documents Reports, 13 day.
+  Scenario Outline: 1.7 Running Reports Search for Vital Signs and Reference List Documents Reports, 13 day.
   #Login to the system.
     Given the user navigates to / on browser
     And the user must see "Login to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
@@ -329,12 +331,12 @@ Feature: Radiology Feature Reference List
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
-    #click on the Radiology Test.
-    And the user clicks on "reference list radiology" element on "Btris/Portal" page
+    #click on the Vital Sign Test.
+    And the user clicks on "reference list vital sign" element on "Btris/Portal" page
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
-    And the user must see "Radiology Criteria" text in "reference list radiology report filter page" field on "Btris/Portal" page
+    And the user must see "Vital Signs Criteria" text in "reference list vital signs report filter page" field on "Btris/Portal" page
     And the user selects "<Reference Name>" from "reference list drop down" drop down on "Btris/Portal" page
     And the user enters "<Number of Days Before>" into "reference list day range text box" on "Btris/Portal" page
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
@@ -344,15 +346,17 @@ Feature: Radiology Feature Reference List
     And the user waits for 10 seconds
     And the user must see "Subject Name" text in "laboratory report table: subject name" field on "Btris/Portal" page
     #Verify report page.
-    And the user must see "Radiology Results Preview - Standard" text in "reference list: radiology report results table" field on "Btris/Portal" page
+    And the user must see "Vital Signs Results Preview - Standard" text in "reference list: vital signs report results table" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
+    #Verify and validate the Results.
+    And the user verify the reference list vital signs report on the table
     And the user must see "60" text in "radiology age ref1" field on "Btris/Portal" page
     #Click on the download report button.
     And the user clicks on "download full report button" element on "Btris/Portal" page
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
-    And the user must see "Radiology Results Preview - Standard" text in "reference list: radiology report results table" field on "Btris/Portal" page
+    And the user must see "Vital Signs Results Preview - Standard" text in "reference list: vital signs report results table" field on "Btris/Portal" page
     And the return to main page
     #Sign out.
     And the user logged out of the system
@@ -362,9 +366,9 @@ Feature: Radiology Feature Reference List
       | Term1 Test Data DN | 13               | 200                   | Reference List DN | 150                  |
 
 
-  @ReferenceListRadiology8
+  @Vital_Signs8
 
-  Scenario Outline: 1.8 Running Reports Search for Radiology and Reference List Documents Reports, 8 day.
+  Scenario Outline: 1.8 Running Reports Search for Vital Signs and Reference List Documents Reports, 8 day.
   #Login to the system.
     Given the user navigates to / on browser
     And the user must see "Login to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
@@ -378,12 +382,12 @@ Feature: Radiology Feature Reference List
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
-    #click on the Radiology Test.
-    And the user clicks on "reference list radiology" element on "Btris/Portal" page
+    #click on the Vital Sign Test.
+    And the user clicks on "reference list vital sign" element on "Btris/Portal" page
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
-    And the user must see "Radiology Criteria" text in "reference list radiology report filter page" field on "Btris/Portal" page
+    And the user must see "Vital Signs Criteria" text in "reference list vital signs report filter page" field on "Btris/Portal" page
     And the user selects "<Reference Name>" from "reference list drop down" drop down on "Btris/Portal" page
     And the user enters "<Number of Days Before>" into "reference list day range text box" on "Btris/Portal" page
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
@@ -393,15 +397,17 @@ Feature: Radiology Feature Reference List
     And the user waits for 10 seconds
     And the user must see "Subject Name" text in "laboratory report table: subject name" field on "Btris/Portal" page
     #Verify report page.
-    And the user must see "Radiology Results Preview - Standard" text in "reference list: radiology report results table" field on "Btris/Portal" page
+    And the user must see "Vital Signs Results Preview - Standard" text in "reference list: vital signs report results table" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
-    And the user verify the reference list laboratory report on the table
+    #Verify and validate the Results.
+    And the user verify the reference list vital signs report on the table
+    And the user must see "60" text in "radiology age ref1" field on "Btris/Portal" page
     #Click on the download report button.
     And the user clicks on "download full report button" element on "Btris/Portal" page
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
-    And the user must see "Radiology Results Preview - Standard" text in "reference list: radiology report results table" field on "Btris/Portal" page
+    And the user must see "Vital Signs Results Preview - Standard" text in "reference list: vital signs report results table" field on "Btris/Portal" page
     And the return to main page
     #Sign out.
     And the user logged out of the system
@@ -411,7 +417,7 @@ Feature: Radiology Feature Reference List
       | Term1 Test Data DN | 8                | 200                   | Reference List DN | 150                  |
 
 
-  @ReferenceListRadiology9
+  @Vital_Signs9
 
   Scenario Outline: 1.8 Adding Search Term List Document and Reference List Documents with negative MRN Number for Radiology.
   #Login to the system.
@@ -427,12 +433,12 @@ Feature: Radiology Feature Reference List
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
-    #click on the Radiology Test.
-    And the user clicks on "reference list radiology" element on "Btris/Portal" page
+    #click on the Vital Sign Test.
+    And the user clicks on "reference list vital sign" element on "Btris/Portal" page
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
-    And the user must see "Radiology Criteria" text in "reference list radiology report filter page" field on "Btris/Portal" page
+    And the user must see "Vital Signs Criteria" text in "reference list vital signs report filter page" field on "Btris/Portal" page
     #Clcik on the user drop down.
     And the user clicks on "custom user drop down" element on "Btris/Portal" page
     #Clcik on custom list.
@@ -455,8 +461,8 @@ Feature: Radiology Feature Reference List
     And user attached "<Search Term Document>" file into "custom search term list: brows upload" on "Btris/Portal" page
     And the user clicks on "custom search term list: upload button" element on "Btris/Portal" page
     And the user waits for 4 seconds
-    And the user must see "Line 6 - NM Liver/Spleen Scan (CC, MIS) is not in domain" text in "radiology error message line 1" field on "Btris/Portal" page
-    #And the user must see "Line 1 - Hemoglobin (Hgb) Whole Blood Test, (CC, SOFTLAB, HGB2) is not in domain" text in "radiology error message line 1" field on "Btris/Portal" page
+    And the user must see "Line 1 - MRI Brain (CC, RADNET) is not in domain Vital Signs" text in "vital sign error message line 1" field on "Btris/Portal" page
+    And the user must see "Line 2 - CT Abdomen (CC, MIS) is not in domain Vital Signs" text in "vital sign error message line 2" field on "Btris/Portal" page
     And the user clicks on "upload cancel button" element on "Btris/Portal" page
     And the user clicks on "reference list" element on "Btris/Portal" page
     #Filter and remove Reference list added by the test.
@@ -481,5 +487,5 @@ Feature: Radiology Feature Reference List
     And the user logged out of the system
 
     Examples:
-      | Search Term data   | List Name          | User                     | Domain                                      | Search Term Document         | Reference Name    | Reference Date Type | Reference Term Document           | Reference Term Document Negative      |
-      | Term1 Test Data DN | Term1 Test Data DN | BTRIS_TEST2 - TEST2 null | Radiology and Imaging Procedure Observation | Search_Tearm_List_Data1.xlsx | Reference List DN | MM/DD/YYYY          | Radiology_New_Reference_List.xlsx | Reference_List_Negative_Template.xlsx |
+      | Search Term data   | List Name          | User                     | Domain      | Search Term Document         | Reference Name    | Reference Date Type | Reference Term Document           | Reference Term Document Negative      |
+      | Term1 Test Data DN | Term1 Test Data DN | BTRIS_TEST2 - TEST2 null | Vital Signs | Search_Tearm_List_Data1.xlsx | Reference List DN | MM/DD/YYYY          | Radiology_New_Reference_List.xlsx | Reference_List_Negative_Template.xlsx |

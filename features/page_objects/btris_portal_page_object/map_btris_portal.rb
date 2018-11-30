@@ -212,8 +212,8 @@ def map_btris_portal
           'enter required criteria button'                                                    =>"xpath^^.//*[@data-test='criteria-next-button-bottom']",
           'reference document with negative mrn number'                                       =>"xpath^^.//*[@class='form-control-feedback'][contains(text(), 'There was 1 error with your submission:')]",
           'reference list: radiology report results table'                                    =>"xpath^^.//*[contains(text(), 'Radiology Results Preview -')]",
-          'laboratory error message line 1'                                                    =>"xpath^^.//*[contains(text(), 'Line 1 - MRI Brain (CC, RADNET) is not in domain Laboratory')]",
-          'laboratory error message line 2'                                                    =>"xpath^^.//*[contains(text(), 'Line 2 - CT Abdomen (CC, MIS) is not in domain Laboratory')]",
+          'laboratory error message line 1'                                                   =>"xpath^^.//*[contains(text(), 'Line 1 - MRI Brain (CC, RADNET) is not in domain Laboratory')]",
+          'laboratory error message line 2'                                                   =>"xpath^^.//*[contains(text(), 'Line 2 - CT Abdomen (CC, MIS) is not in domain Laboratory')]",
 
 
           #Admin Report
@@ -229,7 +229,7 @@ def map_btris_portal
           'admin: radiology search button'                                                    =>"xpath^^.//*[@data-test='red-search-search-button']",
           'admin: radiology search red search result'                                         =>"xpath^^.//*[@data-test='red-node red-node-C3147738'][contains(text(), 'Imaging by Procedure Type')]",
           'admin: radiology red search done button'                                           =>"xpath^^.//*[@data-test='red-search-upper-done-button']",
-          'radiology error message line 1'                                                    =>"xpath^^.//*[contains(text(), 'Line 1 - Hemoglobin (Hgb) Whole Blood Test, (CC, SOFTLAB, HGB2) is not in domain')]",
+          'radiology error message line 1'                                                    =>"xpath^^.//*[contains(text(), 'Line 6 - NM Liver/Spleen Scan (CC, MIS) is not in domain')]",
           'radiology error message line 2'                                                    =>"xpath^^.//*[contains(text(), 'Line 2 - Hemoglobin (Hgb) Whole Blood Test, (CC, SOFTLAB, HGB1) is not in domain')]",
           'upload cancel button'                                                              =>"xpath^^.//*[@class='btn round btn-lg btn-secondary'][contains(text(), 'Cancel')]",
           'radiology age ref1'                                                                =>"xpath^^.//*[contains(@data-test, 'results-preview-table')]/tbody/tr[1]/td[3]",
@@ -252,6 +252,12 @@ def map_btris_portal
           'reference list radiology'                                                          =>"xpath^^.//*[@data-test='81-radio-value'][contains(@class, 'custom-control custom-radio')]",
           'reference list radiology report filter page'                                       =>"xpath^^.//*[contains(text(), 'Radiology Criteria')]",
           'reference list: radiology report page'                                             =>"xpath^^.//*[contains(text(), 'Radiology Results Preview -')]",
+          'reference list vital sign'                                                         =>"xpath^^.//*[@data-test='21-radio-value'][contains(@class, 'custom-control custom-radio')]",
+          'reference list vital signs report filter page'                                     =>"xpath^^.//*[contains(text(), 'Vital Signs Criteria')]",
+          'reference list: vital signs report results table'                                  =>"xpath^^.//*[contains(text(), 'Vital Signs Results Preview -')]",
+          'vital sign error message line 1'                                                   =>"xpath^^.//*[contains(text(), 'Line 1 - MRI Brain (CC, RADNET) is not in domain Vital Signs')]",
+          'vital sign error message line 2'                                                   =>"xpath^^.//*[contains(text(), 'Line 2 - CT Abdomen (CC, MIS) is not in domain Vital Signs')]",
+          'reference document with negative vital sign data'                                  =>"xpath^^.//*[contains(text(), 'Found 2 columns, expecting 1')]",
 
       }
 end
