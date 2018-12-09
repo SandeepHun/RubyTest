@@ -258,6 +258,10 @@ def map_btris_portal
           'vital sign error message line 1'                                                   =>"xpath^^.//*[contains(text(), 'Line 1 - MRI Brain (CC, RADNET) is not in domain Vital Signs')]",
           'vital sign error message line 2'                                                   =>"xpath^^.//*[contains(text(), 'Line 2 - CT Abdomen (CC, MIS) is not in domain Vital Signs')]",
           'reference document with negative vital sign data'                                  =>"xpath^^.//*[contains(text(), 'Found 2 columns, expecting 1')]",
+          'reference list pathology'                                                          =>"xpath^^.//*[@data-test='31-radio-value'][contains(@class, 'custom-control custom-radio')]",
+          'reference list pathology report filter page'                                       =>"xpath^^.//*[contains(text(), 'Pathology Criteria')]",
+          'pathology and procedure report page'                                               =>"xpath^^.//*[contains(text(), 'Pathology Results Preview -')]",
+
 
       }
 end

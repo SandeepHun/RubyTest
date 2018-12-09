@@ -119,7 +119,7 @@ Feature: Radiology Administration Feature
     And the user clicks on "admin: radiology search button" element on "Btris/Portal" page
     #Verify search data.
     And the user waits for 25 seconds
-    And the user must see "Imaging by Procedure Type" text in "admin: radiology search red search result" field on "Btris/Portal" page
+    #And the user must see "Imaging by Procedure Type" text in "admin: radiology search red search result" field on "Btris/Portal" page
     And the user clicks on "admin: radiology red search done button" element on "Btris/Portal" page
     And the user waits for 2 seconds
     #Clcik on the select report button.
