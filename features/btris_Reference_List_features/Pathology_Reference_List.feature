@@ -1,4 +1,4 @@
-@BTRIS_Unstable_Test1
+@BTRIS_Unstable_Test
 @ReferenceList_Pathology_Test
 Feature: Laboratory Feature Reference List
 
