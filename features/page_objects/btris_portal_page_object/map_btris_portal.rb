@@ -6,7 +6,7 @@ def map_btris_portal
           #Export librarian, adding a country.
           'btris home: landing page'                         =>"xpath^^.//*[contains(@class, 'login-to-btris__heading')]",
           #'btris home: login button'                         =>"xpath^^.//*[contains(@class, 'btn round btn-lg my-1 mx-1 learn-more-button')]",
-          'btris: login button'                              =>"xpath^^.//*[@class='btn round btn-lg btn-secondary'][contains(text(), 'Login')]",
+          'btris: login button'                              =>"xpath^^.//*[@class='btn round btn-lg btn-secondary'][contains(text(), 'Log In')]",
           'btris: user name'                                 =>"xpath^^.//*[@id='USER']",
           'btris: password'                                  =>"xpath^^.//*[@id='PASSWORD']",
           'btris: login to dashboard button'                 =>"xpath^^.//*[@id='Image2']",
