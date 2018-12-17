@@ -7,7 +7,7 @@ Feature: Vital Signs Feature Reference List
   Scenario Outline: 1.1 Adding Search Term List Document for Vital Signs and Reference List Documents.
   #Login to the system.
     Given the user navigates to / on browser
-    And the user must see "Login to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
+    And the user must see "Log in to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.
@@ -76,7 +76,7 @@ Feature: Vital Signs Feature Reference List
   Scenario Outline: 1.2 Running Reports Search for Vital Signs and Reference List Documents Reports, 10days.
   #Login to the system.
     Given the user navigates to / on browser
-    And the user must see "Login to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
+    And the user must see "Log in to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.
@@ -124,7 +124,7 @@ Feature: Vital Signs Feature Reference List
   Scenario Outline: 1.3 Running Reports Search for Vital Signs and Reference List Documents Reports, 15 days.
   #Login to the system.
     Given the user navigates to / on browser
-    And the user must see "Login to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
+    And the user must see "Log in to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.
@@ -172,7 +172,7 @@ Feature: Vital Signs Feature Reference List
   Scenario Outline: 1.4 Running Reports Search for Vital Signs and Reference List Documents Reports, 5 days.
   #Login to the system.
     Given the user navigates to / on browser
-    And the user must see "Login to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
+    And the user must see "Log in to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.
@@ -221,7 +221,7 @@ Feature: Vital Signs Feature Reference List
   Scenario Outline: 1.5 Running Reports Search for Vital Signs and Reference List Documents Reports, 1 day.
   #Login to the system.
     Given the user navigates to / on browser
-    And the user must see "Login to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
+    And the user must see "Log in to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.
@@ -270,7 +270,7 @@ Feature: Vital Signs Feature Reference List
   Scenario Outline: 1.6 Running Reports Search for Vital Signs and Reference List Documents Reports, 7 day.
   #Login to the system.
     Given the user navigates to / on browser
-    And the user must see "Login to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
+    And the user must see "Log in to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.
@@ -320,7 +320,7 @@ Feature: Vital Signs Feature Reference List
   Scenario Outline: 1.7 Running Reports Search for Vital Signs and Reference List Documents Reports, 13 day.
   #Login to the system.
     Given the user navigates to / on browser
-    And the user must see "Login to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
+    And the user must see "Log in to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.
@@ -371,7 +371,7 @@ Feature: Vital Signs Feature Reference List
   Scenario Outline: 1.8 Running Reports Search for Vital Signs and Reference List Documents Reports, 8 day.
   #Login to the system.
     Given the user navigates to / on browser
-    And the user must see "Login to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
+    And the user must see "Log in to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.
@@ -422,7 +422,7 @@ Feature: Vital Signs Feature Reference List
   Scenario Outline: 1.8 Adding Search Term List Document and Reference List Documents with negative MRN Number for Radiology.
   #Login to the system.
     Given the user navigates to / on browser
-    And the user must see "Login to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
+    And the user must see "Log in to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.

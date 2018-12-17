@@ -7,7 +7,7 @@ Feature: Medication Report
   Scenario Outline: 7.1 Medication Report (Medication Orders) Feature Test.
   #Login to the system.
     Given the user navigates to / on browser
-    And the user must see "Login to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
+    And the user must see "Log in to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.
@@ -61,7 +61,7 @@ Feature: Medication Report
   Scenario Outline: 7.2 Medication Report (Medication Administration) Feature Test.
   #Login to the system.
     Given the user navigates to / on browser
-    And the user must see "Login to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
+    And the user must see "Log in to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.

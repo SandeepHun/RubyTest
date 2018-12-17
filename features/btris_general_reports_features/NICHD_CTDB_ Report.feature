@@ -7,7 +7,7 @@ Feature: NICHD - CTDB Report Feature
   Scenario Outline: 5.1 NICHD/CTDB Report Test.
   #Login to the system.
     Given the user navigates to / on browser
-    And the user must see "Login to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
+    And the user must see "Log in to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.
@@ -60,7 +60,7 @@ Feature: NICHD - CTDB Report Feature
   Scenario Outline: 5.2 NICHD/CTDB Report Test with all searched protocols.
   #Login to the system.
     Given the user navigates to / on browser
-    And the user must see "Login to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
+    And the user must see "Log in to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.

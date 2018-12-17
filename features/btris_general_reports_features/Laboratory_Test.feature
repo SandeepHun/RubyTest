@@ -7,7 +7,7 @@ Feature: Laboratory Feature
   Scenario Outline: 2.1 Laboratory Test Reports without red-search.
   #Login to the system.
     Given the user navigates to / on browser
-    And the user must see "Login to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
+    And the user must see "Log in to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.
@@ -61,7 +61,7 @@ Feature: Laboratory Feature
   Scenario Outline: 2.2 Laboratory Test Reports without demographic data.
   #Login to the system.
     Given the user navigates to / on browser
-    And the user must see "Login to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
+    And the user must see "Log in to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.
@@ -117,7 +117,7 @@ Feature: Laboratory Feature
   Scenario Outline: 2.3 Laboratory Test Reports with red-search.
   #Login to the system.
     Given the user navigates to / on browser
-    And the user must see "Login to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
+    And the user must see "Log in to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.

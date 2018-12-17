@@ -7,7 +7,7 @@ Feature: Diagnosis & Procedure Feature
   Scenario Outline: 3.1 Diagnosis & Procedure Report without Observation Types.
   #Login to the system.
     Given the user navigates to / on browser
-    And the user must see "Login to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
+    And the user must see "Log in to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.
@@ -60,7 +60,7 @@ Feature: Diagnosis & Procedure Feature
   Scenario Outline: 3.2 Diagnosis & Procedure Report including all Observation Types.
   #Login to the system.
     Given the user navigates to / on browser
-    And the user must see "Login to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
+    And the user must see "Log in to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.

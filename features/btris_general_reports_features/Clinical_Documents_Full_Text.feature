@@ -7,7 +7,7 @@ Feature: Clinical Documents - Full Text Feature
   Scenario Outline: 9.1 Clinical Documents - Full Text Feature without red search.
   #Login to the system.
     Given the user navigates to / on browser
-    And the user must see "Login to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
+    And the user must see "Log in to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.
@@ -58,7 +58,7 @@ Feature: Clinical Documents - Full Text Feature
   Scenario Outline: 9.2 Clinical Documents - Full Text Feature with red search for Clinical documentsi.
   #Login to the system.
     Given the user navigates to / on browser
-    And the user must see "Login to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
+    And the user must see "Log in to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.
