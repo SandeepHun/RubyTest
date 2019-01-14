@@ -18,7 +18,9 @@ Feature: Diagnosis & Procedure Feature
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
     #click on the diagnosis and procedure Test.
+    And the user waits for 3 seconds
     And the user clicks on "diagnosis and procedure test" element on "Btris/Portal" page
+    And the user waits for 3 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
@@ -71,7 +73,9 @@ Feature: Diagnosis & Procedure Feature
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
     #click on the diagnosis and procedure Test.
+    And the user waits for 3 seconds
     And the user clicks on "diagnosis and procedure test" element on "Btris/Portal" page
+    And the user waits for 3 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
@@ -113,6 +117,7 @@ Feature: Diagnosis & Procedure Feature
     And the user must see "Diagnosis & Procedure Results Preview - Standard" text in "diagnosis and procedure report page" field on "Btris/Portal" page
     #Click on the download report button.
     And the user clicks on "download full report button" element on "Btris/Portal" page
+    And the user waits for 5 seconds
     #Verify and validate the report display and click on the the image to view.
     And the user verify the diagnosis and procedure report on the table 2
     #click on the open report in another tab button.

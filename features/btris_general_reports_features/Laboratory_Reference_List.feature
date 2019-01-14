@@ -19,7 +19,9 @@ Feature: Laboratory Feature Reference List
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
     #click on the Laboratory Test.
+    And the user waits for 3 seconds
     And the user clicks on "reference list laboratory" element on "Btris/Portal" page
+    And the user waits for 3 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     And the user waits for 3 seconds
@@ -88,7 +90,9 @@ Feature: Laboratory Feature Reference List
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
     #click on the Laboratory Test.
+    And the user waits for 3 seconds
     And the user clicks on "reference list laboratory" element on "Btris/Portal" page
+    And the user waits for 3 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
@@ -138,7 +142,9 @@ Feature: Laboratory Feature Reference List
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
     #click on the Laboratory Test.
+    And the user waits for 3 seconds
     And the user clicks on "reference list laboratory" element on "Btris/Portal" page
+    And the user waits for 3 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
@@ -188,7 +194,9 @@ Feature: Laboratory Feature Reference List
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
     #click on the Laboratory Test.
+    And the user waits for 3 seconds
     And the user clicks on "reference list laboratory" element on "Btris/Portal" page
+    And the user waits for 3 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
@@ -237,7 +245,9 @@ Feature: Laboratory Feature Reference List
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
     #click on the Laboratory Test.
+    And the user waits for 3 seconds
     And the user clicks on "reference list laboratory" element on "Btris/Portal" page
+    And the user waits for 3 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
@@ -286,7 +296,9 @@ Feature: Laboratory Feature Reference List
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
     #click on the Laboratory Test.
+    And the user waits for 3 seconds
     And the user clicks on "reference list laboratory" element on "Btris/Portal" page
+    And the user waits for 3 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
@@ -334,7 +346,9 @@ Feature: Laboratory Feature Reference List
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
     #click on the Laboratory Test.
+    And the user waits for 3 seconds
     And the user clicks on "reference list laboratory" element on "Btris/Portal" page
+    And the user waits for 3 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
@@ -381,7 +395,9 @@ Feature: Laboratory Feature Reference List
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
     #click on the Laboratory Test.
+    And the user waits for 3 seconds
     And the user clicks on "reference list laboratory" element on "Btris/Portal" page
+    And the user waits for 3 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
@@ -430,7 +446,9 @@ Feature: Laboratory Feature Reference List
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
     #click on the Laboratory Test.
+    And the user waits for 3 seconds
     And the user clicks on "reference list laboratory" element on "Btris/Portal" page
+    And the user waits for 3 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
