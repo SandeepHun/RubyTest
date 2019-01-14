@@ -18,7 +18,9 @@ Feature: IRB Inclusion Enrollment Feature
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
     #click on the IRB Inclusion Test.
+    And the user waits for 3 seconds
     And the user clicks on "btris: irb inclusion enrollment test" element on "Btris/Portal" page
+    And the user waits for 3 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
@@ -37,7 +39,7 @@ Feature: IRB Inclusion Enrollment Feature
     #Verify report page.
     And the user must see "Cumulative Inclusion Enrollment Report" text in "irb inclusion enrollment result page" field on "Btris/Portal" page
     #Verify searched protocol
-    And the user waits for 20 seconds
+    And the user waits for 15 seconds
     And the user must see "<Subject>" text in "irb inclusion enrollment search protocol" field on "Btris/Portal" page
     #Click on the download report button.
     #And the user clicks on "download pd report button" element on "Btris/Portal" page
@@ -70,7 +72,9 @@ Feature: IRB Inclusion Enrollment Feature
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
     #click on the IRB Inclusion Test.
+    And the user waits for 3 seconds
     And the user clicks on "btris: irb inclusion enrollment test" element on "Btris/Portal" page
+    And the user waits for 3 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
@@ -89,7 +93,7 @@ Feature: IRB Inclusion Enrollment Feature
     #Verify report page.
     And the user must see "Cumulative Inclusion Enrollment Report" text in "irb inclusion enrollment result page" field on "Btris/Portal" page
     #Verify searched protocol
-    And the user waits for 20 seconds
+    And the user waits for 15 seconds
     And the user must see "<Subject>" text in "irb inclusion enrollment search protocol" field on "Btris/Portal" page
     #Click on the download report button.
     #And the user clicks on "download pd report button" element on "Btris/Portal" page

@@ -18,7 +18,9 @@ Feature: NICHD - CTDB Report Feature
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
     #click on the NICHD/CTDB Forms.
+    And the user waits for 3 seconds
     And the user clicks on "nichd ctdb forms" element on "Btris/Portal" page
+    And the user waits for 3 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
@@ -35,7 +37,7 @@ Feature: NICHD - CTDB Report Feature
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify the document report table.
-    And the user waits for 20 seconds
+    And the user waits for 15 seconds
     And the user must see "Subject Name" text in "diagnosis report table: subject name column" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "NICHD/CTDB Forms Results Preview - Standard" text in "nichd ctdb forms report page" field on "Btris/Portal" page
@@ -71,7 +73,9 @@ Feature: NICHD - CTDB Report Feature
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
     #click on the NICHD/CTDB Forms.
+    And the user waits for 3 seconds
     And the user clicks on "nichd ctdb forms" element on "Btris/Portal" page
+    And the user waits for 3 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.

@@ -18,7 +18,9 @@ Feature: EKG Test Feature
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
     #click on the EKG test.
+    And the user waits for 3 seconds
     And the user clicks on "btris: ekg test" element on "Btris/Portal" page
+    And the user waits for 3 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     And the user waits for 5 seconds
@@ -36,7 +38,7 @@ Feature: EKG Test Feature
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify assessment report results.
-    And the user waits for 20 seconds
+    And the user waits for 15 seconds
     And the user must see "Subject Name" text in "report table: subject name" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "EKG Results Preview - Standard" text in "ekg result page" field on "Btris/Portal" page
@@ -72,7 +74,9 @@ Feature: EKG Test Feature
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
     #click on the EKG test.
+    And the user waits for 3 seconds
     And the user clicks on "btris: ekg test" element on "Btris/Portal" page
+    And the user waits for 3 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     And the user waits for 5 seconds
@@ -94,7 +98,7 @@ Feature: EKG Test Feature
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify assessment report results.
-    And the user waits for 20 seconds
+    And the user waits for 15 seconds
     And the user must see "Subject Name" text in "report table: subject name" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "EKG Results Preview - Standard" text in "ekg result page" field on "Btris/Portal" page
