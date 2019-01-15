@@ -1570,7 +1570,7 @@ Then(/^the user login to the btris application/) do
   step "the user waits for 2 seconds"
   step "the user clicks on \"btris: login button\" element on \"Btris/Portal\" page"
   step "the user enters \"btris_test2\" into \"btris: user name\" on \"Btris/Portal\" page"
-  step "the user enters \"Nomorecognos11|\" into \"btris: password\" on \"Btris/Portal\" page"
+  step "the user enters \"Nomorecognos11\"\" into \"btris: password\" on \"Btris/Portal\" page"
   step "the user waits for 3 seconds"
   step "the user clicks on \"btris: login to dashboard button\" element on \"Btris/Portal\" page"
 end
