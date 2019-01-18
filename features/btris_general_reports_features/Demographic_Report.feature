@@ -46,7 +46,6 @@ Feature: BTRIS Demographic Test
     And the switch to new tab page
     And the user must see "Demographics Results Preview - Standard" text in "demographics report page" field on "Btris/Portal" page
     And the return to main page
-    And the user clicks button with text "<string>" on "<string>" page
     #Sign out.
     And the user logged out of the system
 
