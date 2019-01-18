@@ -1,5 +1,5 @@
 @BTRIS_Unstable_Test
-@ReferenceList_Pathology_Test
+@ReferenceList_Pathology_Test.2
 Feature: Laboratory Feature Reference List
 
   @ReferenceListPathology1
@@ -16,10 +16,13 @@ Feature: Laboratory Feature Reference List
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
     #click on the Pathology Test.
+    And the user waits for 2 seconds
     And the user clicks on "reference list pathology" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     And the user waits for 3 seconds
@@ -71,7 +74,7 @@ Feature: Laboratory Feature Reference List
       | Term1 Test Data DN | Term1 Test Data DN | BTRIS_TEST2 - TEST2 null | Pathology Consolidated Concepts | Pathology_Search_Term_List.xlsx | Reference List DN | MM/DD/YYYY          | Reference_List_Template.xlsx |
 
 
-  @ReferenceListPathology2
+  @ReferenceListPathology2.1
 
   Scenario Outline: 1.2 Running Reports Search for Search Term List Document and Reference List Documents Reports, 10days.
   #Login to the system.
@@ -85,10 +88,13 @@ Feature: Laboratory Feature Reference List
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
     #click on the Pathology Test.
+    And the user waits for 2 seconds
     And the user clicks on "reference list pathology" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
@@ -135,10 +141,13 @@ Feature: Laboratory Feature Reference List
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
     #click on the Pathology Test.
+    And the user waits for 2 seconds
     And the user clicks on "reference list pathology" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
@@ -185,10 +194,13 @@ Feature: Laboratory Feature Reference List
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
     #click on the Pathology Test.
+    And the user waits for 2 seconds
     And the user clicks on "reference list pathology" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
@@ -234,10 +246,13 @@ Feature: Laboratory Feature Reference List
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
     #click on the Pathology Test.
+    And the user waits for 2 seconds
     And the user clicks on "reference list pathology" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
@@ -283,10 +298,13 @@ Feature: Laboratory Feature Reference List
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
     #click on the Pathology Test.
+    And the user waits for 2 seconds
     And the user clicks on "reference list pathology" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
@@ -331,10 +349,13 @@ Feature: Laboratory Feature Reference List
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
     #click on the Pathology Test.
+    And the user waits for 2 seconds
     And the user clicks on "reference list pathology" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
@@ -379,10 +400,13 @@ Feature: Laboratory Feature Reference List
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
     #click on the Pathology Test.
+    And the user waits for 2 seconds
     And the user clicks on "reference list pathology" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
@@ -428,10 +452,13 @@ Feature: Laboratory Feature Reference List
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
     #click on the Pathology Test.
+    And the user waits for 2 seconds
     And the user clicks on "reference list pathology" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.

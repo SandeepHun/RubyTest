@@ -1,5 +1,5 @@
 @BTRIS_Unstable_Test
-@ReferenceList_Radiology_Test
+@ReferenceList_Radiology_Test.3
 Feature: Radiology Feature Reference List
 
   @ReferenceListRadiology1
@@ -16,10 +16,13 @@ Feature: Radiology Feature Reference List
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #click on the Radiology Test.
     And the user clicks on "reference list radiology" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     And the user waits for 3 seconds
@@ -85,10 +88,13 @@ Feature: Radiology Feature Reference List
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #click on the Radiology Test.
     And the user clicks on "reference list radiology" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
@@ -133,10 +139,13 @@ Feature: Radiology Feature Reference List
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #click on the Radiology Test.
     And the user clicks on "reference list radiology" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
@@ -181,10 +190,13 @@ Feature: Radiology Feature Reference List
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #click on the Radiology Test.
     And the user clicks on "reference list radiology" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
@@ -230,10 +242,13 @@ Feature: Radiology Feature Reference List
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #click on the Radiology Test.
     And the user clicks on "reference list radiology" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
@@ -279,10 +294,13 @@ Feature: Radiology Feature Reference List
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #click on the Radiology Test.
     And the user clicks on "reference list radiology" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
@@ -327,10 +345,13 @@ Feature: Radiology Feature Reference List
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #click on the Radiology Test.
     And the user clicks on "reference list radiology" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
@@ -376,10 +397,13 @@ Feature: Radiology Feature Reference List
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #click on the Radiology Test.
     And the user clicks on "reference list radiology" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
@@ -425,10 +449,13 @@ Feature: Radiology Feature Reference List
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #click on the Radiology Test.
     And the user clicks on "reference list radiology" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.

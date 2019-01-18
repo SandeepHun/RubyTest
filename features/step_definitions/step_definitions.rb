@@ -1901,7 +1901,8 @@ end
 
 And(/^the user verify the reference list pathology report on the table$/) do
   record_found = false
-  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  if @browser.element(:xpath, ".//*[contains(text(), 'No records found')]").nil?
+    table_path = ".//*[contains(@data-test, 'results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
@@ -1919,6 +1920,9 @@ And(/^the user verify the reference list pathology report on the table$/) do
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
   end
+  else
+    puts 'No record available on the search day ranges'
+    end
 end
 
 
