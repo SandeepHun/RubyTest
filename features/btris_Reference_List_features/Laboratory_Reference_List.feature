@@ -1,5 +1,5 @@
 @BTRIS_Unstable_Test
-@ReferenceList_Laboratory_Test
+@ReferenceList_Laboratory_Test.1
 Feature: Laboratory Feature Reference List
 
   @ReferenceListLaboratory1
@@ -16,10 +16,13 @@ Feature: Laboratory Feature Reference List
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
+    And the user waits for 3 seconds
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
     #click on the Laboratory Test.
+    And the user waits for 3 seconds
     And the user clicks on "reference list laboratory" element on "Btris/Portal" page
+    And the user waits for 3 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     And the user waits for 3 seconds
@@ -85,10 +88,13 @@ Feature: Laboratory Feature Reference List
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
+    And the user waits for 3 seconds
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
     #click on the Laboratory Test.
+    And the user waits for 3 seconds
     And the user clicks on "reference list laboratory" element on "Btris/Portal" page
+    And the user waits for 3 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
@@ -135,10 +141,13 @@ Feature: Laboratory Feature Reference List
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
+    And the user waits for 3 seconds
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
     #click on the Laboratory Test.
+    And the user waits for 3 seconds
     And the user clicks on "reference list laboratory" element on "Btris/Portal" page
+    And the user waits for 3 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
@@ -185,10 +194,13 @@ Feature: Laboratory Feature Reference List
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
     #click on the Laboratory Test.
+    And the user waits for 2 seconds
     And the user clicks on "reference list laboratory" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
@@ -234,10 +246,13 @@ Feature: Laboratory Feature Reference List
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
     #click on the Laboratory Test.
+    And the user waits for 2 seconds
     And the user clicks on "reference list laboratory" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
@@ -283,10 +298,13 @@ Feature: Laboratory Feature Reference List
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
     #click on the Laboratory Test.
+    And the user waits for 2 seconds
     And the user clicks on "reference list laboratory" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
@@ -331,10 +349,13 @@ Feature: Laboratory Feature Reference List
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
     #click on the Laboratory Test.
+    And the user waits for 2 seconds
     And the user clicks on "reference list laboratory" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
@@ -378,10 +399,13 @@ Feature: Laboratory Feature Reference List
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
     #click on the Laboratory Test.
+    And the user waits for 2 seconds
     And the user clicks on "reference list laboratory" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
@@ -427,10 +451,13 @@ Feature: Laboratory Feature Reference List
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
     #click on the Laboratory Test.
+    And the user waits for 2 seconds
     And the user clicks on "reference list laboratory" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
@@ -446,15 +473,15 @@ Feature: Laboratory Feature Reference List
     And the verify if existing search term data exist and remove it
     And the user clicks on "custom search term list upload button" element on "Btris/Portal" page
     And the user enters "<User>" into "custom search term list: user field" on "Btris/Portal" page
-    And the user waits for 6 seconds
+    And the user waits for 3 seconds
     And the user clicks on "custom search term list: user" element on "Btris/Portal" page
-    And the user waits for 4 seconds
+    And the user waits for 3 seconds
     And the user clicks on "custom search term overwrite checkbox" element on "Btris/Portal" page
-    And the user waits for 4 seconds
+    And the user waits for 3 seconds
     And the user enters "<List Name>" into "custom search term list: list name field" on "Btris/Portal" page
     And the user enters "Automation Description Test Text" into "custom search term list: description" text area box on "Btris/Portal" page
     And the user selects "<Domain>" from "custom search term list: domain drop down" drop down on "Btris/Portal" page
-    And the user waits for 4 seconds
+    And the user waits for 3 seconds
     And user attached "<Search Term Document>" file into "custom search term list: brows upload" on "Btris/Portal" page
     And the user clicks on "custom search term list: upload button" element on "Btris/Portal" page
     And the user waits for 4 seconds

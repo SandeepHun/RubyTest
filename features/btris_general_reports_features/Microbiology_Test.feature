@@ -18,7 +18,7 @@
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
     #click on the Microbiology test.
-    And the user waits for 3 seconds
+    And the user waits for 4 seconds
     And the user clicks on "btris: microbiology test" element on "Btris/Portal" page
     And the user waits for 3 seconds
     #Click on the create new report button.
@@ -70,7 +70,7 @@
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
     #click on the Microbiology test.
-    And the user waits for 3 seconds
+    And the user waits for 4 seconds
     And the user clicks on "btris: microbiology test" element on "Btris/Portal" page
     And the user waits for 3 seconds
     #Click on the create new report button.
