@@ -35,7 +35,7 @@ Feature: Clinical Documents - Discrete Values Feature
     And the user waits for 8 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
-    And the user waits for 8 seconds
+    And the user waits for 15 seconds
     #Verify the document report table.
     And the user must see "Subject Name" text in "diagnosis report table: subject name column" field on "Btris/Portal" page
     #Verify report page.
@@ -91,7 +91,7 @@ Feature: Clinical Documents - Discrete Values Feature
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify the document report table.
-    And the user waits for 8 seconds
+    And the user waits for 20 seconds
     And the user must see "Subject Name" text in "diagnosis report table: subject name column" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "Clinical Documents - Discrete Values Results Preview - Standard" text in "clinical documents: discrete report page" field on "Btris/Portal" page
