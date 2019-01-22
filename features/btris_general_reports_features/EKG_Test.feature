@@ -38,7 +38,7 @@ Feature: EKG Test Feature
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify assessment report results.
-    And the user waits for 15 seconds
+    And the user waits for 20 seconds
     And the user must see "Subject Name" text in "report table: subject name" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "EKG Results Preview - Standard" text in "ekg result page" field on "Btris/Portal" page

@@ -40,7 +40,7 @@ Feature: PDF Documents Report Feature
     And the user waits for 8 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
-    And the user waits for 15 seconds
+    And the user waits for 20 seconds
    #Verify the document report table.
     And the user must see "Subject Name" text in "diagnosis report table: subject name column" field on "Btris/Portal" page
     #Verify report page.
@@ -97,7 +97,7 @@ Feature: PDF Documents Report Feature
     And the user waits for 8 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
-    And the user waits for 15 seconds
+    And the user waits for 20 seconds
     #Verify the document report table.
     And the user must see "Subject Name" text in "diagnosis report table: subject name column" field on "Btris/Portal" page
     #Verify report page.
