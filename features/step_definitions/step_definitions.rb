@@ -1454,6 +1454,28 @@ And(/^the user verify the diagnosis and procedure report on the table$/) do
   end
 end
 
+And(/^the user verify the diagnosis and procedure prod report on the table$/) do
+  record_found = false
+  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
+  if check_record_present > 2
+    #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
+    table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
+    puts table_rows
+    (1..table_rows).each do |rows|
+      delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
+      #puts 'the row number is ' +delete_icons_row
+      new_document = "ADETOLA, OLUKEMI OLUKEYE"
+      if delete_icons_row.downcase.eql? new_document.downcase
+        record_found = true
+        del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
+        puts 'Note! this is a test data and not actual data, the diagnosis results are ' +del_obj
+      end
+    end
+    checkpoint (record_found.eql? true), "No data found in table that matches the Diagnosis and Procedure search"
+  end
+end
+
 And(/^the user verify the diagnosis and procedure report on the table 2$/) do
   record_found = false
   table_path = ".//*[contains(@data-test, 'results-preview-table')]"
@@ -1498,6 +1520,29 @@ And(/^the user verify the demographics report on the table$/) do
     checkpoint (record_found.eql? true), "No data found in table that matches the Demographics search"
   end
 end
+
+And(/^the user verify the demographics prod report on the table$/) do
+  record_found = false
+  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
+  if check_record_present > 2
+    #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
+    table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
+    puts table_rows
+    (1..table_rows).each do |rows|
+      delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
+      #puts 'the row number is ' +delete_icons_row
+      new_document = "BEATON, BRADFORD TAYLOR"
+      if delete_icons_row.downcase.eql? new_document.downcase
+        record_found = true
+        del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
+        puts 'Note! this is a test data and not actual data, the Demographics results are ' +del_obj
+      end
+    end
+    checkpoint (record_found.eql? true), "No data found in table that matches the Demographics search"
+  end
+end
+
 
 And(/^the user verify the assessment report report on the table$/) do
   record_found = false
@@ -1556,6 +1601,28 @@ And(/^the user verify the clinical documents discrete values report on the table
       delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
       #puts 'the row number is ' +delete_icons_row
       new_document = "NIHCCTEST, PATIENT LAB INPATIENT 1"
+      if delete_icons_row.downcase.eql? new_document.downcase
+        record_found = true
+        del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
+        puts 'Note! these are test data not actual data, the validated diagnosis results are ' +del_obj
+      end
+    end
+    checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
+  end
+end
+
+And(/^the user verify the clinical documents discrete values actual report on the table$/) do
+  record_found = false
+  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
+  if check_record_present > 2
+    #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
+    table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
+    puts table_rows
+    (1..table_rows).each do |rows|
+      delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
+      #puts 'the row number is ' +delete_icons_row
+      new_document = "BOWEN, JEANNE DOLORES"
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
@@ -1843,6 +1910,28 @@ And(/^the user verify the echocardiogram report on the table$/) do
       delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
       #puts 'the row number is ' +delete_icons_row
       new_document = "NIHCCTEST, PATIENTLLAA LLA"
+      if delete_icons_row.downcase.eql? new_document.downcase
+        record_found = true
+        del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
+        puts 'Note! these are test data and not actual data, the Echocardiogram  results are ' +del_obj
+      end
+    end
+    checkpoint (record_found.eql? true), "No data found in table that matches the Echocardiogram search"
+  end
+end
+
+And(/^the user verify the echocardiogram prod report on the table$/) do
+  record_found = false
+  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
+  if check_record_present > 2
+    #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
+    table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
+    puts table_rows
+    (1..table_rows).each do |rows|
+      delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
+      #puts 'the row number is ' +delete_icons_row
+      new_document = "ARNETT, LINDA MAE"
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
