@@ -37,7 +37,7 @@ Feature: Clinical Documents - Full Text Feature
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify the document report table.
-    And the user waits for 20 seconds
+    And the user waits for 23 seconds
     And the user must see "Subject Name" text in "diagnosis report table: subject name column" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "Clinical Documents - Full Text Results Preview - Standard" text in "clinical documents full tex result page" field on "Btris/Portal" page
@@ -91,7 +91,7 @@ Feature: Clinical Documents - Full Text Feature
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify the document report table.
-    And the user waits for 20 seconds
+    And the user waits for 23 seconds
     And the user must see "Subject Name" text in "diagnosis report table: subject name column" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "Clinical Documents - Full Text Results Preview - Standard" text in "clinical documents full tex result page" field on "Btris/Portal" page
@@ -157,7 +157,7 @@ Feature: Clinical Documents - Full Text Feature
     And the user clicks on "red search: clinical doc done search button" element on "Btris/Portal" page
     #And the user can see text "Serial Testing or Serial/Research Testing Document"
     #Verify search data.
-    And the user waits for 8 seconds
+    And the user waits for 10 seconds
     And the user can see text "Serial Testing or Serial/Research Testing Document"
     #And the user must see "Serial Testing or Serial/Research Testing Document" text in "red search: exact phrase research" field on "Btris/Portal" page
     #Click on the done button.
