@@ -1,10 +1,10 @@
 @BTRIS_Quick_Test
-@Pathology_Test
-Feature: Pathology Test Feature
+@PDF_Documents_Report
+Feature: PDF Documents Report Feature
 
-  @Pathology1
+  @PDF_Documents_Repor1
 
-  Scenario Outline: 10.1 Pathology Test Reports without ALL Test.
+  Scenario Outline: 5.1 NICHD/CTDB Report Test without PDF/Scanned Documents.
   #Login to the system.
     Given the user navigates to / on browser
     And the user must see "Log in to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
@@ -17,50 +17,52 @@ Feature: Pathology Test Feature
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
-    #click on the Pathology Test.
+    #click on the  PDF Documents.
     And the user waits for 3 seconds
-    And the user clicks on "btris: pathology test" element on "Btris/Portal" page
+    And the user clicks on "pdf documents" element on "Btris/Portal" page
     And the user waits for 3 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
-    And the user must see "Pathology Criteria" text in "btris: pathology report page" field on "Btris/Portal" page
+    And the user must see "PDF Documents Criteria" text in "btris: pdf documents page" field on "Btris/Portal" page
     #Clcik on the select report button.
+    #And the user clicks on "btris: top select button" element on "Btris/Portal" page
+    And the user waits for 2 seconds
+    #Click on Select All for PDF/Scanned Documents.
+    And the user clicks on "pdf documents select all button" element on "Btris/Portal" page
     And the user clicks on "btris: top select button" element on "Btris/Portal" page
     #Enter and filter subject.
     And the user waits for 5 seconds
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
-    And the user waits for 3 seconds
+    And the user waits for 5 seconds
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
     And the user waits for 8 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
-    #Verify the laboratory report table.
-    And the user waits for 20 seconds
-    And the user must see "Subject Name" text in "laboratory report table: subject name" field on "Btris/Portal" page
+    And the user waits for 25 seconds
+   #Verify the document report table.
+    And the user must see "Subject Name" text in "diagnosis report table: subject name column" field on "Btris/Portal" page
     #Verify report page.
-    And the user must see "Pathology Results Preview - Standard" text in "pathology result page" field on "Btris/Portal" page
-    #Verify and validate the report display and click on the the image to view.
-    And the user verify the pathology report on the table
+    And the user must see "PDF Documents Results Preview - Standard" text in "pdf documents result page" field on "Btris/Portal" page
+    #And the user verify the pdf documents report on the table
     #Click on the download report button.
     And the user clicks on "download full report button" element on "Btris/Portal" page
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
-    And the user must see "Pathology Results Preview - Standard" text in "pathology result page" field on "Btris/Portal" page
+    And the user must see "PDF Documents Results Preview - Standard" text in "pdf documents result page" field on "Btris/Portal" page
     And the return to main page
     #Sign out.
     And the user logged out of the system
 
     Examples:
       | Subject       | Filtered Subject |
-      | BTRIS-TEST-00 | NIHCCTEST        |
+      | BTRIS-TEST-05 | NIHCCTEST        |
 
+  @PDF_Documents_Repor2
 
-  @Pathology2
-
-  Scenario Outline: 10.2 Pathology Test Reports without ALL Test.
+  Scenario Outline: 5.2 NICHD/CTDB Report Test with All PDF/Scanned Documents.
   #Login to the system.
     Given the user navigates to / on browser
     And the user must see "Log in to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
@@ -73,16 +75,17 @@ Feature: Pathology Test Feature
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
-    #click on the Pathology Test.
+    #click on the  PDF Documents.
     And the user waits for 3 seconds
-    And the user clicks on "btris: pathology test" element on "Btris/Portal" page
+    And the user clicks on "pdf documents" element on "Btris/Portal" page
     And the user waits for 3 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
-    And the user must see "Pathology Criteria" text in "btris: pathology report page" field on "Btris/Portal" page
-    #Uncheck the select all pathology test.
-    And the user clicks on "select all pathology test" element on "Btris/Portal" page
+    And the user must see "PDF Documents Criteria" text in "btris: pdf documents page" field on "Btris/Portal" page
+    And the user waits for 3 seconds
+    #Click on Select All for PDF/Scanned Documents.
+    And the user clicks on "pdf documents select all button" element on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
     #Enter and filter subject.
@@ -94,23 +97,24 @@ Feature: Pathology Test Feature
     And the user waits for 8 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
-    #Verify the laboratory report table.
-    And the user waits for 20 seconds
-    And the user must see "Subject Name" text in "laboratory report table: subject name" field on "Btris/Portal" page
+    And the user waits for 25 seconds
+    #Verify the document report table.
+    And the user must see "Subject Name" text in "diagnosis report table: subject name column" field on "Btris/Portal" page
     #Verify report page.
-    And the user must see "Pathology Results Preview - Standard" text in "pathology result page" field on "Btris/Portal" page
+    And the user must see "PDF Documents Results Preview - Standard" text in "pdf documents result page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
-    And the user verify the pathology report on the table
+    And the user must see "NIHCCTEST, INNA NMN" text in "search subject s2" field on "Btris/Portal" page
+    #And the user verify the pdf documents report on the table
     #Click on the download report button.
-    And the user clicks on "download full report button" element on "Btris/Portal" page
+    #And the user clicks on "download full report button" element on "Btris/Portal" page
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
-    And the user must see "Pathology Results Preview - Standard" text in "pathology result page" field on "Btris/Portal" page
+    And the user must see "PDF Documents Results Preview - Standard" text in "pdf documents result page" field on "Btris/Portal" page
     And the return to main page
     #Sign out.
     And the user logged out of the system
 
     Examples:
       | Subject       | Filtered Subject |
-      | BTRIS-TEST-00 | NIHCCTEST        |
+      | BTRIS-TEST-05 | NIHCCTEST        |
