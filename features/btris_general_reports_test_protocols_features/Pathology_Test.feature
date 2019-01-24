@@ -44,9 +44,12 @@ Feature: Pathology Test Feature
     #Verify and validate the report display and click on the the image to view.
     And the user verify the pathology report on the table
     #Click on the download report button.
+    And the user waits for 5 seconds
     And the user clicks on "download full report button" element on "Btris/Portal" page
     #click on the open report in another tab button.
+    And the user waits for 5 seconds
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
+    And the user waits for 5 seconds
     And the switch to new tab page
     And the user must see "Pathology Results Preview - Standard" text in "pathology result page" field on "Btris/Portal" page
     And the return to main page
@@ -101,10 +104,13 @@ Feature: Pathology Test Feature
     And the user must see "Pathology Results Preview - Standard" text in "pathology result page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
     And the user verify the pathology report on the table
+    And the user waits for 3 seconds
     #Click on the download report button.
     And the user clicks on "download full report button" element on "Btris/Portal" page
+    And the user waits for 3 seconds
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
+    And the user waits for 5 seconds
     And the switch to new tab page
     And the user must see "Pathology Results Preview - Standard" text in "pathology result page" field on "Btris/Portal" page
     And the return to main page
