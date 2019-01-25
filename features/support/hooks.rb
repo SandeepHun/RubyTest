@@ -6,16 +6,16 @@ require 'selenium-webdriver'
 
 EXEC_ID = Time.now.strftime('%m%d%Y%H%M%S')
 RESULTS_DIR = "#{Dir.pwd}/features/results/#{EXEC_ID}"
-if ENV['TEST_ENV'].downcase.eql? 'test08'
+if ENV['TEST_ENV'].downcase.eql? 'test01'
   TIMEOUT = 50
   puts 'this is the wait(40s) we are using for Prod ENV'
 else
-  TIMEOUT = 45
-  if ENV['TEST_ENV'].downcase.eql? 'test06'
-    TIMEOUT = 45
+  TIMEOUT = 60
+  if ENV['TEST_ENV'].downcase.eql? 'Prod'
+    TIMEOUT = 60
     puts 'this is the wait(45s) we are using for Test ENV'
   else
-    TIMEOUT = 45
+    TIMEOUT = 60
     puts 'this is the wait we are using for none test nor prod ENV'
   end
 end
@@ -40,7 +40,7 @@ selenium_driver.open_timeout = TIMEOUT
 
 @@browser = Watir::Browser.new BROWSER_NAME.to_sym, :http_client => selenium_driver
 
-@@browser.driver.manage.timeouts.implicit_wait=35
+@@browser.driver.manage.timeouts.implicit_wait=60
 # @browser = get_browser
 #@@browser.driver.manage.window.maximize
 
@@ -57,7 +57,7 @@ def get_browser
   # client.timeout = TIMEOUT # seconds – default is 30
   @browser = Watir::Browser.new BROWSER_NAME.to_sym, :http_client => http_driver
   # @browser.driver.manage.window.maximize
-  @browser.driver.manage.timeouts.implicit_wait=30
+  @browser.driver.manage.timeouts.implicit_wait=60
   # screen_width = @browser.execute_script("return screen.width;")
   # screen_height = @browser.execute_script("return screen.height;")
   # @browser.driver.manage.window.resize_to(screen_width,screen_height)
@@ -67,11 +67,11 @@ end
 
 Before do
   if RUBY_PLATFORM.downcase.include?("linux")
-    @browser.driver.manage.timeouts.implicit_wait=30
+    @browser.driver.manage.timeouts.implicit_wait=60
     @browser.driver.manage.window.resize_to(1600, 900)
     @browser.goto "https://btrisportal.cc.nih.gov"
     #@browser.driver.manage.window.maximize
-    @browser.driver.manage.timeouts.implicit_wait=15
+    @browser.driver.manage.timeouts.implicit_wait=40
     puts("inspect: #{@browser.inspect}")
     puts("status : #{@browser.status}")
     puts("text   : #{@browser.text}")
@@ -87,7 +87,7 @@ Before do
   @browser.driver.manage.window.maximize
   puts @browser.html
   puts @browser.browser
-  @browser.driver.manage.timeouts.implicit_wait=15
+  @browser.driver.manage.timeouts.implicit_wait=60
   puts 'The OS platform is ' +RUBY_PLATFORM
 end
 end

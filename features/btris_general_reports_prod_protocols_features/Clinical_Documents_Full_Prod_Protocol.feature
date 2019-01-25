@@ -1,4 +1,4 @@
-@BTRIS_Unstable_Test
+@BTRIS_Quick_Test
 @Clinical_Documents_Full_Text_Prod_Data
 Feature: Clinical Documents - Full Text Feature Prod Data
 

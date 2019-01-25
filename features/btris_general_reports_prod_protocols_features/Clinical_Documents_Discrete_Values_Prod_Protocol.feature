@@ -1,4 +1,4 @@
-@BTRIS_Unstable_Test
+@BTRIS_Quick_Test
 @Clinical_Documents_Discrete_Prod_Data
 Feature: Clinical Documents - Discrete Values Feature Prod Data
 

@@ -1,4 +1,4 @@
-@BTRIS_Unstable_Test
+@BTRIS_Quick_Test
 @Diagnosis_And_Procedure_Prod_Data
 Feature: Diagnosis & Procedure Feature Prod Data
 
