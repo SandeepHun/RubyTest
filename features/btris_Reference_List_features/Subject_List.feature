@@ -32,7 +32,7 @@ Feature: Subject List
     And the user clicks on "left nav: subject list" element on "Btris/Portal" page
     #Filter and remove search term list added by the test.
     And the user enters "<Search Term data>" into "find subject list search box" on "Btris/Portal" page
-    And the verify if existing subject list data exist and remove it
+    #And the verify if existing subject list data exist and remove it
     And the user clicks on "subject list upload button" element on "Btris/Portal" page
     And the user waits for 6 seconds
     And the user enters "<User>" into "subject list: user field" on "Btris/Portal" page

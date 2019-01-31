@@ -26,7 +26,7 @@ Feature: Diagnosis & Procedure Feature Prod Data
     #verify the select report page.
     And the user must see "Diagnosis & Procedure Criteria" text in "btris: diagnosis and procedure filter report page" field on "Btris/Portal" page
     #Clcik on the select report button.
-    And the user clicks on "btris: top select button" element on "Btris/Portal" page
+    And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
     #Enter and filter subject.
     And the user waits for 5 seconds
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
@@ -81,7 +81,7 @@ Feature: Diagnosis & Procedure Feature Prod Data
     #verify the select report page.
     And the user must see "Diagnosis & Procedure Criteria" text in "btris: diagnosis and procedure filter report page" field on "Btris/Portal" page
     #Clcik on the select report button.
-    And the user clicks on "btris: top select button" element on "Btris/Portal" page
+    And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
     And the user waits for 6 seconds
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
@@ -116,7 +116,7 @@ Feature: Diagnosis & Procedure Feature Prod Data
     #Verify report page.
     And the user must see "Diagnosis & Procedure Results Preview - Standard" text in "diagnosis and procedure report page" field on "Btris/Portal" page
     #Click on the download report button.
-    And the user clicks on "download full report button" element on "Btris/Portal" page
+    #And the user clicks on "download full report button" element on "Btris/Portal" page
     And the user waits for 5 seconds
     #Verify and validate the report display and click on the the image to view.
     And the user verify the diagnosis and procedure report on the table 2

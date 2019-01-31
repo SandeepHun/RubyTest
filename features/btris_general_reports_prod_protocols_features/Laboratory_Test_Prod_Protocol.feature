@@ -42,7 +42,7 @@ Feature: Laboratory Feature
     #Verify report page.
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
-    And the user verify the laboratory report on the table
+    And the user verify the laboratory prod report on the table
     #Click on the download report button.
     #And the user clicks on "download full report button" element on "Btris/Portal" page
     #click on the open report in another tab button.
@@ -54,8 +54,8 @@ Feature: Laboratory Feature
     And the user logged out of the system
 
     Examples:
-      | Subject       | Filtered Subject |
-      | BTRIS-TEST-03 | NIHCCTEST        |
+      | Subject   | Filtered Subject |
+      | 00-C-0133 | ANDERSON         |
 
 
   @Laboratory2
@@ -100,7 +100,7 @@ Feature: Laboratory Feature
     #Verify report page.
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
-    And the user verify the laboratory report on the table
+    And the user verify the laboratory prod report on the table
     #Click on the download report button.
     #And the user clicks on "download full report button" element on "Btris/Portal" page
     #click on the open report in another tab button.
@@ -112,8 +112,8 @@ Feature: Laboratory Feature
     And the user logged out of the system
 
     Examples:
-      | Subject       | Filtered Subject |
-      | BTRIS-TEST-03 | NIHCCTEST        |
+      | Subject   | Filtered Subject |
+      | 00-C-0133 | ANDERSON         |
 
 
   @Laboratory3
@@ -155,7 +155,7 @@ Feature: Laboratory Feature
     #Verify report page.
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
-    And the user verify the new laboratory report on the table
+    And the user verify the laboratory prod report on the table
     #Click on the download report button.
     And the user clicks on "download full report button" element on "Btris/Portal" page
     #click on the open report in another tab button.
@@ -182,5 +182,5 @@ Feature: Laboratory Feature
     And the user logged out of the system
 
     Examples:
-      | Subject       | Filtered Subject | Red Search Data | Search Type                    |
-      | BTRIS-TEST-03 | NIHCCTEST        | Labs            | Contains all of these keywords |
+      | Subject   | Filtered Subject | Red Search Data | Search Type                    |
+      | 00-C-0133 | ANDERSON         | Labs            | Contains all of these keywords |

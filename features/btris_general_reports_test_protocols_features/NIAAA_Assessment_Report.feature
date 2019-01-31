@@ -27,7 +27,7 @@ Feature: NIAAA Assessment
     #verify the select report page.
     And the user must see "NIAAA Assessment Report Criteria" text in "btris: assessment filter report page" field on "Btris/Portal" page
     #Clcik on the select report button.
-    And the user clicks on "btris: top select button" element on "Btris/Portal" page
+    And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
     And the user waits for 5 seconds
     #Enter and filter subject.
     And the user enters "08-AA-0137" into "fine protocol and subject search box" on "Btris/Portal" page

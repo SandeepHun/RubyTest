@@ -7,7 +7,7 @@ require 'selenium-webdriver'
 EXEC_ID = Time.now.strftime('%m%d%Y%H%M%S')
 RESULTS_DIR = "#{Dir.pwd}/features/results/#{EXEC_ID}"
 if ENV['TEST_ENV'].downcase.eql? 'test01'
-  TIMEOUT = 50
+  TIMEOUT = 60
   puts 'this is the wait(40s) we are using for Prod ENV'
 else
   TIMEOUT = 60
@@ -29,24 +29,24 @@ BROWSER_NAME = Configuration.browser.downcase
 
 
 
-#********************To open Browser at one time and run all scenario*********************
-
-selenium_driver = Selenium::WebDriver::Remote::Http::Default.new
-
-selenium_driver.read_timeout = TIMEOUT
-selenium_driver.open_timeout = TIMEOUT
-# statement Depreciated
-# selenium_driver.timeout = TIMEOUT # seconds – default is 30
-
-@@browser = Watir::Browser.new BROWSER_NAME.to_sym, :http_client => selenium_driver
-
-@@browser.driver.manage.timeouts.implicit_wait=60
-# @browser = get_browser
-#@@browser.driver.manage.window.maximize
-
-Before do
-  @browser = @@browser
-end
+# #********************To open Browser at one time and run all scenario*********************
+#
+# selenium_driver = Selenium::WebDriver::Remote::Http::Default.new
+#
+# selenium_driver.read_timeout = TIMEOUT
+# selenium_driver.open_timeout = TIMEOUT
+# # statement Depreciated
+# # selenium_driver.timeout = TIMEOUT # seconds – default is 30
+#
+# @@browser = Watir::Browser.new BROWSER_NAME.to_sym, :http_client => selenium_driver
+#
+# @@browser.driver.manage.timeouts.implicit_wait=60
+# # @browser = get_browser
+# #@@browser.driver.manage.window.maximize
+#
+# Before do
+#   @browser = @@browser
+# end
 
 
 # == Open browser on each scenario and then close browser
@@ -98,7 +98,7 @@ end
 
 # Before ('@mobile') do
 #   @browser = get_browser
-# 	if DRIVER == "chrome"
+#  if DRIVER == "chrome"
 #     @browser.window.resize_to(640,960)
 #   else
 #     @browser.window.maximize
@@ -107,28 +107,28 @@ end
 #
 # Before ('@tablet') do
 #   @browser = get_browser
-# 	if DRIVER == "chrome"
+#  if DRIVER == "chrome"
 #     @browser.window.resize_to(1024,768)
 #   else
 #     @browser.window.maximize
 #   end
 # end
 
-# Before do |scenario|
-#   # puts "Executing Test on #{Configuration.host}"
-#   SCENARIO_ID = (scenario.name).delete('^0-9')
-#   if SCENARIO_ID.empty?
-#     SCENARIO_ID = scenario.name[0, 15]
-#   end
-#   SCREENSHOT_NAME = "/#{scenario.__id__}"
-# end
-#
-# After do |scenario|
-#   if scenario.failed?
-#     clear_alert
-#     capture_screenshot
-#   end
-# end
+Before do |scenario|
+  # puts "Executing Test on #{Configuration.host}"
+  SCENARIO_ID = (scenario.name).delete('^0-9')
+  if SCENARIO_ID.empty?
+    SCENARIO_ID = scenario.name[0, 15]
+  end
+  SCREENSHOT_NAME = "/#{scenario.__id__}"
+end
+
+After do |scenario|
+  if scenario.failed?
+    clear_alert
+    capture_screenshot
+  end
+end
 
 def clear_alert
   if @browser.alert.exists?
