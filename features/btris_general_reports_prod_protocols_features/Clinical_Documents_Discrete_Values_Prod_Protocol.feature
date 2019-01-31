@@ -2,7 +2,7 @@
 @Clinical_Documents_Discrete_Prod_Data
 Feature: Clinical Documents - Discrete Values Feature Prod Data
 
-  @ClinicalDocuments1.1
+  @ClinicalDocumentsProd_Data1.1
 
   Scenario Outline: 4.1 Clinical Documents - Discrete Values without red search.
   #Login to the system.
@@ -56,7 +56,7 @@ Feature: Clinical Documents - Discrete Values Feature Prod Data
       | Subject   | Filtered Subject |
       | 00-C-0018 | BOWEN            |
 
-  @ClinicalDocuments2.2
+  @ClinicalDocumentsProd_Data2.2
 
   Scenario Outline: 4.2 Clinical Documents - Discrete Values with red search for Clinical documentsi.
   #Login to the system.

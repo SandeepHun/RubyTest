@@ -1,8 +1,8 @@
 @BTRIS_Quick_Test
-@EKG_Test_Report
-Feature: EKG Test Feature
+@EKG_Test_Report_Prod_Data
+Feature: EKG Test Feature Prod Data
 
-  @EKG_Test1
+  @EKG_Test_Prod_Data1
 
   Scenario Outline: 12.1 EKG Report testing without Any Observations.
   #Login to the system.
@@ -58,7 +58,7 @@ Feature: EKG Test Feature
       | Subject   | Filtered Subject |
       | 00-C-0133 | ANDERSON         |
 
-  @EKG_Test2
+  @EKG_Test_Prod_Data2
 
   Scenario Outline: 12.2 EKG Report testing with ALL Observations.
   #Login to the system.

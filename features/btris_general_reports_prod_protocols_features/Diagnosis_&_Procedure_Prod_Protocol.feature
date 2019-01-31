@@ -2,7 +2,7 @@
 @Diagnosis_And_Procedure_Prod_Data
 Feature: Diagnosis & Procedure Feature Prod Data
 
-  @Diagnosis1.1
+  @DiagnosisProd_Data.1
 
   Scenario Outline: 3.1 Diagnosis & Procedure Report without Observation Types.
   #Login to the system.
@@ -57,7 +57,7 @@ Feature: Diagnosis & Procedure Feature Prod Data
       | Subject    | Filtered Subject |
       | 00-DK-0107 | ADETOLA          |
 
-  @Diagnosis2.2
+  @DiagnosisProd_Data2.2
 
   Scenario Outline: 3.2 Diagnosis & Procedure Report including all Observation Types.
   #Login to the system.
