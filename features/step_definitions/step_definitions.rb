@@ -1409,6 +1409,28 @@ And(/^the user verify the laboratory report on the table$/) do
   end
 end
 
+And(/^the user verify the laboratory prod report on the table$/) do
+  record_found = false
+  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
+  if check_record_present > 2
+    #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
+    table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
+    puts table_rows
+    (1..table_rows).each do |rows|
+      delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
+      #puts 'the row number is ' +delete_icons_row
+      new_document = "ANDERSON, STEPHEN FOSTER"
+      if delete_icons_row.downcase.eql? new_document.downcase
+        record_found = true
+        del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
+        puts 'Note! These are test data and not actual data, the Laboratory results are ' +del_obj
+      end
+    end
+    checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
+  end
+end
+
 And(/^the user verify the new laboratory report on the table$/) do
   record_found = false
   table_path = ".//*[contains(@data-test, 'results-preview-table')]"
@@ -1496,6 +1518,25 @@ And(/^the user verify the diagnosis and procedure report on the table 2$/) do
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the Demographics search"
   end
+end
+
+And(/^the user test the pagination of the report$/) do
+  if pagination_path = "//*[@class='page-item']"
+  check_record_present = get_elements_size 'xpath', "#{pagination_path}"
+if check_record_present > 1
+  table_rows = get_elements_size 'xpath', "#{pagination_path}"
+  (1..table_rows).each do |rows|
+    del_obj = get_element_obj 'xpath', "#{pagination_path}"
+    click_web_element del_obj
+
+    # ok_conf_obj = get_element_obj 'xpath', ".//*[contains(text(),'OK')]"
+    # click_web_element ok_conf_obj
+    sleep 5
+  end
+else
+  puts 'No pagination available for this report, report loads on a single page'
+end
+end
 end
 
 
@@ -1763,6 +1804,28 @@ And(/^the user verify the medication report on the table$/) do
   end
 end
 
+And(/^the user verify the medication prod report on the table$/) do
+  record_found = false
+  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
+  if check_record_present > 2
+    #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
+    table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
+    puts table_rows
+    (1..table_rows).each do |rows|
+      delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
+      #puts 'the row number is ' +delete_icons_row
+      new_document = "BOWEN, JEANNE DOLORES"
+      if delete_icons_row.downcase.eql? new_document.downcase
+        record_found = true
+        del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[1]"
+        puts 'Note! these are test data and not actual data, the test results validated are ' +del_obj
+      end
+    end
+    checkpoint (record_found.eql? true), "No data found in table that matches the medication search record"
+  end
+end
+
 
 And(/^the user verify the pulmonary report on the table$/) do
   record_found = false
@@ -1876,6 +1939,28 @@ And(/^the user verify the ekg report on the table$/) do
   end
 end
 
+And(/^the user verify the ekg prod data report on the table$/) do
+  record_found = false
+  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
+  if check_record_present > 2
+    #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
+    table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
+    puts table_rows
+    (1..table_rows).each do |rows|
+      delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
+      #puts 'the row number is ' +delete_icons_row
+      new_document = "ANDERSON, STEPHEN FOSTER"
+      if delete_icons_row.downcase.eql? new_document.downcase
+        record_found = true
+        del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
+        puts 'Note! these are test data and not actual data, the results table data are ' +del_obj
+      end
+    end
+    checkpoint (record_found.eql? true), "No data found in table that matches the EKG search"
+  end
+end
+
 And(/^the user verify the microbiology report on the table$/) do
   record_found = false
   table_path = ".//*[contains(@data-test, 'results-preview-table')]"
@@ -1949,9 +2034,10 @@ And(/^the verify if existing search term data exist and remove it$/) do
     #Click on the remove button.Scenario:
     step "the user clicks on \"custom search term list remove button\" element on \"Btris/Portal\" page"
     step "the user clicks on \"custom search term list confirm remove\" element on \"Btris/Portal\" page"
-  else
-  puts 'No existing search term data added by the test exist'
-    end
+    step "the user waits for \"5\" seconds"
+    else
+    puts 'No existing search term data added by the test exist'
+  end
 end
 
 And(/^the verify if existing reference list data exist and remove it$/) do
@@ -1961,6 +2047,7 @@ And(/^the verify if existing reference list data exist and remove it$/) do
     #Click on the remove button.Scenario:
     step "the user clicks on \"custom search term list remove button\" element on \"Btris/Portal\" page"
     step "the user clicks on \"custom search term list confirm remove\" element on \"Btris/Portal\" page"
+    step "the user waits for \"5\" seconds"
   else
     puts 'No existing search term data added by the test exist'
   end
@@ -2113,6 +2200,7 @@ And(/^the verify if existing subject list data exist and remove it$/) do
     #Click on the remove button.Scenario:
     step "the user clicks on \"subject list remove button\" element on \"Btris/Portal\" page"
     step "the user clicks on \"subject list confirm remove\" element on \"Btris/Portal\" page"
+    step "the user waits for \"5\" seconds"
   else
     puts 'No existing search term data added by the test exist'
   end

@@ -35,7 +35,7 @@ Feature: Laboratory Feature Reference List
     And the user clicks on "left nav: search term list" element on "Btris/Portal" page
     #Filter and remove search term list added by the test.
     And the user enters "<Search Term data>" into "custom list search term box" on "Btris/Portal" page
-    And the verify if existing search term data exist and remove it
+    #And the verify if existing search term data exist and remove it
     And the user clicks on "custom search term list upload button" element on "Btris/Portal" page
     And the user waits for 6 seconds
     And the user enters "<User>" into "custom search term list: user field" on "Btris/Portal" page
@@ -54,7 +54,7 @@ Feature: Laboratory Feature Reference List
     And the user clicks on "reference list" element on "Btris/Portal" page
     #Filter and remove Reference list added by the test.
     And the user enters "<Reference Name>" into "reference list: search box" on "Btris/Portal" page
-    And the verify if existing reference list data exist and remove it
+    #And the verify if existing reference list data exist and remove it
     And the user clicks on "custom search term list upload button" element on "Btris/Portal" page
     And the user enters "<Reference Name>" into "reference list: list name field" on "Btris/Portal" page
     And the user clicks on "reference list: overwrite checkbox" element on "Btris/Portal" page
@@ -471,7 +471,7 @@ Feature: Laboratory Feature Reference List
     And the user clicks on "left nav: search term list" element on "Btris/Portal" page
     #Filter and remove search term list added by the test.
     And the user enters "<Search Term data>" into "custom list search term box" on "Btris/Portal" page
-    And the verify if existing search term data exist and remove it
+    #And the verify if existing search term data exist and remove it
     And the user clicks on "custom search term list upload button" element on "Btris/Portal" page
     And the user enters "<User>" into "custom search term list: user field" on "Btris/Portal" page
     And the user waits for 6 seconds
@@ -492,7 +492,7 @@ Feature: Laboratory Feature Reference List
     And the user clicks on "reference list" element on "Btris/Portal" page
     #Filter and remove Reference list added by the test.
     And the user enters "<Reference Name>" into "reference list: search box" on "Btris/Portal" page
-    And the verify if existing reference list data exist and remove it
+    #And the verify if existing reference list data exist and remove it
     And the user clicks on "custom search term list upload button" element on "Btris/Portal" page
     And the user enters "<Reference Name>" into "reference list: list name field" on "Btris/Portal" page
     And the user clicks on "reference list: overwrite checkbox" element on "Btris/Portal" page

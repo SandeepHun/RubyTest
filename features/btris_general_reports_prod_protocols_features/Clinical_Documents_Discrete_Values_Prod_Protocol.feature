@@ -26,7 +26,7 @@ Feature: Clinical Documents - Discrete Values Feature Prod Data
     #verify the select report page.
     And the user must see "Clinical Documents - Discrete Values Criteria" text in "btris: clinical documents: discrete values filter report page" field on "Btris/Portal" page
     #Clcik on the select report button.
-    And the user clicks on "btris: top select button" element on "Btris/Portal" page
+    And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
     And the user waits for 5 seconds
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
@@ -43,7 +43,7 @@ Feature: Clinical Documents - Discrete Values Feature Prod Data
     #Verify and validate the report display and click on the the image to view.
     And the user verify the clinical documents discrete values actual report on the table
     #Click on the download report button.
-    And the user clicks on "download full report button" element on "Btris/Portal" page
+    #And the user clicks on "download full report button" element on "Btris/Portal" page
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
@@ -80,7 +80,7 @@ Feature: Clinical Documents - Discrete Values Feature Prod Data
     #verify the select report page.
     And the user must see "Clinical Documents - Discrete Values Criteria" text in "btris: clinical documents: discrete values filter report page" field on "Btris/Portal" page
     #Clcik on the select report button.
-    And the user clicks on "btris: top select button" element on "Btris/Portal" page
+    And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
     And the user waits for 4 seconds
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
@@ -98,7 +98,7 @@ Feature: Clinical Documents - Discrete Values Feature Prod Data
     #Verify and validate the report display and click on the the image to view.
     And the user verify the clinical documents discrete values actual report on the table
     #Click on the download report button.
-    And the user clicks on "download full report button" element on "Btris/Portal" page
+    #And the user clicks on "download full report button" element on "Btris/Portal" page
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page

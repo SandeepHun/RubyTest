@@ -31,7 +31,7 @@ Feature: IRB Inclusion Enrollment Feature
     And the user waits for 4 seconds
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
     And the user waits for 5 seconds
-    And the user clicks on "irb inclusion select protocol" element on "Btris/Portal" page
+    And the user clicks on "irb inclusion select prod protocol" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
     And the user waits for 8 seconds
     #click on run report button.
@@ -52,8 +52,8 @@ Feature: IRB Inclusion Enrollment Feature
     And the user logged out of the system
 
     Examples:
-      | Subject       | Filtered Subject |
-      | BTRIS-TEST-01 | NIHCCTEST        |
+      | Subject    | Filtered Subject |
+      | 00-DK-0107 | COOPER           |
 
 
   @IRBInclusionEnrollment2
@@ -85,7 +85,7 @@ Feature: IRB Inclusion Enrollment Feature
     And the user waits for 4 seconds
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
     And the user waits for 5 seconds
-    And the user clicks on "irb inclusion search protocol2" element on "Btris/Portal" page
+    And the user clicks on "irb inclusion select prod protocol" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
     And the user waits for 8 seconds
     #click on run report button.
@@ -106,5 +106,5 @@ Feature: IRB Inclusion Enrollment Feature
     And the user logged out of the system
 
     Examples:
-      | Subject       | Filtered Subject |
-      | BTRIS-TEST-05 | NIHCCTEST        |
+      | Subject    | Filtered Subject |
+      | 00-DK-0107 | COOPER           |

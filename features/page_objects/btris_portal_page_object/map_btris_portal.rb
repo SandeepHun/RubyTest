@@ -81,7 +81,7 @@ def map_btris_portal
           #Clinical Documents - Discrete Values
           'clinical documents: discrete values'                           =>"xpath^^.//*[@data-test='9-radio-value'][contains(@class, 'custom-control custom-radio')]",
           'btris: clinical documents: discrete values filter report page' =>"xpath^^.//*[contains(text(), 'Clinical Documents - Discrete Values Criteria')]",
-          'btris: top select button'                                      =>"xpath^^.//*[contains(@data-test, 'criteria-next-button-top')]",
+          'btris: top select subject button'                                      =>"xpath^^.//*[contains(@data-test, 'criteria-next-button-top')]",
           'clinical documents: discrete report page'                      =>"xpath^^.//*[contains(text(), 'Clinical Documents - Discrete Values Results Preview - ')]",
           'labs: add clinical doc button'                                 =>"xpath^^.//*[contains(@data-test, 'add-red-terms-button')]",
           'red search for clinical doc'                                   =>"xpath^^.//*[@id='C114092_anchor'][contains(@data-test, 'red-node red-node-C114092')]",
@@ -148,6 +148,8 @@ def map_btris_portal
           'download pd report button'                                                 =>"xpath^^.//*[@data-test='download-results-button']",
           'irb inclusion enrollment search protocol'                                  =>"xpath^^.//*[@id='protocolSection']/div[2]/span",
           'irb inclusion select protocol'                                             =>"xpath^^.//*[@data-test='select-pcsl-18785-protocol-radio-value'][contains(@class, 'custom-control custom-radio')]",
+          'irb inclusion select prod protocol'                                        =>"xpath^^.//*[@data-test='select-pcsl-9807-protocol-radio-value'][contains(@class, 'custom-control custom-radio')]",
+
           'irb inclusion open report in new tab'                                      =>"xpath^^.//*[@data-test='open-in-new-window-button']",
           'irb inclusion search protocol2'                                            =>"xpath^^.//*[@data-test='select-pcsl-18789-protocol-radio-value'][contains(@class, 'custom-control custom-radio')]",
           # IRB Inclusion Enrollment

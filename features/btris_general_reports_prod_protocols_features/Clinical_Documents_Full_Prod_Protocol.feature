@@ -27,7 +27,7 @@ Feature: Clinical Documents - Full Text Feature Prod Data
     #verify the select report page.
     And the user must see "Clinical Documents - Full Text Criteria" text in "btris: clinical documents full tex report page" field on "Btris/Portal" page
     #Clcik on the select report button.
-    And the user clicks on "btris: top select button" element on "Btris/Portal" page
+    And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
     And the user waits for 4 seconds
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
@@ -42,7 +42,7 @@ Feature: Clinical Documents - Full Text Feature Prod Data
     #Verify report page.
     And the user must see "Clinical Documents - Full Text Results Preview - Standard" text in "clinical documents full tex result page" field on "Btris/Portal" page
     #Click on the download report button.
-    And the user clicks on "download full report button" element on "Btris/Portal" page
+    #And the user clicks on "download full report button" element on "Btris/Portal" page
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
@@ -80,7 +80,7 @@ Feature: Clinical Documents - Full Text Feature Prod Data
     #verify the select report page.
     And the user must see "Clinical Documents - Full Text Criteria" text in "btris: clinical documents full tex report page" field on "Btris/Portal" page
     #Clcik on the select report button.
-    And the user clicks on "btris: top select button" element on "Btris/Portal" page
+    And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
     And the user waits for 4 seconds
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
@@ -96,7 +96,7 @@ Feature: Clinical Documents - Full Text Feature Prod Data
     #Verify report page.
     And the user must see "Clinical Documents - Full Text Results Preview - Standard" text in "clinical documents full tex result page" field on "Btris/Portal" page
     #Click on the download report button.
-    And the user clicks on "download full report button" element on "Btris/Portal" page
+    #And the user clicks on "download full report button" element on "Btris/Portal" page
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page

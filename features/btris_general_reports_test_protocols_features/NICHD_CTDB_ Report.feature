@@ -26,7 +26,7 @@ Feature: NICHD - CTDB Report Feature
     #verify the select report page.
     And the user must see "NICHD/CTDB Forms Criteria" text in "btris: nichd ctdb forms page" field on "Btris/Portal" page
     #Clcik on the select report button.
-    And the user clicks on "btris: top select button" element on "Btris/Portal" page
+    And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
     #Enter and filter subject.
     And the user waits for 5 seconds
     And the user enters "00-CH-0127" into "fine protocol and subject search box" on "Btris/Portal" page
@@ -81,7 +81,7 @@ Feature: NICHD - CTDB Report Feature
     #verify the select report page.
     And the user must see "NICHD/CTDB Forms Criteria" text in "btris: nichd ctdb forms page" field on "Btris/Portal" page
     #Clcik on the select report button.
-    And the user clicks on "btris: top select button" element on "Btris/Portal" page
+    And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
     #Enter and filter subject.
     And the user waits for 4 seconds
     And the user enters "02-CH-0287" into "fine protocol and subject search box" on "Btris/Portal" page
