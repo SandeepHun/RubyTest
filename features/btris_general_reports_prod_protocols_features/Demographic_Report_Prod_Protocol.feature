@@ -2,7 +2,7 @@
 @Demographic_Report_Prod_Data
 Feature: BTRIS Demographic Test Prod Data
 
-  @Demographic1.1
+  @DemographicProd_Data1.1
 
   Scenario Outline: 4.1 Demographic Report.
   #Login to the system.

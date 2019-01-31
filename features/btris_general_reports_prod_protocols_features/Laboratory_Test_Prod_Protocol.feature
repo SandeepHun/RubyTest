@@ -1,8 +1,8 @@
 @BTRIS_Quick_Test
-  @Laboratory_Test
-Feature: Laboratory Feature
+  @Laboratory_Test_Prod_Data
+Feature: Laboratory Feature Prod Data
 
-  @Laboratory1
+  @LaboratoryProd_Data1
 
   Scenario Outline: 2.1 Laboratory Test Reports without red-search.
   #Login to the system.
@@ -58,7 +58,7 @@ Feature: Laboratory Feature
       | 00-C-0133 | ANDERSON         |
 
 
-  @Laboratory2
+  @LaboratoryProd_Data2
 
   Scenario Outline: 2.2 Laboratory Test Reports without demographic data.
   #Login to the system.

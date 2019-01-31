@@ -2,7 +2,7 @@
 @Clinical_Documents_Full_Text_Prod_Data
 Feature: Clinical Documents - Full Text Feature Prod Data
 
-  @ClinicalDocumentsFull1.1
+  @ClinicalDocumentsFullProd_Data1.1
 
   Scenario Outline: 9.1 Clinical Documents - Full Text Feature without red search.
   #Login to the system.
@@ -55,7 +55,7 @@ Feature: Clinical Documents - Full Text Feature Prod Data
       | Subject   | Filtered Subject |
       | 00-C-0133 | BEATON           |
 
-  @ClinicalDocumentsFull2.2
+  @ClinicalDocumentsFullProd_Data2.2
 
   Scenario Outline: 9.2 Clinical Documents - Full Text Feature with red search for Clinical documentsi.
   #Login to the system.

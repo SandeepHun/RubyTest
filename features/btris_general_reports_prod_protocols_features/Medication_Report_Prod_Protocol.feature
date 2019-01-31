@@ -1,8 +1,8 @@
 @BTRIS_Quick_Test
- @Medication_Report
-Feature: Medication Report
+ @Medication_Report_Prod_Data
+Feature: Medication Report Prod Data
 
-  @MedicationR1
+  @MedicationProd_DataR1
 
   Scenario Outline: 7.1 Medication Report (Medication Orders) Feature Test.
   #Login to the system.
@@ -58,7 +58,7 @@ Feature: Medication Report
       | 00-C-0018 | BOWEN            |
 
 
-  @MedicationR2
+  @MedicationProd_DataR2
 
   Scenario Outline: 7.2 Medication Report (Medication Administration) Feature Test.
   #Login to the system.

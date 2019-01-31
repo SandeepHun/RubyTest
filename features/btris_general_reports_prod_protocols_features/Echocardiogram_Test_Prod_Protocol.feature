@@ -2,7 +2,7 @@
 @Echocardiogram_Test_Prod_Data
 Feature: Echocardiogram Prod Data
 
-  @Echocardiogram1.1
+  @EchocardiogramProd_Data.1
 
   Scenario Outline: 14.1 Echocardiogram Report testing.
   #Login to the system.
@@ -54,7 +54,7 @@ Feature: Echocardiogram Prod Data
       | Subject    | Filtered Subject |
       | 00-DK-0107 | ARNETT           |
 
-  @Echocardiogram2.2
+  @EchocardiogramProd_Data2.2
 
   Scenario Outline: 14.1 Echocardiogram Report Including All echocardiogram Tests.
   #Login to the system.

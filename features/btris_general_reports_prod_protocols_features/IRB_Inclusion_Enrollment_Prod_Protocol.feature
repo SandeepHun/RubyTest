@@ -1,8 +1,8 @@
  @BTRIS_Quick_Test
-@IRB_Inclusion_Enrollment_Test
-Feature: IRB Inclusion Enrollment Feature
+@IRB_Inclusion_Enrollment_Test_Prod_Data
+Feature: IRB Inclusion Enrollment Feature Prod Data
 
-  @IRBInclusionEnrollment1
+  @IRBInclusionEnrollment_Prod_Data1
 
   Scenario Outline: 11.1 IRB Inclusion Enrollment.
   #Login to the system.
@@ -56,7 +56,7 @@ Feature: IRB Inclusion Enrollment Feature
       | 00-DK-0107 | COOPER           |
 
 
-  @IRBInclusionEnrollment2
+  @IRBInclusionEnrollmentProd_Data2
 
   Scenario Outline: 11.1 IRB Inclusion Enrollment with different protocol.
   #Login to the system.
