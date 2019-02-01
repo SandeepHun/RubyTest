@@ -81,15 +81,15 @@ Before do
     puts @browser.html
     puts @browser
     puts 'The OS Platform is ' +RUBY_PLATFORM
-    else
-  @browser = get_browser
-  @browser.window.resize_to(1366, 768)
-  @browser.driver.manage.window.maximize
-  puts @browser.html
-  puts @browser.browser
-  @browser.driver.manage.timeouts.implicit_wait=60
-  puts 'The OS platform is ' +RUBY_PLATFORM
-end
+  else
+    @browser = get_browser
+    @browser.window.resize_to(1366, 768)
+    @browser.driver.manage.window.maximize
+    puts @browser.html
+    puts @browser.browser
+    @browser.driver.manage.timeouts.implicit_wait=60
+    puts 'The OS platform is ' +RUBY_PLATFORM
+  end
 end
 After do
   @browser.close

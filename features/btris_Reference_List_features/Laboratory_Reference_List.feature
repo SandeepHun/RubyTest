@@ -2,7 +2,7 @@
 @ReferenceList_Laboratory_Test.1
 Feature: Laboratory Feature Reference List
 
-  @ReferenceListLaboratory1
+  @ReferenceListLaboratory1.1
 
   Scenario Outline: 1.1 Adding Search Term List Document and Reference List Documents.
   #Login to the system.
@@ -74,7 +74,7 @@ Feature: Laboratory Feature Reference List
       | Term1 Test Data DN | Term1 Test Data DN | BTRIS_TEST2 - TEST2 null | Lab Observation | Search_Tearm_List_Data.xlsx | Reference List DN | MM/DD/YYYY          | Reference_List_Template.xlsx |
 
 
-  @ReferenceListLaboratory2
+  @ReferenceListLaboratory2.2
 
   Scenario Outline: 1.2 Running Reports Search for Search Term List Document and Reference List Documents Reports, 10days.
   #Login to the system.
@@ -127,7 +127,7 @@ Feature: Laboratory Feature Reference List
 
 
 
-  @ReferenceListLaboratory3
+  @ReferenceListLaboratory3.3
 
   Scenario Outline: 1.3 Running Reports Search for Search Term List Document and Reference List Documents Reports, 15 days.
   #Login to the system.
@@ -180,7 +180,7 @@ Feature: Laboratory Feature Reference List
 
 
 
-  @ReferenceListLaboratory4
+  @ReferenceListLaboratory4.4
 
   Scenario Outline: 1.4 Running Reports Search for Search Term List Document and Reference List Documents Reports, 5 days.
   #Login to the system.
@@ -232,7 +232,7 @@ Feature: Laboratory Feature Reference List
       | Term1 Test Data DN | 5                | 30                    | Reference List DN | 30                   |
 
 
-  @ReferenceListLaboratory4
+  @ReferenceListLaboratory5.5
 
   Scenario Outline: 1.5 Running Reports Search for Search Term List Document and Reference List Documents Reports, 1 day.
   #Login to the system.
@@ -284,7 +284,7 @@ Feature: Laboratory Feature Reference List
       | Term1 Test Data DN | 1                | 15                    | Reference List DN | 15                   |
 
 
-  @ReferenceListLaboratory5
+  @ReferenceListLaboratory6.6
 
   Scenario Outline: 1.6 Running Reports Search for Search Term List Document and Reference List Documents Reports, 7 day.
   #Login to the system.
@@ -335,7 +335,7 @@ Feature: Laboratory Feature Reference List
       | Labs              | Number of Values | Number of Days Before | Reference Name    | Number of Days After |
       | Term1 Test Data DN | 7                | 365                   | Reference List DN | 365                  |
 
-  @ReferenceListLaboratory6
+  @ReferenceListLaboratory7.7
 
   Scenario Outline: 1.7 Running Reports Search for Search Term List Document and Reference List Documents Reports, 13 day.
   #Login to the system.
@@ -386,6 +386,7 @@ Feature: Laboratory Feature Reference List
       | Labs              | Number of Values | Number of Days Before | Reference Name    | Number of Days After |
       | Term1 Test Data DN | 13               | 200                   | Reference List DN | 150                  |
 
+  @ReferenceListLaboratory8.8
 
   Scenario Outline: 1.8 Running Reports Search for Search Term List Document and Reference List Documents Reports, 8 day.
   #Login to the system.
@@ -437,7 +438,7 @@ Feature: Laboratory Feature Reference List
       | Term1 Test Data DN | 8                | 200                   | Reference List DN | 150                  |
 
 
-  @ReferenceListLaboratory9.1
+  @ReferenceListLaboratory9.9
 
   Scenario Outline: 1.8 Adding Search Term List Document and Reference List Documents with negative MRN Number.
   #Login to the system.
