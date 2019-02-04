@@ -108,7 +108,9 @@ def map_btris_portal
           'pdf documents select button'                                 =>"xpath^^.//*[@id='app']/div[2]/div[1]/div[2]/div[2]/div/div/div/div/form/div[1]/div[2]/div/div[2]/button",
           'pdf documents result page'                                   =>"xpath^^.//*[contains(text(), 'PDF Documents Results Preview -')]",
           'pdf documents search subject'                                =>"xpath^^.//*[contains(text(), 'ABOU-ANTOUN, SAMI NASSR')]",
+          'search subject s4'                                           =>"xpath^^.//*[contains(@data-test, 'results-preview-table')]//*[contains(text(), 'AABERG, ANNE MARIE')]",
           'search subject s2'                                           =>"xpath^^.//*[contains(@data-test, 'results-preview-table')]//*[contains(text(), 'NIHCCTEST, INNA NMN')]",
+          'search subject s3'                                           =>"xpath^^.//*[contains(@data-test, 'results-preview-table')]//*[contains(text(), 'BOWEN, JEANNE DOLORES')]",
           'pdf documents buttom select button'                          =>"xpath^^.//*[@id='app']/div[2]/div[1]/div[2]/div[2]/div/div/div/div/form/div[2]/div/div[4]/div[2]/button",
           #Vital signs
           'btris: vital signs test'                                     =>"xpath^^.//*[@id='generalRpts']/div/ul/li[17]/div/label",

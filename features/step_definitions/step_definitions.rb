@@ -1386,6 +1386,27 @@ And(/^the user verify the NIAAA report on the table$/) do
   end
 end
 
+And(/^the user verify the NIAAA prod protocol report on the table$/) do
+  record_found = false
+  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
+  if check_record_present > 2
+    #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
+    table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
+    #puts table_rows
+    (1..table_rows).each do |rows|
+      delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
+      #puts 'the row number is ' +delete_icons_row
+      new_document = "ALLEN, JACKIE TYRONE"
+      if delete_icons_row.downcase.eql? new_document.downcase
+        record_found = true
+        #del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
+        #puts 'Note! These are test data and not actual data, the Laboratory results are ' +del_obj
+      end
+    end
+    checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
+  end
+end
 
 And(/^the user verify the laboratory report on the table$/) do
   record_found = false
@@ -1705,6 +1726,28 @@ And(/^the user verify the nichd ctdb forms report on the table$/) do
   end
 end
 
+And(/^the user verify the nichd ctdb forms prod report on the table$/) do
+  record_found = false
+  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
+  if check_record_present > 2
+    #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
+    table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
+    #puts table_rows
+    (1..table_rows).each do |rows|
+      delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[4]"
+      #puts 'the row number is ' +delete_icons_row
+      new_document = "ARRINGTON, LEARLIE FAY"
+      if delete_icons_row.downcase.eql? new_document.downcase
+        record_found = true
+        #del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
+        #puts 'the MRN for the diagnosis results are ' +del_obj
+      end
+    end
+    checkpoint (record_found.eql? true), "No data found in table that matches the NICHD/CTDB Forms search"
+  end
+end
+
 And(/^the user verify the nichd ctdb forms report on the table with all protocol$/) do
   record_found = false
   table_path = ".//*[contains(@data-test, 'results-preview-table')]"
@@ -1771,6 +1814,29 @@ And(/^the user verify the vital signs report on the table$/) do
     checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
   end
 end
+
+And(/^the user verify the vital signs prod report on the table$/) do
+  record_found = false
+  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
+  if check_record_present > 2
+    #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
+    table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
+    puts table_rows
+    (1..table_rows).each do |rows|
+      delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
+      #puts 'the row number is ' +delete_icons_row
+      new_document = "ANDERSON, STEPHEN FOSTER"
+      if delete_icons_row.downcase.eql? new_document.downcase
+        record_found = true
+        del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
+        puts 'Note! these are test data and not actual data, the vital signs results are ' +del_obj
+      end
+    end
+    checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
+  end
+end
+
 
 Then(/^the user fines the page HTML/) do
   puts("inspect: #{@browser.inspect}")
@@ -1849,6 +1915,27 @@ And(/^the user verify the pulmonary report on the table$/) do
   end
 end
 
+And(/^the user verify the pulmonary prod report on the table$/) do
+  record_found = false
+  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
+  if check_record_present > 2
+    #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
+    table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
+    # puts table_rows
+    (1..table_rows).each do |rows|
+      delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
+      #puts 'the row number is ' +delete_icons_row
+      new_document = "BUEL, MEREDITH SHOWERS"
+      if delete_icons_row.downcase.eql? new_document.downcase
+        record_found = true
+        del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
+        puts 'Note! these are test data not actual data, the pulmonary results are ' +del_obj
+      end
+    end
+    checkpoint (record_found.eql? true), "No data found in table that matches the pulmonary search record"
+  end
+end
 
 And(/^the user verify the PFT Tests on "(.*)" data on "(.*)" page$/) do |field_name, page_name|
   # get the XPATH or CSS from page object file , Raises Error if not found
@@ -1917,6 +2004,29 @@ And(/^the user verify the pathology report on the table$/) do
   end
 end
 
+And(/^the user verify the pathology prod data report on the table$/) do
+  record_found = false
+  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
+  if check_record_present > 2
+    #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
+    table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
+    # puts table_rows
+    (1..table_rows).each do |rows|
+      delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
+      #puts 'the row number is ' +delete_icons_row
+      new_document = "ALDERMAN, LEWIS NMN"
+      if delete_icons_row.downcase.eql? new_document.downcase
+        record_found = true
+        #del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[1]"
+        # puts 'the MRN for the Laboratory results are ' +del_obj
+      end
+    end
+    checkpoint (record_found.eql? true), "No data found in table that matches the Pathology search subject"
+  end
+end
+
+
 And(/^the user verify the ekg report on the table$/) do
   record_found = false
   table_path = ".//*[contains(@data-test, 'results-preview-table')]"
@@ -1973,6 +2083,28 @@ And(/^the user verify the microbiology report on the table$/) do
       delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
       #puts 'the row number is ' +delete_icons_row
       new_document = "NIHCCTEST, PATIENT LAB INPATIENT 1"
+      if delete_icons_row.downcase.eql? new_document.downcase
+        record_found = true
+        del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
+        puts 'Note! these are test data and not actual data, the Microbiology results are ' +del_obj
+      end
+    end
+    checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
+  end
+end
+
+And(/^the user verify the microbiology prod protocol report on the table$/) do
+  record_found = false
+  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
+  if check_record_present > 2
+    #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
+    table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
+    puts table_rows
+    (1..table_rows).each do |rows|
+      delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
+      #puts 'the row number is ' +delete_icons_row
+      new_document = "BENASSI, ANGELA NMN"
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"

@@ -1,4 +1,4 @@
-@BTRIS_Quick_Test
+@BTRIS_Unstable_Test
 @MyPratice_Test
 Feature: Laboratory Feature
 
