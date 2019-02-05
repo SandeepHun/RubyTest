@@ -1,4 +1,4 @@
-@BTRIS_Quick_Test
+@BTRIS_Unstable_Test
 @Clinical_Documents_Full_Text
 Feature: Clinical Documents - Full Text Feature
 
