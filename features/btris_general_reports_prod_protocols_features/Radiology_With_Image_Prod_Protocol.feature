@@ -1,4 +1,4 @@
-@BTRIS_Quick_Test
+@BTRIS_Unstable_Test
 @Radiology_With_Image_Prod_Data
   Feature: BTRIS Radiology Prod Data
 

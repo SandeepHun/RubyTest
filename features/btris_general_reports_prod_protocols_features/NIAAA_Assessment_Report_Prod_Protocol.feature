@@ -1,5 +1,5 @@
-@BTRIS_Quick_Test
-  @NIAAA_Assessment_Prod_Data
+@BTRIS_Unstable_Test
+@NIAAA_Assessment_Prod_Data
 Feature: NIAAA Assessment Prod Data
 
   @NIAAA_Prod_Data1

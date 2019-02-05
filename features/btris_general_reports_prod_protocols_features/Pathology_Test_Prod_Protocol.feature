@@ -1,4 +1,4 @@
-@BTRIS_Quick_Test
+@BTRIS_Unstable_Test
 @Pathology_Test_Prod_Data
 Feature: Pathology Test Feature Prod Data
 

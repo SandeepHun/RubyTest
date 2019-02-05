@@ -1,4 +1,4 @@
-@BTRIS_Quick_Test
+@BTRIS_Unstable_Test
 @Pulmonary_Function_Test_Prod_Data
 Feature: Pulmonary Function Test Prod Data
 
