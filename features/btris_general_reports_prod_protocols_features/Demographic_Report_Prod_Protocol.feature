@@ -1,4 +1,4 @@
-@BTRIS_Quick_Test
+@BTRIS_Quick_Prod_Test
 @Demographic_Report_Prod_Data
 Feature: BTRIS Demographic Test Prod Data
 
