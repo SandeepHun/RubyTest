@@ -18,7 +18,7 @@ Feature: BTRIS Demographic Test
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
     #click on the demographics Test.
-    And the user waits for 3 seconds
+    And the user waits for 5 seconds
     And the user clicks on "demographics test report" element on "Btris/Portal" page
     And the user waits for 3 seconds
     #Click on the create new report button.

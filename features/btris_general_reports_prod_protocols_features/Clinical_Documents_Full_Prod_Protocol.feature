@@ -18,7 +18,7 @@ Feature: Clinical Documents - Full Text Feature Prod Data
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
     #click on the Clinical Documents: full tex Test.
-    And the user waits for 3 seconds
+    And the user waits for 5 seconds
     And the user clicks on "btris: clinical documents full tex test" element on "Btris/Portal" page
     And the user waits for 3 seconds
     #Click on the create new report button.

@@ -18,11 +18,12 @@
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
     #click on the radiology test.
-    And the user waits for 3 seconds
+    And the user waits for 4 seconds
     And the user clicks on "btris: radiology test" element on "Btris/Portal" page
     And the user waits for 3 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
+    And the user waits for 3 seconds
     #verify the select report page.
     And the user must see "Radiology Criteria" text in "btris: radiology filter report page" field on "Btris/Portal" page
     #Clcik on the select report button.
@@ -42,7 +43,7 @@
     #Verify report page.
     And the user must see "Radiology Results Preview - Standard" text in "radiology report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
-    And the user must see "NIHCCTEST, INNA NMN" text in "search subject s2" field on "Btris/Portal" page
+    And the user must see "BTRIS-TEST-03" text in "search subject pn1" field on "Btris/Portal" page
     #Click on the download report button.
     And the user clicks on "download full report button" element on "Btris/Portal" page
 #    And the user waits for 5 seconds
@@ -76,7 +77,7 @@
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
     #click on the radiology test.
-    And the user waits for 3 seconds
+    And the user waits for 4 seconds
     And the user clicks on "btris: radiology test" element on "Btris/Portal" page
     And the user waits for 3 seconds
     #Click on the create new report button.
@@ -100,7 +101,7 @@
     #Verify report page.
     And the user must see "Radiology Results Preview - Standard" text in "radiology report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
-    And the user must see "NIHCCTEST, INNA NMN" text in "search subject s2" field on "Btris/Portal" page
+    And the user must see "BTRIS-TEST-03" text in "search subject pn1" field on "Btris/Portal" page
     #Click on the download report button.
     And the user clicks on "download full report button" element on "Btris/Portal" page
 #    And the user waits for 5 seconds

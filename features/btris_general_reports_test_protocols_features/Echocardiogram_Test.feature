@@ -31,7 +31,7 @@ Feature: Echocardiogram
     And the user waits for 6 seconds
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
-    And the user waits for 4 seconds
+    And the user waits for 5 seconds
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user waits for 2 seconds
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
@@ -75,7 +75,7 @@ Feature: Echocardiogram
     And the user waits for 3 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
-    And the user waits for 5 seconds
+    And the user waits for 7 seconds
     #verify the select report page.
     And the user must see "Echocardiogram Criteria" text in "btris: echocardiogram report page" field on "Btris/Portal" page
     #Click on select all Echocardiogram Test.Scenario:
@@ -86,7 +86,7 @@ Feature: Echocardiogram
     And the user waits for 7 seconds
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
-    And the user waits for 4 seconds
+    And the user waits for 5 seconds
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user waits for 2 seconds
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page

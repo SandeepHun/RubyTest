@@ -103,7 +103,7 @@ Feature: PDF Documents Report Feature Prod Data
     #Verify report page.
     And the user must see "PDF Documents Results Preview - Standard" text in "pdf documents result page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
-    And the user must see "BOWEN, JEANNE DOLORES" text in "search subject s3" field on "Btris/Portal" page
+    And the user must see "00-C-0018" text in "search subject s3" field on "Btris/Portal" page
     #And the user verify the pdf documents report on the table
     #Click on the download report button.
     #And the user clicks on "download full report button" element on "Btris/Portal" page

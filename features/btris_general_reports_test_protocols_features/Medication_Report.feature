@@ -18,7 +18,7 @@ Feature: Medication Report
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
     #click on the medication report Test.
-    And the user waits for 3 seconds
+    And the user waits for 4 seconds
     And the user clicks on "btris: medication test" element on "Btris/Portal" page
     And the user waits for 3 seconds
     #Click on the create new report button.

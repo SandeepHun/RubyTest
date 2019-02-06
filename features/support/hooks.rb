@@ -71,7 +71,7 @@ Before do
     @browser.driver.manage.window.resize_to(1600, 900)
     @browser.goto "https://btrisportal.cc.nih.gov"
     #@browser.driver.manage.window.maximize
-    @browser.driver.manage.timeouts.implicit_wait=40
+    @browser.driver.manage.timeouts.implicit_wait=60
     puts("inspect: #{@browser.inspect}")
     puts("status : #{@browser.status}")
     puts("text   : #{@browser.text}")

@@ -42,7 +42,7 @@
     #Verify report page.
     And the user must see "Radiology Results Preview - Standard" text in "radiology report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
-    And the user must see "AABERG, ANNE MARIE" text in "search subject s4" field on "Btris/Portal" page
+    And the user must see "00-C-0069" text in "search subject s4" field on "Btris/Portal" page
     #Click on the download report button.
     #And the user clicks on "download full report button" element on "Btris/Portal" page
     #Sign out.
@@ -92,7 +92,7 @@
     #Verify report page.
     And the user must see "Radiology Results Preview - Standard" text in "radiology report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
-    And the user must see "AABERG, ANNE MARIE" text in "search subject s4" field on "Btris/Portal" page
+    And the user must see "00-C-0069" text in "search subject s4" field on "Btris/Portal" page
     #Click on the download report button.
     #And the user clicks on "download full report button" element on "Btris/Portal" page
     #Sign out.
