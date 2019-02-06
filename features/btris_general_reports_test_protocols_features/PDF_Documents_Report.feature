@@ -23,11 +23,11 @@ Feature: PDF Documents Report Feature
     And the user waits for 3 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
+    And the user waits for 6 seconds
     #verify the select report page.
     And the user must see "PDF Documents Criteria" text in "btris: pdf documents page" field on "Btris/Portal" page
     #Clcik on the select report button.
     #And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
-    And the user waits for 2 seconds
     #Click on Select All for PDF/Scanned Documents.
     And the user clicks on "pdf documents select all button" element on "Btris/Portal" page
     And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
@@ -40,7 +40,7 @@ Feature: PDF Documents Report Feature
     And the user waits for 8 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
-    And the user waits for 25 seconds
+    And the user waits for 28 seconds
    #Verify the document report table.
     And the user must see "Subject Name" text in "diagnosis report table: subject name column" field on "Btris/Portal" page
     #Verify report page.
@@ -81,9 +81,9 @@ Feature: PDF Documents Report Feature
     And the user waits for 3 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
+    And the user waits for 7 seconds
     #verify the select report page.
     And the user must see "PDF Documents Criteria" text in "btris: pdf documents page" field on "Btris/Portal" page
-    And the user waits for 3 seconds
     #Click on Select All for PDF/Scanned Documents.
     And the user clicks on "pdf documents select all button" element on "Btris/Portal" page
     #Clcik on the select report button.
@@ -103,7 +103,7 @@ Feature: PDF Documents Report Feature
     #Verify report page.
     And the user must see "PDF Documents Results Preview - Standard" text in "pdf documents result page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
-    And the user must see "NIHCCTEST, INNA NMN" text in "search subject s2" field on "Btris/Portal" page
+    And the user must see "BTRIS-TEST-05" text in "search subject pn" field on "Btris/Portal" page
     #And the user verify the pdf documents report on the table
     #Click on the download report button.
     #And the user clicks on "download full report button" element on "Btris/Portal" page

@@ -18,7 +18,7 @@ Feature: Vital Signs Report
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
     #click on the Vital Signs Test.
-    And the user waits for 3 seconds
+    And the user waits for 4 seconds
     And the user clicks on "btris: vital signs test" element on "Btris/Portal" page
     And the user waits for 3 seconds
     #Click on the create new report button.
@@ -30,7 +30,7 @@ Feature: Vital Signs Report
     And the user waits for 5 seconds
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
-    And the user waits for 2 seconds
+    And the user waits for 4 seconds
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
     And the user waits for 8 seconds
@@ -75,7 +75,7 @@ Feature: Vital Signs Report
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
     #click on the Vital Signs Test.
-    And the user waits for 3 seconds
+    And the user waits for 4 seconds
     And the user clicks on "btris: vital signs test" element on "Btris/Portal" page
     And the user waits for 3 seconds
     #Click on the create new report button.
