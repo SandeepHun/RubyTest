@@ -1,5 +1,5 @@
-@BTRIS_Quick_Test
-  @Laboratory_Test_Prod_Data
+@BTRIS_Quick_Prod_Test
+@Laboratory_Test_Prod_Data
 Feature: Laboratory Feature Prod Data
 
   @LaboratoryProd_Data1

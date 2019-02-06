@@ -1,4 +1,4 @@
-@BTRIS_Unstable_Test
+@BTRIS_Quick_Prod_Test
 @Vital_Signs_Report_Prod_Data
 Feature: Vital Signs Report Prod Data
 

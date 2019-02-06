@@ -1,4 +1,4 @@
-@BTRIS_Quick_Test
+@BTRIS_Quick_Prod_Test
 @Echocardiogram_Test_Prod_Data
 Feature: Echocardiogram Prod Data
 

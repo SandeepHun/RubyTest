@@ -1,4 +1,4 @@
-@BTRIS_Quick_Test
+@BTRIS_Quick_Prod_Test
 @EKG_Test_Report_Prod_Data
 Feature: EKG Test Feature Prod Data
 
