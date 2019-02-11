@@ -149,224 +149,6 @@ And(/^the user delete existing meat record if any exist$/) do
   end
 end
 
-And(/^the user "(.*)" New Meat Slaughter with Sub Class-"(.*)",Head Count-"(.*)",Live Weight-"(.*)" and Dressed Weight-"(.*)" if not present on "(.*)" page$/) do |action, sub_class, head_count, live_weight, dressed_weight, page|
-  sleep 2
-  table_path = ".//*[@id='ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_MeatSlaughterSummaryControl_rgMeatSlaughter_ctl00']"
-  sub_class_match = 'false'
-  record_found = 'false'
-  if action.downcase.eql? 'adds'
-    check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
-    if check_record_present > 2
-      table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr[@class='rgRow']"
-      (1..table_rows).each do |rows|
-        sub_class_value = get_element_text 'xpath', "#{table_path}/tbody/tr[@class='rgRow'][#{rows}]/td[2]"
-        if sub_class_value.downcase.eql? sub_class.downcase
-          puts "New Slaughter cannot be added as #{sub_class} Sub Class already present in table"
-          sub_class_match = 'true'
-          break
-        end
-      end
-      # If there is records but sub class not added before then add new meat slaughter
-      if sub_class_match.downcase.eql? 'false'
-        # step "the user waits \"2\" seconds"
-        step "the user clicks on \"Add Slaughter Record link\" element on \"#{page}\" page"
-        # step "the user waits \"2\" seconds"
-        #Select Sub-Class from the drop-down.
-        step "the user selects \"#{sub_class}\" from \"sub-class drop-down\" combo box on \"#{page}\" page"
-        # step "the user selects \"#{sub_class}\" from \"sub-class drop-down\" on \"#{page}\" page"
-        step "the user waits \"4\" seconds"
-        #Locate the Head Count text-box and enter valid data.
-        # step "the user types \"#{head_count}\" into \"Head Count Text-Box\" on \"#{page}\" page"
-        step "the user enters \"#{head_count}\" into \"Head Count Text-Box\" on \"#{page}\" page"
-        #Locate the Live and Dressed weight text boxes and enter valid data.Scenario:
-        step "the user enters \"#{live_weight}\" into \"Live Weight Text-Box\" on \"#{page}\" page"
-        step "the user enters \"#{dressed_weight}\" into \"dressed weight text-box\" on \"#{page}\" page"
-        #Locate the Add button and click on it.
-        # step "the user clicks \"add button\" on \"#{page}\" page"
-        step "the user clicks the \"add button\" button on \"DispositionReporting/EstablishmentReporting\" page"
-        # step "the user waits \"2\" seconds
-
-      end
-    else
-      # If no records in slaughter table add new meat slaughter
-      # step "the user clicks \"Add Slaughter Record link\" on \"#{page}\" page"
-      # step "the user waits \"2\" seconds"
-      # #Select Sub-Class from the drop-down.
-      # step "the user selects \"#{sub_class}\" from \"sub-class drop-down\" on \"#{page}\" page"
-      # step "the user waits \"4\" seconds"
-      # #Locate the Head Count text-box and enter valid data.
-      # step "the user types \"#{head_count}\" into \"Head Count Text-Box\" on \"#{page}\" page"
-      # #Locate the Live and Dressed weight text boxes and enter valid data.Scenario:
-      # step "the user types \"#{live_weight}\" into \"Live Weight Text-Box\" on \"#{page}\" page"
-      # step "the user types \"#{dressed_weight}\" into \"dressed weight text-box\" on \"#{page}\" page"
-      # #Locate the Add button and click on it.
-      # step "the user clicks \"add button\" on \"#{page}\" page"
-      # step "the user waits \"2\" seconds"
-      step "the user clicks on \"Add Slaughter Record link\" element on \"#{page}\" page"
-      # step "the user waits \"2\" seconds"
-      #Select Sub-Class from the drop-down.
-      step "the user selects \"#{sub_class}\" from \"sub-class drop-down\" combo box on \"#{page}\" page"
-      # step "the user selects \"#{sub_class}\" from \"sub-class drop-down\" on \"#{page}\" page"
-      step "the user waits \"4\" seconds"
-      #Locate the Head Count text-box and enter valid data.
-      # step "the user types \"#{head_count}\" into \"Head Count Text-Box\" on \"#{page}\" page"
-      step "the user enters \"#{head_count}\" into \"Head Count Text-Box\" on \"#{page}\" page"
-      #Locate the Live and Dressed weight text boxes and enter valid data.Scenario:
-      step "the user enters \"#{live_weight}\" into \"Live Weight Text-Box\" on \"#{page}\" page"
-      step "the user enters \"#{dressed_weight}\" into \"dressed weight text-box\" on \"#{page}\" page"
-      #Locate the Add button and click on it.
-      # step "the user clicks \"add button\" on \"#{page}\" page"
-      step "the user clicks the \"add button\" button on \"DispositionReporting/EstablishmentReporting\" page"
-    end
-  else
-    # Perform Edit/Delete / APHIS Link and Print link click
-    check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
-    if check_record_present > 2
-      table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr[@class='rgRow']"
-      (1..table_rows).each do |rows|
-        sub_class_value = get_element_text 'xpath', "#{table_path}/tbody/tr[@class='rgRow'][#{rows}]/td[2]"
-        head_count_value = get_element_text 'xpath', "#{table_path}/tbody/tr[@class='rgRow'][#{rows}]/td[4]"
-        live_weight_value = get_element_text 'xpath', "#{table_path}/tbody/tr[@class='rgRow'][#{rows}]/td[5]"
-        dressed_weight_value = get_element_text 'xpath', "#{table_path}/tbody/tr[@class='rgRow'][#{rows}]/td[6]"
-        if (sub_class_value.downcase.eql? sub_class.downcase) && (head_count_value.to_i.eql? head_count.to_i) && (live_weight_value.to_i.eql? live_weight.to_i) && (dressed_weight_value.to_i.eql? dressed_weight.to_i)
-          record_found = 'true'
-          if action.downcase.eql? 'edit'
-            edit_obj = get_element_obj 'xpath', "#{table_path}/tbody/tr[@class='rgRow'][#{rows}]/td[9]/input"
-            click_web_element edit_obj
-          else
-            if action.downcase.eql? 'delete'
-              del_obj = get_element_obj 'xpath', "#{table_path}/tbody/tr[@class='rgRow'][#{rows}]/td[10]/input"
-              click_web_element del_obj
-              step 'the user dismisses browser pop-ups'
-              # sleep 2
-            else
-              if action.downcase.eql? 'click on aphis link'
-                aphis_link_obj = get_element_obj 'xpath', "#{table_path}/tbody/tr[@class='rgRow'][#{rows}]/td[8]/input"
-                click_web_element aphis_link_obj
-              else
-                if action.downcase.eql? 'click on print condemnation certification link'
-                  print_conf_obj = get_element_obj 'xpath', "#{table_path}/tbody/tr[@class='rgRow'][#{rows}]/td[11]/input"
-                  click_web_element print_conf_obj
-                else
-                  if action.downcase.eql? 'expands'
-                    expand_obj = get_element_obj 'xpath', "#{table_path}/tbody/tr[@class='rgRow'][#{rows}]/td[1]/input"
-                    click_web_element expand_obj
-                  end
-                end
-              end
-            end
-          end
-          sleep 2
-          break
-        end
-        checkpoint (record_found.downcase.eql? 'false'), "#{action} is Failed: Given Sub Class: #{sub_class} with Head Count: #{head_count}, Live Weight: #{live_weight} and Dressed Weight: #{dressed_weight} is not found in table"
-      end
-    else
-      fail "Failed: Sub Class #{sub_class} is not found in table, there is no records in table"
-    end
-  end
-end
-
-And(/^the user "(.*)" New Disposition Record under sub class-"(.*)" with Tag number-"(.*)",Tag Type-"(.*)",Condition-"(.*)",Disposition-"(.*)" and KIS-"(.*)" if not present on "(.*)" page$/) do |action, sub_class, tag_number, tag_type, condition, disposition, kis, page|
-  sleep 2
-  table_path = ".//*[@id='ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_pvMeat']/descendant::td[contains(text(),'#{sub_class}')]/following::table[1]"
-  tag_number_match = 'false'
-  record_found = 'false'
-  if action.downcase.eql? 'adds'
-    check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
-    if check_record_present > 2
-      table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
-      (1..table_rows).each do |rows|
-        tag_number_value = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[1]"
-        if tag_number_value.downcase.eql? tag_number.downcase
-          puts "New Disposition cannot be added as #{tag_number} Tag Number already present in table"
-          tag_number_match = 'true'
-          break
-        end
-      end
-      # If there is records but sub class not added before then add new meat slaughter
-      if tag_number_match.downcase.eql? 'false'
-        # step "the user waits \"2\" seconds"
-        add_disp_obj = 'xpath', "#{table_path}/descendant::span[contains(@id,'btnAddDispsoition')][1]"
-        click_web_element add_disp_obj
-        # step "the user waits \"2\" seconds"
-        step "the user clicks on \"Add Disposition Record for Meat\" element on \"DispositionReporting/EstablishmentReporting\" page"
-        # step "the user waits \"2\" seconds"
-        # And the user selects "<string>" from "<string>" combo box on "<string>" page
-        step "the user selects \"#{tag_type}\" from \"Tag Type\" combo box on \"DispositionReporting/EstablishmentReporting\" page"
-        #Locate and enter a Tag Number.
-        step "the user enters \"#{tag_number}\" into \"Tag Number\" on \"DispositionReporting/EstablishmentReporting\" page"
-        #Locate the Condition drop down and select a condition.Scenario:
-        step "the user selects \"#{condition}\" from \"Condition\" combo box on \"DispositionReporting/EstablishmentReporting\" page"
-        # step "the user waits \"4\" seconds"
-        #Locate and select Disposition from the Disposition drop down.Scenario:
-        step "the user selects \"#{disposition}\" from \"Disposition\" combo box on \"DispositionReporting/EstablishmentReporting\" page"
-        # step "the user waits \"2\" seconds"
-        #Select the Positive KIS radio button.
-        if kis.downcase.eql? 'nt'
-          step "the user clicks on \"KIS No Test\" element on \"DispositionReporting/EstablishmentReporting\" page"
-        end
-        #Locate and click on the Continue button and verify all the required fields.
-        step "the user clicks \"Add\" on \"DispositionReporting/EstablishmentReporting\" page"
-        step "the user waits \"2\" seconds"
-
-      end
-    else
-      # If no records in slaughter table add new meat slaughter
-      click_web_element 'xpath', "#{table_path}/descendant::span[contains(@id,'btnAddDispsoition')][1]"
-      step "the user waits \"2\" seconds"
-      step "the user selects \"#{tag_type}\" from \"Tag Type\" on \"DispositionReporting/EstablishmentReporting\" page"
-      #Locate and enter a Tag Number.
-      step "the user types \"#{tag_number}\" into \"Tag Number\" on \"DispositionReporting/EstablishmentReporting\" page"
-      #Locate the Condition drop down and select a condition.Scenario:
-      step "the user selects \"#{condition}\" from \"Condition\" on \"DispositionReporting/EstablishmentReporting\" page"
-      step "the user waits \"4\" seconds"
-      #Locate and select Disposition from the Disposition drop down.Scenario:
-      step "the user selects \"#{disposition}\" from \"Disposition\" on \"DispositionReporting/EstablishmentReporting\" page"
-      step "the user waits \"2\" seconds"
-      #Select the Positive KIS radio button.
-      if kis.downcase.eql? 'nt'
-        step "the user clicks \"KIS No Test\" on \"DispositionReporting/EstablishmentReporting\" page"
-      end
-      #Locate and click on the Continue button and verify all the required fields.
-      step "the user clicks the \"Add\" button on \"DispositionReporting/EstablishmentReporting\" page"
-      # step "the user waits \"2\" seconds"
-    end
-  else
-    # Perform Edit/Delete / APHIS Link and Print link click
-    check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
-    if check_record_present > 2
-      table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
-      (1..table_rows).each do |rows|
-        tag_number_value = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[1]"
-        tag_type_value = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
-        condition_value = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[4]"
-        disposition_value = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[5]"
-        kis_value = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[6]"
-        if (tag_number_value.downcase.eql? tag_number.downcase) && (tag_type_value.downcase.eql? tag_type.downcase) && (condition_value.downcase.eql? condition.downcase) && (disposition_value.downcase.eql? disposition.downcase) && (kis_value.downcase.eql? kis_value.downcase)
-          record_found = 'true'
-          if action.downcase.eql? 'edit'
-            edit_obj = get_element_obj 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[9]/input"
-            click_web_element edit_obj
-          else
-            if action.downcase.eql? 'delete'
-              del_obj = get_element_obj 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[10]/input"
-              click_web_element del_obj
-              step 'the user dismisses browser pop-ups'
-              sleep 2
-            end
-          end
-          sleep 2
-          break
-        end
-        checkpoint (record_found.downcase.eql? 'false'), "#{action} is Failed: Given Tag Number: #{tag_number} with Tag Type: #{tag_type}, Condition: #{condition} ,Disposition: #{disposition} and KIS: #{kis} is not found in table"
-      end
-    else
-      fail "Failed: Tag Number #{tag_number} is not found in table, there is no records in table"
-    end
-  end
-end
-
 And(/^the user delete Slaughter Record with if present$/) do
   table_path = ".//*[@id='ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_MeatSlaughterSummaryControl_rgMeatSlaughter_ctl00']"
   # Delete all slaughter record with given sub class in table
@@ -2159,29 +1941,34 @@ And(/^the user verify the echocardiogram prod report on the table$/) do
   end
 end
 
-And(/^the verify if existing search term data exist and remove it$/) do
-  if @browser.element(:xpath, ".//*[@id='app']//*[contains(text(), 'Term1 Test Data DN')]").present?
-    #Click on the check box for the search term.
+And(/^the user verify if existing "(.*)" exist and remove it$/) do |value|
+  page_text = @browser.html
+  if page_text.include? value
+  sleep 3
     step "the user clicks on \"custom search term check box\" element on \"Btris/Portal\" page"
+    sleep 3
     #Click on the remove button.Scenario:
     step "the user clicks on \"custom search term list remove button\" element on \"Btris/Portal\" page"
+    sleep 2
     step "the user clicks on \"custom search term list confirm remove\" element on \"Btris/Portal\" page"
-    step "the user waits for \"5\" seconds"
+    sleep 3
     else
-    puts 'No existing search term data added by the test exist'
+    puts "No existing search term data name #{value} added by the test exist"
   end
 end
 
-And(/^the verify if existing reference list data exist and remove it$/) do
-  if @browser.element(:xpath, ".//*[@id='app']//*[contains(text(), 'Reference List DN')]").present?
-    #Click on the check box for the search term.
+And(/^the user verify if existing "(.*)" data exist and remove it$/) do |value|
+  page_text = @browser.html
+  if page_text.include? value
+    sleep 2
     step "the user clicks on \"reference list: search list check box\" element on \"Btris/Portal\" page"
-    #Click on the remove button.Scenario:
+    sleep 2
     step "the user clicks on \"custom search term list remove button\" element on \"Btris/Portal\" page"
+    sleep 2
     step "the user clicks on \"custom search term list confirm remove\" element on \"Btris/Portal\" page"
-    step "the user waits for \"5\" seconds"
+    sleep 3
   else
-    puts 'No existing search term data added by the test exist'
+    puts "No existing #{value} added by the test exist which matches"
   end
 end
 
@@ -2233,7 +2020,38 @@ And(/^the user verify the reference list pathology report on the table$/) do
     end
 end
 
+And(/^the user verify if MRN "(.*)" has already been added and "(.*)" is display$/) do |value, message|
+  page_text = @browser.html
+  if page_text.include? message
+    step "the user clicks on \"back error\" element on \"Manage/Subjects\" page"
+    sleep 3
+    step "the user enters \"#{value}\" into \"manage subject protocol text box\" on \"Manage/Subjects\" page"
+    sleep 3
+    step "the user clicks on \"delete protocol icon\" element on \"Manage/Subjects\" page"
+    sleep 3
+    step "the user clicks on \"remove button\" element on \"Manage/Subjects\" page"
+    sleep 3
+    step "the user clicks on \"add subject button\" element on \"Manage/Subjects\" page"
+    sleep 2
+    step "the user enters \"#{value}\" into \"enter mrn text box\" text area box on \"Manage/Subjects\" page"
+    sleep 3
+    step "the user clicks on \"submit button\" element on \"Manage/Subjects\" page"
+    sleep 3
+    #step "the user waits for \"3\" seconds"
+  else
+    # Fail the steps and skips next steps
+    puts "The user didn't see error message, #{message} , text on the page which means the subject #{value} can be added"
+  end
+end
 
+And(/^the user verify if the "(.*)" is display on the table for "(.*)" added$/) do |message, value|
+  page_text = @browser.html
+  if page_text.include? message
+    puts "No subject found in table that matches the added subject #{value}"
+  else
+    puts "subject #{value}  was successfully added"
+  end
+end
 
 And(/^the user verify the reference list vital signs report on the table$/) do
   record_found = false
@@ -2325,15 +2143,17 @@ And(/^the user verify the radiology administration report with image$/) do
   end
 end
 
-And(/^the verify if existing subject list data exist and remove it$/) do
-  if @browser.element(:xpath, ".//*[@id='app']//*[contains(text(), 'Subject List Test Data DN')]").present?
-    #Click on the check box for the search term.
+And(/^the user verify if existing subject "(.*)" data exist and remove it$/) do |value|
+  page_text = @browser.html
+  if page_text.include? value
+    sleep 2
     step "the user clicks on \"subject list search check box\" element on \"Btris/Portal\" page"
-    #Click on the remove button.Scenario:
+    sleep 2
     step "the user clicks on \"subject list remove button\" element on \"Btris/Portal\" page"
+    sleep 2
     step "the user clicks on \"subject list confirm remove\" element on \"Btris/Portal\" page"
-    step "the user waits for \"5\" seconds"
+    sleep 3
   else
-    puts 'No existing search term data added by the test exist'
+    puts "The user didn't see #{value} text on page"
   end
 end

@@ -30,10 +30,10 @@ Feature: NIAAA Assessment
     And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
     And the user waits for 5 seconds
     #Enter and filter subject.
-    And the user enters "08-AA-0137" into "fine protocol and subject search box" on "Btris/Portal" page
+    And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
     And the user waits for 2 seconds
     And the user clicks on "protocol check button" element on "Btris/Portal" page
-    And the user enters "ADEBISI" into "fine filter subject search box" on "Btris/Portal" page
+    And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
     And the user waits for 8 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
@@ -50,8 +50,8 @@ Feature: NIAAA Assessment
     And the user logged out of the system
 
     Examples:
-      | Subject       | Filtered Subject |
-      | BTRIS-TEST-02 | NIHCCTEST        |
+      | Subject    | Filtered Subject |
+      | 08-AA-0137 | ADEBISI          |
 
 
   @NIAAA2
@@ -85,10 +85,10 @@ Feature: NIAAA Assessment
     And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
     #Enter and filter subject.
     And the user waits for 5 seconds
-    And the user enters "08-AA-0137" into "fine protocol and subject search box" on "Btris/Portal" page
+    And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
     And the user waits for 5 seconds
     And the user clicks on "protocol check button" element on "Btris/Portal" page
-    And the user enters "ADEBISI" into "fine filter subject search box" on "Btris/Portal" page
+    And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
     And the user waits for 8 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
@@ -105,5 +105,5 @@ Feature: NIAAA Assessment
     And the user logged out of the system
 
     Examples:
-      | Subject       | Filtered Subject |
-      | BTRIS-TEST-02 | NIHCCTEST        |
+      | Subject    | Filtered Subject |
+      | 08-AA-0137 | ADEBISI          |
