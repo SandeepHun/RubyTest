@@ -313,7 +313,7 @@ end
 When(/^user attached "(.*)" file into "(.*)" on "(.*)" page$/) do |attached_file_location, field_name, page_name|
   if RUBY_PLATFORM.downcase.include?("linux")
     puts 'Linux upload'
-  suite_dir_path="#{Dir.pwd}"+'/features/support/Documents/'+attached_file_location
+  suite_dir_path="#{Dir.pwd}"+'/home/jenkins/features/support/Documents/'+attached_file_location
 
   suite_dir_path = suite_dir_path.gsub! '/', '\\'
 

@@ -78,6 +78,7 @@ Feature: Echocardiogram Prod Data
     And the user waits for 5 seconds
     #verify the select report page.
     And the user must see "Echocardiogram Criteria" text in "btris: echocardiogram report page" field on "Btris/Portal" page
+    And the user waits for 4 seconds
     #Click on select all Echocardiogram Test.Scenario:
     And the user clicks on "select all echocardiogram tests checkbox" element on "Btris/Portal" page
     And the user waits for 4 seconds
