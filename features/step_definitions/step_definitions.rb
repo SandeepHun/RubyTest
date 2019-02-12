@@ -1444,14 +1444,14 @@ And(/^the user verify the clinical documents discrete values report on the table
     (1..table_rows).each do |rows|
       delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
       #puts 'the row number is ' +delete_icons_row
-      new_document = "NIHCCTEST, PATIENT LAB INPATIENT 1"
+      new_document = "NIHCCTEST, PATIENT EIGHT INPAT"
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
         puts 'Note! these are test data not actual data, the validated diagnosis results are ' +del_obj
       end
     end
-    checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
+    checkpoint (record_found.eql? true), "No data found in report table that matches the search criteria"
   end
 end
 
