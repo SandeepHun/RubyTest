@@ -63,7 +63,7 @@ Feature: Manage Protocol Feature
     #Verify search result for the searched protocol.
     And the user must see "<Protocol>" text in "searched protocol table" field on "Manage/Subjects" page
     And the user clicks on "searched subject" element on "Manage/Subjects" page
-    And the user waits for 3 seconds
+    And the user waits for 4 seconds
     And the user must see "<Protocol>" text in "manage subject page" field on "Manage/Subjects" page
     And the user can see current value of "Consented Subjects" in "number of consented subjects" field on "Manage/Subjects" page
     And the user enters "<MRN>" into "subject search field" on "Manage/Subjects" page
@@ -110,7 +110,7 @@ Feature: Manage Protocol Feature
     And the user must see "<Protocol>" text in "manage subject page" field on "Manage/Subjects" page
     And the user can see current value of "Consented Subjects" in "number of consented subjects" field on "Manage/Subjects" page
     And the user enters "<MRN>" into "subject search field" on "Manage/Subjects" page
-    And the user waits for 3 seconds
+    And the user waits for 6 seconds
     And the user must see "<MRN>" text in "subject table" field on "Manage/Subjects" page
     And the user waits for 3 seconds
     And the user clicks on "subject consented switch" element on "Manage/Subjects" page
