@@ -11,7 +11,7 @@ Feature: Clinical Documents - Discrete Values Feature
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.
-    And the user waits for 4 seconds
+    And the user waits for 3 seconds
     And the user must see "Conditions of Use and Code of Conduct" text in "btris: accept page" field on "Btris/Portal" page
     #Click on the accept button.
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
@@ -54,7 +54,7 @@ Feature: Clinical Documents - Discrete Values Feature
 
     Examples:
       | Subject       | Filtered Subject |
-      | BTRIS-TEST-00 | NIHCCTEST        |
+      | BTRIS-TEST-04 | NIHCCTEST        |
 
   @ClinicalDocuments2
 
@@ -65,7 +65,7 @@ Feature: Clinical Documents - Discrete Values Feature
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.
-    And the user waits for 4 seconds
+    And the user waits for 3 seconds
     And the user must see "Conditions of Use and Code of Conduct" text in "btris: accept page" field on "Btris/Portal" page
     #Click on the accept button.
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
@@ -212,6 +212,6 @@ Feature: Clinical Documents - Discrete Values Feature
 
     Examples:
       | Subject       | Filtered Subject | Red Search Data | Search Type                    | Red Search Data 1                  | Search Type 1                  | Search Type 2                     | Red Search Data 2 | Search Type 3 | Red Search Data 3                                  | Red Search Data 4              | Red Search Data 5              | Red Search Data 6 |
-      | BTRIS-TEST-00 | NIHCCTEST        | Potassium Test  | Contains any of these keywords | Serial Research Testing (CC, CRIS) | Contains all of these keywords | Starts with any of these keywords | Serial (CC, CRIS) | Exact Phrase  | Serial Testing or Serial/Research Testing Document | Glasgow Coma Scale Observation | Glasgow Coma Scale Observation | Body  DTM         |
+      | BTRIS-TEST-04 | NIHCCTEST        | Potassium Test  | Contains any of these keywords | Serial Research Testing (CC, CRIS) | Contains all of these keywords | Starts with any of these keywords | Serial (CC, CRIS) | Exact Phrase  | Serial Testing or Serial/Research Testing Document | Glasgow Coma Scale Observation | Glasgow Coma Scale Observation | Body  DTM         |
 
 
