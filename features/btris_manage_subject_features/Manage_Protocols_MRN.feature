@@ -128,7 +128,7 @@ Feature: Manage Protocol Feature
     And the user logged out of the system
     Examples:
       | Protocol      | MRN     | Content Info          |
-      | BTRIS-TEST-00 | 4859613 | About Initial Consent |
+      | BTRIS-TEST-05 | 9990112 | About Initial Consent |
 
   @AddSubjects1.3
 
