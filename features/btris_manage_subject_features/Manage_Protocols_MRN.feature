@@ -1,4 +1,4 @@
-@BTRIS_Quick_Test
+@BTRIS_Unstable_Test
 @Manage_Protocol
 Feature: Manage Protocol Feature
 
