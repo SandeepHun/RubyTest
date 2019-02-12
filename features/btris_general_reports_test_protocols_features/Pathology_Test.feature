@@ -30,7 +30,7 @@ Feature: Pathology Test Feature
     #Enter and filter subject.
     And the user waits for 5 seconds
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
-    And the user waits for 3 seconds
+    And the user waits for 5 seconds
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
     And the user waits for 8 seconds
@@ -58,7 +58,7 @@ Feature: Pathology Test Feature
 
     Examples:
       | Subject       | Filtered Subject |
-      | BTRIS-TEST-00 | NIHCCTEST        |
+      | BTRIS-TEST-02 | NIHCCTEST        |
 
 
   @Pathology2
@@ -119,4 +119,4 @@ Feature: Pathology Test Feature
 
     Examples:
       | Subject       | Filtered Subject |
-      | BTRIS-TEST-00 | NIHCCTEST        |
+      | BTRIS-TEST-02 | NIHCCTEST        |
