@@ -49,13 +49,13 @@ Feature: Manage Protocol Feature
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.
-    And the user waits for 13 seconds
+    And the user waits for 4 seconds
     And the user must see "Conditions of Use and Code of Conduct" text in "btris: accept page" field on "Btris/Portal" page
     #Click on the accept button.
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on Manage Protocol.
     And the user clicks on "top navigation: manage subject" element on "Manage/Subjects" page
-    And the user waits for 8 seconds
+    And the user waits for 13 seconds
     #Search a protocol.
     And the user enters "<Protocol>" into "search protocol text box" on "Manage/Subjects" page
     And the user waits for 2 seconds
@@ -73,8 +73,19 @@ Feature: Manage Protocol Feature
     #And the user enters "Todays Date" into "initial consent date" on "Manage/Subjects" page
     And the user waits for 3 seconds
     And the user clicks on "back error" element on "Manage/Subjects" page
+
     #Sign out.
     And the user logged out of the system
+    Examples:
+      | Protocol      | MRN     |
+      | BTRIS-TEST-00 | 4859613 |
+
+
+
+  @ManagingProtocol2.2
+
+  Scenario Outline: 2.2 Managing and existing subject in a protocol.
+  #Login to the system.
     And the user waits for 3 seconds
     Given the user navigates to / on browser
     And the user must see "Log in to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
@@ -82,6 +93,9 @@ Feature: Manage Protocol Feature
     And the user login to the btris application
     #Verify the condition page to accespt it.
     And the user waits for 4 seconds
+    And the user must see "Conditions of Use and Code of Conduct" text in "btris: accept page" field on "Btris/Portal" page
+    #Click on the accept button.
+    And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on Manage Protocol.
     And the user clicks on "top navigation: manage subject" element on "Manage/Subjects" page
     And the user waits for 13 seconds
@@ -208,7 +222,7 @@ Feature: Manage Protocol Feature
     And the user logged out of the system
     Examples:
       | Protocol      | MRN     | Existing MRN Validation Message                       |
-      | BTRIS-TEST-00 | 4859613 | We've noticed that 1 MRN is already in BTRIS-TEST-00. |
+      | BTRIS-TEST-00 | 7806760 | We've noticed that 1 MRN is already in BTRIS-TEST-00. |
 
   @AddSubjects1.5
 
