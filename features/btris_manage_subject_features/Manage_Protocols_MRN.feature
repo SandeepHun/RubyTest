@@ -78,7 +78,7 @@ Feature: Manage Protocol Feature
     And the user logged out of the system
     Examples:
       | Protocol      | MRN     |
-      | BTRIS-TEST-00 | 4859613 |
+      | BTRIS-TEST-05 | 9990070 |
 
 
 
