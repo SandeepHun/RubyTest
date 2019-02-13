@@ -1,4 +1,4 @@
-@BTRIS_Quick_Test_no
+@BTRIS_Quick_Test
 @Manage_Protocol
 Feature: Manage Protocol Feature
 
@@ -66,6 +66,7 @@ Feature: Manage Protocol Feature
     And the user waits for 4 seconds
     And the user must see "<Protocol>" text in "manage subject page" field on "Manage/Subjects" page
     And the user can see current value of "Consented Subjects" in "number of consented subjects" field on "Manage/Subjects" page
+    And the user waits for 2 seconds
     And the user enters "<MRN>" into "subject search field" on "Manage/Subjects" page
     And the user waits for 3 seconds
     And the user must see "<MRN>" text in "subject table" field on "Manage/Subjects" page
@@ -272,7 +273,7 @@ Feature: Manage Protocol Feature
     #Sign out.
     And the user logged out of the system
     Examples:
-      | Protocol      | MRN     | New MRN Validation Message                                              | New MRN | Added Subject Success Message | Existing MRN Validation Message        | Protocol Validation Message |
-      | BTRIS-TEST-04 | 4859613 | The following 1 records are ready to be added to protocol BTRIS-TEST-04 | 4026792 | Success!                      | We've noticed that 1 MRN is already in | No subjects found           |
-      | BTRIS-TEST-04 | 4859613 | The following 1 records are ready to be added to protocol BTRIS-TEST-04 | 4018898 | Success!                      | We've noticed that 1 MRN is already in | No subjects found           |
-      | BTRIS-TEST-04 | 4859613 | The following 1 records are ready to be added to protocol BTRIS-TEST-04 | 4018886 | Success!                      | We've noticed that 1 MRN is already in | No subjects found           |
+      | Protocol      | New MRN Validation Message                                              | New MRN | Added Subject Success Message | Existing MRN Validation Message        | Protocol Validation Message |
+      | BTRIS-TEST-04 | The following 1 records are ready to be added to protocol BTRIS-TEST-04 | 4026792 | Success!                      | We've noticed that 1 MRN is already in | No subjects found           |
+      | BTRIS-TEST-04 | The following 1 records are ready to be added to protocol BTRIS-TEST-04 | 4018898 | Success!                      | We've noticed that 1 MRN is already in | No subjects found           |
+      | BTRIS-TEST-04 | The following 1 records are ready to be added to protocol BTRIS-TEST-04 | 4018886 | Success!                      | We've noticed that 1 MRN is already in | No subjects found           |
