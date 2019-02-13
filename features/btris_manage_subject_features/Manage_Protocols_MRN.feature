@@ -1,4 +1,4 @@
-@BTRIS_Unstable_Test
+@BTRIS_Quick_Test_no
 @Manage_Protocol
 Feature: Manage Protocol Feature
 
@@ -177,7 +177,7 @@ Feature: Manage Protocol Feature
     And the user logged out of the system
     Examples:
       | Protocol      | MRN     | New MRN Number      | MRN Validation Message 1             | Invalid MRN Number | MRN Validation Message 2               |
-      | BTRIS-TEST-00 | 4859613 | 656554,987675,98987 | We've noticed that 1 MRN is invalid. | 67654342           | We've noticed that 3 MRNs are invalid. |
+      | BTRIS-TEST-05 | 9990136 | 656554,987675,98987 | We've noticed that 1 MRN is invalid. | 67654342           | We've noticed that 3 MRNs are invalid. |
 
 
   @AddSubjects1.4

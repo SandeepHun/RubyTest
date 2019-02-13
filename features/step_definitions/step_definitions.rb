@@ -1908,7 +1908,7 @@ And(/^the user verify the echocardiogram report on the table$/) do
     (1..table_rows).each do |rows|
       delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
       #puts 'the row number is ' +delete_icons_row
-      new_document = "NIHCCTEST, PATIENTLLAA LLA"
+      new_document = "NIHCCTEST, PATIENT LAB INPAT DLM USE ONLY"
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
