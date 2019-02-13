@@ -52,7 +52,7 @@ Feature: Echocardiogram
 
     Examples:
       | Subject       | Filtered Subject |
-      | BTRIS-TEST-01 | NIHCCTEST        |
+      | BTRIS-TEST-04 | NIHCCTEST        |
 
   @Echocardiogram2
 
@@ -107,4 +107,4 @@ Feature: Echocardiogram
 
     Examples:
       | Subject       | Filtered Subject |
-      | BTRIS-TEST-01 | NIHCCTEST        |
+      | BTRIS-TEST-04 | NIHCCTEST        |
