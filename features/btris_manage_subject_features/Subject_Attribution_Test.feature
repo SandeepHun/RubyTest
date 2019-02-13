@@ -223,5 +223,5 @@ Feature: Manage Protocol Feature
     And the user logged out of the system
     Examples:
       | Protocol      | MRN     | Existing MRN Validation Message                       |
-      | BTRIS-TEST-00 | 7806760 | We've noticed that 1 MRN is already in BTRIS-TEST-00. |
+      | BTRIS-TEST-00 | 4129271 | We've noticed that 1 MRN is already in BTRIS-TEST-00. |
 

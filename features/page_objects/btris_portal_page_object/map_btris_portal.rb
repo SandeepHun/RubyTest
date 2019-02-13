@@ -269,6 +269,10 @@ def map_btris_portal
           'reference list pathology report filter page'                                       =>"xpath^^.//*[contains(text(), 'Pathology Criteria')]",
           'pathology and procedure report page'                                               =>"xpath^^.//*[contains(text(), 'Pathology Results Preview -')]",
 
+          #Pivot Count
+          'subjects count'                                                                    =>"xpath^^.//*[@data-test='subject-count']//*[@data-test='count']",
+          'records count'                                                                     =>"xpath^^.//*[@data-test='record-count']//*[@data-test='count']",
+          'report view drop_down'                                                             =>"xpath^^.//*[@id='report-output-format-select']",
 
       }
 end
