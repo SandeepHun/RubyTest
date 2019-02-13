@@ -82,6 +82,7 @@ Feature: Pathology Test Feature
     And the user waits for 3 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
+    And the user waits for 5 seconds
     #verify the select report page.
     And the user must see "Pathology Criteria" text in "btris: pathology report page" field on "Btris/Portal" page
     #Uncheck the select all pathology test.
