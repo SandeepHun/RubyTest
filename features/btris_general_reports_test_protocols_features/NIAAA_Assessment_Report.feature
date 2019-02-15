@@ -34,7 +34,7 @@ Feature: BTRIS NIAAA Assessment Test Report
     And the user waits for 1 seconds
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
-    And the user waits for 3 seconds
+    And the user waits for 8 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify assessment report results.
@@ -89,7 +89,7 @@ Feature: BTRIS NIAAA Assessment Test Report
     And the user waits for 1 seconds
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
-    And the user waits for 3 seconds
+    And the user waits for 8 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify assessment report results.
