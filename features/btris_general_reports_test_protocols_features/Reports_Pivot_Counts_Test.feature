@@ -1,6 +1,6 @@
 @BTRIS_Quick_Test
 @Pivot_Counts_Test
-Feature: Pivot Counts
+Feature: BTRIS Pivot Counts Test Report
 
   @EKG_Pivot_Counts1
 
@@ -28,10 +28,10 @@ Feature: Pivot Counts
     And the user must see "EKG Criteria" text in "btris: ekg report page" field on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "select ekg subject top button" element on "Btris/Portal" page
-    And the user waits for 5 seconds
+    And the user waits for 20 seconds
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
-    And the user waits for 2 seconds
+    And the user waits for 1 seconds
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
     And the user waits for 3 seconds
@@ -111,12 +111,12 @@ Feature: Pivot Counts
     #Clcik on the select report button.
     And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
     #Enter and filter subject.
-    And the user waits for 4 seconds
+    And the user waits for 20 seconds
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
-    And the user waits for 5 seconds
+    And the user waits for 1 seconds
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
-    And the user waits for 8 seconds
+    And the user waits for 3 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify the laboratory report table.

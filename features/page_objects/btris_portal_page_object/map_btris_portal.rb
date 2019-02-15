@@ -28,7 +28,7 @@ def map_btris_portal
           'radiology image display'                          =>"xpath^^.//*[@id='mainTab-0-tabCaptionPlace']",
           'demographic data check box'                       =>"xpath^^.//*[contains(@for, 'includeDemographics-checkbox')]",
           'open results in new tab button'                   =>"xpath^^.//*[@data-test='open-in-new-window-button']",
-          'protocol check button'                            =>"xpath^^.//*[contains(@data-test, 'protocol-checkbox')]",
+          'protocol check button'                            =>"xpath^^.//*[@data-test='protocol-checkbox']",
           #Laboratory Test.
           'laboratory test'                                  =>"xpath^^.//*[@data-test='4-radio-value'][contains(@class, 'custom-control custom-radio')]",
           'btris: laboratory filter report page'             =>"xpath^^.//*[contains(text(), 'Laboratory Criteria')]",

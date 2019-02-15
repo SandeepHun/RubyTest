@@ -1,6 +1,6 @@
 @BTRIS_Quick_Test
 @Radiology_With_Image
-  Feature: BTRIS Radiology
+  Feature: BTRIS BTRIS Radiology Report
 
   @Radiology1
 
@@ -29,12 +29,12 @@
     #Clcik on the select report button.
     And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
     #Enter and filter subject.
-    And the user waits for 4 seconds
+    And the user waits for 20 seconds
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
-    And the user waits for 5 seconds
+    And the user waits for 1 seconds
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
-    And the user waits for 8 seconds
+    And the user waits for 3 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify radiology report results.
@@ -46,14 +46,7 @@
     And the user must see "BTRIS-TEST-03" text in "search subject pn1" field on "Btris/Portal" page
     #Click on the download report button.
     And the user clicks on "download full report button" element on "Btris/Portal" page
-#    And the user waits for 5 seconds
-#    And the switch to new tab page
-#    And the user waits for 8 seconds
-#    #Verify and validate the image.
-#    And the user must see "<Radiology Image Name>" text in "radiology image display" field on "Btris/Portal" page
-#    #Verify image date
-#    And the user must see "6/6/2008" text in "report creation date" field on "Btris/Portal" page
-#    And the return to main page
+
     #Sign out.
     And the user logged out of the system
 
@@ -88,12 +81,12 @@
     And the user clicks on "demographic data check box" element on "Btris/Portal" page
     #Click on the select subject button.
     And the user clicks on "btris: select subject button" element on "Btris/Portal" page
-    And the user waits for 4 seconds
+    And the user waits for 20 seconds
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
-    And the user waits for 5 seconds
+    And the user waits for 1 seconds
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
-    And the user waits for 8 seconds
+    And the user waits for 3 seconds
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify radiology report results.
     And the user waits for 25 seconds
@@ -104,12 +97,6 @@
     And the user must see "BTRIS-TEST-03" text in "search subject pn1" field on "Btris/Portal" page
     #Click on the download report button.
     And the user clicks on "download full report button" element on "Btris/Portal" page
-#    And the user waits for 5 seconds
-#    And the switch to new tab page
-#    And the user must see "6/6/2008" text in "report creation date" field on "Btris/Portal" page
-#    #Verify and validate the image.
-#    And the user must see "<Radiology Image Name>" text in "radiology image display" field on "Btris/Portal" page
-#    And the return to main page
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
