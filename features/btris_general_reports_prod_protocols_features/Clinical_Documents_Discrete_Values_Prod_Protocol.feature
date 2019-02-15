@@ -1,6 +1,6 @@
 @BTRIS_Quick_Prod_Test
 @Clinical_Documents_Discrete_Prod_Data
-Feature: Clinical Documents - Discrete Values Feature Prod Data
+Feature: BTRIS Clinical Documents - Discrete Values Feature Prod Data
 
   @ClinicalDocumentsProd_Data1.1
 

@@ -1,6 +1,6 @@
 @BTRIS_Quick_Test
 @Vital_Signs_Report
-Feature: Vital Signs Report
+Feature: BTRIS Vital Signs Test Report
 
   @VitalSign1
 
@@ -27,13 +27,13 @@ Feature: Vital Signs Report
     And the user must see "Vital Signs Criteria" text in "btris: vital signs test page" field on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
-    And the user waits for 5 seconds
+    And the user waits for 18 seconds
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
-    And the user waits for 4 seconds
+    And the user waits for 1 seconds
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
-    And the user waits for 8 seconds
+    And the user waits for 3 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify the laboratory report table.
@@ -88,12 +88,12 @@ Feature: Vital Signs Report
     #Clcik on the select report button.
     And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
     #Enter and filter subject.
-    And the user waits for 4 seconds
+    And the user waits for 18 seconds
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
-    And the user waits for 5 seconds
+    And the user waits for 1 seconds
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
-    And the user waits for 8 seconds
+    And the user waits for 3 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify the laboratory report table.

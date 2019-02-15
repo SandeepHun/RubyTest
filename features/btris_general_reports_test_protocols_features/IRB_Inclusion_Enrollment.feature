@@ -1,6 +1,6 @@
  @BTRIS_Quick_Test
 @IRB_Inclusion_Enrollment_Test
-Feature: IRB Inclusion Enrollment Feature
+Feature: BTRIS IRB Inclusion Enrollment Test Report
 
   @IRBInclusionEnrollment1
 
@@ -18,7 +18,7 @@ Feature: IRB Inclusion Enrollment Feature
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
     #click on the IRB Inclusion Test.
-    And the user waits for 5 seconds
+    And the user waits for 3 seconds
     And the user clicks on "btris: irb inclusion enrollment test" element on "Btris/Portal" page
     And the user waits for 3 seconds
     #Click on the create new report button.
@@ -28,12 +28,12 @@ Feature: IRB Inclusion Enrollment Feature
     #Clcik on the select report button.
     And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
     #Enter and filter subject.
-    And the user waits for 4 seconds
+    And the user waits for 15 seconds
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
-    And the user waits for 5 seconds
+    And the user waits for 1 seconds
     And the user clicks on "irb inclusion select protocol" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
-    And the user waits for 8 seconds
+    And the user waits for 3 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify report page.
@@ -82,12 +82,12 @@ Feature: IRB Inclusion Enrollment Feature
     #Clcik on the select report button.
     And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
     #Enter and filter subject.
-    And the user waits for 4 seconds
+    And the user waits for 15 seconds
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
-    And the user waits for 5 seconds
+    And the user waits for 1 seconds
     And the user clicks on "irb inclusion search protocol2" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
-    And the user waits for 8 seconds
+    And the user waits for 3 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify report page.

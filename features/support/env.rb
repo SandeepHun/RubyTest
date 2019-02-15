@@ -46,8 +46,8 @@ def wait_for_element(obj)
   #  present? – Returns true if the element exists and is visible on the page , equivalent to visible and exists
   # visible? – If any parent element isn’t visible then we cannot write to the element. The only reliable way to determine this is to
   # iterate up the DOM element tree checking every element to make sure it’s visible.
-  # obj.exists?
-  # obj.visible?
+  #  obj.exists?
+  #  obj.visible?
   obj.wait_until_present
   obj.present?
   obj.enabled?

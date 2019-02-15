@@ -1,4 +1,4 @@
-@BTRIS_Unstable_Test
+@BTRIS_Unstable_Test_RL
 @ReferenceList_Vital_Signs_Test
 Feature: Vital Signs Feature Reference List
 
@@ -16,6 +16,7 @@ Feature: Vital Signs Feature Reference List
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
+    And the user waits for 3 seconds
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
     #click on the Vital Sign Test.
@@ -87,6 +88,7 @@ Feature: Vital Signs Feature Reference List
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
+    And the user waits for 3 seconds
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
     #click on the Vital Sign Test.
@@ -135,6 +137,7 @@ Feature: Vital Signs Feature Reference List
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
+    And the user waits for 3 seconds
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
     #click on the Vital Sign Test.
@@ -183,6 +186,7 @@ Feature: Vital Signs Feature Reference List
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
+    And the user waits for 3 seconds
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
     #click on the Vital Sign Test.
@@ -232,6 +236,7 @@ Feature: Vital Signs Feature Reference List
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
+    And the user waits for 3 seconds
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
     #click on the Vital Sign Test.
@@ -281,6 +286,7 @@ Feature: Vital Signs Feature Reference List
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
+    And the user waits for 3 seconds
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
     #click on the Vital Sign Test.
@@ -331,6 +337,7 @@ Feature: Vital Signs Feature Reference List
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
+    And the user waits for 3 seconds
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
     #click on the Vital Sign Test.
@@ -382,6 +389,7 @@ Feature: Vital Signs Feature Reference List
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
+    And the user waits for 3 seconds
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
     #click on the Vital Sign Test.
@@ -433,6 +441,7 @@ Feature: Vital Signs Feature Reference List
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
+    And the user waits for 3 seconds
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
     #click on the Vital Sign Test.

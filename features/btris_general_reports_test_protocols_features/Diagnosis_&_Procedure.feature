@@ -1,6 +1,6 @@
 @BTRIS_Quick_Test
  @Diagnosis_And_Procedure
-Feature: Diagnosis & Procedure Feature
+Feature: BTRIS Diagnosis & Procedure Test Report
 
   @Diagnosis1
 
@@ -28,12 +28,12 @@ Feature: Diagnosis & Procedure Feature
     #Clcik on the select report button.
     And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
     #Enter and filter subject.
-    And the user waits for 5 seconds
+    And the user waits for 20 seconds
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
-    And the user waits for 5 seconds
+    And the user waits for 1 seconds
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
-    And the user waits for 8 seconds
+    And the user waits for 3 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify the diagnosis report table.
@@ -82,13 +82,13 @@ Feature: Diagnosis & Procedure Feature
     And the user must see "Diagnosis & Procedure Criteria" text in "btris: diagnosis and procedure filter report page" field on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
-    And the user waits for 6 seconds
+    And the user waits for 20 seconds
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
-    And the user waits for 3 seconds
+    And the user waits for 1 seconds
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
-    And the user waits for 8 seconds
+    And the user waits for 3 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify the diagnosis report table.

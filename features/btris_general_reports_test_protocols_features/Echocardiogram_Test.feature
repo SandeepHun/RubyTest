@@ -1,6 +1,6 @@
 @BTRIS_Quick_Test
   @Echocardiogram_Test
-Feature: Echocardiogram
+Feature: BTRIS Echocardiogram Test Report
 
   @Echocardiogram1
 
@@ -11,7 +11,7 @@ Feature: Echocardiogram
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.
-    And the user waits for 4 seconds
+    And the user waits for 3 seconds
     And the user must see "Conditions of Use and Code of Conduct" text in "btris: accept page" field on "Btris/Portal" page
     #Click on the accept button.
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
@@ -28,14 +28,13 @@ Feature: Echocardiogram
     And the user must see "Echocardiogram Criteria" text in "btris: echocardiogram report page" field on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
-    And the user waits for 6 seconds
+    And the user waits for 15 seconds
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
-    And the user waits for 5 seconds
+    And the user waits for 1 seconds
     And the user clicks on "protocol check button" element on "Btris/Portal" page
-    And the user waits for 2 seconds
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
-    And the user waits for 8 seconds
+    And the user waits for 3 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify assessment report results.
@@ -83,14 +82,13 @@ Feature: Echocardiogram
     And the user waits for 4 seconds
     #Clcik on the select report button.
     And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
-    And the user waits for 7 seconds
+    And the user waits for 15 seconds
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
-    And the user waits for 5 seconds
+    And the user waits for 3 seconds
     And the user clicks on "protocol check button" element on "Btris/Portal" page
-    And the user waits for 2 seconds
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
-    And the user waits for 8 seconds
+    And the user waits for 3 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify assessment report results.

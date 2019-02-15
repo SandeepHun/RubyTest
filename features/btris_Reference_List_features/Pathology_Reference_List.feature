@@ -1,4 +1,4 @@
-@BTRIS_Unstable_Test
+@BTRIS_Unstable_Test_RL
 @ReferenceList_Pathology_Test.2
 Feature: Laboratory Feature Reference List
 
@@ -16,7 +16,7 @@ Feature: Laboratory Feature Reference List
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
-    And the user waits for 2 seconds
+    And the user waits for 3 seconds
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
     #click on the Pathology Test.
@@ -90,7 +90,7 @@ Feature: Laboratory Feature Reference List
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
-    And the user waits for 2 seconds
+    And the user waits for 3 seconds
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
     #click on the Pathology Test.
@@ -143,7 +143,7 @@ Feature: Laboratory Feature Reference List
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
-    And the user waits for 2 seconds
+    And the user waits for 3 seconds
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
     #click on the Pathology Test.
@@ -196,7 +196,7 @@ Feature: Laboratory Feature Reference List
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
-    And the user waits for 2 seconds
+    And the user waits for 3 seconds
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
     #click on the Pathology Test.
@@ -248,7 +248,7 @@ Feature: Laboratory Feature Reference List
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
-    And the user waits for 2 seconds
+    And the user waits for 3 seconds
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
     #click on the Pathology Test.
@@ -351,7 +351,7 @@ Feature: Laboratory Feature Reference List
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
-    And the user waits for 2 seconds
+    And the user waits for 3 seconds
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
     #click on the Pathology Test.
@@ -402,7 +402,7 @@ Feature: Laboratory Feature Reference List
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
-    And the user waits for 2 seconds
+    And the user waits for 3 seconds
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
     #click on the Pathology Test.
@@ -454,7 +454,7 @@ Feature: Laboratory Feature Reference List
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
-    And the user waits for 2 seconds
+    And the user waits for 3 seconds
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
     #click on the Pathology Test.

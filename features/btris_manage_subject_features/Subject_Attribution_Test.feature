@@ -1,6 +1,6 @@
 @BTRIS_Quick_Test
 @Manage_Protocol
-Feature: Manage Protocol Feature
+Feature: BTRIS Subject Attribution Test Report
 
   @ManagingProtocol.1
 

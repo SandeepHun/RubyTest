@@ -1,6 +1,6 @@
 @BTRIS_Quick_Test
  @NICHD_CTDB_Report_Test
-Feature: NICHD - CTDB Report Feature
+Feature: BTRIS NICHD - CTDB Test Report
 
   @NICHD_CTDB_Report1
 
@@ -29,12 +29,12 @@ Feature: NICHD - CTDB Report Feature
     #Clcik on the select report button.
     And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
     #Enter and filter subject.
-    And the user waits for 5 seconds
+    And the user waits for 15 seconds
     And the user enters "00-CH-0127" into "fine protocol and subject search box" on "Btris/Portal" page
-    And the user waits for 5 seconds
+    And the user waits for 1 seconds
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user enters "ABDELGHANI" into "fine filter subject search box" on "Btris/Portal" page
-    And the user waits for 8 seconds
+    And the user waits for 3 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify the document report table.
@@ -85,12 +85,12 @@ Feature: NICHD - CTDB Report Feature
     #Clcik on the select report button.
     And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
     #Enter and filter subject.
-    And the user waits for 4 seconds
+    And the user waits for 15 seconds
     And the user enters "02-CH-0287" into "fine protocol and subject search box" on "Btris/Portal" page
-    And the user waits for 5 seconds
+    And the user waits for 1 seconds
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user enters "ANDERSON" into "fine filter subject search box" on "Btris/Portal" page
-    And the user waits for 8 seconds
+    And the user waits for 3 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify the document report table.
