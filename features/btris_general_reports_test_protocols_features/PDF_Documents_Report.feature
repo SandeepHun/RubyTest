@@ -32,12 +32,12 @@ Feature: BTRIS PDF Documents Test Report
     And the user clicks on "pdf documents select all button" element on "Btris/Portal" page
     And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
     #Enter and filter subject.
-    And the user waits for 15 seconds
+    And the user waits for 18 seconds
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
     And the user waits for 1 seconds
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
-    And the user waits for 3 seconds
+    And the user waits for 8 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     And the user waits for 28 seconds
@@ -94,7 +94,7 @@ Feature: BTRIS PDF Documents Test Report
     And the user waits for 1 seconds
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
-    And the user waits for 3 seconds
+    And the user waits for 8 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     And the user waits for 25 seconds
