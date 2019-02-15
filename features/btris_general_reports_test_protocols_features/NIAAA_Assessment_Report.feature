@@ -28,7 +28,7 @@ Feature: BTRIS NIAAA Assessment Test Report
     And the user must see "NIAAA Assessment Report Criteria" text in "btris: assessment filter report page" field on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
-    And the user waits for 15 seconds
+    And the user waits for 21 seconds
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
     And the user waits for 1 seconds
@@ -38,7 +38,7 @@ Feature: BTRIS NIAAA Assessment Test Report
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify assessment report results.
-    And the user waits for 25 seconds
+    And the user waits for 27 seconds
     And the user must see "Subject Name" text in "assessment report table: subject name column" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "NIAAA Assessment Report Results Preview - Standard" text in "assessment report page" field on "Btris/Portal" page
@@ -84,9 +84,9 @@ Feature: BTRIS NIAAA Assessment Test Report
     #Clcik on the select report button.
     And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
     #Enter and filter subject.
-    And the user waits for 15 seconds
+    And the user waits for 21 seconds
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
-    And the user waits for 1 seconds
+    And the user waits for 3 seconds
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
     And the user waits for 8 seconds
