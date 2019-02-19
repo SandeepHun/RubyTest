@@ -86,15 +86,14 @@ Feature: BTRIS Laboratory Test Report
     #Clcik on the select report button.
     And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
     #Enter and filter subject.
-    And the user waits for 7 seconds
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
-    And the user waits for 1 seconds
+    And the user remembers the value of "protocol verify count" field into "Number OF Subjects" on "Btris/Portal" page
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
     And the user waits for 8 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
-    And the user waits for 25 seconds
+    And the user remembers the value of "report table: collected data time column" field into "Collected Date Time" on "Btris/Portal" page
     #Verify the laboratory report table.
     And the user must see "Collected Date Time" text in "report table: collected data time column" field on "Btris/Portal" page
     #Verify report page.
@@ -140,17 +139,16 @@ Feature: BTRIS Laboratory Test Report
     And the user must see "Laboratory Criteria" text in "btris: laboratory filter report page" field on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
-    And the user waits for 7 seconds
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
-    And the user waits for 2 seconds
+    And the user remembers the value of "protocol verify count" field into "Number OF Subjects" on "Btris/Portal" page
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
     And the user waits for 8 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify the laboratory report table.
-    And the user waits for 25 seconds
+    And the user remembers the value of "report table: collected data time column" field into "Collected Date Time" on "Btris/Portal" page
     And the user must see "Collected Date Time" text in "report table: collected data time column" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
