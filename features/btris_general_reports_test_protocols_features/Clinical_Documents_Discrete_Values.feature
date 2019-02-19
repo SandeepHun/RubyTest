@@ -27,7 +27,7 @@ Feature: BTRIS Clinical Documents - Discrete Values Test Report
     And the user must see "Clinical Documents - Discrete Values Criteria" text in "btris: clinical documents: discrete values filter report page" field on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
-    And the user waits for 21 seconds
+    And the user waits for 6 seconds
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
     And the user waits for 1 seconds
@@ -83,7 +83,7 @@ Feature: BTRIS Clinical Documents - Discrete Values Test Report
     And the user must see "Clinical Documents - Discrete Values Criteria" text in "btris: clinical documents: discrete values filter report page" field on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
-    And the user waits for 21 seconds
+    And the user waits for 6 seconds
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
     And the user waits for 1 seconds

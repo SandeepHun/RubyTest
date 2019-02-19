@@ -27,7 +27,7 @@ Feature: BTRIS Vital Signs Test Report
     And the user must see "Vital Signs Criteria" text in "btris: vital signs test page" field on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
-    And the user waits for 25 seconds
+    And the user waits for 7 seconds
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
     And the user waits for 3 seconds
@@ -88,7 +88,7 @@ Feature: BTRIS Vital Signs Test Report
     #Clcik on the select report button.
     And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
     #Enter and filter subject.
-    And the user waits for 25 seconds
+    And the user waits for 7 seconds
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
     And the user waits for 3 seconds
     And the user clicks on "protocol check button" element on "Btris/Portal" page
@@ -103,9 +103,6 @@ Feature: BTRIS Vital Signs Test Report
     And the user must see "Vital Signs Results Preview - Standard" text in "vital signs test result page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
     And the user verify the vital signs report on the table
-    #Click on the download report button.
-    #And the user clicks on "download full report button" element on "Btris/Portal" page
-    #click on the open report in another tab button.
     #And the user clicks button with text "Open in New Window" on "Btris/Portal" page
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
