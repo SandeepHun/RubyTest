@@ -31,6 +31,7 @@ Feature: BTRIS NICHD - CTDB Test Report
     #Enter and filter subject.
     And the user enters "00-CH-0127" into "fine protocol and subject search box" on "Btris/Portal" page
     And the user remembers the value of "protocol verify count" field into "Number OF Subjects" on "Btris/Portal" page
+    And the user waits for 3 seconds
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user enters "ABDELGHANI" into "fine filter subject search box" on "Btris/Portal" page
     And the user waits for 3 seconds
@@ -86,6 +87,7 @@ Feature: BTRIS NICHD - CTDB Test Report
     #Enter and filter subject.
     And the user enters "02-CH-0287" into "fine protocol and subject search box" on "Btris/Portal" page
     And the user remembers the value of "protocol verify count" field into "Number OF Subjects" on "Btris/Portal" page
+    And the user waits for 3 seconds
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user enters "ANDERSON" into "fine filter subject search box" on "Btris/Portal" page
     And the user waits for 3 seconds
