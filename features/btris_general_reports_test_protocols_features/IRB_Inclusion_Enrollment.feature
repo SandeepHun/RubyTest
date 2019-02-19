@@ -17,6 +17,7 @@ Feature: BTRIS IRB Inclusion Enrollment Test Report
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
+    And the user remembers the value of "irb inclusion" field into "IRB Criteria" on "Btris/Portal" page
     #click on the IRB Inclusion Test.
     And the user waits for 3 seconds
     And the user clicks on "btris: irb inclusion enrollment test" element on "Btris/Portal" page
@@ -30,6 +31,7 @@ Feature: BTRIS IRB Inclusion Enrollment Test Report
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
     And the user remembers the value of "protocol verify count" field into "Number OF Subjects" on "Btris/Portal" page
+    And the user waits for 3 seconds
     And the user clicks on "irb inclusion select protocol" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
     And the user waits for 8 seconds
@@ -70,6 +72,7 @@ Feature: BTRIS IRB Inclusion Enrollment Test Report
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
+    And the user remembers the value of "irb inclusion" field into "IRB Criteria" on "Btris/Portal" page
     #click on the IRB Inclusion Test.
     And the user waits for 5 seconds
     And the user clicks on "btris: irb inclusion enrollment test" element on "Btris/Portal" page
@@ -83,6 +86,7 @@ Feature: BTRIS IRB Inclusion Enrollment Test Report
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
     And the user remembers the value of "protocol verify count" field into "Number OF Subjects" on "Btris/Portal" page
+    And the user waits for 3 seconds
     And the user clicks on "irb inclusion search protocol2" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
     And the user waits for 8 seconds

@@ -1147,6 +1147,7 @@ And(/^the user enters "([^"]*)" and "([^"]*)" to login to btris$/) do |value1, v
 end
 
 And(/^the user verify the NIAAA report on the table$/) do
+  sleep 3
   record_found = false
   table_path = ".//*[contains(@data-test, 'results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
@@ -1191,6 +1192,7 @@ And(/^the user verify the NIAAA prod protocol report on the table$/) do
 end
 
 And(/^the user verify the laboratory report on the table$/) do
+  sleep 3
   record_found = false
   table_path = ".//*[contains(@data-test, 'results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
@@ -1258,6 +1260,7 @@ end
 
 
 And(/^the user verify the diagnosis and procedure report on the table$/) do
+  sleep 3
   record_found = false
   table_path = ".//*[contains(@data-test, 'results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
@@ -1324,6 +1327,7 @@ And(/^the user verify the diagnosis and procedure report on the table 2$/) do
 end
 
 And(/^the user test the pagination of the report$/) do
+  sleep 3
   if pagination_path = "//*[@class='page-item']"
   check_record_present = get_elements_size 'xpath', "#{pagination_path}"
 if check_record_present > 1
@@ -1344,6 +1348,7 @@ end
 
 
 And(/^the user verify the demographics report on the table$/) do
+  sleep 3
   record_found = false
   table_path = ".//*[contains(@data-test, 'results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
@@ -1426,7 +1431,7 @@ And(/^the user click on the accept button if present$/) do
         record_found = true
         del_obj = get_element_obj 'xpath', "#{table_path}"
         click_web_element del_obj
-         #sleep 4
+        # sleep 4
       end
     end
     checkpoint (record_found.eql? true), "The Accept button or condition section is not enabled, all good"
@@ -1434,6 +1439,7 @@ And(/^the user click on the accept button if present$/) do
 end
 
 And(/^the user verify the clinical documents discrete values report on the table$/) do
+  sleep 3
   record_found = false
   table_path = ".//*[contains(@data-test, 'results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
@@ -1531,6 +1537,7 @@ And(/^the user verify the nichd ctdb forms prod report on the table$/) do
 end
 
 And(/^the user verify the nichd ctdb forms report on the table with all protocol$/) do
+  sleep 3
   record_found = false
   table_path = ".//*[contains(@data-test, 'results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
@@ -1576,6 +1583,7 @@ And(/^the user verify the pdf documents report on the table$/) do
 end
 
 And(/^the user verify the vital signs report on the table$/) do
+  sleep 3
   record_found = false
   table_path = ".//*[contains(@data-test, 'results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
@@ -1631,6 +1639,7 @@ Then(/^the user fines the page HTML/) do
 end
 
 And(/^the user verify the medication report on the table$/) do
+  sleep 3
   record_found = false
   table_path = ".//*[contains(@data-test, 'results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
@@ -1676,6 +1685,7 @@ end
 
 
 And(/^the user verify the pulmonary report on the table$/) do
+  sleep 3
   record_found = false
   table_path = ".//*[contains(@data-test, 'results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
@@ -1765,6 +1775,7 @@ end
 
 
 And(/^the user verify the pathology report on the table$/) do
+  sleep 3
   record_found = false
   table_path = ".//*[contains(@data-test, 'results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
@@ -1810,6 +1821,7 @@ end
 
 
 And(/^the user verify the ekg report on the table$/) do
+  sleep 3
   record_found = false
   table_path = ".//*[contains(@data-test, 'results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
@@ -1854,6 +1866,7 @@ And(/^the user verify the ekg prod data report on the table$/) do
 end
 
 And(/^the user verify the microbiology report on the table$/) do
+  sleep 3
   record_found = false
   table_path = ".//*[contains(@data-test, 'results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
@@ -1898,6 +1911,7 @@ And(/^the user verify the microbiology prod protocol report on the table$/) do
 end
 
 And(/^the user verify the echocardiogram report on the table$/) do
+  sleep 3
   record_found = false
   table_path = ".//*[contains(@data-test, 'results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
@@ -2043,6 +2057,27 @@ And(/^the user verify if MRN "(.*)" has already been added and "(.*)" is display
     puts "The user didn't see error message, #{message} , text on the page which means the subject #{value} can be added"
   end
 end
+
+And(/^the user verify if MRN "(.*)" has not been added and "(.*)" is display$/) do |value, message|
+  page_text = @browser.html
+  if page_text.include? message
+    sleep 3
+    step "the user clicks on \"affirm consent button\" element on \"Manage/Subjects\" page"
+    sleep 3
+    step "the user clicks on \"return to subject button\" element on \"Manage/Subjects\" page"
+    sleep 3
+    step "the user clicks on \"add subject button\" element on \"Manage/Subjects\" page"
+    sleep 2
+    step "the user enters \"#{value}\" into \"enter mrn text box\" text area box on \"Manage/Subjects\" page"
+    sleep 3
+    step "the user clicks on \"submit button\" element on \"Manage/Subjects\" page"
+    sleep 3
+  else
+    # Fail the steps and skips next steps
+    puts "The user didn't see error message, #{message} , text on the page which means the subject #{value} can be added"
+  end
+end
+
 
 And(/^the user verify if the "(.*)" is display on the table for "(.*)" added$/) do |message, value|
   page_text = @browser.html

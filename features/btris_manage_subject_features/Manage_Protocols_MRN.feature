@@ -17,6 +17,7 @@ Feature: BTRIS Manage Protocol Test Report
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on Manage Protocol.
     And the user clicks on "top navigation: manage subject" element on "Manage/Subjects" page
+    And the user waits for 8 seconds
     #Search a protocol.
     And the user enters "<Protocol>" into "search protocol text box" on "Manage/Subjects" page
     And the user remembers the value of "number of subjects" field into "Consented Subjects" on "Manage/Subjects" page
@@ -33,7 +34,7 @@ Feature: BTRIS Manage Protocol Test Report
       | Protocol      |
       | BTRIS-TEST-00 |
       | 00-C-0018     |
-      | 00-C-0181     |
+      | 00-C-0074     |
       | BTRIS-TEST-02 |
       | BTRIS-TEST-04 |
 
@@ -155,9 +156,6 @@ Feature: BTRIS Manage Protocol Test Report
     And the user waits for 3 seconds
     And the user must see "<Protocol>" text in "manage subject page" field on "Manage/Subjects" page
     And the user can see current value of "Consented Subjects" in "number of consented subjects" field on "Manage/Subjects" page
-    And the user enters "<MRN>" into "subject search field" on "Manage/Subjects" page
-    And the user waits for 3 seconds
-    And the user must see "<MRN>" text in "subject table" field on "Manage/Subjects" page
     And the user waits for 3 seconds
     And the user clicks on "add subject button" element on "Manage/Subjects" page
     And the user enters "<Invalid MRN Number>" into "enter mrn text box" text area box on "Manage/Subjects" page
@@ -177,6 +175,7 @@ Feature: BTRIS Manage Protocol Test Report
     Examples:
       | Protocol      | MRN     | New MRN Number      | MRN Validation Message 1             | Invalid MRN Number | MRN Validation Message 2               |
       | BTRIS-TEST-05 | 9990136 | 656554,987675,98987 | We've noticed that 1 MRN is invalid. | 67654342           | We've noticed that 3 MRNs are invalid. |
+
 
 
   @AddSubjects1.4
@@ -212,6 +211,7 @@ Feature: BTRIS Manage Protocol Test Report
     And the user clicks on "add subject button" element on "Manage/Subjects" page
     And the user enters "<MRN>" into "enter mrn text box" text area box on "Manage/Subjects" page
     And the user clicks on "submit button" element on "Manage/Subjects" page
+    And the user verify if MRN "<MRN>" has not been added and "<Existing MRN Validation Message 1>" is display
     And the user must see "<Existing MRN Validation Message>" text in "display mrn message header" field on "Manage/Subjects" page
     And the user waits for 3 seconds
     And the user clicks on "back error" element on "Manage/Subjects" page
@@ -220,8 +220,8 @@ Feature: BTRIS Manage Protocol Test Report
     #Sign out.
     And the user logged out of the system
     Examples:
-      | Protocol      | MRN     | Existing MRN Validation Message                       |
-      | BTRIS-TEST-00 | 7806760 | We've noticed that 1 MRN is already in BTRIS-TEST-00. |
+      | Protocol      | MRN     | Existing MRN Validation Message                       | Existing MRN Validation Message 1                                       |
+      | BTRIS-TEST-00 | 7806760 | We've noticed that 1 MRN is already in BTRIS-TEST-00. | The following 1 records are ready to be added to protocol BTRIS-TEST-00 |
 
   @AddSubjects1.5
 

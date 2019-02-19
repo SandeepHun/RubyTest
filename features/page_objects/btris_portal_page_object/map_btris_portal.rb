@@ -70,6 +70,7 @@ def map_btris_portal
           'admin report table: subject name column'           =>"xpath^^.//*[contains(@data-test, 'results-preview-table')]//*[contains(@class, 'colHeader')][contains(text(), 'Subject Name')]",
           'protocol verify count'                             =>"xpath^^.//*[@data-test='protocol-verified-count']",
           'select all'                                        =>"xpath^^.//*[@class='custom-control custom-checkbox']",
+          'irb inclusion'                                     =>"xpath^^.//*[@class='custom-control-description radio__label-text'][contains(text(), 'IRB Inclusion Enrollment')]",
 
 
 

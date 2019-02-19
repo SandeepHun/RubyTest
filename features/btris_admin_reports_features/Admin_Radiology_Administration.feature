@@ -27,7 +27,8 @@ Feature: BTRIS Radiology Administration Test Report
     And the user must see "Radiology Administration Criteria" text in "btris: radiology administrative report filter page" field on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
-    And the user waits for 25 seconds
+    And the user remembers the value of "laboratory report table: subject name column" field into "Subject Name" on "Btris/Portal" page
+    And the user waits for 2 seconds
     And the user must see "Radiology Administration Results Preview - Standard" text in "radiology administrative report page" field on "Btris/Portal" page
     And the return to main page
     #Sign out.
@@ -109,7 +110,8 @@ Feature: BTRIS Radiology Administration Test Report
     And the user waits for 2 seconds
     #Clcik on the select report button.
     And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
-    And the user waits for 25 seconds
+    And the user remembers the value of "laboratory report table: subject name column" field into "Subject Name" on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Verify report page.
     And the user must see "Radiology Administration Results Preview - Standard" text in "radiology administrative report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.

@@ -27,9 +27,9 @@ Feature: BTRIS Vital Signs Test Report
     And the user must see "Vital Signs Criteria" text in "btris: vital signs test page" field on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
-    And the user waits for 7 seconds
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
+    And the user remembers the value of "protocol verify count" field into "Number OF Subjects" on "Btris/Portal" page
     And the user waits for 3 seconds
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
@@ -90,6 +90,7 @@ Feature: BTRIS Vital Signs Test Report
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
     And the user remembers the value of "protocol verify count" field into "Number OF Subjects" on "Btris/Portal" page
+    And the user waits for 3 seconds
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
     And the user waits for 8 seconds
