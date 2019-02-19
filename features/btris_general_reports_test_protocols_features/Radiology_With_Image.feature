@@ -29,7 +29,7 @@
     #Clcik on the select report button.
     And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
     #Enter and filter subject.
-    And the user waits for 20 seconds
+    And the user waits for 7 seconds
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
     And the user waits for 1 seconds
     And the user clicks on "protocol check button" element on "Btris/Portal" page
@@ -81,7 +81,7 @@
     And the user clicks on "demographic data check box" element on "Btris/Portal" page
     #Click on the select subject button.
     And the user clicks on "btris: select subject button" element on "Btris/Portal" page
-    And the user waits for 20 seconds
+    And the user waits for 7 seconds
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
     And the user waits for 1 seconds
     And the user clicks on "protocol check button" element on "Btris/Portal" page

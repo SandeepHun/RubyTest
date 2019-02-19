@@ -28,7 +28,7 @@ Feature: BTRIS Clinical Documents - Full Text Report
     And the user must see "Clinical Documents - Full Text Criteria" text in "btris: clinical documents full tex report page" field on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
-    And the user waits for 17 seconds
+    And the user waits for 6 seconds
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
     And the user waits for 1 seconds
@@ -82,7 +82,7 @@ Feature: BTRIS Clinical Documents - Full Text Report
     And the user must see "Clinical Documents - Full Text Criteria" text in "btris: clinical documents full tex report page" field on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
-    And the user waits for 17 seconds
+    And the user waits for 6 seconds
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
     And the user waits for 1 seconds
