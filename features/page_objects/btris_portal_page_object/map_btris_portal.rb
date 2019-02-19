@@ -69,6 +69,7 @@ def map_btris_portal
           'report table: collected data time column'          =>"xpath^^.//*[contains(@data-test, 'results-preview-table')]//*[contains(text(), 'Collected Date Time')]",
           'admin report table: subject name column'           =>"xpath^^.//*[contains(@data-test, 'results-preview-table')]//*[contains(@class, 'colHeader')][contains(text(), 'Subject Name')]",
           'protocol verify count'                             =>"xpath^^.//*[@data-test='protocol-verified-count']",
+          'select all'                                        =>"xpath^^.//*[@class='custom-control custom-checkbox']",
 
 
 

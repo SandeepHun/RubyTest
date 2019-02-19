@@ -29,16 +29,15 @@ Feature: BTRIS NICHD - CTDB Test Report
     #Clcik on the select report button.
     And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
     #Enter and filter subject.
-    And the user waits for 7 seconds
     And the user enters "00-CH-0127" into "fine protocol and subject search box" on "Btris/Portal" page
-    And the user waits for 2 seconds
+    And the user remembers the value of "protocol verify count" field into "Number OF Subjects" on "Btris/Portal" page
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user enters "ABDELGHANI" into "fine filter subject search box" on "Btris/Portal" page
     And the user waits for 3 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify the document report table.
-    And the user waits for 25 seconds
+    And the user remembers the value of "diagnosis report table: subject name column" field into "Subject Name" on "Btris/Portal" page
     And the user must see "Subject Name" text in "diagnosis report table: subject name column" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "NICHD/CTDB Forms Results Preview - Standard" text in "nichd ctdb forms report page" field on "Btris/Portal" page
@@ -85,23 +84,20 @@ Feature: BTRIS NICHD - CTDB Test Report
     #Clcik on the select report button.
     And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
     #Enter and filter subject.
-    And the user waits for 7 seconds
     And the user enters "02-CH-0287" into "fine protocol and subject search box" on "Btris/Portal" page
-    And the user waits for 3 seconds
+    And the user remembers the value of "protocol verify count" field into "Number OF Subjects" on "Btris/Portal" page
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user enters "ANDERSON" into "fine filter subject search box" on "Btris/Portal" page
     And the user waits for 3 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify the document report table.
-    And the user waits for 25 seconds
+    And the user remembers the value of "diagnosis report table: subject name column" field into "Subject Name" on "Btris/Portal" page
     And the user must see "Subject Name" text in "diagnosis report table: subject name column" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "NICHD/CTDB Forms Results Preview - Standard" text in "nichd ctdb forms report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
     And the user verify the nichd ctdb forms report on the table with all protocol
-    #Click on the download report button.
-    #And the user clicks on "download full report button" element on "Btris/Portal" page
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page

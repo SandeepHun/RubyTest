@@ -17,15 +17,13 @@ Feature: BTRIS Manage Protocol Test Report
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on Manage Protocol.
     And the user clicks on "top navigation: manage subject" element on "Manage/Subjects" page
-    And the user waits for 13 seconds
     #Search a protocol.
     And the user enters "<Protocol>" into "search protocol text box" on "Manage/Subjects" page
-    And the user waits for 2 seconds
     And the user remembers the value of "number of subjects" field into "Consented Subjects" on "Manage/Subjects" page
     #Verify search result for the searched protocol.
     And the user must see "<Protocol>" text in "searched protocol table" field on "Manage/Subjects" page
     And the user clicks on "searched subject" element on "Manage/Subjects" page
-    And the user waits for 3 seconds
+    And the user waits for 4 seconds
     And the user must see "<Protocol>" text in "manage subject page" field on "Manage/Subjects" page
     And the user can see current value of "Consented Subjects" in "number of consented subjects" field on "Manage/Subjects" page
 
