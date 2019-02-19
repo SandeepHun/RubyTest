@@ -29,16 +29,15 @@
     #Clcik on the select report button.
     And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
     #Enter and filter subject.
-    And the user waits for 7 seconds
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
-    And the user waits for 1 seconds
+    And the user remembers the value of "protocol verify count" field into "Number OF Subjects" on "Btris/Portal" page
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
     And the user waits for 8 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify radiology report results.
-    And the user waits for 25 seconds
+    And the user remembers the value of "laboratory report table: subject name column" field into "Subject Name" on "Btris/Portal" page
     And the user must see "Subject Name" text in "laboratory report table: subject name column" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "Radiology Results Preview - Standard" text in "radiology report page" field on "Btris/Portal" page
@@ -81,15 +80,14 @@
     And the user clicks on "demographic data check box" element on "Btris/Portal" page
     #Click on the select subject button.
     And the user clicks on "btris: select subject button" element on "Btris/Portal" page
-    And the user waits for 7 seconds
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
-    And the user waits for 1 seconds
+    And the user remembers the value of "protocol verify count" field into "Number OF Subjects" on "Btris/Portal" page
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
     And the user waits for 8 seconds
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify radiology report results.
-    And the user waits for 25 seconds
+    And the user remembers the value of "laboratory report table: subject name column" field into "Subject Name" on "Btris/Portal" page
     And the user must see "Subject Name" text in "laboratory report table: subject name column" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "Radiology Results Preview - Standard" text in "radiology report page" field on "Btris/Portal" page
