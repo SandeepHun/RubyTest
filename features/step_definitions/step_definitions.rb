@@ -2037,7 +2037,7 @@ end
 And(/^the user verify if MRN "(.*)" has already been added and "(.*)" is display$/) do |value, message|
   page_text = @browser.html
   if page_text.include? message
-    step "the user clicks on \"back error\" element on \"Manage/Subjects\" page"
+    step "the user clicks on \"back arrow\" element on \"Manage/Subjects\" page"
     sleep 3
     step "the user enters \"#{value}\" into \"manage subject protocol text box\" on \"Manage/Subjects\" page"
     sleep 3
