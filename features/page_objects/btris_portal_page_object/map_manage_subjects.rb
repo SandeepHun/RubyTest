@@ -14,7 +14,7 @@ def map_manage_subjects
           'number of consented subjects'                     =>"xpath^^.//*[@data-test='mps-consented-count']",
           'subject consented switch'                         =>"xpath^^.//*[@class='table manage-protocol-subjects-table']/tbody/tr[1]/td[3]//label",
           'subject table'                                    =>"xpath^^.//*[@class='table manage-protocol-subjects-table']/tbody/tr[1]/td[1]",
-          'back error'                                       =>"xpath^^.//*[@class='fa fa-arrow-circle-left fa-2x']",
+          'back arrow'                                       =>"xpath^^.//*[@class='fa fa-arrow-circle-left fa-2x']",
           'subject search field'                             =>"xpath^^.//*[@id='manage-subjects-protocol-subjects-search-field']",
           'initial consent date'                             =>"xpath^^.//*[contains(@id, 'manage-protocol-subjects-initial-consent-')]",
           'initial consent info icon'                        =>"xpath^^.//*[@class='table manage-protocol-subjects-table']/thead/tr/th[8]//button[2]",
@@ -36,6 +36,9 @@ def map_manage_subjects
           'brows button'                                     =>"xpath^^.//*[@id='app']//*[contains(@type, 'file')]",
           'upload subjects button'                           =>"xpath^^.//*[@data-test='enter-or-upload-subjects-file-upload']",
           'upload subjects clear button'                     =>"xpath^^(//button[@type='button'])[4]",
+          'invalid mrn display danger'                       =>"xpath^^.//*[@class='invalid-mrn-display__danger-sub-full']/h3",
+          'invalid mrn display'                              =>"xpath^^.//*[@class='invalid-mrn-display__danger-sub-full']/p",
+
 
 
 
