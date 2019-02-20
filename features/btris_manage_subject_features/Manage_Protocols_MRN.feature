@@ -72,7 +72,7 @@ Feature: BTRIS Manage Protocol Test Report
     And the user clicks on "subject consented switch" element on "Manage/Subjects" page
     #And the user enters "Todays Date" into "initial consent date" on "Manage/Subjects" page
     And the user waits for 3 seconds
-    And the user clicks on "back error" element on "Manage/Subjects" page
+    And the user clicks on "back arrow" element on "Manage/Subjects" page
 
     #Sign out.
     And the user logged out of the system
@@ -121,7 +121,7 @@ Feature: BTRIS Manage Protocol Test Report
     And the user must see "<Content Info>" text in "initial consent info pop-up" field on "Manage/Subjects" page
     And the user clicks on "initial consent info pop-up close button" element on "Manage/Subjects" page
     And the user waits for 2 seconds
-    And the user clicks on "back error" element on "Manage/Subjects" page
+    And the user clicks on "back arrow" element on "Manage/Subjects" page
     And the user waits for 2 seconds
 
     #Sign out.
@@ -167,7 +167,7 @@ Feature: BTRIS Manage Protocol Test Report
     And the user waits for 2 seconds
     And the user must see "<MRN Validation Message 2>" text in "display mrn message header" field on "Manage/Subjects" page
     And the user waits for 3 seconds
-    And the user clicks on "back error" element on "Manage/Subjects" page
+    And the user clicks on "back arrow" element on "Manage/Subjects" page
     And the user waits for 2 seconds
 
     #Sign out.
@@ -204,17 +204,16 @@ Feature: BTRIS Manage Protocol Test Report
     And the user waits for 3 seconds
     And the user must see "<Protocol>" text in "manage subject page" field on "Manage/Subjects" page
     And the user can see current value of "Consented Subjects" in "number of consented subjects" field on "Manage/Subjects" page
-    And the user enters "<MRN>" into "subject search field" on "Manage/Subjects" page
-    And the user waits for 3 seconds
-    And the user must see "<MRN>" text in "subject table" field on "Manage/Subjects" page
     And the user waits for 3 seconds
     And the user clicks on "add subject button" element on "Manage/Subjects" page
     And the user enters "<MRN>" into "enter mrn text box" text area box on "Manage/Subjects" page
     And the user clicks on "submit button" element on "Manage/Subjects" page
     And the user verify if MRN "<MRN>" has not been added and "<Existing MRN Validation Message 1>" is display
+    And the user remembers the value of "invalid mrn display" field into "Existing MRN" on "Manage/Subjects" page
     And the user must see "<Existing MRN Validation Message>" text in "display mrn message header" field on "Manage/Subjects" page
+    And the user must see "<MRN>" text in "invalid mrn display" field on "Manage/Subjects" page
     And the user waits for 3 seconds
-    And the user clicks on "back error" element on "Manage/Subjects" page
+    And the user clicks on "back arrow" element on "Manage/Subjects" page
     And the user waits for 2 seconds
 
     #Sign out.
@@ -265,7 +264,7 @@ Feature: BTRIS Manage Protocol Test Report
     And the user waits for 3 seconds
     And the user verify if the "<Protocol Validation Message>" is display on the table for "<New MRN>" added
     And the user must see "<New MRN>" text in "subject table" field on "Manage/Subjects" page
-    And the user clicks on "back error" element on "Manage/Subjects" page
+    And the user clicks on "back arrow" element on "Manage/Subjects" page
     And the user waits for 2 seconds
 
     #Sign out.

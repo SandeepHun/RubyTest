@@ -67,9 +67,6 @@ Feature: BTRIS Subject Attribution Test Report
     And the user waits for 3 seconds
     And the user must see "<Protocol>" text in "manage subject page" field on "Manage/Subjects" page
     And the user can see current value of "Consented Subjects" in "number of consented subjects" field on "Manage/Subjects" page
-    And the user enters "<MRN>" into "subject search field" on "Manage/Subjects" page
-    And the user waits for 3 seconds
-    And the user must see "<MRN>" text in "subject table" field on "Manage/Subjects" page
     And the user waits for 3 seconds
     And the user clicks on "add subject button" element on "Manage/Subjects" page
     And the user enters "<Invalid MRN Number>" into "enter mrn text box" text area box on "Manage/Subjects" page
@@ -81,7 +78,7 @@ Feature: BTRIS Subject Attribution Test Report
     And the user waits for 2 seconds
     And the user must see "<MRN Validation Message 2>" text in "display mrn message header" field on "Manage/Subjects" page
     And the user waits for 3 seconds
-    And the user clicks on "back error" element on "Manage/Subjects" page
+    And the user clicks on "back arrow" element on "Manage/Subjects" page
     And the user waits for 2 seconds
 
     #Sign out.
@@ -123,7 +120,7 @@ Feature: BTRIS Subject Attribution Test Report
     And the user clicks on "submit button" element on "Manage/Subjects" page
     And the user must see "<Existing MRN Validation Message>" text in "display mrn message header" field on "Manage/Subjects" page
     And the user waits for 3 seconds
-    And the user clicks on "back error" element on "Manage/Subjects" page
+    And the user clicks on "back arrow" element on "Manage/Subjects" page
     And the user waits for 2 seconds
 
     #Sign out.
