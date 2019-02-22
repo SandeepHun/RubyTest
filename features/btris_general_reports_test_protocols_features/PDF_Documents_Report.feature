@@ -4,14 +4,14 @@ Feature: BTRIS PDF Documents Test Report
 
   @PDF_Documents_Repor1
 
-  Scenario Outline: 5.1 NICHD/CTDB Report Test without PDF/Scanned Documents.
+  Scenario Outline: 1.1 PDF Documents Report Test without PDF/Scanned Documents.
   #Login to the system.
     Given the user navigates to / on browser
     And the user must see "Log in to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.
-    And the user waits for 4 seconds
+    And the user remembers the value of "warning pop-up message" field into "Warning Header" on "Btris/Portal" page
     And the user must see "Conditions of Use and Code of Conduct" text in "btris: accept page" field on "Btris/Portal" page
     #Click on the accept button.
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
@@ -62,14 +62,14 @@ Feature: BTRIS PDF Documents Test Report
 
   @PDF_Documents_Repor2
 
-  Scenario Outline: 5.2 NICHD/CTDB Report Test with All PDF/Scanned Documents.
+  Scenario Outline: 1.2 PDF Documents Report Test with All PDF/Scanned Documents.
   #Login to the system.
     Given the user navigates to / on browser
     And the user must see "Log in to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.
-    And the user waits for 4 seconds
+    And the user remembers the value of "warning pop-up message" field into "Warning Header" on "Btris/Portal" page
     And the user must see "Conditions of Use and Code of Conduct" text in "btris: accept page" field on "Btris/Portal" page
     #Click on the accept button.
     And the user clicks on "btris: accept button" element on "Btris/Portal" page

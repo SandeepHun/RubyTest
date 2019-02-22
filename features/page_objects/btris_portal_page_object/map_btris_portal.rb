@@ -115,7 +115,7 @@ def map_btris_portal
           'pdf documents search subject'                                =>"xpath^^.//*[contains(text(), 'ABOU-ANTOUN, SAMI NASSR')]",
           'search subject s4'                                           =>"xpath^^.//*[contains(@data-test, 'results-preview-table')]//*[contains(text(), '00-C-0069')]",
           'search subject s2'                                           =>"xpath^^.//*[contains(@data-test, 'results-preview-table')]//*[contains(text(), 'NIHCCTEST, INNA NMN')]",
-          'search subject pn'                                           =>"xpath^^.//*[contains(@data-test, 'results-preview-table')]//*[contains(text(), 'BTRIS-TEST-05')]",
+          'search subject pn'                                           =>"xpath^^.//*[contains(@data-test, 'results-preview-table')]//*[contains(text(), '00-C-0018')]",
           'search subject pn1'                                           =>"xpath^^.//*[contains(@data-test, 'results-preview-table')]//*[contains(text(), 'BTRIS-TEST-03')]",
 
           'search subject s3'                                           =>"xpath^^.//*[contains(@data-test, 'results-preview-table')]//*[contains(text(), '00-C-0018')]",
@@ -157,7 +157,7 @@ def map_btris_portal
           'irb inclusion enrollment result page'                                      =>"xpath^^.//*[contains(text(), 'Cumulative Inclusion Enrollment Report')]",
           'download pd report button'                                                 =>"xpath^^.//*[@data-test='download-results-button']",
           'irb inclusion enrollment search protocol'                                  =>"xpath^^.//*[@id='protocolSection']/div[2]/span",
-          'irb inclusion select protocol'                                             =>"xpath^^.//*[@data-test='select-pcsl-18785-protocol-radio-value'][contains(@class, 'custom-control custom-radio')]",
+          'irb inclusion select protocol'                                             =>"xpath^^.//*[@data-test='select-pcsl-9807-protocol-radio-value']",
           'irb inclusion select prod protocol'                                        =>"xpath^^.//*[@data-test='select-pcsl-9807-protocol-radio-value'][contains(@class, 'custom-control custom-radio')]",
 
           'irb inclusion open report in new tab'                                      =>"xpath^^.//*[@data-test='open-in-new-window-button']",
@@ -180,11 +180,11 @@ def map_btris_portal
           'microbiology result page'                                                           =>"xpath^^.//*[contains(text(), 'Microbiology Results Preview -')]",
           'blinded results drop down'                                                          =>"xpath^^.//*[@id='blindedResults-select']",
           #Echocardiogram Test
-          'btris: echocardiogram test'                                                           =>"xpath^^.//*[@data-test='12-radio-value'][contains(@class, 'custom-control custom-radio')]",
-          'btris: echocardiogram report page'                                                    =>"xpath^^.//*[contains(text(), 'Echocardiogram Criteria')]",
-          'select all echocardiogram tests checkbox'                                             =>"xpath^^.//*[@for='echocardiogramTests-red-quick-pick-select-all']",
-          'select echocardiogram subject top button'                                             =>"xpath^^.//*[@data-test='criteria-next-button-top']",
-          'echocardiogram result page'                                                           =>"xpath^^.//*[contains(text(), 'Echocardiogram Results Preview -')]",
+          'btris: echocardiogram test'                                                          =>"xpath^^.//*[@data-test='12-radio-value'][contains(@class, 'custom-control custom-radio')]",
+          'btris: echocardiogram report page'                                                   =>"xpath^^.//*[contains(text(), 'Echocardiogram Criteria')]",
+          'select all echocardiogram tests checkbox'                                            =>"xpath^^.//*[@for='echocardiogramTests-red-quick-pick-select-all']",
+          'select echocardiogram subject top button'                                            =>"xpath^^.//*[@data-test='criteria-next-button-top']",
+          'echocardiogram result page'                                                          =>"xpath^^.//*[contains(text(), 'Echocardiogram Results Preview -')]",
            #Reference List Report
           'custom user drop down'                                                             =>"xpath^^.//*[@id='nav-user-dropdown']",
           'custom list'                                                                       =>"xpath^^.//*[@data-test='nav-user-dropdown-custom-list-management']",
@@ -195,6 +195,9 @@ def map_btris_portal
           'custom search term list upload button'                                             =>"xpath^^.//*[@data-test='upload-list-button']",
           'custom search term list confirm remove'                                            =>"xpath^^.//*[@class='btn round btn-lg btn-danger']",
           'custom search term list: user field'                                               =>"xpath^^.//*[@id='red-list-upload-user-field']",
+          'list name user field'                                                              =>"xpath^^.//*[@id='red-list-upload-user-field']",
+          'warning pop-up message'                                                            =>"xpath^^.//*[@class='modal-secondary-header']//*[contains(text(), 'Conditions of Use and Code of Conduct')]",
+
           'custom search term list: list name field'                                          =>"xpath^^.//*[@id='red-list-upload-name-field']",
           'custom search term list: description'                                              =>"xpath^^.//*[@id='red-list-upload-description-field']",
           'custom search term list: domain drop down'                                         =>"xpath^^.//*[@id='red-list-upload-domain-field']",

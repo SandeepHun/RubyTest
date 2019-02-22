@@ -11,14 +11,14 @@ Feature: Clinical Documents - Full Text Feature Prod Data
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.
-    And the user waits for 4 seconds
+    And the user remembers the value of "warning pop-up message" field into "Warning Header" on "Btris/Portal" page
     And the user must see "Conditions of Use and Code of Conduct" text in "btris: accept page" field on "Btris/Portal" page
     #Click on the accept button.
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
     #click on the Clinical Documents: full tex Test.
-    And the user waits for 5 seconds
+    And the user waits for 3 seconds
     And the user clicks on "btris: clinical documents full tex test" element on "Btris/Portal" page
     And the user waits for 3 seconds
     #Click on the create new report button.
@@ -28,21 +28,22 @@ Feature: Clinical Documents - Full Text Feature Prod Data
     And the user must see "Clinical Documents - Full Text Criteria" text in "btris: clinical documents full tex report page" field on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
-    And the user waits for 4 seconds
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
+    And the user remembers the value of "protocol verify count" field into "Number OF Subjects" on "Btris/Portal" page
+    And the user waits for 3 seconds
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
     And the user waits for 8 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify the document report table.
-    And the user waits for 23 seconds
+    And the user remembers the value of "diagnosis report table: subject name column" field into "Subject Name" on "Btris/Portal" page
     And the user must see "Subject Name" text in "diagnosis report table: subject name column" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "Clinical Documents - Full Text Results Preview - Standard" text in "clinical documents full tex result page" field on "Btris/Portal" page
     #Click on the download report button.
-    #And the user clicks on "download full report button" element on "Btris/Portal" page
+    And the user clicks on "download full report button" element on "Btris/Portal" page
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
@@ -64,7 +65,7 @@ Feature: Clinical Documents - Full Text Feature Prod Data
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.
-    And the user waits for 4 seconds
+    And the user remembers the value of "warning pop-up message" field into "Warning Header" on "Btris/Portal" page
     And the user must see "Conditions of Use and Code of Conduct" text in "btris: accept page" field on "Btris/Portal" page
     #Click on the accept button.
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
@@ -81,22 +82,22 @@ Feature: Clinical Documents - Full Text Feature Prod Data
     And the user must see "Clinical Documents - Full Text Criteria" text in "btris: clinical documents full tex report page" field on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
-    And the user waits for 4 seconds
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
-    And the user waits for 5 seconds
+    And the user remembers the value of "protocol verify count" field into "Number OF Subjects" on "Btris/Portal" page
+    And the user waits for 3 seconds
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
     And the user waits for 8 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify the document report table.
-    And the user waits for 23 seconds
+    And the user remembers the value of "diagnosis report table: subject name column" field into "Subject Name" on "Btris/Portal" page
     And the user must see "Subject Name" text in "diagnosis report table: subject name column" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "Clinical Documents - Full Text Results Preview - Standard" text in "clinical documents full tex result page" field on "Btris/Portal" page
     #Click on the download report button.
-    #And the user clicks on "download full report button" element on "Btris/Portal" page
+    And the user clicks on "download full report button" element on "Btris/Portal" page
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
