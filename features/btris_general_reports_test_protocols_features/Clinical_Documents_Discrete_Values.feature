@@ -75,7 +75,7 @@ Feature: BTRIS Clinical Documents - Discrete Values Test Report
     #click on the Clinical Documents: Discrete Values Test.
     And the user waits for 3 seconds
     And the user clicks on "Clinical Documents: Discrete Values" element on "Btris/Portal" page
-    And the user waits for 3 seconds
+    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.

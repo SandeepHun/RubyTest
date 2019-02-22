@@ -20,7 +20,7 @@ Feature: Echocardiogram Prod Data
     #click on the Echocardiogram test.
     And the user waits for 3 seconds
     And the user clicks on "btris: echocardiogram test" element on "Btris/Portal" page
-    And the user waits for 3 seconds
+    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     And the user waits for 5 seconds
@@ -70,7 +70,7 @@ Feature: Echocardiogram Prod Data
     #click on the Echocardiogram test.
     And the user waits for 3 seconds
     And the user clicks on "btris: echocardiogram test" element on "Btris/Portal" page
-    And the user waits for 3 seconds
+    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     And the user waits for 7 seconds

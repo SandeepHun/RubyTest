@@ -76,7 +76,7 @@ Feature: BTRIS EKG Test Report
     #click on the EKG test.
     And the user waits for 3 seconds
     And the user clicks on "btris: ekg test" element on "Btris/Portal" page
-    And the user waits for 3 seconds
+    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     And the user waits for 4 seconds

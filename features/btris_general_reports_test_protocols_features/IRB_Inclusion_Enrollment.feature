@@ -21,7 +21,7 @@ Feature: BTRIS IRB Inclusion Enrollment Test Report
     #click on the IRB Inclusion Test.
     And the user waits for 3 seconds
     And the user clicks on "btris: irb inclusion enrollment test" element on "Btris/Portal" page
-    And the user waits for 3 seconds
+    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
@@ -74,9 +74,9 @@ Feature: BTRIS IRB Inclusion Enrollment Test Report
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
     And the user remembers the value of "irb inclusion" field into "IRB Criteria" on "Btris/Portal" page
     #click on the IRB Inclusion Test.
-    And the user waits for 5 seconds
-    And the user clicks on "btris: irb inclusion enrollment test" element on "Btris/Portal" page
     And the user waits for 3 seconds
+    And the user clicks on "btris: irb inclusion enrollment test" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
