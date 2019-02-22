@@ -38,11 +38,12 @@ Feature: Laboratory Feature Reference List
     And the user waits for 3 seconds
     And the user verify if existing "<Search Term data>" exist and remove it
     And the user clicks on "custom search term list upload button" element on "Btris/Portal" page
-    And the user waits for 6 seconds
+    And the user waits for 3 seconds
+    #And the user selects "<User>" from "list name user field" list box on "Btris/Portal" page
     And the user enters "<User>" into "custom search term list: user field" on "Btris/Portal" page
-    And the user waits for 4 seconds
+    And the user waits for 3 seconds
     And the user clicks on "custom search term list: user" element on "Btris/Portal" page
-    And the user waits for 6 seconds
+    And the user waits for 3 seconds
     And the user clicks on "custom search term overwrite checkbox" element on "Btris/Portal" page
     And the user waits for 4 seconds
     And the user enters "<List Name>" into "custom search term list: list name field" on "Btris/Portal" page

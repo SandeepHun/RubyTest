@@ -11,12 +11,13 @@ Feature: IRB Inclusion Enrollment Feature Prod Data
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.
-    And the user waits for 4 seconds
+    And the user remembers the value of "warning pop-up message" field into "Warning Header" on "Btris/Portal" page
     And the user must see "Conditions of Use and Code of Conduct" text in "btris: accept page" field on "Btris/Portal" page
     #Click on the accept button.
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
+    And the user remembers the value of "irb inclusion" field into "IRB Criteria" on "Btris/Portal" page
     #click on the IRB Inclusion Test.
     And the user waits for 3 seconds
     And the user clicks on "btris: irb inclusion enrollment test" element on "Btris/Portal" page
@@ -28,10 +29,10 @@ Feature: IRB Inclusion Enrollment Feature Prod Data
     #Clcik on the select report button.
     And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
     #Enter and filter subject.
-    And the user waits for 4 seconds
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
-    And the user waits for 5 seconds
-    And the user clicks on "irb inclusion select prod protocol" element on "Btris/Portal" page
+    And the user remembers the value of "protocol verify count" field into "Number OF Subjects" on "Btris/Portal" page
+    And the user waits for 3 seconds
+    And the user clicks on "irb inclusion select protocol" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
     And the user waits for 8 seconds
     #click on run report button.
@@ -39,7 +40,7 @@ Feature: IRB Inclusion Enrollment Feature Prod Data
     #Verify report page.
     And the user must see "Cumulative Inclusion Enrollment Report" text in "irb inclusion enrollment result page" field on "Btris/Portal" page
     #Verify searched protocol
-    And the user waits for 25 seconds
+    And the user remembers the value of "irb inclusion enrollment search protocol" field into "Subject" on "Btris/Portal" page
     And the user must see "<Subject>" text in "irb inclusion enrollment search protocol" field on "Btris/Portal" page
     #Click on the download report button.
     #And the user clicks on "download pd report button" element on "Btris/Portal" page
@@ -65,14 +66,15 @@ Feature: IRB Inclusion Enrollment Feature Prod Data
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.
-    And the user waits for 4 seconds
+    And the user remembers the value of "warning pop-up message" field into "Warning Header" on "Btris/Portal" page
     And the user must see "Conditions of Use and Code of Conduct" text in "btris: accept page" field on "Btris/Portal" page
     #Click on the accept button.
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
+    And the user remembers the value of "irb inclusion" field into "IRB Criteria" on "Btris/Portal" page
     #click on the IRB Inclusion Test.
-    And the user waits for 3 seconds
+    And the user waits for 5 seconds
     And the user clicks on "btris: irb inclusion enrollment test" element on "Btris/Portal" page
     And the user waits for 3 seconds
     #Click on the create new report button.
@@ -82,10 +84,10 @@ Feature: IRB Inclusion Enrollment Feature Prod Data
     #Clcik on the select report button.
     And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
     #Enter and filter subject.
-    And the user waits for 4 seconds
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
-    And the user waits for 5 seconds
-    And the user clicks on "irb inclusion select prod protocol" element on "Btris/Portal" page
+    And the user remembers the value of "protocol verify count" field into "Number OF Subjects" on "Btris/Portal" page
+    And the user waits for 3 seconds
+    And the user clicks on "irb inclusion select protocol" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
     And the user waits for 8 seconds
     #click on run report button.
@@ -93,7 +95,7 @@ Feature: IRB Inclusion Enrollment Feature Prod Data
     #Verify report page.
     And the user must see "Cumulative Inclusion Enrollment Report" text in "irb inclusion enrollment result page" field on "Btris/Portal" page
     #Verify searched protocol
-    And the user waits for 25 seconds
+    And the user remembers the value of "irb inclusion enrollment search protocol" field into "Subject" on "Btris/Portal" page
     And the user must see "<Subject>" text in "irb inclusion enrollment search protocol" field on "Btris/Portal" page
     #Click on the download report button.
     #And the user clicks on "download pd report button" element on "Btris/Portal" page

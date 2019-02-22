@@ -10,7 +10,7 @@ Feature: Laboratory Feature
     And the user must see "Log in to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
     #Login to the BTRIS system.
     And the user login to the btris application
-    And the user waits for 3 seconds
+    And the user remembers the value of "warning pop-up message" field into "Warning Header" on "Btris/Portal" page
     And the user must see "Conditions of Use and Code of Conduct" text in "first login test" field on "Test/Page" page
 
 
