@@ -73,8 +73,8 @@ Feature: Laboratory Feature Reference List
     And the user logged out of the system
 
     Examples:
-      | Search Term data   | List Name         | User                     | Domain          | Search Term Document        | Reference Name    | Reference Date Type | Reference Term Document      |
-      | Term1 Test Data DN | Term Test Data DN | BTRIS_TEST2 - TEST2 null | Lab Observation | Search_Tearm_List_Data.xlsx | Reference List DN | MM/DD/YYYY          | Reference_List_Template.xlsx |
+      | Search Term data   | List Name          | User                     | Domain          | Search Term Document        | Reference Name    | Reference Date Type | Reference Term Document      |
+      | Term1 Test Data DN | Term1 Test Data DN | BTRIS_TEST2 - TEST2 null | Lab Observation | Search_Tearm_List_Data.xlsx | Reference List DN | MM/DD/YYYY          | Reference_List_Template.xlsx |
 
 
   @ReferenceListLaboratory2.2
@@ -86,6 +86,7 @@ Feature: Laboratory Feature Reference List
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.
+    And the user remembers the value of "warning pop-up message" field into "Warning Header" on "Btris/Portal" page
     And the user must see "Conditions of Use and Code of Conduct" text in "btris: accept page" field on "Btris/Portal" page
     #Click on the accept button.
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
@@ -109,11 +110,10 @@ Feature: Laboratory Feature Reference List
     And the user selects "<Labs>" from "labs drop down" drop down on "Btris/Portal" page
     And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
     And the user waits for 10 seconds
-    And the user must see "Subject Name" text in "laboratory report table: subject name" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
-    And the user verify the reference list laboratory report on the table
+    And the user verify the reference list "<Validation Record>" laboratory report on the table
     #Click on the download report button.
     And the user clicks on "download full report button" element on "Btris/Portal" page
     #click on the open report in another tab button.
@@ -125,8 +125,8 @@ Feature: Laboratory Feature Reference List
     And the user logged out of the system
 
     Examples:
-      | Labs              | Number of Values | Number of Days Before | Reference Name    | Number of Days After |
-      | Term Test Data DN | 10               | 90                    | Reference List DN | 80                   |
+      | Labs               | Number of Values | Number of Days Before | Reference Name    | Number of Days After | Validation Record |
+      | Term1 Test Data DN | 10               | 90                    | Reference List DN | 80                   | No records found  |
 
 
 
@@ -139,6 +139,7 @@ Feature: Laboratory Feature Reference List
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.
+    And the user remembers the value of "warning pop-up message" field into "Warning Header" on "Btris/Portal" page
     And the user must see "Conditions of Use and Code of Conduct" text in "btris: accept page" field on "Btris/Portal" page
     #Click on the accept button.
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
@@ -162,11 +163,10 @@ Feature: Laboratory Feature Reference List
     And the user selects "<Labs>" from "labs drop down" drop down on "Btris/Portal" page
     And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
     And the user waits for 10 seconds
-    And the user must see "Subject Name" text in "laboratory report table: subject name" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
-    And the user verify the reference list laboratory report on the table
+    And the user verify the reference list "<Validation Record>" laboratory report on the table
     #Click on the download report button.
     And the user clicks on "download full report button" element on "Btris/Portal" page
     #click on the open report in another tab button.
@@ -178,8 +178,8 @@ Feature: Laboratory Feature Reference List
     And the user logged out of the system
 
     Examples:
-      | Labs              | Number of Values | Number of Days Before | Reference Name    | Number of Days After |
-      | Term Test Data DN | 15               | 60                    | Reference List DN | 40                   |
+      | Labs               | Number of Values | Number of Days Before | Reference Name    | Number of Days After | Validation Record |
+      | Term1 Test Data DN | 15               | 60                    | Reference List DN | 40                   | No records found  |
 
 
 
@@ -192,6 +192,7 @@ Feature: Laboratory Feature Reference List
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.
+    And the user remembers the value of "warning pop-up message" field into "Warning Header" on "Btris/Portal" page
     And the user must see "Conditions of Use and Code of Conduct" text in "btris: accept page" field on "Btris/Portal" page
     #Click on the accept button.
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
@@ -215,11 +216,10 @@ Feature: Laboratory Feature Reference List
     And the user selects "<Labs>" from "labs drop down" drop down on "Btris/Portal" page
     And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
     And the user waits for 10 seconds
-    And the user must see "Subject Name" text in "laboratory report table: subject name" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
-    And the user verify the reference list laboratory report on the table
+    And the user verify the reference list "<Validation Record>" laboratory report on the table
     #Click on the download report button.
     And the user clicks on "download full report button" element on "Btris/Portal" page
     #click on the open report in another tab button.
@@ -231,8 +231,8 @@ Feature: Laboratory Feature Reference List
     And the user logged out of the system
 
     Examples:
-      | Labs              | Number of Values | Number of Days Before | Reference Name    | Number of Days After |
-      | Term Test Data DN | 5                | 30                    | Reference List DN | 30                   |
+      | Labs               | Number of Values | Number of Days Before | Reference Name    | Number of Days After | Validation Record |
+      | Term1 Test Data DN | 5                | 30                    | Reference List DN | 30                   | No records found  |
 
 
   @ReferenceListLaboratory5.5
@@ -244,6 +244,7 @@ Feature: Laboratory Feature Reference List
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.
+    And the user remembers the value of "warning pop-up message" field into "Warning Header" on "Btris/Portal" page
     And the user must see "Conditions of Use and Code of Conduct" text in "btris: accept page" field on "Btris/Portal" page
     #Click on the accept button.
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
@@ -267,11 +268,10 @@ Feature: Laboratory Feature Reference List
     And the user selects "<Labs>" from "labs drop down" drop down on "Btris/Portal" page
     And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
     And the user waits for 10 seconds
-    And the user must see "Subject Name" text in "laboratory report table: subject name" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
-    And the user verify the reference list laboratory report on the table
+    And the user verify the reference list "<Validation Record>" laboratory report on the table
     #Click on the download report button.
     And the user clicks on "download full report button" element on "Btris/Portal" page
     #click on the open report in another tab button.
@@ -283,8 +283,8 @@ Feature: Laboratory Feature Reference List
     And the user logged out of the system
 
     Examples:
-      | Labs              | Number of Values | Number of Days Before | Reference Name    | Number of Days After |
-      | Term Test Data DN | 1                | 15                    | Reference List DN | 15                   |
+      | Labs               | Number of Values | Number of Days Before | Reference Name    | Number of Days After | Validation Record |
+      | Term1 Test Data DN | 1                | 15                    | Reference List DN | 15                   | No records found  |
 
 
   @ReferenceListLaboratory6.6
@@ -296,6 +296,7 @@ Feature: Laboratory Feature Reference List
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.
+    And the user remembers the value of "warning pop-up message" field into "Warning Header" on "Btris/Portal" page
     And the user must see "Conditions of Use and Code of Conduct" text in "btris: accept page" field on "Btris/Portal" page
     #Click on the accept button.
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
@@ -319,11 +320,10 @@ Feature: Laboratory Feature Reference List
     And the user selects "<Labs>" from "labs drop down" drop down on "Btris/Portal" page
     And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
     And the user waits for 10 seconds
-    And the user must see "Subject Name" text in "laboratory report table: subject name" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
-    And the user verify the reference list laboratory report on the table
+    And the user verify the reference list "<Validation Record>" laboratory report on the table
     #Click on the download report button.
     And the user clicks on "download full report button" element on "Btris/Portal" page
     #click on the open report in another tab button.
@@ -335,8 +335,8 @@ Feature: Laboratory Feature Reference List
     And the user logged out of the system
 
     Examples:
-      | Labs              | Number of Values | Number of Days Before | Reference Name    | Number of Days After |
-      | Term Test Data DN | 7                | 365                   | Reference List DN | 365                  |
+      | Labs               | Number of Values | Number of Days Before | Reference Name    | Number of Days After | Validation Record |
+      | Term1 Test Data DN | 7                | 365                   | Reference List DN | 365                  | No records found  |
 
   @ReferenceListLaboratory7.7
 
@@ -347,6 +347,7 @@ Feature: Laboratory Feature Reference List
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.
+    And the user remembers the value of "warning pop-up message" field into "Warning Header" on "Btris/Portal" page
     And the user must see "Conditions of Use and Code of Conduct" text in "btris: accept page" field on "Btris/Portal" page
     #Click on the accept button.
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
@@ -370,11 +371,10 @@ Feature: Laboratory Feature Reference List
     And the user selects "<Labs>" from "labs drop down" drop down on "Btris/Portal" page
     And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
     And the user waits for 10 seconds
-    And the user must see "Subject Name" text in "laboratory report table: subject name" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
-    And the user verify the reference list laboratory report on the table
+    And the user verify the reference list "<Validation Record>" laboratory report on the table
     #Click on the download report button.
     And the user clicks on "download full report button" element on "Btris/Portal" page
     #click on the open report in another tab button.
@@ -386,8 +386,8 @@ Feature: Laboratory Feature Reference List
     And the user logged out of the system
 
     Examples:
-      | Labs              | Number of Values | Number of Days Before | Reference Name    | Number of Days After |
-      | Term Test Data DN | 13               | 200                   | Reference List DN | 150                  |
+      | Labs               | Number of Values | Number of Days Before | Reference Name    | Number of Days After | Validation Record |
+      | Term1 Test Data DN | 13               | 200                   | Reference List DN | 150                  | No records found  |
 
   @ReferenceListLaboratory8.8
 
@@ -398,6 +398,7 @@ Feature: Laboratory Feature Reference List
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.
+    And the user remembers the value of "warning pop-up message" field into "Warning Header" on "Btris/Portal" page
     And the user must see "Conditions of Use and Code of Conduct" text in "btris: accept page" field on "Btris/Portal" page
     #Click on the accept button.
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
@@ -421,11 +422,10 @@ Feature: Laboratory Feature Reference List
     And the user selects "<Labs>" from "labs drop down" drop down on "Btris/Portal" page
     And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
     And the user waits for 10 seconds
-    And the user must see "Subject Name" text in "laboratory report table: subject name" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
-    And the user verify the reference list laboratory report on the table
+    And the user verify the reference list "<Validation Record>" laboratory report on the table
     #Click on the download report button.
     And the user clicks on "download full report button" element on "Btris/Portal" page
     #click on the open report in another tab button.
@@ -437,8 +437,8 @@ Feature: Laboratory Feature Reference List
     And the user logged out of the system
 
     Examples:
-      | Labs              | Number of Values | Number of Days Before | Reference Name    | Number of Days After |
-      | Term Test Data DN | 8                | 200                   | Reference List DN | 150                  |
+      | Labs               | Number of Values | Number of Days Before | Reference Name    | Number of Days After | Validation Record |
+      | Term1 Test Data DN | 8                | 200                   | Reference List DN | 150                  | No records found  |
 
 
   @ReferenceListLaboratory9.9
@@ -450,6 +450,7 @@ Feature: Laboratory Feature Reference List
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.
+    And the user remembers the value of "warning pop-up message" field into "Warning Header" on "Btris/Portal" page
     And the user must see "Conditions of Use and Code of Conduct" text in "btris: accept page" field on "Btris/Portal" page
     #Click on the accept button.
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
@@ -518,4 +519,4 @@ Feature: Laboratory Feature Reference List
 
     Examples:
       | Search Term data  | List Name          | User                     | Domain          | Search Term Document         | Reference Name    | Reference Date Type | Reference Term Document      | Reference Term Document Negative      |
-      | Term Test Data DN | Term1 Test Data DN | BTRIS_TEST2 - TEST2 null | Lab Observation | Search_Tearm_List_Data1.xlsx | Reference List DN | MM/DD/YYYY          | Reference_List_Template.xlsx | Reference_List_Negative_Template.xlsx |
+      | Term1 Test Data DN | Term1 Test Data DN | BTRIS_TEST2 - TEST2 null | Lab Observation | Search_Tearm_List_Data1.xlsx | Reference List DN | MM/DD/YYYY          | Reference_List_Template.xlsx | Reference_List_Negative_Template.xlsx |

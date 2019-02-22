@@ -116,7 +116,8 @@ def map_btris_portal
           'search subject s4'                                           =>"xpath^^.//*[contains(@data-test, 'results-preview-table')]//*[contains(text(), '00-C-0069')]",
           'search subject s2'                                           =>"xpath^^.//*[contains(@data-test, 'results-preview-table')]//*[contains(text(), 'NIHCCTEST, INNA NMN')]",
           'search subject pn'                                           =>"xpath^^.//*[contains(@data-test, 'results-preview-table')]//*[contains(text(), '00-C-0018')]",
-          'search subject pn1'                                           =>"xpath^^.//*[contains(@data-test, 'results-preview-table')]//*[contains(text(), 'BTRIS-TEST-03')]",
+          'search subject pn1'                                          =>"xpath^^.//*[contains(@data-test, 'results-preview-table')]//*[contains(text(), 'BTRIS-TEST-03')]",
+          'search subject pd1'                                          =>"xpath^^.//*[contains(@data-test, 'results-preview-table')]//*[contains(text(), 'BTRIS-TEST-0')]",
 
           'search subject s3'                                           =>"xpath^^.//*[contains(@data-test, 'results-preview-table')]//*[contains(text(), '00-C-0018')]",
           'pdf documents buttom select button'                          =>"xpath^^.//*[@id='app']/div[2]/div[1]/div[2]/div[2]/div/div/div/div/form/div[2]/div/div[4]/div[2]/button",
@@ -157,7 +158,7 @@ def map_btris_portal
           'irb inclusion enrollment result page'                                      =>"xpath^^.//*[contains(text(), 'Cumulative Inclusion Enrollment Report')]",
           'download pd report button'                                                 =>"xpath^^.//*[@data-test='download-results-button']",
           'irb inclusion enrollment search protocol'                                  =>"xpath^^.//*[@id='protocolSection']/div[2]/span",
-          'irb inclusion select protocol'                                             =>"xpath^^.//*[@data-test='select-pcsl-9807-protocol-radio-value']",
+          'irb inclusion select protocol'                                             =>"xpath^^.//*[@class='custom-control custom-radio']",
           'irb inclusion select prod protocol'                                        =>"xpath^^.//*[@data-test='select-pcsl-9807-protocol-radio-value'][contains(@class, 'custom-control custom-radio')]",
 
           'irb inclusion open report in new tab'                                      =>"xpath^^.//*[@data-test='open-in-new-window-button']",
@@ -197,6 +198,8 @@ def map_btris_portal
           'custom search term list: user field'                                               =>"xpath^^.//*[@id='red-list-upload-user-field']",
           'list name user field'                                                              =>"xpath^^.//*[@id='red-list-upload-user-field']",
           'warning pop-up message'                                                            =>"xpath^^.//*[@class='modal-secondary-header']//*[contains(text(), 'Conditions of Use and Code of Conduct')]",
+          'irb test'                                                                          =>"xpath^^.//*[@class='custom-control-description radio__label-text'][contains(text(), 'IRB Inclusion Enrollment')]",
+
 
           'custom search term list: list name field'                                          =>"xpath^^.//*[@id='red-list-upload-name-field']",
           'custom search term list: description'                                              =>"xpath^^.//*[@id='red-list-upload-description-field']",
