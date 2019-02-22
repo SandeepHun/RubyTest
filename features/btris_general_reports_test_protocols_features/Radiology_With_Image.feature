@@ -18,9 +18,9 @@
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
     #click on the radiology test.
-    And the user waits for 4 seconds
-    And the user clicks on "btris: radiology test" element on "Btris/Portal" page
     And the user waits for 3 seconds
+    And the user clicks on "btris: radiology test" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     And the user waits for 3 seconds
@@ -70,9 +70,9 @@
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
     #click on the radiology test.
-    And the user waits for 4 seconds
-    And the user clicks on "btris: radiology test" element on "Btris/Portal" page
     And the user waits for 3 seconds
+    And the user clicks on "btris: radiology test" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     And the user must see "Radiology Criteria" text in "btris: radiology filter report page" field on "Btris/Portal" page

@@ -20,7 +20,7 @@ Feature: BTRIS NIAAA Assessment Test Report
     #click on the assessment test.
     And the user waits for 3 seconds
     And the user clicks on "btris: assessment report test" element on "Btris/Portal" page
-    And the user waits for 3 seconds
+    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     And the user waits for 5 seconds
@@ -72,7 +72,7 @@ Feature: BTRIS NIAAA Assessment Test Report
     #click on the assessment test.
     And the user waits for 3 seconds
     And the user clicks on "btris: assessment report test" element on "Btris/Portal" page
-    And the user waits for 3 seconds
+    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     And the user waits for 13 seconds

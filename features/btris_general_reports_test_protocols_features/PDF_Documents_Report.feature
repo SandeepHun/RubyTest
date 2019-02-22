@@ -20,7 +20,7 @@ Feature: BTRIS PDF Documents Test Report
     #click on the  PDF Documents.
     And the user waits for 3 seconds
     And the user clicks on "pdf documents" element on "Btris/Portal" page
-    And the user waits for 3 seconds
+    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     And the user waits for 6 seconds
@@ -78,7 +78,7 @@ Feature: BTRIS PDF Documents Test Report
     #click on the  PDF Documents.
     And the user waits for 3 seconds
     And the user clicks on "pdf documents" element on "Btris/Portal" page
-    And the user waits for 3 seconds
+    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     And the user waits for 7 seconds

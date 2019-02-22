@@ -11,16 +11,16 @@ Feature: BTRIS NICHD - CTDB Test Report
     #Login to the BTRIS system.
     And the user login to the btris application
     #Verify the condition page to accespt it.
-    And the user waits for 4 seconds
+    And the user remembers the value of "warning pop-up message" field into "Warning Header" on "Btris/Portal" page
     And the user must see "Conditions of Use and Code of Conduct" text in "btris: accept page" field on "Btris/Portal" page
     #Click on the accept button.
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
     #click on the NICHD/CTDB Forms.
-    And the user waits for 5 seconds
-    And the user clicks on "nichd ctdb forms" element on "Btris/Portal" page
     And the user waits for 3 seconds
+    And the user clicks on "nichd ctdb forms" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     And the user waits for 5 seconds
@@ -74,9 +74,9 @@ Feature: BTRIS NICHD - CTDB Test Report
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
     #click on the NICHD/CTDB Forms.
-    And the user waits for 5 seconds
-    And the user clicks on "nichd ctdb forms" element on "Btris/Portal" page
     And the user waits for 3 seconds
+    And the user clicks on "nichd ctdb forms" element on "Btris/Portal" page
+    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     And the user waits for 5 seconds
