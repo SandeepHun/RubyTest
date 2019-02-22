@@ -1962,7 +1962,8 @@ And(/^the user verify if existing "(.*)" exist and remove it$/) do |value|
     step "the user clicks on \"custom search term check box\" element on \"Btris/Portal\" page"
     sleep 3
     #Click on the remove button.Scenario:
-    step "the user clicks on \"custom search term list remove button\" element on \"Btris/Portal\" page"
+    step "the user clicks the link with text \"Remove\""
+    #step "the user clicks on \"custom search term list remove button\" element on \"Btris/Portal\" page"
     sleep 2
     step "the user clicks on \"custom search term list confirm remove\" element on \"Btris/Portal\" page"
     sleep 3
@@ -1977,7 +1978,8 @@ And(/^the user verify if existing "(.*)" data exist and remove it$/) do |value|
     sleep 2
     step "the user clicks on \"reference list: search list check box\" element on \"Btris/Portal\" page"
     sleep 2
-    step "the user clicks on \"custom search term list remove button\" element on \"Btris/Portal\" page"
+    step "the user clicks the link with text \"Remove\""
+    #step "the user clicks on \"custom search term list remove button\" element on \"Btris/Portal\" page"
     sleep 2
     step "the user clicks on \"custom search term list confirm remove\" element on \"Btris/Portal\" page"
     sleep 3
@@ -1986,7 +1988,12 @@ And(/^the user verify if existing "(.*)" data exist and remove it$/) do |value|
   end
 end
 
-And(/^the user verify the reference list laboratory report on the table$/) do
+And(/^the user verify the reference list "(.*)" laboratory report on the table$/) do |value|
+  page_text = @browser.html
+  if page_text.include? value
+    puts "Search criteria return message #{value} , no record for the search filter"
+else
+  step "the user must see \"Subject Name\" text in \"laboratory report table: subject name\" field on \"Btris/Portal\" page"
   record_found = false
   table_path = ".//*[contains(@data-test, 'results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
@@ -2007,6 +2014,8 @@ And(/^the user verify the reference list laboratory report on the table$/) do
     checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
   end
 end
+end
+
 
 And(/^the user verify the reference list pathology report on the table$/) do
   record_found = false
