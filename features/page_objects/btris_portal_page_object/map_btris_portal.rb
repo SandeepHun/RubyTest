@@ -235,6 +235,7 @@ def map_btris_portal
           'laboratory error message line 2'                                                   =>"xpath^^.//*[contains(text(), 'Line 2 - CT Abdomen (CC, MIS) is not in domain Laboratory')]",
           'pathology error message line 1'                                                   =>"xpath^^.//*[contains(text(), 'Line 1 - MRI Brain (CC, RADNET) is not in domain')]",
           'pathology error message line 2'                                                   =>"xpath^^.//*[contains(text(), 'Line 2 - CT Abdomen (CC, MIS) is not in domain')]",
+          'upload feedback status'                                                           =>"xpath^^.//*[@class='noty_body'][contains(text(), 'Upload succeeded')]",
 
 
           #Admin Report
