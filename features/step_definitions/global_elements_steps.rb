@@ -313,9 +313,9 @@ end
 When(/^user attached "(.*)" file into "(.*)" on "(.*)" page$/) do |attached_file_location, field_name, page_name|
   if RUBY_PLATFORM.downcase.include?("linux")
     puts 'Linux upload'
-  suite_dir_path='/var/lib/jenkins/workspace/BTRIS-Automation-Test/features/support/Documents'+attached_file_location
+  suite_dir_path1='/var/lib/jenkins/workspace/BTRIS-Automation-Test/features/support/Documents/'+attached_file_location
 
-  suite_dir_path = suite_dir_path.gsub! '/', '\\'
+  suite_dir_path1 = suite_dir_path1.gsub! '/', '\\'
 
   # get the XPATH or CSS from page object file , Raises Error if not found
   begin
@@ -328,7 +328,7 @@ When(/^user attached "(.*)" file into "(.*)" on "(.*)" page$/) do |attached_file
   end
   selector =(selector.downcase.include? 'xpath') ? :xpath : :css
 
-  @browser.element(selector, element_path).send_keys suite_dir_path
+  @browser.element(selector, element_path).send_keys suite_dir_path1
   sleep 1
   # @browser.element(selector,".//*[@id='ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_signature_lincPassSignatureSubmit']").click
   else
