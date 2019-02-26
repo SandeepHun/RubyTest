@@ -42,18 +42,19 @@ Feature: BTRIS Laboratory Reference List Report
     And the user waits for 3 seconds
     #And the user selects "<User>" from "list name user field" list box on "Btris/Portal" page
     And the user enters "<User>" into "custom search term list: user field" on "Btris/Portal" page
-    And the user waits for 3 seconds
+    And the user waits for 2 seconds
     And the user clicks on "custom search term list: user" element on "Btris/Portal" page
-    And the user waits for 3 seconds
+    And the user waits for 2 seconds
     And the user clicks on "custom search term overwrite checkbox" element on "Btris/Portal" page
-    And the user waits for 4 seconds
+    And the user waits for 2 seconds
     And the user enters "<List Name>" into "custom search term list: list name field" on "Btris/Portal" page
     And the user enters "Automation Description Test Text" into "custom search term list: description" text area box on "Btris/Portal" page
     And the user selects "<Domain>" from "custom search term list: domain drop down" drop down on "Btris/Portal" page
-    And the user waits for 4 seconds
+    And the user waits for 2 seconds
     And user attached "<Search Term Document>" file into "custom search term list: brows upload" on "Btris/Portal" page
     And the user clicks on "custom search term list: upload button" element on "Btris/Portal" page
-    And the user waits for 13 seconds
+    And the user must see "Upload succeeded" text in "upload feedback status" field on "Btris/Portal" page
+    And the user waits for 3 seconds
     And the user clicks on "reference list" element on "Btris/Portal" page
     #Filter and remove Reference list added by the test.
     And the user enters "<Reference Name>" into "reference list: search box" on "Btris/Portal" page
@@ -67,7 +68,8 @@ Feature: BTRIS Laboratory Reference List Report
     And user attached "<Reference Term Document>" file into "reference list: brows upload" on "Btris/Portal" page
     And the user waits for 5 seconds
     And the user clicks on "reference list: upload button" element on "Btris/Portal" page
-    And the user waits for 10 seconds
+    And the user must see "Upload succeeded" text in "upload feedback status" field on "Btris/Portal" page
+    And the user waits for 3 seconds
     And the user clicks on "nav arrow to active protocol" element on "Btris/Portal" page
 
     #Sign out.
