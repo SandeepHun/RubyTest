@@ -1650,7 +1650,7 @@ And(/^the user verify the medication report on the table$/) do
     (1..table_rows).each do |rows|
       delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
       #puts 'the row number is ' +delete_icons_row
-      new_document = "NIHCCTEST, PATIENT LAB INPATIENT 1"
+      new_document = "NIHCCTEST, PATIENT FOUR"
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[1]"
@@ -1989,6 +1989,7 @@ And(/^the user verify if existing "(.*)" data exist and remove it$/) do |value|
 end
 
 And(/^the user verify the reference list "(.*)" laboratory report on the table$/) do |value|
+  sleep 5
   page_text = @browser.html
   if page_text.include? value
     puts "Search criteria return message #{value} , no record for the search filter"
@@ -2004,7 +2005,7 @@ else
     (1..table_rows).each do |rows|
       delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
       # puts 'the row number is ' +delete_icons_row
-      new_document = "ACEVEDO, KARLA LIZBETH"
+      new_document = "NIHCCTEST, PATIENT LAB OUTPAT DLM USE ONLY"
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
@@ -2017,30 +2018,62 @@ end
 end
 
 
-And(/^the user verify the reference list pathology report on the table$/) do
-  record_found = false
-  if @browser.element(:xpath, ".//*[contains(text(), 'No records found')]").nil?
+And(/^the user verify the reference list pathology report and "(.*)" on the table$/) do |value|
+  sleep 5
+  page_text = @browser.html
+  if page_text.include? value
+    puts "Search criteria return message #{value} , no record for the search filter"
+  else
+    step "the user must see \"Subject Name\" text in \"laboratory report table: subject name\" field on \"Btris/Portal\" page"
+    record_found = false
     table_path = ".//*[contains(@data-test, 'results-preview-table')]"
-  check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
-  if check_record_present > 2
+    check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
+    if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
     table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
     #puts table_rows
     (1..table_rows).each do |rows|
       delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
       # puts 'the row number is ' +delete_icons_row
-      new_document = "ANDERSON, CHRISTINE NMN"
+      new_document = "NIHCCTEST, INNA NMN"
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
-        #puts 'the Subject for the Reference Laboratory results are ' +del_obj
+        puts 'the Subject for the Reference Laboratory results are ' +del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
   end
+  end
+  end
+
+And(/^the user verify the reference list pathology report and "(.*)" on the table 2$/) do |value|
+  sleep 5
+  page_text = @browser.html
+  if page_text.include? value
+    puts "Search criteria return message #{value} , no record for the search filter"
   else
-    puts 'No record available on the search day ranges'
+    step "the user must see \"Subject Name\" text in \"laboratory report table: subject name\" field on \"Btris/Portal\" page"
+    record_found = false
+    table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+    check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
+    if check_record_present > 2
+      #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
+      table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
+      #puts table_rows
+      (1..table_rows).each do |rows|
+        delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
+        # puts 'the row number is ' +delete_icons_row
+        new_document = "NIHCCTEST, PATIENT LAB INPAT DLM USE ONLY"
+        if delete_icons_row.downcase.eql? new_document.downcase
+          record_found = true
+          del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
+          puts 'the Subject for the Reference list Pathology results are ' +del_obj
+        end
+      end
+      checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
     end
+  end
 end
 
 And(/^the user verify if MRN "(.*)" has already been added and "(.*)" is display$/) do |value, message|

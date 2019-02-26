@@ -160,6 +160,7 @@ def map_btris_portal
           'irb inclusion enrollment search protocol'                                  =>"xpath^^.//*[@id='protocolSection']/div[2]/span",
           'irb inclusion select protocol'                                             =>"xpath^^.//*[@class='custom-control custom-radio']",
           'irb inclusion select prod protocol'                                        =>"xpath^^.//*[@data-test='select-pcsl-9807-protocol-radio-value'][contains(@class, 'custom-control custom-radio')]",
+          'report table validation'                                                   =>"xpath^^.//*[@class='empty-message'][contains(text(), 'No records found')]",
 
           'irb inclusion open report in new tab'                                      =>"xpath^^.//*[@data-test='open-in-new-window-button']",
           'irb inclusion search protocol2'                                            =>"xpath^^.//*[@data-test='select-pcsl-18789-protocol-radio-value'][contains(@class, 'custom-control custom-radio')]",
@@ -232,6 +233,8 @@ def map_btris_portal
           'reference list: radiology report results table'                                    =>"xpath^^.//*[contains(text(), 'Radiology Results Preview -')]",
           'laboratory error message line 1'                                                   =>"xpath^^.//*[contains(text(), 'Line 1 - MRI Brain (CC, RADNET) is not in domain Laboratory')]",
           'laboratory error message line 2'                                                   =>"xpath^^.//*[contains(text(), 'Line 2 - CT Abdomen (CC, MIS) is not in domain Laboratory')]",
+          'pathology error message line 1'                                                   =>"xpath^^.//*[contains(text(), 'Line 1 - MRI Brain (CC, RADNET) is not in domain')]",
+          'pathology error message line 2'                                                   =>"xpath^^.//*[contains(text(), 'Line 2 - CT Abdomen (CC, MIS) is not in domain')]",
 
 
           #Admin Report
