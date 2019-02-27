@@ -46,19 +46,19 @@ Feature: BTRIS Pivot Counts Test Report
     And the user remembers the value of "subjects count" field into "Total Subjects Cont" on "Btris/Portal" page
     And the user remembers the value of "records count" field into "Total Records Cont" on "Btris/Portal" page
     And the user selects "<Report View 1>" from "report view drop_down" drop down on "Btris/Portal" page
-    And the user waits for 5 seconds
+    And the user waits for 6 seconds
     And the user can see current value of "Total Subjects Cont" in "subjects count" field on "Btris/Portal" page
     And the user can see current value of "Total Records Cont" in "records count" field on "Btris/Portal" page
     And the user selects "<Report View 0>" from "report view drop_down" drop down on "Btris/Portal" page
-    And the user waits for 5 seconds
+    And the user waits for 6 seconds
     And the user remembers the value of "subjects count" field into "Total Subjects Cont" on "Btris/Portal" page
     And the user remembers the value of "records count" field into "Total Records Cont" on "Btris/Portal" page
     And the user selects "<Report View 2>" from "report view drop_down" drop down on "Btris/Portal" page
-    And the user waits for 5 seconds
+    And the user waits for 6 seconds
     And the user can see current value of "Total Subjects Cont" in "subjects count" field on "Btris/Portal" page
     And the user can see current value of "Total Records Cont" in "records count" field on "Btris/Portal" page
     And the user selects "<Report View 0>" from "report view drop_down" drop down on "Btris/Portal" page
-    And the user waits for 5 seconds
+    And the user waits for 6 seconds
     And the user remembers the value of "subjects count" field into "Total Subjects Cont" on "Btris/Portal" page
     And the user remembers the value of "records count" field into "Total Records Cont" on "Btris/Portal" page
     And the user selects "<Report View 3>" from "report view drop_down" drop down on "Btris/Portal" page
@@ -66,11 +66,11 @@ Feature: BTRIS Pivot Counts Test Report
     And the user can see current value of "Total Subjects Cont" in "subjects count" field on "Btris/Portal" page
     And the user can see current value of "Total Records Cont" in "records count" field on "Btris/Portal" page
     And the user selects "<Report View 0>" from "report view drop_down" drop down on "Btris/Portal" page
-    And the user waits for 5 seconds
+    And the user waits for 6 seconds
     And the user remembers the value of "subjects count" field into "Total Subjects Cont" on "Btris/Portal" page
     And the user remembers the value of "records count" field into "Total Records Cont" on "Btris/Portal" page
     And the user selects "<Report View 4>" from "report view drop_down" drop down on "Btris/Portal" page
-    And the user waits for 5 seconds
+    And the user waits for 6 seconds
     And the user can see current value of "Total Subjects Cont" in "subjects count" field on "Btris/Portal" page
     And the user can see current value of "Total Records Cont" in "records count" field on "Btris/Portal" page
     And the user selects "<Report View 0>" from "report view drop_down" drop down on "Btris/Portal" page
@@ -128,31 +128,31 @@ Feature: BTRIS Pivot Counts Test Report
     And the user remembers the value of "subjects count" field into "Total Subjects Cont" on "Btris/Portal" page
     And the user remembers the value of "records count" field into "Total Records Cont" on "Btris/Portal" page
     And the user selects "<Report View 1>" from "report view drop_down" drop down on "Btris/Portal" page
-    And the user waits for 5 seconds
+    And the user waits for 6 seconds
     And the user can see current value of "Total Subjects Cont" in "subjects count" field on "Btris/Portal" page
     And the user can see current value of "Total Records Cont" in "records count" field on "Btris/Portal" page
     And the user selects "<Report View 0>" from "report view drop_down" drop down on "Btris/Portal" page
-    And the user waits for 5 seconds
+    And the user waits for 6 seconds
     And the user remembers the value of "subjects count" field into "Total Subjects Cont" on "Btris/Portal" page
     And the user remembers the value of "records count" field into "Total Records Cont" on "Btris/Portal" page
     And the user selects "<Report View 2>" from "report view drop_down" drop down on "Btris/Portal" page
-    And the user waits for 5 seconds
+    And the user waits for 6 seconds
     And the user can see current value of "Total Subjects Cont" in "subjects count" field on "Btris/Portal" page
     And the user can see current value of "Total Records Cont" in "records count" field on "Btris/Portal" page
     And the user selects "<Report View 0>" from "report view drop_down" drop down on "Btris/Portal" page
-    And the user waits for 5 seconds
+    And the user waits for 6 seconds
     And the user remembers the value of "subjects count" field into "Total Subjects Cont" on "Btris/Portal" page
     And the user remembers the value of "records count" field into "Total Records Cont" on "Btris/Portal" page
     And the user selects "<Report View 3>" from "report view drop_down" drop down on "Btris/Portal" page
-    And the user waits for 5 seconds
+    And the user waits for 6 seconds
     And the user can see current value of "Total Subjects Cont" in "subjects count" field on "Btris/Portal" page
     And the user can see current value of "Total Records Cont" in "records count" field on "Btris/Portal" page
     And the user selects "<Report View 0>" from "report view drop_down" drop down on "Btris/Portal" page
-    And the user waits for 5 seconds
+    And the user waits for 6 seconds
     And the user remembers the value of "subjects count" field into "Total Subjects Cont" on "Btris/Portal" page
     And the user remembers the value of "records count" field into "Total Records Cont" on "Btris/Portal" page
     And the user selects "<Report View 4>" from "report view drop_down" drop down on "Btris/Portal" page
-    And the user waits for 5 seconds
+    And the user waits for 6 seconds
     And the user can see current value of "Total Subjects Cont" in "subjects count" field on "Btris/Portal" page
     And the user can see current value of "Total Records Cont" in "records count" field on "Btris/Portal" page
     And the user selects "<Report View 0>" from "report view drop_down" drop down on "Btris/Portal" page
@@ -164,4 +164,4 @@ Feature: BTRIS Pivot Counts Test Report
     Examples:
       | Subject       | Filtered Subject | Report View 1            | Report View 2                     | Report View 2                     | Report View 0 | Report View 3 | Report View 4       |
       | BTRIS-TEST-03 | NIHCCTEST        | Pivot By Day & Order Set | Pivot By Day & Order Set Detail 1 | Pivot By Day & Order Set Detail 1 | Standard      | Pivot By Day  | Pivot By Day & Time |
-      | 00-C-0181     | ABBOTT           | Pivot By Day & Order Set | Pivot By Day & Order Set Detail 1 | Pivot By Day & Order Set Detail 1 | Standard      | Pivot By Day  | Pivot By Day & Time |
+      | 00-C-0133     | ANDERSON         | Pivot By Day & Order Set | Pivot By Day & Order Set Detail 1 | Pivot By Day & Order Set Detail 1 | Standard      | Pivot By Day  | Pivot By Day & Time |

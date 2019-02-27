@@ -1,6 +1,6 @@
 @BTRIS_Unstable_Test_RL
 @ReferenceList_Pathology_Test.2
-Feature: BTRIS Laboratory Reference List Report
+Feature: BTRIS Pathology Reference List Report
 
 #  @ReferenceListPathology1
 #
@@ -50,9 +50,10 @@ Feature: BTRIS Laboratory Reference List Report
 #    And the user enters "Automation Description Test Text" into "custom search term list: description" text area box on "Btris/Portal" page
 #    And the user selects "<Domain>" from "custom search term list: domain drop down" drop down on "Btris/Portal" page
 #    And the user waits for 4 seconds
+#    #And the user verify if "<Search Term data>" document already exist and if not user uploads new "<Search Term Document>" and continue
 #    And user attached "<Search Term Document>" file into "custom search term list: brows upload" on "Btris/Portal" page
 #    And the user clicks on "custom search term list: upload button" element on "Btris/Portal" page
-#    And the user waits for 13 seconds
+#    And the user waits for 7 seconds
 #    And the user clicks on "reference list" element on "Btris/Portal" page
 #    #Filter and remove Reference list added by the test.
 #    And the user enters "<Reference Name>" into "reference list: search box" on "Btris/Portal" page
@@ -63,18 +64,19 @@ Feature: BTRIS Laboratory Reference List Report
 #    And the user clicks on "reference list: overwrite checkbox" element on "Btris/Portal" page
 #    And the user enters "Automation Description Test Text" into "reference list: description" text area box on "Btris/Portal" page
 #    And the user enters "<Reference Date Type>" into "reference list: date type" on "Btris/Portal" page
+#    #And the user verify if "<Reference Name>" document already exist and if not user uploads new "<Reference Term Document>" and continue
 #    And user attached "<Reference Term Document>" file into "reference list: brows upload" on "Btris/Portal" page
 #    And the user waits for 5 seconds
 #    And the user clicks on "reference list: upload button" element on "Btris/Portal" page
-#    And the user waits for 10 seconds
+#    And the user waits for 7 seconds
 #    And the user clicks on "nav arrow to active protocol" element on "Btris/Portal" page
 #
 #    #Sign out.
 #    And the user logged out of the system
 #
 #    Examples:
-#      | Search Term data   | List Name          | User                     | Domain                          | Search Term Document            | Reference Name    | Reference Date Type | Reference Term Document      |
-#      | Term1 Test Data DN | Term1 Test Data DN | BTRIS_TEST2 - TEST2 null | Pathology Consolidated Concepts | Pathology_Search_Term_List.xlsx | Reference List DN | MM/DD/YYYY          | Reference_List_Template.xlsx |
+#      | Search Term data     | List Name            | User                     | Domain                          | Search Term Document            | Reference Name    | Reference Date Type | Reference Term Document      |
+#      | Pathology Document 1 | Pathology Document 1 | BTRIS_TEST2 - TEST2 null | Pathology Consolidated Concepts | Pathology_Search_Term_List.xlsx | Reference List DN | MM/DD/YYYY          | Reference_List_Template.xlsx |
 
 
   @ReferenceListPathology2.1
@@ -103,13 +105,14 @@ Feature: BTRIS Laboratory Reference List Report
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
     And the user must see "Pathology Criteria" text in "reference list pathology report filter page" field on "Btris/Portal" page
+    And the user waits for 2 seconds
     And the user selects "<Reference Name>" from "reference list drop down" drop down on "Btris/Portal" page
     And the user enters "<Number of Days Before>" into "reference list day range text box" on "Btris/Portal" page
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
     And the user enters "<Number of Values>" into "number of values text box" on "Btris/Portal" page
     And the user selects "<Labs>" from "labs drop down" drop down on "Btris/Portal" page
     And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
-    And the user waits for 10 seconds
+    And the user remembers the value of "laboratory report table: subject name column" field into "Subject Name" on "Btris/Portal" page
     #Verify report page.
     And the user must see "Pathology Results Preview - Standard" text in "pathology and procedure report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
@@ -125,8 +128,8 @@ Feature: BTRIS Laboratory Reference List Report
     And the user logged out of the system
 
     Examples:
-      | Labs               | Number of Values | Number of Days Before | Reference Name    | Number of Days After | Validation Record |
-      | Term1 Test Data DN | 10               | 90                    | Reference List DN | 80                   | No records found  |
+      | Labs                 | Number of Values | Number of Days Before | Reference Name    | Number of Days After | Validation Record |
+      | Pathology Document 1 | 10               | 90                    | Reference List DN | 80                   | No records found  |
 
 
 
@@ -156,13 +159,14 @@ Feature: BTRIS Laboratory Reference List Report
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
     And the user must see "Pathology Criteria" text in "reference list pathology report filter page" field on "Btris/Portal" page
+    And the user waits for 2 seconds
     And the user selects "<Reference Name>" from "reference list drop down" drop down on "Btris/Portal" page
     And the user enters "<Number of Days Before>" into "reference list day range text box" on "Btris/Portal" page
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
     And the user enters "<Number of Values>" into "number of values text box" on "Btris/Portal" page
     And the user selects "<Labs>" from "labs drop down" drop down on "Btris/Portal" page
     And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
-    And the user waits for 10 seconds
+    And the user remembers the value of "laboratory report table: subject name column" field into "Subject Name" on "Btris/Portal" page
     #Verify report page.
     And the user must see "Pathology Results Preview - Standard" text in "pathology and procedure report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
@@ -178,8 +182,8 @@ Feature: BTRIS Laboratory Reference List Report
     And the user logged out of the system
 
     Examples:
-      | Labs               | Number of Values | Number of Days Before | Reference Name    | Number of Days After | Validation Record |
-      | Term1 Test Data DN | 15               | 60                    | Reference List DN | 40                   | No records found  |
+      | Labs                 | Number of Values | Number of Days Before | Reference Name    | Number of Days After | Validation Record |
+      | Pathology Document 1 | 15               | 60                    | Reference List DN | 40                   | No records found  |
 
 
 
@@ -209,13 +213,14 @@ Feature: BTRIS Laboratory Reference List Report
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
     And the user must see "Pathology Criteria" text in "reference list pathology report filter page" field on "Btris/Portal" page
+    And the user waits for 2 seconds
     And the user selects "<Reference Name>" from "reference list drop down" drop down on "Btris/Portal" page
     And the user enters "<Number of Days Before>" into "reference list day range text box" on "Btris/Portal" page
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
     And the user enters "<Number of Values>" into "number of values text box" on "Btris/Portal" page
     And the user selects "<Labs>" from "labs drop down" drop down on "Btris/Portal" page
     And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
-    And the user waits for 10 seconds
+    And the user remembers the value of "laboratory report table: subject name column" field into "Subject Name" on "Btris/Portal" page
     #Verify report page.
     And the user must see "Pathology Results Preview - Standard" text in "pathology and procedure report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
@@ -231,8 +236,8 @@ Feature: BTRIS Laboratory Reference List Report
     And the user logged out of the system
 
     Examples:
-      | Labs               | Number of Values | Number of Days Before | Reference Name    | Number of Days After | Validation Record |
-      | Term1 Test Data DN | 5                | 30                    | Reference List DN | 30                   | No records found  |
+      | Labs                 | Number of Values | Number of Days Before | Reference Name    | Number of Days After | Validation Record |
+      | Pathology Document 1 | 5                | 30                    | Reference List DN | 30                   | No records found  |
 
 
   @ReferenceListPathology5
@@ -261,13 +266,14 @@ Feature: BTRIS Laboratory Reference List Report
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
     And the user must see "Pathology Criteria" text in "reference list pathology report filter page" field on "Btris/Portal" page
+    And the user waits for 2 seconds
     And the user selects "<Reference Name>" from "reference list drop down" drop down on "Btris/Portal" page
     And the user enters "<Number of Days Before>" into "reference list day range text box" on "Btris/Portal" page
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
     And the user enters "<Number of Values>" into "number of values text box" on "Btris/Portal" page
     And the user selects "<Labs>" from "labs drop down" drop down on "Btris/Portal" page
     And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
-    And the user waits for 15 seconds
+    And the user remembers the value of "laboratory report table: subject name column" field into "Subject Name" on "Btris/Portal" page
     And the user remembers the value of "subjects count" field into "Total Subjects Cont" on "Btris/Portal" page
     And the user remembers the value of "records count" field into "Total Records Cont" on "Btris/Portal" page
     #Verify report page.
@@ -287,8 +293,8 @@ Feature: BTRIS Laboratory Reference List Report
     And the user logged out of the system
 
     Examples:
-      | Labs               | Number of Values | Number of Days Before | Reference Name    | Number of Days After | Validation Record |
-      | Term1 Test Data DN | 1                | 15                    | Reference List DN | 15                   | No records found  |
+      | Labs                 | Number of Values | Number of Days Before | Reference Name    | Number of Days After | Validation Record |
+      | Pathology Document 1 | 1                | 15                    | Reference List DN | 15                   | No records found  |
 
 
   @ReferenceListPathology6
@@ -317,13 +323,14 @@ Feature: BTRIS Laboratory Reference List Report
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
     And the user must see "Pathology Criteria" text in "reference list pathology report filter page" field on "Btris/Portal" page
+    And the user waits for 2 seconds
     And the user selects "<Reference Name>" from "reference list drop down" drop down on "Btris/Portal" page
     And the user enters "<Number of Days Before>" into "reference list day range text box" on "Btris/Portal" page
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
     And the user enters "<Number of Values>" into "number of values text box" on "Btris/Portal" page
     And the user selects "<Labs>" from "labs drop down" drop down on "Btris/Portal" page
     And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
-    And the user waits for 10 seconds
+    And the user remembers the value of "laboratory report table: subject name column" field into "Subject Name" on "Btris/Portal" page
     #Verify report page.
     And the user must see "Pathology Results Preview - Standard" text in "pathology and procedure report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
@@ -339,8 +346,8 @@ Feature: BTRIS Laboratory Reference List Report
     And the user logged out of the system
 
     Examples:
-      | Labs               | Number of Values | Number of Days Before | Reference Name    | Number of Days After | Validation Record |
-      | Term1 Test Data DN | 7                | 365                   | Reference List DN | 365                  | No records found  |
+      | Labs                 | Number of Values | Number of Days Before | Reference Name    | Number of Days After | Validation Record |
+      | Pathology Document 1 | 7                | 365                   | Reference List DN | 365                  | No records found  |
 
   @ReferenceListPathology7
 
@@ -368,13 +375,14 @@ Feature: BTRIS Laboratory Reference List Report
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
     And the user must see "Pathology Criteria" text in "reference list pathology report filter page" field on "Btris/Portal" page
+    And the user waits for 2 seconds
     And the user selects "<Reference Name>" from "reference list drop down" drop down on "Btris/Portal" page
     And the user enters "<Number of Days Before>" into "reference list day range text box" on "Btris/Portal" page
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
     And the user enters "<Number of Values>" into "number of values text box" on "Btris/Portal" page
     And the user selects "<Labs>" from "labs drop down" drop down on "Btris/Portal" page
     And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
-    And the user waits for 10 seconds
+    And the user remembers the value of "laboratory report table: subject name column" field into "Subject Name" on "Btris/Portal" page
     #Verify report page.
     And the user must see "Pathology Results Preview - Standard" text in "pathology and procedure report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
@@ -390,8 +398,8 @@ Feature: BTRIS Laboratory Reference List Report
     And the user logged out of the system
 
     Examples:
-      | Labs               | Number of Values | Number of Days Before | Reference Name    | Number of Days After | Validation Record |
-      | Term1 Test Data DN | 13               | 200                   | Reference List DN | 150                  | No records found  |
+      | Labs                 | Number of Values | Number of Days Before | Reference Name    | Number of Days After | Validation Record |
+      | Pathology Document 1 | 13               | 200                   | Reference List DN | 150                  | No records found  |
 
   @ReferenceListPathology8
 
@@ -419,13 +427,14 @@ Feature: BTRIS Laboratory Reference List Report
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
     And the user must see "Pathology Criteria" text in "reference list pathology report filter page" field on "Btris/Portal" page
+    And the user waits for 2 seconds
     And the user selects "<Reference Name>" from "reference list drop down" drop down on "Btris/Portal" page
     And the user enters "<Number of Days Before>" into "reference list day range text box" on "Btris/Portal" page
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
     And the user enters "<Number of Values>" into "number of values text box" on "Btris/Portal" page
     And the user selects "<Labs>" from "labs drop down" drop down on "Btris/Portal" page
     And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
-    And the user waits for 15 seconds
+    And the user remembers the value of "laboratory report table: subject name column" field into "Subject Name" on "Btris/Portal" page
     And the user remembers the value of "subjects count" field into "Total Subjects Cont" on "Btris/Portal" page
     And the user remembers the value of "records count" field into "Total Records Cont" on "Btris/Portal" page
     #Verify report page.
@@ -445,8 +454,8 @@ Feature: BTRIS Laboratory Reference List Report
     And the user logged out of the system
 
     Examples:
-      | Labs               | Number of Values | Number of Days Before | Reference Name    | Number of Days After | Validation Record |
-      | Term1 Test Data DN | 8                | 200                   | Reference List DN | 150                  | No records found  |
+      | Labs                 | Number of Values | Number of Days Before | Reference Name    | Number of Days After | Validation Record |
+      | Pathology Document 1 | 8                | 200                   | Reference List DN | 150                  | No records found  |
 
 
 #  @ReferenceListPathology9
@@ -525,5 +534,5 @@ Feature: BTRIS Laboratory Reference List Report
 #    And the user logged out of the system
 #
 #    Examples:
-#      | Search Term data   | List Name          | User                     | Domain                          | Search Term Document         | Reference Name    | Reference Date Type | Reference Term Document      | Reference Term Document Negative      |
-#      | Term1 Test Data DN | Term1 Test Data DN | BTRIS_TEST2 - TEST2 null | Pathology Consolidated Concepts | Search_Tearm_List_Data1.xlsx | Reference List DN | MM/DD/YYYY          | Reference_List_Template.xlsx | Reference_List_Negative_Template.xlsx |
+#      | Search Term data     | List Name            | User                     | Domain                          | Search Term Document         | Reference Name    | Reference Date Type | Reference Term Document      | Reference Term Document Negative      |
+#      | Pathology Document 1 | Pathology Document 1 | BTRIS_TEST2 - TEST2 null | Pathology Consolidated Concepts | Search_Tearm_List_Data1.xlsx | Reference List DN | MM/DD/YYYY          | Reference_List_Template.xlsx | Reference_List_Negative_Template.xlsx |

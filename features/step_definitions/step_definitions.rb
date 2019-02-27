@@ -1988,13 +1988,27 @@ And(/^the user verify if existing "(.*)" data exist and remove it$/) do |value|
   end
 end
 
+And(/^the user verify if "(.*)" document already exist and if not user uploads new "(.*)" and continue$/) do |value1, attached_file_location|
+  page_text = @browser.html
+  if page_text.include? value1
+    puts "Document with name #{value1} already exist in the system and will be use to complete the test"
+  else
+    sleep 2
+    puts "Document with name #{value1} does not exist in the system a new document will be uploaded to complete the test"
+    step "user attached \"#{attached_file_location}\" file into \"custom search term list: brows upload\" on \"Btris/Portal\" page"
+    sleep 6
+  end
+end
+
+
+
 And(/^the user verify the reference list "(.*)" laboratory report on the table$/) do |value|
   sleep 5
   page_text = @browser.html
   if page_text.include? value
     puts "Search criteria return message #{value} , no record for the search filter"
-else
-  step "the user must see \"Subject Name\" text in \"laboratory report table: subject name\" field on \"Btris/Portal\" page"
+  else
+    step "the user must see \"Subject Name\" text in \"laboratory report table: subject name\" field on \"Btris/Portal\" page"
   record_found = false
   table_path = ".//*[contains(@data-test, 'results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
