@@ -83,20 +83,20 @@ end
 
 # def del_file_from_download_folder(file_name)
 #   # Create downoads if not exists
-#   directory_name="#{Dir.pwd}/features/support/downloads"
+#   directory_name="#{Dir.pwd}/features/support/DOWNLOADS"
 #   Dir.mkdir(directory_name) unless File.exists?(directory_name)
 #   Dir.new(directory_name).each { |download_file_name|
 #     if download_file_name.include? "#{file_name}"
 #       File.delete(directory_name+"/" +download_file_name)
 #     end
 #   }
-#   # Dir.new("#{Dir.pwd}/features/support/downloads").each { |download_file_name|
-#   #   if download_file_name.include? "#{file_name}"
-#   #     File.delete("#{Dir.pwd}/features/support/downloads/"+download_file_name)
-#   #   end
-#   # }
+#   Dir.new("#{Dir.pwd}/features/support/DOWNLOADS").each { |download_file_name|
+#     if download_file_name.include? "#{file_name}"
+#       File.delete("#{Dir.pwd}/features/support/DOWNLOADS/"+download_file_name)
+#     end
+#   }
 # end
-
+# 
 # def wait_for_element_displayed(element_xpath)
 #   start_time = Time.now.min
 #   element_present_flag = 'false'

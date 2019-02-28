@@ -1,4 +1,4 @@
-@BTRIS_Unstable_Test_RL
+@BTRIS_Quick_Test
 @ReferenceList_Laboratory_Test.1
 Feature: BTRIS Laboratory Reference List Report
 
