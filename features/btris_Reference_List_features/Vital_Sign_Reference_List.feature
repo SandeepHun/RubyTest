@@ -49,7 +49,7 @@ Feature: BTRIS Vital Signs Reference List Report
     And the user waits for 4 seconds
     And user attached "<Search Term Document>" file into "custom search term list: brows upload" on "Btris/Portal" page
     And the user clicks on "custom search term list: upload button" element on "Btris/Portal" page
-    And the user waits for 5 seconds
+    And the user waits for 10 seconds
     And the user clicks on "reference list" element on "Btris/Portal" page
     #Filter and remove Reference list added by the test.
     And the user enters "<Reference Name>" into "reference list: search box" on "Btris/Portal" page
@@ -63,7 +63,7 @@ Feature: BTRIS Vital Signs Reference List Report
     And user attached "<Reference Term Document>" file into "reference list: brows upload" on "Btris/Portal" page
     And the user waits for 3 seconds
     And the user clicks on "reference list: upload button" element on "Btris/Portal" page
-    And the user waits for 6 seconds
+    And the user waits for 10 seconds
     And the user clicks on "nav arrow to active protocol" element on "Btris/Portal" page
 
     #Sign out.
