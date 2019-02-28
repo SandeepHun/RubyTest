@@ -20,94 +20,13 @@ Prod:
   :host: https://btrisportal.cc.nih.gov
 
 
-#  :dmzhost: http://dphisweb05.usda.net/EnrollmentDMZ
+#Prod:
+#  :host: https://btrisportal.cc.nih.gov
 #  :server_name: QPHISSQL01
 #  :db_username: phis_app
 #  :db_password: 6LGNUuKe
 #  :phis_db_name: PHIS_DB_QA31
 #  :fsis_db_name: FSISSecurity_QA31
-test31:
-  :host: http://qphisweb31.usda.net/FSISDashBoard/Shared
-#  :dmzhost: http://qphisweb31.usda.net/EnrollmentDMZ
-#  :server_name: QPHISSQL01
-#  :db_username: phis_app
-#  :db_password: 6LGNUuKe
-#  :phis_db_name: PHIS_DB_QA31
-#  :fsis_db_name: FSISSecurity_QA31
-#  :browser: chrome
-#  :step_delay: false
-Dev:
-  :host: https://cc0dbtristeve.cc.nih.gov
-#  :dmzhost: http://qphisweb05.usda.net/EnrollmentDMZ
-#  :server_name: QPHISSQL01
-#  :db_username: phis_app
-#  :db_password: 6LGNUuKe
-#  :phis_db_name: PHIS_DB_QA31
-#  :fsis_db_name: FSISSecurity_QA31
-#test06:
-#  :host: http://qphisweb06.usda.net/FSISDashBoard/Shared
-#  :dmzhost: http://qphisweb06.usda.net/EnrollmentDMZ
-#  :server_name: QPHISSQL01
-#  :db_username: phis_app
-#  :db_password: 6LGNUuKe
-#  :phis_db_name: PHIS_DB_QA31
-#  :fsis_db_name: FSISSecurity_QA31
-test30:
-  :host: http://qphisweb30.usda.net/FSISDashBoard/Shared
-#  :dmzhost: http://qphisweb30.usda.net/EnrollmentDMZ
-#  :server_name: QPHISSQL01
-#  :db_username: phis_app
-#  :db_password: 6LGNUuKe
-#  :phis_db_name: PHIS_DB_QA31
-#  :fsis_db_name: FSISSecurity_QA31
-IVV:
-  :host: http://phisuat2.fsis.usda.gov/FSISDashBoard/Shared
-#  :dmzhost: http://phisuat2.fsis.usda.gov/EnrollmentDMZ
-#  :server_name: QPHISSQL01
-#  :db_username: phis_app
-#  :db_password: 6LGNUuKe
-#  :phis_db_name: PHIS_DB_QA31
-#  :fsis_db_name: FSISSecurity_QA31
-UAT:
-  :host: http://phisuat.fsis.usda.gov/FSISDashBoard/Shared
-#  :dmzhost: http://phisuat.fsis.usda.gov/EnrollmentDMZ
-#  :server_name: QPHISSQL01
-#  :db_username: phis_app
-#  :db_password: 6LGNUuKe
-#  :phis_db_name: PHIS_DB_QA31
-#  :fsis_db_name: FSISSecurity_QA31
-CERT:
-  :host: https://phiscert.fsis.usda.gov/FSISDashBoard/Shared
-#  :dmzhost: http://phiscert.fsis.usda.gov/EnrollmentDMZ
-#  :server_name: QPHISSQL01
-#  :db_username: phis_app
-#  :db_password: 6LGNUuKe
-#  :phis_db_name: PHIS_DB_QA31
-#  :fsis_db_name: FSISSecurity_QA31
-ITE:
-  :host: https://phisindsite.fsis.usda.gov/FSISDashBoard/Shared
-#  :dmzhost: http://phisindsite.fsis.usda.gov/EnrollmentDMZ
-#  :server_name: QPHISSQL01
-#  :db_username: phis_app
-#  :db_password: 6LGNUuKe
-#  :phis_db_name: PHIS_DB_QA31
-#  :fsis_db_name: FSISSecurity_QA31
-
-score_dev:
-  :host: http://dphisweb05.usda.net
-
-score_test06:
-   :host: http://qphisweb06.usda.net
-
-score_test31:
-   :host: http://qphisweb31.usda.net
-
-anet_dev:
-   :host: https://dev.assurancenet.fsis.usda.gov/assurancenet/changeUserRole.do?role=3177
-
-anet_local:
-    :host: http://10.13.16.156:9080/assurancenet/webapp.do?section=home&action=index
-
 
 chrome:
   :browser: chrome
