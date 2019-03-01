@@ -29,6 +29,7 @@ Feature: BTRIS Laboratory Test Report
     And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
+    And the user waits for 8 seconds
     And the user remembers the value of "protocol verify count" field into "Number OF Subjects" on "Btris/Portal" page
     And the user waits for 3 seconds
     And the user clicks on "protocol check button" element on "Btris/Portal" page
@@ -87,6 +88,7 @@ Feature: BTRIS Laboratory Test Report
     And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
+    And the user waits for 8 seconds
     And the user remembers the value of "protocol verify count" field into "Number OF Subjects" on "Btris/Portal" page
     And the user waits for 3 seconds
     And the user clicks on "protocol check button" element on "Btris/Portal" page
@@ -143,6 +145,7 @@ Feature: BTRIS Laboratory Test Report
     And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
+    And the user waits for 8 seconds
     And the user remembers the value of "protocol verify count" field into "Number OF Subjects" on "Btris/Portal" page
     And the user waits for 3 seconds
     And the user clicks on "protocol check button" element on "Btris/Portal" page
