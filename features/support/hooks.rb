@@ -5,15 +5,15 @@ require 'watir'
 require 'selenium-webdriver'
 
 EXEC_ID = Time.now.strftime('%m%d%Y%H%M%S')
-RESULTS_DIR = "#{Dir.pwd}/features/results/#{EXEC_ID}"
+RESULTS_DIR = "#{Dir.pwd}/features/support/Results/#{EXEC_ID}"
 if ENV['TEST_ENV'].downcase.eql? 'test01'
   TIMEOUT = 60
-  puts 'this is the wait(40s) we are using for Prod ENV'
+  puts 'this is the wait(60s) we are using for Prod ENV'
 else
   TIMEOUT = 60
   if ENV['TEST_ENV'].downcase.eql? 'Prod'
     TIMEOUT = 60
-    puts 'this is the wait(45s) we are using for Test ENV'
+    puts 'this is the wait(60s) we are using for Test ENV'
   else
     TIMEOUT = 60
     puts 'this is the wait we are using for none test nor prod ENV'

@@ -1117,7 +1117,7 @@ end
 
 And(/^the user click on the radiology record to verify the image$/) do
   record_found = false
-  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  table_path = ".//*[contains(@data-test, 'Results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
@@ -1130,7 +1130,7 @@ And(/^the user click on the radiology record to verify the image$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_obj 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]/a"
-        puts 'Note! these are test data not actual data, the pulmonary results are ' +del_obj
+        puts 'Note! these are test data not actual data, the pulmonary Results are ' +del_obj
         step "user accept browser pop-ups"
         # sleep 4r7y,o
       end
@@ -1149,7 +1149,7 @@ end
 And(/^the user verify the NIAAA report on the table$/) do
   sleep 3
   record_found = false
-  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  table_path = ".//*[contains(@data-test, 'Results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
@@ -1162,7 +1162,7 @@ And(/^the user verify the NIAAA report on the table$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         #del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
-        #puts 'Note! These are test data and not actual data, the Laboratory results are ' +del_obj
+        #puts 'Note! These are test data and not actual data, the Laboratory Results are ' +del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
@@ -1171,7 +1171,7 @@ end
 
 And(/^the user verify the NIAAA prod protocol report on the table$/) do
   record_found = false
-  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  table_path = ".//*[contains(@data-test, 'Results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
@@ -1184,7 +1184,7 @@ And(/^the user verify the NIAAA prod protocol report on the table$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         #del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
-        #puts 'Note! These are test data and not actual data, the Laboratory results are ' +del_obj
+        #puts 'Note! These are test data and not actual data, the Laboratory Results are ' +del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
@@ -1194,7 +1194,7 @@ end
 And(/^the user verify the laboratory report on the table$/) do
   sleep 3
   record_found = false
-  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  table_path = ".//*[contains(@data-test, 'Results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
@@ -1207,7 +1207,7 @@ And(/^the user verify the laboratory report on the table$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
-        puts 'Note! These are test data and not actual data, the Laboratory results are ' +del_obj
+        puts 'Note! These are test data and not actual data, the Laboratory Results are ' +del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
@@ -1216,7 +1216,7 @@ end
 
 And(/^the user verify the laboratory prod report on the table$/) do
   record_found = false
-  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  table_path = ".//*[contains(@data-test, 'Results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
@@ -1229,7 +1229,7 @@ And(/^the user verify the laboratory prod report on the table$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
-        puts 'Note! These are test data and not actual data, the Laboratory results are ' +del_obj
+        puts 'Note! These are test data and not actual data, the Laboratory Results are ' +del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
@@ -1238,7 +1238,7 @@ end
 
 And(/^the user verify the new laboratory report on the table$/) do
   record_found = false
-  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  table_path = ".//*[contains(@data-test, 'Results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
@@ -1251,7 +1251,7 @@ And(/^the user verify the new laboratory report on the table$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
-         puts 'Note! These are test data and not actual data, the the Laboratory results are ' +del_obj
+         puts 'Note! These are test data and not actual data, the the Laboratory Results are ' +del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
@@ -1262,7 +1262,7 @@ end
 And(/^the user verify the diagnosis and procedure report on the table$/) do
   sleep 3
   record_found = false
-  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  table_path = ".//*[contains(@data-test, 'Results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
@@ -1275,7 +1275,7 @@ And(/^the user verify the diagnosis and procedure report on the table$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
-        puts 'Note! this is a test data and not actual data, the diagnosis results are ' +del_obj
+        puts 'Note! this is a test data and not actual data, the diagnosis Results are ' +del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the Diagnosis and Procedure search"
@@ -1284,7 +1284,7 @@ end
 
 And(/^the user verify the diagnosis and procedure prod report on the table$/) do
   record_found = false
-  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  table_path = ".//*[contains(@data-test, 'Results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
@@ -1297,7 +1297,7 @@ And(/^the user verify the diagnosis and procedure prod report on the table$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
-        puts 'Note! this is a test data and not actual data, the diagnosis results are ' +del_obj
+        puts 'Note! this is a test data and not actual data, the diagnosis Results are ' +del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the Diagnosis and Procedure search"
@@ -1306,7 +1306,7 @@ end
 
 And(/^the user verify the diagnosis and procedure report on the table 2$/) do
   record_found = false
-  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  table_path = ".//*[contains(@data-test, 'Results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
@@ -1319,7 +1319,7 @@ And(/^the user verify the diagnosis and procedure report on the table 2$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
-        puts 'Note! this is a test data and not actual data, the Demographics results are ' +del_obj
+        puts 'Note! this is a test data and not actual data, the Demographics Results are ' +del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the Demographics search"
@@ -1350,7 +1350,7 @@ end
 And(/^the user verify the demographics report on the table$/) do
   sleep 3
   record_found = false
-  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  table_path = ".//*[contains(@data-test, 'Results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
@@ -1363,7 +1363,7 @@ And(/^the user verify the demographics report on the table$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
-        puts 'Note! this is a test data and not actual data, the Demographics results are ' +del_obj
+        puts 'Note! this is a test data and not actual data, the Demographics Results are ' +del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the Demographics search"
@@ -1372,7 +1372,7 @@ end
 
 And(/^the user verify the demographics prod report on the table$/) do
   record_found = false
-  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  table_path = ".//*[contains(@data-test, 'Results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
@@ -1385,7 +1385,7 @@ And(/^the user verify the demographics prod report on the table$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
-        puts 'Note! this is a test data and not actual data, the Demographics results are ' +del_obj
+        puts 'Note! this is a test data and not actual data, the Demographics Results are ' +del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the Demographics search"
@@ -1408,7 +1408,7 @@ And(/^the user verify the assessment report report on the table$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         #del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
-       # puts 'the MRN for the Laboratory results are ' +del_obj
+       # puts 'the MRN for the Laboratory Results are ' +del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the search"
@@ -1441,7 +1441,7 @@ end
 And(/^the user verify the clinical documents discrete values report on the table$/) do
   sleep 3
   record_found = false
-  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  table_path = ".//*[contains(@data-test, 'Results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
@@ -1454,7 +1454,7 @@ And(/^the user verify the clinical documents discrete values report on the table
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
-        puts 'Note! these are test data not actual data, the validated diagnosis results are ' +del_obj
+        puts 'Note! these are test data not actual data, the validated diagnosis Results are ' +del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in report table that matches the search criteria"
@@ -1463,7 +1463,7 @@ end
 
 And(/^the user verify the clinical documents discrete values actual report on the table$/) do
   record_found = false
-  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  table_path = ".//*[contains(@data-test, 'Results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
@@ -1476,7 +1476,7 @@ And(/^the user verify the clinical documents discrete values actual report on th
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
-        puts 'Note! these are test data not actual data, the validated diagnosis results are ' +del_obj
+        puts 'Note! these are test data not actual data, the validated diagnosis Results are ' +del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
@@ -1494,7 +1494,7 @@ end
 
 And(/^the user verify the nichd ctdb forms report on the table$/) do
   record_found = false
-  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  table_path = ".//*[contains(@data-test, 'Results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
@@ -1507,7 +1507,7 @@ And(/^the user verify the nichd ctdb forms report on the table$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         #del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
-        #puts 'the MRN for the diagnosis results are ' +del_obj
+        #puts 'the MRN for the diagnosis Results are ' +del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the NICHD/CTDB Forms search"
@@ -1516,7 +1516,7 @@ end
 
 And(/^the user verify the nichd ctdb forms prod report on the table$/) do
   record_found = false
-  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  table_path = ".//*[contains(@data-test, 'Results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
@@ -1529,7 +1529,7 @@ And(/^the user verify the nichd ctdb forms prod report on the table$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         #del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
-        #puts 'the MRN for the diagnosis results are ' +del_obj
+        #puts 'the MRN for the diagnosis Results are ' +del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the NICHD/CTDB Forms search"
@@ -1539,7 +1539,7 @@ end
 And(/^the user verify the nichd ctdb forms report on the table with all protocol$/) do
   sleep 3
   record_found = false
-  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  table_path = ".//*[contains(@data-test, 'Results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
@@ -1552,7 +1552,7 @@ And(/^the user verify the nichd ctdb forms report on the table with all protocol
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         #del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
-        #puts 'the MRN for the diagnosis results are ' +del_obj
+        #puts 'the MRN for the diagnosis Results are ' +del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the NICHD/CTDB Forms search"
@@ -1561,7 +1561,7 @@ end
 
 And(/^the user verify the pdf documents report on the table$/) do
   record_found = false
-  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  table_path = ".//*[contains(@data-test, 'Results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
@@ -1575,7 +1575,7 @@ And(/^the user verify the pdf documents report on the table$/) do
         record_found = true
         puts 'The PDF Documents report test subject record is available'
         # del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
-        # puts 'the MRN for the diagnosis results are ' +del_obj
+        # puts 'the MRN for the diagnosis Results are ' +del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the NICHD/CTDB Forms search"
@@ -1585,7 +1585,7 @@ end
 And(/^the user verify the vital signs report on the table$/) do
   sleep 3
   record_found = false
-  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  table_path = ".//*[contains(@data-test, 'Results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
@@ -1598,7 +1598,7 @@ And(/^the user verify the vital signs report on the table$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
-        puts 'Note! these are test data and not actual data, the vital signs results are ' +del_obj
+        puts 'Note! these are test data and not actual data, the vital signs Results are ' +del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
@@ -1607,7 +1607,7 @@ end
 
 And(/^the user verify the vital signs prod report on the table$/) do
   record_found = false
-  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  table_path = ".//*[contains(@data-test, 'Results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
@@ -1620,7 +1620,7 @@ And(/^the user verify the vital signs prod report on the table$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
-        puts 'Note! these are test data and not actual data, the vital signs results are ' +del_obj
+        puts 'Note! these are test data and not actual data, the vital signs Results are ' +del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
@@ -1641,7 +1641,7 @@ end
 And(/^the user verify the medication report on the table$/) do
   sleep 3
   record_found = false
-  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  table_path = ".//*[contains(@data-test, 'Results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
@@ -1654,7 +1654,7 @@ And(/^the user verify the medication report on the table$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[1]"
-        puts 'Note! these are test data and not actual data, the test results validated are ' +del_obj
+        puts 'Note! these are test data and not actual data, the test Results validated are ' +del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the medication search record"
@@ -1663,7 +1663,7 @@ end
 
 And(/^the user verify the medication prod report on the table$/) do
   record_found = false
-  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  table_path = ".//*[contains(@data-test, 'Results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
@@ -1676,7 +1676,7 @@ And(/^the user verify the medication prod report on the table$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[1]"
-        puts 'Note! these are test data and not actual data, the test results validated are ' +del_obj
+        puts 'Note! these are test data and not actual data, the test Results validated are ' +del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the medication search record"
@@ -1687,7 +1687,7 @@ end
 And(/^the user verify the pulmonary report on the table$/) do
   sleep 3
   record_found = false
-  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  table_path = ".//*[contains(@data-test, 'Results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
@@ -1700,7 +1700,7 @@ And(/^the user verify the pulmonary report on the table$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
-        puts 'Note! these are test data not actual data, the pulmonary results are ' +del_obj
+        puts 'Note! these are test data not actual data, the pulmonary Results are ' +del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the pulmonary search record"
@@ -1709,7 +1709,7 @@ end
 
 And(/^the user verify the pulmonary prod report on the table$/) do
   record_found = false
-  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  table_path = ".//*[contains(@data-test, 'Results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
@@ -1722,7 +1722,7 @@ And(/^the user verify the pulmonary prod report on the table$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
-        puts 'Note! these are test data not actual data, the pulmonary results are ' +del_obj
+        puts 'Note! these are test data not actual data, the pulmonary Results are ' +del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the pulmonary search record"
@@ -1753,7 +1753,7 @@ end
 
 And(/^the user verify the clinical documents full text report on the table$/) do
   record_found = false
-  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  table_path = ".//*[contains(@data-test, 'Results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
@@ -1766,7 +1766,7 @@ And(/^the user verify the clinical documents full text report on the table$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         #del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[1]"
-       # puts 'the MRN for the diagnosis results are ' +del_obj
+       # puts 'the MRN for the diagnosis Results are ' +del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
@@ -1777,7 +1777,7 @@ end
 And(/^the user verify the pathology report on the table$/) do
   sleep 3
   record_found = false
-  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  table_path = ".//*[contains(@data-test, 'Results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
@@ -1790,7 +1790,7 @@ And(/^the user verify the pathology report on the table$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         #del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[1]"
-       # puts 'the MRN for the Laboratory results are ' +del_obj
+       # puts 'the MRN for the Laboratory Results are ' +del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the Pathology search subject"
@@ -1799,7 +1799,7 @@ end
 
 And(/^the user verify the pathology prod data report on the table$/) do
   record_found = false
-  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  table_path = ".//*[contains(@data-test, 'Results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
@@ -1812,7 +1812,7 @@ And(/^the user verify the pathology prod data report on the table$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         #del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[1]"
-        # puts 'the MRN for the Laboratory results are ' +del_obj
+        # puts 'the MRN for the Laboratory Results are ' +del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the Pathology search subject"
@@ -1823,7 +1823,7 @@ end
 And(/^the user verify the ekg report on the table$/) do
   sleep 3
   record_found = false
-  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  table_path = ".//*[contains(@data-test, 'Results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
@@ -1836,7 +1836,7 @@ And(/^the user verify the ekg report on the table$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
-        puts 'Note! these are test data and not actual data, the results table data are ' +del_obj
+        puts 'Note! these are test data and not actual data, the Results table data are ' +del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the EKG search"
@@ -1845,7 +1845,7 @@ end
 
 And(/^the user verify the ekg prod data report on the table$/) do
   record_found = false
-  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  table_path = ".//*[contains(@data-test, 'Results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
@@ -1858,7 +1858,7 @@ And(/^the user verify the ekg prod data report on the table$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
-        puts 'Note! these are test data and not actual data, the results table data are ' +del_obj
+        puts 'Note! these are test data and not actual data, the Results table data are ' +del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the EKG search"
@@ -1868,7 +1868,7 @@ end
 And(/^the user verify the microbiology report on the table$/) do
   sleep 3
   record_found = false
-  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  table_path = ".//*[contains(@data-test, 'Results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
@@ -1881,7 +1881,7 @@ And(/^the user verify the microbiology report on the table$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
-        puts 'Note! these are test data and not actual data, the Microbiology results are ' +del_obj
+        puts 'Note! these are test data and not actual data, the Microbiology Results are ' +del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
@@ -1890,7 +1890,7 @@ end
 
 And(/^the user verify the microbiology prod protocol report on the table$/) do
   record_found = false
-  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  table_path = ".//*[contains(@data-test, 'Results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
@@ -1903,7 +1903,7 @@ And(/^the user verify the microbiology prod protocol report on the table$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
-        puts 'Note! these are test data and not actual data, the Microbiology results are ' +del_obj
+        puts 'Note! these are test data and not actual data, the Microbiology Results are ' +del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
@@ -1913,7 +1913,7 @@ end
 And(/^the user verify the echocardiogram report on the table$/) do
   sleep 3
   record_found = false
-  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  table_path = ".//*[contains(@data-test, 'Results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
@@ -1926,7 +1926,7 @@ And(/^the user verify the echocardiogram report on the table$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
-        puts 'Note! these are test data and not actual data, the Echocardiogram  results are ' +del_obj
+        puts 'Note! these are test data and not actual data, the Echocardiogram  Results are ' +del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the Echocardiogram search"
@@ -1935,7 +1935,7 @@ end
 
 And(/^the user verify the echocardiogram prod report on the table$/) do
   record_found = false
-  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  table_path = ".//*[contains(@data-test, 'Results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
@@ -1948,7 +1948,7 @@ And(/^the user verify the echocardiogram prod report on the table$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
-        puts 'Note! these are test data and not actual data, the Echocardiogram  results are ' +del_obj
+        puts 'Note! these are test data and not actual data, the Echocardiogram  Results are ' +del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the Echocardiogram search"
@@ -2010,7 +2010,7 @@ And(/^the user verify the reference list "(.*)" laboratory report on the table$/
   else
     step "the user must see \"Subject Name\" text in \"laboratory report table: subject name\" field on \"Btris/Portal\" page"
   record_found = false
-  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  table_path = ".//*[contains(@data-test, 'Results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
@@ -2023,7 +2023,7 @@ And(/^the user verify the reference list "(.*)" laboratory report on the table$/
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
-        #puts 'the Subject for the Reference Laboratory results are ' +del_obj
+        #puts 'the Subject for the Reference Laboratory Results are ' +del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
@@ -2040,7 +2040,7 @@ And(/^the user verify the reference list pathology report and "(.*)" on the tabl
   else
     step "the user must see \"Subject Name\" text in \"laboratory report table: subject name\" field on \"Btris/Portal\" page"
     record_found = false
-    table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+    table_path = ".//*[contains(@data-test, 'Results-preview-table')]"
     check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
     if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
@@ -2053,7 +2053,7 @@ And(/^the user verify the reference list pathology report and "(.*)" on the tabl
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
-        puts 'the Subject for the Reference Laboratory results are ' +del_obj
+        puts 'the Subject for the Reference Laboratory Results are ' +del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
@@ -2069,7 +2069,7 @@ And(/^the user verify the reference list vital sign report and "(.*)" on the tab
   else
     step "the user must see \"Subject Name\" text in \"laboratory report table: subject name\" field on \"Btris/Portal\" page"
     record_found = false
-    table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+    table_path = ".//*[contains(@data-test, 'Results-preview-table')]"
     check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
     if check_record_present > 2
       #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
@@ -2082,7 +2082,7 @@ And(/^the user verify the reference list vital sign report and "(.*)" on the tab
         if delete_icons_row.downcase.eql? new_document.downcase
           record_found = true
           del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
-          puts 'the Subject for the Reference Laboratory results are ' +del_obj
+          puts 'the Subject for the Reference Laboratory Results are ' +del_obj
         end
       end
       checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
@@ -2098,7 +2098,7 @@ And(/^the user verify the reference list pathology report and "(.*)" on the tabl
   else
     step "the user must see \"Subject Name\" text in \"laboratory report table: subject name\" field on \"Btris/Portal\" page"
     record_found = false
-    table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+    table_path = ".//*[contains(@data-test, 'Results-preview-table')]"
     check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
     if check_record_present > 2
       #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
@@ -2111,7 +2111,7 @@ And(/^the user verify the reference list pathology report and "(.*)" on the tabl
         if delete_icons_row.downcase.eql? new_document.downcase
           record_found = true
           del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
-          puts 'the Subject for the Reference list Pathology results are ' +del_obj
+          puts 'the Subject for the Reference list Pathology Results are ' +del_obj
         end
       end
       checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
@@ -2175,7 +2175,7 @@ end
 
 And(/^the user verify the reference list vital signs report on the table$/) do
   record_found = false
-  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  table_path = ".//*[contains(@data-test, 'Results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
@@ -2188,7 +2188,7 @@ And(/^the user verify the reference list vital signs report on the table$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
-        #puts 'the Subject for the Reference Laboratory results are ' +del_obj
+        #puts 'the Subject for the Reference Laboratory Results are ' +del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
@@ -2198,7 +2198,7 @@ end
 
 And(/^the user verify the reference list laboratory report on the table for S6$/) do
   record_found = false
-  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  table_path = ".//*[contains(@data-test, 'Results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
@@ -2220,7 +2220,7 @@ end
 
 And(/^the user verify the radiology administration report on the table$/) do
   record_found = false
-  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  table_path = ".//*[contains(@data-test, 'Results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
@@ -2233,7 +2233,7 @@ And(/^the user verify the radiology administration report on the table$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         #del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
-       # puts 'the MRN for the searched test results are ' +del_obj
+       # puts 'the MRN for the searched test Results are ' +del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the searched test search"
@@ -2242,7 +2242,7 @@ end
 
 And(/^the user verify the radiology administration report with image$/) do
   record_found = false
-  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  table_path = ".//*[contains(@data-test, 'Results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
@@ -2255,7 +2255,7 @@ And(/^the user verify the radiology administration report with image$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[6]/a"
-        #puts 'the image number for the searched test results are ' +del_obj
+        #puts 'the image number for the searched test Results are ' +del_obj
         click_web_element del_obj
       end
     end
