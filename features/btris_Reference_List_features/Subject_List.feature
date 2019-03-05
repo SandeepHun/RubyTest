@@ -1,6 +1,6 @@
 @BTRIS_Unstable_Test_RL12
 @Subject_List_Laboratory_Test
-Feature: Subject List
+Feature: BTRIS Subject List Template Report
 
   @Subject_List1
 
