@@ -309,7 +309,7 @@ Feature: BTRIS Laboratory Reference List Report
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
-    And the user waits for 2 seconds
+    And the user waits for 4 seconds
     #Verify and click on Reference List Report top na.
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
     #click on the Laboratory Test.

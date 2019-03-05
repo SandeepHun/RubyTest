@@ -44,7 +44,7 @@ Feature: BTRIS Pulmonary Function Test Report
     #Verify report page.
     And the user must see "Pulmonary Function Test Lab Report Results Preview - Standard" text in "pulmonary result report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
-    And the user verify the pulmonary report on the table
+    #And the user verify the pulmonary report on the table
     #Click on the download report button.
     And the user clicks on "download full report button" element on "Btris/Portal" page
     #click on the open report in another tab button.
