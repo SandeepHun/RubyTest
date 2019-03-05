@@ -2000,7 +2000,33 @@ And(/^the user verify if "(.*)" document already exist and if not user uploads n
   end
 end
 
-
+And(/^the user verify the reference list "(.*)" radiology report on the table$/) do |value|
+  sleep 5
+  page_text = @browser.html
+  if page_text.include? value
+    puts "Search criteria return message #{value} , no record for the search filter"
+  else
+    record_found = false
+    table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+    check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
+    if check_record_present > 2
+      #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
+      table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
+      #puts table_rows
+      (1..table_rows).each do |rows|
+        delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
+        # puts 'the row number is ' +delete_icons_row
+        new_document = "CAHILL, PATRICIA ANN MARIE"
+        if delete_icons_row.downcase.eql? new_document.downcase
+          record_found = true
+          del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
+          #puts 'the Subject for the Reference Laboratory Results are ' +del_obj
+        end
+      end
+      checkpoint (record_found.eql? true), "No data found in table that matches the radiology search"
+    end
+  end
+end
 
 And(/^the user verify the reference list "(.*)" laboratory report on the table$/) do |value|
   sleep 5
@@ -2019,7 +2045,7 @@ And(/^the user verify the reference list "(.*)" laboratory report on the table$/
     (1..table_rows).each do |rows|
       delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
       # puts 'the row number is ' +delete_icons_row
-      new_document = "NIHCCTEST, PATIENT LAB OUTPAT DLM USE ONLY"
+      new_document = "HUSTON, PERDITA CONSTANCE"
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
@@ -2056,7 +2082,7 @@ And(/^the user verify the reference list pathology report and "(.*)" on the tabl
         puts 'the Subject for the Reference Laboratory Results are ' +del_obj
       end
     end
-    checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
+    checkpoint (record_found.eql? true), "No data found in table that matches the pathology search"
   end
   end
 end
@@ -2085,7 +2111,7 @@ And(/^the user verify the reference list vital sign report and "(.*)" on the tab
           puts 'the Subject for the Reference Laboratory Results are ' +del_obj
         end
       end
-      checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
+      checkpoint (record_found.eql? true), "No data found in table that matches the vital sign search"
     end
   end
 end

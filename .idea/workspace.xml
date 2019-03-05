@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cde9be12-98dd-4211-84c1-2f87f798d4ca" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/features/btris_Reference_List_features/Radiology_Reference_List.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/btris_Reference_List_features/Radiology_Reference_List.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/step_definitions/step_definitions.rb" beforeDir="false" afterPath="$PROJECT_DIR$/features/step_definitions/step_definitions.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/features/support/BTRIS_REPORTS/BTRIS_Regression_Test_RL_Report.html" beforeDir="false" afterPath="$PROJECT_DIR$/features/support/BTRIS_REPORTS/BTRIS_Regression_Test_RL_Report.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,15 +22,15 @@
     <SUITE FILE_PATH="coverage/btris_automation_regression_suite@Scenario__1_5_Running_Reports_Search_for_Search_Term_List_Document_and_Reference_List_Documents_Reports__1_day_.rcov" NAME="Scenario: 1.5 Running Reports Search for Search Term List Document and Reference List Documents Reports, 1 day. Coverage Results" MODIFIED="1551794926859" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="btris_automation_regression_suite" />
     <SUITE FILE_PATH="coverage/btris_automation_regression_suite@Pulmonary_Function_Test_feature.rcov" NAME="Pulmonary_Function_Test.feature Coverage Results" MODIFIED="1551746060488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="btris_automation_regression_suite" />
     <SUITE FILE_PATH="coverage/btris_automation_regression_suite@Scenario__8_1_Pulmonary_Function_Test_Lab_Report_without_PFT_Tests_.rcov" NAME="Scenario: 8.1 Pulmonary Function Test Lab Report without PFT Tests. Coverage Results" MODIFIED="1551746851627" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="btris_automation_regression_suite" />
-    <SUITE FILE_PATH="coverage/btris_automation_regression_suite@Scenario__1_1_Adding_Search_Term_List_Document_for_Radiology_and_Reference_List_Documents_.rcov" NAME="Scenario: 1.1 Adding Search Term List Document for Radiology and Reference List Documents. Coverage Results" MODIFIED="1551374249230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="btris_automation_regression_suite" />
     <SUITE FILE_PATH="coverage/btris_automation_regression_suite@Scenario__1_5_Adding_a_valid_MRN_to_a_protocol_.rcov" NAME="Scenario: 1.5 Adding a valid MRN to a protocol. Coverage Results" MODIFIED="1551745660258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="btris_automation_regression_suite" />
+    <SUITE FILE_PATH="coverage/btris_automation_regression_suite@Scenario__1_1_Adding_Search_Term_List_Document_for_Radiology_and_Reference_List_Documents_.rcov" NAME="Scenario: 1.1 Adding Search Term List Document for Radiology and Reference List Documents. Coverage Results" MODIFIED="1551811947467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="btris_automation_regression_suite" />
     <SUITE FILE_PATH="coverage/btris_automation_regression_suite@Scenario__1_5_Running_Reports_Search_for_Vital_Signs_and_Reference_List_Documents_Reports__1_day_.rcov" NAME="Scenario: 1.5 Running Reports Search for Vital Signs and Reference List Documents Reports, 1 day. Coverage Results" MODIFIED="1551375593412" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="btris_automation_regression_suite" />
     <SUITE FILE_PATH="coverage/btris_automation_regression_suite@Laboratory_Reference_List_feature.rcov" NAME="Laboratory_Reference_List.feature Coverage Results" MODIFIED="1551738681599" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="btris_automation_regression_suite" />
     <SUITE FILE_PATH="coverage/btris_automation_regression_suite@Scenario__1_2_Running_Reports_Search_for_Vital_Signs_and_Reference_List_Documents_Reports__10days_.rcov" NAME="Scenario: 1.2 Running Reports Search for Vital Signs and Reference List Documents Reports, 10days. Coverage Results" MODIFIED="1551713272580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="btris_automation_regression_suite" />
     <SUITE FILE_PATH="coverage/btris_automation_regression_suite@Scenario__1_1_Verify_and_validate_Consented_protocols_.rcov" NAME="Scenario: 1.1 Verify and validate Consented protocols. Coverage Results" MODIFIED="1551745338930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="btris_automation_regression_suite" />
     <SUITE FILE_PATH="coverage/btris_automation_regression_suite@Scenario__1_1_Adding_Search_Term_List_Document_for_Vital_Signs_and_Reference_List_Documents_.rcov" NAME="Scenario: 1.1 Adding Search Term List Document for Vital Signs and Reference List Documents. Coverage Results" MODIFIED="1551380796013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="btris_automation_regression_suite" />
-    <SUITE FILE_PATH="coverage/btris_automation_regression_suite@Scenario__1_2_Running_Reports_Search_for_Search_Term_List_Document_and_Reference_List_Documents_Reports__10days_.rcov" NAME="Scenario: 1.2 Running Reports Search for Search Term List Document and Reference List Documents Reports, 10days. Coverage Results" MODIFIED="1551752291535" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="btris_automation_regression_suite" />
     <SUITE FILE_PATH="coverage/btris_automation_regression_suite@Scenario__1_4_Running_Reports_Search_for_Search_Term_List_Document_and_Reference_List_Documents_Reports__5_days_.rcov" NAME="Scenario: 1.4 Running Reports Search for Search Term List Document and Reference List Documents Reports, 5 days. Coverage Results" MODIFIED="1551794872136" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="btris_automation_regression_suite" />
+    <SUITE FILE_PATH="coverage/btris_automation_regression_suite@Scenario__1_2_Running_Reports_Search_for_Search_Term_List_Document_and_Reference_List_Documents_Reports__10days_.rcov" NAME="Scenario: 1.2 Running Reports Search for Search Term List Document and Reference List Documents Reports, 10days. Coverage Results" MODIFIED="1551813241108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="btris_automation_regression_suite" />
     <SUITE FILE_PATH="coverage/btris_automation_regression_suite@Scenario__1_2_Laboratory_Test_Reports__testing_the_pivot_counts_for_subjects_and_records_.rcov" NAME="Scenario: 1.2 Laboratory Test Reports, testing the pivot counts for subjects and records. Coverage Results" MODIFIED="1551273191261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="btris_automation_regression_suite" />
     <SUITE FILE_PATH="coverage/btris_automation_regression_suite@Manage_Protocols_MRN_feature.rcov" NAME="Manage_Protocols_MRN.feature Coverage Results" MODIFIED="1551367149166" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="btris_automation_regression_suite" />
     <SUITE FILE_PATH="coverage/btris_automation_regression_suite@Scenario__1_6_Running_Reports_Search_for_Vital_Signs_and_Reference_List_Documents_Reports__7_day_.rcov" NAME="Scenario: 1.6 Running Reports Search for Vital Signs and Reference List Documents Reports, 7 day. Coverage Results" MODIFIED="1551375309312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="btris_automation_regression_suite" />
@@ -38,6 +40,7 @@
     <SUITE FILE_PATH="coverage/btris_automation_regression_suite@Scenario__1_7_Running_Reports_Search_for_Search_Term_List_Document_and_Reference_List_Documents_Reports__13_day_.rcov" NAME="Scenario: 1.7 Running Reports Search for Search Term List Document and Reference List Documents Reports, 13 day. Coverage Results" MODIFIED="1551795038772" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="btris_automation_regression_suite" />
     <SUITE FILE_PATH="coverage/btris_automation_regression_suite@Vital_Sign_Reference_List_feature.rcov" NAME="Vital_Sign_Reference_List.feature Coverage Results" MODIFIED="1551739836095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="btris_automation_regression_suite" />
     <SUITE FILE_PATH="coverage/btris_automation_regression_suite@Scenario__1_6_Running_Reports_Search_for_Search_Term_List_Document_and_Reference_List_Documents_Reports__7_day_.rcov" NAME="Scenario: 1.6 Running Reports Search for Search Term List Document and Reference List Documents Reports, 7 day. Coverage Results" MODIFIED="1551794976152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="btris_automation_regression_suite" />
+    <SUITE FILE_PATH="coverage/btris_automation_regression_suite@Radiology_Reference_List_feature.rcov" NAME="Radiology_Reference_List.feature Coverage Results" MODIFIED="1551802159523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="btris_automation_regression_suite" />
     <SUITE FILE_PATH="coverage/btris_automation_regression_suite@Scenario__1_2_Running_Reports_Search_for_Radiology_and_Reference_List_Documents_Reports__10days_.rcov" NAME="Scenario: 1.2 Running Reports Search for Radiology and Reference List Documents Reports, 10days. Coverage Results" MODIFIED="1551374359355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="btris_automation_regression_suite" />
     <SUITE FILE_PATH="coverage/btris_automation_regression_suite@Clinical_Documents_Full_Text_feature.rcov" NAME="Clinical_Documents_Full_Text.feature Coverage Results" MODIFIED="1551274158787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="btris_automation_regression_suite" />
     <SUITE FILE_PATH="coverage/btris_automation_regression_suite@Scenario__1_8_Running_Reports_Search_for_Search_Term_List_Document_and_Reference_List_Documents_Reports__8_day___1_.rcov" NAME="Scenario: 1.8 Running Reports Search for Search Term List Document and Reference List Documents Reports, 8 day. (1) Coverage Results" MODIFIED="1551795167023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="btris_automation_regression_suite" />
@@ -48,17 +51,17 @@
       <file leaf-file-name="Laboratory_Reference_List.feature" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/features/btris_Reference_List_features/Laboratory_Reference_List.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="5" selection-end-column="23" />
+            <state relative-caret-position="399">
+              <caret line="82" column="4" selection-start-line="82" selection-start-column="2" selection-end-line="82" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Subject_List.feature" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Subject_List.feature" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/features/btris_Reference_List_features/Subject_List.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2142">
-              <caret line="102" column="19" selection-start-line="102" selection-start-column="19" selection-end-line="102" selection-end-column="19" />
+            <state relative-caret-position="42">
+              <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -66,8 +69,17 @@
       <file leaf-file-name="Pathology_Reference_List.feature" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/features/btris_Reference_List_features/Pathology_Reference_List.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="907">
-              <caret line="403" column="9" selection-start-line="403" selection-start-column="2" selection-end-line="403" selection-end-column="26" />
+            <state relative-caret-position="336">
+              <caret line="118" column="33" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Radiology_Reference_List.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/features/btris_Reference_List_features/Radiology_Reference_List.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="115" column="20" selection-start-line="115" selection-start-column="20" selection-end-line="115" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -75,26 +87,8 @@
       <file leaf-file-name="map_btris_portal.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/features/page_objects/btris_portal_page_object/map_btris_portal.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="65" column="73" selection-start-line="65" selection-start-column="72" selection-end-line="65" selection-end-column="141" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IRB_Inclusion_Enrollment.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/btris_general_reports_test_protocols_features/IRB_Inclusion_Enrollment.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="469">
-              <caret line="100" column="48" selection-start-line="100" selection-end-line="101" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Radiology_With_Image.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/btris_general_reports_test_protocols_features/Radiology_With_Image.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+            <state relative-caret-position="188">
+              <caret line="15" column="128" selection-start-line="15" selection-start-column="71" selection-end-line="15" selection-end-column="134" />
             </state>
           </provider>
         </entry>
@@ -117,11 +111,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="step_definitions.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="step_definitions.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/features/step_definitions/step_definitions.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-6116">
-              <caret line="1538" selection-start-line="1538" selection-end-line="1538" />
+            <state relative-caret-position="452">
+              <caret line="2113" column="94" selection-start-line="2113" selection-start-column="94" selection-end-line="2113" selection-end-column="94" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Vital_Sign_Reference_List.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/features/btris_Reference_List_features/Vital_Sign_Reference_List.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="331">
+              <caret line="112" column="29" lean-forward="true" selection-start-line="110" selection-start-column="76" selection-end-line="110" selection-end-column="124" />
             </state>
           </provider>
         </entry>
@@ -152,8 +155,10 @@
       <find>Results</find>
       <find>Scenario Outline: 1.6 Running Reports Search for Search Term List Document and Reference List Documents Reports, 7 day.</find>
       <find>And the user selects &quot;&lt;Blinded Results&gt;&quot; from &quot;blinded results drop down&quot; drop down on &quot;Btris/Portal&quot; page</find>
-      <find>laboratory report table: subject name column</find>
       <find>And the user verify the pulmonary report on the table</find>
+      <find>laboratory report table: subject name column</find>
+      <find>btris: accept button</find>
+      <find>btris: accept page</find>
       <find>And the user remembers the value of &quot;laboratory report table: subject name column&quot; field into &quot;Subject Name&quot; on &quot;Btris/Portal&quot; page</find>
     </findStrings>
     <dirStrings>
@@ -189,14 +194,14 @@
         <option value="$PROJECT_DIR$/features/btris_general_reports_test_protocols_features/Test_Pagination.feature" />
         <option value="$PROJECT_DIR$/features/btris_manage_subject_features/Vital_Signs_Report.feature" />
         <option value="$PROJECT_DIR$/features/btris_Reference_List_features/Pathology_Reference_List.feature" />
-        <option value="$PROJECT_DIR$/features/btris_Reference_List_features/Radiology_Reference_List.feature" />
-        <option value="$PROJECT_DIR$/features/btris_Reference_List_features/Subject_List.feature" />
         <option value="C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/watir-6.10.3/lib/watir.rb" />
         <option value="$PROJECT_DIR$/features/support/hooks.rb" />
         <option value="$PROJECT_DIR$/features/page_objects/btris_portal_page_object/map_btris_portal.rb" />
-        <option value="$PROJECT_DIR$/features/step_definitions/step_definitions.rb" />
         <option value="$PROJECT_DIR$/features/btris_general_reports_test_protocols_features/Pulmonary_Function_Test.feature" />
         <option value="$PROJECT_DIR$/features/btris_Reference_List_features/Laboratory_Reference_List.feature" />
+        <option value="$PROJECT_DIR$/features/btris_Reference_List_features/Subject_List.feature" />
+        <option value="$PROJECT_DIR$/features/btris_Reference_List_features/Radiology_Reference_List.feature" />
+        <option value="$PROJECT_DIR$/features/step_definitions/step_definitions.rb" />
       </list>
     </option>
   </component>
@@ -304,8 +309,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber.Scenario: 1.8 Running Reports Search for Search Term List Document and Reference List Documents Reports, 8 day. (1)">
-    <configuration name="Scenario: 1.5 Running Reports Search for Search Term List Document and Reference List Documents Reports, 1 day." type="CucumberRunConfigurationType" factoryName="Cucumber" temporary="true">
+  <component name="RunManager" selected="Cucumber.Scenario: 1.2 Running Reports Search for Search Term List Document and Reference List Documents Reports, 10days.">
+    <configuration name="Radiology_Reference_List.feature" type="CucumberRunConfigurationType" factoryName="Cucumber" temporary="true">
       <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
       <module name="btris_automation_regression_suite" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -322,9 +327,9 @@
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*.feature" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/features/btris_Reference_List_features/Pathology_Reference_List.feature" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/features/btris_Reference_List_features/Radiology_Reference_List.feature" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TAGS_FILTER" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_NAME_FILTER" VALUE="^1\.5 Running Reports Search for Search Term List Document and Reference List Documents Reports\, 1 day\.$" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_NAME_FILTER" VALUE="" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_ARGS" VALUE="--color -r features" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
@@ -336,7 +341,7 @@
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_RUNNER" VALUE="false" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
     </configuration>
-    <configuration name="Scenario: 1.6 Running Reports Search for Search Term List Document and Reference List Documents Reports, 7 day." type="CucumberRunConfigurationType" factoryName="Cucumber" temporary="true">
+    <configuration name="Scenario: 1.1 Adding Search Term List Document for Radiology and Reference List Documents." type="CucumberRunConfigurationType" factoryName="Cucumber" temporary="true">
       <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
       <module name="btris_automation_regression_suite" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -353,9 +358,9 @@
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*.feature" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/features/btris_Reference_List_features/Pathology_Reference_List.feature" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/features/btris_Reference_List_features/Radiology_Reference_List.feature" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TAGS_FILTER" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_NAME_FILTER" VALUE="^1\.6 Running Reports Search for Search Term List Document and Reference List Documents Reports\, 7 day\.$" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_NAME_FILTER" VALUE="^1\.1 Adding Search Term List Document for Radiology and Reference List Documents\.$" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_ARGS" VALUE="--color -r features" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
@@ -367,7 +372,7 @@
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_RUNNER" VALUE="false" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
     </configuration>
-    <configuration name="Scenario: 1.7 Running Reports Search for Search Term List Document and Reference List Documents Reports, 13 day." type="CucumberRunConfigurationType" factoryName="Cucumber" temporary="true">
+    <configuration name="Scenario: 1.2 Running Reports Search for Search Term List Document and Reference List Documents Reports, 10days." type="CucumberRunConfigurationType" factoryName="Cucumber" temporary="true">
       <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
       <module name="btris_automation_regression_suite" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -384,9 +389,9 @@
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*.feature" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/features/btris_Reference_List_features/Pathology_Reference_List.feature" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/features/btris_Reference_List_features/Laboratory_Reference_List.feature" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TAGS_FILTER" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_NAME_FILTER" VALUE="^1\.7 Running Reports Search for Search Term List Document and Reference List Documents Reports\, 13 day\.$" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_NAME_FILTER" VALUE="^1\.2 Running Reports Search for Search Term List Document and Reference List Documents Reports\, 10days\.$" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_ARGS" VALUE="--color -r features" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
@@ -461,19 +466,19 @@
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
     </configuration>
     <list>
-      <item itemvalue="Cucumber.Scenario: 1.5 Running Reports Search for Search Term List Document and Reference List Documents Reports, 1 day." />
-      <item itemvalue="Cucumber.Scenario: 1.6 Running Reports Search for Search Term List Document and Reference List Documents Reports, 7 day." />
-      <item itemvalue="Cucumber.Scenario: 1.7 Running Reports Search for Search Term List Document and Reference List Documents Reports, 13 day." />
       <item itemvalue="Cucumber.Scenario: 1.8 Running Reports Search for Search Term List Document and Reference List Documents Reports, 8 day." />
       <item itemvalue="Cucumber.Scenario: 1.8 Running Reports Search for Search Term List Document and Reference List Documents Reports, 8 day. (1)" />
+      <item itemvalue="Cucumber.Radiology_Reference_List.feature" />
+      <item itemvalue="Cucumber.Scenario: 1.1 Adding Search Term List Document for Radiology and Reference List Documents." />
+      <item itemvalue="Cucumber.Scenario: 1.2 Running Reports Search for Search Term List Document and Reference List Documents Reports, 10days." />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber.Scenario: 1.2 Running Reports Search for Search Term List Document and Reference List Documents Reports, 10days." />
+        <item itemvalue="Cucumber.Scenario: 1.1 Adding Search Term List Document for Radiology and Reference List Documents." />
+        <item itemvalue="Cucumber.Radiology_Reference_List.feature" />
         <item itemvalue="Cucumber.Scenario: 1.8 Running Reports Search for Search Term List Document and Reference List Documents Reports, 8 day. (1)" />
         <item itemvalue="Cucumber.Scenario: 1.8 Running Reports Search for Search Term List Document and Reference List Documents Reports, 8 day." />
-        <item itemvalue="Cucumber.Scenario: 1.7 Running Reports Search for Search Term List Document and Reference List Documents Reports, 13 day." />
-        <item itemvalue="Cucumber.Scenario: 1.6 Running Reports Search for Search Term List Document and Reference List Documents Reports, 7 day." />
-        <item itemvalue="Cucumber.Scenario: 1.5 Running Reports Search for Search Term List Document and Reference List Documents Reports, 1 day." />
       </list>
     </recent_temporary>
   </component>
@@ -495,21 +500,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Pulmonary_Function_Test_feature - 2019.03.04 at 19h 37m 08s.xml">
-      <configuration name="Pulmonary_Function_Test.feature" configurationId="CucumberRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Scenario__8_1_Pulmonary_Function_Test_Lab_Report_without_PFT_Tests_ - 2019.03.04 at 19h 45m 14s.xml">
-      <configuration name="Scenario: 8.1 Pulmonary Function Test Lab Report without PFT Tests." configurationId="CucumberRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Scenario__8_1_Pulmonary_Function_Test_Lab_Report_without_PFT_Tests_ - 2019.03.04 at 19h 48m 24s.xml">
-      <configuration name="Scenario: 8.1 Pulmonary Function Test Lab Report without PFT Tests." configurationId="CucumberRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Scenario__1_2_Running_Reports_Search_for_Search_Term_List_Document_and_Reference_List_Documents_Reports,_10days_ - 2019.03.04 at 21h 18m 59s.xml">
-      <configuration name="Scenario: 1.2 Running Reports Search for Search Term List Document and Reference List Documents Reports, 10days." configurationId="CucumberRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Scenario__1_4_Running_Reports_Search_for_Search_Term_List_Document_and_Reference_List_Documents_Reports,_5_days_ - 2019.03.05 at 09h 08m 37s.xml">
-      <configuration name="Scenario: 1.4 Running Reports Search for Search Term List Document and Reference List Documents Reports, 5 days." configurationId="CucumberRunConfigurationType" />
-    </history-entry>
     <history-entry file="Scenario__1_5_Running_Reports_Search_for_Search_Term_List_Document_and_Reference_List_Documents_Reports,_1_day_ - 2019.03.05 at 09h 09m 26s.xml">
       <configuration name="Scenario: 1.5 Running Reports Search for Search Term List Document and Reference List Documents Reports, 1 day." configurationId="CucumberRunConfigurationType" />
     </history-entry>
@@ -525,9 +515,24 @@
     <history-entry file="Scenario__1_8_Running_Reports_Search_for_Search_Term_List_Document_and_Reference_List_Documents_Reports,_8_day__(1) - 2019.03.05 at 09h 14m 13s.xml">
       <configuration name="Scenario: 1.8 Running Reports Search for Search Term List Document and Reference List Documents Reports, 8 day. (1)" configurationId="CucumberRunConfigurationType" />
     </history-entry>
+    <history-entry file="Radiology_Reference_List_feature - 2019.03.05 at 10h 25m 07s.xml">
+      <configuration name="Radiology_Reference_List.feature" configurationId="CucumberRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Radiology_Reference_List_feature - 2019.03.05 at 10h 34m 41s.xml">
+      <configuration name="Radiology_Reference_List.feature" configurationId="CucumberRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Radiology_Reference_List_feature - 2019.03.05 at 11h 18m 52s.xml">
+      <configuration name="Radiology_Reference_List.feature" configurationId="CucumberRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Scenario__1_1_Adding_Search_Term_List_Document_for_Radiology_and_Reference_List_Documents_ - 2019.03.05 at 13h 53m 48s.xml">
+      <configuration name="Scenario: 1.1 Adding Search Term List Document for Radiology and Reference List Documents." configurationId="CucumberRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Scenario__1_2_Running_Reports_Search_for_Search_Term_List_Document_and_Reference_List_Documents_Reports,_10days_ - 2019.03.05 at 14h 15m 59s.xml">
+      <configuration name="Scenario: 1.2 Running Reports Search for Search Term List Document and Reference List Documents Reports, 10days." configurationId="CucumberRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61699000" />
+    <option name="totallyTimeSpent" value="69654000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1170" extended-state="6" />
@@ -539,7 +544,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.34134135" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3566058" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20354457" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3292978" />
@@ -778,20 +783,6 @@
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/btris_Reference_List_features/Radiology_Reference_List.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" lean-forward="true" selection-start-column="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/btris_Reference_List_features/Vital_Sign_Reference_List.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="110" column="78" selection-start-line="110" selection-start-column="76" selection-end-line="110" selection-end-column="124" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/features/btris_general_reports_test_protocols_features/Clinical_Documents_Discrete_Values.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -848,13 +839,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/page_objects/btris_portal_page_object/map_btris_portal.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="65" column="73" selection-start-line="65" selection-start-column="72" selection-end-line="65" selection-end-column="141" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/features/btris_general_reports_test_protocols_features/Radiology_With_Image.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -876,13 +860,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/step_definitions/step_definitions.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6116">
-          <caret line="1538" selection-start-line="1538" selection-end-line="1538" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/features/btris_general_reports_test_protocols_features/Pulmonary_Function_Test.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -890,24 +867,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/btris_Reference_List_features/Pathology_Reference_List.feature">
+    <entry file="file://$PROJECT_DIR$/features/btris_Reference_List_features/Subject_List.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="907">
-          <caret line="403" column="9" selection-start-line="403" selection-start-column="2" selection-end-line="403" selection-end-column="26" />
+        <state relative-caret-position="42">
+          <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/page_objects/btris_portal_page_object/map_btris_portal.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="15" column="128" selection-start-line="15" selection-start-column="71" selection-end-line="15" selection-end-column="134" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/features/btris_Reference_List_features/Laboratory_Reference_List.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" selection-end-column="23" />
+        <state relative-caret-position="399">
+          <caret line="82" column="4" selection-start-line="82" selection-start-column="2" selection-end-line="82" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/btris_Reference_List_features/Subject_List.feature">
+    <entry file="file://$PROJECT_DIR$/features/btris_Reference_List_features/Radiology_Reference_List.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2142">
-          <caret line="102" column="19" selection-start-line="102" selection-start-column="19" selection-end-line="102" selection-end-column="19" />
+        <state relative-caret-position="210">
+          <caret line="115" column="20" selection-start-line="115" selection-start-column="20" selection-end-line="115" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/btris_Reference_List_features/Pathology_Reference_List.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="118" column="33" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/btris_Reference_List_features/Vital_Sign_Reference_List.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="112" column="29" lean-forward="true" selection-start-line="110" selection-start-column="76" selection-end-line="110" selection-end-column="124" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/step_definitions/step_definitions.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="2113" column="94" selection-start-line="2113" selection-start-column="94" selection-end-line="2113" selection-end-column="94" />
         </state>
       </provider>
     </entry>
