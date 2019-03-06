@@ -60,7 +60,6 @@ Feature: BTRIS Clinical Documents - Discrete Values Feature Prod Data
   @ClinicalDocumentsProd_Data2.2
 
   Scenario Outline: 4.2 Clinical Documents - Discrete Values with red search for Clinical documentsi.
-  Scenario Outline: 4.2 Clinical Documents - Discrete Values with red search for Clinical documentsi.
   #Login to the system.
     Given the user navigates to / on browser
     And the user must see "Log in to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page

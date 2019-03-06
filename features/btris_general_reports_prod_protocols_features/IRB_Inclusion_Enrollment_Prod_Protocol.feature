@@ -1,6 +1,6 @@
 @BTRIS_Quick_Prod_Test
 @IRB_Inclusion_Enrollment_Test_Prod_Data
-Feature: IRB Inclusion Enrollment Feature Prod Data
+Feature: BTRIS IRB Inclusion Enrollment Feature Prod Data
 
   @IRBInclusionEnrollment_Prod_Data1
 

@@ -1,4 +1,4 @@
-@BTRIS_Unstable_Test_RL
+@BTRIS_Quick_Test
 @ReferenceList_Pathology_Test.2
 Feature: BTRIS Pathology Reference List Report
 

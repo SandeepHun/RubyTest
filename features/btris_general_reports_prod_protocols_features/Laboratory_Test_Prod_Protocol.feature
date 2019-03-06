@@ -1,6 +1,6 @@
 @BTRIS_Quick_Prod_Test
 @Laboratory_Test_Prod_Data
-Feature: Laboratory Feature Prod Data
+Feature: BTRIS Laboratory Feature Prod Data
 
   @LaboratoryProd_Data1
 

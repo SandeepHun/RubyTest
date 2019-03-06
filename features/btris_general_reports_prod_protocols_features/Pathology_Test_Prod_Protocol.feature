@@ -1,6 +1,6 @@
 @BTRIS_Quick_Prod_Test
 @Pathology_Test_Prod_Data
-Feature: Pathology Test Feature Prod Data
+Feature: BTRIS Pathology Test Feature Prod Data
 
   @Pathology_Prod_Data1
 

@@ -1,6 +1,6 @@
 @BTRIS_Quick_Prod_Test
 @Pulmonary_Function_Test_Prod_Data
-Feature: Pulmonary Function Test Prod Data
+Feature: BTRIS Pulmonary Function Test Prod Data
 
   @PulmonaryFT_Prod_Data1
 

@@ -1,6 +1,6 @@
 @BTRIS_Quick_Prod_Test
 @Clinical_Documents_Full_Text_Prod_Data
-Feature: Clinical Documents - Full Text Feature Prod Data
+Feature: BTRIS Clinical Documents - Full Text Feature Prod Data
 
   @ClinicalDocumentsFullProd_Data1.1
 

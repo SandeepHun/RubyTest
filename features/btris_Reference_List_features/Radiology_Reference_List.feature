@@ -1,4 +1,4 @@
-@BTRIS_Unstable_Test_RL
+@BTRIS_Quick_Test
 @ReferenceList_Radiology_Test.3
 Feature: BTRIS Radiology Reference List Report
 
