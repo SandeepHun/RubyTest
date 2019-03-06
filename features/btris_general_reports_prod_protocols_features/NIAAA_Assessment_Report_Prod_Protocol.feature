@@ -1,6 +1,6 @@
 @BTRIS_Quick_Prod_Test
 @NIAAA_Assessment_Prod_Data
-Feature: NIAAA Assessment Prod Data
+Feature: BTRIS NIAAA Assessment Prod Data
 
   @NIAAA_Prod_Data1
 

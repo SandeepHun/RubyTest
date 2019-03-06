@@ -1,6 +1,6 @@
 @BTRIS_Quick_Prod_Test
 @Microbiology_Test_Prod_Data
-  Feature: Microbiology Prod Data
+  Feature: BTRIS Microbiology Prod Data
 
   @MicrobiologyProd_Data1
 

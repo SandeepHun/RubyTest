@@ -1,4 +1,4 @@
-@BTRIS_Unstable_Test_RL
+@BTRIS_Quick_Test
 @ReferenceList_Vital_Signs_Test
 Feature: BTRIS Vital Signs Reference List Report
 

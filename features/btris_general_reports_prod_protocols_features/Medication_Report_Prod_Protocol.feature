@@ -1,6 +1,6 @@
 @BTRIS_Quick_Prod_Test
 @Medication_Report_Prod_Data
-Feature: Medication Report Prod Data
+Feature: BTRIS Medication Report Prod Data
 
   @MedicationProd_DataR1
 

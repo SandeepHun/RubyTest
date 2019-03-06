@@ -1,6 +1,6 @@
 @BTRIS_Quick_Prod_Test
 @Diagnosis_And_Procedure_Prod_Data
-Feature: Diagnosis & Procedure Feature Prod Data
+Feature: BTRIS Diagnosis & Procedure Feature Prod Data
 
   @DiagnosisProd_Data.1
 
