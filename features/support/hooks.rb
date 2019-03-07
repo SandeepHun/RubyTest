@@ -30,22 +30,22 @@ BROWSER_NAME = Configuration.browser.downcase
 
 #********************To open Browser at one time and run all scenario*********************
 
-selenium_driver = Selenium::WebDriver::Remote::Http::Default.new
-
-selenium_driver.read_timeout = TIMEOUT
-selenium_driver.open_timeout = TIMEOUT
-# statement Depreciated
-# selenium_driver.timeout = TIMEOUT # seconds – default is 30
-
-@@browser = Watir::Browser.new BROWSER_NAME.to_sym, :http_client => selenium_driver
-
-@@browser.driver.manage.timeouts.implicit_wait=60
-# @browser = get_browser
-#@@browser.driver.manage.window.maximize
-
-Before do
-  @browser = @@browser
-end
+# selenium_driver = Selenium::WebDriver::Remote::Http::Default.new
+#
+# selenium_driver.read_timeout = TIMEOUT
+# selenium_driver.open_timeout = TIMEOUT
+# # statement Depreciated
+# # selenium_driver.timeout = TIMEOUT # seconds – default is 30
+#
+# @@browser = Watir::Browser.new BROWSER_NAME.to_sym, :http_client => selenium_driver
+#
+# @@browser.driver.manage.timeouts.implicit_wait=60
+# # @browser = get_browser
+# #@@browser.driver.manage.window.maximize
+#
+# Before do
+#   @browser = @@browser
+# end
 
 
 # == Open browser on each scenario and then close browser
@@ -61,8 +61,17 @@ def get_browser
   # screen_height = @browser.execute_script("return screen.height;")
   # @browser.driver.manage.window.resize_to(screen_width,screen_height)
   @browser
-
 end
+
+Before do
+  @browser = get_browser
+  #@browser.driver.manage.window.maximize
+end
+
+After do
+  @browser.close
+end
+
 
 Before do
   if RUBY_PLATFORM.downcase.include?("linux")
