@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cde9be12-98dd-4211-84c1-2f87f798d4ca" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/features/btris_general_reports_test_protocols_features/Resources_Tab_Test.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/features/page_objects/btris_portal_page_object/map_resource.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/features/support/hooks.rb" beforeDir="false" afterPath="$PROJECT_DIR$/features/support/hooks.rb" afterDir="false" />
     </list>
@@ -31,7 +29,7 @@
     <SUITE FILE_PATH="coverage/btris_automation_regression_suite@Scenario__1_1_Adding_Search_Term_List_Document_for_Radiology_and_Reference_List_Documents_.rcov" NAME="Scenario: 1.1 Adding Search Term List Document for Radiology and Reference List Documents. Coverage Results" MODIFIED="1551811947467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="btris_automation_regression_suite" />
     <SUITE FILE_PATH="coverage/btris_automation_regression_suite@Scenario__1_3_Verify_and_validate_User_Guides_page_under_Resources_.rcov" NAME="Scenario: 1.3 Verify and validate User Guides page under Resources. Coverage Results" MODIFIED="1551975671032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="btris_automation_regression_suite" />
     <SUITE FILE_PATH="coverage/btris_automation_regression_suite@Scenario__1_5_Running_Reports_Search_for_Vital_Signs_and_Reference_List_Documents_Reports__1_day_.rcov" NAME="Scenario: 1.5 Running Reports Search for Vital Signs and Reference List Documents Reports, 1 day. Coverage Results" MODIFIED="1551375593412" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="btris_automation_regression_suite" />
-    <SUITE FILE_PATH="coverage/btris_automation_regression_suite@Resources_Tab_Test_feature.rcov" NAME="Resources_Tab_Test.feature Coverage Results" MODIFIED="1551975961355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="btris_automation_regression_suite" />
+    <SUITE FILE_PATH="coverage/btris_automation_regression_suite@Resources_Tab_Test_feature.rcov" NAME="Resources_Tab_Test.feature Coverage Results" MODIFIED="1551978040611" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="btris_automation_regression_suite" />
     <SUITE FILE_PATH="coverage/btris_automation_regression_suite@Laboratory_Reference_List_feature.rcov" NAME="Laboratory_Reference_List.feature Coverage Results" MODIFIED="1551738681599" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="btris_automation_regression_suite" />
     <SUITE FILE_PATH="coverage/btris_automation_regression_suite@Scenario__1_2_Running_Reports_Search_for_Vital_Signs_and_Reference_List_Documents_Reports__10days_.rcov" NAME="Scenario: 1.2 Running Reports Search for Vital Signs and Reference List Documents Reports, 10days. Coverage Results" MODIFIED="1551713272580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="btris_automation_regression_suite" />
     <SUITE FILE_PATH="coverage/btris_automation_regression_suite@Scenario__1_1_Verify_and_validate_Consented_protocols_.rcov" NAME="Scenario: 1.1 Verify and validate Consented protocols. Coverage Results" MODIFIED="1551745338930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="btris_automation_regression_suite" />
@@ -116,8 +114,8 @@
       <file leaf-file-name="Resources_Tab_Test.feature" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/features/btris_general_reports_test_protocols_features/Resources_Tab_Test.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="72" column="3" lean-forward="true" selection-start-line="72" selection-start-column="2" selection-end-line="72" selection-end-column="18" />
+            <state relative-caret-position="21">
+              <caret line="1" column="1" selection-start-line="1" selection-end-line="1" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -125,8 +123,8 @@
       <file leaf-file-name="hooks.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/features/support/hooks.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
-              <caret line="94" column="6" selection-start-line="94" selection-start-column="6" selection-end-line="94" selection-end-column="6" />
+            <state relative-caret-position="163">
+              <caret line="67" column="3" selection-start-line="67" selection-start-column="3" selection-end-line="67" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -358,7 +356,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber.Scenario: 1.3 Verify and validate User Guides page under Resources. (1)">
+  <component name="RunManager" selected="Cucumber.Resources_Tab_Test.feature">
     <configuration name="Resources_Tab_Test.feature" type="CucumberRunConfigurationType" factoryName="Cucumber" temporary="true">
       <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
       <module name="btris_automation_regression_suite" />
@@ -505,8 +503,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber.Scenario: 1.3 Verify and validate User Guides page under Resources. (1)" />
         <item itemvalue="Cucumber.Resources_Tab_Test.feature" />
+        <item itemvalue="Cucumber.Scenario: 1.3 Verify and validate User Guides page under Resources. (1)" />
         <item itemvalue="Cucumber.Scenario: 1.3 Verify and validate User Guides page under Resources." />
         <item itemvalue="Cucumber.Scenario: 1.1 Verify and validate References page under Resources." />
         <item itemvalue="Ruby.map_resource" />
@@ -527,44 +525,44 @@
       <workItem from="1551240600068" duration="28559000" />
       <workItem from="1551375700089" duration="12784000" />
       <workItem from="1551651165356" duration="7187000" />
-      <workItem from="1551967261086" duration="9442000" />
+      <workItem from="1551967261086" duration="10672000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Scenario__1_3_Verify_and_validate_User_Guides_page_under_Resources_ - 2019.03.07 at 11h 21m 09s.xml">
-      <configuration name="Scenario: 1.3 Verify and validate User Guides page under Resources." configurationId="CucumberRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Scenario__1_3_Verify_and_validate_User_Guides_page_under_Resources_ - 2019.03.07 at 11h 21m 27s.xml">
-      <configuration name="Scenario: 1.3 Verify and validate User Guides page under Resources." configurationId="CucumberRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Resources_Tab_Test_feature - 2019.03.07 at 11h 26m 43s.xml">
-      <configuration name="Resources_Tab_Test.feature" configurationId="CucumberRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Scenario__1_3_Verify_and_validate_User_Guides_page_under_Resources__(1) - 2019.03.07 at 11h 36m 34s.xml">
-      <configuration name="Scenario: 1.3 Verify and validate User Guides page under Resources. (1)" configurationId="CucumberRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Scenario__1_3_Verify_and_validate_User_Guides_page_under_Resources__(1) - 2019.03.07 at 11h 38m 20s.xml">
-      <configuration name="Scenario: 1.3 Verify and validate User Guides page under Resources. (1)" configurationId="CucumberRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Scenario__1_3_Verify_and_validate_User_Guides_page_under_Resources__(1) - 2019.03.07 at 11h 40m 28s.xml">
-      <configuration name="Scenario: 1.3 Verify and validate User Guides page under Resources. (1)" configurationId="CucumberRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Scenario__1_3_Verify_and_validate_User_Guides_page_under_Resources__(1) - 2019.03.07 at 11h 41m 40s.xml">
-      <configuration name="Scenario: 1.3 Verify and validate User Guides page under Resources. (1)" configurationId="CucumberRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Scenario__1_3_Verify_and_validate_User_Guides_page_under_Resources__(1) - 2019.03.07 at 11h 43m 13s.xml">
-      <configuration name="Scenario: 1.3 Verify and validate User Guides page under Resources. (1)" configurationId="CucumberRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Scenario__1_3_Verify_and_validate_User_Guides_page_under_Resources__(1) - 2019.03.07 at 11h 43m 30s.xml">
-      <configuration name="Scenario: 1.3 Verify and validate User Guides page under Resources. (1)" configurationId="CucumberRunConfigurationType" />
-    </history-entry>
     <history-entry file="Scenario__1_3_Verify_and_validate_User_Guides_page_under_Resources__(1) - 2019.03.07 at 11h 44m 04s.xml">
       <configuration name="Scenario: 1.3 Verify and validate User Guides page under Resources. (1)" configurationId="CucumberRunConfigurationType" />
     </history-entry>
+    <history-entry file="Scenario__1_3_Verify_and_validate_User_Guides_page_under_Resources__(1) - 2019.03.07 at 11h 45m 59s.xml">
+      <configuration name="Scenario: 1.3 Verify and validate User Guides page under Resources. (1)" configurationId="CucumberRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Scenario__1_3_Verify_and_validate_User_Guides_page_under_Resources__(1) - 2019.03.07 at 11h 46m 35s.xml">
+      <configuration name="Scenario: 1.3 Verify and validate User Guides page under Resources. (1)" configurationId="CucumberRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Scenario__1_3_Verify_and_validate_User_Guides_page_under_Resources__(1) - 2019.03.07 at 11h 47m 13s.xml">
+      <configuration name="Scenario: 1.3 Verify and validate User Guides page under Resources. (1)" configurationId="CucumberRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Scenario__1_3_Verify_and_validate_User_Guides_page_under_Resources__(1) - 2019.03.07 at 11h 48m 16s.xml">
+      <configuration name="Scenario: 1.3 Verify and validate User Guides page under Resources. (1)" configurationId="CucumberRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Scenario__1_3_Verify_and_validate_User_Guides_page_under_Resources__(1) - 2019.03.07 at 11h 48m 49s.xml">
+      <configuration name="Scenario: 1.3 Verify and validate User Guides page under Resources. (1)" configurationId="CucumberRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Resources_Tab_Test_feature - 2019.03.07 at 11h 54m 18s.xml">
+      <configuration name="Resources_Tab_Test.feature" configurationId="CucumberRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Resources_Tab_Test_feature - 2019.03.07 at 11h 54m 58s.xml">
+      <configuration name="Resources_Tab_Test.feature" configurationId="CucumberRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Resources_Tab_Test_feature - 2019.03.07 at 11h 55m 41s.xml">
+      <configuration name="Resources_Tab_Test.feature" configurationId="CucumberRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Resources_Tab_Test_feature - 2019.03.07 at 12h 01m 23s.xml">
+      <configuration name="Resources_Tab_Test.feature" configurationId="CucumberRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87895000" />
+    <option name="totallyTimeSpent" value="89125000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1170" extended-state="6" />
@@ -954,15 +952,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/features/btris_general_reports_test_protocols_features/Resources_Tab_Test.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="72" column="3" lean-forward="true" selection-start-line="72" selection-start-column="2" selection-end-line="72" selection-end-column="18" />
+        <state relative-caret-position="21">
+          <caret line="1" column="1" selection-start-line="1" selection-end-line="1" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/features/support/hooks.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="94" column="6" selection-start-line="94" selection-start-column="6" selection-end-line="94" selection-end-column="6" />
+        <state relative-caret-position="163">
+          <caret line="67" column="3" selection-start-line="67" selection-start-column="3" selection-end-line="67" selection-end-column="3" />
         </state>
       </provider>
     </entry>
