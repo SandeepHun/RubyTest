@@ -28,7 +28,6 @@ BROWSER_NAME = Configuration.browser.downcase
 
 
 
-
 #********************To open Browser at one time and run all scenario*********************
 
 selenium_driver = Selenium::WebDriver::Remote::Http::Default.new
@@ -76,21 +75,26 @@ Before do
     puts("status : #{@browser.status}")
     puts("text   : #{@browser.text}")
     puts("html   : #{@browser.html}")
-    @browser = get_browser
+    #@browser = get_browser
     @browser.window.resize_to(1366, 768)
     puts @browser.html
     puts @browser
     puts 'The OS Platform is ' +RUBY_PLATFORM
   else
-    @browser = get_browser
+    if RUBY_PLATFORM.downcase.include?("mingw")
+    #@browser = get_browser
     @browser.window.resize_to(1366, 768)
     @browser.driver.manage.window.maximize
     puts @browser.html
     puts @browser.browser
     @browser.driver.manage.timeouts.implicit_wait=60
     puts 'The OS platform is ' +RUBY_PLATFORM
+    else
+      puts 'The OS platform which needs to be added is ' +RUBY_PLATFORM
+
+    end
   end
-end
+  end
 After do
   @browser.close
 end
