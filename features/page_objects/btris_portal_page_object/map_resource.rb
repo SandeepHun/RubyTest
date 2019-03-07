@@ -17,6 +17,10 @@ def map_resource
           #resource tab validation, User Guides.
           'user guides link'                     =>"xpath^^.//*[@class='dropdown-item'][contains(text(), 'User Guides')]",
           'user guides page'                     =>"xpath^^.//*[@class='intranet-subtitle'][contains(text(), 'User Guides')]",
+          #resource tab validation, Tutorials.
+          'tutorials link'                     =>"xpath^^.//*[@class='dropdown-item'][contains(text(), 'Tutorials')]",
+          'tutorials page'                     =>"xpath^^.//*[@class='intranet-subtitle'][contains(text(), 'Tutorials')]",
+          'tutorials all'                      =>"xpath^^.//*[@class='router-link-exact-active router-link-active btn round btn-lg dataset-card-button active']",
 
 
 
