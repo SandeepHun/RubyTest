@@ -42,7 +42,7 @@ Feature: BTRIS Pathology Test Feature Prod Data
     #Verify report page.
     And the user must see "Pathology Results Preview - Standard" text in "pathology result page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
-    And the user verify the pathology prod data report on the table
+    #And the user verify the pathology prod data report on the table
     #Click on the download report button.
     And the user waits for 5 seconds
     And the user clicks on "download full report button" element on "Btris/Portal" page
@@ -104,7 +104,7 @@ Feature: BTRIS Pathology Test Feature Prod Data
     #Verify report page.
     And the user must see "Pathology Results Preview - Standard" text in "pathology result page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
-    And the user verify the pathology prod data report on the table
+    #And the user verify the pathology prod data report on the table
     And the user waits for 3 seconds
     #Click on the download report button.
     And the user clicks on "download full report button" element on "Btris/Portal" page

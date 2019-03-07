@@ -65,61 +65,6 @@ end
 #
 # end
 
-And(/^the user completes Post mortem Carcass Condemnation Details tuberculosis"([^"]*)" leukosis "([^"]*)" septicaemiaandtoxemia "([^"]*)" synovitis "([^"]*)" tumors "([^"]*)" bruises "([^"]*)" cadavers "([^"]*)" contamination "([^"]*)" cverscald "([^"]*)" airsacculitis "([^"]*)" inflammatoryprocess "([^"]*)" noviscera "([^"]*)" plantrejects "([^"]*)" miscellaneous "([^"]*)" on "([^"]*)" page$/) do |value1, value2, value3, value4, value5, value6, value7, value8, value9, value10, value11, value12, value13, value14, page|
-  #puts value1, value2, value3, value4, value5, value6, value7, value8, value9, value10, value11, value12, value13, value14, page
-  step "the user enters \"#{value1}\" into \"tuberculosis text box\" on \"DispositionReporting/PoultryClassSummary_AddEdit\" page"
-  step "the user enters \"#{value2}\" into \"leukosis text box\" on \"DispositionReporting/PoultryClassSummary_AddEdit\" page"
-  step "the user enters \"#{value3}\" into \"septicaemia and toxem text box\" on \"DispositionReporting/PoultryClassSummary_AddEdit\" page"
-  step "the user enters \"#{value4}\" into \"synovitis text box\" on \"DispositionReporting/PoultryClassSummary_AddEdit\" page"
-  step "the user enters \"#{value5}\" into \"tumors text box\" on \"DispositionReporting/PoultryClassSummary_AddEdit\" page"
-  step "the user enters \"#{value6}\" into \"bruises text box\" on \"DispositionReporting/PoultryClassSummary_AddEdit\" page"
-  step "the user enters \"#{value7}\" into \"cadavers text box\" on \"DispositionReporting/PoultryClassSummary_AddEdit\" page"
-  step "the user enters \"#{value8}\" into \"contamination text box\" on \"DispositionReporting/PoultryClassSummary_AddEdit\" page"
-  step "the user enters \"#{value9}\" into \"overscald text box\" on \"DispositionReporting/PoultryClassSummary_AddEdit\" page"
-  step "the user enters \"#{value10}\" into \"airsacculitis text box\" on \"DispositionReporting/PoultryClassSummary_AddEdit\" page"
-  step "the user enters \"#{value11}\" into \"inflammatory process text box\" on \"DispositionReporting/PoultryClassSummary_AddEdit\" page"
-  step "the user enters \"#{value12}\" into \"no viscera text box\" on \"DispositionReporting/PoultryClassSummary_AddEdit\" page"
-  step "the user enters \"#{value13}\" into \"plant rejects text box\" on \"DispositionReporting/PoultryClassSummary_AddEdit\" page"
-  step "the user enters \"#{value14}\" into \"miscellaneous text box\" on \"DispositionReporting/PoultryClassSummary_AddEdit\" page"
-end
-
-And(/^the user adds a new meat record Sub Class"([^"]*)" Head Count "([^"]*)" Live Weight "([^"]*)" Dressed Weight "([^"]*)" on "([^"]*)" page$/) do |value1, value2, value3, value4, page|
-  #Click on the Add slaughter Record link.
-  # step "the user waits 3 seconds"
-  # if step "the user clicks \"add slaughter record link\" on \"DispositionReporting/EstablishmentReporting\" page"
-  step "the user clicks on \"add slaughter record link\" element on \"DispositionReporting/EstablishmentReporting\" page"
-  # step "the user waits 6 seconds"
-
-  # else
-  #   puts "the element has already received a click."
-  # end
-  # step "the user waits \"2\" seconds"
-  #Verify required fields.Scenario:
-  # step "the user clicks \"add button for meat record\" on \"DispositionReporting/EstablishmentReporting\" page"
-  step "the user clicks the \"add button for meat record\" button on \"DispositionReporting/EstablishmentReporting\" page"
-  # step "the user waits for \"5\" seconds"
-  #Verify that the Sub-Class and Head Count indicates as required fields.Scenario:
-  # And the user must see "<string>" text in "<string>" field on "<string>" page
-  step "the user must see \"(Required)\" text in \"Required Field For Sub-Class\" field on \"DispositionReporting/EstablishmentReporting\" page"
-  step "the user must see \"(Required)\" text in \"Required Field For Head Count\" field on \"DispositionReporting/EstablishmentReporting\" page"
-  #Select Sub-Class from the drop-down.
-  # And the user selects "<string>" from "<string>" combo box on "<string>" page
-  step "the user selects \"#{value1}\" from \"subclass dropdown\" combo box on \"DispositionReporting/EstablishmentReporting\" page"
-  step "the user waits for 4 seconds"
-  # step "the user waits \"6\" seconds"
-  #Locate the Head Count text-box and enter valid data.
-  step "the user enters \"#{value2}\" into \"Head Count Text-Box\" on \"DispositionReporting/EstablishmentReporting\" page"
-  #Locate the Live and Dressed weight text boxes and enter valid data.Scenario:
-  step "the user enters \"#{value3}\" into \"Live Weight Text-Box\" on \"DispositionReporting/EstablishmentReporting\" page"
-  step "the user enters \"#{value4}\" into \"dressed weight text-box\" on \"DispositionReporting/EstablishmentReporting\" page"
-  #Locate the Add button and click on it.
-  # step "the user clicks \"add button for meat record\" on \"DispositionReporting/EstablishmentReporting\" page"
-  step "the user clicks the \"add button for meat record\" button on \"DispositionReporting/EstablishmentReporting\" page"
-
-  # step "the user waits \"2\" seconds"
-  #Verify the added record on top of the table.
-  step "the user must see \"#{value1}\" text in \"sub class column for meat\" field on \"DispositionReporting/EstablishmentReporting\" page"
-end
 
 And(/^the user deletes existing poultry records if any$/) do
   table_path = ".//*[@id='ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_PoultryClassSummaryControl_rgPoultrySlaughter']"
@@ -225,7 +170,7 @@ And(/^user accept browser pop\-ups$/) do
   if @browser.alert.exists?
     @browser.alert.ok
   else
-    puts 'No Pop Up to close or accept, all good'
+    puts 'No pop up to close or accept, all good'
   end
 end
 
@@ -265,32 +210,6 @@ And(/^the user deletes existing poultry record if any$/) do
       sleep 4
     end
   end
-end
-
-And(/^the user verify if the establishment already have a no kill period$/) do
-  check_record_present = get_elements_size 'xpath', ".//*[@id='ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_ucMessageBox_MessageList']/li/div[2]/span"
-  if check_record_present > 1
-    #Click on the No Kill Period from the left navigation.
-    step "the user clicks on \"no kill period\" element on \"DispositionReporting/EstablishmentReporting\" page"
-    # step "the user waits \"3\" seconds"
-    #Select an Establishment to add the Ni Kill Period to.
-    step "the user selects \"Pilgrims Pride - P843\" from \"establishment dropdown\" combo box on \"DispositionReporting/EstablishmentReporting\" page"
-    #Select shift.
-    step "the user selects \"Shift 1\" from \"shift dropdown\" combo box on \"DispositionReporting/EstablishmentReporting\" page"
-    #Delete the No Kill Period to the Establishment.
-    step "the user clicks on \"delete icon for added no kill period\" element on \"DispositionReporting/EstablishmentReporting\" page"
-    step "the user dismisses browser pop-ups"
-    #Locate and click on the Establishment Reporting from the Left nav.
-    step "the user clicks on \"Establishment Reporting\" element on \"FSISDashBoard/Default\" page"
-  else
-    puts 'No kill Period has not yet been added to the selected Establishment'
-  end
-end
-
-
-And(/^the user sign out and close the browser$/) do
-  step "the user clicks on \"sign out button\" element on \"DispositionReporting/EstablishmentReporting\" page"
-  #@browser.close
 end
 
 
