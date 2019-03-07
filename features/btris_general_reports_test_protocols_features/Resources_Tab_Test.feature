@@ -1,4 +1,4 @@
-@BTRIS_Quick_Test
+@BTRIS_Quick_Prod_Test
 @Resources_Menu
 Feature: BTRIS Resources Menu Links Report
 
