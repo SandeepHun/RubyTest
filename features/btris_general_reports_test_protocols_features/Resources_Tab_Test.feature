@@ -40,7 +40,7 @@ Feature: BTRIS Resources Menu Links Report
 
   @Resource_Tabl.2
 
-  Scenario Outline: 1.1 Verify and validate References page under Resources.
+  Scenario Outline: 1.2 Verify and validate References page under Resources.
   #Login to the system.
     Given the user navigates to / on browser
     And the user must see "Log in to BTRIS" text in "btris home: landing page" field on "Btris/Portal" page
