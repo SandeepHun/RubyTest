@@ -101,6 +101,7 @@ Feature: BTRIS Resources Menu Links Report
       | Page Tittle | Header                                             |
       | USER GUIDES | Training, user guides, and other helpful materials |
 
+
   @Resource_Tabl.4
 
   Scenario Outline: 1.4 Verify and validate Tutorials page under Resources.
