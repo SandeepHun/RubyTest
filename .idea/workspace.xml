@@ -2,31 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cde9be12-98dd-4211-84c1-2f87f798d4ca" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/features/btris_quick_smoke_test/Clinical_Documents_Discrete_Values_Prod_Protocol.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/features/btris_quick_smoke_test/Clinical_Documents_Full_Prod_Protocol.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/features/btris_quick_smoke_test/Demographic_Report_Prod_Protocol.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/features/btris_quick_smoke_test/Diagnosis_&amp;_Procedure_Prod_Protocol.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/features/btris_quick_smoke_test/EKG_Test_Prod_Protocol.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/features/btris_quick_smoke_test/Echocardiogram_Test_Prod_Protocol.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/features/btris_quick_smoke_test/IRB_Inclusion_Enrollment_Prod_Protocol.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/features/btris_quick_smoke_test/Laboratory_Test_Prod_Protocol.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/features/btris_quick_smoke_test/Medication_Report_Prod_Protocol.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/features/btris_quick_smoke_test/Microbiology_Test_Prod_Protocol.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/features/btris_quick_smoke_test/NIAAA_Assessment_Report_Prod_Protocol.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/features/btris_quick_smoke_test/NICHD_CTDB_ Report_Prod_Protocol.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/features/btris_quick_smoke_test/PDF_Documents_Report_Prod_Protocol.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/features/btris_quick_smoke_test/Pathology_Test_Prod_Protocol.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/features/btris_quick_smoke_test/Pulmonary_Function_Test_Prod_Protocol.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/features/btris_quick_smoke_test/Radiology_With_Image_Prod_Protocol.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/features/btris_quick_smoke_test/Vital_Signs_Report_Prod_Protocol.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/features/btris_quick_smoke_test/Admin_Radiology_Administration.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/btris_general_reports_prod_protocols_features/Clinical_Documents_Discrete_Values_Prod_Protocol.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/btris_general_reports_prod_protocols_features/Clinical_Documents_Discrete_Values_Prod_Protocol.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/btris_general_reports_prod_protocols_features/NIAAA_Assessment_Report_Prod_Protocol.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/btris_general_reports_prod_protocols_features/NIAAA_Assessment_Report_Prod_Protocol.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/btris_general_reports_test_protocols_features/Clinical_Documents_Discrete_Values.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/btris_general_reports_test_protocols_features/Clinical_Documents_Discrete_Values.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/btris_general_reports_test_protocols_features/NIAAA_Assessment_Report.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/btris_general_reports_test_protocols_features/NIAAA_Assessment_Report.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/features/page_objects/btris_portal_page_object/map_btris_portal.rb" beforeDir="false" afterPath="$PROJECT_DIR$/features/page_objects/btris_portal_page_object/map_btris_portal.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/step_definitions/step_definitions.rb" beforeDir="false" afterPath="$PROJECT_DIR$/features/step_definitions/step_definitions.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/support/BTRIS_REPORTS/BTRIS_Regression_Test_Report.html" beforeDir="false" afterPath="$PROJECT_DIR$/features/support/BTRIS_REPORTS/BTRIS_Regression_Test_Report.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -46,6 +24,7 @@
     <SUITE FILE_PATH="coverage/btris_automation_regression_suite@Resources_Tab_Test_feature.rcov" NAME="Resources_Tab_Test.feature Coverage Results" MODIFIED="1552058382459" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="btris_automation_regression_suite" />
     <SUITE FILE_PATH="coverage/btris_automation_regression_suite@Scenario__1_2_Running_Reports_Search_for_Search_Term_List_Document_and_Reference_List_Documents_Reports__10days_.rcov" NAME="Scenario: 1.2 Running Reports Search for Search Term List Document and Reference List Documents Reports, 10days. Coverage Results" MODIFIED="1551813241108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="btris_automation_regression_suite" />
     <SUITE FILE_PATH="coverage/btris_automation_regression_suite@Clinical_Documents_Discrete_Values_Prod_Protocol_feature.rcov" NAME="Clinical_Documents_Discrete_Values_Prod_Protocol.feature Coverage Results" MODIFIED="1552407484369" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="btris_automation_regression_suite" />
+    <SUITE FILE_PATH="coverage/btris_automation_regression_suite@Admin_Radiology_Administration_feature.rcov" NAME="Admin_Radiology_Administration.feature Coverage Results" MODIFIED="1552488577847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="btris_automation_regression_suite" />
     <SUITE FILE_PATH="coverage/btris_automation_regression_suite@All_tests_in_btris_general_reports_test_protocols_features__btris_automation_regression_suite.rcov" NAME="All tests in btris_general_reports_test_protocols_features: btris_automation_regression_suite Coverage Results" MODIFIED="1552058089843" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="btris_automation_regression_suite" />
     <SUITE FILE_PATH="coverage/btris_automation_regression_suite@All_features_in_btris_general_reports_prod_protocols_features__btris_automation_regression_suite.rcov" NAME="All features in btris_general_reports_prod_protocols_features: btris_automation_regression_suite Coverage Results" MODIFIED="1552058097087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="btris_automation_regression_suite" />
     <SUITE FILE_PATH="coverage/btris_automation_regression_suite@Scenario__1_6_Running_Reports_Search_for_Vital_Signs_and_Reference_List_Documents_Reports__7_day_.rcov" NAME="Scenario: 1.6 Running Reports Search for Vital Signs and Reference List Documents Reports, 7 day. Coverage Results" MODIFIED="1551375309312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="btris_automation_regression_suite" />
@@ -102,7 +81,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="env.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="env.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/features/support/env.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="252">
@@ -111,11 +90,29 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Clinical_Documents_Discrete_Values_Prod_Protocol.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/features/btris_quick_smoke_test/Clinical_Documents_Discrete_Values_Prod_Protocol.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21">
+              <caret line="1" column="39" lean-forward="true" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Admin_Radiology_Administration.feature" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/features/btris_quick_smoke_test/Admin_Radiology_Administration.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="map_btris_portal.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/features/page_objects/btris_portal_page_object/map_btris_portal.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="75" column="12" lean-forward="true" selection-start-line="75" selection-start-column="11" selection-end-line="75" selection-end-column="30" />
+            <state relative-caret-position="336">
+              <caret line="76" column="11" selection-start-line="76" selection-start-column="11" selection-end-line="76" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -125,24 +122,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="84">
               <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PDF_Documents_Report_Prod_Protocol.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/btris_quick_smoke_test/PDF_Documents_Report_Prod_Protocol.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Pulmonary_Function_Test_Prod_Protocol.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/btris_quick_smoke_test/Pulmonary_Function_Test_Prod_Protocol.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-390">
-              <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -224,7 +203,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/features/btris_general_reports_test_protocols_features/Reports_Pivot_Counts_Test.feature" />
         <option value="$PROJECT_DIR$/features/btris_general_reports_test_protocols_features/Test_Pagination.feature" />
         <option value="$PROJECT_DIR$/features/btris_manage_subject_features/Vital_Signs_Report.feature" />
         <option value="C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/watir-6.10.3/lib/watir.rb" />
@@ -272,9 +250,10 @@
         <option value="$PROJECT_DIR$/features/btris_quick_smoke_test/Pulmonary_Function_Test_Prod_Protocol.feature" />
         <option value="$PROJECT_DIR$/features/btris_quick_smoke_test/Radiology_With_Image_Prod_Protocol.feature" />
         <option value="$PROJECT_DIR$/features/btris_quick_smoke_test/Vital_Signs_Report_Prod_Protocol.feature" />
-        <option value="$PROJECT_DIR$/features/page_objects/btris_portal_page_object/map_btris_portal.rb" />
         <option value="$PROJECT_DIR$/features/step_definitions/step_definitions.rb" />
         <option value="$PROJECT_DIR$/features/support/env.rb" />
+        <option value="$PROJECT_DIR$/features/page_objects/btris_portal_page_object/map_btris_portal.rb" />
+        <option value="$PROJECT_DIR$/features/btris_quick_smoke_test/Admin_Radiology_Administration.feature" />
       </list>
     </option>
   </component>
@@ -406,7 +385,38 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber.Demographic_Report_Prod_Protocol.feature">
+  <component name="RunManager" selected="Cucumber.Admin_Radiology_Administration.feature">
+    <configuration name="Admin_Radiology_Administration.feature" type="CucumberRunConfigurationType" factoryName="Cucumber" temporary="true">
+      <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
+      <module name="btris_automation_regression_suite" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*.feature" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/features/btris_quick_smoke_test/Admin_Radiology_Administration.feature" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TAGS_FILTER" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_NAME_FILTER" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_ARGS" VALUE="--color -r features" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="VERBOSE_OPTION" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_RUNNER_PATH" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_RUNNER" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
+    </configuration>
     <configuration name="All features in btris_general_reports_test_protocols_features: btris_automation_regression_suite" type="CucumberRunConfigurationType" factoryName="Cucumber" temporary="true">
       <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
       <module name="btris_automation_regression_suite" />
@@ -531,51 +541,20 @@
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_RUNNER" VALUE="false" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
     </configuration>
-    <configuration name="Scenario: 4.2 Clinical Documents - Discrete Values with red search for Clinical documentsi. (2)" type="CucumberRunConfigurationType" factoryName="Cucumber" temporary="true">
-      <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
-      <module name="btris_automation_regression_suite" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*.feature" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/features/btris_general_reports_prod_protocols_features/Clinical_Documents_Discrete_Values_Prod_Protocol.feature" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TAGS_FILTER" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_NAME_FILTER" VALUE="^4\.2 Clinical Documents \- Discrete Values with red search for Clinical documentsi\.$" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_ARGS" VALUE="--color -r features" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="VERBOSE_OPTION" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_RUNNER_PATH" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_RUNNER" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
-    </configuration>
     <list>
-      <item itemvalue="Cucumber.Scenario: 4.2 Clinical Documents - Discrete Values with red search for Clinical documentsi. (2)" />
       <item itemvalue="Cucumber.Diagnosis_&amp;_Procedure_Prod_Protocol.feature" />
       <item itemvalue="Cucumber.All features in btris_general_reports_test_protocols_features: btris_automation_regression_suite" />
       <item itemvalue="Cucumber.PDF_Documents_Report_Prod_Protocol.feature" />
       <item itemvalue="Cucumber.Demographic_Report_Prod_Protocol.feature" />
+      <item itemvalue="Cucumber.Admin_Radiology_Administration.feature" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber.Admin_Radiology_Administration.feature" />
         <item itemvalue="Cucumber.Demographic_Report_Prod_Protocol.feature" />
         <item itemvalue="Cucumber.PDF_Documents_Report_Prod_Protocol.feature" />
         <item itemvalue="Cucumber.All features in btris_general_reports_test_protocols_features: btris_automation_regression_suite" />
         <item itemvalue="Cucumber.Diagnosis_&amp;_Procedure_Prod_Protocol.feature" />
-        <item itemvalue="Cucumber.Scenario: 4.2 Clinical Documents - Discrete Values with red search for Clinical documentsi. (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -595,14 +574,11 @@
       <workItem from="1551651165356" duration="7187000" />
       <workItem from="1551967261086" duration="24154000" />
       <workItem from="1552306127739" duration="14994000" />
-      <workItem from="1552478323486" duration="6018000" />
+      <workItem from="1552478323486" duration="6750000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Scenario__4_2_Clinical_Documents_-_Discrete_Values_with_red_search_for_Clinical_documentsi__(2) - 2019.03.12 at 14h 36m 35s.xml">
-      <configuration name="Scenario: 4.2 Clinical Documents - Discrete Values with red search for Clinical documentsi. (2)" configurationId="CucumberRunConfigurationType" />
-    </history-entry>
     <history-entry file="Scenario__4_2_Clinical_Documents_-_Discrete_Values_with_red_search_for_Clinical_documentsi__(2) - 2019.03.12 at 14h 40m 08s.xml">
       <configuration name="Scenario: 4.2 Clinical Documents - Discrete Values with red search for Clinical documentsi. (2)" configurationId="CucumberRunConfigurationType" />
     </history-entry>
@@ -630,22 +606,25 @@
     <history-entry file="Demographic_Report_Prod_Protocol_feature - 2019.03.13 at 10h 37m 24s.xml">
       <configuration name="Demographic_Report_Prod_Protocol.feature" configurationId="CucumberRunConfigurationType" />
     </history-entry>
+    <history-entry file="Admin_Radiology_Administration_feature - 2019.03.13 at 10h 46m 22s.xml">
+      <configuration name="Admin_Radiology_Administration.feature" configurationId="CucumberRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123619000" />
+    <option name="totallyTimeSpent" value="124351000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="2578" height="1410" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23141487" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23141487" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.27360776" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27360776" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3292978" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -666,13 +645,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/features/support/support.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="37" column="79" selection-start-line="37" selection-start-column="59" selection-end-line="37" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/features/page_objects/btris_portal_page_object/map_resource.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
@@ -874,13 +846,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/btris_quick_smoke_test/Clinical_Documents_Discrete_Values_Prod_Protocol.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="58" column="21" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/features/btris_quick_smoke_test/Clinical_Documents_Full_Prod_Protocol.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -997,13 +962,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/page_objects/btris_portal_page_object/map_btris_portal.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="75" column="12" lean-forward="true" selection-start-line="75" selection-start-column="11" selection-end-line="75" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/features/btris_quick_smoke_test/NICHD_CTDB_ Report_Prod_Protocol.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -1022,6 +980,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/btris_quick_smoke_test/Clinical_Documents_Discrete_Values_Prod_Protocol.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="39" lean-forward="true" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/page_objects/btris_portal_page_object/map_btris_portal.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="76" column="11" selection-start-line="76" selection-start-column="11" selection-end-line="76" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/btris_quick_smoke_test/Admin_Radiology_Administration.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
         </state>
       </provider>
     </entry>
