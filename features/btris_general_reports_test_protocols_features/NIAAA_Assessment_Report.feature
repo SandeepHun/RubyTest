@@ -18,12 +18,11 @@ Feature: BTRIS NIAAA Assessment Test Report
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
     #click on the assessment test.
-    And the user waits for 3 seconds
+    And the user remembers the value of "general reports" field into "Criteria List" on "Btris/Portal" page
     And the user clicks on "btris: assessment report test" element on "Btris/Portal" page
-    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
-    And the user waits for 5 seconds
+    And the user remembers the value of "niaaa assessments" field into "Assessments List" on "Btris/Portal" page
     #verify the select report page.
     And the user must see "NIAAA Assessment Report Criteria" text in "btris: assessment filter report page" field on "Btris/Portal" page
     #Clcik on the select report button.
@@ -71,18 +70,16 @@ Feature: BTRIS NIAAA Assessment Test Report
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
     #click on the assessment test.
-    And the user waits for 3 seconds
+    And the user remembers the value of "general reports" field into "Criteria List" on "Btris/Portal" page
     And the user clicks on "btris: assessment report test" element on "Btris/Portal" page
-    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
-    And the user waits for 13 seconds
+    And the user remembers the value of "niaaa assessments" field into "Assessments List" on "Btris/Portal" page
     #verify the select report page.
     And the user must see "NIAAA Assessment Report Criteria" text in "btris: assessment filter report page" field on "Btris/Portal" page
-    And the user waits for 4 seconds
+    #And the user waits for 4 seconds
     #click on the select all check box.
     And the user clicks on "select all assessment button" element on "Btris/Portal" page
-    And the user waits for 4 seconds
     #Clcik on the select report button.
     And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
     #Enter and filter subject.

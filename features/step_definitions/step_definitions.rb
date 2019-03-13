@@ -1403,11 +1403,11 @@ And(/^the user verify the clinical documents discrete values actual report on th
 end
 
 Then(/^the user login to the btris application/) do
-  step "the user waits for 2 seconds"
+  step "the user remembers the value of \"btris login page\" field into \"Login Page\" on \"Btris/Portal\" page"
   step "the user clicks on \"btris: login button\" element on \"Btris/Portal\" page"
+  step "the user remembers the value of \"user name attribute\" field into \"UserName\" on \"Btris/Portal\" page"
   step "the user enters \"btris_test2\" into \"btris: user name\" on \"Btris/Portal\" page"
   step "the user enters \"Nomorecognos11:\" into \"btris: password\" on \"Btris/Portal\" page"
-  step "the user waits for 1 seconds"
   step "the user clicks on \"btris: login to dashboard button\" element on \"Btris/Portal\" page"
 end
 
