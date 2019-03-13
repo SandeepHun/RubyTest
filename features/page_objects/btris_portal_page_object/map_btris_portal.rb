@@ -74,6 +74,7 @@ def map_btris_portal
           'scan pd document'                                  =>"xpath^^.//*[@class='custom-control-description checkbox__label-text'][contains(text(), '12-Lead Electrocardiogram, Document Image')]",
           'selected protocol'                                 =>"xpath^^.//*[@data-test='protocol-number']",
           'user name attribute'                               =>"xpath^^.//*[@for='USER']",
+          'admin reports'                                     =>"xpath^^.//*[@class='custom-control-description radio__label-text'][contains(text(), 'Radiology Administration')]",
 
 
 
