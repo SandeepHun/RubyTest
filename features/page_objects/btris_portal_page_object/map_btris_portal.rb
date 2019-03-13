@@ -71,6 +71,9 @@ def map_btris_portal
           'protocol verify count'                             =>"xpath^^.//*[@data-test='protocol-verified-count']",
           'select all'                                        =>"xpath^^.//*[@class='custom-control custom-checkbox']",
           'irb inclusion'                                     =>"xpath^^.//*[@class='custom-control-description radio__label-text'][contains(text(), 'IRB Inclusion Enrollment')]",
+          'scan pd document'                                  =>"xpath^^.//*[@class='custom-control-description checkbox__label-text'][contains(text(), '12-Lead Electrocardiogram, Document Image')]",
+          'selected protocol'                                 =>"xpath^^.//*[@data-test='protocol-number']",
+          'user name attribute'                               =>"xpath^^.//*[@for='USER']",
 
 
 
@@ -92,7 +95,7 @@ def map_btris_portal
           'red search for clinical doc'                                   =>"xpath^^.//*[@id='C114092_anchor'][contains(@data-test, 'red-node red-node-C114092')]",
           'red search: clinical doc search type drop down'                =>"xpath^^.//*[@id='clinicalDocuments-red-term-search-type']",
           'red search: clinical doc done button'                          =>"xpath^^.//*[contains(@data-test, 'red-search-upper-done-button')]",
-          'red search: clinical doc done search button'                   =>"xpath^^.//*[contains(@data-test, 'red-search-search-button')]",
+          'red search: clinical doc search button'                   =>"xpath^^.//*[contains(@data-test, 'red-search-search-button')]",
           'red search: serial research'                                   =>"xpath^^.//*[@id='C2166735_anchor'][contains(@data-test, 'red-node red-node-C2166735')]",
           'red search: start with research'                               =>"xpath^^.//*[@id='C2159770_anchor']",
           'red search: exact phrase research'                             =>"xpath^^.//*[@id='C2166966_anchor']",
@@ -200,6 +203,17 @@ def map_btris_portal
           'list name user field'                                                              =>"xpath^^.//*[@id='red-list-upload-user-field']",
           'warning pop-up message'                                                            =>"xpath^^.//*[@class='modal-secondary-header']//*[contains(text(), 'Conditions of Use and Code of Conduct')]",
           'irb test'                                                                          =>"xpath^^.//*[@class='custom-control-description radio__label-text'][contains(text(), 'IRB Inclusion Enrollment')]",
+          'niaaa assessments'                                                                 =>"xpath^^.//*[@class ='custom-control-description checkbox__label-text'][contains(text(), 'Activated Partial Thromboplastin Time Plasma Test (NIAAA, ASM_PTT)')]",
+          'general reports'                                                                   =>"xpath^^.//*[@class='custom-control-description radio__label-text'][contains(text(), 'Clinical Documents - Discrete Values')]",
+          'btris login page'                                                                  =>"xpath^^.//*[@class ='btn round btn-lg btn-secondary'][contains(text(), 'Log In')]",
+          'potassium test'                                                                    =>"xpath^^.//*[@data-test='red-node red-node-C114092']",
+          'serial research'                                                                   =>"xpath^^.//*[@data-test='red-node red-node-C2166735']",
+          'serial cc chris'                                                                   =>"xpath^^.//*[@data-test='red-node red-node-C524353679']",
+          'serial testing'                                                                    =>"xpath^^.//*[@data-test='red-node red-node-C2166966']",
+          'glasgow coma scale observation'                                                    =>"xpath^^.//*[@data-test='red-node red-node-C3166440']",
+          'body  dtm'                                                                         =>"xpath^^.//*[@data-test='red-node red-node-C2257726']",
+          'glasgow coma search'                                                               =>"xpath^^.//*[@data-test='red-node red-node-C3166440']",
+
 
 
           'custom search term list: list name field'                                          =>"xpath^^.//*[@id='red-list-upload-name-field']",

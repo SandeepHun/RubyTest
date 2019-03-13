@@ -1,8 +1,8 @@
-@BTRIS_Quick_Prod_Test
-@Clinical_Documents_Discrete_Prod_Data
+@BTRIS_Quick_Smoke_Test
+@Clinical_Documents_Discrete_Smoke_Test
 Feature: BTRIS Clinical Documents - Discrete Values Feature Prod Data
 
-  @ClinicalDocumentsProd_Data1.1
+  @ClinicalDocuments_Smoke_Test1.1
 
   Scenario Outline: 4.1 Clinical Documents - Discrete Values without red search.
   #Login to the system.
@@ -29,10 +29,10 @@ Feature: BTRIS Clinical Documents - Discrete Values Feature Prod Data
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
     And the user remembers the value of "protocol verify count" field into "Number OF Subjects" on "Btris/Portal" page
-    And the user waits for 3 seconds
+    And the user remembers the value of "selected protocol" field into "Protocol Number" on "Btris/Portal" page
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
-    And the user waits for 8 seconds
+    And the user waits for 4 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     And the user remembers the value of "diagnosis report table: subject name column" field into "Subject Name" on "Btris/Portal" page
@@ -56,7 +56,7 @@ Feature: BTRIS Clinical Documents - Discrete Values Feature Prod Data
       | Subject   | Filtered Subject |
       | 00-C-0018 | BOWEN            |
 
-  @ClinicalDocumentsProd_Data2.2
+  @ClinicalDocuments_Smoke_Test2.2
 
   Scenario Outline: 4.2 Clinical Documents - Discrete Values with red search for Clinical documentsi.
   #Login to the system.
@@ -119,95 +119,12 @@ Feature: BTRIS Clinical Documents - Discrete Values Feature Prod Data
     #And the user must see "Point of Care Testing Document (CC, CRIS)" text in "red search for clinical doc" field on "Btris/Portal" page
     #Click on the done button.
     And the user clicks on "red search: clinical doc done button" element on "Btris/Portal" page
-    #Click on Add Clinical Document button:
-    And the user clicks on "labs: add clinical doc button" element on "Btris/Portal" page
-    #Enter search criteria in the red search keyword text box.
-    And the user enters "<Red Search Data 1>" into "red search: keyword text box" on "Btris/Portal" page
-    #Seect contains all of these keywords from the drop down.
-    And the user selects "<Search Type 1>" from "red search: clinical doc search type drop down" drop down on "Btris/Portal" page
-    #Click the search button.
-    And the user clicks on "red search: clinical doc search button" element on "Btris/Portal" page
-    And the user remembers the value of "serial research" field into "Red Search" on "Btris/Portal" page
-    #Verify search data.
-    And the user can see text "Serial/Research Testing (CC, CRIS)"
-    #And the user must see "Serial/Research Testing (CC, CRIS)" text in "red search: serial research" field on "Btris/Portal" page
-    #Click on the done button.
-    And the user clicks on "red search: clinical doc done button" element on "Btris/Portal" page
-    #Click on Add Clinical Document button:
-    And the user clicks on "labs: add clinical doc button" element on "Btris/Portal" page
-    #Enter search criteria in the red search keyword text box.
-    And the user enters "<Red Search Data 2>" into "red search: keyword text box" on "Btris/Portal" page
-    #Seect contains all of these keywords from the drop down.
-    And the user selects "<Search Type 2>" from "red search: clinical doc search type drop down" drop down on "Btris/Portal" page
-    #Click the search button.
-    And the user clicks on "red search: clinical doc search button" element on "Btris/Portal" page
-    #Verify search data.
-    And the user remembers the value of "serial cc chris" field into "Red Search" on "Btris/Portal" page
-    And the user can see text "Document Format (as indicated in CRIS)"
-    #And the user must see "Document Format (as indicated in CRIS)" text in "red search: start with research" field on "Btris/Portal" page
-    #Click on the done button.
-    And the user clicks on "red search: clinical doc done button" element on "Btris/Portal" page
-    #Click on Add Clinical Document button:
-    And the user clicks on "labs: add clinical doc button" element on "Btris/Portal" page
-    #Enter search criteria in the red search keyword text box.
-    And the user enters "<Red Search Data 3>" into "red search: keyword text box" on "Btris/Portal" page
-    #Seect contains all of these keywords from the drop down.
-    And the user selects "<Search Type 3>" from "red search: clinical doc search type drop down" drop down on "Btris/Portal" page
-    #Click the search button.
-    And the user clicks on "red search: clinical doc search button" element on "Btris/Portal" page
-    And the user remembers the value of "serial testing" field into "Red Search" on "Btris/Portal" page
-    And the user can see text "Serial Testing or Serial/Research Testing Document"
-    #Verify search data.
-    #And the user must see "Serial Testing or Serial/Research Testing Document" text in "red search: exact phrase research" field on "Btris/Portal" page
-    #Click on the done button.
-    And the user clicks on "red search: clinical doc done button" element on "Btris/Portal" page
-    #Click on Add Observation button:
-    And the user clicks on "labs: add observation button" element on "Btris/Portal" page
-    #Enter search criteria in the red search keyword text box.
-    And the user enters "<Red Search Data 4>" into "red search: keyword text box" on "Btris/Portal" page
-    #Seect contains all of these keywords from the drop down.
-    And the user selects "<Search Type>" from "labs: search type drop down" drop down on "Btris/Portal" page
-    #Click the search button.
-    And the user clicks on "red search: clinical doc search button" element on "Btris/Portal" page
-    And the user waits for 6 seconds
-    And the user can see text "Vital Sign or VO Observation Flowsheet"
-    #Verify search data.
-    #And the user must see "Glasgow Coma Scale Observation" text in "red search clinical: contains phrase research" field on "Btris/Portal" page
-    #Click on the done button.
-    And the user clicks on "red search: clinical doc done button" element on "Btris/Portal" page
-    #Click on Add Observation button:
-    And the user clicks on "labs: add observation button" element on "Btris/Portal" page
-    #Enter search criteria in the red search keyword text box.
-    And the user enters "<Red Search Data 5>" into "red search: keyword text box" on "Btris/Portal" page
-    #Seect contains all of these keywords from the drop down.
-    And the user selects "<Search Type>" from "labs: search type drop down" drop down on "Btris/Portal" page
-    #Click the search button.
-    And the user clicks on "red search: clinical doc search button" element on "Btris/Portal" page
-    And the user waits for 5 seconds
-    And the user can see text "Vital Sign or VO Observation Flowsheet"
-    #Verify search data.
-    #And the user must see "Glasgow Coma Scale Observation" text in "red search clinical: contains any search for add observation" field on "Btris/Portal" page
-    #Click on the done button.
-    And the user clicks on "red search: clinical doc done button" element on "Btris/Portal" page
-    #Click on Add Observation button:
-    And the user clicks on "labs: add observation button" element on "Btris/Portal" page
-    #Enter search criteria in the red search keyword text box.
-    And the user enters "<Red Search Data 6>" into "red search: keyword text box" on "Btris/Portal" page
-    #Seect contains all of these keywords from the drop down.
-    And the user selects "<Search Type 2>" from "labs: search type drop down" drop down on "Btris/Portal" page
-    #Click the search button.
-    And the user clicks on "red search: clinical doc search button" element on "Btris/Portal" page
-    And the user waits for 5 seconds
-    And the user can see text "Body and/or Body Part Measurement Document"
-    #Verify search data.
-    #And the user must see "Body Site Associated With Heart Rate and/or Blood Pressure" text in "red search clinical: start with search for add observation" field on "Btris/Portal" page
-    #Click on the done button.
-    And the user clicks on "red search: clinical doc done button" element on "Btris/Portal" page
+
     #Sign out.
     And the user logged out of the system
 
     Examples:
-      | Subject   | Filtered Subject | Red Search Data | Search Type                    | Red Search Data 1                  | Search Type 1                  | Search Type 2                     | Red Search Data 2 | Search Type 3 | Red Search Data 3                                  | Red Search Data 4              | Red Search Data 5              | Red Search Data 6 |
-      | 00-C-0018 | BOWEN            | Potassium Test  | Contains any of these keywords | Serial Research Testing (CC, CRIS) | Contains all of these keywords | Starts with any of these keywords | Serial (CC, CRIS) | Exact Phrase  | Serial Testing or Serial/Research Testing Document | Glasgow Coma Scale Observation | Glasgow Coma Scale Observation | Body  DTM         |
+      | Subject   | Filtered Subject | Red Search Data | Search Type                    |
+      | 00-C-0018 | BOWEN            | Potassium Test  | Contains any of these keywords |
 
 
