@@ -32,14 +32,13 @@ Feature: BTRIS Demographic Test Prod Data
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify the demographic report table.
-    And the user remembers the value of "demographics report table: subject name column" field into "Subject Name" on "Btris/Portal" page
-    And the user must see "Subject Name" text in "demographics report table: subject name column" field on "Btris/Portal" page
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     #Verify report page.
     And the user must see "Demographics Results Preview - Standard" text in "demographics report page" field on "Btris/Portal" page
-    #Click on the download report button.
-    And the user clicks on "download full report button" element on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
     And the user verify the demographics prod report on the table
+    #Click on the download report button.
+    And the user clicks on "download full report button" element on "Btris/Portal" page
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page

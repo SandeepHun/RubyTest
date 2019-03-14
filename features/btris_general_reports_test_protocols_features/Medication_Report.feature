@@ -38,8 +38,7 @@ Feature: BTRIS Medication Test Report
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify the laboratory report table.
-    And the user remembers the value of "laboratory report table: subject name" field into "Subject Name" on "Btris/Portal" page
-    And the user must see "Subject Name" text in "laboratory report table: subject name" field on "Btris/Portal" page
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     #Verify report page.
     And the user must see "Medication Report Results Preview - Medication Orders" text in "medication report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
@@ -102,8 +101,7 @@ Feature: BTRIS Medication Test Report
     #Verify and validate the report display and click on the the image to view.
     And the user verify the medication report on the table
     #Verify Medication Administration report.
-    And the user selects "Medications Administration" from "medication admin drop down" drop down on "Btris/Portal" page
-    And the user sees "Medications Administration" selected in "medication admin drop down" drop down on "Btris/Portal" page
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
     And the user verify the medication report on the table
     #Click on the download report button.

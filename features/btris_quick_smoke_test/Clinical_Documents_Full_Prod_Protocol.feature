@@ -36,11 +36,10 @@ Feature: BTRIS Clinical Documents - Full Text Feature Prod Data
     And the user waits for 4 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
-    #Verify the document report table.
-    And the user remembers the value of "diagnosis report table: subject name column" field into "Subject Name" on "Btris/Portal" page
-    And the user must see "Subject Name" text in "diagnosis report table: subject name column" field on "Btris/Portal" page
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     #Verify report page.
     And the user must see "Clinical Documents - Full Text Results Preview - Standard" text in "clinical documents full tex result page" field on "Btris/Portal" page
+#    And the user verify the clinical documents full text "<Validation Record>" report on the table
     #Click on the download report button.
     And the user clicks on "download full report button" element on "Btris/Portal" page
     #click on the open report in another tab button.
@@ -52,5 +51,5 @@ Feature: BTRIS Clinical Documents - Full Text Feature Prod Data
     And the user logged out of the system
 
     Examples:
-      | Subject   | Filtered Subject |
-      | 00-C-0133 | BEATON           |
+      | Subject   | Filtered Subject | Validation Record |
+      | 00-C-0133 | BEATON           | No records found  |

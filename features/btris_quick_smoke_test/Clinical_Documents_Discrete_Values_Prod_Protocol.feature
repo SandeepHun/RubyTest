@@ -35,13 +35,13 @@ Feature: BTRIS Clinical Documents - Discrete Values Feature Prod Data
     And the user waits for 4 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
-    And the user remembers the value of "diagnosis report table: subject name column" field into "Subject Name" on "Btris/Portal" page
+    #And the user remembers the value of "diagnosis report table: subject name column" field into "Subject Name" on "Btris/Portal" page
     #Verify the document report table.
-    And the user must see "Subject Name" text in "diagnosis report table: subject name column" field on "Btris/Portal" page
+    #And the user must see "Subject Name" text in "diagnosis report table: subject name column" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "Clinical Documents - Discrete Values Results Preview - Standard" text in "clinical documents: discrete report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
-    And the user verify the clinical documents discrete values actual report on the table
+    And the user verify the clinical documents discrete values "<Validation Record>" actual report on the table
     #Click on the download report button.
     And the user clicks on "download full report button" element on "Btris/Portal" page
     #click on the open report in another tab button.
@@ -53,8 +53,8 @@ Feature: BTRIS Clinical Documents - Discrete Values Feature Prod Data
     And the user logged out of the system
 
     Examples:
-      | Subject   | Filtered Subject |
-      | 00-C-0018 | BOWEN            |
+      | Subject   | Filtered Subject | Validation Record |
+      | 00-C-0018 | BOWEN            | No records found  |
 
   @ClinicalDocuments_Smoke_Test2.2
 
@@ -83,19 +83,20 @@ Feature: BTRIS Clinical Documents - Discrete Values Feature Prod Data
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
     And the user remembers the value of "protocol verify count" field into "Number OF Subjects" on "Btris/Portal" page
+    And the user remembers the value of "selected protocol" field into "Protocol Number" on "Btris/Portal" page
     And the user waits for 3 seconds
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
-    And the user waits for 8 seconds
+    And the user waits for 4 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify the document report table.
-    And the user remembers the value of "diagnosis report table: subject name column" field into "Subject Name" on "Btris/Portal" page
-    And the user must see "Subject Name" text in "diagnosis report table: subject name column" field on "Btris/Portal" page
+#    And the user remembers the value of "diagnosis report table: subject name column" field into "Subject Name" on "Btris/Portal" page
+#    And the user must see "Subject Name" text in "diagnosis report table: subject name column" field on "Btris/Portal" page
     #Verify report page.
     And the user must see "Clinical Documents - Discrete Values Results Preview - Standard" text in "clinical documents: discrete report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
-    And the user verify the clinical documents discrete values actual report on the table
+    And the user verify the clinical documents discrete values "<Validation Record>" actual report on the table
     #Click on the download report button.
     And the user clicks on "download full report button" element on "Btris/Portal" page
     #click on the open report in another tab button.
@@ -124,7 +125,7 @@ Feature: BTRIS Clinical Documents - Discrete Values Feature Prod Data
     And the user logged out of the system
 
     Examples:
-      | Subject   | Filtered Subject | Red Search Data | Search Type                    |
-      | 00-C-0018 | BOWEN            | Potassium Test  | Contains any of these keywords |
+      | Subject   | Filtered Subject | Red Search Data | Search Type                    | Validation Record |
+      | 00-C-0018 | BOWEN            | Potassium Test  | Contains any of these keywords | No records found  |
 
 

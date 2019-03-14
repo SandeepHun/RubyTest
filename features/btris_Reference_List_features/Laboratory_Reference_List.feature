@@ -113,7 +113,6 @@ Feature: BTRIS Laboratory Reference List Report
     And the user enters "<Number of Values>" into "number of values text box" on "Btris/Portal" page
     And the user selects "<Labs>" from "labs drop down" drop down on "Btris/Portal" page
     And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
-    And the user remembers the value of "laboratory report table: subject name column" field into "Subject Name" on "Btris/Portal" page
     #Verify report page.
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
@@ -167,7 +166,6 @@ Feature: BTRIS Laboratory Reference List Report
     And the user enters "<Number of Values>" into "number of values text box" on "Btris/Portal" page
     And the user selects "<Labs>" from "labs drop down" drop down on "Btris/Portal" page
     And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
-    And the user remembers the value of "laboratory report table: subject name column" field into "Subject Name" on "Btris/Portal" page
     #Verify report page.
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
@@ -221,7 +219,6 @@ Feature: BTRIS Laboratory Reference List Report
     And the user enters "<Number of Values>" into "number of values text box" on "Btris/Portal" page
     And the user selects "<Labs>" from "labs drop down" drop down on "Btris/Portal" page
     And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
-    And the user remembers the value of "laboratory report table: subject name column" field into "Subject Name" on "Btris/Portal" page
     #Verify report page.
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
@@ -274,7 +271,6 @@ Feature: BTRIS Laboratory Reference List Report
     And the user enters "<Number of Values>" into "number of values text box" on "Btris/Portal" page
     And the user selects "<Labs>" from "labs drop down" drop down on "Btris/Portal" page
     And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
-    And the user remembers the value of "laboratory report table: subject name column" field into "Subject Name" on "Btris/Portal" page
     #Verify report page.
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
@@ -327,7 +323,6 @@ Feature: BTRIS Laboratory Reference List Report
     And the user enters "<Number of Values>" into "number of values text box" on "Btris/Portal" page
     And the user selects "<Labs>" from "labs drop down" drop down on "Btris/Portal" page
     And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
-    And the user remembers the value of "laboratory report table: subject name column" field into "Subject Name" on "Btris/Portal" page
     #Verify report page.
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
@@ -379,7 +374,6 @@ Feature: BTRIS Laboratory Reference List Report
     And the user enters "<Number of Values>" into "number of values text box" on "Btris/Portal" page
     And the user selects "<Labs>" from "labs drop down" drop down on "Btris/Portal" page
     And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
-    And the user remembers the value of "laboratory report table: subject name column" field into "Subject Name" on "Btris/Portal" page
     #Verify report page.
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
@@ -431,7 +425,6 @@ Feature: BTRIS Laboratory Reference List Report
     And the user enters "<Number of Values>" into "number of values text box" on "Btris/Portal" page
     And the user selects "<Labs>" from "labs drop down" drop down on "Btris/Portal" page
     And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
-    And the user remembers the value of "laboratory report table: subject name column" field into "Subject Name" on "Btris/Portal" page
     #Verify report page.
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.

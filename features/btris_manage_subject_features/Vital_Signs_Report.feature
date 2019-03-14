@@ -18,9 +18,8 @@ Feature: BTRIS Vital Signs Test Report
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
     #click on the Vital Signs Test.
-    And the user waits for 3 seconds
+    And the user remembers the value of "general reports" field into "Criteria List" on "Btris/Portal" page
     And the user clicks on "btris: vital signs test" element on "Btris/Portal" page
-    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
@@ -29,17 +28,15 @@ Feature: BTRIS Vital Signs Test Report
     And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
-    And the user waits for 8 seconds
     And the user remembers the value of "protocol verify count" field into "Number OF Subjects" on "Btris/Portal" page
-    And the user waits for 3 seconds
+    And the user remembers the value of "selected protocol" field into "Protocol Number" on "Btris/Portal" page
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
-    And the user waits for 8 seconds
+    And the user waits for 4 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify the laboratory report table.
-    And the user remembers the value of "vital signs test table: subject name column" field into "Subject Name" on "Btris/Portal" page
-    And the user must see "Subject Name" text in "vital signs test table: subject name column" field on "Btris/Portal" page
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     #Verify report page.
     And the user must see "Vital Signs Results Preview - Standard" text in "vital signs test result page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
@@ -76,31 +73,27 @@ Feature: BTRIS Vital Signs Test Report
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
     #click on the Vital Signs Test.
-    And the user waits for 3 seconds
+    And the user remembers the value of "general reports" field into "Criteria List" on "Btris/Portal" page
     And the user clicks on "btris: vital signs test" element on "Btris/Portal" page
-    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
     And the user must see "Vital Signs Criteria" text in "btris: vital signs test page" field on "Btris/Portal" page
-    And the user waits for 4 seconds
     #Uncheck the include demographic report radio button.
     And the user clicks on "include demographic report radio button" element on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
-    And the user waits for 8 seconds
     And the user remembers the value of "protocol verify count" field into "Number OF Subjects" on "Btris/Portal" page
-    And the user waits for 3 seconds
+    And the user remembers the value of "selected protocol" field into "Protocol Number" on "Btris/Portal" page
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
-    And the user waits for 8 seconds
+    And the user waits for 4 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify the laboratory report table.
-    And the user remembers the value of "vital signs test table: subject name column" field into "Subject Name" on "Btris/Portal" page
-    And the user must see "Subject Name" text in "vital signs test table: subject name column" field on "Btris/Portal" page
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     #Verify report page.
     And the user must see "Vital Signs Results Preview - Standard" text in "vital signs test result page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.

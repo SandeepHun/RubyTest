@@ -39,8 +39,7 @@ Feature: BTRIS EKG Test Report
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify assessment report results.
-    And the user remembers the value of "report table: subject name" field into "Subject Name" on "Btris/Portal" page
-    And the user must see "Subject Name" text in "report table: subject name" field on "Btris/Portal" page
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     #Verify report page.
     And the user must see "EKG Results Preview - Standard" text in "ekg result page" field on "Btris/Portal" page
     #Verify and validate the report display.
@@ -100,8 +99,7 @@ Feature: BTRIS EKG Test Report
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify assessment report results.
-    And the user remembers the value of "report table: subject name" field into "Subject Name" on "Btris/Portal" page
-    And the user must see "Subject Name" text in "report table: subject name" field on "Btris/Portal" page
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     #Verify report page.
     And the user must see "EKG Results Preview - Standard" text in "ekg result page" field on "Btris/Portal" page
     #Verify and validate the report display.

@@ -1380,8 +1380,13 @@ And(/^the user verify the clinical documents discrete values report on the table
   end
 end
 
-And(/^the user verify the clinical documents discrete values actual report on the table$/) do
-  record_found = false
+And(/^the user verify the clinical documents discrete values "(.*)" actual report on the table$/) do |value|
+  sleep 5
+  page_text = @browser.html
+  if page_text.include? value
+    puts "Search criteria return message #{value} ,for the search query"
+  else
+    record_found = false
   table_path = ".//*[contains(@data-test, 'results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
   if check_record_present > 2
@@ -1400,6 +1405,7 @@ And(/^the user verify the clinical documents discrete values actual report on th
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
   end
+end
 end
 
 Then(/^the user login to the btris application/) do
@@ -1670,7 +1676,12 @@ And(/^the user verify the PFT Tests on "(.*)" data on "(.*)" page$/) do |field_n
 
 end
 
-And(/^the user verify the clinical documents full text report on the table$/) do
+And(/^the user verify the clinical documents full text "(.*)" report on the table$/) do |value|
+  sleep 5
+  page_text = @browser.html
+  if page_text.include? value
+    puts "Search criteria return message #{value} ,for the search query"
+  else
   record_found = false
   table_path = ".//*[contains(@data-test, 'results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
@@ -1679,10 +1690,10 @@ And(/^the user verify the clinical documents full text report on the table$/) do
     table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
     #puts table_rows
     (1..table_rows).each do |rows|
-      delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[1]"
+      delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
       #puts 'the row number is ' +delete_icons_row
-      new_document = "00-C-0018"
-      if delete_icons_row.downcase.eql? new_document.downcase
+      new_document = "ANDERSON, STEPHEN FOSTER"
+      if delete_icons_row.downcase.include? new_document.downcase
         record_found = true
         #del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[1]"
        # puts 'the MRN for the diagnosis Results are ' +del_obj
@@ -1691,7 +1702,7 @@ And(/^the user verify the clinical documents full text report on the table$/) do
     checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
   end
 end
-
+end
 
 And(/^the user verify the pathology report on the table$/) do
   sleep 3
@@ -1953,7 +1964,6 @@ And(/^the user verify the reference list "(.*)" laboratory report on the table$/
   if page_text.include? value
     puts "Search criteria return message #{value} , no record for the search filter"
   else
-    step "the user must see \"Subject Name\" text in \"laboratory report table: subject name\" field on \"Btris/Portal\" page"
   record_found = false
   table_path = ".//*[contains(@data-test, 'results-preview-table')]"
   check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
@@ -1974,6 +1984,34 @@ And(/^the user verify the reference list "(.*)" laboratory report on the table$/
     checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
   end
 end
+end
+
+And(/^the user verify radiology admin report "(.*)" on the table$/) do |value|
+  sleep 5
+  page_text = @browser.html
+  if page_text.include? value
+    puts "Search criteria return message #{value} ,for the search query"
+  else
+    record_found = false
+    table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+    check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
+    if check_record_present > 2
+      #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
+      table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
+      #puts table_rows
+      (1..table_rows).each do |rows|
+        delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
+        # puts 'the row number is ' +delete_icons_row
+        new_document = "AARON, EVAN CHRISTOPHER"
+        if delete_icons_row.downcase.eql? new_document.downcase
+          record_found = true
+          del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
+          puts 'the Subject for the Reference Laboratory Results are ' +del_obj
+        end
+      end
+      checkpoint (record_found.eql? true), "No data found in table that matches the pathology search"
+    end
+  end
 end
 
 

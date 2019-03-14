@@ -20,6 +20,7 @@ Feature: BTRIS Manage Protocol Test Report
     And the user waits for 8 seconds
     #Search a protocol.
     And the user enters "<Protocol>" into "search protocol text box" on "Manage/Subjects" page
+    And the user waits for 2 seconds
     And the user remembers the value of "number of subjects" field into "Consented Subjects" on "Manage/Subjects" page
     #Verify search result for the searched protocol.
     And the user must see "<Protocol>" text in "searched protocol table" field on "Manage/Subjects" page
