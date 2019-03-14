@@ -36,8 +36,7 @@ Feature: BTRIS Laboratory Feature Prod Data
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify the laboratory report table.
-    And the user remembers the value of "laboratory report table: subject name" field into "Collected Date Time" on "Btris/Portal" page
-    And the user must see "Subject Name" text in "laboratory report table: subject name" field on "Btris/Portal" page
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     #Verify report page.
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.

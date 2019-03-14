@@ -16,7 +16,10 @@ Feature: BTRIS Radiology Administration Test Report
     #Click on the accept button.
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on Admin Report.
+    And the user remembers the value of "navigation: admin report" field into "Report Tab" on "Btris/Portal" page
     And the user clicks on "navigation: admin report" element on "Btris/Portal" page
+    And the user remembers the value of "admin report tab" field into "Report Tab" on "Btris/Portal" page
+    And the user clicks on "admin report tab" element on "Btris/Portal" page
     #click on the  Radiology Administration Test.
     And the user remembers the value of "admin reports" field into "Reports" on "Btris/Portal" page
     And the user clicks on "report: radiology administration" element on "Btris/Portal" page
@@ -26,12 +29,13 @@ Feature: BTRIS Radiology Administration Test Report
     And the user must see "Radiology Administration Criteria" text in "btris: radiology administrative report filter page" field on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
-    And the user remembers the value of "laboratory report table: subject name column" field into "Subject Name" on "Btris/Portal" page
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
+    #And the user remembers the value of "laboratory report table: subject name column" field into "Subject Name" on "Btris/Portal" page
     And the user must see "Radiology Administration Results Preview - Standard" text in "radiology administrative report page" field on "Btris/Portal" page
-    And the return to main page
+    And the user verify radiology admin report "<Validation Record>" on the table
     #Sign out.
     And the user logged out of the system
 
     Examples:
-      | Subject       | Filtered Subject |
-      | BTRIS-TEST-00 | NIHCCTEST        |
+      | Validation Record |
+      | No records found  |

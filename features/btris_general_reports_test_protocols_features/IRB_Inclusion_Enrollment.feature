@@ -1,4 +1,4 @@
- @BTRIS_Quick_Test
+@BTRIS_Quick_Test
 @IRB_Inclusion_Enrollment_Test
 Feature: BTRIS IRB Inclusion Enrollment Test Report
 
@@ -41,8 +41,7 @@ Feature: BTRIS IRB Inclusion Enrollment Test Report
     #Verify report page.
     And the user must see "Cumulative Inclusion Enrollment Report" text in "irb inclusion enrollment result page" field on "Btris/Portal" page
     #Verify searched protocol
-    And the user remembers the value of "irb inclusion enrollment search protocol" field into "Subject" on "Btris/Portal" page
-    And the user must see "<Subject>" text in "irb inclusion enrollment search protocol" field on "Btris/Portal" page
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     #Click on the download report button.
     #And the user clicks on "download pd report button" element on "Btris/Portal" page
     #click on the open report in another tab button.
@@ -97,10 +96,7 @@ Feature: BTRIS IRB Inclusion Enrollment Test Report
     #Verify report page.
     And the user must see "Cumulative Inclusion Enrollment Report" text in "irb inclusion enrollment result page" field on "Btris/Portal" page
     #Verify searched protocol
-    And the user remembers the value of "irb inclusion enrollment search protocol" field into "Subject" on "Btris/Portal" page
-    And the user must see "<Subject>" text in "irb inclusion enrollment search protocol" field on "Btris/Portal" page
-    #Click on the download report button.
-    #And the user clicks on "download pd report button" element on "Btris/Portal" page
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     #click on the open report in another tab button.
     And the user clicks on "irb inclusion open report in new tab" element on "Btris/Portal" page
     And the switch to new tab page

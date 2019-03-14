@@ -4,7 +4,7 @@ def map_manage_subjects
 
       {
           #Export librarian, adding a country.
-          'top navigation: manage subject'                   =>"xpath^^.//*[@data-test='primary-nav-manage-subjects']//*[contains(text(), 'Manage Subjects')]",
+          'top navigation: manage subject'                   =>"xpath^^.//*[@class='btn round btn-lg dataset-card-button']//*[contains(text(), 'Manage Subjects')]",
           'search protocol text box'                         =>"xpath^^.//*[@id='manage-subjects-protocols-search-field']",
           'searched protocol table'                          =>"xpath^^.//*[@data-test='manage-subjects-protocols']/tbody/tr[1]/td[1]",
           'searched subject'                                 =>"xpath^^.//*[@data-test='manageProtocols_protocol-number']",
@@ -14,7 +14,7 @@ def map_manage_subjects
           'number of consented subjects'                     =>"xpath^^.//*[@data-test='mps-consented-count']",
           'subject consented switch'                         =>"xpath^^.//*[@class='table manage-protocol-subjects-table']/tbody/tr[1]/td[3]//label",
           'subject table'                                    =>"xpath^^.//*[@class='table manage-protocol-subjects-table']/tbody/tr[1]/td[1]",
-          'back arrow'                                       =>"xpath^^.//*[@class='fa fa-arrow-circle-left fa-2x']",
+          'back arrow'                                       =>"xpath^^.//*[@data-icon='arrow-circle-left']",
           'subject search field'                             =>"xpath^^.//*[@id='manage-subjects-protocol-subjects-search-field']",
           'initial consent date'                             =>"xpath^^.//*[contains(@id, 'manage-protocol-subjects-initial-consent-')]",
           'initial consent info icon'                        =>"xpath^^.//*[@class='table manage-protocol-subjects-table']/thead/tr/th[8]//button[2]",

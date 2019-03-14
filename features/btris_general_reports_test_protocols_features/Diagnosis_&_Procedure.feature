@@ -38,8 +38,7 @@ Feature: BTRIS Diagnosis & Procedure Test Report
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify the diagnosis report table.
-    And the user remembers the value of "diagnosis report table: subject name column" field into "Subject Name" on "Btris/Portal" page
-    And the user must see "Subject Name" text in "diagnosis report table: subject name column" field on "Btris/Portal" page
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     #Verify report page.
     And the user must see "Diagnosis & Procedure Results Preview - Standard" text in "diagnosis and procedure report page" field on "Btris/Portal" page
     #Click on the download report button.
@@ -94,8 +93,7 @@ Feature: BTRIS Diagnosis & Procedure Test Report
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify the diagnosis report table.
-    And the user remembers the value of "diagnosis report table: subject name column" field into "Subject Name" on "Btris/Portal" page
-    And the user must see "Subject Name" text in "diagnosis report table: subject name column" field on "Btris/Portal" page
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     #Verify report page.
     And the user must see "Diagnosis & Procedure Results Preview - Standard" text in "diagnosis and procedure report page" field on "Btris/Portal" page
     #Click on the download report button.

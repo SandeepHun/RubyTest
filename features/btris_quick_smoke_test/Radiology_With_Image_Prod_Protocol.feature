@@ -37,8 +37,7 @@
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify radiology report results.
-    And the user remembers the value of "laboratory report table: subject name column" field into "Subject Name" on "Btris/Portal" page
-    And the user must see "Subject Name" text in "laboratory report table: subject name column" field on "Btris/Portal" page
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     #Verify report page.
     And the user must see "Radiology Results Preview - Standard" text in "radiology report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.

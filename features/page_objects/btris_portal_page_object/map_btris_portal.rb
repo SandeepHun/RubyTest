@@ -62,19 +62,20 @@ def map_btris_portal
           'demographics test report'                          =>"xpath^^.//*[@data-test='6-radio-value'][contains(@class, 'custom-control custom-radio')]",
           'demographics report page'                          =>"xpath^^.//*[contains(text(), 'Demographics Results Preview -')]",
           'demographics report table: subject name column'    =>"xpath^^.//*[contains(@class, 'colHeader')][contains(text(), 'Subject Name')]",
-          'diagnosis report table: subject name column'       =>"xpath^^.//*[contains(@class, 'colHeader')][contains(text(), 'Subject Name')]",
+          'diagnosis report table: subject name column'       =>"xpath^^.//*[@class='relative']//*[contains(text(), 'Subject Name')]",
           'laboratory report table: subject name column'      =>"xpath^^.//*[contains(@class, 'colHeader')][contains(text(), 'Subject Name')]",
           'laboratory report table: subject name'             =>"xpath^^.//*[contains(@class, 'colHeader')][contains(text(), 'Subject Name')]",
           'laboratory and procedure report page'              =>"xpath^^.//*[contains(text(), 'Laboratory Results Preview -')]",
           'report table: collected data time column'          =>"xpath^^.//*[contains(@data-test, 'results-preview-table')]//*[contains(text(), 'Collected Date Time')]",
           'admin report table: subject name column'           =>"xpath^^.//*[contains(@class, 'colHeader')][contains(text(), 'Subject Name')]",
-          'protocol verify count'                             =>"xpath^^.//*[@data-test='protocol-verified-count']",
+          'protocol verify count'                             =>"xpath^^.//*[@data-test='protocol-consented-count']",
           'select all'                                        =>"xpath^^.//*[@class='custom-control custom-checkbox']",
           'irb inclusion'                                     =>"xpath^^.//*[@class='custom-control-description radio__label-text'][contains(text(), 'IRB Inclusion Enrollment')]",
           'scan pd document'                                  =>"xpath^^.//*[@class='custom-control-description checkbox__label-text'][contains(text(), '12-Lead Electrocardiogram, Document Image')]",
           'selected protocol'                                 =>"xpath^^.//*[@data-test='protocol-number']",
           'user name attribute'                               =>"xpath^^.//*[@for='USER']",
           'admin reports'                                     =>"xpath^^.//*[@class='custom-control-description radio__label-text'][contains(text(), 'Radiology Administration')]",
+          'reports results'                                   =>"xpath^^.//*[@data-test='results-preview-table']/tbody/tr[1]/td[3]",
 
 
 
@@ -127,10 +128,10 @@ def map_btris_portal
           'pdf documents buttom select button'                          =>"xpath^^.//*[@id='app']/div[2]/div[1]/div[2]/div[2]/div/div/div/div/form/div[2]/div/div[4]/div[2]/button",
           #Vital signs
           'btris: vital signs test'                                     =>"xpath^^.//*[@id='generalRpts']/div/ul/li[17]/div/label",
-          'btris: vital signs test page'                                =>"xpath^^.//*[@id='app']//*[contains(text(), 'Vital Signs Criteria')]",
+          'btris: vital signs test page'                                =>"xpath^^.//*[@class='prompts-header__heading']//*[contains(text(), 'Vital Signs Criteria')]",
           'vital signs test select button'                              =>"xpath^^.//*[@id='app']/div/div[1]/div[2]/div[2]/div/div/div/div/form/div[1]/div[2]/div/div[2]/button",
           'vital signs test result page'                                =>"xpath^^.//*[contains(text(), 'Vital Signs Results Preview -')]",
-          'vital signs test table: subject name column'                 =>"xpath^^.//*[contains(@data-test, 'results-preview-table')]//*[contains(text(), 'Subject Name')]",
+          'vital signs test table: subject name column'                 =>"xpath^^.//*/table/thead/tr/th[3]/div//*[contains(text(), 'Subject Name')]",
           'include demographic report radio button'                     =>"xpath^^.//*[@for='includeDemographics-checkbox']",
           'vital sign bottom select button'                             =>"xpath^^.//*[@id='app']/div/div[1]/div[2]/div[2]/div/div/div/div/form/div[2]/div/div[5]/div[2]/button",
           'report creation date'                                        =>"xpath^^.//*[@id='mainTab-0-SV_reportDate']",
@@ -255,6 +256,8 @@ def map_btris_portal
 
           #Admin Report
           'navigation: admin report'                                                          =>"xpath^^.//*[@data-test='launch-admin-reports-button']",
+          'admin report tab'                                                                  =>"xpath^^.//*[@id='t-Admin Reports']",
+
           'report: radiology administration'                                                  =>"xpath^^.//*[@data-test='1021-radio-value']",
           'btris: radiology administrative report filter page'                                =>"xpath^^.//*[@class='prompts-header__heading']//*[contains(text(), 'Radiology Administration Criteria')]",
           'radiology administrative report page'                                              =>"xpath^^.//*[contains(text(), 'Radiology Administration Results Preview -')]",

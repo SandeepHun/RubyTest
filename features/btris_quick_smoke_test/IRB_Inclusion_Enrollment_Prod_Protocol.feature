@@ -2,7 +2,7 @@
 @IRB_Inclusion_Enrollment_Smoke_Test
 Feature: BTRIS IRB Inclusion Enrollment Feature Prod Data
 
-  @IRBInclusionEnrollment_Smoke_Test1
+  @IRBInclusionEnrollment_Prod_Data1
 
   Scenario Outline: 11.1 IRB Inclusion Enrollment.
   #Login to the system.
@@ -35,10 +35,10 @@ Feature: BTRIS IRB Inclusion Enrollment Feature Prod Data
     And the user waits for 4 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
+    And the user remembers the value of "irb inclusion enrollment search protocol" field into "Subject" on "Btris/Portal" page
     #Verify report page.
     And the user must see "Cumulative Inclusion Enrollment Report" text in "irb inclusion enrollment result page" field on "Btris/Portal" page
     #Verify searched protocol
-    And the user remembers the value of "irb inclusion enrollment search protocol" field into "Subject" on "Btris/Portal" page
     And the user must see "<Subject>" text in "irb inclusion enrollment search protocol" field on "Btris/Portal" page
     #Click on the download report button.
     #And the user clicks on "download pd report button" element on "Btris/Portal" page
