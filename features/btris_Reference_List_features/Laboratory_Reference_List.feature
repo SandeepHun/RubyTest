@@ -1,4 +1,4 @@
-@BTRIS_Quick_Test
+@BTRIS_Unstable_Test12
 @ReferenceList_Laboratory_Test.1
 Feature: BTRIS Laboratory Reference List Report
 
@@ -95,18 +95,17 @@ Feature: BTRIS Laboratory Reference List Report
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
-    And the user waits for 3 seconds
     #Verify and click on Reference List Report top na.
+    And the user remembers the value of "reference list top nav" field into "Report Type" on "Btris/Portal" page
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
+    And the user remembers the value of "reference list reports: laboratory" field into "Criteria List" on "Btris/Portal" page
     #click on the Laboratory Test.
-    And the user waits for 3 seconds
     And the user clicks on "reference list laboratory" element on "Btris/Portal" page
-    And the user waits for 3 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
+    And the user remembers the value of "reference list laboratory report filter page" field into "Search Report" on "Btris/Portal" page
     And the user must see "Laboratory Criteria" text in "reference list laboratory report filter page" field on "Btris/Portal" page
-    And the user waits for 2 seconds
     And the user selects "<Reference Name>" from "reference list drop down" drop down on "Btris/Portal" page
     And the user enters "<Number of Days Before>" into "reference list day range text box" on "Btris/Portal" page
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
@@ -114,6 +113,7 @@ Feature: BTRIS Laboratory Reference List Report
     And the user selects "<Labs>" from "labs drop down" drop down on "Btris/Portal" page
     And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
     #Verify report page.
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
     And the user verify the reference list "<Validation Record>" laboratory report on the table
@@ -122,6 +122,7 @@ Feature: BTRIS Laboratory Reference List Report
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory report page" field on "Btris/Portal" page
     And the return to main page
     #Sign out.
@@ -129,7 +130,7 @@ Feature: BTRIS Laboratory Reference List Report
 
     Examples:
       | Labs                  | Number of Values | Number of Days Before | Reference Name    | Number of Days After | Validation Record |
-      | Laboratory Testing 01 | 10               | 90                    | Reference List DN | 80                   | No records found  |
+      | Laboratory Testing 01 | 10               | 200                   | Reference List DN | 200                  | No records found  |
 
 
 
@@ -148,18 +149,17 @@ Feature: BTRIS Laboratory Reference List Report
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
-    And the user waits for 3 seconds
     #Verify and click on Reference List Report top na.
+    And the user remembers the value of "reference list top nav" field into "Report Type" on "Btris/Portal" page
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
     #click on the Laboratory Test.
-    And the user waits for 3 seconds
+    And the user remembers the value of "reference list reports: laboratory" field into "Criteria List" on "Btris/Portal" page
     And the user clicks on "reference list laboratory" element on "Btris/Portal" page
-    And the user waits for 3 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
+    And the user remembers the value of "reference list laboratory report filter page" field into "Search Report" on "Btris/Portal" page
     And the user must see "Laboratory Criteria" text in "reference list laboratory report filter page" field on "Btris/Portal" page
-    And the user waits for 2 seconds
     And the user selects "<Reference Name>" from "reference list drop down" drop down on "Btris/Portal" page
     And the user enters "<Number of Days Before>" into "reference list day range text box" on "Btris/Portal" page
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
@@ -167,6 +167,7 @@ Feature: BTRIS Laboratory Reference List Report
     And the user selects "<Labs>" from "labs drop down" drop down on "Btris/Portal" page
     And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
     #Verify report page.
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
     And the user verify the reference list "<Validation Record>" laboratory report on the table
@@ -175,6 +176,7 @@ Feature: BTRIS Laboratory Reference List Report
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory report page" field on "Btris/Portal" page
     And the return to main page
     #Sign out.
@@ -182,7 +184,7 @@ Feature: BTRIS Laboratory Reference List Report
 
     Examples:
       | Labs                  | Number of Values | Number of Days Before | Reference Name    | Number of Days After | Validation Record |
-      | Laboratory Testing 01 | 15               | 60                    | Reference List DN | 40                   | No records found  |
+      | Laboratory Testing 01 | 15               | 200                   | Reference List DN | 260                  | No records found  |
 
 
 
@@ -201,18 +203,17 @@ Feature: BTRIS Laboratory Reference List Report
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
-    And the user waits for 3 seconds
     #Verify and click on Reference List Report top na.
+    And the user remembers the value of "reference list top nav" field into "Report Type" on "Btris/Portal" page
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
     #click on the Laboratory Test.
-    And the user waits for 2 seconds
+    And the user remembers the value of "reference list reports: laboratory" field into "Criteria List" on "Btris/Portal" page
     And the user clicks on "reference list laboratory" element on "Btris/Portal" page
-    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
+    And the user remembers the value of "reference list laboratory report filter page" field into "Search Report" on "Btris/Portal" page
     And the user must see "Laboratory Criteria" text in "reference list laboratory report filter page" field on "Btris/Portal" page
-    And the user waits for 2 seconds
     And the user selects "<Reference Name>" from "reference list drop down" drop down on "Btris/Portal" page
     And the user enters "<Number of Days Before>" into "reference list day range text box" on "Btris/Portal" page
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
@@ -220,6 +221,7 @@ Feature: BTRIS Laboratory Reference List Report
     And the user selects "<Labs>" from "labs drop down" drop down on "Btris/Portal" page
     And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
     #Verify report page.
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
     And the user verify the reference list "<Validation Record>" laboratory report on the table
@@ -228,6 +230,7 @@ Feature: BTRIS Laboratory Reference List Report
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory report page" field on "Btris/Portal" page
     And the return to main page
     #Sign out.
@@ -235,7 +238,7 @@ Feature: BTRIS Laboratory Reference List Report
 
     Examples:
       | Labs                  | Number of Values | Number of Days Before | Reference Name    | Number of Days After | Validation Record |
-      | Laboratory Testing 01 | 5                | 30                    | Reference List DN | 30                   | No records found  |
+      | Laboratory Testing 01 | 5                | 300                   | Reference List DN | 320                  | No records found  |
 
 
   @ReferenceListLaboratory5.5
@@ -253,18 +256,17 @@ Feature: BTRIS Laboratory Reference List Report
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
-    And the user waits for 2 seconds
     #Verify and click on Reference List Report top na.
+    And the user remembers the value of "reference list top nav" field into "Report Type" on "Btris/Portal" page
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
     #click on the Laboratory Test.
-    And the user waits for 2 seconds
+    And the user remembers the value of "reference list reports: laboratory" field into "Criteria List" on "Btris/Portal" page
     And the user clicks on "reference list laboratory" element on "Btris/Portal" page
-    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
+    And the user remembers the value of "reference list laboratory report filter page" field into "Search Report" on "Btris/Portal" page
     And the user must see "Laboratory Criteria" text in "reference list laboratory report filter page" field on "Btris/Portal" page
-    And the user waits for 2 seconds
     And the user selects "<Reference Name>" from "reference list drop down" drop down on "Btris/Portal" page
     And the user enters "<Number of Days Before>" into "reference list day range text box" on "Btris/Portal" page
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
@@ -272,6 +274,7 @@ Feature: BTRIS Laboratory Reference List Report
     And the user selects "<Labs>" from "labs drop down" drop down on "Btris/Portal" page
     And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
     #Verify report page.
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
     And the user verify the reference list "<Validation Record>" laboratory report on the table
@@ -280,6 +283,7 @@ Feature: BTRIS Laboratory Reference List Report
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory report page" field on "Btris/Portal" page
     And the return to main page
     #Sign out.
@@ -287,7 +291,7 @@ Feature: BTRIS Laboratory Reference List Report
 
     Examples:
       | Labs                  | Number of Values | Number of Days Before | Reference Name    | Number of Days After | Validation Record |
-      | Laboratory Testing 01 | 1                | 15                    | Reference List DN | 15                   | No records found  |
+      | Laboratory Testing 01 | 1                | 150                   | Reference List DN | 150                  | No records found  |
 
 
   @ReferenceListLaboratory6.6
@@ -305,18 +309,17 @@ Feature: BTRIS Laboratory Reference List Report
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
-    And the user waits for 4 seconds
     #Verify and click on Reference List Report top na.
+    And the user remembers the value of "reference list top nav" field into "Report Type" on "Btris/Portal" page
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
     #click on the Laboratory Test.
-    And the user waits for 2 seconds
+    And the user remembers the value of "reference list reports: laboratory" field into "Criteria List" on "Btris/Portal" page
     And the user clicks on "reference list laboratory" element on "Btris/Portal" page
-    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
+    And the user remembers the value of "reference list laboratory report filter page" field into "Search Report" on "Btris/Portal" page
     And the user must see "Laboratory Criteria" text in "reference list laboratory report filter page" field on "Btris/Portal" page
-    And the user waits for 2 seconds
     And the user selects "<Reference Name>" from "reference list drop down" drop down on "Btris/Portal" page
     And the user enters "<Number of Days Before>" into "reference list day range text box" on "Btris/Portal" page
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
@@ -324,6 +327,7 @@ Feature: BTRIS Laboratory Reference List Report
     And the user selects "<Labs>" from "labs drop down" drop down on "Btris/Portal" page
     And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
     #Verify report page.
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
     And the user verify the reference list "<Validation Record>" laboratory report on the table
@@ -332,6 +336,7 @@ Feature: BTRIS Laboratory Reference List Report
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory report page" field on "Btris/Portal" page
     And the return to main page
     #Sign out.
@@ -356,18 +361,17 @@ Feature: BTRIS Laboratory Reference List Report
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
-    And the user waits for 2 seconds
     #Verify and click on Reference List Report top na.
+    And the user remembers the value of "reference list top nav" field into "Report Type" on "Btris/Portal" page
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
     #click on the Laboratory Test.
-    And the user waits for 2 seconds
+    And the user remembers the value of "reference list reports: laboratory" field into "Criteria List" on "Btris/Portal" page
     And the user clicks on "reference list laboratory" element on "Btris/Portal" page
-    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
+    And the user remembers the value of "reference list laboratory report filter page" field into "Search Report" on "Btris/Portal" page
     And the user must see "Laboratory Criteria" text in "reference list laboratory report filter page" field on "Btris/Portal" page
-    And the user waits for 2 seconds
     And the user selects "<Reference Name>" from "reference list drop down" drop down on "Btris/Portal" page
     And the user enters "<Number of Days Before>" into "reference list day range text box" on "Btris/Portal" page
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
@@ -375,6 +379,7 @@ Feature: BTRIS Laboratory Reference List Report
     And the user selects "<Labs>" from "labs drop down" drop down on "Btris/Portal" page
     And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
     #Verify report page.
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
     And the user verify the reference list "<Validation Record>" laboratory report on the table
@@ -383,6 +388,7 @@ Feature: BTRIS Laboratory Reference List Report
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory report page" field on "Btris/Portal" page
     And the return to main page
     #Sign out.
@@ -407,18 +413,17 @@ Feature: BTRIS Laboratory Reference List Report
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
-    And the user waits for 2 seconds
     #Verify and click on Reference List Report top na.
+    And the user remembers the value of "reference list top nav" field into "Report Type" on "Btris/Portal" page
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
     #click on the Laboratory Test.
-    And the user waits for 2 seconds
+    And the user remembers the value of "reference list reports: laboratory" field into "Criteria List" on "Btris/Portal" page
     And the user clicks on "reference list laboratory" element on "Btris/Portal" page
-    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
+    And the user remembers the value of "reference list laboratory report filter page" field into "Search Report" on "Btris/Portal" page
     And the user must see "Laboratory Criteria" text in "reference list laboratory report filter page" field on "Btris/Portal" page
-    And the user waits for 2 seconds
     And the user selects "<Reference Name>" from "reference list drop down" drop down on "Btris/Portal" page
     And the user enters "<Number of Days Before>" into "reference list day range text box" on "Btris/Portal" page
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
@@ -426,6 +431,7 @@ Feature: BTRIS Laboratory Reference List Report
     And the user selects "<Labs>" from "labs drop down" drop down on "Btris/Portal" page
     And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
     #Verify report page.
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
     And the user verify the reference list "<Validation Record>" laboratory report on the table
@@ -434,6 +440,7 @@ Feature: BTRIS Laboratory Reference List Report
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory report page" field on "Btris/Portal" page
     And the return to main page
     #Sign out.

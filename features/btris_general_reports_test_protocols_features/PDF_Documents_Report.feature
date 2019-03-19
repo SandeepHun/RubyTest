@@ -18,27 +18,24 @@ Feature: BTRIS PDF Documents Test Report
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
     #click on the  PDF Documents.
-    And the user waits for 3 seconds
+    And the user remembers the value of "general reports" field into "Criteria List" on "Btris/Portal" page
     And the user clicks on "pdf documents" element on "Btris/Portal" page
-    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
-    And the user waits for 6 seconds
     #verify the select report page.
+    And the user remembers the value of "btris: pdf documents page" field into "Criteria Page" on "Btris/Portal" page
     And the user must see "PDF Documents Criteria" text in "btris: pdf documents page" field on "Btris/Portal" page
-    #Clcik on the select report button.
-    #And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
     #Click on Select All for PDF/Scanned Documents.
+    And the user remembers the value of "scan pd document" field into "Scanned Documents" on "Btris/Portal" page
     And the user clicks on "pdf documents select all button" element on "Btris/Portal" page
     And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
-    And the user waits for 8 seconds
     And the user remembers the value of "protocol verify count" field into "Number OF Subjects" on "Btris/Portal" page
-    And the user waits for 3 seconds
+    And the user remembers the value of "selected protocol" field into "Protocol Number" on "Btris/Portal" page
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
-    And the user waits for 8 seconds
+    And the user waits for 4 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
    #Verify the document report table.
@@ -51,6 +48,7 @@ Feature: BTRIS PDF Documents Test Report
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     And the user must see "PDF Documents Results Preview - Standard" text in "pdf documents result page" field on "Btris/Portal" page
     And the return to main page
     #Sign out.
@@ -76,12 +74,11 @@ Feature: BTRIS PDF Documents Test Report
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
     #click on the  PDF Documents.
-    And the user waits for 3 seconds
+    And the user remembers the value of "general reports" field into "Criteria List" on "Btris/Portal" page
     And the user clicks on "pdf documents" element on "Btris/Portal" page
-    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
-    And the user waits for 7 seconds
+    And the user remembers the value of "scan pd document" field into "Scanned Documents" on "Btris/Portal" page
     #verify the select report page.
     And the user must see "PDF Documents Criteria" text in "btris: pdf documents page" field on "Btris/Portal" page
     #Click on Select All for PDF/Scanned Documents.
@@ -90,12 +87,11 @@ Feature: BTRIS PDF Documents Test Report
     And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
-    And the user waits for 8 seconds
     And the user remembers the value of "protocol verify count" field into "Number OF Subjects" on "Btris/Portal" page
-    And the user waits for 3 seconds
+    And the user remembers the value of "selected protocol" field into "Protocol Number" on "Btris/Portal" page
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
-    And the user waits for 8 seconds
+    And the user waits for 4 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify the document report table.
@@ -107,6 +103,7 @@ Feature: BTRIS PDF Documents Test Report
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     And the user must see "PDF Documents Results Preview - Standard" text in "pdf documents result page" field on "Btris/Portal" page
     And the return to main page
     #Sign out.

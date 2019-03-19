@@ -18,23 +18,26 @@ Feature: BTRIS Medication Test Report
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
     #click on the medication report Test.
-    And the user waits for 3 seconds
+    And the user remembers the value of "general reports" field into "Criteria List" on "Btris/Portal" page
     And the user clicks on "btris: medication test" element on "Btris/Portal" page
-    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
+    And the user remembers the value of "btris: medication report page" field into "Criteria Page" on "Btris/Portal" page
     And the user must see "Medication Report Criteria" text in "btris: medication report page" field on "Btris/Portal" page
+    And the user enters "<Meds Order Start Date>" into "medication order start date" on "Btris/Portal" page
+    And the user enters "Todays Date" into "medication order end date" on "Btris/Portal" page
+    And the user enters "<Meds Admin Start Date>" into "medication admin start date" on "Btris/Portal" page
+    And the user enters "Todays Date" into "medication admin end date" on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
-    And the user waits for 8 seconds
     And the user remembers the value of "protocol verify count" field into "Number OF Subjects" on "Btris/Portal" page
-    And the user waits for 3 seconds
+    And the user remembers the value of "selected protocol" field into "Protocol Number" on "Btris/Portal" page
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
-    And the user waits for 8 seconds
+    And the user waits for 4 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify the laboratory report table.
@@ -43,19 +46,18 @@ Feature: BTRIS Medication Test Report
     And the user must see "Medication Report Results Preview - Medication Orders" text in "medication report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
     And the user verify the medication report on the table
-    #Click on the download report button.
-    #And the user clicks on "download full report button" element on "Btris/Portal" page
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     And the user must see "Medication Report Results Preview - Medication Orders" text in "medication report page" field on "Btris/Portal" page
     And the return to main page
     #Sign out.
     And the user logged out of the system
 
     Examples:
-      | Subject       | Filtered Subject |
-      | BTRIS-TEST-02 | NIHCCTEST        |
+      | Subject       | Filtered Subject | Meds Order Start Date | Meds Admin Start Date |
+      | BTRIS-TEST-02 | NIHCCTEST        | 3/15/2007             | 3/4/2008              |
 
 
   @MedicationR2
@@ -74,28 +76,26 @@ Feature: BTRIS Medication Test Report
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
     #click on the medication report Test.
-    And the user waits for 3 seconds
+    And the user remembers the value of "general reports" field into "Criteria List" on "Btris/Portal" page
     And the user clicks on "btris: medication test" element on "Btris/Portal" page
-    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
+    And the user remembers the value of "btris: medication report page" field into "Criteria Page" on "Btris/Portal" page
     And the user must see "Medication Report Criteria" text in "btris: medication report page" field on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
-    And the user waits for 8 seconds
     And the user remembers the value of "protocol verify count" field into "Number OF Subjects" on "Btris/Portal" page
-    And the user waits for 3 seconds
+    And the user remembers the value of "selected protocol" field into "Protocol Number" on "Btris/Portal" page
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
-    And the user waits for 8 seconds
+    And the user waits for 4 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify the laboratory report table.
-    And the user remembers the value of "laboratory report table: subject name" field into "Subject Name" on "Btris/Portal" page
-    And the user must see "Subject Name" text in "laboratory report table: subject name" field on "Btris/Portal" page
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     #Verify report page.
     And the user must see "Medication Report Results Preview - Medication Orders" text in "medication report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
@@ -104,12 +104,11 @@ Feature: BTRIS Medication Test Report
     And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
     And the user verify the medication report on the table
-    #Click on the download report button.
-    #And the user clicks on "download full report button" element on "Btris/Portal" page
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
-    And the user must see "Medication Report Results Preview - Medications Administration" text in "medication report page" field on "Btris/Portal" page
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
+    And the user must see "Medication Report Results Preview - Medication Orders" text in "medication report page" field on "Btris/Portal" page
     And the return to main page
     #Sign out.
     And the user logged out of the system

@@ -1,4 +1,4 @@
-@BTRIS_Quick_Test
+@BTRIS_Unstable_Test12
 @ReferenceList_Vital_Signs_Test
 Feature: BTRIS Vital Signs Reference List Report
 
@@ -89,14 +89,17 @@ Feature: BTRIS Vital Signs Reference List Report
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
-    And the user waits for 3 seconds
     #Verify and click on Reference List Report top na.
+    And the user remembers the value of "reference list top nav" field into "Report Type" on "Btris/Portal" page
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
+    #click on the Laboratory Test.
+    And the user remembers the value of "reference list reports: vital sign" field into "Criteria List" on "Btris/Portal" page
     #click on the Vital Sign Test.
     And the user clicks on "reference list vital sign" element on "Btris/Portal" page
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
+    And the user remembers the value of "reference list vital signs report filter page" field into "Criteria Page" on "Btris/Portal" page
     And the user must see "Vital Signs Criteria" text in "reference list vital signs report filter page" field on "Btris/Portal" page
     And the user selects "<Reference Name>" from "reference list drop down" drop down on "Btris/Portal" page
     And the user enters "<Number of Days Before>" into "reference list day range text box" on "Btris/Portal" page
@@ -114,6 +117,7 @@ Feature: BTRIS Vital Signs Reference List Report
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     And the user must see "Vital Signs Results Preview - Standard" text in "reference list: vital signs report results table" field on "Btris/Portal" page
     And the return to main page
     #Sign out.
@@ -121,7 +125,7 @@ Feature: BTRIS Vital Signs Reference List Report
 
     Examples:
       | Labs                  | Number of Values | Number of Days Before | Reference Name    | Number of Days After | Validation Record |
-      | Vital Signs Template1 | 10               | 90                    | Reference List DN | 80                   | No records found  |
+      | Vital Signs Template1 | 10               | 190                   | Reference List DN | 180                  | No records found  |
 
   @Vital_Signs3
 
@@ -138,16 +142,18 @@ Feature: BTRIS Vital Signs Reference List Report
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
-    And the user waits for 3 seconds
     #Verify and click on Reference List Report top na.
+    And the user remembers the value of "reference list top nav" field into "Report Type" on "Btris/Portal" page
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
+    #click on the Laboratory Test.
+    And the user remembers the value of "reference list reports: vital sign" field into "Criteria List" on "Btris/Portal" page
     #click on the Vital Sign Test.
     And the user clicks on "reference list vital sign" element on "Btris/Portal" page
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
+    And the user remembers the value of "reference list vital signs report filter page" field into "Criteria Page" on "Btris/Portal" page
     And the user must see "Vital Signs Criteria" text in "reference list vital signs report filter page" field on "Btris/Portal" page
-    And the user waits for 2 seconds
     And the user selects "<Reference Name>" from "reference list drop down" drop down on "Btris/Portal" page
     And the user enters "<Number of Days Before>" into "reference list day range text box" on "Btris/Portal" page
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
@@ -164,6 +170,7 @@ Feature: BTRIS Vital Signs Reference List Report
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     And the user must see "Vital Signs Results Preview - Standard" text in "reference list: vital signs report results table" field on "Btris/Portal" page
     And the return to main page
     #Sign out.
@@ -171,7 +178,7 @@ Feature: BTRIS Vital Signs Reference List Report
 
     Examples:
       | Labs                  | Number of Values | Number of Days Before | Reference Name    | Number of Days After | Validation Record |
-      | Vital Signs Template1 | 15               | 60                    | Reference List DN | 40                   | No records found  |
+      | Vital Signs Template1 | 15               | 260                   | Reference List DN | 240                  | No records found  |
 
   @Vital_Signs4
 
@@ -188,16 +195,18 @@ Feature: BTRIS Vital Signs Reference List Report
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
-    And the user waits for 3 seconds
     #Verify and click on Reference List Report top na.
+    And the user remembers the value of "reference list top nav" field into "Report Type" on "Btris/Portal" page
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
+    #click on the Laboratory Test.
+    And the user remembers the value of "reference list reports: vital sign" field into "Criteria List" on "Btris/Portal" page
     #click on the Vital Sign Test.
     And the user clicks on "reference list vital sign" element on "Btris/Portal" page
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
+    And the user remembers the value of "reference list vital signs report filter page" field into "Criteria Page" on "Btris/Portal" page
     And the user must see "Vital Signs Criteria" text in "reference list vital signs report filter page" field on "Btris/Portal" page
-    And the user waits for 2 seconds
     And the user selects "<Reference Name>" from "reference list drop down" drop down on "Btris/Portal" page
     And the user enters "<Number of Days Before>" into "reference list day range text box" on "Btris/Portal" page
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
@@ -214,6 +223,7 @@ Feature: BTRIS Vital Signs Reference List Report
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     And the user must see "Vital Signs Results Preview - Standard" text in "reference list: vital signs report results table" field on "Btris/Portal" page
     And the return to main page
     #Sign out.
@@ -221,7 +231,7 @@ Feature: BTRIS Vital Signs Reference List Report
 
     Examples:
       | Labs                  | Number of Values | Number of Days Before | Reference Name    | Number of Days After | Validation Record |
-      | Vital Signs Template1 | 5                | 30                    | Reference List DN | 30                   | No records found  |
+      | Vital Signs Template1 | 5                | 230                   | Reference List DN | 230                  | No records found  |
 
 
   @Vital_Signs5
@@ -239,16 +249,18 @@ Feature: BTRIS Vital Signs Reference List Report
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
-    And the user waits for 3 seconds
     #Verify and click on Reference List Report top na.
+    And the user remembers the value of "reference list top nav" field into "Report Type" on "Btris/Portal" page
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
+    #click on the Laboratory Test.
+    And the user remembers the value of "reference list reports: vital sign" field into "Criteria List" on "Btris/Portal" page
     #click on the Vital Sign Test.
     And the user clicks on "reference list vital sign" element on "Btris/Portal" page
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
+    And the user remembers the value of "reference list vital signs report filter page" field into "Criteria Page" on "Btris/Portal" page
     And the user must see "Vital Signs Criteria" text in "reference list vital signs report filter page" field on "Btris/Portal" page
-    And the user waits for 2 seconds
     And the user selects "<Reference Name>" from "reference list drop down" drop down on "Btris/Portal" page
     And the user enters "<Number of Days Before>" into "reference list day range text box" on "Btris/Portal" page
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
@@ -265,6 +277,7 @@ Feature: BTRIS Vital Signs Reference List Report
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     And the user must see "Vital Signs Results Preview - Standard" text in "reference list: vital signs report results table" field on "Btris/Portal" page
     And the return to main page
     #Sign out.
@@ -272,7 +285,7 @@ Feature: BTRIS Vital Signs Reference List Report
 
     Examples:
       | Labs                  | Number of Values | Number of Days Before | Reference Name    | Number of Days After | Validation Record |
-      | Vital Signs Template1 | 1                | 15                    | Reference List DN | 15                   | No records found  |
+      | Vital Signs Template1 | 1                | 115                   | Reference List DN | 125                  | No records found  |
 
 
   @Vital_Signs6
@@ -290,16 +303,18 @@ Feature: BTRIS Vital Signs Reference List Report
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
-    And the user waits for 3 seconds
     #Verify and click on Reference List Report top na.
+    And the user remembers the value of "reference list top nav" field into "Report Type" on "Btris/Portal" page
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
+    #click on the Laboratory Test.
+    And the user remembers the value of "reference list reports: vital sign" field into "Criteria List" on "Btris/Portal" page
     #click on the Vital Sign Test.
     And the user clicks on "reference list vital sign" element on "Btris/Portal" page
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
+    And the user remembers the value of "reference list vital signs report filter page" field into "Criteria Page" on "Btris/Portal" page
     And the user must see "Vital Signs Criteria" text in "reference list vital signs report filter page" field on "Btris/Portal" page
-    And the user waits for 2 seconds
     And the user selects "<Reference Name>" from "reference list drop down" drop down on "Btris/Portal" page
     And the user enters "<Number of Days Before>" into "reference list day range text box" on "Btris/Portal" page
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
@@ -317,6 +332,7 @@ Feature: BTRIS Vital Signs Reference List Report
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     And the user must see "Vital Signs Results Preview - Standard" text in "reference list: vital signs report results table" field on "Btris/Portal" page
     And the return to main page
     #Sign out.
@@ -341,16 +357,18 @@ Feature: BTRIS Vital Signs Reference List Report
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
-    And the user waits for 3 seconds
     #Verify and click on Reference List Report top na.
+    And the user remembers the value of "reference list top nav" field into "Report Type" on "Btris/Portal" page
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
+    #click on the Laboratory Test.
+    And the user remembers the value of "reference list reports: vital sign" field into "Criteria List" on "Btris/Portal" page
     #click on the Vital Sign Test.
     And the user clicks on "reference list vital sign" element on "Btris/Portal" page
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
+    And the user remembers the value of "reference list vital signs report filter page" field into "Criteria Page" on "Btris/Portal" page
     And the user must see "Vital Signs Criteria" text in "reference list vital signs report filter page" field on "Btris/Portal" page
-    And the user waits for 2 seconds
     And the user selects "<Reference Name>" from "reference list drop down" drop down on "Btris/Portal" page
     And the user enters "<Number of Days Before>" into "reference list day range text box" on "Btris/Portal" page
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
@@ -368,6 +386,7 @@ Feature: BTRIS Vital Signs Reference List Report
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     And the user must see "Vital Signs Results Preview - Standard" text in "reference list: vital signs report results table" field on "Btris/Portal" page
     And the return to main page
     #Sign out.
@@ -393,16 +412,18 @@ Feature: BTRIS Vital Signs Reference List Report
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
-    And the user waits for 3 seconds
     #Verify and click on Reference List Report top na.
+    And the user remembers the value of "reference list top nav" field into "Report Type" on "Btris/Portal" page
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
+    #click on the Laboratory Test.
+    And the user remembers the value of "reference list reports: vital sign" field into "Criteria List" on "Btris/Portal" page
     #click on the Vital Sign Test.
     And the user clicks on "reference list vital sign" element on "Btris/Portal" page
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
+    And the user remembers the value of "reference list vital signs report filter page" field into "Criteria Page" on "Btris/Portal" page
     And the user must see "Vital Signs Criteria" text in "reference list vital signs report filter page" field on "Btris/Portal" page
-    And the user waits for 2 seconds
     And the user selects "<Reference Name>" from "reference list drop down" drop down on "Btris/Portal" page
     And the user enters "<Number of Days Before>" into "reference list day range text box" on "Btris/Portal" page
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
@@ -420,6 +441,7 @@ Feature: BTRIS Vital Signs Reference List Report
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     And the user must see "Vital Signs Results Preview - Standard" text in "reference list: vital signs report results table" field on "Btris/Portal" page
     And the return to main page
     #Sign out.

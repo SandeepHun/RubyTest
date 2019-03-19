@@ -23,7 +23,13 @@ Feature: BTRIS Medication Report Prod Data
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
+    And the user remembers the value of "btris: medication report page" field into "Criteria Page" on "Btris/Portal" page
     And the user must see "Medication Report Criteria" text in "btris: medication report page" field on "Btris/Portal" page
+    #Select date range.
+    And the user enters "<Meds Order Start Date>" into "medication order start date" on "Btris/Portal" page
+    And the user enters "Todays Date" into "medication order end date" on "Btris/Portal" page
+    And the user enters "<Meds Admin Start Date>" into "medication admin start date" on "Btris/Portal" page
+    And the user enters "Todays Date" into "medication admin end date" on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
     #Enter and filter subject.
@@ -40,7 +46,7 @@ Feature: BTRIS Medication Report Prod Data
     #Verify report page.
     And the user must see "Medication Report Results Preview - Medication Orders" text in "medication report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
-    And the user verify the medication prod report on the table
+    And the user verify the medication report on the table with date range filter
     #Click on the download report button.
     #And the user clicks on "download full report button" element on "Btris/Portal" page
     #click on the open report in another tab button.
@@ -51,5 +57,5 @@ Feature: BTRIS Medication Report Prod Data
     #Sign out.
     And the user logged out of the system
     Examples:
-      | Subject   | Filtered Subject |
-      | 00-C-0018 | BOWEN            |
+      | Subject   | Filtered Subject | Meds Order Start Date | Meds Admin Start Date |
+      | 00-C-0018 | BOWEN            | 3/15/2007             | 3/4/2008              |

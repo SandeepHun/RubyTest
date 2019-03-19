@@ -16,27 +16,29 @@ Feature: BTRIS Radiology Administration Test Report
     #Click on the accept button.
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on Admin Report.
+    And the user remembers the value of "navigation: admin report" field into "Report Tab" on "Btris/Portal" page
     And the user clicks on "navigation: admin report" element on "Btris/Portal" page
+    And the user remembers the value of "admin report tab" field into "Report Tab" on "Btris/Portal" page
+    And the user clicks on "admin report tab" element on "Btris/Portal" page
     #click on the  Radiology Administration Test.
-    And the user waits for 3 seconds
+    And the user remembers the value of "admin reports" field into "Reports" on "Btris/Portal" page
     And the user clicks on "report: radiology administration" element on "Btris/Portal" page
-    And the user waits for 3 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
     And the user must see "Radiology Administration Criteria" text in "btris: radiology administrative report filter page" field on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
-    And the user remembers the value of "laboratory report table: subject name column" field into "Subject Name" on "Btris/Portal" page
-    And the user waits for 2 seconds
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
+    #And the user remembers the value of "laboratory report table: subject name column" field into "Subject Name" on "Btris/Portal" page
     And the user must see "Radiology Administration Results Preview - Standard" text in "radiology administrative report page" field on "Btris/Portal" page
-    And the return to main page
+    And the user verify radiology admin report "<Validation Record>" on the table
     #Sign out.
     And the user logged out of the system
 
     Examples:
-      | Subject       | Filtered Subject |
-      | BTRIS-TEST-00 | NIHCCTEST        |
+      | Validation Record |
+      | No records found  |
 
 
   @Radiology_Administration2
@@ -53,20 +55,22 @@ Feature: BTRIS Radiology Administration Test Report
     #Click on the accept button.
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on Admin Report.
+    And the user remembers the value of "navigation: admin report" field into "Report Tab" on "Btris/Portal" page
     And the user clicks on "navigation: admin report" element on "Btris/Portal" page
+    And the user remembers the value of "admin report tab" field into "Report Tab" on "Btris/Portal" page
+    And the user clicks on "admin report tab" element on "Btris/Portal" page
     #click on the  Radiology Administration Test.
-    And the user waits for 3 seconds
+    And the user remembers the value of "admin reports" field into "Reports" on "Btris/Portal" page
     And the user clicks on "report: radiology administration" element on "Btris/Portal" page
-    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
     And the user must see "Radiology Administration Criteria" text in "btris: radiology administrative report filter page" field on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     #Verify report page.
     And the user must see "Radiology Administration Results Preview - Standard" text in "radiology administrative report page" field on "Btris/Portal" page
-    And the user waits for 3 seconds
     #Sign out.
     And the user logged out of the system
 
@@ -89,33 +93,35 @@ Feature: BTRIS Radiology Administration Test Report
     #Click on the accept button.
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on Admin Report.
+    And the user remembers the value of "navigation: admin report" field into "Report Tab" on "Btris/Portal" page
     And the user clicks on "navigation: admin report" element on "Btris/Portal" page
+    And the user remembers the value of "admin report tab" field into "Report Tab" on "Btris/Portal" page
+    And the user clicks on "admin report tab" element on "Btris/Portal" page
     #click on the  Radiology Administration Test.
-    And the user waits for 3 seconds
+    And the user remembers the value of "admin reports" field into "Reports" on "Btris/Portal" page
     And the user clicks on "report: radiology administration" element on "Btris/Portal" page
-    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
+    And the user remembers the value of "btris: radiology administrative report filter page" field into "Criteria Page" on "Btris/Portal" page
     And the user must see "Radiology Administration Criteria" text in "btris: radiology administrative report filter page" field on "Btris/Portal" page
     #Clcik on the Add Radiology Test button.
     And the user clicks on "admin: add radiology report tests button" element on "Btris/Portal" page
+    And the user remembers the value of "red term pop up" field into "Red Search Page" on "Btris/Portal" page
     And the user enters "Imaging by Procedure Type" into "admin: radiology search text box" on "Btris/Portal" page
     #Click the search button.
     And the user clicks on "admin: radiology search button" element on "Btris/Portal" page
     #Verify search data.
-    And the user waits for 15 seconds
+    And the user remembers the value of "imaging by procedure" field into "Red Search Data" on "Btris/Portal" page
     #And the user must see "Imaging by Procedure Type" text in "admin: radiology search red search result" field on "Btris/Portal" page
     And the user clicks on "admin: radiology red search done button" element on "Btris/Portal" page
-    And the user waits for 2 seconds
     #Clcik on the select report button.
+    And the user remembers the value of "btris: top select subject button" field into "Run Button" on "Btris/Portal" page
     And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
-    And the user remembers the value of "laboratory report table: subject name column" field into "Subject Name" on "Btris/Portal" page
-    And the user waits for 2 seconds
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     #Verify report page.
     And the user must see "Radiology Administration Results Preview - Standard" text in "radiology administrative report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
-    And the user waits for 3 seconds
     #Sign out.
     And the user logged out of the system
 

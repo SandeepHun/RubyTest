@@ -17,15 +17,16 @@ Feature: BTRIS Manage Protocol Test Report
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on Manage Protocol.
     And the user clicks on "top navigation: manage subject" element on "Manage/Subjects" page
-    And the user waits for 8 seconds
-    #Search a protocol.
+    And the user remembers the value of "manage protocol: consented subject count" field into "Number OF Subjects" on "Manage/Subjects" page
+    And the user remembers the value of "manage protocol: protocol" field into "Protocol Number" on "Manage/Subjects" page
     And the user enters "<Protocol>" into "search protocol text box" on "Manage/Subjects" page
-    And the user waits for 2 seconds
+    And the user remembers the value of "manage protocol: consented subject count" field into "Number OF Subjects" on "Manage/Subjects" page
+    And the user remembers the value of "manage protocol: protocol" field into "Protocol Number" on "Manage/Subjects" page
     And the user remembers the value of "number of subjects" field into "Consented Subjects" on "Manage/Subjects" page
     #Verify search result for the searched protocol.
     And the user must see "<Protocol>" text in "searched protocol table" field on "Manage/Subjects" page
     And the user clicks on "searched subject" element on "Manage/Subjects" page
-    And the user waits for 4 seconds
+    And the user remembers the value of "manage protocol: mrn on table" field into "MRN" on "Manage/Subjects" page
     And the user must see "<Protocol>" text in "manage subject page" field on "Manage/Subjects" page
     And the user can see current value of "Consented Subjects" in "number of consented subjects" field on "Manage/Subjects" page
 
@@ -55,24 +56,24 @@ Feature: BTRIS Manage Protocol Test Report
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on Manage Protocol.
     And the user clicks on "top navigation: manage subject" element on "Manage/Subjects" page
-    And the user waits for 13 seconds
-    #Search a protocol.
+    And the user remembers the value of "manage protocol: consented subject count" field into "Number OF Subjects" on "Manage/Subjects" page
+    And the user remembers the value of "manage protocol: protocol" field into "Protocol Number" on "Manage/Subjects" page
     And the user enters "<Protocol>" into "search protocol text box" on "Manage/Subjects" page
-    And the user waits for 2 seconds
+    And the user remembers the value of "manage protocol: consented subject count" field into "Number OF Subjects" on "Manage/Subjects" page
+    And the user remembers the value of "manage protocol: protocol" field into "Protocol Number" on "Manage/Subjects" page
     And the user remembers the value of "number of subjects" field into "Consented Subjects" on "Manage/Subjects" page
     #Verify search result for the searched protocol.
     And the user must see "<Protocol>" text in "searched protocol table" field on "Manage/Subjects" page
     And the user clicks on "searched subject" element on "Manage/Subjects" page
-    And the user waits for 4 seconds
+    And the user remembers the value of "manage protocol: mrn on table" field into "MRN" on "Manage/Subjects" page
     And the user must see "<Protocol>" text in "manage subject page" field on "Manage/Subjects" page
     And the user can see current value of "Consented Subjects" in "number of consented subjects" field on "Manage/Subjects" page
-    And the user waits for 2 seconds
     And the user enters "<MRN>" into "subject search field" on "Manage/Subjects" page
-    And the user waits for 3 seconds
+    And the user remembers the value of "manage protocol: mrn on table" field into "MRN" on "Manage/Subjects" page
     And the user must see "<MRN>" text in "subject table" field on "Manage/Subjects" page
     And the user clicks on "subject consented switch" element on "Manage/Subjects" page
+    And the user remembers the value of "consented notification" field into "Consented Status" on "Manage/Subjects" page
     #And the user enters "Todays Date" into "initial consent date" on "Manage/Subjects" page
-    And the user waits for 3 seconds
     And the user clicks on "back arrow" element on "Manage/Subjects" page
 
     #Sign out.
@@ -99,31 +100,27 @@ Feature: BTRIS Manage Protocol Test Report
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on Manage Protocol.
     And the user clicks on "top navigation: manage subject" element on "Manage/Subjects" page
-    And the user waits for 13 seconds
-    #Search a protocol.
+    And the user remembers the value of "manage protocol: consented subject count" field into "Number OF Subjects" on "Manage/Subjects" page
+    And the user remembers the value of "manage protocol: protocol" field into "Protocol Number" on "Manage/Subjects" page
     And the user enters "<Protocol>" into "search protocol text box" on "Manage/Subjects" page
-    And the user waits for 2 seconds
+    And the user remembers the value of "manage protocol: protocol" field into "Protocol Number" on "Manage/Subjects" page
     And the user remembers the value of "number of subjects" field into "Consented Subjects" on "Manage/Subjects" page
     #Verify search result for the searched protocol.
     And the user must see "<Protocol>" text in "searched protocol table" field on "Manage/Subjects" page
     And the user clicks on "searched subject" element on "Manage/Subjects" page
-    And the user waits for 3 seconds
+    And the user remembers the value of "manage protocol: mrn on table" field into "MRN" on "Manage/Subjects" page
     And the user must see "<Protocol>" text in "manage subject page" field on "Manage/Subjects" page
     And the user can see current value of "Consented Subjects" in "number of consented subjects" field on "Manage/Subjects" page
     And the user enters "<MRN>" into "subject search field" on "Manage/Subjects" page
-    And the user waits for 6 seconds
+    And the user remembers the value of "manage protocol: mrn on table" field into "MRN" on "Manage/Subjects" page
     And the user must see "<MRN>" text in "subject table" field on "Manage/Subjects" page
-    And the user waits for 3 seconds
     And the user clicks on "subject consented switch" element on "Manage/Subjects" page
-    And the user waits for 2 seconds
     And the user enters "Todays Date" into "initial consent date" on "Manage/Subjects" page
-    And the user waits for 3 seconds
     And the user clicks on "initial consent info icon" element on "Manage/Subjects" page
+    And the user remembers the value of "initial consent info pop-up" field into "Pop up Box" on "Manage/Subjects" page
     And the user must see "<Content Info>" text in "initial consent info pop-up" field on "Manage/Subjects" page
     And the user clicks on "initial consent info pop-up close button" element on "Manage/Subjects" page
-    And the user waits for 2 seconds
     And the user clicks on "back arrow" element on "Manage/Subjects" page
-    And the user waits for 2 seconds
 
     #Sign out.
     And the user logged out of the system
@@ -146,30 +143,27 @@ Feature: BTRIS Manage Protocol Test Report
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on Manage Protocol.
     And the user clicks on "top navigation: manage subject" element on "Manage/Subjects" page
-    And the user waits for 13 seconds
-    #Search a protocol.
+    And the user remembers the value of "manage protocol: consented subject count" field into "Number OF Subjects" on "Manage/Subjects" page
+    And the user remembers the value of "manage protocol: protocol" field into "Protocol Number" on "Manage/Subjects" page
     And the user enters "<Protocol>" into "search protocol text box" on "Manage/Subjects" page
-    And the user waits for 2 seconds
+    And the user remembers the value of "manage protocol: protocol" field into "Protocol Number" on "Manage/Subjects" page
     And the user remembers the value of "number of subjects" field into "Consented Subjects" on "Manage/Subjects" page
     #Verify search result for the searched protocol.
     And the user must see "<Protocol>" text in "searched protocol table" field on "Manage/Subjects" page
     And the user clicks on "searched subject" element on "Manage/Subjects" page
-    And the user waits for 3 seconds
+    And the user remembers the value of "manage protocol: mrn on table" field into "MRN" on "Manage/Subjects" page
     And the user must see "<Protocol>" text in "manage subject page" field on "Manage/Subjects" page
     And the user can see current value of "Consented Subjects" in "number of consented subjects" field on "Manage/Subjects" page
-    And the user waits for 3 seconds
     And the user clicks on "add subject button" element on "Manage/Subjects" page
     And the user enters "<Invalid MRN Number>" into "enter mrn text box" text area box on "Manage/Subjects" page
     And the user clicks on "submit button" element on "Manage/Subjects" page
-    And the user waits for 2 seconds
+    And the user remembers the value of "display mrn message header" field into "Add MRN" on "Manage/Subjects" page
     And the user must see "<MRN Validation Message 1>" text in "display mrn message header" field on "Manage/Subjects" page
     And the user enters "<New MRN Number>" into "enter mrn text box" text area box on "Manage/Subjects" page
     And the user clicks on "submit button" element on "Manage/Subjects" page
-    And the user waits for 2 seconds
+    And the user remembers the value of "display mrn message header" field into "Add MRN 1" on "Manage/Subjects" page
     And the user must see "<MRN Validation Message 2>" text in "display mrn message header" field on "Manage/Subjects" page
-    And the user waits for 3 seconds
     And the user clicks on "back arrow" element on "Manage/Subjects" page
-    And the user waits for 2 seconds
 
     #Sign out.
     And the user logged out of the system
@@ -194,34 +188,31 @@ Feature: BTRIS Manage Protocol Test Report
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on Manage Protocol.
     And the user clicks on "top navigation: manage subject" element on "Manage/Subjects" page
-    And the user waits for 13 seconds
-    #Search a protocol.
+    And the user remembers the value of "manage protocol: consented subject count" field into "Number OF Subjects" on "Manage/Subjects" page
+    And the user remembers the value of "manage protocol: protocol" field into "Protocol Number" on "Manage/Subjects" page
     And the user enters "<Protocol>" into "search protocol text box" on "Manage/Subjects" page
-    And the user waits for 2 seconds
+    And the user remembers the value of "manage protocol: protocol" field into "Protocol Number" on "Manage/Subjects" page
     And the user remembers the value of "number of subjects" field into "Consented Subjects" on "Manage/Subjects" page
     #Verify search result for the searched protocol.
     And the user must see "<Protocol>" text in "searched protocol table" field on "Manage/Subjects" page
     And the user clicks on "searched subject" element on "Manage/Subjects" page
-    And the user waits for 3 seconds
+    And the user remembers the value of "manage protocol: mrn on table" field into "MRN" on "Manage/Subjects" page
     And the user must see "<Protocol>" text in "manage subject page" field on "Manage/Subjects" page
     And the user can see current value of "Consented Subjects" in "number of consented subjects" field on "Manage/Subjects" page
-    And the user waits for 3 seconds
     And the user clicks on "add subject button" element on "Manage/Subjects" page
     And the user enters "<MRN>" into "enter mrn text box" text area box on "Manage/Subjects" page
     And the user clicks on "submit button" element on "Manage/Subjects" page
+    And the user remembers the value of "display mrn message header" field into "MRN Status" on "Manage/Subjects" page
     And the user verify if MRN "<MRN>" has not been added and "<Existing MRN Validation Message 1>" is display
-    And the user remembers the value of "invalid mrn display" field into "Existing MRN" on "Manage/Subjects" page
     And the user must see "<Existing MRN Validation Message>" text in "display mrn message header" field on "Manage/Subjects" page
     And the user must see "<MRN>" text in "invalid mrn display" field on "Manage/Subjects" page
-    And the user waits for 3 seconds
     And the user clicks on "back arrow" element on "Manage/Subjects" page
-    And the user waits for 2 seconds
 
     #Sign out.
     And the user logged out of the system
     Examples:
       | Protocol      | MRN     | Existing MRN Validation Message                       | Existing MRN Validation Message 1                                       |
-      | BTRIS-TEST-00 | 7806760 | We've noticed that 1 MRN is already in BTRIS-TEST-00. | The following 1 records are ready to be added to protocol BTRIS-TEST-00 |
+      | BTRIS-TEST-00 | 6033404 | We've noticed that 1 MRN is already in BTRIS-TEST-00. | The following 1 records are ready to be added to protocol BTRIS-TEST-00 |
 
   @AddSubjects1.5
 
@@ -238,35 +229,32 @@ Feature: BTRIS Manage Protocol Test Report
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on Manage Protocol.
     And the user clicks on "top navigation: manage subject" element on "Manage/Subjects" page
-    And the user waits for 13 seconds
-    #Search a protocol.
+    And the user remembers the value of "manage protocol: consented subject count" field into "Number OF Subjects" on "Manage/Subjects" page
+    And the user remembers the value of "manage protocol: protocol" field into "Protocol Number" on "Manage/Subjects" page
     And the user enters "<Protocol>" into "search protocol text box" on "Manage/Subjects" page
-    And the user waits for 2 seconds
+    And the user remembers the value of "manage protocol: protocol" field into "Protocol Number" on "Manage/Subjects" page
     And the user remembers the value of "number of subjects" field into "Consented Subjects" on "Manage/Subjects" page
     #Verify search result for the searched protocol.
     And the user must see "<Protocol>" text in "searched protocol table" field on "Manage/Subjects" page
     And the user clicks on "searched subject" element on "Manage/Subjects" page
-    And the user waits for 3 seconds
+    And the user remembers the value of "manage protocol: mrn on table" field into "MRN" on "Manage/Subjects" page
     And the user must see "<Protocol>" text in "manage subject page" field on "Manage/Subjects" page
     And the user can see current value of "Consented Subjects" in "number of consented subjects" field on "Manage/Subjects" page
-    And the user waits for 3 seconds
     And the user clicks on "add subject button" element on "Manage/Subjects" page
     And the user enters "<New MRN>" into "enter mrn text box" text area box on "Manage/Subjects" page
     And the user clicks on "submit button" element on "Manage/Subjects" page
-    And the user waits for 2 seconds
     And the user verify if MRN "<New MRN>" has already been added and "<Existing MRN Validation Message>" is display
     And the user must see "<New MRN Validation Message>" text in "display mrn message banner" field on "Manage/Subjects" page
-    And the user waits for 2 seconds
+    And the user remembers the value of "header notification" field into "MRN Status" on "Manage/Subjects" page
     And the user clicks on "affirm consent button" element on "Manage/Subjects" page
     And the user must see "<Added Subject Success Message>" text in "affirm consent message" field on "Manage/Subjects" page
     And the user clicks on "return to subject button" element on "Manage/Subjects" page
-    And the user waits for 2 seconds
+    And the user remembers the value of "manage protocol: mrn on table" field into "MRN" on "Manage/Subjects" page
     And the user enters "<New MRN>" into "manage subject protocol text box" on "Manage/Subjects" page
-    And the user waits for 3 seconds
+    And the user remembers the value of "manage protocol: mrn on table" field into "MRN" on "Manage/Subjects" page
     And the user verify if the "<Protocol Validation Message>" is display on the table for "<New MRN>" added
     And the user must see "<New MRN>" text in "subject table" field on "Manage/Subjects" page
     And the user clicks on "back arrow" element on "Manage/Subjects" page
-    And the user waits for 2 seconds
 
     #Sign out.
     And the user logged out of the system

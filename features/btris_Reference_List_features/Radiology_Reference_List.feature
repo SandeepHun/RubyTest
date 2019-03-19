@@ -1,4 +1,4 @@
-@BTRIS_Quick_Test
+@BTRIS_Unstable_Test12
 @ReferenceList_Radiology_Test.3
 Feature: BTRIS Radiology Reference List Report
 
@@ -90,18 +90,18 @@ Feature: BTRIS Radiology Reference List Report
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
-    And the user waits for 3 seconds
     #Verify and click on Reference List Report top na.
+    And the user remembers the value of "reference list top nav" field into "Report Type" on "Btris/Portal" page
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
-    And the user waits for 2 seconds
+    #click on the Laboratory Test.
+    And the user remembers the value of "reference list reports: radiology" field into "Criteria List" on "Btris/Portal" page
     #click on the Radiology Test.
     And the user clicks on "reference list radiology" element on "Btris/Portal" page
-    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
+    And the user remembers the value of "reference list radiology report filter page" field into "Criteria Page" on "Btris/Portal" page
     And the user must see "Radiology Criteria" text in "reference list radiology report filter page" field on "Btris/Portal" page
-    And the user waits for 2 seconds
     And the user selects "<Reference Name>" from "reference list drop down" drop down on "Btris/Portal" page
     And the user enters "<Number of Days Before>" into "reference list day range text box" on "Btris/Portal" page
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
@@ -118,6 +118,7 @@ Feature: BTRIS Radiology Reference List Report
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     And the user must see "Radiology Results Preview - Standard" text in "reference list: radiology report results table" field on "Btris/Portal" page
     And the return to main page
     #Sign out.
@@ -125,7 +126,7 @@ Feature: BTRIS Radiology Reference List Report
 
     Examples:
       | Labs                    | Number of Values | Number of Days Before | Reference Name    | Number of Days After | Validation Record |
-      | Radiology Test Template | 10               | 90                    | Reference List DN | 80                   | No records found  |
+      | Radiology Test Template | 10               | 790                   | Reference List DN | 880                  | No records found  |
 
   @ReferenceListRadiology3
 
@@ -142,18 +143,18 @@ Feature: BTRIS Radiology Reference List Report
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
-    And the user waits for 3 seconds
     #Verify and click on Reference List Report top na.
+    And the user remembers the value of "reference list top nav" field into "Report Type" on "Btris/Portal" page
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
-    And the user waits for 2 seconds
+    #click on the Laboratory Test.
+    And the user remembers the value of "reference list reports: radiology" field into "Criteria List" on "Btris/Portal" page
     #click on the Radiology Test.
     And the user clicks on "reference list radiology" element on "Btris/Portal" page
-    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
+    And the user remembers the value of "reference list radiology report filter page" field into "Criteria Page" on "Btris/Portal" page
     And the user must see "Radiology Criteria" text in "reference list radiology report filter page" field on "Btris/Portal" page
-    And the user waits for 2 seconds
     And the user selects "<Reference Name>" from "reference list drop down" drop down on "Btris/Portal" page
     And the user enters "<Number of Days Before>" into "reference list day range text box" on "Btris/Portal" page
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
@@ -170,6 +171,7 @@ Feature: BTRIS Radiology Reference List Report
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     And the user must see "Radiology Results Preview - Standard" text in "reference list: radiology report results table" field on "Btris/Portal" page
     And the return to main page
     #Sign out.
@@ -177,7 +179,7 @@ Feature: BTRIS Radiology Reference List Report
 
     Examples:
       | Labs                    | Number of Values | Number of Days Before | Reference Name    | Number of Days After | Validation Record |
-      | Radiology Test Template | 15               | 60                    | Reference List DN | 40                   | No records found  |
+      | Radiology Test Template | 15               | 210                   | Reference List DN | 210                  | No records found  |
 
   @ReferenceListRadiology4
 
@@ -194,18 +196,18 @@ Feature: BTRIS Radiology Reference List Report
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
-    And the user waits for 3 seconds
     #Verify and click on Reference List Report top na.
+    And the user remembers the value of "reference list top nav" field into "Report Type" on "Btris/Portal" page
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
-    And the user waits for 2 seconds
+    #click on the Laboratory Test.
+    And the user remembers the value of "reference list reports: radiology" field into "Criteria List" on "Btris/Portal" page
     #click on the Radiology Test.
     And the user clicks on "reference list radiology" element on "Btris/Portal" page
-    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
+    And the user remembers the value of "reference list radiology report filter page" field into "Criteria Page" on "Btris/Portal" page
     And the user must see "Radiology Criteria" text in "reference list radiology report filter page" field on "Btris/Portal" page
-    And the user waits for 2 seconds
     And the user selects "<Reference Name>" from "reference list drop down" drop down on "Btris/Portal" page
     And the user enters "<Number of Days Before>" into "reference list day range text box" on "Btris/Portal" page
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
@@ -222,6 +224,7 @@ Feature: BTRIS Radiology Reference List Report
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     And the user must see "Radiology Results Preview - Standard" text in "reference list: radiology report results table" field on "Btris/Portal" page
     And the return to main page
     #Sign out.
@@ -229,7 +232,7 @@ Feature: BTRIS Radiology Reference List Report
 
     Examples:
       | Labs                    | Number of Values | Number of Days Before | Reference Name    | Number of Days After | Validation Record |
-      | Radiology Test Template | 5                | 30                    | Reference List DN | 30                   | No records found  |
+      | Radiology Test Template | 5                | 300                   | Reference List DN | 330                  | No records found  |
 
 
   @ReferenceListRadiology5
@@ -247,18 +250,18 @@ Feature: BTRIS Radiology Reference List Report
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
-    And the user waits for 3 seconds
     #Verify and click on Reference List Report top na.
+    And the user remembers the value of "reference list top nav" field into "Report Type" on "Btris/Portal" page
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
-    And the user waits for 2 seconds
+    #click on the Laboratory Test.
+    And the user remembers the value of "reference list reports: radiology" field into "Criteria List" on "Btris/Portal" page
     #click on the Radiology Test.
     And the user clicks on "reference list radiology" element on "Btris/Portal" page
-    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
+    And the user remembers the value of "reference list radiology report filter page" field into "Criteria Page" on "Btris/Portal" page
     And the user must see "Radiology Criteria" text in "reference list radiology report filter page" field on "Btris/Portal" page
-    And the user waits for 2 seconds
     And the user selects "<Reference Name>" from "reference list drop down" drop down on "Btris/Portal" page
     And the user enters "<Number of Days Before>" into "reference list day range text box" on "Btris/Portal" page
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
@@ -275,6 +278,7 @@ Feature: BTRIS Radiology Reference List Report
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     And the user must see "Radiology Results Preview - Standard" text in "reference list: radiology report results table" field on "Btris/Portal" page
     And the return to main page
     #Sign out.
@@ -282,7 +286,7 @@ Feature: BTRIS Radiology Reference List Report
 
     Examples:
       | Labs                    | Number of Values | Number of Days Before | Reference Name    | Number of Days After | Validation Record |
-      | Radiology Test Template | 1                | 15                    | Reference List DN | 15                   | No records found  |
+      | Radiology Test Template | 1                | 250                   | Reference List DN | 225                  | No records found  |
 
 
   @ReferenceListRadiology6
@@ -300,18 +304,18 @@ Feature: BTRIS Radiology Reference List Report
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
-    And the user waits for 3 seconds
     #Verify and click on Reference List Report top na.
+    And the user remembers the value of "reference list top nav" field into "Report Type" on "Btris/Portal" page
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
-    And the user waits for 2 seconds
+    #click on the Laboratory Test.
+    And the user remembers the value of "reference list reports: radiology" field into "Criteria List" on "Btris/Portal" page
     #click on the Radiology Test.
     And the user clicks on "reference list radiology" element on "Btris/Portal" page
-    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
+    And the user remembers the value of "reference list radiology report filter page" field into "Criteria Page" on "Btris/Portal" page
     And the user must see "Radiology Criteria" text in "reference list radiology report filter page" field on "Btris/Portal" page
-    And the user waits for 2 seconds
     And the user selects "<Reference Name>" from "reference list drop down" drop down on "Btris/Portal" page
     And the user enters "<Number of Days Before>" into "reference list day range text box" on "Btris/Portal" page
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
@@ -328,6 +332,7 @@ Feature: BTRIS Radiology Reference List Report
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     And the user must see "Radiology Results Preview - Standard" text in "reference list: radiology report results table" field on "Btris/Portal" page
     And the return to main page
     #Sign out.
@@ -352,18 +357,18 @@ Feature: BTRIS Radiology Reference List Report
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
-    And the user waits for 3 seconds
     #Verify and click on Reference List Report top na.
+    And the user remembers the value of "reference list top nav" field into "Report Type" on "Btris/Portal" page
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
-    And the user waits for 2 seconds
+    #click on the Laboratory Test.
+    And the user remembers the value of "reference list reports: radiology" field into "Criteria List" on "Btris/Portal" page
     #click on the Radiology Test.
     And the user clicks on "reference list radiology" element on "Btris/Portal" page
-    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
+    And the user remembers the value of "reference list radiology report filter page" field into "Criteria Page" on "Btris/Portal" page
     And the user must see "Radiology Criteria" text in "reference list radiology report filter page" field on "Btris/Portal" page
-    And the user waits for 2 seconds
     And the user selects "<Reference Name>" from "reference list drop down" drop down on "Btris/Portal" page
     And the user enters "<Number of Days Before>" into "reference list day range text box" on "Btris/Portal" page
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
@@ -372,7 +377,6 @@ Feature: BTRIS Radiology Reference List Report
     And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
     And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     #Verify report page.
-    And the user must see "Radiology Results Preview - Standard" text in "reference list: radiology report results table" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
     And the user verify the reference list "<Validation Record>" radiology report on the table
     #Click on the download report button.
@@ -380,6 +384,7 @@ Feature: BTRIS Radiology Reference List Report
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     And the user must see "Radiology Results Preview - Standard" text in "reference list: radiology report results table" field on "Btris/Portal" page
     And the return to main page
     #Sign out.
@@ -405,18 +410,18 @@ Feature: BTRIS Radiology Reference List Report
     And the user clicks on "btris: accept button" element on "Btris/Portal" page
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
-    And the user waits for 3 seconds
     #Verify and click on Reference List Report top na.
+    And the user remembers the value of "reference list top nav" field into "Report Type" on "Btris/Portal" page
     And the user clicks on "reference list top nav" element on "Btris/Portal" page
-    And the user waits for 2 seconds
+    #click on the Laboratory Test.
+    And the user remembers the value of "reference list reports: radiology" field into "Criteria List" on "Btris/Portal" page
     #click on the Radiology Test.
     And the user clicks on "reference list radiology" element on "Btris/Portal" page
-    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
+    And the user remembers the value of "reference list radiology report filter page" field into "Criteria Page" on "Btris/Portal" page
     And the user must see "Radiology Criteria" text in "reference list radiology report filter page" field on "Btris/Portal" page
-    And the user waits for 2 seconds
     And the user selects "<Reference Name>" from "reference list drop down" drop down on "Btris/Portal" page
     And the user enters "<Number of Days Before>" into "reference list day range text box" on "Btris/Portal" page
     And the user enters "<Number of Days After>" into "number of days after text box" on "Btris/Portal" page
@@ -425,7 +430,6 @@ Feature: BTRIS Radiology Reference List Report
     And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
     And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     #Verify report page.
-    And the user must see "Radiology Results Preview - Standard" text in "reference list: radiology report results table" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
     And the user verify the reference list "<Validation Record>" radiology report on the table
     #Click on the download report button.
@@ -433,6 +437,7 @@ Feature: BTRIS Radiology Reference List Report
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     And the user must see "Radiology Results Preview - Standard" text in "reference list: radiology report results table" field on "Btris/Portal" page
     And the return to main page
     #Sign out.

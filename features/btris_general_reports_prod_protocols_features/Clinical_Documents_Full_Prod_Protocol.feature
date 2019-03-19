@@ -18,12 +18,11 @@ Feature: BTRIS Clinical Documents - Full Text Feature Prod Data
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
     #click on the Clinical Documents: full tex Test.
-    And the user waits for 3 seconds
+    And the user remembers the value of "general reports" field into "Criteria List" on "Btris/Portal" page
     And the user clicks on "btris: clinical documents full tex test" element on "Btris/Portal" page
-    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
-    And the user waits for 2 seconds
+    And the user remembers the value of "btris: clinical documents full tex report page" field into "Criteria Page" on "Btris/Portal" page
     #verify the select report page.
     And the user must see "Clinical Documents - Full Text Criteria" text in "btris: clinical documents full tex report page" field on "Btris/Portal" page
     #Clcik on the select report button.
@@ -31,15 +30,14 @@ Feature: BTRIS Clinical Documents - Full Text Feature Prod Data
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
     And the user remembers the value of "protocol verify count" field into "Number OF Subjects" on "Btris/Portal" page
-    And the user waits for 3 seconds
+    And the user remembers the value of "selected protocol" field into "Protocol Number" on "Btris/Portal" page
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
-    And the user waits for 8 seconds
+    And the user waits for 4 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify the document report table.
-    And the user remembers the value of "diagnosis report table: subject name column" field into "Subject Name" on "Btris/Portal" page
-    And the user must see "Subject Name" text in "diagnosis report table: subject name column" field on "Btris/Portal" page
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     #Verify report page.
     And the user must see "Clinical Documents - Full Text Results Preview - Standard" text in "clinical documents full tex result page" field on "Btris/Portal" page
     #Click on the download report button.
@@ -72,12 +70,11 @@ Feature: BTRIS Clinical Documents - Full Text Feature Prod Data
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
     #click on the Clinical Documents: full tex Test.
-    And the user waits for 3 seconds
+    And the user remembers the value of "general reports" field into "Criteria List" on "Btris/Portal" page
     And the user clicks on "btris: clinical documents full tex test" element on "Btris/Portal" page
-    And the user waits for 2 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
-    And the user waits for 2 seconds
+    And the user remembers the value of "btris: clinical documents full tex report page" field into "Criteria Page" on "Btris/Portal" page
     #verify the select report page.
     And the user must see "Clinical Documents - Full Text Criteria" text in "btris: clinical documents full tex report page" field on "Btris/Portal" page
     #Clcik on the select report button.
@@ -85,15 +82,16 @@ Feature: BTRIS Clinical Documents - Full Text Feature Prod Data
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
     And the user remembers the value of "protocol verify count" field into "Number OF Subjects" on "Btris/Portal" page
-    And the user waits for 3 seconds
+    And the user remembers the value of "selected protocol" field into "Protocol Number" on "Btris/Portal" page
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
-    And the user waits for 8 seconds
+    And the user waits for 4 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify the document report table.
-    And the user remembers the value of "diagnosis report table: subject name column" field into "Subject Name" on "Btris/Portal" page
-    And the user must see "Subject Name" text in "diagnosis report table: subject name column" field on "Btris/Portal" page
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
+    #Verify the document report table.
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     #Verify report page.
     And the user must see "Clinical Documents - Full Text Results Preview - Standard" text in "clinical documents full tex result page" field on "Btris/Portal" page
     #Click on the download report button.
@@ -112,7 +110,7 @@ Feature: BTRIS Clinical Documents - Full Text Feature Prod Data
     #Seect contains all of these keywords from the drop down.
     And the user selects "<Search Type>" from "red search: clinical doc search type drop down" drop down on "Btris/Portal" page
     #Click the search button.
-    And the user clicks on "red search: clinical doc done search button" element on "Btris/Portal" page
+    And the user clicks on "red search: clinical doc search button" element on "Btris/Portal" page
     #Verify search data.
     And the user waits for 5 seconds
     And the user can see text "Point of Care Testing Document (CC, CRIS)"
@@ -126,7 +124,7 @@ Feature: BTRIS Clinical Documents - Full Text Feature Prod Data
     #Seect contains all of these keywords from the drop down.
     And the user selects "<Search Type 1>" from "red search: clinical doc search type drop down" drop down on "Btris/Portal" page
     #Click the search button.
-    And the user clicks on "red search: clinical doc done search button" element on "Btris/Portal" page
+    And the user clicks on "red search: clinical doc search button" element on "Btris/Portal" page
     #Verify search data.
     And the user waits for 5 seconds
     And the user can see text "Serial/Research Testing (CC, CRIS)"
@@ -141,7 +139,7 @@ Feature: BTRIS Clinical Documents - Full Text Feature Prod Data
     And the user selects "<Search Type 2>" from "red search: clinical doc search type drop down" drop down on "Btris/Portal" page
     And the user waits for 5 seconds
     #Click the search button.
-    And the user clicks on "red search: clinical doc done search button" element on "Btris/Portal" page
+    And the user clicks on "red search: clinical doc search button" element on "Btris/Portal" page
     #Verify search data.
     And the user waits for 5 seconds
     And the user can see text "Document Format (as indicated in CRIS)"
@@ -155,7 +153,7 @@ Feature: BTRIS Clinical Documents - Full Text Feature Prod Data
     #Seect contains all of these keywords from the drop down.
     And the user selects "<Search Type 3>" from "red search: clinical doc search type drop down" drop down on "Btris/Portal" page
     #Click the search button.
-    And the user clicks on "red search: clinical doc done search button" element on "Btris/Portal" page
+    And the user clicks on "red search: clinical doc search button" element on "Btris/Portal" page
     #And the user can see text "Serial Testing or Serial/Research Testing Document"
     #Verify search data.
     And the user waits for 10 seconds

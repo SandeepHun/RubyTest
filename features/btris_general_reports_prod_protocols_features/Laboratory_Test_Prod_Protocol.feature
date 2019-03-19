@@ -18,33 +18,30 @@ Feature: BTRIS Laboratory Feature Prod Data
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
     #click on the Laboratory Test.
-    And the user waits for 4 seconds
+    And the user remembers the value of "general reports" field into "Criteria List" on "Btris/Portal" page
     And the user clicks on "laboratory test" element on "Btris/Portal" page
-    And the user waits for 3 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
+    And the user remembers the value of "btris: laboratory filter report page" field into "Criteria Page" on "Btris/Portal" page
     And the user must see "Laboratory Criteria" text in "btris: laboratory filter report page" field on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
     And the user remembers the value of "protocol verify count" field into "Number OF Subjects" on "Btris/Portal" page
-    And the user waits for 3 seconds
+    And the user remembers the value of "selected protocol" field into "Protocol Number" on "Btris/Portal" page
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
-    And the user waits for 8 seconds
+    And the user waits for 4 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify the laboratory report table.
-    And the user remembers the value of "laboratory report table: subject name" field into "Collected Date Time" on "Btris/Portal" page
-    And the user must see "Subject Name" text in "laboratory report table: subject name" field on "Btris/Portal" page
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     #Verify report page.
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
-    And the user verify the laboratory prod report on the table
-    #Click on the download report button.
-    #And the user clicks on "download full report button" element on "Btris/Portal" page
+    And the user verify the laboratory report on the table
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
@@ -74,12 +71,12 @@ Feature: BTRIS Laboratory Feature Prod Data
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
     #click on the Laboratory Test.
-    And the user waits for 3 seconds
+    And the user remembers the value of "general reports" field into "Criteria List" on "Btris/Portal" page
     And the user clicks on "laboratory test" element on "Btris/Portal" page
-    And the user waits for 3 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
+    And the user remembers the value of "btris: laboratory filter report page" field into "Criteria Page" on "Btris/Portal" page
     And the user must see "Laboratory Criteria" text in "btris: laboratory filter report page" field on "Btris/Portal" page
     #Uncheck the demographic data.
     And the user clicks on "demographic data check box" element on "Btris/Portal" page
@@ -88,21 +85,18 @@ Feature: BTRIS Laboratory Feature Prod Data
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
     And the user remembers the value of "protocol verify count" field into "Number OF Subjects" on "Btris/Portal" page
-    And the user waits for 3 seconds
+    And the user remembers the value of "selected protocol" field into "Protocol Number" on "Btris/Portal" page
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
-    And the user waits for 8 seconds
+    And the user waits for 4 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
-    And the user remembers the value of "report table: collected data time column" field into "Collected Date Time" on "Btris/Portal" page
     #Verify the laboratory report table.
-    And the user must see "Collected Date Time" text in "report table: collected data time column" field on "Btris/Portal" page
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     #Verify report page.
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
-    And the user verify the laboratory prod report on the table
-    #Click on the download report button.
-    #And the user clicks on "download full report button" element on "Btris/Portal" page
+    And the user verify the laboratory report on the table
     #click on the open report in another tab button.
     And the user clicks on "open results in new tab button" element on "Btris/Portal" page
     And the switch to new tab page
@@ -132,31 +126,30 @@ Feature: BTRIS Laboratory Feature Prod Data
     #Verify and click on active protocol.
     And the user clicks on "btris: active protocol button" element on "Btris/Portal" page
     #click on the Laboratory Test.
-    And the user waits for 3 seconds
+    And the user remembers the value of "general reports" field into "Criteria List" on "Btris/Portal" page
     And the user clicks on "laboratory test" element on "Btris/Portal" page
-    And the user waits for 3 seconds
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
+    And the user remembers the value of "btris: laboratory filter report page" field into "Criteria Page" on "Btris/Portal" page
     And the user must see "Laboratory Criteria" text in "btris: laboratory filter report page" field on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "btris: bottom select button" element on "Btris/Portal" page
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
     And the user remembers the value of "protocol verify count" field into "Number OF Subjects" on "Btris/Portal" page
-    And the user waits for 3 seconds
+    And the user remembers the value of "selected protocol" field into "Protocol Number" on "Btris/Portal" page
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
-    And the user waits for 8 seconds
+    And the user waits for 4 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify the laboratory report table.
-    And the user remembers the value of "report table: collected data time column" field into "Collected Date Time" on "Btris/Portal" page
-    And the user must see "Collected Date Time" text in "report table: collected data time column" field on "Btris/Portal" page
+    And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     #Verify report page.
     And the user must see "Laboratory Results Preview - Standard" text in "laboratory and procedure report page" field on "Btris/Portal" page
     #Verify and validate the report display and click on the the image to view.
-    And the user verify the laboratory prod report on the table
+    And the user verify the new laboratory report on the table
     #Click on the download report button.
     And the user clicks on "download full report button" element on "Btris/Portal" page
     #click on the open report in another tab button.
@@ -167,6 +160,7 @@ Feature: BTRIS Laboratory Feature Prod Data
     #Click on Enter Report Criteria.
     And the user clicks on "top nav: enter report criteria" element on "Btris/Portal" page
     #Click on Add Labs button.Scenario:
+    And the user remembers the value of "btris: laboratory filter report page" field into "Criteria Page" on "Btris/Portal" page
     And the user clicks on "labs: add labs button" element on "Btris/Portal" page
     #Enter search criteria in the red search keyword text box.
     And the user enters "<Red Search Data>" into "red search: keyword text box" on "Btris/Portal" page
@@ -174,7 +168,7 @@ Feature: BTRIS Laboratory Feature Prod Data
     And the user selects "<Search Type>" from "red search: search type drop down" drop down on "Btris/Portal" page
     #Click the search button.
     And the user clicks on "red search: search button" element on "Btris/Portal" page
-    And the user waits for 15 seconds
+    And the user waits for 4 seconds
     #Verify search data.
     #And the user must see "Home Labs NIAID Panel, (NIAID, CRIMSON, HMLABS)" text in "red search data" field on "Btris/Portal" page
     #Click on the done button.

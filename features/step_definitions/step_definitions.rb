@@ -1450,7 +1450,7 @@ And(/^the user verify the nichd ctdb forms prod report on the table$/) do
     (1..table_rows).each do |rows|
       delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[4]"
       #puts 'the row number is ' +delete_icons_row
-      new_document = "ARRINGTON, LEARLIE FAY"
+      new_document = "ACHUKO, MAUREEN NGOZI"
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         #del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
@@ -1519,7 +1519,7 @@ And(/^the user verify the vital signs report on the table$/) do
     (1..table_rows).each do |rows|
       delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
       #puts 'the row number is ' +delete_icons_row
-      new_document = "NIHCCTEST, PATIENT EIGHT INPAT"
+      new_document = "NIHCCTEST, ACUITYPLUS ONLY"
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
@@ -1563,6 +1563,31 @@ Then(/^the user fines the page HTML/) do
   puts @browser
 end
 
+
+And(/^the user verify the medication report on the table with date range filter$/) do
+  sleep 3
+  record_found = false
+  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
+  if check_record_present > 2
+    #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
+    table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
+    puts table_rows
+    (1..table_rows).each do |rows|
+      delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
+      #puts 'the row number is ' +delete_icons_row
+      new_document = "BOWEN, JEANNE DOLORES"
+      if delete_icons_row.downcase.eql? new_document.downcase
+        record_found = true
+        del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[1]"
+        puts 'Note! these are test data and not actual data, the test Results validated are ' +del_obj
+      end
+    end
+    checkpoint (record_found.eql? true), "No data found in table that matches the medication search record"
+  end
+end
+
+
 And(/^the user verify the medication report on the table$/) do
   sleep 3
   record_found = false
@@ -1575,7 +1600,7 @@ And(/^the user verify the medication report on the table$/) do
     (1..table_rows).each do |rows|
       delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
       #puts 'the row number is ' +delete_icons_row
-      new_document = "NIHCCTEST, PATIENT FOUR"
+      new_document = "NIHCCTEST, PATIENTG NMN"
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[1]"
@@ -1946,7 +1971,7 @@ And(/^the user verify the reference list "(.*)" radiology report on the table$/)
       (1..table_rows).each do |rows|
         delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
         # puts 'the row number is ' +delete_icons_row
-        new_document = "CAHILL, PATRICIA ANN MARIE"
+        new_document = "NIHCCTEST, INNA NMN"
         if delete_icons_row.downcase.eql? new_document.downcase
           record_found = true
           del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
@@ -1974,7 +1999,7 @@ And(/^the user verify the reference list "(.*)" laboratory report on the table$/
     (1..table_rows).each do |rows|
       delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
       # puts 'the row number is ' +delete_icons_row
-      new_document = "HUSTON, PERDITA CONSTANCE"
+      new_document = "NIHCCTEST, PATIENT LAB OUTPAT DLM USE ONLY"
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
@@ -2021,7 +2046,6 @@ And(/^the user verify the reference list pathology report and "(.*)" on the tabl
   if page_text.include? value
     puts "Search criteria return message #{value} ,for the search query"
   else
-    step "the user must see \"Subject Name\" text in \"laboratory report table: subject name\" field on \"Btris/Portal\" page"
     record_found = false
     table_path = ".//*[contains(@data-test, 'results-preview-table')]"
     check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
@@ -2032,7 +2056,7 @@ And(/^the user verify the reference list pathology report and "(.*)" on the tabl
     (1..table_rows).each do |rows|
       delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
       # puts 'the row number is ' +delete_icons_row
-      new_document = "NIHCCTEST, INNA NMN"
+      new_document = "NIHCCTEST, PATIENT LAB INPAT DLM USE ONLY"
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
@@ -2050,7 +2074,6 @@ And(/^the user verify the reference list vital sign report and "(.*)" on the tab
   if page_text.include? value
     puts "Search criteria return message #{value} , no record for the search filter"
   else
-    step "the user must see \"Subject Name\" text in \"laboratory report table: subject name\" field on \"Btris/Portal\" page"
     record_found = false
     table_path = ".//*[contains(@data-test, 'results-preview-table')]"
     check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
@@ -2079,7 +2102,6 @@ And(/^the user verify the reference list pathology report and "(.*)" on the tabl
   if page_text.include? value
     puts "Search criteria return message #{value} , no record for the search filter"
   else
-    step "the user must see \"Subject Name\" text in \"laboratory report table: subject name\" field on \"Btris/Portal\" page"
     record_found = false
     table_path = ".//*[contains(@data-test, 'results-preview-table')]"
     check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
@@ -2103,6 +2125,7 @@ And(/^the user verify the reference list pathology report and "(.*)" on the tabl
 end
 
 And(/^the user verify if MRN "(.*)" has already been added and "(.*)" is display$/) do |value, message|
+  sleep 3
   page_text = @browser.html
   if page_text.include? message
     step "the user clicks on \"back arrow\" element on \"Manage/Subjects\" page"
@@ -2127,9 +2150,9 @@ And(/^the user verify if MRN "(.*)" has already been added and "(.*)" is display
 end
 
 And(/^the user verify if MRN "(.*)" has not been added and "(.*)" is display$/) do |value, message|
+  sleep 3
   page_text = @browser.html
   if page_text.include? message
-    sleep 3
     step "the user clicks on \"affirm consent button\" element on \"Manage/Subjects\" page"
     sleep 3
     step "the user clicks on \"return to subject button\" element on \"Manage/Subjects\" page"
