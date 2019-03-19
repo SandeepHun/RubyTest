@@ -38,6 +38,11 @@ def map_manage_subjects
           'upload subjects clear button'                     =>"xpath^^(//button[@type='button'])[4]",
           'invalid mrn display danger'                       =>"xpath^^.//*[@class='invalid-mrn-display__danger-sub-full']/h3",
           'invalid mrn display'                              =>"xpath^^.//*[@class='invalid-mrn-display__danger-sub-full']/p",
+          'manage protocol: consented subject count'         =>"xpath^^.//*[@class ='table manage-protocols-table']/tbody/tr[1]/td[5]//strong",
+          'manage protocol: protocol'                        =>"xpath^^.//*[@class ='table manage-protocols-table']/tbody/tr[1]/td[1]//a",
+          'manage protocol: mrn on table'                    =>"xpath^^.//*[@class ='table manage-protocol-subjects-table']/tbody/tr[1]/td[1]",
+          'consented notification'                           =>"xpath^^.//*[@class='noty_body']",
+          'header notification'                              =>"xpath^^.//*[@id='display-action-banner']//*[contains(text(), 'Return to Subjects')]",
 
 
 

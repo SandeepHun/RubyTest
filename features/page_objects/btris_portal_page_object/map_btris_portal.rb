@@ -123,6 +123,7 @@ def map_btris_portal
           'search subject pn'                                           =>"xpath^^.//*[contains(@data-test, 'results-preview-table')]//*[contains(text(), '00-C-0018')]",
           'search subject pn1'                                          =>"xpath^^.//*[contains(@data-test, 'results-preview-table')]//*[contains(text(), 'BTRIS-TEST-03')]",
           'search subject pd1'                                          =>"xpath^^.//*[contains(@data-test, 'results-preview-table')]//*[contains(text(), 'BTRIS-TEST-0')]",
+          'search prod subject pd1'                                     =>"xpath^^.//*[contains(@data-test, 'results-preview-table')]//*[contains(text(), '00-C-0018')]",
 
           'search subject s3'                                           =>"xpath^^.//*[contains(@data-test, 'results-preview-table')]//*[contains(text(), '00-C-0018')]",
           'pdf documents buttom select button'                          =>"xpath^^.//*[@id='app']/div[2]/div[1]/div[2]/div[2]/div/div/div/div/form/div[2]/div/div[4]/div[2]/button",
@@ -140,6 +141,13 @@ def map_btris_portal
           'btris: medication report page'                               =>"xpath^^.//*[@class='prompts-header__heading']//*[contains(text(), 'Medication Report Criteria')]",
           'medication report page'                                      =>"xpath^^.//*[contains(text(), 'Medication Report Results Preview -')]",
           'medication admin drop down'                                  =>"xpath^^.//*[@id='report-output-format-select']",
+          'medication order start date'                                 =>"xpath^^.//*[@id='orderDateRange-date-range-start-date']",
+          'medication order end date'                                   =>"xpath^^.//*[@id='orderDateRange-date-range-end-date']",
+          'medication admin start date'                                 =>"xpath^^.//*[@id='medicationStartDateRange-date-range-start-date']",
+          'medication admin end date'                                   =>"xpath^^.//*[@id='medicationStartDateRange-date-range-end-date']",
+
+
+
           #Pulmonary Function Test Lab Report
           'btris: pulmonary test'                                      =>"xpath^^.//*[contains(@data-test, '13-radio-value')]",
           'btris: pulmonary report page'                               =>"xpath^^.//*[@class='prompts-header__heading']//*[contains(text(), 'Pulmonary Function Test Lab Report Criteria')]",
@@ -166,6 +174,13 @@ def map_btris_portal
           'irb inclusion select protocol'                                             =>"xpath^^.//*[@class='custom-control custom-radio']",
           'irb inclusion select prod protocol'                                        =>"xpath^^.//*[@data-test='select-pcsl-9807-protocol-radio-value'][contains(@class, 'custom-control custom-radio')]",
           'report table validation'                                                   =>"xpath^^.//*[@class='empty-message'][contains(text(), 'No records found')]",
+          'red term pop up'                                                           =>"xpath^^.//*[@for ='radiologyTests-red-term-keywords']",
+          'imaging by procedure'                                                      =>"xpath^^.//*[@data-test='red-node red-node-C3147738']",
+          'echocardiogram tests'                                                      =>"xpath^^.//*[@class ='custom-control-description checkbox__label-text'][contains(text(), 'Exercise Tolerance Echocardiography Procedure by Standardized Protocol Used')]",
+          'ekg observations'                                                          =>"xpath^^.//*[@class ='custom-control-description checkbox__label-text'][contains(text(), 'Electrocardiogram (EKG, ECG) Observation')]",
+          'pathology test list'                                                       =>"xpath^^.//*[@class ='custom-control-description checkbox__label-text'][contains(text(), 'Additional Studies/Requests')]",
+          'pft tests'                                                                 =>"xpath^^.//*[@data-test='red-node red-node-C113449']",
+
 
           'irb inclusion open report in new tab'                                      =>"xpath^^.//*[@data-test='open-in-new-window-button']",
           'irb inclusion search protocol2'                                            =>"xpath^^.//*[@data-test='select-pcsl-18789-protocol-radio-value'][contains(@class, 'custom-control custom-radio')]",
@@ -215,6 +230,10 @@ def map_btris_portal
           'glasgow coma scale observation'                                                    =>"xpath^^.//*[@data-test='red-node red-node-C3166440']",
           'body  dtm'                                                                         =>"xpath^^.//*[@data-test='red-node red-node-C2257726']",
           'glasgow coma search'                                                               =>"xpath^^.//*[@data-test='red-node red-node-C3166440']",
+          'reference list reports: laboratory'                                                =>"xpath^^.//*[@id='referenceListRpts']//*[contains(text(), 'Laboratory')]",
+          'reference list reports: pathology'                                                 =>"xpath^^.//*[@id='referenceListRpts']//*[contains(text(), 'Pathology')]",
+          'reference list reports: radiology'                                                 =>"xpath^^.//*[@id='referenceListRpts']//*[contains(text(), 'Radiology')]",
+          'reference list reports: vital sign'                                                =>"xpath^^.//*[@id='referenceListRpts']//*[contains(text(), 'Vital Signs')]",
 
 
 

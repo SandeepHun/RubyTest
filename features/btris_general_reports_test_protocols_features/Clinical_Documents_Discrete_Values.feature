@@ -23,20 +23,19 @@ Feature: BTRIS Clinical Documents - Discrete Values Test Report
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
+    And the user remembers the value of "btris: clinical documents: discrete values filter report page" field into "Criteria Page" on "Btris/Portal" page
     And the user must see "Clinical Documents - Discrete Values Criteria" text in "btris: clinical documents: discrete values filter report page" field on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
-    And the user waits for 8 seconds
     And the user remembers the value of "protocol verify count" field into "Number OF Subjects" on "Btris/Portal" page
-    And the user waits for 3 seconds
+    And the user remembers the value of "selected protocol" field into "Protocol Number" on "Btris/Portal" page
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
-    And the user waits for 8 seconds
+    And the user waits for 4 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
-    #Verify the document report table.
     And the user remembers the value of "reports results" field into "Loaded Report" on "Btris/Portal" page
     #Verify report page.
     And the user must see "Clinical Documents - Discrete Values Results Preview - Standard" text in "clinical documents: discrete report page" field on "Btris/Portal" page
@@ -77,17 +76,17 @@ Feature: BTRIS Clinical Documents - Discrete Values Test Report
     #Click on the create new report button.
     And the user clicks on "btris: create new report button" element on "Btris/Portal" page
     #verify the select report page.
+    And the user remembers the value of "btris: clinical documents: discrete values filter report page" field into "Criteria Page" on "Btris/Portal" page
     And the user must see "Clinical Documents - Discrete Values Criteria" text in "btris: clinical documents: discrete values filter report page" field on "Btris/Portal" page
     #Clcik on the select report button.
     And the user clicks on "btris: top select subject button" element on "Btris/Portal" page
     #Enter and filter subject.
     And the user enters "<Subject>" into "fine protocol and subject search box" on "Btris/Portal" page
-    And the user waits for 8 seconds
     And the user remembers the value of "protocol verify count" field into "Number OF Subjects" on "Btris/Portal" page
-    And the user waits for 3 seconds
+    And the user remembers the value of "selected protocol" field into "Protocol Number" on "Btris/Portal" page
     And the user clicks on "protocol check button" element on "Btris/Portal" page
     And the user enters "<Filtered Subject>" into "fine filter subject search box" on "Btris/Portal" page
-    And the user waits for 8 seconds
+    And the user waits for 4 seconds
     #click on run report button.
     And the user clicks on "run report button" element on "Btris/Portal" page
     #Verify the document report table.
@@ -114,7 +113,7 @@ Feature: BTRIS Clinical Documents - Discrete Values Test Report
     #Click the search button.
     And the user clicks on "red search: clinical doc search button" element on "Btris/Portal" page
     #Verify search data.
-    And the user waits for 8 seconds
+    And the user waits for 4 seconds
     And the user can see text "Point of Care Testing Document (CC, CRIS)"
     #And the user must see "Point of Care Testing Document (CC, CRIS)" text in "red search for clinical doc" field on "Btris/Portal" page
     #Click on the done button.
@@ -128,7 +127,7 @@ Feature: BTRIS Clinical Documents - Discrete Values Test Report
     #Click the search button.
     And the user clicks on "red search: clinical doc search button" element on "Btris/Portal" page
     #Verify search data.
-    And the user waits for 8 seconds
+    And the user waits for 4 seconds
     And the user can see text "Serial/Research Testing (CC, CRIS)"
     #And the user must see "Serial/Research Testing (CC, CRIS)" text in "red search: serial research" field on "Btris/Portal" page
     #Click on the done button.
@@ -142,7 +141,7 @@ Feature: BTRIS Clinical Documents - Discrete Values Test Report
     #Click the search button.
     And the user clicks on "red search: clinical doc search button" element on "Btris/Portal" page
     #Verify search data.
-    And the user waits for 8 seconds
+    And the user waits for 4 seconds
     And the user can see text "Document Format (as indicated in CRIS)"
     #And the user must see "Document Format (as indicated in CRIS)" text in "red search: start with research" field on "Btris/Portal" page
     #Click on the done button.
@@ -155,7 +154,7 @@ Feature: BTRIS Clinical Documents - Discrete Values Test Report
     And the user selects "<Search Type 3>" from "red search: clinical doc search type drop down" drop down on "Btris/Portal" page
     #Click the search button.
     And the user clicks on "red search: clinical doc search button" element on "Btris/Portal" page
-    And the user waits for 8 seconds
+    And the user waits for 4 seconds
     And the user can see text "Serial Testing or Serial/Research Testing Document"
     #Verify search data.
     #And the user must see "Serial Testing or Serial/Research Testing Document" text in "red search: exact phrase research" field on "Btris/Portal" page
@@ -170,7 +169,7 @@ Feature: BTRIS Clinical Documents - Discrete Values Test Report
     #Click the search button.
     And the user clicks on "red search: clinical doc search button" element on "Btris/Portal" page
     #And the user waits for 6 seconds
-    And the user waits for 8 seconds
+    And the user waits for 4 seconds
     And the user can see text "Glasgow Coma Scale Observation"
     #Verify search data.
     #And the user must see "Glasgow Coma Scale Observation" text in "red search clinical: contains phrase research" field on "Btris/Portal" page
@@ -185,7 +184,7 @@ Feature: BTRIS Clinical Documents - Discrete Values Test Report
     #Click the search button.
     And the user clicks on "red search: clinical doc search button" element on "Btris/Portal" page
     #And the user waits for 5 seconds
-    And the user waits for 8 seconds
+    And the user waits for 4 seconds
     And the user can see text "Glasgow Coma Scale Observation"
     #Verify search data.
     #And the user must see "Glasgow Coma Scale Observation" text in "red search clinical: contains any search for add observation" field on "Btris/Portal" page
@@ -200,7 +199,7 @@ Feature: BTRIS Clinical Documents - Discrete Values Test Report
     #Click the search button.
     And the user clicks on "red search: clinical doc search button" element on "Btris/Portal" page
     #And the user waits for 5 seconds
-    And the user waits for 8 seconds
+    And the user waits for 4 seconds
     And the user can see text "Body Site Associated With Heart Rate and/or Blood Pressure"
     #Verify search data.
     #And the user must see "Body Site Associated With Heart Rate and/or Blood Pressure" text in "red search clinical: start with search for add observation" field on "Btris/Portal" page
