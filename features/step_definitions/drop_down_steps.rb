@@ -14,7 +14,7 @@ Then(/^the user selects "(.*)" from "(.*)" drop down on "(.*)" page$/) do |value
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
 
   # Create Dropdown list object
   drop_down_obj = @browser.select_list(selector, element_path)
@@ -27,7 +27,7 @@ Then(/^the user selects "(.*)" from "(.*)" drop down on "(.*)" page$/) do |value
 
   # Check Select value only not already selected
   if drop_down_obj.text.squeeze(' ').strip.downcase != value.squeeze(' ').strip.downcase
-    drop_down_element_path = element_path+"/option[normalize-space() = '#{value}']"
+    drop_down_element_path = element_path + "/option[normalize-space() = '#{value}']"
     # Create dropdown div object and wait to displayed
     drop_down_obj = @browser.element(selector, drop_down_element_path)
 
@@ -53,7 +53,7 @@ Then(/^the user selects "(.*)" value from "(.*)" drop down on "(.*)" page$/) do 
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
 
   # Create Dropdown list object
   drop_down_obj = @browser.select_list(selector, element_path)
@@ -98,7 +98,7 @@ Then(/^the user selects current value of "(.*)" from "(.*)" drop down on "(.*)" 
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
 
   # Create Dropdown list object
   drop_down_obj = @browser.select_list(selector, element_path)
@@ -135,7 +135,7 @@ Then(/^the user sees "(.*)" selected in "(.*)" drop down on "(.*)" page$/) do |v
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
 
   # Create Dropdown list object
   drop_down_obj = @browser.select_list(selector, element_path)
@@ -174,7 +174,7 @@ Then(/^the user sees current value of "(.*)" selected in "(.*)" drop down on "(.
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
 
   # Create Dropdown list object
   drop_down_obj = @browser.select_list(selector, element_path)
@@ -202,7 +202,7 @@ Then(/^the user remembers the value of "(.*)" drop down on "(.*)" page$/) do |ke
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{key_value} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
 
   # Create Dropdown list object
   drop_down_obj = @browser.select_list(selector, element_path)
@@ -231,7 +231,7 @@ Then(/^the user remembers the value of "(.*)" drop down into "(.*)" on "(.*)" pa
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{key_value} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
 
   # Create Dropdown list object
   drop_down_obj = @browser.select_list(selector, element_path)
@@ -261,38 +261,38 @@ Then(/^the user can see "(.*)" drop down is "(.*)" on "(.*)" page$/) do |field_n
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
 
   # Case to check for Enable or Disable object state to verify
   case obj_state.downcase
-    when 'disabled'
-      # Create the button object
-      drop_down_obj = @browser.select_list(selector, element_path)
+  when 'disabled'
+    # Create the button object
+    drop_down_obj = @browser.select_list(selector, element_path)
 
-      # Wait for element to be present
-      wait_for_disable_element(drop_down_obj)
+    # Wait for element to be present
+    wait_for_disable_element(drop_down_obj)
 
-      # Focus on element to make it visible
-      focus_on_element(drop_down_obj)
+    # Focus on element to make it visible
+    focus_on_element(drop_down_obj)
 
-      # get the state of object
-      drop_down_obj = drop_down_obj.disabled?
+    # get the state of object
+    drop_down_obj = drop_down_obj.disabled?
 
-    when 'enabled'
-      # Create the button object
-      drop_down_obj = @browser.select_list(selector, element_path)
+  when 'enabled'
+    # Create the button object
+    drop_down_obj = @browser.select_list(selector, element_path)
 
-      # Wait for element to be exist, visible,present and enabled
-      wait_for_element(drop_down_obj)
+    # Wait for element to be exist, visible,present and enabled
+    wait_for_element(drop_down_obj)
 
-      # Focus on element to make it visible
-      focus_on_element(drop_down_obj)
+    # Focus on element to make it visible
+    focus_on_element(drop_down_obj)
 
-      # get the state of object
-      drop_down_obj = drop_down_obj.enabled?
+    # get the state of object
+    drop_down_obj = drop_down_obj.enabled?
 
-    else
-      fail("Entered #{obj_state} state is not found please use Disabled or Enabled only in Gherkin")
+  else
+    fail("Entered #{obj_state} state is not found please use Disabled or Enabled only in Gherkin")
 
   end
 
@@ -316,7 +316,7 @@ Then(/^the user can see "(.*)" values in "(.*)" drop down on "(.*)" page$/) do |
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
 
   # Create Dropdown list object
   drop_down_obj = @browser.select_list(selector, element_path)
@@ -331,7 +331,7 @@ Then(/^the user can see "(.*)" values in "(.*)" drop down on "(.*)" page$/) do |
 
   if value.include? ';'
     options_text = value.split(';')
-    (0..options_text.size-1).each do |index|
+    (0..options_text.size - 1).each do |index|
       value_found = 'false'
       displayed_drop_down_text = drop_down_values[index]
       if displayed_drop_down_text.to_s.downcase.strip.gsub(/[^a-zA-Z0-9\-]/, '').eql? options_text[index].downcase.strip.gsub(/[^a-zA-Z0-9\-]/, '')
@@ -341,7 +341,7 @@ Then(/^the user can see "(.*)" values in "(.*)" drop down on "(.*)" page$/) do |
       checkpoint (value_found.eql? 'true'), "The #{options_text[index].strip} is not displayed; Current values is #{displayed_drop_down_text}, All Options displayed are #{drop_down_values} in #{field_name} dropdown list on #{page_name} page"
     end
   else
-    (0..drop_down_values.size-1).each do |index|
+    (0..drop_down_values.size - 1).each do |index|
       match_found = 'false'
       displayed_drop_down_text = drop_down_values[index]
       if displayed_drop_down_text.to_s.downcase.strip.gsub(/[^a-zA-Z0-9\-]/, '').eql? value.downcase.strip.gsub(/[^a-zA-Z0-9\-]/, '')
@@ -366,7 +366,7 @@ Then(/^the user selects "(.*)" from "(.*)" list box on "(.*)" page$/) do |value,
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
 
   # get all items in list box
   @browser.select_list(selector, element_path).options.each do |drop_down_value|
@@ -391,7 +391,7 @@ Then(/^the user selects "(.*)" from "(.*)" combo box on "(.*)" page$/) do |value
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
 
   # Create Combo box object
   combo_box_obj = @browser.element(selector, element_path)
@@ -448,7 +448,7 @@ Then(/^the user selects current value of "(.*)" from "(.*)" combo box on "(.*)" 
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
 
   # Create Combo box object
   combo_box_obj = @browser.element(selector, element_path)
@@ -495,7 +495,7 @@ Then(/^the user sees "(.*)" selected in "(.*)" combo box on "(.*)" page$/) do |v
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
 
   # Create Combo box object
   combo_box_obj = @browser.element(selector, element_path)
@@ -537,7 +537,7 @@ Then(/^the user sees current value of "(.*)" selected in "(.*)" combo box on "(.
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
 
   # Create Combo box object
   combo_box_obj = @browser.element(selector, element_path)
@@ -570,38 +570,38 @@ Then(/^the user can see "(.*)" combo box is "(.*)" on "(.*)" page$/) do |field_n
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
 
   # Case to check for Enable or Disable object state to verify
   case obj_state.downcase
-    when 'disabled'
-      # Create the button object
-      drop_down_obj = @browser.element(selector, element_path)
+  when 'disabled'
+    # Create the button object
+    drop_down_obj = @browser.element(selector, element_path)
 
-      # Wait for element to be present
-      wait_for_disable_element(drop_down_obj)
+    # Wait for element to be present
+    wait_for_disable_element(drop_down_obj)
 
-      # Focus on element to make it visible
-      focus_on_element(drop_down_obj)
+    # Focus on element to make it visible
+    focus_on_element(drop_down_obj)
 
-      # get the state of object
-      drop_down_obj = drop_down_obj.disabled?
+    # get the state of object
+    drop_down_obj = drop_down_obj.disabled?
 
-    when 'enabled'
-      # Create the button object
-      drop_down_obj = @browser.element(selector, element_path)
+  when 'enabled'
+    # Create the button object
+    drop_down_obj = @browser.element(selector, element_path)
 
-      # Wait for element to be exist, visible,present and enabled
-      wait_for_element(drop_down_obj)
+    # Wait for element to be exist, visible,present and enabled
+    wait_for_element(drop_down_obj)
 
-      # Focus on element to make it visible
-      focus_on_element(drop_down_obj)
+    # Focus on element to make it visible
+    focus_on_element(drop_down_obj)
 
-      # get the state of object
-      drop_down_obj = drop_down_obj.enabled?
+    # get the state of object
+    drop_down_obj = drop_down_obj.enabled?
 
-    else
-      fail("Entered #{obj_state} state is not found please use Disabled or Enabled only in Gherkin")
+  else
+    fail("Entered #{obj_state} state is not found please use Disabled or Enabled only in Gherkin")
 
   end
 
@@ -624,7 +624,7 @@ Then(/^the user can see "(.*)" values in "(.*)" combo box on "(.*)" page$/) do |
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
 
   # Create Combo box object
   combo_box_obj = @browser.element(selector, element_path)
@@ -749,7 +749,7 @@ Then(/^the user sees values in "(.*)" drop down in alphabetical order on "(.*)" 
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
 
   # Create Dropdown list object
   drop_down_obj = @browser.select_list(selector, element_path)
@@ -764,7 +764,7 @@ Then(/^the user sees values in "(.*)" drop down in alphabetical order on "(.*)" 
   sorted_drop_down_values = drop_down_values.sort
 
 
-  (0..sorted_drop_down_values.size-1).each do |sorted_value|
+  (0..sorted_drop_down_values.size - 1).each do |sorted_value|
     if sorted_drop_down_values[sorted_value].strip != drop_down_values[sorted_value].strip
       value_match = 'false'
       break
@@ -795,7 +795,7 @@ Then(/^the user sees values in "(.*)" drop down in alphabetical order with defau
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
 
   # Create Dropdown list object
   drop_down_obj = @browser.select_list(selector, element_path)
@@ -808,7 +808,7 @@ Then(/^the user sees values in "(.*)" drop down in alphabetical order with defau
 
   drop_down_values = drop_down_obj.options.map(&:text)
   sorted_drop_down_values = drop_down_values.sort
-  (0..sorted_drop_down_values.size-1).each do |value_index|
+  (0..sorted_drop_down_values.size - 1).each do |value_index|
     if sorted_drop_down_values[value_index].strip.downcase.eql? default_drop_down_value.downcase
       default_value = sorted_drop_down_values[value_index].strip
       default_value_match = 'true'
@@ -837,7 +837,7 @@ Then(/^the user sees values in "(.*)" drop down in alphabetical order with defau
     end
   end
 
-  (0..sorted_drop_down_values.size-1).each do |sorted_value|
+  (0..sorted_drop_down_values.size - 1).each do |sorted_value|
     if sorted_drop_down_values[sorted_value].strip != drop_down_values[sorted_value].strip
       value_match = 'true'
       break
@@ -867,7 +867,7 @@ Then(/^the user sees values in "(.*)" drop down in alphabetical order with last 
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
 
   # Create Dropdown list object
   drop_down_obj = @browser.select_list(selector, element_path)
@@ -880,7 +880,7 @@ Then(/^the user sees values in "(.*)" drop down in alphabetical order with last 
 
   drop_down_values = drop_down_obj.options.map(&:text)
   sorted_drop_down_values = drop_down_values.sort
-  (0..sorted_drop_down_values.size-1).each do |value_index|
+  (0..sorted_drop_down_values.size - 1).each do |value_index|
     if sorted_drop_down_values[value_index].strip.downcase.include? 'other'
       other_value = sorted_drop_down_values[value_index].strip
       other_value_match = 'true'
@@ -900,7 +900,7 @@ Then(/^the user sees values in "(.*)" drop down in alphabetical order with last 
     end
   end
 
-  (0..sorted_drop_down_values.size-1).each do |sorted_value|
+  (0..sorted_drop_down_values.size - 1).each do |sorted_value|
 
     if sorted_drop_down_values[sorted_value].strip != drop_down_values[sorted_value].strip
       value_match = 'true'
@@ -924,40 +924,40 @@ Then(/^the user can see "(.*)" multi-select drop down is "(.*)" on "(.*)" page$/
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
 
   # Case to check for Enable or Disable object state to verify
   case obj_state.downcase
-    when 'disabled'
-      # Create the button object
-      drop_down_obj = @browser.select_list(selector, element_path)
+  when 'disabled'
+    # Create the button object
+    drop_down_obj = @browser.select_list(selector, element_path)
 
-      # Wait for element to be present
-      drop_down_obj.exist?
-      drop_down_obj.present?
+    # Wait for element to be present
+    drop_down_obj.exist?
+    drop_down_obj.present?
 
-      # Focus on element to make it visible
-      focus_on_element(drop_down_obj)
+    # Focus on element to make it visible
+    focus_on_element(drop_down_obj)
 
-      # get the state of object
-      drop_down_obj = drop_down_obj.disabled?
+    # get the state of object
+    drop_down_obj = drop_down_obj.disabled?
 
-    when 'enabled'
-      # Create the button object
-      drop_down_obj = @browser.select_list(selector, element_path)
+  when 'enabled'
+    # Create the button object
+    drop_down_obj = @browser.select_list(selector, element_path)
 
-      # Wait for element to be exist, visible,present and enabled
-      drop_down_obj.exist?
-      drop_down_obj.present?
+    # Wait for element to be exist, visible,present and enabled
+    drop_down_obj.exist?
+    drop_down_obj.present?
 
-      # Focus on element to make it visible
-      focus_on_element(drop_down_obj)
+    # Focus on element to make it visible
+    focus_on_element(drop_down_obj)
 
-      # get the state of object
-      drop_down_obj = drop_down_obj.enabled?
+    # get the state of object
+    drop_down_obj = drop_down_obj.enabled?
 
-    else
-      fail("Entered #{obj_state} state is not found please use Disabled or Enabled only in Gherkin")
+  else
+    fail("Entered #{obj_state} state is not found please use Disabled or Enabled only in Gherkin")
 
   end
 
@@ -981,7 +981,7 @@ Then(/^the user can see "(.*)" values in "(.*)" multi-select drop down on "(.*)"
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
 
   # Whether or not Watir should wait for an element to be found or present before taking an action. Defaults to true.
   Watir.relaxed_locate = false
@@ -999,7 +999,7 @@ Then(/^the user can see "(.*)" values in "(.*)" multi-select drop down on "(.*)"
 
   if value.include? ';'
     options_text = value.split(';')
-    (0..options_text.size-1).each do |index|
+    (0..options_text.size - 1).each do |index|
       value_found = 'false'
       displayed_drop_down_text = drop_down_values[index]
       if displayed_drop_down_text.to_s.downcase.strip.gsub(/[^a-zA-Z0-9\-]/, '').eql? options_text[index].downcase.strip.gsub(/[^a-zA-Z0-9\-]/, '')
@@ -1009,7 +1009,7 @@ Then(/^the user can see "(.*)" values in "(.*)" multi-select drop down on "(.*)"
       checkpoint (value_found.eql? 'true'), "The #{options_text[index].strip} is not displayed; Current values is #{displayed_drop_down_text}, All Options displayed are #{drop_down_values} in #{field_name} dropdown list on #{page_name} page"
     end
   else
-    (0..drop_down_values.size-1).each do |index|
+    (0..drop_down_values.size - 1).each do |index|
       match_found = 'false'
       displayed_drop_down_text = drop_down_values[index]
       if displayed_drop_down_text.to_s.downcase.strip.gsub(/[^a-zA-Z0-9\-]/, '').eql? value.downcase.strip.gsub(/[^a-zA-Z0-9\-]/, '')
@@ -1035,9 +1035,9 @@ Then(/^the user selects "(.*)" from "(.*)" multi-select drop down on "(.*)" page
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
 
-  drop_down_div_element_path = element_path+'/following::input'
+  drop_down_div_element_path = element_path + '/following::input'
   drop_down_obj = @browser.element(selector, drop_down_div_element_path)
 
   # # Wait for element to be exist, visible,present and enabled
@@ -1049,7 +1049,7 @@ Then(/^the user selects "(.*)" from "(.*)" multi-select drop down on "(.*)" page
   drop_down_obj.wait_until_present.click
 
   # click_web_element dropdown_div_element_path
-  drop_down_element_path = element_path+"/following::div[@class='chosen-drop']/descendant::li[text()='#{value}']"
+  drop_down_element_path = element_path + "/following::div[@class='chosen-drop']/descendant::li[text()='#{value}']"
   # Create dropdown div object and wait to displayed
   drop_down_obj = @browser.element(selector, drop_down_element_path)
 
@@ -1079,7 +1079,7 @@ Then(/^the user sees values in "(.*)" multi-select drop down in alphabetical ord
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
 
   # Whether or not Watir should wait for an element to be found or present before taking an action. Defaults to true.
   Watir.relaxed_locate = false
@@ -1096,7 +1096,7 @@ Then(/^the user sees values in "(.*)" multi-select drop down in alphabetical ord
   Watir.relaxed_locate = true
   # Sorting the dropdown values and swap Other option to last
   sorted_drop_down_values = drop_down_values.sort
-  (0..sorted_drop_down_values.size-1).each do |index|
+  (0..sorted_drop_down_values.size - 1).each do |index|
     if sorted_drop_down_values[index].downcase.strip.eql? 'other'
       sort_index = index
       other_value = 'true'
@@ -1107,7 +1107,7 @@ Then(/^the user sees values in "(.*)" multi-select drop down in alphabetical ord
     sorted_drop_down_values[sort_index], sorted_drop_down_values[last_index] = sorted_drop_down_values[last_index], sorted_drop_down_values[sort_index]
   end
 
-  (0..sorted_drop_down_values.size-1).each do |sorted_value|
+  (0..sorted_drop_down_values.size - 1).each do |sorted_value|
     if sorted_drop_down_values[sorted_value].strip != drop_down_values[sorted_value].strip
       value_match = 'false'
       break
@@ -1126,9 +1126,9 @@ Then(/^the user removes selected "(.*)" option from "(.*)" multi-select drop dow
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
 
-  remove_path = element_path+"/following::span[(text()='#{option_text}')]/following::a[1]"
+  remove_path = element_path + "/following::span[(text()='#{option_text}')]/following::a[1]"
 
   # Create the Element object
   element_obj = @browser.element(selector, remove_path)

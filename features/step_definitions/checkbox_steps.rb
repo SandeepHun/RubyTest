@@ -5,14 +5,14 @@ Then(/^the user check "(.*)" checkbox on "(.*)" page$/) do |chk_box_name, page_n
 
   # get the XPATH or CSS from page object file, Raises Error if not found
   begin
-  selector, element_path = get_element_target(chk_box_name, page_name).split('^^')
+    selector, element_path = get_element_target(chk_box_name, page_name).split('^^')
   rescue
     fail("Element Xpath is not found for #{chk_box_name} in #{page_name} page objects File")
   end
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{chk_box_name} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
 
   # Create the checkbox object
   chk_box_obj = @browser.checkbox(selector, element_path)
@@ -51,7 +51,7 @@ Then(/^the user uncheck "(.*)" checkbox on "(.*)" page$/) do |chk_box_name, page
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{chk_box_name} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
 
   # Create the checkbox object
   chk_box_obj = @browser.checkbox(selector, element_path)
@@ -91,51 +91,51 @@ Then(/^the user can see "(.*)" checkbox is "(.*)" on "(.*)" page$/) do |chk_box_
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{chk_box_name} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
 
   # Case to check for Enable or Disable object state to verify
   case obj_state.downcase
-    when 'disabled'
-      # Create the checkbox object
-      chk_box_obj = @browser.checkbox(selector, element_path)
+  when 'disabled'
+    # Create the checkbox object
+    chk_box_obj = @browser.checkbox(selector, element_path)
 
-      # Wait for element to be present
-      wait_for_disable_element(chk_box_obj)
+    # Wait for element to be present
+    wait_for_disable_element(chk_box_obj)
 
-      # Focus on element to make it visible
-      focus_on_element(chk_box_obj)
+    # Focus on element to make it visible
+    focus_on_element(chk_box_obj)
 
-      # get the state of object
-      chk_box_obj = chk_box_obj.disabled?
+    # get the state of object
+    chk_box_obj = chk_box_obj.disabled?
 
-    when 'enabled'
-      # Create the checkbox object
-      chk_box_obj = @browser.checkbox(selector, element_path)
+  when 'enabled'
+    # Create the checkbox object
+    chk_box_obj = @browser.checkbox(selector, element_path)
 
-      # Wait for element to be exist, visible,present and enabled
-      wait_for_element(chk_box_obj)
+    # Wait for element to be exist, visible,present and enabled
+    wait_for_element(chk_box_obj)
 
-      # Focus on element to make it visible
-      focus_on_element(chk_box_obj)
+    # Focus on element to make it visible
+    focus_on_element(chk_box_obj)
 
-      # get the state of object
-      chk_box_obj = chk_box_obj.enabled?
+    # get the state of object
+    chk_box_obj = chk_box_obj.enabled?
 
-    when 'checked'
-      # Create the checkbox object
-      chk_box_obj = @browser.checkbox(selector, element_path)
+  when 'checked'
+    # Create the checkbox object
+    chk_box_obj = @browser.checkbox(selector, element_path)
 
-      # Wait for element to be exist, visible,present and enabled
-      wait_for_element(chk_box_obj)
+    # Wait for element to be exist, visible,present and enabled
+    wait_for_element(chk_box_obj)
 
-      # Focus on element to make it visible
-      focus_on_element(chk_box_obj)
+    # Focus on element to make it visible
+    focus_on_element(chk_box_obj)
 
-      # get the state of object
-      chk_box_obj = chk_box_obj.set?
+    # get the state of object
+    chk_box_obj = chk_box_obj.set?
 
-    else
-      fail("Entered #{obj_state} state is not found please use Disabled,Enabled and Checked only in Gherkin")
+  else
+    fail("Entered #{obj_state} state is not found please use Disabled,Enabled and Checked only in Gherkin")
   end
 
   # Soft Fail the steps and continues to next step
@@ -153,8 +153,8 @@ Then(/^the user check "(.*)" checkbox with hidden or overlapped the input field 
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{chk_box_name} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
-  chk_box_label_path= element_path+'/following-sibling::label'
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
+  chk_box_label_path = element_path + '/following-sibling::label'
   # Create the checkbox object
   chk_box_obj_label = @browser.label(selector, chk_box_label_path)
   chk_box_obj = @browser.radio(selector, element_path)
@@ -183,8 +183,8 @@ Then(/^the user uncheck "(.*)" checkbox with hidden or overlapped the input fiel
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{chk_box_name} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
-  chk_box_label_path= element_path+'/following-sibling::label'
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
+  chk_box_label_path = element_path + '/following-sibling::label'
 
   # Create the checkbox object
   chk_box_obj_label = @browser.label(selector, chk_box_label_path)
@@ -218,8 +218,8 @@ Then(/^the user sees "(.*)" checkbox with hidden or overlapped the input field i
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
-  chk_box_label_path= element_path+'/following-sibling::label'
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
+  chk_box_label_path = element_path + '/following-sibling::label'
 
   # Create the radio button object
   chk_box_obj_label = @browser.label(selector, chk_box_label_path)

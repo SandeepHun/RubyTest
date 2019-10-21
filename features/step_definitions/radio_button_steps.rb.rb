@@ -5,7 +5,7 @@ Then(/^the user click "(.*)" radio button on "(.*)" page$/) do |btn_name, page_n
 
   # get the XPATH or CSS from page object file, Raises Error if not found
   begin
-  selector, element_path = get_element_target(btn_name, page_name).split('^^')
+    selector, element_path = get_element_target(btn_name, page_name).split('^^')
   rescue
     fail("Element Xpath is not found for #{btn_name} in #{page_name} page objects File")
   end
@@ -13,7 +13,7 @@ Then(/^the user click "(.*)" radio button on "(.*)" page$/) do |btn_name, page_n
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{btn_name} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
 
   # Create the radio button object
   radio_btn_obj = @browser.radio(selector, element_path)
@@ -29,11 +29,11 @@ Then(/^the user click "(.*)" radio button on "(.*)" page$/) do |btn_name, page_n
   # if radio_btn_obj.eql? true
   #   # Skip Clicking on radio button as already checked
   # else
-    # Create the radio button object
-    # radio_btn_obj = @browser.radio(selector, element_path)
+  # Create the radio button object
+  # radio_btn_obj = @browser.radio(selector, element_path)
 
-    # Click on radio button
-    radio_btn_obj.set
+  # Click on radio button
+  radio_btn_obj.set
 
   # end
 
@@ -52,38 +52,38 @@ Then(/^the user sees "([^"]*)" radio button is "([^"]*)" on "([^"]*)" page$/) do
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
 
   # Case to check for Enable or Disable object state to verify
   case obj_state.downcase
-    when 'disabled'
-      # Create the radio button object
-      radio_btn_obj = @browser.radio(selector, element_path)
+  when 'disabled'
+    # Create the radio button object
+    radio_btn_obj = @browser.radio(selector, element_path)
 
-      # Wait for element to be present
-      wait_for_disable_element(radio_btn_obj)
+    # Wait for element to be present
+    wait_for_disable_element(radio_btn_obj)
 
-      # Focus on element to make it visible
-      focus_on_element(radio_btn_obj)
+    # Focus on element to make it visible
+    focus_on_element(radio_btn_obj)
 
-      # get the state of object
-      radio_btn_obj = radio_btn_obj.disabled?
+    # get the state of object
+    radio_btn_obj = radio_btn_obj.disabled?
 
-    when 'enabled'
-      # Create the radio button object
-      radio_btn_obj = @browser.radio(selector, element_path)
+  when 'enabled'
+    # Create the radio button object
+    radio_btn_obj = @browser.radio(selector, element_path)
 
-      # Wait for element to be exist, visible,present and enabled
-      wait_for_element(radio_btn_obj)
+    # Wait for element to be exist, visible,present and enabled
+    wait_for_element(radio_btn_obj)
 
-      # Focus on element to make it visible
-      focus_on_element(radio_btn_obj)
+    # Focus on element to make it visible
+    focus_on_element(radio_btn_obj)
 
-      # get the state of object
-      radio_btn_obj = radio_btn_obj.enabled?
+    # get the state of object
+    radio_btn_obj = radio_btn_obj.enabled?
 
-    else
-      fail("Entered #{obj_state} state is not found please use Disabled or Enabled only in Gherkin")
+  else
+    fail("Entered #{obj_state} state is not found please use Disabled or Enabled only in Gherkin")
 
   end
 
@@ -104,8 +104,8 @@ Then(/^the user "(.*)" the "(.*)" radio button with hidden or overlapped the inp
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{btn_name} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
-radio_btn_label_path= element_path+'/following-sibling::label'
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
+  radio_btn_label_path = element_path + '/following-sibling::label'
 
   # Create the radio button object
   radio_btn_obj_label = @browser.label(selector, radio_btn_label_path)
@@ -154,8 +154,8 @@ Then(/^the user sees "(.*)" radio button with hidden or overlapped the input fie
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
-  radio_btn_label_path= element_path+'/following-sibling::label'
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
+  radio_btn_label_path = element_path + '/following-sibling::label'
 
   # Create the radio button object
   radio_btn_obj_label = @browser.label(selector, radio_btn_label_path)

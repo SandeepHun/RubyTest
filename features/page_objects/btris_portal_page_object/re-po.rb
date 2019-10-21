@@ -1,5 +1,5 @@
-def map_btris_portal
-  @page_objects['btris_portal'] =
+def new_map_btris_portal
+  @page_objects['--btris_portal'] =
 
 
       {
@@ -7,9 +7,9 @@ def map_btris_portal
           'btris home: landing page' => "xpath^^.//*[contains(@class, 'login-to-btris__heading')]",
           #'btris home: login button'                         =>"xpath^^.//*[contains(@class, 'btn round btn-lg my-1 mx-1 learn-more-button')]",
           'btris: login button' => "xpath^^.//*[@class='btn round btn-lg btn-secondary'][contains(text(), 'Log In')]",
-          'btris: user name' => "xpath^^.//*[@id='USER']",
+          'btris: user name' => "xpath^^.//*[@id='USER'][@class='feedback-input2']",
           'btris: password' => "xpath^^.//*[@id='PASSWORD']",
-          'btris: login to dashboard button' => "xpath^^.//*[@id='Image2']",
+          'btris: login to dashboard button' => 'xpath^^//*[@class="button turquoise"]',
           'btris: accept button' => "xpath^^.//*[contains(@data-test, 'accept-conditions-of-use-button')]",
           'btris: logout drop down' => "xpath^^.//*[@id='nav-user-dropdown']",
           'btris: logout' => "xpath^^.//*[contains(@data-test, 'nav-user-dropdown-logout')]",
@@ -31,10 +31,6 @@ def map_btris_portal
           'protocol check button' => "xpath^^.//*[@class='custom-control custom-checkbox']",
           'edited meds protocol check button' => "xpath^^.//*[@data-test='protocol-checkbox']",
           'run admin report button' => "xpath^^.//*[contains(@data-test, 'criteria-next-button-top')]",
-          'brtis logo img' => "xpath^^.//*[@style='-webkit-user-select: none;margin: auto;']",
-          'echocardiogram test selected' => "xpath^^//*[@id='red-quick-pick__autocomplete-listbox-2105076']",
-
-
 
 
           #Laboratory Test.
@@ -81,7 +77,7 @@ def map_btris_portal
           'irb inclusion' => "xpath^^.//*[@class='custom-control-description radio__label-text'][contains(text(), 'IRB Inclusion Enrollment')]",
           'scan pd document' => "xpath^^.//*[@class='custom-control-description checkbox__label-text'][contains(text(), '12-Lead Electrocardiogram, Document Image')]",
           'selected protocol' => "xpath^^.//*[@data-test='protocol-number']",
-          'user name attribute' => "xpath^^.//*[@for='USER']",
+          'user name attribute' => 'xpath^^//*[@id="Login"]/div/div[2]/label/span/strong',
           'admin reports' => "xpath^^.//*[@class='custom-control-description radio__label-text'][contains(text(), 'Radiology Administration')]",
           'reports results' => "xpath^^.//*[@data-test='results-preview-table']/tbody/tr[1]/td[3]",
           'radiology admin results' => "xpath^^.//*[@data-test='results-preview-table']/tbody/tr[1]/td[2]",
@@ -117,10 +113,6 @@ def map_btris_portal
           'btris: assessment select subject button' => "xpath^^.//*[@id='app']/div/div[1]/div[2]/div[2]/div/div/div/div/form/div[1]/div[2]/div/div[2]/button",
           'select all assessment button' => "xpath^^.//*[@for='assessments-red-quick-pick-select-all']",
           'assessment protocol subject' => "xpath^^.//*[@id='app']/div/div[1]/div[2]/div[2]/div/div/div[1]/div/div/div[2]/div[2]/table/tbody/tr[1]/td[1]/div/labelb",
-          'niaa assessment input field' => "xpath^^//*[@id='red-quick-pick__autocomplete']",
-          'niaa assessment value' => "xpath^^//*[@id='red-quick-pick__autocomplete-listbox-C3167185']",
-          'niaa assessment value selects' => "xpath^^//*[@id='red-quick-pick__autocomplete-listbox-C3167185'][contains(text(), 'Addiction Severity Index (NIAAA, ASM_ASI)')]",
-
           #Clinical Documents - Discrete Values
           'clinical documents: discrete values' => "xpath^^.//*[@data-test='9-radio-value'][contains(@class, 'custom-control custom-radio')]",
           'btris: clinical documents: discrete values filter report page' => "xpath^^.//*[contains(text(), 'Clinical Documents - Discrete Values Criteria')]",
@@ -157,16 +149,9 @@ def map_btris_portal
           'search subject s2' => "xpath^^.//*[contains(@data-test, 'results-preview-table')]//*[contains(text(), 'NIHCCTEST, INNA NMN')]",
           'search subject pn' => "xpath^^.//*[contains(@data-test, 'results-preview-table')]//*[contains(text(), '00-C-0018')]",
           'search subject pn1' => "xpath^^.//*[contains(@data-test, 'results-preview-table')]//*[contains(text(), 'BTRIS-TEST-03')]",
-          'search subject pd1' => "xpath^^.//*[@data-test='results-preview-table']/tbody/tr[1]/td[1]",
+          'search subject pd1' => "xpath^^.//*[contains(@data-test, 'results-preview-table')]//*[contains(text(), 'BTRIS-TEST-0')]",
           'search prod subject pd1' => "xpath^^.//*[contains(@data-test, 'results-preview-table')]//*[contains(text(), '00-C-0018')]",
           'pdf link' => "xpath^^.//*[@data-test='results-preview-table']/tbody/tr[1]/td[7]//a",
-          'scanned pdf input field' => "xpath^^//*[@id='red-quick-pick__autocomplete']",
-          'scanned pdf doc value' => "xpath^^//*[@class='auto-suggest-field__listbox-item'][contains(text(), 'Acupuncture Consult, Document Image')]",
-          'scanned pdf list value' => "xpath^^//*[@id='red-quick-pick__autocomplete']",
-          'scanned pdf doc value 2' => "xpath^^//*[@id='red-quick-pick__autocomplete-listbox-2159771']",
-          'scanned pdf doc value 3' => "xpath^^//*[@id='red-quick-pick__autocomplete-listbox-524367151']",
-          'scanned pdf doc value 4' => "xpath^^//*[@id='red-quick-pick__autocomplete-listbox-524367152']",
-
 
           'search subject s3' => "xpath^^.//*[contains(@data-test, 'results-preview-table')]//*[contains(text(), '00-C-0018')]",
           'pdf documents buttom select button' => "xpath^^.//*[@id='app']/div[2]/div[1]/div[2]/div[2]/div/div/div/div/form/div[2]/div/div[4]/div[2]/button",
@@ -242,16 +227,6 @@ def map_btris_portal
           'select ekg subject bottom button' => "xpath^^.//*[@data-test='criteria-next-button-bottom']",
           'ekg result page' => "xpath^^.//*[contains(text(), 'EKG Results Preview -')]",
           'report table: subject name' => "xpath^^.//*[contains(text(), 'Subject Name')]",
-          'observation text box' => "xpath^^//*[@id='red-quick-pick__autocomplete']",
-          'observation value 1' => "xpath^^//*[@id='red-quick-pick__autocomplete-listbox-2177311']",
-          'observation value 2' => "xpath^^//*[@id='red-quick-pick__autocomplete-listbox-3147199']",
-          'observation value 3' => "xpath^^//*[@id='red-quick-pick__autocomplete-listbox-113243']",
-          'observation value 4' => "xpath^^//*[@id='red-quick-pick__autocomplete-listbox-113251']",
-          'observation value 5' => "xpath^^//*[@id='red-quick-pick__autocomplete-listbox-113249']",
-
-
-
-
           #Microbiology Test
           'btris: microbiology test' => "xpath^^.//*[@data-test='14-radio-value'][contains(@class, 'custom-control custom-radio')]",
           'btris: microbiology report page' => "xpath^^.//*[contains(text(), 'Microbiology Criteria')]",
@@ -267,14 +242,6 @@ def map_btris_portal
           'select all echocardiogram tests checkbox' => "xpath^^.//*[@for='echocardiogramTests-red-quick-pick-select-all']",
           'select echocardiogram subject top button' => "xpath^^.//*[@data-test='criteria-next-button-top']",
           'echocardiogram result page' => "xpath^^.//*[contains(text(), 'Echocardiogram Results Preview -')]",
-          'echo tests 2' => "xpath^^//*[@id='red-quick-pick__autocomplete-listbox-2105073']",
-          'echo tests 3' => "xpath^^//*[@id='red-quick-pick__autocomplete-listbox-2105072']",
-          'echo tests 4' => "xpath^^//*[@id='red-quick-pick__autocomplete-listbox-2105074']",
-          'echo tests 5' => "xpath^^//*[@id='red-quick-pick__autocomplete-listbox-2105075']",
-          'echo tests 6' => "xpath^^//*[@id='red-quick-pick__autocomplete-listbox-2104892']",
-
-
-
           #Reference List Report
           'custom user drop down' => "xpath^^.//*[@id='nav-user-dropdown']",
           'custom list' => "xpath^^.//*[@data-test='nav-user-dropdown-custom-list-management']",
@@ -406,14 +373,9 @@ def map_btris_portal
           'echo result tab' => "xpath^^.//*[@data-test='report-tab-link-124972']",
           'ekg result tab' => "xpath^^.//*[@data-test='report-tab-link-124973']",
           'echo report value' => "xpath^^.//*[@data-test='12-radio-value']//*[contains(text(), 'Echocardiogram')]",
-          'echo tests' => "xpath^^//*[contains(text(), 'Modified Bruce Protocol Exercise Tolerance Echocardiography, Procedure')]",
+          'echo tests' => "xpath^^.//*[@class='custom-control-description checkbox__label-text'][contains(text(), 'Modified Bruce Protocol Exercise Tolerance Echocardiography, Procedure')]",
           'nav bar in mobile' => "xpath^^.//*[@aria-label='Toggle navigation']",
           'homepage nav bar in mobile' => "xpath^^.//*[@class='navbar-toggler navbar-toggler-right collapsed']",
-          'echocardiogram tests search fields' => "xpath^^.//*[@id='red-quick-pick__autocomplete'][contains(@placeholder, 'Start typing to find echocardiogram tests')]",
-          'echocardiogram tests input' => "xpath^^//*[@id='red-quick-pick__autocomplete-listbox-2105076']",
-          'list remove confirmation' => "xpath^^//body/div[3]/div/div[contains(text(), 'Search term list removed')]",
-          'echocardiogram components search fields' => "xpath^^.//*[@placeholder='Start typing to find echocardiogram test components']",
-          'echocardiogram test components' => "xpath^^//*[@id='red-quick-pick__autocomplete-listbox-2104942']",
 
 
           #My Report Selection
@@ -453,16 +415,11 @@ def map_btris_portal
           'radiology exam end date' => "xpath^^.//*[@id='examDateRange-date-range-end-date']",
           'vital sign measurement start date' => "xpath^^.//*[@id='measurementDateRange-date-range-start-date']",
           'vital sign measurement end date' => "xpath^^.//*[@id='measurementDateRange-date-range-end-date']",
-          'select custom radiology test link' => "xpath^^.//*[@class='toolbar-link-label__label']",
-          'custom list value' => "xpath^^.//*[contains(text(), 'Radiology Template 101')]",
-          'load selected lists button' => "xpath^^//*[@class='btn round btn-lg btn-primary'][contains(text(),'Load Selected Lists')]",
+
 
           #Smart Cart Login.
           'smart cart login page' => "xpath^^.//*[@class='graybox pivcard_block']//*[contains(text(), 'Login with Smart Card')]",
           'alternative login link' => "xpath^^.//*[@id='form']/p/a",
-          'user name attribute sc' => 'xpath^^//*[@id="Login"]/div/div[2]/label/span/strong',
-          'btris: smart card login to dashboard button' => "xpath^^//*[@value='LOGIN']",
-
 
       }
 end

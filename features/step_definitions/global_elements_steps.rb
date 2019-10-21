@@ -10,7 +10,7 @@ Then(/^the user remembers the value of "(.*)" field on "(.*)" page$/) do |field_
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
 
   #Create the element object
   element_obj = @browser.element(selector, element_path)
@@ -41,7 +41,7 @@ Then(/^the user remembers the value of "(.*)" field into "(.*)" on "(.*)" page$/
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
 
   #Create the element object
   element_obj = @browser.element(selector, element_path)
@@ -54,7 +54,7 @@ Then(/^the user remembers the value of "(.*)" field into "(.*)" on "(.*)" page$/
 
   #get element value of object
   element_value = element_obj.text
-  puts "the value or data you wish to remember is " +element_value
+  puts "the value or data you wish to remember is " + element_value
 
   # Save readed value into hash table
   save_value_in_test_data_hash(hash_key_name.downcase, element_value)
@@ -72,7 +72,7 @@ Then(/^the user must see "(.*)" text in "(.*)" field on "(.*)" page$/) do |text_
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{element_name} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
 
   # Create the page element object
   element_obj = @browser.element(selector, element_path)
@@ -102,24 +102,24 @@ Then(/^the user selects "(.*)" from "(.*)" score html calendar on "(.*)" page$/)
 
   # get the XPATH or CSS from page object file , Raises Error if not found
   begin
-  selector, element_path = get_element_target(field_name, page_name).split('^^')
+    selector, element_path = get_element_target(field_name, page_name).split('^^')
   rescue
     fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
   end
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
 
-  calendar_icon_obj = get_element_obj selector,element_path
+  calendar_icon_obj = get_element_obj selector, element_path
 
   click_web_element calendar_icon_obj
 
   # Get the Date values from date functions if requested in Gherkin parameter
-  if (value.downcase.eql? 'todays date') || (value.downcase.eql? 'start date of current month')|| (value.downcase.eql? 'tomorrows date')|| (value.downcase.eql? 'next year from todays date')|| (value.downcase.eql? 'next business date')
+  if (value.downcase.eql? 'todays date') || (value.downcase.eql? 'start date of current month') || (value.downcase.eql? 'tomorrows date') || (value.downcase.eql? 'next year from todays date') || (value.downcase.eql? 'next business date')
     value = get_date_value(value)
     time = Date.strptime(value, '%m/%d/%Y')
-    select_date=time.strftime('%-d')
+    select_date = time.strftime('%-d')
     select_month = time.strftime('%b')
     select_year = time.strftime('%Y')
   else
@@ -140,7 +140,7 @@ Then(/^the user selects "(.*)" from "(.*)" score html calendar on "(.*)" page$/)
   focus_on_element(month_drop_down_obj)
   # Check Select value only not already selected
   if month_drop_down_obj.text.squeeze(' ').strip.downcase != select_month.squeeze(' ').strip.downcase
-    month_drop_down_element_path = calendar_month_xpath+"/option[normalize-space() = '#{select_month}']"
+    month_drop_down_element_path = calendar_month_xpath + "/option[normalize-space() = '#{select_month}']"
     # Create dropdown div object and wait to displayed
     month_drop_down_obj = @browser.element(selector, month_drop_down_element_path)
     # Wait for element to be exist, visible,present and enabled
@@ -160,7 +160,7 @@ Then(/^the user selects "(.*)" from "(.*)" score html calendar on "(.*)" page$/)
   focus_on_element(year_drop_down_obj)
   # Check Select value only not already selected
   if year_drop_down_obj.text.squeeze(' ').strip.downcase != select_year.squeeze(' ').strip.downcase
-    year_drop_down_element_path = calendar_year_xpath+"/option[normalize-space() = '#{select_year}']"
+    year_drop_down_element_path = calendar_year_xpath + "/option[normalize-space() = '#{select_year}']"
     # Create dropdown div object and wait to displayed
     year_drop_down_obj = @browser.element(selector, year_drop_down_element_path)
     # Wait for element to be exist, visible,present and enabled
@@ -170,39 +170,14 @@ Then(/^the user selects "(.*)" from "(.*)" score html calendar on "(.*)" page$/)
     year_drop_down_obj.wait_until_present.click
   end
 
-# Click on Date
+  # Click on Date
   calendar_date_xpath = "#{element_path}/following::a[text()='#{select_date}']"
-  calendar_date_obj = get_element_obj selector,calendar_date_xpath
+  calendar_date_obj = get_element_obj selector, calendar_date_xpath
   click_web_element calendar_date_obj
 
 end
 
-  Then(/^the user clicks on "(.*)" element on "(.*)" page$/) do |field_name, page_name|
-    # get the XPATH or CSS from page object file , Raises Error if not found
-    begin
-      selector, element_path = get_element_target(field_name, page_name).split('^^')
-    rescue
-      fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
-    end
-    if selector.nil? || element_path.nil?
-      fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
-    end
-    selector =(selector.downcase.include? 'xpath') ? :xpath : :css
-
-    # Create the Element object
-    element_obj = @browser.element(selector, element_path)
-
-    # Wait for element to be present
-    wait_for_element(element_obj)
-
-    # Focus on element to make it visible
-    focus_on_element(element_obj)
-
-    element_obj.click
-
-  end
-
-Then(/^the user clicks on "(.*)" accept button on "(.*)" page$/) do |field_name, page_name|
+Then(/^the user clicks on "(.*)" element on "(.*)" page$/) do |field_name, page_name|
   # get the XPATH or CSS from page object file , Raises Error if not found
   begin
     selector, element_path = get_element_target(field_name, page_name).split('^^')
@@ -210,10 +185,9 @@ Then(/^the user clicks on "(.*)" accept button on "(.*)" page$/) do |field_name,
     fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
   end
   if selector.nil? || element_path.nil?
-    puts ("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
-  else
-    puts 'element'
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+    fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
+  end
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
 
   # Create the Element object
   element_obj = @browser.element(selector, element_path)
@@ -226,7 +200,86 @@ Then(/^the user clicks on "(.*)" accept button on "(.*)" page$/) do |field_name,
 
   element_obj.click
 end
+
+Then(/^the user clicks on "(.*)" download button on "(.*)" page$/) do |field_name, page_name|
+  # get the XPATH or CSS from page object file , Raises Error if not found
+  begin
+    selector, element_path = get_element_target(field_name, page_name).split('^^')
+  rescue
+    fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
+  end
+  if selector.nil? || element_path.nil?
+    fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
+  end
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
+
+  # Create the Element object
+  element_obj = @browser.element(selector, element_path)
+
+  # Wait for element to be present
+  wait_for_element(element_obj)
+
+  # Focus on element to make it visible
+  focus_on_element(element_obj)
+
+  element_obj.click(DOWNLOAD_DIR)
+
+
 end
+
+
+Then(/^the user focus and clicks on "(.*)" element on "(.*)" page$/) do |field_name, page_name|
+  # get the XPATH or CSS from page object file , Raises Error if not found
+  begin
+    selector, element_path = get_element_target(field_name, page_name).split('^^')
+  rescue
+    fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
+  end
+  if selector.nil? || element_path.nil?
+    fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
+  end
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
+
+  # Create the Element object
+  element_obj = @browser.element(selector, element_path)
+
+  # Wait for element to be present
+  wait_for_element(element_obj)
+
+  # Focus on element to make it visible
+  focus_on_element(element_obj)
+
+  click_web_element(element_obj)
+
+end
+
+
+Then(/^the user clicks on "(.*)" accept button on "(.*)" page$/) do |field_name, page_name|
+  # get the XPATH or CSS from page object file , Raises Error if not found
+  begin
+    selector, element_path = get_element_target(field_name, page_name).split('^^')
+  rescue
+    fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
+  end
+  if selector.nil? || element_path.nil?
+    puts ("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
+  else
+    puts 'element'
+    selector = (selector.downcase.include? 'xpath') ? :xpath : :css
+
+    # Create the Element object
+    element_obj = @browser.element(selector, element_path)
+
+    # Wait for element to be present
+    wait_for_element(element_obj)
+
+    # Focus on element to make it visible
+    focus_on_element(element_obj)
+
+    element_obj.click
+  end
+end
+
 # Check element is enable or disable
 Then(/^the user can see "(.*)" element is "(.*)" on "(.*)" page$/) do |field_name, obj_state, page_name|
 
@@ -234,45 +287,45 @@ Then(/^the user can see "(.*)" element is "(.*)" on "(.*)" page$/) do |field_nam
 
   # get the XPATH or CSS from page object file, Raises Error if not found
   begin
-  selector, element_path = get_element_target(field_name, page_name).split('^^')
+    selector, element_path = get_element_target(field_name, page_name).split('^^')
   rescue
     fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
   end
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
 
   # Case to check for Enable or Disable object state to verify
   case obj_state.downcase
-    when 'disabled'
-      # Create the text area object
-      element_obj = @browser.element(selector, element_path)
+  when 'disabled'
+    # Create the text area object
+    element_obj = @browser.element(selector, element_path)
 
-      # Wait for element to be present
-      wait_for_disable_element(element_obj)
+    # Wait for element to be present
+    wait_for_disable_element(element_obj)
 
-      # Focus on element to make it visible
-      focus_on_element(element_obj)
+    # Focus on element to make it visible
+    focus_on_element(element_obj)
 
-      # get the state of object
-      element_obj = element_obj.disabled?
+    # get the state of object
+    element_obj = element_obj.disabled?
 
-    when 'enabled'
-      # Create the text area object
-      element_obj = @browser.element(selector, element_path)
+  when 'enabled'
+    # Create the text area object
+    element_obj = @browser.element(selector, element_path)
 
-      # Wait for element to be exist, visible,present and enabled
-      wait_for_element(element_obj)
+    # Wait for element to be exist, visible,present and enabled
+    wait_for_element(element_obj)
 
-      # Focus on element to make it visible
-      focus_on_element(element_obj)
+    # Focus on element to make it visible
+    focus_on_element(element_obj)
 
-      # get the state of object
-      element_obj = element_obj.enabled?
+    # get the state of object
+    element_obj = element_obj.enabled?
 
-    else
-      fail("Entered #{obj_state} state is not found please use Disabled or Enabled only in Gherkin")
+  else
+    fail("Entered #{obj_state} state is not found please use Disabled or Enabled only in Gherkin")
 
   end
 
@@ -294,9 +347,9 @@ Then(/^the user cannot see "(.*)" element on "(.*)" page$/) do |field_name, page
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
 
-  element_obj = check_element_present selector,element_path
+  element_obj = check_element_present selector, element_path
 
   # Soft Fail the steps and continues to next step
   checkpoint (element_obj.eql? false), "The #{field_name} is present on #{page_name} page"
@@ -313,26 +366,23 @@ end
 When(/^user attached "(.*)" file into "(.*)" on "(.*)" page$/) do |attached_file_location, field_name, page_name|
   if RUBY_PLATFORM.downcase.include?("linux")
     puts 'Linux upload'
-  suite_dir_path1='\\var\\lib\\jenkins\\BTRIS-Automation-Test\\features\\support\\Documents\\'+attached_file_location
+    suite_dir_path1 = "#{Dir.pwd}"+'/features/support/Documents/'+attached_file_location
 
-  suite_dir_path1 = suite_dir_path1.gsub! '/', '\\'
-
-  # get the XPATH or CSS from page object file , Raises Error if not found
-  begin
-    selector, element_path = get_element_target(field_name, page_name).split('^^')
-  rescue
-    fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
-  end
-  if selector.nil? || element_path.nil?
-    fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
-  end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
-
-  @browser.element(selector, element_path).send_keys suite_dir_path1
-  sleep 1
-  # @browser.element(selector,".//*[@id='ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_signature_lincPassSignatureSubmit']").click
-  else
-    suite_dir_path="#{Dir.pwd}"+'/features/support/Documents/'+attached_file_location
+    # get the XPATH or CSS from page object file , Raises Error if not found
+    begin
+      selector, element_path = get_element_target(field_name, page_name).split('^^')
+    rescue
+      fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
+    end
+    if selector.nil? || element_path.nil?
+      fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
+    end
+    selector = (selector.downcase.include? 'xpath') ? :xpath : :css
+    puts 'Linux upload step is here =====>>>>'
+    @browser.element(selector, element_path).send_keys suite_dir_path1
+    sleep 1
+    puts 'Linux upload step is complete =====>>>>'  else
+    suite_dir_path = "#{Dir.pwd}" + '/features/support/Documents/' + attached_file_location
 
     suite_dir_path = suite_dir_path.gsub! '/', '\\'
 
@@ -345,12 +395,12 @@ When(/^user attached "(.*)" file into "(.*)" on "(.*)" page$/) do |attached_file
     if selector.nil? || element_path.nil?
       fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
     end
-    selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+    selector = (selector.downcase.include? 'xpath') ? :xpath : :css
 
     @browser.element(selector, element_path).send_keys suite_dir_path
     sleep 1
-  # @browser.element(selector,".//*[@id='ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_signature_lincPassSignatureSubmit']").click
+    # @browser.element(selector,".//*[@id='ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_signature_lincPassSignatureSubmit']").click
   end
-  end
+end
 
 World(MiniTest::Assertions)

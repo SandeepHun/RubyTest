@@ -1030,8 +1030,26 @@ Then(/^the user click on accept on the warning message if applicable/) do
 end
 
 Then(/^the user logged out of the system/) do
-  step "the user clicks on \"btris: logout drop down\" element on \"Btris/Portal\" page"
-  step "the user clicks on \"btris: logout\" element on \"Btris/Portal\" page"
+  if ENV['TEST_ENV'].downcase.eql? 'test_mobile'
+    puts ("Executing Environment is : #{ENV['TEST_ENV']}")
+    step "the user clicks on \"nav bar in mobile\" element on \"Btris/Portal\" page"
+    step "the user clicks on \"btris: logout drop down\" element on \"Btris/Portal\" page"
+    #step "the user clicks on \"btris: logout drop down\" element on \"Btris/Portal\" page"
+    step "the user clicks on \"btris: logout\" element on \"Btris/Portal\" page"
+  else
+    if ENV['TEST_ENV'].downcase.eql? 'prod_mobile'
+      puts ("Executing Environment is : #{ENV['TEST_ENV']}")
+      step "the user focus and clicks on \"nav bar in mobile\" element on \"Btris/Portal\" page"
+      step "the user focus and clicks on \"btris: logout drop down\" element on \"Btris/Portal\" page"
+      #step "the user focus and clicks on \"btris: logout drop down\" element on \"Btris/Portal\" page"
+      step "the user focus and clicks on \"btris: logout\" element on \"Btris/Portal\" page"
+    else
+      puts ("Test is not running in mobile emulator, Executing Environment is : #{ENV['TEST_ENV']}")
+      sleep 2
+      step "the user clicks on \"btris: logout drop down\" element on \"Btris/Portal\" page"
+      step "the user clicks on \"btris: logout\" element on \"Btris/Portal\" page"
+    end
+  end
 end
 
 And(/^the user click on the radiology record to verify the image$/) do
@@ -1049,7 +1067,7 @@ And(/^the user click on the radiology record to verify the image$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_obj 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]/a"
-        puts 'Note! these are test data not actual data, the pulmonary Results are ' +del_obj
+        puts 'Note! these are test data not actual data, the pulmonary Results are ' + del_obj
         step "user accept browser pop-ups"
         # sleep 4r7y,o
       end
@@ -1126,12 +1144,36 @@ And(/^the user verify the laboratory report on the table$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
-        puts 'Note! These are test data and not actual data, the Laboratory Results are ' +del_obj
+        puts 'Note! These are test data and not actual data, the Laboratory Results are ' + del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
   end
 end
+
+And(/^the user verify the pagination on the report table$/) do
+  sleep 3
+  record_found = false
+  table_path = ".//*[@data-test='records-top-pagination']"
+  check_record_present = get_elements_size 'xpath', "#{table_path}//*[contains(@data-test, 'button')]"
+  if check_record_present > 1
+    #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
+    table_rows = get_elements_size 'xpath', "#{table_path}//*[contains(@data-test, 'button')]"
+    puts table_rows
+    (1..table_rows).each do |rows|
+      #delete_icons_row = get_element_text 'xpath', "#{table_path}//*[contains(@data-test, 'button')]"
+      #puts 'the row number is ' +delete_icons_row
+      # new_document = "1"
+      # if delete_icons_row.downcase.eql? new_document.downcase
+      #record_found = true
+      del_obj = get_element_text 'xpath', "#{table_path}//*[contains(@data-test, 'next-button')]"
+      puts 'Note! These are test data and not actual data, the Laboratory Results are ' + del_obj
+      click_web_element (del_obj)
+    end
+  end
+  checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
+end
+
 
 And(/^the user verify the laboratory prod report on the table$/) do
   record_found = false
@@ -1148,7 +1190,7 @@ And(/^the user verify the laboratory prod report on the table$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
-        puts 'Note! These are test data and not actual data, the Laboratory Results are ' +del_obj
+        puts 'Note! These are test data and not actual data, the Laboratory Results are ' + del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
@@ -1170,7 +1212,7 @@ And(/^the user verify the new laboratory report on the table$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
-         puts 'Note! These are test data and not actual data, the the Laboratory Results are ' +del_obj
+        puts 'Note! These are test data and not actual data, the the Laboratory Results are ' + del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
@@ -1194,7 +1236,7 @@ And(/^the user verify the diagnosis and procedure report on the table$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
-        puts 'Note! this is a test data and not actual data, the diagnosis Results are ' +del_obj
+        puts 'Note! this is a test data and not actual data, the diagnosis Results are ' + del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the Diagnosis and Procedure search"
@@ -1216,7 +1258,7 @@ And(/^the user verify the diagnosis and procedure prod report on the table$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
-        puts 'Note! this is a test data and not actual data, the diagnosis Results are ' +del_obj
+        puts 'Note! this is a test data and not actual data, the diagnosis Results are ' + del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the Diagnosis and Procedure search"
@@ -1238,7 +1280,7 @@ And(/^the user verify the diagnosis and procedure report on the table 2$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
-        puts 'Note! this is a test data and not actual data, the Demographics Results are ' +del_obj
+        puts 'Note! this is a test data and not actual data, the Demographics Results are ' + del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the Demographics search"
@@ -1247,23 +1289,51 @@ end
 
 And(/^the user test the pagination of the report$/) do
   sleep 3
-  if pagination_path = "//*[@class='page-item']"
-  check_record_present = get_elements_size 'xpath', "#{pagination_path}"
-if check_record_present > 1
-  table_rows = get_elements_size 'xpath', "#{pagination_path}"
-  (1..table_rows).each do |rows|
-    del_obj = get_element_obj 'xpath', "#{pagination_path}"
-    click_web_element del_obj
+  if pagination_path = ".//*[@data-test='records-top-pagination']"
+    check_record_present = get_elements_size 'xpath', "#{pagination_path}//li"
+    if check_record_present > 2
+      table_rows = get_elements_size 'xpath', "#{pagination_path}//li"
+      puts "total pegination is" + check_record_present
+      (1..table_rows).each do |rows|
+        del_obj = get_element_obj 'xpath', "#{pagination_path}//li"
+        click_web_element del_obj
 
-    # ok_conf_obj = get_element_obj 'xpath', ".//*[contains(text(),'OK')]"
-    # click_web_element ok_conf_obj
-    sleep 5
+        # ok_conf_obj = get_element_obj 'xpath', ".//*[contains(text(),'OK')]"
+        # click_web_element ok_conf_obj
+        sleep 5
+      end
+    else
+      puts 'No pagination available for this report, report loads on a single page'
+    end
   end
-else
-  puts 'No pagination available for this report, report loads on a single page'
 end
+
+
+
+And(/^the user click to open the pagination of the report$/) do
+  record_found = false
+  table_path = ".//*[@data-test='records-top-pagination']"
+  check_record_present = get_elements_size 'xpath', "#{table_path}//li"
+  if check_record_present > 2
+    table_rows = get_elements_size 'xpath', "#{table_path}//li[contains(@class, 'page-item')]"
+    puts table_rows
+    (1..table_rows).each do |rows|
+      delete_icons_row = get_element_text 'xpath', "#{table_path}//*[contains(@class, 'page-link')]"
+      puts 'the row number is ' +delete_icons_row
+      if table_rows > 2
+        record_found = true
+        del_obj = get_element_obj 'xpath', ".//*[contains(@data-test, 'next-button')]//*[contains(@class, 'page-link')]"
+        click_web_element del_obj
+        step "the user remembers the value of \"reports results\" field into \"Loaded Report\" on \"Btris/Portal\" page"
+        sleep 1
+      end
+    end
+    checkpoint (record_found.eql? true), "No pagination found"
+  end
 end
-end
+
+
+
 
 
 And(/^the user verify the demographics report on the table$/) do
@@ -1282,7 +1352,7 @@ And(/^the user verify the demographics report on the table$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
-        puts 'Note! this is a test data and not actual data, the Demographics Results are ' +del_obj
+        puts 'Note! this is a test data and not actual data, the Demographics Results are ' + del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the Demographics search"
@@ -1304,7 +1374,7 @@ And(/^the user verify the demographics prod report on the table$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
-        puts 'Note! this is a test data and not actual data, the Demographics Results are ' +del_obj
+        puts 'Note! this is a test data and not actual data, the Demographics Results are ' + del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the Demographics search"
@@ -1327,7 +1397,7 @@ And(/^the user verify the assessment report report on the table$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         #del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
-       # puts 'the MRN for the Laboratory Results are ' +del_obj
+        # puts 'the MRN for the Laboratory Results are ' +del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the search"
@@ -1373,7 +1443,7 @@ And(/^the user verify the clinical documents discrete values report on the table
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
-        puts 'Note! these are test data not actual data, the validated diagnosis Results are ' +del_obj
+        puts 'Note! these are test data not actual data, the validated diagnosis Results are ' + del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in report table that matches the search criteria"
@@ -1387,25 +1457,25 @@ And(/^the user verify the clinical documents discrete values "(.*)" actual repor
     puts "Search criteria return message #{value} ,for the search query"
   else
     record_found = false
-  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
-  check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
-  if check_record_present > 2
-    #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
-    table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
-    puts table_rows
-    (1..table_rows).each do |rows|
-      delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
-      #puts 'the row number is ' +delete_icons_row
-      new_document = "BOWEN, JEANNE DOLORES"
-      if delete_icons_row.downcase.eql? new_document.downcase
-        record_found = true
-        del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
-        puts 'Note! these are test data not actual data, the validated diagnosis Results are ' +del_obj
+    table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+    check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
+    if check_record_present > 2
+      #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
+      table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
+      puts table_rows
+      (1..table_rows).each do |rows|
+        delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
+        #puts 'the row number is ' +delete_icons_row
+        new_document = "BOWEN, JEANNE DOLORES"
+        if delete_icons_row.downcase.eql? new_document.downcase
+          record_found = true
+          del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
+          puts 'Note! these are test data not actual data, the validated diagnosis Results are ' + del_obj
+        end
       end
+      checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
     end
-    checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
   end
-end
 end
 
 Then(/^the user login to the btris application/) do
@@ -1416,6 +1486,68 @@ Then(/^the user login to the btris application/) do
   step "the user enters \"Nomorecognos11:\" into \"btris: password\" on \"Btris/Portal\" page"
   step "the user clicks on \"btris: login to dashboard button\" element on \"Btris/Portal\" page"
 end
+
+Then(/^the user login with "(.*)" to the btris application/) do |value|
+  if ENV['TEST_ENV'].downcase.eql? 'dev'
+    puts 'The logged-in user name is ' + value
+    step "the user remembers the value of \"btris login page\" field into \"Login Page\" on \"Btris/Portal\" page"
+    step "the user clicks on \"btris: login button\" element on \"Btris/Portal\" page"
+    step "the user remembers the value of \"smart cart login page\" field into \"Smart Cart Login\" on \"Btris/Portal\" page"
+    step "the user clicks on \"alternative login link\" element on \"Btris/Portal\" page"
+    step "the user remembers the value of \"user name attribute sc\" field into \"UserName\" on \"Btris/Portal\" page"
+    step "the user enters \"#{value}\" into \"btris: user name\" on \"Btris/Portal\" page"
+    step "the user enters \"Nomorecognos11?\" into \"btris: password\" on \"Btris/Portal\" page"
+    step "the user clicks on \"btris: smart card login to dashboard button\" element on \"Btris/Portal\" page"
+  else
+    if value.downcase.eql?("btris_test2")
+      puts 'The logged-in user name is ' + value
+      step "the user remembers the value of \"btris login page\" field into \"Login Page\" on \"Btris/Portal\" page"
+      step "the user clicks on \"btris: login button\" element on \"Btris/Portal\" page"
+      step "the user remembers the value of \"user name attribute\" field into \"UserName\" on \"Btris/Portal\" page"
+      step "the user enters \"#{value}\" into \"btris: user name\" on \"Btris/Portal\" page"
+      step "the user enters \"Nomorecognos11?\" into \"btris: password\" on \"Btris/Portal\" page"
+      step "the user clicks on \"btris: login to dashboard button\" element on \"Btris/Portal\" page"
+    else
+      if value.downcase.eql?("btris_test4")
+        puts 'The logged-in user name is ' + value
+        step "the user remembers the value of \"btris login page\" field into \"Login Page\" on \"Btris/Portal\" page"
+        step "the user clicks on \"btris: login button\" element on \"Btris/Portal\" page"
+        step "the user remembers the value of \"user name attribute\" field into \"UserName\" on \"Btris/Portal\" page"
+        step "the user enters \"#{value}\" into \"btris: user name\" on \"Btris/Portal\" page"
+        step "the user enters \"Nomorecognos11?\" into \"btris: password\" on \"Btris/Portal\" page"
+        step "the user clicks on \"btris: login to dashboard button\" element on \"Btris/Portal\" page"
+      end
+    end
+  end
+end
+
+
+Then(/^the user login with "(.*)" to the btris application dev piv/) do |value|
+  if value.downcase.eql?("btris_test2")
+    puts 'The logged-in user name is ' + value
+    step "the user remembers the value of \"btris login page\" field into \"Login Page\" on \"Btris/Portal\" page"
+    step "the user clicks on \"btris: login button\" element on \"Btris/Portal\" page"
+    step "the user remembers the value of \"smart cart login page\" field into \"Smart Cart Login\" on \"Btris/Portal\" page"
+    step "the user clicks on \"alternative login link\" element on \"Btris/Portal\" page"
+    step "the user remembers the value of \"user name attribute\" field into \"UserName\" on \"Btris/Portal\" page"
+    step "the user enters \"#{value}\" into \"btris: user name\" on \"Btris/Portal\" page"
+    step "the user enters \"Nomorecognos11?\" into \"btris: password\" on \"Btris/Portal\" page"
+    step "the user clicks on \"btris: login to dashboard button\" element on \"Btris/Portal\" page"
+  else
+    if value.downcase.eql?("btris_test4")
+      puts 'The logged-in user name is ' + value
+      step "the user remembers the value of \"btris login page\" field into \"Login Page\" on \"Btris/Portal\" page"
+      step "the user clicks on \"btris: login button\" element on \"Btris/Portal\" page"
+      step "the user remembers the value of \"smart cart login page\" field into \"Smart Cart Login\" on \"Btris/Portal\" page"
+      step "the user clicks on \"alternative login link\" element on \"Btris/Portal\" page"
+      step "the user remembers the value of \"user name attribute\" field into \"UserName\" on \"Btris/Portal\" page"
+      step "the user enters \"#{value}\" into \"btris: user name\" on \"Btris/Portal\" page"
+      step "the user enters \"Nomorecognos11?\" into \"btris: password\" on \"Btris/Portal\" page"
+      step "the user clicks on \"btris: login to dashboard button\" element on \"Btris/Portal\" page"
+    end
+  end
+end
+
 
 And(/^the user verify the nichd ctdb forms report on the table$/) do
   record_found = false
@@ -1523,7 +1655,7 @@ And(/^the user verify the vital signs report on the table$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
-        puts 'Note! these are test data and not actual data, the vital signs Results are ' +del_obj
+        puts 'Note! these are test data and not actual data, the vital signs Results are ' + del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
@@ -1545,7 +1677,7 @@ And(/^the user verify the vital signs prod report on the table$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
-        puts 'Note! these are test data and not actual data, the vital signs Results are ' +del_obj
+        puts 'Note! these are test data and not actual data, the vital signs Results are ' + del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
@@ -1580,7 +1712,7 @@ And(/^the user verify the medication report on the table with date range filter$
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[1]"
-        puts 'Note! these are test data and not actual data, the test Results validated are ' +del_obj
+        puts 'Note! these are test data and not actual data, the test Results validated are ' + del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the medication search record"
@@ -1604,7 +1736,7 @@ And(/^the user verify the medication report on the table$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[1]"
-        puts 'Note! these are test data and not actual data, the test Results validated are ' +del_obj
+        puts 'Note! these are test data and not actual data, the test Results validated are ' + del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the medication search record"
@@ -1626,7 +1758,7 @@ And(/^the user verify the medication prod report on the table$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[1]"
-        puts 'Note! these are test data and not actual data, the test Results validated are ' +del_obj
+        puts 'Note! these are test data and not actual data, the test Results validated are ' + del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the medication search record"
@@ -1642,7 +1774,7 @@ And(/^the user verify the pulmonary report on the table$/) do
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
     table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
-   # puts table_rows
+    # puts table_rows
     (1..table_rows).each do |rows|
       delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
       #puts 'the row number is ' +delete_icons_row
@@ -1650,7 +1782,7 @@ And(/^the user verify the pulmonary report on the table$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
-        puts 'Note! these are test data not actual data, the pulmonary Results are ' +del_obj
+        puts 'Note! these are test data not actual data, the pulmonary Results are ' + del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the pulmonary search record"
@@ -1672,7 +1804,7 @@ And(/^the user verify the pulmonary prod report on the table$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
-        puts 'Note! these are test data not actual data, the pulmonary Results are ' +del_obj
+        puts 'Note! these are test data not actual data, the pulmonary Results are ' + del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the pulmonary search record"
@@ -1689,7 +1821,7 @@ And(/^the user verify the PFT Tests on "(.*)" data on "(.*)" page$/) do |field_n
   if selector.nil? || element_path.nil?
     fail("The PFT Tests data is not found for #{field_name} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
   # Create the Element object
   element_obj = @browser.element(selector, element_path)
 
@@ -1707,26 +1839,26 @@ And(/^the user verify the clinical documents full text "(.*)" report on the tabl
   if page_text.include? value
     puts "Search criteria return message #{value} ,for the search query"
   else
-  record_found = false
-  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
-  check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
-  if check_record_present > 2
-    #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
-    table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
-    #puts table_rows
-    (1..table_rows).each do |rows|
-      delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
-      #puts 'the row number is ' +delete_icons_row
-      new_document = "ANDERSON, STEPHEN FOSTER"
-      if delete_icons_row.downcase.include? new_document.downcase
-        record_found = true
-        #del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[1]"
-       # puts 'the MRN for the diagnosis Results are ' +del_obj
+    record_found = false
+    table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+    check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
+    if check_record_present > 2
+      #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
+      table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
+      #puts table_rows
+      (1..table_rows).each do |rows|
+        delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
+        #puts 'the row number is ' +delete_icons_row
+        new_document = "ANDERSON, STEPHEN FOSTER"
+        if delete_icons_row.downcase.include? new_document.downcase
+          record_found = true
+          #del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[1]"
+          # puts 'the MRN for the diagnosis Results are ' +del_obj
+        end
       end
+      checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
     end
-    checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
   end
-end
 end
 
 And(/^the user verify the pathology report on the table$/) do
@@ -1737,7 +1869,7 @@ And(/^the user verify the pathology report on the table$/) do
   if check_record_present > 2
     #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
     table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
-   # puts table_rows
+    # puts table_rows
     (1..table_rows).each do |rows|
       delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
       #puts 'the row number is ' +delete_icons_row
@@ -1745,7 +1877,7 @@ And(/^the user verify the pathology report on the table$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         #del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[1]"
-       # puts 'the MRN for the Laboratory Results are ' +del_obj
+        # puts 'the MRN for the Laboratory Results are ' +del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the Pathology search subject"
@@ -1791,12 +1923,36 @@ And(/^the user verify the ekg report on the table$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
-        puts 'Note! these are test data and not actual data, the Results table data are ' +del_obj
+        puts 'Note! these are test data and not actual data, the Results table data are ' + del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the EKG search"
   end
 end
+
+And(/^the user verify the ekg report on the table with prod data$/) do
+  sleep 3
+  record_found = false
+  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+  check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
+  if check_record_present > 2
+    #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
+    table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
+    puts table_rows
+    (1..table_rows).each do |rows|
+      delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
+      #puts 'the row number is ' +delete_icons_row
+      new_document = "ANDERSON, STEPHEN FOSTER"
+      if delete_icons_row.downcase.eql? new_document.downcase
+        record_found = true
+        del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
+        puts 'Note! these are test data and not actual data, the Results table data are ' + del_obj
+      end
+    end
+    checkpoint (record_found.eql? true), "No data found in table that matches the EKG search"
+  end
+end
+
 
 And(/^the user verify the ekg prod data report on the table$/) do
   record_found = false
@@ -1813,7 +1969,7 @@ And(/^the user verify the ekg prod data report on the table$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
-        puts 'Note! these are test data and not actual data, the Results table data are ' +del_obj
+        puts 'Note! these are test data and not actual data, the Results table data are ' + del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the EKG search"
@@ -1836,7 +1992,7 @@ And(/^the user verify the microbiology report on the table$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
-        puts 'Note! these are test data and not actual data, the Microbiology Results are ' +del_obj
+        puts 'Note! these are test data and not actual data, the Microbiology Results are ' + del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
@@ -1858,7 +2014,7 @@ And(/^the user verify the microbiology prod protocol report on the table$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
-        puts 'Note! these are test data and not actual data, the Microbiology Results are ' +del_obj
+        puts 'The report result(s) is or are ' + del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
@@ -1881,7 +2037,7 @@ And(/^the user verify the echocardiogram report on the table$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
-        puts 'Note! these are test data and not actual data, the Echocardiogram  Results are ' +del_obj
+        puts 'Note! these are test data and not actual data, the Echocardiogram  Results are ' + del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the Echocardiogram search"
@@ -1903,7 +2059,7 @@ And(/^the user verify the echocardiogram prod report on the table$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[3]"
-        puts 'Note! these are test data and not actual data, the Echocardiogram  Results are ' +del_obj
+        puts 'Note! these are test data and not actual data, the Echocardiogram  Results are ' + del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the Echocardiogram search"
@@ -1911,23 +2067,25 @@ And(/^the user verify the echocardiogram prod report on the table$/) do
 end
 
 And(/^the user verify if existing "(.*)" exist and remove it$/) do |value|
+  sleep 2
   page_text = @browser.html
   if page_text.include? value
-  sleep 3
     step "the user clicks on \"custom search term check box\" element on \"Btris/Portal\" page"
-    sleep 3
+    sleep 1
     #Click on the remove button.Scenario:
     step "the user clicks the link with text \"Remove\""
     #step "the user clicks on \"custom search term list remove button\" element on \"Btris/Portal\" page"
     sleep 2
     step "the user clicks on \"custom search term list confirm remove\" element on \"Btris/Portal\" page"
-    sleep 3
-    else
+    step "the user remembers the value of \"list remove confirmation\" field into \"List Remove Confirmation\" on \"Btris/Portal\" page"
+    sleep 1
+  else
     puts "No existing search term data name #{value} added by the test exist"
   end
 end
 
 And(/^the user verify if existing "(.*)" data exist and remove it$/) do |value|
+  sleep 2
   page_text = @browser.html
   if page_text.include? value
     sleep 2
@@ -1989,26 +2147,26 @@ And(/^the user verify the reference list "(.*)" laboratory report on the table$/
   if page_text.include? value
     puts "Search criteria return message #{value} , no record for the search filter"
   else
-  record_found = false
-  table_path = ".//*[contains(@data-test, 'results-preview-table')]"
-  check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
-  if check_record_present > 2
-    #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
-    table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
-    #puts table_rows
-    (1..table_rows).each do |rows|
-      delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
-      # puts 'the row number is ' +delete_icons_row
-      new_document = "NIHCCTEST, PATIENT LAB OUTPAT DLM USE ONLY"
-      if delete_icons_row.downcase.eql? new_document.downcase
-        record_found = true
-        del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
-        #puts 'the Subject for the Reference Laboratory Results are ' +del_obj
+    record_found = false
+    table_path = ".//*[contains(@data-test, 'results-preview-table')]"
+    check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
+    if check_record_present > 2
+      #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
+      table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
+      #puts table_rows
+      (1..table_rows).each do |rows|
+        delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
+        # puts 'the row number is ' +delete_icons_row
+        new_document = "NIHCCTEST, PATIENT LAB OUTPAT DLM USE ONLY"
+        if delete_icons_row.downcase.eql? new_document.downcase
+          record_found = true
+          del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
+          #puts 'the Subject for the Reference Laboratory Results are ' +del_obj
+        end
       end
+      checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
     end
-    checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
   end
-end
 end
 
 And(/^the user verify radiology admin report "(.*)" on the table$/) do |value|
@@ -2031,7 +2189,7 @@ And(/^the user verify radiology admin report "(.*)" on the table$/) do |value|
         if delete_icons_row.downcase.eql? new_document.downcase
           record_found = true
           del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
-          puts 'the Subject for the Reference Laboratory Results are ' +del_obj
+          puts 'the Subject for the Reference Laboratory Results are ' + del_obj
         end
       end
       checkpoint (record_found.eql? true), "No data found in table that matches the pathology search"
@@ -2050,21 +2208,21 @@ And(/^the user verify the reference list pathology report and "(.*)" on the tabl
     table_path = ".//*[contains(@data-test, 'results-preview-table')]"
     check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
     if check_record_present > 2
-    #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
-    table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
-    #puts table_rows
-    (1..table_rows).each do |rows|
-      delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
-      # puts 'the row number is ' +delete_icons_row
-      new_document = "NIHCCTEST, PATIENT LAB INPAT DLM USE ONLY"
-      if delete_icons_row.downcase.eql? new_document.downcase
-        record_found = true
-        del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
-        puts 'the Subject for the Reference Laboratory Results are ' +del_obj
+      #check_record_present = get_elements_size 'xpath', "#{table_path}/tbody/tr/td"
+      table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
+      #puts table_rows
+      (1..table_rows).each do |rows|
+        delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
+        # puts 'the row number is ' +delete_icons_row
+        new_document = "NIHCCTEST, PATIENT LAB INPAT DLM USE ONLY"
+        if delete_icons_row.downcase.eql? new_document.downcase
+          record_found = true
+          del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
+          puts 'the Subject for the Reference Laboratory Results are ' + del_obj
+        end
       end
+      checkpoint (record_found.eql? true), "No data found in table that matches the pathology search"
     end
-    checkpoint (record_found.eql? true), "No data found in table that matches the pathology search"
-  end
   end
 end
 
@@ -2088,7 +2246,7 @@ And(/^the user verify the reference list vital sign report and "(.*)" on the tab
         if delete_icons_row.downcase.eql? new_document.downcase
           record_found = true
           del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
-          puts 'the Subject for the Reference Laboratory Results are ' +del_obj
+          puts 'the Subject for the Reference Laboratory Results are ' + del_obj
         end
       end
       checkpoint (record_found.eql? true), "No data found in table that matches the vital sign search"
@@ -2116,7 +2274,7 @@ And(/^the user verify the reference list pathology report and "(.*)" on the tabl
         if delete_icons_row.downcase.eql? new_document.downcase
           record_found = true
           del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
-          puts 'the Subject for the Reference list Pathology Results are ' +del_obj
+          puts 'the Subject for the Reference list Pathology Results are ' + del_obj
         end
       end
       checkpoint (record_found.eql? true), "No data found in table that matches the laboratory search"
@@ -2150,22 +2308,22 @@ And(/^the user verify if MRN "(.*)" has already been added and "(.*)" is display
 end
 
 And(/^the user verify if MRN "(.*)" has not been added and "(.*)" is display$/) do |value, message|
-  sleep 3
+  sleep 2
   page_text = @browser.html
   if page_text.include? message
     step "the user clicks on \"affirm consent button\" element on \"Manage/Subjects\" page"
-    sleep 3
+    sleep 1
     step "the user clicks on \"return to subject button\" element on \"Manage/Subjects\" page"
-    sleep 3
+    sleep 1
     step "the user clicks on \"add subject button\" element on \"Manage/Subjects\" page"
-    sleep 2
+    sleep 1
     step "the user enters \"#{value}\" into \"enter mrn text box\" text area box on \"Manage/Subjects\" page"
-    sleep 3
+    sleep 1
     step "the user clicks on \"submit button\" element on \"Manage/Subjects\" page"
-    sleep 3
+    sleep 1
   else
     # Fail the steps and skips next steps
-    puts "The user didn't see error message, #{message} , text on the page which means the subject #{value} can be added"
+    puts "The user didn't see error message, #{message} , text on the page which means the subject #{value} already exist in the protocol"
   end
 end
 
@@ -2239,7 +2397,7 @@ And(/^the user verify the radiology administration report on the table$/) do
       if delete_icons_row.downcase.eql? new_document.downcase
         record_found = true
         #del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
-       # puts 'the MRN for the searched test Results are ' +del_obj
+        # puts 'the MRN for the searched test Results are ' +del_obj
       end
     end
     checkpoint (record_found.eql? true), "No data found in table that matches the searched test search"
@@ -2274,12 +2432,578 @@ And(/^the user verify if existing subject "(.*)" data exist and remove it$/) do 
   if page_text.include? value
     sleep 2
     step "the user clicks on \"subject list search check box\" element on \"Btris/Portal\" page"
-    sleep 2
     step "the user clicks on \"subject list remove button\" element on \"Btris/Portal\" page"
-    sleep 2
     step "the user clicks on \"subject list confirm remove\" element on \"Btris/Portal\" page"
     sleep 3
   else
     puts "The user didn't see #{value} text on page"
   end
 end
+
+
+And(/^the user click on the navigation bar if in mobile mode$/) do
+  if ENV['TEST_ENV'].downcase.eql? 'test_mobile'
+    puts ("Executing Environment is : #{ENV['TEST_ENV']}")
+    step "the user clicks on \"nav bar in mobile\" element on \"Btris/Portal\" page"
+  else
+    if ENV['TEST_ENV'].downcase.eql? 'prod_mobile'
+      puts ("Executing Environment is : #{ENV['TEST_ENV']}")
+      step "the user clicks on \"nav bar in mobile\" element on \"Btris/Portal\" page"
+    else
+      step "the user remembers the value of \"top nav drop-down\" field into \"Drop Down\" on \"Btris/Portal\" page"
+      puts ("Test is not running in mobile emulator, Executing Environment is : #{ENV['TEST_ENV']}")
+
+    end
+  end
+end
+
+And(/^the user click on the navigation bar on the home page if in mobile mode$/) do
+  if ENV['TEST_ENV'].downcase.eql? 'test_mobile'
+    puts ("Executing Environment is : #{ENV['TEST_ENV']}")
+    step "the user clicks on \"homepage nav bar in mobile\" element on \"Btris/Portal\" page"
+    step "the user clicks on \"resource dropdown\" element on \"Resource\" page"
+  else
+    if ENV['TEST_ENV'].downcase.eql? 'prod_mobile'
+      puts ("Executing Environment is : #{ENV['TEST_ENV']}")
+      step "the user clicks on \"homepage nav bar in mobile\" element on \"Btris/Portal\" page"
+      step "the user clicks on \"resource dropdown\" element on \"Resource\" page"
+    else
+      step "the user clicks on \"resource dropdown\" element on \"Resource\" page"
+      puts ("Test is not running in mobile emulator, Executing Environment is : #{ENV['TEST_ENV']}")
+
+    end
+  end
+end
+
+
+And(/^the user verify the report configuration with name "(.*)" on the Saved Reports table$/) do |value|
+  record_found = false
+  table_path = ".//*[@class='table saved-reports-table']"
+  check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
+  if check_record_present > 2
+    table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
+    #puts table_rows
+    (1..table_rows).each do |rows|
+      delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[1]"
+       puts 'the row number is ' +delete_icons_row
+      new_document = "#{value}"
+      if delete_icons_row.downcase.eql? new_document.downcase
+        record_found = true
+        del_obj = get_element_text 'xpath', "#{table_path}//*[@class='btn btn-med btn-primary']"
+        click_web_element del_obj
+        sleep 2
+      end
+    end
+    checkpoint (record_found.eql? true), "No data found in table that matches the added Saved Reports Configuration"
+  end
+end
+
+And(/^the user verify the report configuration with name "(.*)" if already exist on the Saved Reports table with "(.*)" and enter new "(.*)" and "(.*)" and verify if "(.*)" which is being added already exist$/) do |value1, value2, value3, value4, value5|
+  page_text = @browser.html
+  if page_text.include? value5
+    step "the user clicks on \"report configuration cancel button\" element on \"Save/Reports\" page"
+    step "the user clicks on \"btris: logout drop down\" element on \"Btris/Portal\" page"
+    step "the user clicks on \"save report on drop-down\" element on \"Save/Reports\" page"
+    step "the user enters \"#{value1}\" into \"saved reports search field\" on \"Save/Reports\" page"
+    step "the user remembers the value of \"demographic saved report\" field into \"Saved Reports Table\" on \"Save/Reports\" page"
+    step "the user clicks on \"delete button for saved report\" element on \"Save/Reports\" page"
+    step "the user clicks on \"confirm delete button for saved report\" element on \"Save/Reports\" page"
+    step "the user clicks on \"primary nav active protocol\" element on \"Save/Reports\" page"
+    step "the user clicks on \"close report icon\" element on \"Btris/Portal\" page"
+    step "the user clicks on \"close button\" element on \"Btris/Portal\" page"
+    step "the user remembers the value of \"general reports\" field into \"Criteria List\" on \"Btris/Portal\" page"
+    step "the user clicks on \"demographics test report\" element on \"Btris/Portal\" page"
+    #Click on the create new report button.
+    step "the user clicks on \"btris: create new report button\" element on \"Btris/Portal\" page"
+    #Enter and filter subject.
+    step "the user enters \"#{value3}\" into \"fine protocol and subject search box\" on \"Btris/Portal\" page"
+    step "the user remembers the value of \"protocol verify count\" field into \"Number OF Subjects\" on \"Btris/Portal\" page"
+    step "the user remembers the value of \"selected protocol\" field into \"Protocol Number\" on \"Btris/Portal\" page"
+    step "the user remembers the value of \"protocol check button\" field into \"Protocol Checkbox\" on \"Btris/Portal\" page"
+    step "the user focus and clicks on \"protocol check button\" element on \"Btris/Portal\" page"
+    step "the user enters \"#{value4}\" into \"fine filter subject search box\" on \"Btris/Portal\" page"
+    sleep 3
+    #click on run report button.
+    step "the user clicks on \"run report button\" element on \"Btris/Portal\" page"
+    #Verify the demographic report table.
+    step "the user remembers the value of \"reports results\" field into \"Loaded Report\" on \"Btris/Portal\" page"
+    step "the user clicks on \"save report configuration button\" element on \"Save/Reports\" page"
+    step "the user remembers the value of \"save report pop-up title\" field into \"Save Report Configuration\" on \"Save/Reports\" page"
+    step "the user clicks on \"report configuration save button\" element on \"Save/Reports\" page"
+    step "the user must see \"Report name is required\" text in \"report configuration required message\" field on \"Save/Reports\" page"
+    step "the user enters \"#{value1}\" into \"save report configuration name filed\" on \"Save/Reports\" page"
+    step "the user enters \"#{value2}\" into \"save report configuration description box\" text area box on \"Save/Reports\" page"
+    step "the user clicks on \"report configuration save button\" element on \"Save/Reports\" page"
+  else
+    puts 'No record found that matches ' +value1
+  end
+end
+
+
+
+And(/^the user verify the report configuration with name "(.*)" if already exist on the Saved Reports table with "(.*)" and enter new "(.*)" and "(.*)" and verify if "(.*)" which is being added already exist and edit it$/) do |value1, value2, value3, value4, value5|
+  page_text = @browser.html
+  if page_text.include? value5
+    step "the user clicks on \"report configuration cancel button\" element on \"Save/Reports\" page"
+    step "the user clicks on \"btris: logout drop down\" element on \"Btris/Portal\" page"
+    step "the user clicks on \"save report on drop-down\" element on \"Save/Reports\" page"
+    step "the user enters \"#{value1}\" into \"saved reports search field\" on \"Save/Reports\" page"
+    step "the user remembers the value of \"demographic saved report\" field into \"Saved Reports Table\" on \"Save/Reports\" page"
+    step "the user delete added report with name \"Demographics\" on the Saved Reports table"
+    # step "the user clicks on \"delete button for saved report\" element on \"Save/Reports\" page"
+    # step "the user clicks on \"confirm delete button for saved report\" element on \"Save/Reports\" page"
+    step "the user clicks on \"primary nav active protocol\" element on \"Save/Reports\" page"
+    step "the user clicks on \"close report icon\" element on \"Btris/Portal\" page"
+    step "the user clicks on \"close button\" element on \"Btris/Portal\" page"
+    step "the user remembers the value of \"general reports\" field into \"Criteria List\" on \"Btris/Portal\" page"
+    sleep 2
+    step "the user clicks on \"demographics test report\" element on \"Btris/Portal\" page"
+    #Click on the create new report button.
+    step "the user clicks on \"btris: create new report button\" element on \"Btris/Portal\" page"
+    #Enter and filter subject.
+    step "the user enters \"#{value3}\" into \"fine protocol and subject search box\" on \"Btris/Portal\" page"
+    step "the user remembers the value of \"protocol verify count\" field into \"Number OF Subjects\" on \"Btris/Portal\" page"
+    step "the user remembers the value of \"selected protocol\" field into \"Protocol Number\" on \"Btris/Portal\" page"
+    step "the user remembers the value of \"protocol check button\" field into \"Protocol Checkbox\" on \"Btris/Portal\" page"
+    step "the user focus and clicks on \"protocol check button\" element on \"Btris/Portal\" page"
+    step "the user enters \"#{value4}\" into \"fine filter subject search box\" on \"Btris/Portal\" page"
+    sleep 3
+    #click on run report button.
+    step "the user clicks on \"run report button\" element on \"Btris/Portal\" page"
+    #Verify the demographic report table.
+    step "the user remembers the value of \"reports results\" field into \"Loaded Report\" on \"Btris/Portal\" page"
+    step "the user clicks on \"save report configuration button\" element on \"Save/Reports\" page"
+    step "the user remembers the value of \"save report pop-up title\" field into \"Save Report Configuration\" on \"Save/Reports\" page"
+    step "the user clicks on \"report configuration save button\" element on \"Save/Reports\" page"
+    step "the user must see \"Report name is required\" text in \"report configuration required message\" field on \"Save/Reports\" page"
+    step "the user enters \"#{value1}\" into \"save report configuration name filed\" on \"Save/Reports\" page"
+    step "the user enters \"#{value2}\" into \"save report configuration description box\" text area box on \"Save/Reports\" page"
+    step "the user clicks on \"report configuration save button\" element on \"Save/Reports\" page"
+  else
+    puts 'No record found that matches ' +value1
+  end
+end
+
+
+And(/^the user verify Medication report configuration with name "(.*)" if already exist on the Saved Reports table with "(.*)" and enter new "(.*)" and "(.*)" and verify if "(.*)" which is being added already exist and edit it$/) do |value1, value2, value3, value4, value5|
+  page_text = @browser.html
+  if page_text.include? value5
+    step "the user clicks on \"report configuration cancel button\" element on \"Save/Reports\" page"
+    step "the user clicks on \"btris: logout drop down\" element on \"Btris/Portal\" page"
+    step "the user clicks on \"save report on drop-down\" element on \"Save/Reports\" page"
+    step "the user enters \"#{value1}\" into \"saved reports search field\" on \"Save/Reports\" page"
+    step "the user remembers the value of \"medication saved report\" field into \"Saved Reports Table\" on \"Save/Reports\" page"
+    step "the user delete added report with name \"Medication Report\" on the Saved Reports table"
+    step "the user clicks on \"primary nav active protocol\" element on \"Save/Reports\" page"
+    step "the user clicks on \"close report icon\" element on \"Btris/Portal\" page"
+    step "the user clicks on \"close button\" element on \"Btris/Portal\" page"
+    step "the user remembers the value of \"general reports\" field into \"Criteria List\" on \"Btris/Portal\" page"
+    sleep 2
+    step "the user clicks on \"btris: medication test\" element on \"Btris/Portal\" page"
+    #Click on the create new report button.
+    step "the user clicks on \"btris: create new report button\" element on \"Btris/Portal\" page"
+    step "the user remembers the value of \"btris: medication report page\" field into \"Criteria Page\" on \"Btris/Portal\" page"
+    step "the user clicks on \"btris: top select subject button\" element on \"Btris/Portal\" page"
+    #Enter and filter subject.
+    step "the user enters \"#{value3}\" into \"fine protocol and subject search box\" on \"Btris/Portal\" page"
+    step "the user remembers the value of \"protocol verify count\" field into \"Number OF Subjects\" on \"Btris/Portal\" page"
+    step "the user remembers the value of \"selected protocol\" field into \"Protocol Number\" on \"Btris/Portal\" page"
+    step "the user remembers the value of \"protocol check button\" field into \"Protocol Checkbox\" on \"Btris/Portal\" page"
+    step "the user focus and clicks on \"protocol check button\" element on \"Btris/Portal\" page"
+    step "the user enters \"#{value4}\" into \"fine filter subject search box\" on \"Btris/Portal\" page"
+    sleep 3
+    #click on run report button.
+    step "the user clicks on \"run report button\" element on \"Btris/Portal\" page"
+    #Verify the demographic report table.
+    step "the user remembers the value of \"reports results\" field into \"Loaded Report\" on \"Btris/Portal\" page"
+    step "the user clicks on \"save report configuration button\" element on \"Save/Reports\" page"
+    step "the user remembers the value of \"save report pop-up title\" field into \"Save Report Configuration\" on \"Save/Reports\" page"
+    step "the user clicks on \"report configuration save button\" element on \"Save/Reports\" page"
+    step "the user must see \"Report name is required\" text in \"report configuration required message\" field on \"Save/Reports\" page"
+    step "the user enters \"#{value1}\" into \"save report configuration name filed\" on \"Save/Reports\" page"
+    step "the user enters \"#{value2}\" into \"save report configuration description box\" text area box on \"Save/Reports\" page"
+    step "the user clicks on \"report configuration save button\" element on \"Save/Reports\" page"
+  else
+    puts 'No record found that matches ' +value1
+  end
+end
+
+And(/^the user verify Clinical Doc DV report configuration with name "(.*)" if already exist on the Saved Reports table with "(.*)" and enter new "(.*)" and "(.*)" and verify if "(.*)" which is being added already exist and edit it$/) do |value1, value2, value3, value4, value5|
+  page_text = @browser.html
+  if page_text.include? value5
+    step "the user clicks on \"report configuration cancel button\" element on \"Save/Reports\" page"
+    step "the user clicks on \"btris: logout drop down\" element on \"Btris/Portal\" page"
+    step "the user clicks on \"save report on drop-down\" element on \"Save/Reports\" page"
+    step "the user enters \"#{value1}\" into \"saved reports search field\" on \"Save/Reports\" page"
+    step "the user remembers the value of \"clinical doc dv rl saved report\" field into \"Saved Reports Table\" on \"Save/Reports\" page"
+    step "the user clicks on \"delete button for saved report\" element on \"Save/Reports\" page"
+    step "the user clicks on \"confirm delete button for saved report\" element on \"Save/Reports\" page"
+    step "the user clicks on \"primary nav active protocol\" element on \"Save/Reports\" page"
+    step "the user clicks on \"close report icon\" element on \"Btris/Portal\" page"
+    step "the user clicks on \"close button\" element on \"Btris/Portal\" page"
+    step "the user remembers the value of \"general reports\" field into \"Criteria List\" on \"Btris/Portal\" page"
+    sleep 2
+    step "the user clicks on \"clinical documents: discrete values\" element on \"Btris/Portal\" page"
+    #Click on the create new report button.
+    step "the user clicks on \"btris: create new report button\" element on \"Btris/Portal\" page"
+    step "the user remembers the value of \"btris: clinical documents: discrete values filter report page\" field into \"Criteria Page\" on \"Btris/Portal\" page"
+    step "the user clicks on \"btris: top select subject button\" element on \"Btris/Portal\" page"
+    #Enter and filter subject.
+    step "the user enters \"#{value3}\" into \"fine protocol and subject search box\" on \"Btris/Portal\" page"
+    step "the user remembers the value of \"protocol verify count\" field into \"Number OF Subjects\" on \"Btris/Portal\" page"
+    step "the user remembers the value of \"selected protocol\" field into \"Protocol Number\" on \"Btris/Portal\" page"
+    step "the user remembers the value of \"protocol check button\" field into \"Protocol Checkbox\" on \"Btris/Portal\" page"
+    step "the user focus and clicks on \"protocol check button\" element on \"Btris/Portal\" page"
+    step "the user enters \"#{value4}\" into \"fine filter subject search box\" on \"Btris/Portal\" page"
+    sleep 3
+    #click on run report button.
+    step "the user clicks on \"run report button\" element on \"Btris/Portal\" page"
+    #Verify the demographic report table.
+    step "the user remembers the value of \"reports results\" field into \"Loaded Report\" on \"Btris/Portal\" page"
+    step "the user clicks on \"save report configuration button\" element on \"Save/Reports\" page"
+    step "the user remembers the value of \"save report pop-up title\" field into \"Save Report Configuration\" on \"Save/Reports\" page"
+    step "the user clicks on \"report configuration save button\" element on \"Save/Reports\" page"
+    step "the user must see \"Report name is required\" text in \"report configuration required message\" field on \"Save/Reports\" page"
+    step "the user enters \"#{value1}\" into \"save report configuration name filed\" on \"Save/Reports\" page"
+    step "the user enters \"#{value2}\" into \"save report configuration description box\" text area box on \"Save/Reports\" page"
+    step "the user clicks on \"report configuration save button\" element on \"Save/Reports\" page"
+  else
+    puts 'No record found that matches ' +value1
+  end
+end
+
+
+
+And(/^the user verify admin saved report with name "(.*)" if already exist on the Saved Reports table with "(.*)" and verify if "(.*)" which is being added already exist and edit it with new "(.*)"$/) do |value1, value2, value3, value4|
+  page_text = @browser.html
+  if page_text.include? value3
+    step "the user clicks on \"report configuration cancel button\" element on \"Save/Reports\" page"
+    step "the user clicks on \"btris: logout drop down\" element on \"Btris/Portal\" page"
+    step "the user clicks on \"save report on drop-down\" element on \"Save/Reports\" page"
+    step "the user enters \"#{value1}\" into \"saved reports search field\" on \"Save/Reports\" page"
+    step "the user remembers the value of \"radiology admin saved report\" field into \"Saved Reports Table\" on \"Save/Reports\" page"
+    step "the user delete added report with name \"Radiology Administrative\" on the Saved Reports table"
+    step "the user clicks on \"primary nav active protocol\" element on \"Save/Reports\" page"
+    step "the user clicks on \"close report icon\" element on \"Btris/Portal\" page"
+    step "the user clicks on \"close button\" element on \"Btris/Portal\" page"
+    sleep 2
+    step "the user clicks on \"admin reports nav\" element on \"Btris/Portal\" page"
+    #click on the  Radiology Administration Test.
+    step "the user remembers the value of \"admin reports\" field into \"Reports\" on \"Btris/Portal\" page"
+    step "the user clicks on \"report: radiology administration\" element on \"Btris/Portal\" page"
+    #Click on the create new report button.
+    step "the user clicks on \"btris: create new report button\" element on \"Btris/Portal\" page"
+    step "the user must see \"Radiology Administration Criteria\" text in \"btris: radiology administrative report filter page\" field on \"Btris/Portal\" page"
+    step "the user enters \"#{value4}\" into \"radiology exam start date\" on \"Btris/Portal\" page"
+    step "the user enters \"Todays Date\" into \"radiology exam end date\" on \"Btris/Portal\" page"
+    #click on run report button.
+    step "the user clicks on \"run admin report button\" element on \"Btris/Portal\" page"
+    #Verify the demographic report table.
+    step "the user remembers the value of \"reports results\" field into \"Loaded Report\" on \"Btris/Portal\" page"
+    step "the user clicks on \"save report configuration button\" element on \"Save/Reports\" page"
+    step "the user remembers the value of \"save report pop-up title\" field into \"Save Report Configuration\" on \"Save/Reports\" page"
+    step "the user clicks on \"report configuration save button\" element on \"Save/Reports\" page"
+    step "the user must see \"Report name is required\" text in \"report configuration required message\" field on \"Save/Reports\" page"
+    step "the user enters \"#{value1}\" into \"save report configuration name filed\" on \"Save/Reports\" page"
+    step "the user enters \"#{value2}\" into \"save report configuration description box\" text area box on \"Save/Reports\" page"
+    step "the user clicks on \"report configuration save button\" element on \"Save/Reports\" page"
+  else
+    puts 'No record found that matches ' +value1
+  end
+end
+
+And(/^the user delete added report with name "(.*)" on the Saved Reports table$/) do |value|
+  record_found = false
+  table_path = ".//*[@class='table saved-reports-table hover-row-highlight']"
+  check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
+  if check_record_present > 0
+    table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
+    (1..table_rows).each do |rows|
+      delete_icons_row = get_element_text 'xpath', "#{table_path}/tbody/tr[1]/td[2]"
+      puts 'The report to delete is or are ' +delete_icons_row
+      new_report = "#{value}"
+      if delete_icons_row.downcase.eql? new_report.downcase
+        record_found = true
+        del_obj = get_element_obj 'xpath', "#{table_path}//*[contains(text(), 'Delete')]"
+        click_web_element del_obj
+        step "the user clicks on \"confirm delete button for saved report\" element on \"Save/Reports\" page"
+        sleep 2
+      end
+    end
+    checkpoint (record_found.eql? true), "No data found in table that matches the added Saved Reports Configuration"
+  end
+end
+
+And(/^the user verify reference list saved report with name "(.*)" if already exist on the Saved Reports table with "(.*)" and verify if "(.*)" which is being added already exist and delete it then add new "(.*)" and enter "(.*)" and "(.*)" and "(.*)" and select "(.*)"$/) do |value1, value2, value3, value4, value5, value6, value7, value8|
+  page_text = @browser.html
+  if page_text.include? value3
+    step "the user clicks on \"report configuration cancel button\" element on \"Save/Reports\" page"
+    step "the user clicks on \"btris: logout drop down\" element on \"Btris/Portal\" page"
+    step "the user clicks on \"save report on drop-down\" element on \"Save/Reports\" page"
+    step "the user enters \"#{value1}\" into \"saved reports search field\" on \"Save/Reports\" page"
+    step "the user remembers the value of \"vital sign rl saved report\" field into \"Saved Reports Table\" on \"Save/Reports\" page"
+    step "the user delete added report with name \"Vital Signs\" on the Saved Reports table"
+    step "the user clicks on \"primary nav active protocol\" element on \"Save/Reports\" page"
+    step "the user clicks on \"close report icon\" element on \"Btris/Portal\" page"
+    step "the user clicks on \"close button\" element on \"Btris/Portal\" page"
+    sleep 2
+    step "the user remembers the value of \"reference list top nav\" field into \"Report Type\" on \"Btris/Portal\" page"
+    step "the user clicks on \"reference list top nav\" element on \"Btris/Portal\" page"
+    #click on the Laboratory Test.
+    step "the user remembers the value of \"reference list reports: vital sign\" field into \"Criteria List\" on \"Btris/Portal\" page"
+    #click on the Vital Sign Test.
+    step "the user clicks on \"reference list vital sign\" element on \"Btris/Portal\" page"
+    #Click on the create new report button.
+    step "the user clicks on \"btris: create new report button\" element on \"Btris/Portal\" page"
+    step "the user must see \"Vital Signs Criteria\" text in \"reference list vital signs report filter page\" field on \"Btris/Portal\" page"
+    sleep 2
+    step "the user selects \"#{value4}\" from \"reference list drop down\" drop down on \"Btris/Portal\" page"
+    step "the user enters \"#{value5}\" into \"reference list day range text box\" on \"Btris/Portal\" page"
+    step "the user enters \"#{value6}\" into \"number of days after text box\" on \"Btris/Portal\" page"
+    step "the user enters \"#{value7}\" into \"number of values text box\" on \"Btris/Portal\" page"
+    step "the user selects \"#{value8}\" from \"labs drop down\" drop down on \"Btris/Portal\" page"
+    step "the user clicks on \"btris: bottom select button\" element on \"Btris/Portal\" page"
+    #Verify the demographic report table.
+    step "the user remembers the value of \"reports results\" field into \"Loaded Report\" on \"Btris/Portal\" page"
+    step "the user clicks on \"save report configuration button\" element on \"Save/Reports\" page"
+    step "the user remembers the value of \"save report pop-up title\" field into \"Save Report Configuration\" on \"Save/Reports\" page"
+    step "the user clicks on \"report configuration save button\" element on \"Save/Reports\" page"
+    step "the user must see \"Report name is required\" text in \"report configuration required message\" field on \"Save/Reports\" page"
+    step "the user enters \"#{value1}\" into \"save report configuration name filed\" on \"Save/Reports\" page"
+    step "the user enters \"#{value2}\" into \"save report configuration description box\" text area box on \"Save/Reports\" page"
+    step "the user clicks on \"report configuration save button\" element on \"Save/Reports\" page"
+  else
+    puts 'No record found that matches ' +value1
+  end
+end
+
+And(/^the user verify lab reference list saved report with name "(.*)" if already exist on the Saved Reports table with "(.*)" and verify if "(.*)" which is being added already exist and delete it then add new "(.*)" and enter "(.*)" and "(.*)" and "(.*)" and select "(.*)"$/) do |value1, value2, value3, value4, value5, value6, value7, value8|
+  page_text = @browser.html
+  if page_text.include? value3
+    step "the user clicks on \"report configuration cancel button\" element on \"Save/Reports\" page"
+    step "the user clicks on \"btris: logout drop down\" element on \"Btris/Portal\" page"
+    step "the user clicks on \"save report on drop-down\" element on \"Save/Reports\" page"
+    step "the user enters \"#{value1}\" into \"saved reports search field\" on \"Save/Reports\" page"
+    step "the user remembers the value of \"lab rl saved report\" field into \"Saved Reports Table\" on \"Save/Reports\" page"
+    step "the user delete added report with name \"Laboratory Reference List\" on the Saved Reports table"
+    step "the user clicks on \"primary nav active protocol\" element on \"Save/Reports\" page"
+    step "the user clicks on \"close report icon\" element on \"Btris/Portal\" page"
+    step "the user clicks on \"close button\" element on \"Btris/Portal\" page"
+    sleep 2
+    step "the user remembers the value of \"reference list top nav\" field into \"Report Type\" on \"Btris/Portal\" page"
+    step "the user clicks on \"reference list top nav\" element on \"Btris/Portal\" page"
+    #click on the Laboratory Test.
+    step "the user remembers the value of \"reference list reports: vital sign\" field into \"Criteria List\" on \"Btris/Portal\" page"
+    #click on the Vital Sign Test.
+    step "the user clicks on \"reference list laboratory\" element on \"Btris/Portal\" page"
+    #Click on the create new report button.
+    step "the user clicks on \"btris: create new report button\" element on \"Btris/Portal\" page"
+    step "the user must see \"Laboratory Criteria\" text in \"reference list laboratory report filter page\" field on \"Btris/Portal\" page"
+    sleep 2
+    step "the user selects \"#{value4}\" from \"reference list drop down\" drop down on \"Btris/Portal\" page"
+    step "the user enters \"#{value5}\" into \"reference list day range text box\" on \"Btris/Portal\" page"
+    step "the user enters \"#{value6}\" into \"number of days after text box\" on \"Btris/Portal\" page"
+    step "the user enters \"#{value7}\" into \"number of values text box\" on \"Btris/Portal\" page"
+    step "the user selects \"#{value8}\" from \"labs drop down\" drop down on \"Btris/Portal\" page"
+    step "the user clicks on \"btris: bottom select button\" element on \"Btris/Portal\" page"
+    #Verify the demographic report table.
+    step "the user remembers the value of \"reports results\" field into \"Loaded Report\" on \"Btris/Portal\" page"
+    step "the user clicks on \"save report configuration button\" element on \"Save/Reports\" page"
+    step "the user remembers the value of \"save report pop-up title\" field into \"Save Report Configuration\" on \"Save/Reports\" page"
+    step "the user clicks on \"report configuration save button\" element on \"Save/Reports\" page"
+    step "the user must see \"Report name is required\" text in \"report configuration required message\" field on \"Save/Reports\" page"
+    step "the user enters \"#{value1}\" into \"save report configuration name filed\" on \"Save/Reports\" page"
+    step "the user enters \"#{value2}\" into \"save report configuration description box\" text area box on \"Save/Reports\" page"
+    step "the user clicks on \"report configuration save button\" element on \"Save/Reports\" page"
+  else
+    puts 'No record found that matches ' +value1
+  end
+end
+
+
+And(/^the user Pathology Signs reference list saved report with name "(.*)" if already exist on the Saved Reports table with "(.*)" and verify if "(.*)" which is being added already exist and delete it then add new "(.*)" and enter "(.*)" and "(.*)" and "(.*)" and select "(.*)"$/) do |value1, value2, value3, value4, value5, value6, value7, value8|
+  page_text = @browser.html
+  if page_text.include? value3
+    step "the user clicks on \"report configuration cancel button\" element on \"Save/Reports\" page"
+    step "the user clicks on \"btris: logout drop down\" element on \"Btris/Portal\" page"
+    step "the user clicks on \"save report on drop-down\" element on \"Save/Reports\" page"
+    step "the user enters \"#{value1}\" into \"saved reports search field\" on \"Save/Reports\" page"
+    step "the user remembers the value of \"pathology rl saved report\" field into \"Saved Reports Table\" on \"Save/Reports\" page"
+    step "the user delete added report with name \"Pathology Reference List\" on the Saved Reports table"
+    step "the user clicks on \"primary nav active protocol\" element on \"Save/Reports\" page"
+    step "the user clicks on \"close report icon\" element on \"Btris/Portal\" page"
+    step "the user clicks on \"close button\" element on \"Btris/Portal\" page"
+    sleep 2
+    step "the user remembers the value of \"reference list top nav\" field into \"Report Type\" on \"Btris/Portal\" page"
+    step "the user clicks on \"reference list top nav\" element on \"Btris/Portal\" page"
+    #click on the Laboratory Test.
+    step "the user remembers the value of \"reference list reports: pathology\" field into \"Criteria List\" on \"Btris/Portal\" page"
+    #click on the Vital Sign Test.
+    step "the user clicks on \"reference list pathology\" element on \"Btris/Portal\" page"
+    #Click on the create new report button.
+    step "the user clicks on \"btris: create new report button\" element on \"Btris/Portal\" page"
+    step "the user must see \"Pathology Criteria\" text in \"reference list pathology report filter page\" field on \"Btris/Portal\" page"
+    sleep 2
+    step "the user selects \"#{value4}\" from \"reference list drop down\" drop down on \"Btris/Portal\" page"
+    step "the user enters \"#{value5}\" into \"reference list day range text box\" on \"Btris/Portal\" page"
+    step "the user enters \"#{value6}\" into \"number of days after text box\" on \"Btris/Portal\" page"
+    step "the user enters \"#{value7}\" into \"number of values text box\" on \"Btris/Portal\" page"
+    step "the user selects \"#{value8}\" from \"labs drop down\" drop down on \"Btris/Portal\" page"
+    step "the user clicks on \"btris: bottom select button\" element on \"Btris/Portal\" page"
+    #Verify the demographic report table.
+    step "the user remembers the value of \"reports results\" field into \"Loaded Report\" on \"Btris/Portal\" page"
+    step "the user clicks on \"save report configuration button\" element on \"Save/Reports\" page"
+    step "the user remembers the value of \"save report pop-up title\" field into \"Save Report Configuration\" on \"Save/Reports\" page"
+    step "the user clicks on \"report configuration save button\" element on \"Save/Reports\" page"
+    step "the user must see \"Report name is required\" text in \"report configuration required message\" field on \"Save/Reports\" page"
+    step "the user enters \"#{value1}\" into \"save report configuration name filed\" on \"Save/Reports\" page"
+    step "the user enters \"#{value2}\" into \"save report configuration description box\" text area box on \"Save/Reports\" page"
+    step "the user clicks on \"report configuration save button\" element on \"Save/Reports\" page"
+  else
+    puts 'No record found that matches ' +value1
+  end
+end
+
+
+And(/^the user Radiology reference list saved report with name "(.*)" if already exist on the Saved Reports table with "(.*)" and verify if "(.*)" which is being added already exist and delete it then add new "(.*)" and enter "(.*)" and "(.*)" and "(.*)" and select "(.*)"$/) do |value1, value2, value3, value4, value5, value6, value7, value8|
+  page_text = @browser.html
+  if page_text.include? value3
+    step "the user clicks on \"report configuration cancel button\" element on \"Save/Reports\" page"
+    step "the user clicks on \"btris: logout drop down\" element on \"Btris/Portal\" page"
+    step "the user clicks on \"save report on drop-down\" element on \"Save/Reports\" page"
+    step "the user enters \"#{value1}\" into \"saved reports search field\" on \"Save/Reports\" page"
+    step "the user remembers the value of \"radiology rl saved report\" field into \"Saved Reports Table\" on \"Save/Reports\" page"
+    step "the user delete added report with name \"Pathology Reference List\" on the Saved Reports table"
+    step "the user clicks on \"primary nav active protocol\" element on \"Save/Reports\" page"
+    step "the user clicks on \"close report icon\" element on \"Btris/Portal\" page"
+    step "the user clicks on \"close button\" element on \"Btris/Portal\" page"
+    sleep 2
+    step "the user remembers the value of \"reference list top nav\" field into \"Report Type\" on \"Btris/Portal\" page"
+    step "the user clicks on \"reference list top nav\" element on \"Btris/Portal\" page"
+    #click on the Laboratory Test.
+    step "the user remembers the value of \"reference list reports: pathology\" field into \"Criteria List\" on \"Btris/Portal\" page"
+    #click on the Vital Sign Test.
+    step "the user clicks on \"reference list radiology\" element on \"Btris/Portal\" page"
+    #Click on the create new report button.
+    step "the user clicks on \"btris: create new report button\" element on \"Btris/Portal\" page"
+    step "the user must see \"Radiology Criteria\" text in \"reference list radiology report filter page\" field on \"Btris/Portal\" page"
+    sleep 2
+    step "the user selects \"#{value4}\" from \"reference list drop down\" drop down on \"Btris/Portal\" page"
+    step "the user enters \"#{value5}\" into \"reference list day range text box\" on \"Btris/Portal\" page"
+    step "the user enters \"#{value6}\" into \"number of days after text box\" on \"Btris/Portal\" page"
+    step "the user enters \"#{value7}\" into \"number of values text box\" on \"Btris/Portal\" page"
+    step "the user selects \"#{value8}\" from \"labs drop down\" drop down on \"Btris/Portal\" page"
+    step "the user clicks on \"btris: bottom select button\" element on \"Btris/Portal\" page"
+    #Verify the demographic report table.
+    step "the user remembers the value of \"reports results\" field into \"Loaded Report\" on \"Btris/Portal\" page"
+    step "the user clicks on \"save report configuration button\" element on \"Save/Reports\" page"
+    step "the user remembers the value of \"save report pop-up title\" field into \"Save Report Configuration\" on \"Save/Reports\" page"
+    step "the user clicks on \"report configuration save button\" element on \"Save/Reports\" page"
+    step "the user must see \"Report name is required\" text in \"report configuration required message\" field on \"Save/Reports\" page"
+    step "the user enters \"#{value1}\" into \"save report configuration name filed\" on \"Save/Reports\" page"
+    step "the user enters \"#{value2}\" into \"save report configuration description box\" text area box on \"Save/Reports\" page"
+    step "the user clicks on \"report configuration save button\" element on \"Save/Reports\" page"
+  else
+    puts 'No record found that matches ' +value1
+  end
+end
+
+And(/^the user verify if the pdf linked has error message "(.*)" which means the link is broken$/) do | message|
+  sleep 5
+ if step "the switch to new tab page"
+  page_text = @browser.html
+  else
+  if page_text.include? message
+    fail("Unable to view or open the pdf document error message,  #{message} , is display after clicking the pdf link")
+    step "the return to main page"
+  else
+    puts "The user didn't see error message, #{message} , text on the page which means the pdf link is working as expected"
+  end
+end
+end
+
+And(/^the user verify if the BTRIS logo linked has error message "(.*)" which means the link is broken$/) do | message|
+  sleep 2
+  step "the switch to new tab page"
+  page_text = @browser.html
+  if page_text.include? message
+    fail("Unable to view or navigate to the BTRIS LOGO, error message   #{message} , is display when navigating to the logo")
+    step "the return to main page"
+  else
+    puts "The user didn't see error message, #{message} , text on the page which means the BTRIS logo link is working as expected"
+  end
+end
+
+And(/^the user download qa data with "(.*)" on the qa protocol table$/) do |value|
+  record_found = false
+  table_path = ".//*[@class='table qa-protocols-table hover-row-highlight']"
+  check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
+  if check_record_present > 2
+    table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
+    #puts table_rows
+    (1..table_rows).each do |rows|
+      puts 'the protocol is ' +value
+      download_button_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[1]"
+      puts 'the row data is ' +download_button_row
+      new_document = "#{value}"
+      if download_button_row.downcase.eql? new_document.downcase
+        record_found = true
+        del_obj = get_element_obj 'xpath', "#{table_path}//tbody/tr[#{rows}]/td/button"
+        click_web_element del_obj
+        sleep 2
+      end
+    end
+    checkpoint (record_found.eql? true), "No data found in table that matches the qa protocol"
+  end
+end
+
+And(/^the user verify the principal investigator "(.*)" investigated "(.*)" for Quality Assurance$/) do |value1, value2|
+  record_found = false
+  table_path = ".//*[@class='table qa-protocols-table hover-row-highlight']"
+  check_record_present = get_elements_size 'xpath', "#{table_path}//tbody/tr/td"
+  if check_record_present > 2
+    table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
+    (1..table_rows).each do |rows|
+      download_button_row = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
+      new_document = "#{value1}"
+      if download_button_row.downcase.eql? new_document.downcase
+        record_found = true
+        del_obj = get_element_text 'xpath', "#{table_path}/tbody/tr[#{rows}]/td[2]"
+       if del_obj.eql? value1
+         puts "The Principal Investigator Name #{value1} checked-out as Principal Investigator for #{value2}"
+       else
+         fail("The Principal Investigator Name #{value1} DID NOT checked-out as Principal Investigator for #{value2}")
+       end
+        sleep 2
+      end
+    end
+    checkpoint (record_found.eql? true), "No data found in table that matches the qa protocol"
+  end
+end
+
+Then(/^the user clicks on "(.*)" download on "(.*)" page$/) do |field_name, page_name|
+  # get the XPATH or CSS from page object file , Raises Error if not found
+  begin
+    selector, element_path = get_element_target(field_name, page_name).split('^^')
+  rescue
+    fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
+  end
+  if selector.nil? || element_path.nil?
+    fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
+  end
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
+
+  # Create the Element object
+  element_obj = @browser.element(selector, element_path)
+
+  # Wait for element to be present
+  wait_for_element(element_obj)
+
+  # Focus on element to make it visible
+  focus_on_element(element_obj)
+
+  element_obj.click
+
+  end
+
+
