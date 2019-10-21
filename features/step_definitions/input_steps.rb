@@ -12,10 +12,10 @@ Then(/^the user enters "(.*)" into "(.*)" on "(.*)" page$/) do |value, field_nam
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
 
   # Get the Date values from date functions if requested in Gherkin parameter
-  if (value.downcase.eql? 'todays date') || (value.downcase.eql? 'start date of current month')|| (value.downcase.eql? 'tomorrows date')|| (value.downcase.eql? 'next year from todays date')|| (value.downcase.eql? 'next business date')|| (value.downcase.eql? 'past one year')
+  if (value.downcase.eql? 'todays date') || (value.downcase.eql? 'start date of current month') || (value.downcase.eql? 'tomorrows date') || (value.downcase.eql? 'next year from todays date') || (value.downcase.eql? 'next business date') || (value.downcase.eql? 'past one year')
     value = get_date_value(value)
   else
     value = value
@@ -39,7 +39,7 @@ Then(/^the user enters unique "(.*)" into "(.*)" on "(.*)" page$/) do |unique_va
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
 
   # Enter value in text box
   type_value_in_element selector, element_path, value
@@ -66,7 +66,7 @@ Then(/^the user enters current value of "(.*)" into "(.*)" on "(.*)" page$/) do 
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
 
   # Enter value in text box
   type_value_in_element selector, element_path, value
@@ -86,38 +86,38 @@ Then(/^the user can see "(.*)" text box is "(.*)" on "([^"]*)" page$/) do |field
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
 
   # Case to check for Enable or Disable object state to verify
   case obj_state.downcase
-    when 'disabled'
-      # Create the text box object
-      text_obj = @browser.text_field(selector, element_path)
+  when 'disabled'
+    # Create the text box object
+    text_obj = @browser.text_field(selector, element_path)
 
-      # Wait for element to be present
-      wait_for_disable_element(text_obj)
+    # Wait for element to be present
+    wait_for_disable_element(text_obj)
 
-      # Focus on element to make it visible
-      focus_on_element(text_obj)
+    # Focus on element to make it visible
+    focus_on_element(text_obj)
 
-      # get the state of object
-      text_obj = text_obj.disabled?
+    # get the state of object
+    text_obj = text_obj.disabled?
 
-    when 'enabled'
-      # Create the text box object
-      text_obj = @browser.text_field(selector, element_path)
+  when 'enabled'
+    # Create the text box object
+    text_obj = @browser.text_field(selector, element_path)
 
-      # Wait for element to be exist, visible,present and enabled
-      wait_for_element(text_obj)
+    # Wait for element to be exist, visible,present and enabled
+    wait_for_element(text_obj)
 
-      # Focus on element to make it visible
-      focus_on_element(text_obj)
+    # Focus on element to make it visible
+    focus_on_element(text_obj)
 
-      # get the state of object
-      text_obj = text_obj.enabled?
+    # get the state of object
+    text_obj = text_obj.enabled?
 
-    else
-      fail("Entered #{obj_state} state is not found please use Disabled or Enabled only in Gherkin")
+  else
+    fail("Entered #{obj_state} state is not found please use Disabled or Enabled only in Gherkin")
 
   end
 
@@ -137,7 +137,7 @@ Then(/^the user remembers the value of "(.*)" text box on "(.*)" page$/) do |fie
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
 
   #Create the text box object
   text_obj = @browser.text_field(selector, element_path)
@@ -168,7 +168,7 @@ Then(/^the user remembers the value of "(.*)" text box into "(.*)" on "(.*)" pag
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
 
   #Create the text box object
   text_obj = @browser.text_field(selector, element_path)

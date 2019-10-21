@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/btris_automation_regression_suite.iml" filepath="$PROJECT_DIR$/.idea/btris_automation_regression_suite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/sandeep_automation_regression_suite.iml" filepath="$PROJECT_DIR$/.idea/sandeep_automation_regression_suite.iml" />
     </modules>
   </component>
 </project>

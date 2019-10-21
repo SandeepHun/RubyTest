@@ -5,7 +5,7 @@ index = {'first' => 0, 'second' => 1, 'third' => 2, 'fourth' => 3, 'fifth' => 4,
 # Gherkin used to click on link with text
 Then(/^the user clicks the link with text "(.*)"$/) do |link_text|
   # Create link object
-  link_obj = @browser.link(:text =>link_text)
+  link_obj = @browser.link(:text => link_text)
 
   # Wait for element to be exist, visible,present and enabled
   wait_for_element(link_obj)
@@ -79,7 +79,7 @@ Then(/^the user can see the link with partial text "(.*)"$/) do |link_text|
 
   link_obj = @browser.link(:text, /#{link_text}/i).exists?
 
-  checkpoint((link_obj.eql? true),"The user didn't see #{link_text} link on page")
+  checkpoint((link_obj.eql? true), "The user didn't see #{link_text} link on page")
 
 end
 
@@ -114,7 +114,7 @@ Then(/^the user can see the link with text "(.*)"$/) do |link_text|
 
   link_obj = @browser.link(:text => link_text).exists?
 
-  checkpoint((link_obj.eql? true),"The user didn't see #{link_text} link on page")
+  checkpoint((link_obj.eql? true), "The user didn't see #{link_text} link on page")
 
 end
 
@@ -140,7 +140,7 @@ end
 Then(/^the user can see the "(.*)" link on "(.*)" page$/) do |link_name, page_name|
   # get the XPATH or CSS from page object file, Raises Error if not found
   begin
-  selector, element_path = get_element_target(link_name, page_name).split('^^')
+    selector, element_path = get_element_target(link_name, page_name).split('^^')
   rescue
     fail("Element Xpath is not found for #{link_name} in #{page_name} page objects File")
   end
@@ -148,7 +148,7 @@ Then(/^the user can see the "(.*)" link on "(.*)" page$/) do |link_name, page_na
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{link_name} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
 
   # Create link object
   link_obj = @browser.link(selector, element_path)
@@ -161,7 +161,7 @@ Then(/^the user can see the "(.*)" link on "(.*)" page$/) do |link_name, page_na
 
   link_obj = @browser.link(selector, element_path).exists?
 
-  checkpoint((link_obj.eql? true),"The user didn't see #{link_name} link on page")
+  checkpoint((link_obj.eql? true), "The user didn't see #{link_name} link on page")
 
 end
 
@@ -176,7 +176,7 @@ Then(/^the user must see the "(.*)" link on "(.*)" on page$/) do |link_name, pag
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{link_name} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
 
   # Create link object
   link_obj = @browser.link(selector, element_path)

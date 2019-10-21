@@ -1,6 +1,5 @@
-
 And(/^check for "(.*)" status$/) do |status|
-  value=get_element_text 'xpath', "//*[@id='ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_GrdReasons_ctl00__0']/td[4]"
+  value = get_element_text 'xpath', "//*[@id='ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_GrdReasons_ctl00__0']/td[4]"
   puts "#{value}"
   if value.include? status
     puts "object found"
@@ -11,21 +10,21 @@ And(/^check for "(.*)" status$/) do |status|
 end
 
 
-And(/^check for lot event$/)do
-table_name='//*[@id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_rgLotEventList_ctl00"]/tbody'
-status=false
-table_rows = get_elements_size 'xpath', "#{table_name}/tr"
-puts "#{table_rows}"
-(1..table_rows).each do |rows|
- lot_event=get_element_text 'xpath', "#{table_name}/tr[#{rows}]/td[1]"
- puts "#{lot_event}"
-  if lot_event.downcase.include? 'rectified'
-    status=true
-    break
-  end
+And(/^check for lot event$/) do
+  table_name = '//*[@id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_rgLotEventList_ctl00"]/tbody'
+  status = false
+  table_rows = get_elements_size 'xpath', "#{table_name}/tr"
+  puts "#{table_rows}"
+  (1..table_rows).each do |rows|
+    lot_event = get_element_text 'xpath', "#{table_name}/tr[#{rows}]/td[1]"
+    puts "#{lot_event}"
+    if lot_event.downcase.include? 'rectified'
+      status = true
+      break
+    end
 
-end
-  if status.equal?true
+  end
+  if status.equal? true
     puts "found"
   else
     fail("element not found")
@@ -33,46 +32,46 @@ end
 end
 
 
-And(/^generate and enter unique number into "(.*)" on "(.*)" page$/) do |field_name,page_name|
- value= SecureRandom.random_number(10000)
+And(/^generate and enter unique number into "(.*)" on "(.*)" page$/) do |field_name, page_name|
+  value = SecureRandom.random_number(10000)
   puts "#{value}"
- selector, element_path = get_element_target(field_name, page_name).split('^^')
+  selector, element_path = get_element_target(field_name, page_name).split('^^')
 
- # Check if value is nil fail the test
- if value.nil?
-   fail "Not Retrieved unique value for : #{value}"
- end
+  # Check if value is nil fail the test
+  if value.nil?
+    fail "Not Retrieved unique value for : #{value}"
+  end
 
 
- if selector.nil? || element_path.nil?
-   fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
- end
- selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+  if selector.nil? || element_path.nil?
+    fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
+  end
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
 
- # Enter value in text box
- type_value_in_element selector, element_path, value
+  # Enter value in text box
+  type_value_in_element selector, element_path, value
 end
 
 
 And(/^count and delete table rows$/) do
   # table_path=".//*[@id='ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_HACCP/Species_userControl_gridHACCPAndSpecies_ctl00']"
-  table_path=".//*[@id='ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_HACCP/Species_userControl_gridHACCPAndSpecies_ctl00']"
+  table_path = ".//*[@id='ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_HACCP/Species_userControl_gridHACCPAndSpecies_ctl00']"
   puts "found table"
-  haccp_table_rows=get_elements_size 'xpath', "#{table_path}/tbody/tr"
+  haccp_table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
   puts "#{haccp_table_rows}"
 
   if haccp_table_rows == 1
     puts "in table"
-    row_element=get_element_text 'xpath', "#{table_path}/tbody/tr"
+    row_element = get_element_text 'xpath', "#{table_path}/tbody/tr"
     puts "#{row_element}"
-    if row_element.include?'There are no records to display'
+    if row_element.include? 'There are no records to display'
       puts "no elements"
     end
 
   else
-      (1..haccp_table_rows).each do |rows|
+    (1..haccp_table_rows).each do |rows|
       del_obj = get_element_obj 'xpath', "#{table_path}/tbody/tr/td[5]/input[1]"
-puts "found object"
+      puts "found object"
       click_web_element del_obj
       step "the user clicks button with text \"Delete\" on \"Imports\" page"
       step "the return to main page"
@@ -83,14 +82,14 @@ end
 
 
 And(/^the user checks the table$/) do
-  table_path=".//*[@id='ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_HACCP/Species_userControl_gridHACCPAndSpecies_ctl00']"
+  table_path = ".//*[@id='ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_HACCP/Species_userControl_gridHACCPAndSpecies_ctl00']"
   puts "found table"
-  haccp_table_rows=get_elements_size 'xpath', "#{table_path}/tbody/tr"
+  haccp_table_rows = get_elements_size 'xpath', "#{table_path}/tbody/tr"
   puts "#{haccp_table_rows}"
   if haccp_table_rows > 1
     puts "elements added succesfully"
   else
-     fail("Element is not added")
+    fail("Element is not added")
   end
 end
 
@@ -99,16 +98,16 @@ Then(/^the user selects value of "(.*)" from "(.*)" combo box on "(.*)" page$/) 
 
   # get the XPATH or CSS from page object file , Raises Error if not found
 
-    selector1, element_path1 = get_element_target(field_name, page_name).split('^^')
-    selector2, element_path2 = get_element_target(value, page_name).split('^^')
-    element_value=get_element_text(selector2,element_path2)
-    puts "#{element_value}"
+  selector1, element_path1 = get_element_target(field_name, page_name).split('^^')
+  selector2, element_path2 = get_element_target(value, page_name).split('^^')
+  element_value = get_element_text(selector2, element_path2)
+  puts "#{element_value}"
 
 
   if selector1.nil? || element_path1.nil?
     fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
   end
-  selector1 =(selector1.downcase.include? 'xpath') ? :xpath : :css
+  selector1 = (selector1.downcase.include? 'xpath') ? :xpath : :css
 
   # Create Combo box object
   combo_box_obj = @browser.element(selector1, element_path1)
@@ -159,7 +158,7 @@ Then(/^the user cannot see "(.*)" values in "(.*)" combo box on "(.*)" page$/) d
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{field_name} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
 
   # Create Combo box object
   combo_box_obj = @browser.element(selector, element_path)
@@ -214,7 +213,7 @@ Then(/^the user cannot see "(.*)" values in "(.*)" combo box on "(.*)" page$/) d
     options.each do |option|
       list_value = list_value.to_s + option.text + ','
       puts "#{list_value}"
-      test=option.text.to_s.squeeze(' ').strip.downcase
+      test = option.text.to_s.squeeze(' ').strip.downcase
       puts "Selecetd"
       puts "#{test}"
       if option.text.to_s.squeeze(' ').strip.downcase == value.to_s.squeeze(' ').strip.downcase
@@ -242,18 +241,18 @@ And(/^the user can see "([^"]*)" checkbox is unchecked on "([^"]*)" page$/) do |
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{chk_box_name} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
 
-    chk_box_obj = @browser.checkbox(selector, element_path)
+  chk_box_obj = @browser.checkbox(selector, element_path)
 
-    # Wait for element to be exist, visible,present and enabled
-    wait_for_element(chk_box_obj)
+  # Wait for element to be exist, visible,present and enabled
+  wait_for_element(chk_box_obj)
 
-    # Focus on element to make it visible
-    focus_on_element(chk_box_obj)
+  # Focus on element to make it visible
+  focus_on_element(chk_box_obj)
 
-    # get the state of object
-    chk_box_obj = chk_box_obj.set?
+  # get the state of object
+  chk_box_obj = chk_box_obj.set?
 
   # else
   #   fail("Entered #{obj_state} state is not found please use Disabled,Enabled and Checked only in Gherkin")

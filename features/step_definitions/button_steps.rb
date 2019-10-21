@@ -5,14 +5,14 @@ Then(/^the user clicks the "(.*)" button on "(.*)" page$/) do |btn_name, page_na
 
   # get the XPATH or CSS from page object file, Raises Error if not found
   begin
-  selector, element_path = get_element_target(btn_name, page_name).split('^^')
+    selector, element_path = get_element_target(btn_name, page_name).split('^^')
   rescue
     fail("Element Xpath is not found for #{btn_name} in #{page_name} page objects File")
   end
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{btn_name} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
 
   # Create the button object
   btn_obj = @browser.button(selector, element_path)
@@ -49,38 +49,38 @@ Then(/^the user can see the "(.*)" button is "(.*)" on "(.*)" page$/) do |btn_na
   if selector.nil? || element_path.nil?
     fail("Element Xpath is not found for #{btn_name} in #{page_name} page objects File")
   end
-  selector =(selector.downcase.include? 'xpath') ? :xpath : :css
+  selector = (selector.downcase.include? 'xpath') ? :xpath : :css
 
   # Case to check for Enable or Disable object state to verify
   case obj_state.downcase
-    when 'disabled'
-      # Create the button object
-      btn_obj = @browser.button(selector, element_path)
+  when 'disabled'
+    # Create the button object
+    btn_obj = @browser.button(selector, element_path)
 
-      # Wait for element to be present
-      wait_for_disable_element(btn_obj)
+    # Wait for element to be present
+    wait_for_disable_element(btn_obj)
 
-      # Focus on element to make it visible
-      focus_on_element(btn_obj)
+    # Focus on element to make it visible
+    focus_on_element(btn_obj)
 
-      # get the state of object
-      btn_state = btn_obj.disabled?
+    # get the state of object
+    btn_state = btn_obj.disabled?
 
-    when 'enabled'
-      # Create the button object
-      btn_obj = @browser.button(selector, element_path)
+  when 'enabled'
+    # Create the button object
+    btn_obj = @browser.button(selector, element_path)
 
-      # Wait for element to be exist, visible,present and enabled
-      wait_for_element(btn_obj)
+    # Wait for element to be exist, visible,present and enabled
+    wait_for_element(btn_obj)
 
-      # Focus on element to make it visible
-      focus_on_element(btn_obj)
+    # Focus on element to make it visible
+    focus_on_element(btn_obj)
 
-      # get the state of object
-      btn_state = btn_obj.enabled?
+    # get the state of object
+    btn_state = btn_obj.enabled?
 
-    else
-      fail("Entered #{obj_state} state is not found please use Enabled or Disabled in Gherkin")
+  else
+    fail("Entered #{obj_state} state is not found please use Enabled or Disabled in Gherkin")
   end
 
   # Soft fail step and continue execution
@@ -93,34 +93,34 @@ Then(/^the user can see button with text "(.*)" is "(.*)" on "(.*)" page$/) do |
 
   # Case to check for Enable or Disable object state to verify
   case obj_state.downcase
-    when 'disabled'
-      # Create the button object
-      btn_obj = @browser.button(:value, btn_value)
+  when 'disabled'
+    # Create the button object
+    btn_obj = @browser.button(:value, btn_value)
 
-      # Wait for element to be present
-      wait_for_disable_element(btn_obj)
+    # Wait for element to be present
+    wait_for_disable_element(btn_obj)
 
-      # Focus on element to make it visible
-      focus_on_element(btn_obj)
+    # Focus on element to make it visible
+    focus_on_element(btn_obj)
 
-      # get the state of object
-      btn_state = btn_obj.disabled?
+    # get the state of object
+    btn_state = btn_obj.disabled?
 
-    when 'enabled'
-      # Create the button object
-      btn_obj = @browser.button(:value, btn_value)
+  when 'enabled'
+    # Create the button object
+    btn_obj = @browser.button(:value, btn_value)
 
-      # Wait for element to be exist, visible,present and enabled
-      wait_for_element(btn_obj)
+    # Wait for element to be exist, visible,present and enabled
+    wait_for_element(btn_obj)
 
-      # Focus on element to make it visible
-      focus_on_element(btn_obj)
+    # Focus on element to make it visible
+    focus_on_element(btn_obj)
 
-      # get the state of object
-      btn_state = btn_obj.enabled?
+    # get the state of object
+    btn_state = btn_obj.enabled?
 
-    else
-      fail("Entered #{obj_state} state is not found please use Enabled or Disabled in Gherkin")
+  else
+    fail("Entered #{obj_state} state is not found please use Enabled or Disabled in Gherkin")
   end
 
   # Soft fail step and continue execution
